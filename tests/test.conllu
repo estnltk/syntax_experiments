@@ -1,0 +1,66 @@
+#sent_id aja_ee199920_9
+#
+1	Keskpanga	kesk_pank	NOUN	S	Case=Gen|Number=Sing	2	nmod	_	_
+2	avalike	avalik	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
+3	suhete	suhe	NOUN	S	Case=Gen|Number=Plur	4	nmod	_	_
+4	osakonna	osakond	NOUN	S	Case=Gen|Number=Sing	5	nmod	_	_
+5	juht	juht	NOUN	S	Case=Nom|Number=Sing	7	appos	_	_
+6	Andrus	Andrus	PROPN	S	Case=Nom|Number=Sing	7	name	_	_
+7	Kuusmann	Kuus_mann	PROPN	S	Case=Nom|Number=Sing	8	nsubj	_	_
+8	ütleb	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	,	,	PUNCT	Z	_	22	punct	_	_
+10	et	et	SCONJ	J	_	22	mark	_	_
+11	"	"	PUNCT	Z	_	22	punct	_	_
+12	kui	kui	SCONJ	J	_	14	mark	_	_
+13	tegu	tegu	NOUN	S	Case=Par|Number=Sing	14	nsubj	_	_
+14	olnuks	olema	VERB	V	Mood=Cnd|Tense=Past|VerbForm=Fin|Voice=Act	22	advcl	_	_
+15	tõestatud	tõestatud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Pass	16	acl	_	_
+16	rahapesuga	raha_pesu	NOUN	S	Case=Com|Number=Sing	14	nmod	_	_
+17	,	,	PUNCT	Z	_	22	punct	_	_
+18	siis	siis	ADV	D	_	22	advmod	_	_
+19	oleks	olema	AUX	V	Mood=Cnd|Tense=Pres|VerbForm=Fin|Voice=Act	22	aux	_	_
+20	ka	ka	ADV	D	_	22	advmod	_	_
+21	vastavalt	vastavalt	ADV	D	_	22	advmod	_	_
+22	reageeritud	reageerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Pass	8	ccomp	_	_
+23	"	"	PUNCT	Z	_	22	punct	_	_
+24	.	.	PUNCT	Z	_	8	punct	_	_
+
+#sent_id aja_ee199920_19
+#
+1	"	"	PUNCT	Z	_	2	punct	_	_
+2	Ei	ei	ADV	D	_	0	root	_	_
+3	,	,	PUNCT	Z	_	2	punct	_	_
+4	ei	ei	ADV	D	_	2	conj	_	_
+5	,	,	PUNCT	Z	_	2	punct	_	_
+6	ei	ei	ADV	D	_	2	conj	_	_
+7	,	,	PUNCT	Z	_	2	punct	_	_
+8	"	"	PUNCT	Z	_	2	punct	_	_
+9	ütleb	ütlema	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	ta	tema	PRON	P	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+11	.	.	PUNCT	Z	_	2	punct	_	_
+
+#sent_id aja_ee199920_29
+#
+1	Ühe	üks	PRON	P	Case=Gen|Number=Sing|PronType=Dem	2	det	_	_
+2	allika	allikas	NOUN	S	Case=Gen|Number=Sing	3	nmod	_	_
+3	sõnul	sõna	NOUN	S	Case=Ade|Number=Plur	4	nmod	_	_
+4	suunas	suunama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Hansapank	hansa_pank	NOUN	S	Case=Nom|Number=Sing	4	nsubj	_	_
+6	Šveitsist	Šveits	PROPN	S	Case=Ela|Number=Sing	7	nmod	_	_
+7	tulnud	tul=nud	ADJ	A	Degree=Pos|Tense=Past|VerbForm=Part|Voice=Act	8	acl	_	_
+8	raha	raha	NOUN	S	Case=Par|Number=Sing	4	dobj	_	_
+9	numbrikontole	numbri_konto	NOUN	S	Case=All|Number=Sing	4	nmod	_	_
+10	,	,	PUNCT	Z	_	13	punct	_	_
+11	mida	mis	PRON	P	Case=Par|Number=Sing|PronType=Int,Rel	13	dobj	_	_
+12	Eestis	Eesti	PROPN	S	Case=Ine|Number=Sing	13	nmod	_	_
+13	avada	avama	VERB	V	VerbForm=Inf	9	acl:relcl	_	_
+14	ei	ei	AUX	V	Mood=Ind|Negative=Neg|VerbForm=Fin	15	neg	_	_
+15	tohi	tohtima	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+16	(	(	PUNCT	Z	_	19	punct	_	_
+17	kuid	kuid	CONJ	J	_	13	cc	_	_
+18	mida	mis	PRON	P	Case=Par|Number=Sing|PronType=Int,Rel	19	dobj	_	_
+19	praktiseeris	praktiseerima	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	parataxis	_	_
+20	sellegipoolest	sellegi_poolest	ADV	D	_	19	advmod	_	_
+21	Forekspank	Foreks_pank	PROPN	S	Case=Nom|Number=Sing	19	nsubj	_	_
+22	)	)	PUNCT	Z	_	19	punct	_	_
+23	.	.	PUNCT	Z	_	4	punct	_	_

@@ -1,0 +1,144 @@
+#
+1	Milliseks	XX	P	P	rel|sg|tr	2	@ADVL	_	_
+2	kujuneb	XX	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	XX	S	H	sg|nom	6	@NN>	_	_
+4	ja	XX	J	Jc	_	5	@J	_	_
+5	Ühispanga	XX	S	S	sg|gen	3	@NN>	_	_
+6	vahekord	XX	S	S	sg|nom	2	@SUBJ	_	_
+7	?	XX	Z	Z	Int	6	@Punc	_	_
+
+#
+1	Milliseks	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	kujuneb	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	XX	S	H	sg|nom	6	@NN>	_	_
+4	ja	ja	J	Jc	_	5	@J	_	_
+5	Ühispanga	XX	S	S	sg|gen	3	@NN>	_	_
+6	vahekord	XX	S	S	sg|nom	2	@SUBJ	_	_
+7	?	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	XX	S	H	sg|nom	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	XX	S	S	sg|gen	3	@NN>	_	_
+6	XX	XX	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	Milliseks	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	kujuneb	XX	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	Riigi_kassa	S	H	sg|nom	6	@NN>	_	_
+4	ja	ja	J	Jc	_	5	@J	_	_
+5	Ühispanga	ühis_pank	S	S	sg|gen	3	@NN>	_	_
+6	vahekord	vahe_kord	S	S	sg|nom	2	@SUBJ	_	_
+7	?	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	XX	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	Riigi_kassa	S	H	sg|nom	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	ühis_pank	S	S	sg|gen	3	@NN>	_	_
+6	XX	vahe_kord	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	XX	S	H	sg|nom	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	XX	S	S	sg|gen	3	@NN>	_	_
+6	XX	XX	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	XX	Z	Z	Int	6	@Punc	_	_
+
+#
+1	Milliseks	milline	P	P	rel|sg|XX	2	@ADVL	_	_
+2	kujuneb	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	Riigi_kassa	S	H	sg|XX	6	@NN>	_	_
+4	ja	ja	J	Jc	_	5	@J	_	_
+5	Ühispanga	ühis_pank	S	S	sg|XX	3	@NN>	_	_
+6	vahekord	vahe_kord	S	S	sg|XX	2	@SUBJ	_	_
+7	?	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|XX	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	Riigi_kassa	S	H	sg|XX	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	ühis_pank	S	S	sg|XX	3	@NN>	_	_
+6	XX	vahe_kord	S	S	sg|XX	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	Milliseks	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	kujuneb	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	Riigi_kassa	S	H	sg|XX	6	@NN>	_	_
+4	ja	ja	J	Jc	_	5	@J	_	_
+5	Ühispanga	ühis_pank	S	S	sg|XX	3	@NN>	_	_
+6	vahekord	vahe_kord	S	S	sg|XX	2	@SUBJ	_	_
+7	?	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	Riigi_kassa	S	H	sg|XX	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	ühis_pank	S	S	sg|XX	3	@NN>	_	_
+6	XX	vahe_kord	S	S	sg|XX	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	Milliseks	milline	P	P	rel|sg|XX	2	@ADVL	_	_
+2	kujuneb	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	Riigikassa	Riigi_kassa	S	H	sg|nom	6	@NN>	_	_
+4	ja	ja	J	Jc	_	5	@J	_	_
+5	Ühispanga	ühis_pank	S	S	sg|gen	3	@NN>	_	_
+6	vahekord	vahe_kord	S	S	sg|nom	2	@SUBJ	_	_
+7	?	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|XX	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	Riigi_kassa	S	H	sg|nom	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	ühis_pank	S	S	sg|gen	3	@NN>	_	_
+6	XX	vahe_kord	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	XX	XX	P	XX	2	@ADVL	_	_
+2	XX	XX	XX	V	XX	0	ROOT	_	_
+3	XX	XX	XX	H	XX	6	@NN>	_	_
+4	XX	XX	XX	Jc	XX	5	@J	_	_
+5	XX	XX	XX	S	XX	3	@NN>	_	_
+6	XX	XX	XX	S	XX	2	@SUBJ	_	_
+7	XX	XX	XX	Z	XX	6	@Punc	_	_
+
+#
+1	Milliseks	XX	XX	XX	XX	2	@ADVL	_	_
+2	kujuneb	XX	XX	XX	XX	0	ROOT	_	_
+3	Riigikassa	XX	XX	XX	XX	6	@NN>	_	_
+4	ja	XX	XX	XX	XX	5	@J	_	_
+5	Ühispanga	XX	XX	XX	XX	3	@NN>	_	_
+6	vahekord	XX	XX	XX	XX	2	@SUBJ	_	_
+7	?	XX	XX	XX	XX	6	@Punc	_	_
+
+#
+1	XX	milline	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	kujune	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	Riigi_kassa	S	H	sg|nom	6	@NN>	_	_
+4	XX	ja	J	Jc	_	5	@J	_	_
+5	XX	ühis_pank	S	S	sg|gen	3	@NN>	_	_
+6	XX	vahe_kord	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	?	Z	Z	Int	6	@Punc	_	_
+
+#
+1	XX	XX	P	P	rel|sg|tr	2	@ADVL	_	_
+2	XX	XX	V	V	indic|pres|ps3|sg	0	ROOT	_	_
+3	XX	XX	S	H	sg|nom	6	@NN>	_	_
+4	XX	XX	J	Jc	_	5	@J	_	_
+5	XX	XX	S	S	sg|gen	3	@NN>	_	_
+6	XX	XX	S	S	sg|nom	2	@SUBJ	_	_
+7	XX	XX	Z	Z	Int	6	@Punc	_	_
+

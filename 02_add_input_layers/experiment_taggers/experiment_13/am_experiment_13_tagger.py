@@ -1,0 +1,81 @@
+import re
+
+import numpy as np
+from estnltk import ElementaryBaseSpan, Annotation, Layer
+
+from estnltk.taggers import Tagger, VabamorfTagger, MorphExtendedTagger, VislTagger
+
+
+class AMExperiment13Tagger(Tagger):
+    def __init__(self, output_layer='am_experiment_13', input_layers=None, output_attributes=None,
+                  collection=None):
+        if output_attributes is None:
+            output_attributes = ['id', 'form', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps',
+                                 'misc']
+        if input_layers is None:
+            input_layers = ['syntax_gold', 'words', 'sentences', 'compound_tokens']
+        self.conf_param = ['morph_analysis_tagger', 'morph_extended_tagger', 'visl_tagger', 'deleted_lemmas',
+                           'collection_name']
+
+        self.output_layer = output_layer
+        self.input_layers = input_layers
+        self.output_attributes = output_attributes
+        self.conf_param = ['morph_analysis_tagger', 'morph_extended_tagger', 'visl_tagger', 'deleted_lemmas', 'collection']
+        self.collection = collection
+        self.morph_analysis_tagger = VabamorfTagger()
+        self.morph_extended_tagger = MorphExtendedTagger()
+        self.visl_tagger = VislTagger()
+        self.deleted_lemmas = deleted_lemmas(self.collection)
+
+    def _make_layer(self, text, layers, status=None):
+        layer = Layer(self.output_layer, text_object=text, attributes=self.output_attributes)
+        self.morph_analysis_tagger.tag(text)
+        self.morph_extended_tagger.tag(text)
+        self.visl_tagger.tag(text)
+
+        for basespan, visl_span in zip(text[self.input_layers[0]], text.visl):
+            new_span = ElementaryBaseSpan(basespan.start, basespan.end)
+            subtype = visl_span.subtype[0][0] if type(visl_span.subtype[0]) == list else visl_span.subtype[0]
+            mood = visl_span.mood[0][0] if type(visl_span.mood[0]) == list else visl_span.mood[0]
+            tense = visl_span.tense[0][0] if type(visl_span.tense[0]) == list else visl_span.tense[0]
+            voice = visl_span.voice[0][0] if type(visl_span.voice[0]) == list else visl_span.voice[0]
+            person = visl_span.person[0][0] if type(visl_span.person[0]) == list else visl_span.person[0]
+            number = visl_span.number[0][0] if type(visl_span.number[0]) == list else visl_span.number[0]
+            case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
+            polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
+            number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
+            visl_span.number_format[0]
+
+            feats = '|'.join(
+                [subtype, mood, tense, voice, person,
+                 number, case, polarity, number_format])
+            feats = re.sub('_', '', feats)
+            feats = re.sub('\|+', '|', feats)
+            feats = re.sub('\|$', '', feats)
+            feats = '_' if feats == '' else feats
+            lemma = 'XX' if basespan.lemma in self.deleted_lemmas else basespan.lemma
+            attributes = {'id': basespan.id, 'form': 'XX',
+                          'lemma': lemma,
+                          'upostag': basespan.upostag, 'xpostag': basespan.xpostag, 'feats': feats,
+                          'head': basespan.head,
+                          'deprel': basespan.deprel, 'deps': '_', 'misc': '_'}
+            annotation = Annotation(new_span, **attributes)
+            layer.add_annotation(new_span, **annotation)
+
+        return layer
+
+    def __doc__(self):
+        print("Experiment 13: kustutatud tekstisõnad ja juhuslikult 19.5% lemmadest")
+
+
+def deleted_lemmas(collection):
+    lemmas = set()
+    for i, text in collection.select(layers=['syntax_gold']):
+        for span in text.syntax_gold:
+            lemmas.add(span.lemma)
+
+    del_lemmas = set()
+    for lemma in lemmas:
+        choice = np.random.choice([True, False], 1, p=[.195, .805])[0]
+        if choice: del_lemmas.add(lemma)
+    return del_lemmas
