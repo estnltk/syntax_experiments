@@ -2,6 +2,7 @@ from estnltk import ElementaryBaseSpan, Annotation, Layer
 from estnltk.taggers import Tagger, VabamorfTagger, MorphExtendedTagger, VislTagger
 import re
 
+
 class AMExperiment3_2Tagger(Tagger):
     def __init__(self,
                  output_layer='am_experiment_3_2',
@@ -38,7 +39,7 @@ class AMExperiment3_2Tagger(Tagger):
             case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
             polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
             number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
-            visl_span.number_format[0]
+                visl_span.number_format[0]
 
             feats = '|'.join(
                 [subtype, mood, tense, voice, person,
@@ -48,7 +49,7 @@ class AMExperiment3_2Tagger(Tagger):
             feats = re.sub('\|+', '|', feats)
             feats = re.sub('\|$', '', feats)
             feats = '_' if feats == '' else feats
-            lemma = 'XX' if basespan.upostag in ('S', 'A') else basespan.lemma
+            lemma = 'XX' if basespan.upostag in ('S', 'A', 'NOUN', 'ADJ') else basespan.lemma
             attributes = {'id': basespan.id, 'form': 'XX', 'lemma': lemma,
                           'upostag': basespan.upostag, 'xpostag': basespan.xpostag,
                           'feats': feats, 'head': basespan.head,

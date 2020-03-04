@@ -1,0 +1,15 @@
+Evaluation arguments: -s ../04_train_models/output/edt/am_experiment_2/malt/parsed_train_3.conllu -g ../03_create_training_testing_data/output/edt/am_experiment_2/train_3.conllu --Metric "LAS;UAS;LA"
+====================================================
+Gold:   ../03_create_training_testing_data/output/edt/am_experiment_2/train_3.conllu
+Parsed: ../04_train_models/output/edt/am_experiment_2/malt/parsed_train_3.conllu
+====================================================
+GroupBy-> Token
+
+====================================================
+
+accuracy / Metric:LA   accuracy / Metric:UAS   accuracy / Metric:LAS   Token
+--------------------------------------------------------------------------------
+0.958                  0.945                   0.928                   Row mean
+381614                 381614                  381614                  Row count
+--------------------------------------------------------------------------------
+

@@ -41,7 +41,7 @@ class AMExperiment8_2Tagger(Tagger):
             case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
             polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
             number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
-            visl_span.number_format[0]
+                visl_span.number_format[0]
 
             feats = '|'.join(
                 [subtype, mood, tense, voice, person,
@@ -53,10 +53,17 @@ class AMExperiment8_2Tagger(Tagger):
             feats = feats.split('|')
             new_feats = []
             cases = (
-                'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom')
+                'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom',
+                'Case=Ill', 'Case=Ine', 'Case=Ela', 'Case=All',
+                'Case=Abl', 'Case=Ade',
+                'Case=Tra', 'Case=Ter', 'Case=Ess', 'Case=Abe', 'Case=Com'
+            )
             for feat in feats:
-                if feat  in cases:
-                    new_feats.append('XX')
+                if feat in cases:
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
             feats = '|'.join(new_feats)

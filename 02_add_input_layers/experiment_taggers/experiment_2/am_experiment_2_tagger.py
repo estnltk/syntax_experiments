@@ -44,7 +44,7 @@ class AMExperiment2Tagger(Tagger):
             case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
             polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
             number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
-            visl_span.number_format[0]
+                visl_span.number_format[0]
 
             feats = '|'.join(
                 [subtype, mood, tense, voice, person,

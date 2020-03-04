@@ -40,7 +40,7 @@ class AMExperiment7_2Tagger(Tagger):
             case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
             polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
             number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
-            visl_span.number_format[0]
+                visl_span.number_format[0]
 
             feats = '|'.join(
                 [subtype, mood, tense, voice, person,
@@ -52,10 +52,14 @@ class AMExperiment7_2Tagger(Tagger):
             feats = feats.split('|')
             new_feats = []
             cases = (
-                'nom', 'gen', 'part', 'adit')
+                'nom', 'gen', 'part', 'adit',
+                'Case=Nom', 'Case=Gen', 'Case=Par', 'Case=Add')
             for feat in feats:
                 if feat in cases:
-                    new_feats.append('XX')
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
             feats = '|'.join(new_feats)

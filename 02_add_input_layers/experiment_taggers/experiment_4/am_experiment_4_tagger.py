@@ -40,7 +40,7 @@ class AMExperiment4Tagger(Tagger):
             case = visl_span.case[0][0] if type(visl_span.case[0]) == list else visl_span.case[0]
             polarity = visl_span.polarity[0][0] if type(visl_span.polarity[0]) == list else visl_span.polarity[0]
             number_format = visl_span.number_format[0][0] if type(visl_span.number_format[0]) == list else \
-            visl_span.number_format[0]
+                visl_span.number_format[0]
 
             feats = '|'.join(
                 [subtype, mood, tense, voice, person,
@@ -50,7 +50,7 @@ class AMExperiment4Tagger(Tagger):
             feats = re.sub('\|+', '|', feats)
             feats = re.sub('\|$', '', feats)
             feats = '_' if feats == '' else feats
-            lemma = 'XX' if basespan.upostag in ('V', 'K') else basespan.lemma
+            lemma = 'XX' if basespan.upostag in ('V', 'K', 'VERB', 'ADP') else basespan.lemma
 
             attributes = {'id': basespan.id, 'form': basespan.text, 'lemma': lemma,
                           'upostag': basespan.upostag, 'xpostag': basespan.xpostag,

@@ -1,0 +1,164 @@
+# eksperiment 1 - kõik lemmad alles 
+1	Mind	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	looming	looming	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 2 - kõik lemmad kustutatud 
+1	Mind	XX	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	XX	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	XX	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	looming	XX	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	alati	XX	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	XX	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	XX	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 3 - nimisõnade (NOUN) ja omadussõnade (ADJ) lemmad kustutatud 
+1	Mind	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	looming	XX	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 3_2 - sõnavormid kustutatud + nimisõnade ja omadussõnade lemmad kust
+1	XX	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	XX	XX	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	XX	alati	ADV	D	_	6	advmod	_	_
+6	XX	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 4 - verbide (VERB) ja kaassõnade (ADP) lemmad kustutatud
+1	Mind	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	looming	looming	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	XX	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 4_2 - kõik sõnavormid kustutatud ja verbide (VERB) ja kaassõnade (ADP) lemmad kustutatud
+1	XX	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	XX	looming	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	XX	alati	ADV	D	_	6	advmod	_	_
+6	XX	XX	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 5 - kustutatud lemmad mis ei kuulu visl reeglite hulka 
+1	Mind	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	XX	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	looming	XX	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	XX	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	XX	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 6 - kõik käänded kustutatud Case=XX 
+1	Mind	mina	PRON	P	Case=XX|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	Vermeer	PROPN	S	Case=XX|Number=Sing	4	nmod	_	_
+4	looming	looming	NOUN	S	Case=XX|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 6_2 - kõik käänded ja sõnavormid kustutatud  
+1	XX	mina	PRON	P	Case=XX|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	Vermeer	PROPN	S	Case=XX|Number=Sing	4	nmod	_	_
+4	XX	looming	NOUN	S	Case=XX|Number=Sing	6	nsubj	_	_
+5	XX	alati	ADV	D	_	6	advmod	_	_
+6	XX	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 7 - osad käänded kustutatud (nominatiiv (Case=Nom), genitiiv (Case=Gen), partitiiv (Case=Par), aditiiv (Case=Add)) 
+1	Mind	mina	PRON	P	Case=XX|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	on	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	Vermeeri	Vermeer	PROPN	S	Case=XX|Number=Sing	4	nmod	_	_
+4	looming	looming	NOUN	S	Case=XX|Number=Sing	6	nsubj	_	_
+5	alati	alati	ADV	D	_	6	advmod	_	_
+6	fastsineerinud	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	.	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 7_2 - kõik sõnavormid kustutatud + osad käänded kustutatud (nominatiiv (Case=Nom), genitiiv (Case=Gen), partitiiv (Case=Par), aditiiv (Case=Add)) 
+1	XX	mina	PRON	P	Case=XX|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	Vermeer	PROPN	S	Case=XX|Number=Sing	4	nmod	_	_
+4	XX	looming	NOUN	S	Case=XX|Number=Sing	6	nsubj	_	_
+5	XX	alati	ADV	D	_	6	advmod	_	_
+6	XX	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 8 - teised osad käänded kustutatud 
+1	Kõige	kõige	ADV	D	_	2	advmod	_	_
+2	lõpuks	lõpuks	ADV	D	_	4	advmod	_	_
+3	annus	annus	NOUN	S	Case=Nom|Number=Sing	4	nmod	_	_
+4	X-faile	X-fail	NOUN	S	Case=Par|Number=Plur	0	root	_	_
+5	ja	ja	CCONJ	J	_	8	cc	_	_
+6	kogu	kogu	DET	A	PronType=Tot	7	det	_	_
+7	kompott	kompott	NOUN	S	Case=Nom|Number=Sing	8	nsubj	_	_
+8	jääb	jääma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	ööseks	ööseks	ADV	D	_	8	advmod	_	_
+10	seedima	seedima	VERB	V	Case=XX|VerbForm=Sup|Voice=Act	8	xcomp	_	_
+11	rahutus	rahutu	ADJ	A	Case=XX|Degree=Pos|Number=Sing	12	amod	_	_
+12	õudusunenäos	õudus_une_nägu	NOUN	S	Case=XX|Number=Sing	8	obl	_	_
+13	.	.	PUNCT	Z	_	4	punct	_	_
+
+# eksperiment 8_2 - teised osad käänded kustutatud + sõnavormid
+1	XX	kõige	ADV	D	_	2	advmod	_	_
+2	XX	lõpuks	ADV	D	_	4	advmod	_	_
+3	XX	annus	NOUN	S	Case=Nom|Number=Sing	4	nmod	_	_
+4	XX	X-fail	NOUN	S	Case=Par|Number=Plur	0	root	_	_
+5	XX	ja	CCONJ	J	_	8	cc	_	_
+6	XX	kogu	DET	A	PronType=Tot	7	det	_	_
+7	XX	kompott	NOUN	S	Case=Nom|Number=Sing	8	nsubj	_	_
+8	XX	jääma	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	XX	ööseks	ADV	D	_	8	advmod	_	_
+10	XX	seedima	VERB	V	Case=XX|VerbForm=Sup|Voice=Act	8	xcomp	_	_
+11	XX	rahutu	ADJ	A	Case=XX|Degree=Pos|Number=Sing	12	amod	_	_
+12	XX	õudus_une_nägu	NOUN	S	Case=XX|Number=Sing	8	obl	_	_
+13	XX	.	PUNCT	Z	_	4	punct	_	_
+
+# eksperiment 9 - alles ainult postagid jm sünt märgendid
+1	XX	XX	XX	P	XX	6	obj	_	_
+2	XX	XX	XX	V	XX	6	aux	_	_
+3	XX	XX	XX	S	XX	4	nmod	_	_
+4	XX	XX	XX	S	XX	6	nsubj	_	_
+5	XX	XX	XX	D	XX	6	advmod	_	_
+6	XX	XX	XX	V	XX	0	root	_	_
+7	XX	XX	XX	Z	XX	6	punct	_	_
+
+# eksperiment 10 - alles ainult tekstisõnad (ja sünt märgendid) 
+1	Mind	XX	XX	XX	XX	6	obj	_	_
+2	on	XX	XX	XX	XX	6	aux	_	_
+3	Vermeeri	XX	XX	XX	XX	4	nmod	_	_
+4	looming	XX	XX	XX	XX	6	nsubj	_	_
+5	alati	XX	XX	XX	XX	6	advmod	_	_
+6	fastsineerinud	XX	XX	XX	XX	0	root	_	_
+7	.	XX	XX	XX	XX	6	punct	_	_
+
+# eksperiment 11 - kustutatud tekstisõnad, muu alles 
+1	XX	mina	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	olema	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	Vermeer	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	XX	looming	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	XX	alati	ADV	D	_	6	advmod	_	_
+6	XX	fastsineerima	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	.	PUNCT	Z	_	6	punct	_	_
+
+# eksperiment 12 -  kustutatud tekstisõnad ja lemmad 
+1	XX	XX	PRON	P	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+2	XX	XX	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	XX	XX	PROPN	S	Case=Gen|Number=Sing	4	nmod	_	_
+4	XX	XX	NOUN	S	Case=Nom|Number=Sing	6	nsubj	_	_
+5	XX	XX	ADV	D	_	6	advmod	_	_
+6	XX	XX	VERB	V	Tense=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	XX	XX	PUNCT	Z	_	6	punct	_	_

@@ -20,12 +20,12 @@ def create_collections() -> None:
                               schema='syntaxexperiments'
                               )
 
-    #create_schema(storage)
-    #storage['est_ud'].meta = {'file': 'str', 'chunk': 'str', 'order': 'str'}
-    #storage['est_ud'].create('Collection containing Est-UD texts with syntax-gold and experiment layers.')
-    ##storage['est_ud'].column_names += list(storage['est_ud'].meta.keys())
-    #collection = storage['est_ud']
-    #insert(datafolder='original_data/EstUD', collection=collection, collection_name='est_ud')
+    create_schema(storage)
+    storage['est_ud'].meta = {'file': 'str', 'chunk': 'str', 'order': 'str'}
+    storage['est_ud'].create('Collection containing Est-UD texts with syntax-gold and experiment layers.')
+    storage['est_ud'].column_names += list(storage['est_ud'].meta.keys())
+    collection = storage['est_ud']
+    insert(datafolder='original_data/EstUD', collection=collection, collection_name='est_ud')
 
     storage['edt'].meta = {'file': 'str', 'chunk': 'str', 'order': 'str'}
     storage['edt'].create('Collection containing EDT texts with syntax-gold and experiment layers.')

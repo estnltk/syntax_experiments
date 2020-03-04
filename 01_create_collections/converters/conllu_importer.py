@@ -17,6 +17,23 @@ def conllu_file_to_texts_list(file: str, layer_name: str = 'syntax_gold') -> Lis
     with open(file, 'r', encoding='utf-8') as f:
         start = 0
         doc = file.split('.')[0]
+        sent_id = 0
+        text = Text()
+        words = Layer(name='words',
+                      text_object=text,
+                      attributes=[],
+                      ambiguous=True
+                      )
+        sentences = Layer(name='sentences',
+                          text_object=text,
+                          attributes=[],
+                          enveloping='words',
+                          ambiguous=False
+                          )
+        normal_attributes = ['id', 'form', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps',
+                             'misc']
+        syntax = Layer(name=layer_name, attributes=normal_attributes, text_object=text)
+        compound_tokens = Layer(name='compound_tokens', attributes=['type', 'normalized'], text_object=text)
         for line_nr, line in enumerate(f):
 
             if 'sent_id' in line:

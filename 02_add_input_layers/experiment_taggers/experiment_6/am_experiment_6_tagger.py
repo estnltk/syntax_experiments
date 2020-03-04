@@ -53,10 +53,16 @@ class AMExperiment6Tagger(Tagger):
             feats = feats.split('|')
             new_feats = []
             cases = (
-            'nom', 'gen', 'part', 'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom', 'adit')
+                'nom', 'gen', 'part', 'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom', 'adit',
+                'Case=Nom', 'Case=Gen', 'Case=Par', 'Case=Ill', 'Case=Ine', 'Case=Ela', 'Case=All', 'Case=Add',
+                'Case=Abl',
+                'Case=Tra', 'Case=Ter', 'Case=Ess', 'Case=Abe', 'Case=Com', 'Case=Add')
             for feat in feats:
                 if feat in cases:
-                    new_feats.append('XX')
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
             feats = '|'.join(new_feats)

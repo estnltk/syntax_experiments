@@ -1,5 +1,3 @@
-import re
-
 from estnltk import ElementaryBaseSpan, Annotation, Layer
 from estnltk.taggers import Tagger
 
@@ -26,7 +24,7 @@ class GMExperiment6Tagger(Tagger):
         for basespan in text[self.input_layers[0]]:
             """
             käänded: 
-            
+
             nimetav - nominatiiv (nom), 
             omastav - genitiiv (gen), 
             osastav - partitiiv (part), 
@@ -47,12 +45,20 @@ class GMExperiment6Tagger(Tagger):
             new_span = ElementaryBaseSpan(basespan.start, basespan.end)
             feats = basespan.feats.split('|')
             new_feats = []
-            cases = ('nom', 'gen', 'part', 'ill', 'in', 'el', 'all', 'ad','abl', 'tr', 'term', 'es', 'abes', 'kom', 'adit')
+            cases = (
+                'nom', 'gen', 'part', 'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom', 'adit',
+                'Case=Nom', 'Case=Gen', 'Case=Par', 'Case=Ill', 'Case=Ine', 'Case=Ela', 'Case=All', 'Case=Add',
+                'Case=Abl',
+                'Case=Tra', 'Case=Ter', 'Case=Ess', 'Case=Abe', 'Case=Com', 'Case=Add')
             for feat in feats:
                 if feat in cases:
-                    new_feats.append('XX')
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
+
             feats = '|'.join(new_feats)
             attributes = {'id': basespan.id, 'form': basespan.text, 'lemma': basespan.lemma,
                           'upostag': basespan.upostag, 'xpostag': basespan.xpostag,

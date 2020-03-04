@@ -63,5 +63,3 @@ class AMExperiment1Tagger(Tagger):
 
     def __doc__(self):
         print("Experiment 1: kõik lemmad alles")
-
-

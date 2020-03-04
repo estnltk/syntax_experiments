@@ -28,11 +28,17 @@ class GMExperiment8_2Tagger(Tagger):
             new_span = ElementaryBaseSpan(basespan.start, basespan.end)
             feats = basespan.feats.split('|')
             new_feats = []
-            cases = (
-                'ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom')
+            cases = ('ill', 'in', 'el', 'all', 'ad', 'abl', 'tr', 'term', 'es', 'abes', 'kom',
+                     'Case=Ill', 'Case=Ine', 'Case=Ela', 'Case=All',
+                     'Case=Abl', 'Case=Ade',
+                     'Case=Tra', 'Case=Ter', 'Case=Ess', 'Case=Abe', 'Case=Com'
+                     )
             for feat in feats:
-                if feat  in cases:
-                    new_feats.append('XX')
+                if feat in cases:
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
             feats = '|'.join(new_feats)

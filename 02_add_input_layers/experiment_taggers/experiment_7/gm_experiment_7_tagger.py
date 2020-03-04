@@ -28,10 +28,14 @@ class GMExperiment7Tagger(Tagger):
             feats = basespan.feats.split('|')
             new_feats = []
             cases = (
-                'nom', 'gen', 'part', 'adit')
+                'nom', 'gen', 'part', 'adit',
+                'Case=Nom', 'Case=Gen', 'Case=Par', 'Case=Add')
             for feat in feats:
                 if feat in cases:
-                    new_feats.append('XX')
+                    if 'Case' in feat:
+                        new_feats.append('Case=XX')
+                    else:
+                        new_feats.append('XX')
                 else:
                     new_feats.append(feat)
             feats = '|'.join(new_feats)

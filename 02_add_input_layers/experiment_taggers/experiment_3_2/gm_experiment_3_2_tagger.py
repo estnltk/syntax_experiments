@@ -23,7 +23,7 @@ class GMExperiment3_2Tagger(Tagger):
 
         for basespan in text[self.input_layers[0]]:
             new_span = ElementaryBaseSpan(basespan.start, basespan.end)
-            lemma = 'XX' if basespan.upostag in ('S', 'A') else basespan.lemma
+            lemma = 'XX' if basespan.upostag in ('S', 'A', 'NOUN', 'ADJ') else basespan.lemma
             attributes = {'id': basespan.id, 'form': 'XX', 'lemma': lemma,
                           'upostag': basespan.upostag, 'xpostag': basespan.xpostag,
                           'feats': basespan.feats, 'head': basespan.head,
