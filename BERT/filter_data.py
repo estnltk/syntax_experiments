@@ -20,34 +20,38 @@ def filter_dataset(newfile, out_file, texts):
     for sent in text.sentences:
 
         col = []
-        for q in range(len(sent.text)): # getting conll_syntax for one sentence
+        for q in range(len(sent.text)):  # getting conll_syntax for one sentence
             col.append(text.conll_syntax[q + i])
 
-        all_texts, words, input_words = [], [], []
+        all_texts, words, input_words, all_correct_texts = [], [], [], []
         input_index = 0
         cor_word = None
-        for p, span in enumerate(col): # collecting all predicted words
+        for p, span in enumerate(col):  # collecting all predicted words
             if span.deps == 'CHANGED':
-                input_words = span.text.split('|') # 10 bert predicted words
+                input_words = span.text.split('|')  # 10 bert predicted words
                 input_index = p
-                cor_word = ''.join(span.misc.keys()) # original word
+                cor_word = ''.join(span.misc.keys())  # original word
             else:
                 words.append(span.text)
-        for word in input_words: # creating raw text, augmented ones and original
-            all_correct_texts.append(' '.join(words[0:input_index] + [cor_word] + words[input_index:])) # from original
-            all_texts.append(' '.join(words[0:input_index] + [word] + words[input_index:])) # new augmented texts
+        for word in input_words:  # creating raw text, augmented ones and original
+            all_correct_texts.append(' '.join(words[0:input_index] + [cor_word] + words[input_index:]))  # from original
+            all_texts.append(' '.join(words[0:input_index] + [word] + words[input_index:]))  # new augmented texts
 
         outoften = 0
+
         for raw_text, cor_raw in zip(all_texts, all_correct_texts):
             track = i
-            tcor = Text(cor_raw) # original sentence
+            tcor = Text(cor_raw)  # original sentence
             tokenizer.tag(tcor)
             tcor.analyse('morphology')
-            t = Text(raw_text) # new augmented word
+
+            t = Text(raw_text)  # new augmented word
             tokenizer.tag(t)
             t.analyse('morphology')
+
             can_add = False
             new_sentence = []
+
             for morph_an, tcorrect in zip(t.morph_analysis, tcor.morph_analysis):
                 gold = text.conll_syntax[track]
                 if gold.deps == 'CHANGED':
@@ -56,14 +60,20 @@ def filter_dataset(newfile, out_file, texts):
                         gold.misc.keys()), morph_an.text
                     if a_pos == gold_xpos and gold_form != bert_form:
                         can_add = True
-                        count_suitable += 1
+
                         outoften += 1
-                    newform = synthesize(morph_an.lemma[0], tcorrect.form[0])
-                    if newform == []:
-                        can_add = False
-                        newform = morph_an.text
+
+                    if tcorrect.form[0] != '':
+
+                        newform = synthesize(morph_an.lemma[0], tcorrect.form[0])
+                        if newform == []:
+                            can_add = False
+                            newform = morph_an.text
+                            count_suitable += 1
+                        else:
+                            newform = newform[0]
                     else:
-                        newform = newform[0]
+                        newform = morph_an.lemma[0]
                     feats = str('|'.join(gold.feats.keys())) if gold.feats != None else '_'
                     tostr = '\t'.join(
                         [str(gold.id), newform, morph_an.lemma[0], str(gold.upostag), str(gold.xpostag), feats,
@@ -82,12 +92,15 @@ def filter_dataset(newfile, out_file, texts):
                 for s in new_sentence:
                     f.write(s)
                 f.write('\n')
+                new_sentence = []
             else:
                 for s in new_sentence:
                     g.write(s)
                 g.write('\n')
         can_add_all.append(outoften)
         i += len(sent.words)
+    g.close()
+    f.close()
     return count_all, count_suitable, mixed_xpos, can_add_all
 
 
@@ -95,8 +108,8 @@ if __name__ == '__main__':
     i = sys.argv[1]
     texts = conll_to_texts_list('new_data/train_' + i + '_mod_newest_512_10.conllu')
     count_all, count_suitable, mixed_xpos, can_add_all = filter_dataset('train_data/train_' + i + '.conllu',
-                                                                                 'train_neg/train_' + i + '.conllu',
-                                                                                 texts)
+                                                                        'train_neg/train_' + i + '.conllu',
+                                                                        texts)
     with open('train_data/stat_' + i + '.txt', 'w', encoding='utf-8') as f:
         f.write('count all: ' + str(count_all) + '\n')
         f.write('count suitable ' + str(count_suitable) + '\n')
@@ -111,5 +124,3 @@ if __name__ == '__main__':
     plt.xlabel('Possible sentence count per one orig sentence')
     plt.ylabel('Count')
     plt.savefig('train_data/hist_' + i + '.png')
-
-
