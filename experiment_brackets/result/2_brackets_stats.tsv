@@ -1,0 +1,3 @@
+iteration	total_sentences	syntax_changed	syntax_conserved	allchanges
+1	10000	4145	5518	{}
+2	10000	4113	5517	{}
