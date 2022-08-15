@@ -18,7 +18,7 @@ class Cutter():
     __logger = None
     __stanza_tagger = None
     __Reader = None
-
+    __result_folder = None
 
     def logInfo(self, messages):
         self.__logger.info(messages)
@@ -33,7 +33,8 @@ class Cutter():
     __use_original_syntax = False
 
     def __init__(self,  **kwargs):
-        # create formatter and add it to the handlers
+
+        # create logging, formatter and add it to the handlers
         self.__logger = logging.getLogger('Cutter')
         self.__logger.propagate = False
 
@@ -60,6 +61,8 @@ class Cutter():
         else:
             self.__stanza_tagger  = kwargs['stanza_tagger']
 
+        if 'result_folder' in kwargs:
+            self.__result_folder = kwargs['result_folder']
         if 'use_prefilter' in kwargs and not kwargs['use_prefilter']:
             self.__use_prefilter  = False
         if 'use_filter' in kwargs and not kwargs['use_filter']:
@@ -101,16 +104,20 @@ class Cutter():
             Removes nodes with defined deprel from sentences
         """
         self.logInfo(f'Start cutting deprel: {deprel}')
-        #TODO safe folder name
-        timestr = time.strftime("%Y%m%d-%H%M%S")
-        folderpath = Cutter.slugify(f'{deprel}_{timestr}')
 
-        folder = f'./result/{folderpath}'
 
         emptyrow = ('', '', '',  )
         #loome kataloogid
-        Path("./result").mkdir(parents=True, exist_ok=True)
-        Path(folder).mkdir(parents=True, exist_ok=True)
+        if self.__result_folder:
+            Path(self.__result_folder).mkdir(parents=True, exist_ok=True)
+            folder = self.__result_folder
+        else:
+            #TODO safe folder name
+            timestr = time.strftime("%Y%m%d-%H%M%S")
+            folderpath = Cutter.slugify(f'{deprel}_{timestr}')
+            folder = f'./result/{folderpath}'
+            Path("./result").mkdir(parents=True, exist_ok=True)
+            Path(folder).mkdir(parents=True, exist_ok=True)
 
         outuputfile_Stats = f'{folder}/stats.tsv'
 
@@ -159,6 +166,7 @@ class Cutter():
                 g_origin = G.copy()
             else:
                 g_origin = sentence.Sentence.analyze_as_graph(sentence_text, self.__stanza_tagger )
+
             deprel_origin = sentence.Sentence.get_prop(g_origin, 'deprel')
 
             #kui deprel pole sees, siis ei kontrolli seda lauset
@@ -169,10 +177,12 @@ class Cutter():
             #
             stats['sentences_checked'] += 1
 
+            #teeme uue analüüsi
+
             #muudame  eemaldame puust vajalikud tipud
             #print ('----')
             #print(G.nodes)
-            g_short = self.cutSentence(G, deprel)
+            g_short = self.cutSentence(g_origin, deprel)
             #print(g_short.nodes)
 
 
