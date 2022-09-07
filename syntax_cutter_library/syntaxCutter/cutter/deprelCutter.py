@@ -25,8 +25,10 @@ class Cutter():
 
     # rakenda filter juba olemasolevale süntaktilisele märgendusele
     __use_prefilter = True
+
     # rakenda filter uuele süntaktilisele märgendusele
     __use_filter = True
+
     # kasuta ainult originaalset süntaktilist märgendust, ei tee enne lühendamist
     # analüüsi stanza'ga üle
     # nt tuleb kasutada käsitsi märgendatud korpuste korral
@@ -71,41 +73,57 @@ class Cutter():
             self.__use_original_syntax  = True
 
 
-    def pre_filter(self, G, deprel):
+    def pre_filter(self, G, deprels):
         """
             Returns True if sentence has to be filtered out
         """
         deprel_pre =  " ".join(sentence.Sentence.get_prop(G, 'deprel'))
-        if not deprel in deprel_pre:
-            return True
+        for d in deprels:
+            if d in deprel_pre:
+                return False
         else:
-            return False
+            return True
 
-    def filter(self, G, deprel):
+    def filter(self, G, deprels):
         """
             Returns True if sentence has to be filtered out
         """
         deprel_pre =  " ".join(sentence.Sentence.get_prop(G, 'deprel'))
-        if not deprel in deprel_pre:
-            return True
+        for d in deprels:
+            if d in deprel_pre:
+                return False
         else:
-            return False
+            return True
 
-    def cutSentence(self, G, deprel):
+    def cutSentence(self, G, deprels):
         """
             Removes defined deprel out of sentence
             Saves sentences in tsv files
         """
-        return sentence.Sentence.remove_deprel(G, deprel)
+        return sentence.Sentence.remove_deprel(G, deprels)
 
 
-    def cut(self, deprel):
+    def cut(self, **kwargs):
         """
-            Removes nodes with defined deprel from sentences
+            Removes nodes with defined deprels from sentences
         """
-        self.logInfo(f'Start cutting deprel: {deprel}')
+
+        if 'deprel' in kwargs:
+            deprels = [kwargs['deprel']]
+        if 'deprels' in kwargs and isinstance(kwargs['deprels'], str):
+            deprels = [kwargs['deprels']]
+        elif 'deprels' in kwargs:
+            deprels = kwargs['deprels']
+
+        #unikaalne list
+        deprels = list(set(deprels))
+
+        if 'use_prefilter' in kwargs and not kwargs['use_prefilter']:
+            self.__use_prefilter  = False
 
 
+        self.logInfo(f'Start cutting deprel: {deprels}')
+        deprel_str = '__'.join(deprels)
         emptyrow = ('', '', '',  )
         #loome kataloogid
         if self.__result_folder:
@@ -114,7 +132,7 @@ class Cutter():
         else:
             #TODO safe folder name
             timestr = time.strftime("%Y%m%d-%H%M%S")
-            folderpath = Cutter.slugify(f'{deprel}_{timestr}')
+            folderpath = Cutter.slugify(f'{deprel_str}_{timestr}')
             folder = f'./result/{folderpath}'
             Path("./result").mkdir(parents=True, exist_ok=True)
             Path(folder).mkdir(parents=True, exist_ok=True)
@@ -159,7 +177,7 @@ class Cutter():
             sentence_text = " ".join(sentence.Sentence.get_prop(G, 'form'))
             deprel_pre =  " ".join(sentence.Sentence.get_prop(G, 'deprel'))
 
-            if self.__use_prefilter and self.pre_filter(G, deprel):
+            if self.__use_prefilter and self.pre_filter(G, deprels):
                 stats['sentences_ignored'] += 1
                 continue
             if self.__use_original_syntax:
@@ -171,7 +189,7 @@ class Cutter():
 
             #kui deprel pole sees, siis ei kontrolli seda lauset
             #TODO kirjutada üldisem pre_filter funktsioon, mida saab alamklassis üle kirjutada
-            if self.__use_filter and self.filter(G, deprel):
+            if self.__use_filter and self.filter(G, deprels):
                 stats['sentences_ignored'] += 1
                 continue
             #
@@ -182,7 +200,7 @@ class Cutter():
             #muudame  eemaldame puust vajalikud tipud
             #print ('----')
             #print(G.nodes)
-            g_short = self.cutSentence(g_origin, deprel)
+            g_short = self.cutSentence(g_origin, deprels)
             #print(g_short.nodes)
 
 
@@ -273,7 +291,7 @@ class Cutter():
 
         f_Stats.close()
 
-        self.logInfo(f'Done cutting deprel  {deprel} .')
+        self.logInfo(f'Done cutting deprel  {deprels} .')
         self.logInfo(f'Stats stored in {filenameStats} .')
 
 

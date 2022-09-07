@@ -245,15 +245,23 @@ class Sentence(nx.DiGraph):
 
         return G
 
-    def remove_deprel(G, rem_deprel):
-        """Eemaldab süntaksippust etteantud deprel'iga tipud ja nende järglased"""
+    def remove_deprel(G, rem_deprels):
 
+        """Eemaldab süntaksippust etteantud deprel'idega tipud ja nende järglased"""
+        if isinstance(rem_deprels, str):
+            rem_deprels = [rem_deprels]
+
+        #list unikaalseks
+        rem_deprels = list(set(rem_deprels))
         G = G.copy()
         #originaallause graaf
         G_original = G.copy()
 
         #tipud eemaldatava depreliga
-        rem_deprel_nodes = Sentence.get_nodes_by_attributes(G, 'deprel', rem_deprel)
+
+        rem_deprel_nodes = []
+        for d in rem_deprels:
+            rem_deprel_nodes = rem_deprel_nodes + Sentence.get_nodes_by_attributes(G, 'deprel', d)
 
         # lemmade nimekiri praegu ei kasuta, vb tuleb t2psustada, mis lemmat eemaldame
         # näiteks, antud juhul võibolla tahame eemaldada ainult seda advmodi, kus on kui-le järgnev sõna või kui
