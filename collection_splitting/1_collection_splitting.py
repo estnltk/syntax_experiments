@@ -6,7 +6,7 @@ import argparse
 import os
 
 # example: python 1_collection_splitting.py 2 0 conf.ini 
-# processes textx 0, 2, 4, ...
+# processes texts 0, 2, 4, ...
 
 parser = argparse.ArgumentParser()
 parser.add_argument("module", help="Module for BlockQuery. Selecting texts with text_id % module == remainder.", type=int)
@@ -45,7 +45,6 @@ source_storage = PostgresStorage(host=config["source_database"]["host"],
                           dbname=config["source_database"]["database_name"],
                           user=config["source_database"]["username"],
                           password=config["source_database"]["password"],
-                          pgpass_file='~/.pgpass',
                           schema=config["source_database"]["work_schema"], 
                           role=config["source_database"]["role"],
                           temporary=False)
@@ -58,7 +57,6 @@ target_storage = PostgresStorage(host=config["target_database"]["host"],
                           dbname=config["target_database"]["database_name"],
                           user=config["target_database"]["username"],
                           password=config["target_database"]["password"],
-                          pgpass_file='~/.pgpass',
                           schema=config["target_database"]["work_schema"], 
                           role=config["target_database"]["role"],
                           temporary=False)
@@ -71,7 +69,7 @@ except Exception as e: #psycopg2.errors.DuplicateSchema
 
 # create collection
 try:
-    target_storage[config["target_database"]["collection"]].create(description='5000 texts split into sentences (based on v2)', meta={'text_no': 'int', 'sent_start': 'int', 'sent_end': 'int'})
+    target_storage[config["target_database"]["collection"]].create(description='5000 texts split into sentences (based on v2)', meta={'text_no': 'int', 'sent_start': 'int', 'sent_end': 'int', 'subcorpus':'str', 'file': 'str', 'title': 'str', 'type': 'str'})
 except Exception as e: # psycopg2.errors.DuplicateTable
     #print("Exception: ", str(e).strip(), ". Moving on.")
     pass
@@ -92,6 +90,10 @@ try:
                 sent.meta['text_no'] = text_id
                 sent.meta['sent_start'] = sentence_starts[sent_counter]
                 sent.meta['sent_end'] = sentence_ends[sent_counter]
+                sent.meta['subcorpus'] = text_obj.meta["subcorpus"]
+                sent.meta['file'] = text_obj.meta["file"]
+                sent.meta['title'] = text_obj.meta["title"]
+                sent.meta['type'] = text_obj.meta["type"]
                 collection_insert(sent, meta_data=sent.meta)
 
                 sent_counter += 1
