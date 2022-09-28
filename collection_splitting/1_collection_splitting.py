@@ -1,25 +1,21 @@
 from estnltk import Text, logger
-from estnltk.storage.postgres import PostgresStorage, create_schema, delete_schema
-from estnltk.layer_operations import split_by
+from estnltk.storage.postgres import PostgresStorage, create_schema, BlockQuery
+from estnltk_core.layer_operations import split_by_sentences
 from read_config import read_config
 import argparse
 import os
 
-# example: python 1_collection_splitting.py 0 5 conf.ini 
-# processes textx 0, 1, 2, 3, 4
+# example: python 1_collection_splitting.py 2 0 conf.ini 
+# processes textx 0, 2, 4, ...
 
-parser = argparse.ArgumentParser() # description="Number of texts (start and end) to be processed"
-parser.add_argument("start", help="First text to be processed.", type=int)
-parser.add_argument("end", help="Last text to be processed. The text with that index is not included in the processing.", type=int)
-parser.add_argument("file", help="ini file name.", type=str)
+parser = argparse.ArgumentParser()
+parser.add_argument("module", help="Module for BlockQuery. Selecting texts with text_id % module == remainder.", type=int)
+parser.add_argument("remainder", help="Remainder for BlockQuery. Selecting texts with text_id % module == remainder.", type=int)
+parser.add_argument("file", help="Configuration ini file name.", type=str)
 args = vars(parser.parse_args())
 
-start = args["start"]
-end = args["end"]
-
-if start > end:
-    print("PROGRAM ERROR: Program stopped. Starting index should be smaller than end index!")
-    raise SystemExit
+module = args["module"]
+remainder = args["remainder"]
 
 # read configuration
 root = os.getcwd()
@@ -27,6 +23,9 @@ file_name = args["file"]
 if os.path.isfile(file_name):
     fname = os.path.basename(file_name).split('/')[-1]
     config = read_config(fname, file_name)
+else:
+    print("Could not find the specified configuration file.")
+    raise SystemExit
 
 # check necessary fields
 for option in ["host", "port", "database_name", "username", "password", "work_schema", "role", "collection"]:
@@ -52,11 +51,6 @@ source_storage = PostgresStorage(host=config["source_database"]["host"],
                           temporary=False)
 
 source_collection = source_storage[config["source_database"]["collection"]]
-
-collection_size = len(source_collection)
-if end > collection_size:
-    end = collection_size
-    #print(f'PROGRAM INFO: given last text index is out of range. Collection has {collection_size} texts. Texts up to the last index will be processed.')
 
 # database where the sentences will be saved
 target_storage = PostgresStorage(host=config["target_database"]["host"],
@@ -86,30 +80,25 @@ collection = target_storage[config["target_database"]["collection"]]
 
 # split texts and save sentences
 try:
-    txt_id = start # counter of text id-s
-    for txt in source_collection[start:end]:
-        analysed = Text(txt.text).analyse("all")
-        # get starts and ends of sentences
-        sentence_starts = analysed.sentences['start']
-        sentence_ends = analysed.sentences['end']
+    for text_id, text_obj in source_collection.select(BlockQuery(module,remainder)):
+        analysed = Text(text_obj.text).tag_layer(['paragraphs','morph_extended'])
+        sentence_starts = [span.start for span in analysed.sentences]
+        sentence_ends = [span.end for span in analysed.sentences]
 
-        sentences = split_by(analysed, "sentences")
-
+        sentences = split_by_sentences(analysed, layers_to_keep=list(analysed.layers))
         with collection.insert() as collection_insert:
-            # sent_counter is for accessing the correct starts and ends
             sent_counter = 0
             for sent in sentences:
-                sent.meta['text_no'] = txt_id
+                sent.meta['text_no'] = text_id
                 sent.meta['sent_start'] = sentence_starts[sent_counter]
                 sent.meta['sent_end'] = sentence_ends[sent_counter]
                 collection_insert(sent, meta_data=sent.meta)
 
                 sent_counter += 1
-        txt_id += 1
+
 except Exception as e: 
     print("Problem during splitting and saving sentences: ", str(e).strip())
     target_storage.close()
-    source_storage.close()
     raise SystemExit
 
 target_storage.close()
