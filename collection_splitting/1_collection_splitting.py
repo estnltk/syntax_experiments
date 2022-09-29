@@ -79,7 +79,7 @@ collection = target_storage[config["target_database"]["collection"]]
 # split texts and save sentences
 try:
     for text_id, text_obj in source_collection.select(BlockQuery(module,remainder)):
-        analysed = Text(text_obj.text).tag_layer(['paragraphs','morph_extended'])
+        analysed = Text(text_obj.text).tag_layer(['sentences','morph_extended'])
         sentence_starts = [span.start for span in analysed.sentences]
         sentence_ends = [span.end for span in analysed.sentences]
 
