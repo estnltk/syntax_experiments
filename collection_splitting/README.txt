@@ -1,4 +1,4 @@
-Script 1_collection_splitting.py takes 3 arguments:
+## Script 1_collection_splitting.py takes 3 arguments:
 module and remainder for BlockQuery, and the name/path of configuration file. 
 
 The indexing of texts starts with 0.
@@ -12,3 +12,15 @@ python 1_collection_splitting.py 2 1 conf.ini
 
 Configuration file should have sections "source_database" and "target_database". Both sections should have fields: host, port, database_name, username, password, work_schema, role and collection filled out. Source database is where the texts will be read from and target database is where the sentences will be saved.
 The configuration file name can be given without path (if conf.ini file is in the same folder as script) or with full path.
+
+
+
+## Script 2_add_stanza_syntax_layer.py takes the same agruments as script 1.
+
+Additional needed section "stanza_syntax" with field "model_path" has to be defined.
+Model path should be defined as:
+model_path=r"path\to\stanza\syntax\tagger"
+
+example:
+python 2_add_stanza_syntax_layer.py 2 0 conf.ini 
+tags texts 0, 2, 4, ...
