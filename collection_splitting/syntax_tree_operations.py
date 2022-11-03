@@ -9,6 +9,7 @@ from textwrap import wrap
 
 from estnltk import Text
 
+
 def get_shortest_paths(G):
     """lyhim tee graafi tippude vahel ning nn reversed kaartega graafist sama"""
     # lyhim tee tippude vahel
@@ -38,6 +39,14 @@ def get_nodes_by_attributes(self,  attrname, attrvalue ):
     if attrvalue in nodes:
         return dict(nodes)[attrvalue]
     return []
+
+
+def get_all_decendants(graph, node):
+    #return graph.successors(node) # annab ainult ühe otsese järglase
+    return nx.nodes(nx.dfs_tree(graph, node))
+
+
+
 
 
 

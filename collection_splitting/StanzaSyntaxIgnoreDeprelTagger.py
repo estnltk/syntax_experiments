@@ -15,7 +15,7 @@ from estnltk import Text
 from scripts.syntax_tree import SyntaxTree 
 from scripts.syntax_tree_operations import *
 import networkx as nx
-
+from estnltk import Span, EnvelopingSpan, EnvelopingBaseSpan, BaseSpan
 
 
 class StanzaSyntaxIgnoreDeprelTagger(Tagger):
@@ -171,38 +171,30 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
             raise SystemExit('Input consist of more than 1 sentence.')
                
         # create syntax tree
-        syntaxtree = SyntaxTree.make_graph_from_layer(input_stanza_syntax_layer)
+        syntaxtree = SyntaxTree(syntax_layer_sentence=input_stanza_syntax_layer)
         
-        # remove deprel with children 
-        tree_short = remove_deprel(syntaxtree, [self.deprel])
+        ignore_nodes = get_nodes_by_attributes( syntaxtree.graph, 'deprel', self.deprel )
         
-        #removed nodes' id-s
-        nodes_diff = get_nodes_diff(syntaxtree, tree_short)
+        sub_nodes = []
+        for node in ignore_nodes:
+            # get all successors
+            sub_nodes = sub_nodes + list(get_all_decendants(syntaxtree.graph, node))
+            
+            # corresponding spans for the sub_nodes
+            sub_spans = [spn for spn in input_stanza_syntax_layer for sn in sub_nodes if spn.id == sn]
+            for bs in sub_spans:              
+                feats = OrderedDict()  # Stays this way if word has no features.
+                if 'feats' in input_stanza_syntax_layer.attributes:
+                    feats = bs['feats']
 
-        # nodes that are after the removed nodes but remained (for fixing spans)
-        if nodes_diff:                       
-            # add spans that were removed and have to have the original data
-            for span in input_stanza_syntax_layer:
-                
-                orig_id = span["id"] 
-                if orig_id in nodes_diff:
-                    id = orig_id 
-                    status = "removed"
-                    lemma = span['lemma'] 
-                    upostag = span['upostag'] 
-                    xpostag = span['xpostag'] 
-                    feats = OrderedDict()  # Stays this way if word has no features.
-                    if 'feats' in input_stanza_syntax_layer.attributes:
-                        feats = span['feats']
-                    head = span['head'] 
-                    deprel = span['deprel']
-                    
-                    attributes = {'id': id, 'lemma': lemma, 'upostag': upostag, 'xpostag': xpostag, 'feats': feats,
-                              'head': head, 'deprel': deprel, "status": status, 'deps': '_', 'misc': '_'}
-                    
-                    layer.add_annotation(span, **attributes)
+                attributes = {'id': bs['id'], 'lemma': bs['lemma'], 'upostag':  bs['upostag'] , 'xpostag': bs['xpostag'] , 
+                            'feats': feats, 'head': bs['head'], 'deprel': bs['deprel'], "status": "removed", 'deps': '_', 'misc': '_'}
 
-                
+                new_span = EnvelopingSpan(bs.base_span, layer=layer)
+                layer.add_annotation(new_span, **attributes)
+
+
+
         if self.add_parent_and_children:
             # Add 'parent_span' & 'children' to the syntax layer.
             #print(self.output_layer, layer)
