@@ -11,10 +11,12 @@ from estnltk.converters.serialisation_modules import syntax_v0
 from estnltk.downloader import get_resource_paths
 
 from estnltk import Text
-from scripts.cutter import Cutter
-from scripts.oreader import oReader
 
-from estnltk_core.layer.annotation import Annotation
+from scripts.syntax_tree import SyntaxTree 
+from scripts.syntax_tree_operations import *
+import networkx as nx
+
+
 
 class StanzaSyntaxIgnoreDeprelTagger(Tagger):
     """
@@ -24,15 +26,15 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
     
     conf_param = ['model_path', 'add_parent_and_children', 'syntax_dependency_retagger',
                   'input_type', 'dir', 'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger',
-                  'ud_validation_retagger', 'use_gpu', 'nlp', "deprel", "stanza_tagger"]
+                  'ud_validation_retagger', 'use_gpu', 'nlp', "deprel"]
 
     def __init__(self,
                  output_layer='stanza_syntax_ignore_deprel',
                  sentences_layer='sentences',
                  words_layer='words',
                  input_morph_layer='morph_analysis',
-                 stanza_syntax_layer = "stanza_syntax",
-                 input_type='morph_extended',  # or 'morph_extended', 'sentences'
+                 input_stanza_syntax_layer = "stanza_syntax",
+                 input_type='stanza_syntax',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
                  depparse_path=None,
                  resources_path=None,
@@ -40,8 +42,6 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
                  mark_agreement_error=False,
                  use_gpu=False,
                  deprel = None,
-                 stanza_tagger = None
-                 
                  ):
         # Make an internal import to avoid explicit stanza dependency
         import stanza
@@ -55,10 +55,6 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
         self.input_type = input_type
         self.use_gpu = use_gpu
         self.deprel = deprel 
-        self.stanza_tagger = stanza_tagger 
-        
-        
-        
 
         if not resources_path:
             # Try to get the resources path for stanzasyntaxtagger. Attempt to download resources, if missing
@@ -134,7 +130,7 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
             # information about downloading model
 
         elif self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
-            self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer]
+            self.input_layers = [sentences_layer, input_morph_layer, words_layer, input_stanza_syntax_layer]
             self.nlp = stanza.Pipeline(lang='et', processors='depparse',
                                        dir=self.dir,
                                        depparse_pretagged=True,
@@ -164,50 +160,47 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
         rand = Random()
         rand.seed(4)
         
-        stanza_syntax_layer = layers[self.input_layers[3]]
+        input_stanza_syntax_layer = layers[self.input_layers[3]]
         
         layer = self._make_layer_template()
-        # terve tekst panna (originaal), seda ei tohiks muuta 
         layer.text_object=text
+                
+        if "stanza_syntax" not in text.layers:
+            raise SystemExit('Text object is missing stanza_syntax layer.')
+        if len(text.sentences) > 1:
+            raise SystemExit('Input consist of more than 1 sentence.')
+               
+        # create syntax tree
+        syntaxtree = SyntaxTree.make_graph_from_layer(input_stanza_syntax_layer)
         
+        # remove deprel with children 
+        tree_short = remove_deprel(syntaxtree, [self.deprel])
         
-        # remove the deprel 
-        reader = oReader(stanza_syntax_layer)
-        oCutter = Cutter(stanza_tagger=self.stanza_tagger, Reader=reader)
-        res = oCutter.cut(deprel=self.deprel)
-        
-        short_sent = res[0]
-        ignore_nodes = res[1]
-        
+        #removed nodes' id-s
+        nodes_diff = get_nodes_diff(syntaxtree, tree_short)
+
         # nodes that are after the removed nodes but remained (for fixing spans)
-        if ignore_nodes:                       
+        if nodes_diff:                       
             # add spans that were removed and have to have the original data
-            #for line, span in zip(extracted_data, parent_layer):
-            for span in stanza_syntax_layer:
-                #print(span.attributes)
-                orig_id = span["id"] #line['id']
-                if orig_id in ignore_nodes:
-                    id = orig_id  #int("10" + str(orig_id)) #
+            for span in input_stanza_syntax_layer:
+                
+                orig_id = span["id"] 
+                if orig_id in nodes_diff:
+                    id = orig_id 
                     status = "removed"
-                    lemma = span['lemma'] #line['lemma']
-                    upostag = span['upostag'] #line['upos']
-                    xpostag = span['xpostag'] #line['xpos']
+                    lemma = span['lemma'] 
+                    upostag = span['upostag'] 
+                    xpostag = span['xpostag'] 
                     feats = OrderedDict()  # Stays this way if word has no features.
-                    #if 'feats' in line.keys():
-                    #    feats = feats_to_ordereddict(line['feats'])
-                    if 'feats' in stanza_syntax_layer.attributes:
-                        #print(line['feats'])
+                    if 'feats' in input_stanza_syntax_layer.attributes:
                         feats = span['feats']
-                    head = span['head'] #int("10" + str(span['head'])) #
+                    head = span['head'] 
                     deprel = span['deprel']
                     
                     attributes = {'id': id, 'lemma': lemma, 'upostag': upostag, 'xpostag': xpostag, 'feats': feats,
                               'head': head, 'deprel': deprel, "status": status, 'deps': '_', 'misc': '_'}
-                    #print("vana ", span, "\n")
-                    layer.add_annotation(span, **attributes)
-                    #print(layer)
-                    #print("################")
                     
+                    layer.add_annotation(span, **attributes)
 
                 
         if self.add_parent_and_children:
