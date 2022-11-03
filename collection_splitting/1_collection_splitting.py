@@ -8,7 +8,7 @@ import os
 # example: python 1_collection_splitting.py 2 0 conf.ini 
 # processes texts 0, 2, 4, ...
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description = 'Splits the texts in coprus into sentences and saves each sentence as separetely with: text number, text type, text title, text file, text subcoprus, sentence start and sentence end. The target schema for saving sentences has to exist beforehand.')
 parser.add_argument("module", help="Module for BlockQuery. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("remainder", help="Remainder for BlockQuery. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("file", help="Configuration ini file name.", type=str)
@@ -61,18 +61,10 @@ target_storage = PostgresStorage(host=config["target_database"]["host"],
                           role=config["target_database"]["role"],
                           temporary=False)
 
-try:
-    create_schema(target_storage)
-except Exception as e: #psycopg2.errors.DuplicateSchema
-    #print("Exception: ", str(e).strip(), ". Moving on to creating collection.")
-    pass
-
-# create collection
-try:
+# create collection if needed
+if config["target_database"]["collection"] not in target_storage.collections:
     target_storage[config["target_database"]["collection"]].create(description='5000 texts split into sentences (based on v2)', meta={'text_no': 'int', 'sent_start': 'int', 'sent_end': 'int', 'subcorpus':'str', 'file': 'str', 'title': 'str', 'type': 'str'})
-except Exception as e: # psycopg2.errors.DuplicateTable
-    #print("Exception: ", str(e).strip(), ". Moving on.")
-    pass
+
     
 collection = target_storage[config["target_database"]["collection"]]
 
@@ -99,7 +91,7 @@ try:
                 sent_counter += 1
 
 except Exception as e: 
-    print("Problem during splitting and saving sentences: ", str(e).strip())
+    print(f"Problem during splitting and saving sentences with text id {text_id}: ", str(e).strip())
     target_storage.close()
     raise SystemExit
 
