@@ -175,9 +175,7 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
         
         ignore_nodes = get_nodes_by_attributes( syntaxtree, 'deprel', self.deprel )
         
-        #sub_nodes = []
         for node in ignore_nodes:
-            
             new_span = EnvelopingBaseSpan(get_subtree_spans(syntaxtree, input_stanza_syntax_layer, node))            
             layer.add_annotation(new_span, **{"entity_type":"", "free_entity":""})
 
