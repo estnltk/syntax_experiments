@@ -51,7 +51,7 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
         self.mark_agreement_error = mark_agreement_error
         self.deprel = deprel
         self.output_layer = output_layer
-        self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
+        self.output_attributes = ("entity_type", "free_entity", 'id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
         self.input_type = input_type
         self.use_gpu = use_gpu
         self.deprel = deprel 
