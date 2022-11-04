@@ -86,7 +86,6 @@ class Sentence(nx.DiGraph):
         """stanza stanza_syntax objektist graafi tegemine"""
         G = Sentence()
         for data in sentence:
-            #print (data)
             if isinstance(data['id'], int):
                 #paneme graafi kokku
                 G.add_node(data['id'], id=data['id'], lemma=data['lemma'], pos=data['upostag'], deprel=data['deprel'], form=data.text)
@@ -113,6 +112,23 @@ class Sentence(nx.DiGraph):
     def get_nodes_diff(graph1, graph2):
         """leiab, millised tipud suuremast graafist1 on puudu graafis2"""
         return [ node for node in graph1 if not node in graph2 ]
+
+    def get_clauses(self):
+        """tagastab osalausete graafid"""
+        clauses = {}
+
+        for n in self.nodes:
+            if n==0:
+                continue
+            if not 'clause' in self.nodes[n]:
+                raise Exception("There is no clause information in the current sentence:", self.nodes[n])
+            if not self.nodes[n]['clause'] in clauses:
+                clauses[self.nodes[n]['clause']] = []
+            clauses[self.nodes[n]['clause']].append(n)
+        clausesGraphs = []
+        for  cl in clauses:
+            clausesGraphs.append(self.subgraph(clauses[cl]))
+        return clausesGraphs
 
 
     ### eemaldamise funktsioonid
@@ -291,6 +307,7 @@ class Sentence(nx.DiGraph):
         """Analüüsib lauseteksti, teeb uue graafi"""
         short_sent_txt = Text(text)
         short_sent_txt.analyse('all')
+        #short_sent_txt.tag_layer('clauses')
         stanza_tagger.tag(short_sent_txt)
         new_graph = Sentence.make_graph_stanza(short_sent_txt.stanza_syntax)
         return new_graph
