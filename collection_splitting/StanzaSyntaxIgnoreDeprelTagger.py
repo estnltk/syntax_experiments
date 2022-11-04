@@ -142,14 +142,14 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
 
     def _make_layer_template(self):
         """Creates and returns a template of the layer."""
-        #print(self.output_layer)
         layer = Layer(name=self.output_layer,
                       text_object=None,
                       attributes=self.output_attributes,
-                      parent=self.input_layers[3],
+                      enveloping=self.input_layers[1],
                       ambiguous=False )
         if self.add_parent_and_children:
             layer.serialisation_module = syntax_v0.__version__
+
         return layer
 
 
@@ -173,26 +173,13 @@ class StanzaSyntaxIgnoreDeprelTagger(Tagger):
         # create syntax tree
         syntaxtree = SyntaxTree(syntax_layer_sentence=input_stanza_syntax_layer)
         
-        ignore_nodes = get_nodes_by_attributes( syntaxtree.graph, 'deprel', self.deprel )
+        ignore_nodes = get_nodes_by_attributes( syntaxtree, 'deprel', self.deprel )
         
-        sub_nodes = []
+        #sub_nodes = []
         for node in ignore_nodes:
-            # get all successors
-            sub_nodes = sub_nodes + list(get_all_decendants(syntaxtree.graph, node))
             
-            # corresponding spans for the sub_nodes
-            sub_spans = [spn for spn in input_stanza_syntax_layer for sn in sub_nodes if spn.id == sn]
-            for bs in sub_spans:              
-                feats = OrderedDict()  # Stays this way if word has no features.
-                if 'feats' in input_stanza_syntax_layer.attributes:
-                    feats = bs['feats']
-
-                attributes = {'id': bs['id'], 'lemma': bs['lemma'], 'upostag':  bs['upostag'] , 'xpostag': bs['xpostag'] , 
-                            'feats': feats, 'head': bs['head'], 'deprel': bs['deprel'], "status": "removed", 'deps': '_', 'misc': '_'}
-
-                new_span = EnvelopingSpan(bs.base_span, layer=layer)
-                layer.add_annotation(new_span, **attributes)
-
+            new_span = EnvelopingBaseSpan(get_subtree_spans(syntaxtree, input_stanza_syntax_layer, node))            
+            layer.add_annotation(new_span, **{"entity_type":"", "free_entity":""})
 
 
         if self.add_parent_and_children:
