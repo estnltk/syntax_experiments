@@ -15,7 +15,7 @@ import networkx as nx
 from estnltk import EnvelopingBaseSpan
 
 
-class StanzaSyntaxIgnoreDeprelTagger(Tagger):
+class EntityTagger(Tagger):
     """
     This is a deprel ignore tagger applied to stanza_syntax layer that creates a new layer 
     from the spans that should be removed if words with given deprels are removed.
