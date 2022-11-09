@@ -21,16 +21,15 @@ class EntityTagger(Tagger):
     from the spans that should be removed if words with given deprels are removed.
     """
     
-    conf_param = ['input_type',  'use_gpu', 'nlp', "deprel"]
+    conf_param = ['input_type',  "deprel"]
 
     def __init__(self,
                  output_layer='stanza_syntax_ignore_entity',
                  sentences_layer='sentences',
                  words_layer='words',
-                 input_morph_layer='morph_analysis',
-                 input_stanza_syntax_layer = "stanza_syntax",
+                 morph_layer='morph_analysis',
+                 stanza_syntax_layer = "stanza_syntax",
                  input_type='stanza_syntax',  # or 'morph_extended', 'sentences'                
-                 use_gpu=False,
                  deprel = None,
                  ):
         # Make an internal import to avoid explicit stanza dependency
@@ -38,20 +37,14 @@ class EntityTagger(Tagger):
 
         self.deprel = deprel
         self.output_layer = output_layer
-        self.output_attributes = ('entity_type', 'free_entity', 'id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
+        self.output_attributes = ('entity_type', 'free_entity', 'is_valid')
         self.input_type = input_type
-        self.use_gpu = use_gpu
-        self.deprel = deprel 
-
-        if self.input_type not in ['sentences', 'morph_analysis', 'morph_extended', "stanza_syntax"]:
-            raise ValueError('Invalid input type {}'.format(input_type))
-                
+        self.deprel = deprel
+    
         if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
-            self.input_layers = [sentences_layer, input_morph_layer, words_layer, input_stanza_syntax_layer]
-            self.nlp = stanza.Pipeline(lang='et', processors='depparse',
-                                       depparse_pretagged=True,
-                                       use_gpu=self.use_gpu,
-                                       logging_level='WARN')
+            self.input_layers = [sentences_layer, morph_layer, words_layer, stanza_syntax_layer]
+        else:
+            raise ValueError('Invalid input type {}'.format(input_type))
 
 
     def _make_layer_template(self):
@@ -65,27 +58,21 @@ class EntityTagger(Tagger):
 
 
     def _make_layer(self, text, layers, status=None):
-        # Make an internal import to avoid explicit stanza dependency
         
-        rand = Random()
-        rand.seed(4)
-        
-        input_stanza_syntax_layer = layers[self.input_layers[3]]
+        stanza_syntax_layer = layers[self.input_layers[3]]
         
         layer = self._make_layer_template()
         layer.text_object=text
-                
-        if "stanza_syntax" not in text.layers:
-            raise SystemExit('Text object is missing stanza_syntax layer.')
+        
         if len(text.sentences) > 1:
             raise SystemExit('Input consist of more than 1 sentence.')
                
         # create syntax tree
-        syntaxtree = SyntaxTree(syntax_layer_sentence=input_stanza_syntax_layer)       
+        syntaxtree = SyntaxTree(syntax_layer_sentence=stanza_syntax_layer)       
         ignore_nodes = get_nodes_by_attributes( syntaxtree, 'deprel', self.deprel )
         
         for node in ignore_nodes:
-            new_span = EnvelopingBaseSpan(get_subtree_spans(syntaxtree, input_stanza_syntax_layer, node))            
-            layer.add_annotation(new_span, **{"entity_type":None, "free_entity":None})
+            new_span = EnvelopingBaseSpan(get_subtree_spans(syntaxtree, stanza_syntax_layer, node))            
+            layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None)
 
         return layer
