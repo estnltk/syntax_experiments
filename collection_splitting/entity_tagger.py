@@ -21,10 +21,10 @@ class EntityTagger(Tagger):
     from the spans that should be removed if words with given deprels are removed.
     """
     
-    conf_param = ['syntax_dependency_retagger', 'input_type',  'use_gpu', 'nlp', "deprel"]
+    conf_param = ['input_type',  'use_gpu', 'nlp', "deprel"]
 
     def __init__(self,
-                 output_layer='stanza_syntax_ignore_deprel',
+                 output_layer='stanza_syntax_ignore_entity',
                  sentences_layer='sentences',
                  words_layer='words',
                  input_morph_layer='morph_analysis',
@@ -66,7 +66,6 @@ class EntityTagger(Tagger):
 
     def _make_layer(self, text, layers, status=None):
         # Make an internal import to avoid explicit stanza dependency
-        from stanza.models.common.doc import Document
         
         rand = Random()
         rand.seed(4)
