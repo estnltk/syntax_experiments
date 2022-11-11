@@ -4,6 +4,7 @@ from random import Random
 
 from estnltk import Layer
 from estnltk.taggers.standard.syntax.syntax_dependency_retagger import SyntaxDependencyRetagger
+from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
 from estnltk.taggers.standard.syntax.ud_validation.deprel_agreement_retagger import DeprelAgreementRetagger
 from estnltk.taggers.standard.syntax.ud_validation.ud_validation_retagger import UDValidationRetagger
 from estnltk.taggers import Tagger
@@ -13,20 +14,20 @@ from estnltk.downloader import get_resource_paths
 from estnltk import Text
 
 
-class StanzaSyntaxRemoveDeprelTagger(Tagger):
+class StanzaSyntaxIgnoreTagger(Tagger):
     """This is a deprel ignore tagger applied to morph_extended layer that creates"""
     
     conf_param = ['model_path', 'add_parent_and_children', 'syntax_dependency_retagger',
                   'input_type', 'dir', 'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger',
-                  'ud_validation_retagger', 'use_gpu', 'nlp', "deprel", "stanza_tagger"]
+                  'ud_validation_retagger', 'use_gpu', 'nlp', 'resources_path']
 
     def __init__(self,
-                 output_layer='stanza_syntax_removed_deprel',
+                 output_layer='stanza_syntax_without_entity',
                  sentences_layer='sentences',
                  words_layer='words',
                  input_morph_layer='morph_analysis',
                  stanza_syntax_layer = "stanza_syntax",
-                 stanza_deprel_ignore_layer = "stanza_syntax_ignore_deprel",
+                 stanza_deprel_ignore_layer = "stanza_syntax_ignore_entity",
                  input_type='morph_extended',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
                  depparse_path=None,
@@ -34,9 +35,6 @@ class StanzaSyntaxRemoveDeprelTagger(Tagger):
                  mark_syntax_error=False,
                  mark_agreement_error=False,
                  use_gpu=False,
-                 stanza_tagger = None,
-                 deprel = None
-                 
                  ):
         # Make an internal import to avoid explicit stanza dependency
         import stanza
@@ -48,11 +46,7 @@ class StanzaSyntaxRemoveDeprelTagger(Tagger):
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
         self.input_type = input_type
         self.use_gpu = use_gpu
-        self.stanza_tagger = stanza_tagger
-        self.deprel = deprel
-        
-        
-        
+        self.resources_path = resources_path
 
         if not resources_path:
             # Try to get the resources path for stanzasyntaxtagger. Attempt to download resources, if missing
@@ -135,12 +129,10 @@ class StanzaSyntaxRemoveDeprelTagger(Tagger):
                                        depparse_model_path=self.model_path,
                                        use_gpu=self.use_gpu,
                                        logging_level='WARN')
-            
-            
+
 
     def _make_layer_template(self):
         """Creates and returns a template of the layer."""
-        #print(self.output_layer)
         layer = Layer(name=self.output_layer,
                       text_object=None,
                       attributes=self.output_attributes,
@@ -153,182 +145,55 @@ class StanzaSyntaxRemoveDeprelTagger(Tagger):
 
     def _make_layer(self, text, layers, status=None):
         # Make an internal import to avoid explicit stanza dependency
-        from stanza.models.common.doc import Document
         
         rand = Random()
         rand.seed(4)
         
         stanza_syntax_layer = layers[self.input_layers[3]]
         stanza_deprel_ignore_layer = layers[self.input_layers[4]]
-        
-        #parent_layer = layers[self.input_layers[1]]
 
         layer = self._make_layer_template()
-        # terve tekst panna (originaal), seda ei tohiks muuta 
         layer.text_object=text
+
+        short_sent = text.text 
+        subtree_replaced_sent = text.text 
+        # remove subtrees from sentence 
+        for span in stanza_deprel_ignore_layer.spans:
+            subtree = " ".join([w.text for w in span.words])
+            short_sent = short_sent.replace(subtree, "")
+            subtree_replaced_sent = subtree_replaced_sent.replace(subtree, "_ "*len(span.words)).replace("  ", " ")
         
-        ignore_nodes = []
-        for span in stanza_deprel_ignore_layer:
-            ignore_nodes.append(span.id)
-        
-        
-        short_sent = None
-        
-        new_ids = {} # dict for old and new id-s {old: new}
-        spanlist = [] # list for id-s, removed id-s are replaced with "_" and counter will continue without counting the underscores: [1, _, _, 2, 3,...]
-        remaining_words = []
-        
-        # following_nodes: nodes that are after the removed nodes but remained (for fixing spans)
-        if ignore_nodes != []:
-            following_nodes = [n+1 for n in ignore_nodes if n+1 not in ignore_nodes]
-            # for spans that were after the removed nodes but remained
-            counter = 1
-            for span in stanza_syntax_layer:
-                if span.id in ignore_nodes:
-                    spanlist.append("_")
-                else:
-                    spanlist.append(counter)
-                    counter += 1
-                    remaining_words.append(span.text)
-            
-            short_sent = " ".join(remaining_words)
-            
-            for i, elem in enumerate(spanlist):
-                if spanlist[i] != "_":
-                    new_ids[i+1] = elem
-        else:
-            following_nodes=[]
-            short_sent = text
-            
-        #print(spanlist)
-        #print(new_ids)
-        
-        # retag short sentence 
-        short_sent = " ".join([word.strip() for word in short_sent.split(" ") if word.strip()!=""])
-        #print(short_sent)
-        #text2 = Text(short_sent + " " + removed_part)
+        # initiate stanza tagger 
+        stanza_tagger = StanzaSyntaxTagger(input_type=self.input_type, input_morph_layer=self.input_type, 
+                                            add_parent_and_children=True, resources_path=self.resources_path)
+        # tag the "short" sentence
         txt = Text(short_sent)
         txt.tag_layer('morph_extended')
-        self.stanza_tagger.tag( txt )
+        stanza_tagger.tag( txt )
         
-        #print(txt.stanza_syntax)
-        
-        
-        
-        # if no words were removed, put the stanza syntax layer spans to new layer
-        if ignore_nodes == []:
-            for span in stanza_syntax_layer:
-                #print(span.attributes)
-                orig_id = span["id"] #line['id']
-                
-                id = orig_id  #int("10" + str(orig_id)) #
-                status = "remained"
-                lemma = span['lemma'] #line['lemma']
-                upostag = span['upostag'] #line['upos']
-                xpostag = span['xpostag'] #line['xpos']
-                feats = OrderedDict()  # Stays this way if word has no features.
-                #if 'feats' in line.keys():
-                #    feats = feats_to_ordereddict(line['feats'])
-                if 'feats' in stanza_syntax_layer.attributes:
-                    #print(line['feats'])
-                    feats = span['feats']
-                head = span['head'] #int("10" + str(span['head'])) #
-                deprel = span['deprel']
-                
-                attributes = {'id': id, 'lemma': lemma, 'upostag': upostag, 'xpostag': xpostag, 'feats': feats,
-                          'head': head, 'deprel': deprel, "status": status, 'deps': '_', 'misc': '_'}
-                #print("vana ", span, "\n")
+        # iterate over sentence where replaced subtree is replaced with "_"-s
+        subtracted_words_counter = 0
+        for i, word in enumerate(subtree_replaced_sent.split(" ")):
+            if word == "_":
+                subtracted_words_counter+= 1
+                span = list(stanza_syntax_layer.spans)[i]
+                attributes = {'id': None, 'lemma': span['lemma'], 'upostag': span['upostag'], 'xpostag': span['xpostag'], 'feats': feats,
+                      'head': None, 'deprel': span['deprel'], "status": "removed", 'deps': '_', 'misc': '_'}
+            
                 layer.add_annotation(span, **attributes)
-                #print(layer)
-                #print("################")
+            else:
+                # take old span and add new attributes
+                span = list(stanza_syntax_layer.spans)[i]
+                new_span = list(txt.stanza_syntax.spans)[i-subtracted_words_counter]
+                if 'feats' in txt.stanza_syntax.attributes:
+                    feats = new_span['feats']
+                
+                attributes = {'id': new_span.id, 'lemma': new_span['lemma'], 'upostag': new_span['upostag'], 'xpostag': new_span['xpostag'], 'feats': feats,
+                                'head': new_span['head'], 'deprel': new_span['deprel'], "status": "remained", 'deps': '_', 'misc': '_'}
+                
+                layer.add_annotation(span, **attributes)
         
-        
-        else:
-            #
-            #print(ignore_nodes)
-            
-            replaced_ids = [] #id-s that would get replaced due to removal
-            ignore_lens = {}
-            # add spans that were removed and have to have the original data
-            #for line, span in zip(extracted_data, parent_layer):
-            for span in stanza_syntax_layer:
-                #print(span.attributes)
-                orig_id = span["id"] #line['id']
-                # if the id follows a removed span, then the span gets a new id     
-                if orig_id in following_nodes:                
-                    id = new_ids[orig_id]  #int("10" + str(orig_id)) #
-                    #print(span.text, orig_id, "follows, ", "new_id:", id)
-                    replaced_ids.append(id)
-                    status = "remained"
-                    lemma = span['lemma'] #line['lemma']
-                    upostag = span['upostag'] #line['upos']
-                    xpostag = span['xpostag'] #line['xpos']
-                    feats = OrderedDict()  # Stays this way if word has no features.
-                    #if 'feats' in line.keys():
-                    #    feats = feats_to_ordereddict(line['feats'])
-                    if 'feats' in stanza_syntax_layer.attributes:
-                        #print(line['feats'])
-                        feats = span['feats']
-                    head = span['head'] #int("10" + str(span['head'])) #
-                    deprel = span['deprel']
-                    
-                    attributes = {'id': id, 'lemma': lemma, 'upostag': upostag, 'xpostag': xpostag, 'feats': feats,
-                              'head': head, 'deprel': deprel, "status": status, 'deps': '_', 'misc': '_'}
-                    #print("vana ", span, "\n")
-                    layer.add_annotation(span, **attributes)
-                elif orig_id in ignore_nodes:
-                    ignore_lens[orig_id] = len(span.text)
-
-            #print("ignore_lens", ignore_lens)
-            if short_sent != None:
-                # retag short sentence 
-                short_sent = " ".join([word.strip() for word in short_sent.split(" ") if word.strip()!=""])
-                #text2 = Text(short_sent + " " + removed_part)
-                txt = Text(short_sent)
-                txt.tag_layer('morph_extended')
-                self.stanza_tagger.tag( txt )
-                
-                #print(txt.stanza_syntax)
-                #print(short_sent)
-                #print("replaced id-s", replaced_ids)
-                #print(ignore_nodes)
-                
-                
-                # add spans of the retagged short sentence 
-                for sp in txt.stanza_syntax:
-                    
-                    id = sp['id']
-                    if id not in replaced_ids:
-                        #print(sp.text, id)
-                        status = "remained"
-                        lemma = sp['lemma']
-                        upostag = sp['upostag']
-                        xpostag = sp['xpostag']
-                        feats = OrderedDict()  # Stays this way if word has no features.
-                        if 'feats' in txt.stanza_syntax.attributes:
-                            #print(line['feats'])
-                            feats = sp['feats']
-                        head = sp['head']
-                        deprel = sp['deprel']
-                        
-                        attributes = {'id': id, 'lemma': lemma, 'upostag': upostag, 'xpostag': xpostag, 'feats': feats,
-                                      'head': head, 'deprel': deprel, "status": status, 'deps': '_', 'misc': '_'}
-                        #print(sp.text)
-                        #print(sp, "\n")
-                        layer.add_annotation(sp, **attributes)
-                    #else:
-                    #    print("else", sp.text, id, sp.start)
-                        
-                    #print(layer)
-                    #print("########################")
-            
-            
-            
-            
-        
-              
-                
-                
+    
         if self.add_parent_and_children:
             # Add 'parent_span' & 'children' to the syntax layer.
             #print(self.output_layer, layer)
