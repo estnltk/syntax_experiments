@@ -21,7 +21,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
     StanzaSyntaxTagger and the nwe spans are added to the output layer of this tagger.
     """
     
-    conf_param = ['model_path', 'add_parent_and_children', 'syntax_dependency_retagger',
+    conf_param = ['add_parent_and_children', 'syntax_dependency_retagger',
                   'input_type', 'dir', 'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger',
                   'ud_validation_retagger', 'resources_path']
 
@@ -34,14 +34,11 @@ class StanzaSyntaxIgnoreTagger(Tagger):
                  stanza_deprel_ignore_layer = "stanza_syntax_ignore_entity",
                  input_type='morph_extended',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
-                 depparse_path=None,
                  resources_path=None,
                  mark_syntax_error=False,
                  mark_agreement_error=False,
                  ):
-        # Make an internal import to avoid explicit stanza dependency
-        import stanza
-
+        
         self.add_parent_and_children = add_parent_and_children
         self.mark_syntax_error = mark_syntax_error
         self.mark_agreement_error = mark_agreement_error
@@ -81,42 +78,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
         if self.input_type not in ['sentences', 'morph_analysis', 'morph_extended', "stanza_syntax"]:
             raise ValueError('Invalid input type {}'.format(input_type))
 
-        # Check for illegal parameter combinations (mismatching input type and layer):
-        if input_type=='morph_analysis' and input_morph_layer=='morph_extended':
-            raise ValueError( ('Invalid parameter combination: input_type={!r} and input_morph_layer={!r}. '+\
-                              'Mismatching input type and layer.').format(input_type, input_morph_layer))
-        elif input_type=='morph_extended' and input_morph_layer=='morph_analysis':
-            raise ValueError( ('Invalid parameter combination: input_type={!r} and input_morph_layer={!r}. '+\
-                              'Mismatching input type and layer.').format(input_type, input_morph_layer))
-
-        if depparse_path and not os.path.isfile(depparse_path):
-            raise ValueError('Invalid path: {}'.format(depparse_path))
-        elif depparse_path and os.path.isfile(depparse_path):
-            self.model_path = depparse_path
-        else:
-            if input_type == 'morph_analysis':
-                self.model_path = os.path.join(self.dir, 'et', 'depparse', 'morph_analysis.pt')
-            if input_type == 'morph_extended' or input_type == "stanza_syntax":
-                self.model_path = os.path.join(self.dir, 'et', 'depparse', 'morph_extended.pt')
-            if input_type == 'sentences':
-                self.model_path = os.path.join(self.dir, 'et', 'depparse', 'stanza_depparse.pt')
-
-        if not os.path.isfile(self.model_path):
-            raise FileNotFoundError('Necessary models missing, download from https://entu.keeleressursid.ee/public-document/entity-9791 '
-                             'and extract folders `depparse` and `pretrain` to root directory defining '
-                             'StanzaSyntaxTagger under the subdirectory `stanza_resources/et (or set )`')
-
-        if input_type == 'sentences':
-            if not os.path.isfile(os.path.join(self.dir, 'et', 'pretrain', 'edt.pt')):
-                raise FileNotFoundError(
-                    'Necessary pretrain model missing, download from https://entu.keeleressursid.ee/public-document/entity-9791 '
-                    'and extract folder `pretrain` to root directory defining '
-                    'StanzaSyntaxTagger under the subdirectory `stanza_resources/et`')
-
-        if self.input_type == 'sentences':
-            self.input_layers = [sentences_layer, words_layer]
-
-        elif self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
+        if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
             self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer, stanza_deprel_ignore_layer]            
 
 
@@ -133,10 +95,6 @@ class StanzaSyntaxIgnoreTagger(Tagger):
 
 
     def _make_layer(self, text, layers, status=None):
-        # Make an internal import to avoid explicit stanza dependency
-        
-        rand = Random()
-        rand.seed(4)
         
         stanza_syntax_layer = layers[self.input_layers[3]]
         stanza_deprel_ignore_layer = layers[self.input_layers[4]]
@@ -174,6 +132,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
                 # take old span and add new attributes
                 span = list(stanza_syntax_layer.spans)[i]
                 new_span = list(txt.stanza_syntax.spans)[i-subtracted_words_counter]
+                feats = None
                 if 'feats' in txt.stanza_syntax.attributes:
                     feats = new_span['feats']
                 
@@ -185,7 +144,6 @@ class StanzaSyntaxIgnoreTagger(Tagger):
     
         if self.add_parent_and_children:
             # Add 'parent_span' & 'children' to the syntax layer.
-            #print(self.output_layer, layer)
             self.syntax_dependency_retagger.change_layer(text, {self.output_layer: layer})
 
         if self.mark_syntax_error:
@@ -197,17 +155,3 @@ class StanzaSyntaxIgnoreTagger(Tagger):
             self.agreement_error_retagger.change_layer(text, {self.output_layer: layer})
 
         return layer
-
-
-def feats_to_ordereddict(feats_str):
-    """
-    Converts feats string to OrderedDict (as in MaltParserTagger and UDPipeTagger)
-    """
-    feats = OrderedDict()
-    if feats_str == '_':
-        return feats
-    feature_pairs = feats_str.split('|')
-    for feature_pair in feature_pairs:
-        key, value = feature_pair.split('=')
-        feats[key] = value
-    return feats

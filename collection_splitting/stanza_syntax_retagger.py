@@ -33,9 +33,7 @@ class StanzaSyntaxRetagger(Tagger):
                  mark_syntax_error=False,
                  mark_agreement_error=False,
                  ):
-        # Make an internal import to avoid explicit stanza dependency
-        import stanza
-
+        
         self.add_parent_and_children = add_parent_and_children
         self.mark_syntax_error = mark_syntax_error
         self.mark_agreement_error = mark_agreement_error
@@ -64,18 +62,8 @@ class StanzaSyntaxRetagger(Tagger):
         if self.input_type not in ['sentences', 'morph_analysis', 'morph_extended', "stanza_syntax"]:
             raise ValueError('Invalid input type {}'.format(input_type))
 
-        # Check for illegal parameter combinations (mismatching input type and layer):
-        if input_type=='morph_analysis' and input_morph_layer=='morph_extended':
-            raise ValueError( ('Invalid parameter combination: input_type={!r} and input_morph_layer={!r}. '+\
-                              'Mismatching input type and layer.').format(input_type, input_morph_layer))
-        elif input_type=='morph_extended' and input_morph_layer=='morph_analysis':
-            raise ValueError( ('Invalid parameter combination: input_type={!r} and input_morph_layer={!r}. '+\
-                              'Mismatching input type and layer.').format(input_type, input_morph_layer))
-
-        if self.input_type == 'sentences':
-            self.input_layers = [sentences_layer, words_layer]
-
-        elif self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
+        
+        if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
             self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer, stanza_deprel_ignore_layer]
 
 
@@ -92,10 +80,6 @@ class StanzaSyntaxRetagger(Tagger):
 
 
     def _make_layer(self, text, layers, status=None):
-        # Make an internal import to avoid explicit stanza dependency
-        
-        rand = Random()
-        rand.seed(4)
         
         stanza_syntax_layer = layers[self.input_layers[3]]
         stanza_deprel_ignore_layer = layers[self.input_layers[4]]
@@ -107,6 +91,7 @@ class StanzaSyntaxRetagger(Tagger):
         for i, span in enumerate(stanza_deprel_ignore_layer.spans):
             if span.id == None:
                 new_span = list(stanza_syntax_layer.spans)[i]
+                feats = None
                 if 'feats' in stanza_syntax_layer.attributes:
                     feats = new_span['feats']
                 
@@ -115,6 +100,7 @@ class StanzaSyntaxRetagger(Tagger):
                 
                 layer.add_annotation(new_span, **attributes)
             else:
+                feats = None
                 if 'feats' in stanza_deprel_ignore_layer.attributes:
                     feats = span['feats']
                 
@@ -123,12 +109,9 @@ class StanzaSyntaxRetagger(Tagger):
                 
                 layer.add_annotation(span, **attributes)
         
-        
-        
-    
+
         if self.add_parent_and_children:
             # Add 'parent_span' & 'children' to the syntax layer.
-            #print(self.output_layer, layer)
             self.syntax_dependency_retagger.change_layer(text, {self.output_layer: layer})
 
         if self.mark_syntax_error:
@@ -140,17 +123,3 @@ class StanzaSyntaxRetagger(Tagger):
             self.agreement_error_retagger.change_layer(text, {self.output_layer: layer})
 
         return layer
-
-
-def feats_to_ordereddict(feats_str):
-    """
-    Converts feats string to OrderedDict (as in MaltParserTagger and UDPipeTagger)
-    """
-    feats = OrderedDict()
-    if feats_str == '_':
-        return feats
-    feature_pairs = feats_str.split('|')
-    for feature_pair in feature_pairs:
-        key, value = feature_pair.split('=')
-        feats[key] = value
-    return feats
