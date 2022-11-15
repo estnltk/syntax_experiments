@@ -14,7 +14,7 @@ from estnltk.downloader import get_resource_paths
 from estnltk import Text
 
 
-class StanzaSyntaxIgnoreTagger(Tagger):
+class StanzaSyntaxTagger2(Tagger):
     """
     This is an entity ignore tagger that creates a layer with the subtrees from stanza_syntax_ignore_entity layer
     "removed" so that the spans will have None values. The short sentence after subtree removal is tagged with 
@@ -23,7 +23,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
     
     conf_param = ['add_parent_and_children', 'syntax_dependency_retagger',
                   'input_type', 'dir', 'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger',
-                  'ud_validation_retagger', 'resources_path']
+                  'ud_validation_retagger', 'resources_path', 'ignore_layer']
 
     def __init__(self,
                  output_layer='stanza_syntax_without_entity',
@@ -31,7 +31,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
                  words_layer='words',
                  input_morph_layer='morph_analysis',
                  stanza_syntax_layer = "stanza_syntax",
-                 stanza_deprel_ignore_layer = "stanza_syntax_ignore_entity",
+                 ignore_layer = "stanza_syntax_ignore_entity",
                  input_type='morph_extended',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
                  resources_path=None,
@@ -46,6 +46,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
         self.input_type = input_type
         self.resources_path = resources_path
+        self.ignore_layer = ignore_layer
 
         if not resources_path:
             # Try to get the resources path for stanzasyntaxtagger. Attempt to download resources, if missing
@@ -79,7 +80,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
             raise ValueError('Invalid input type {}'.format(input_type))
 
         if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
-            self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer, stanza_deprel_ignore_layer]            
+            self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer, ignore_layer]            
 
 
     def _make_layer_template(self):
@@ -97,7 +98,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
     def _make_layer(self, text, layers, status=None):
         
         stanza_syntax_layer = layers[self.input_layers[3]]
-        stanza_deprel_ignore_layer = layers[self.input_layers[4]]
+        ignore_layer = layers[self.input_layers[4]]
 
         layer = self._make_layer_template()
         layer.text_object=text
@@ -105,7 +106,7 @@ class StanzaSyntaxIgnoreTagger(Tagger):
         short_sent = text.text 
         subtree_replaced_sent = text.text 
         # remove subtrees from sentence 
-        for span in stanza_deprel_ignore_layer.spans:
+        for span in ignore_layer.spans:
             subtree = " ".join([w.text for w in span.words])
             short_sent = short_sent.replace(subtree, "")
             subtree_replaced_sent = subtree_replaced_sent.replace(subtree, "_ "*len(span.words)).replace("  ", " ")
