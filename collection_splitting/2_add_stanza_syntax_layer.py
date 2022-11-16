@@ -16,7 +16,7 @@ import os
 # processes texts 0, 2, 4, ...
 
 parser = argparse.ArgumentParser(description = "Tags layer block with stanza tagger and creates layers 'stanza_syntax_ignore_entity' where the subtrees of given deprel are stored and layer 'stanza_syntax_without_entity' for the shortened sentence.")
-parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.")
+parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.", type=str)
 parser.add_argument("module", help="Module for layer block. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("remainder", help="Remainder for layer block. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("file", help="Configuration ini file name.", type=str)
