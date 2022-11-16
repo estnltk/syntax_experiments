@@ -9,8 +9,8 @@ from estnltk.converters.serialisation_modules import syntax_v0
 
 from estnltk import Text
 
-from scripts.syntax_tree import SyntaxTree 
-from scripts.syntax_tree_operations import *
+from taggers.syntax_tree import SyntaxTree 
+from taggers.syntax_tree_operations import *
 import networkx as nx
 from estnltk import EnvelopingBaseSpan
 

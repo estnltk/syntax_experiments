@@ -4,6 +4,7 @@ from random import Random
 
 from estnltk import Layer
 from estnltk.taggers.standard.syntax.syntax_dependency_retagger import SyntaxDependencyRetagger
+from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
 from estnltk.taggers.standard.syntax.ud_validation.deprel_agreement_retagger import DeprelAgreementRetagger
 from estnltk.taggers.standard.syntax.ud_validation.ud_validation_retagger import UDValidationRetagger
 from estnltk.taggers import Tagger
@@ -12,26 +13,30 @@ from estnltk.downloader import get_resource_paths
 
 from estnltk import Text
 
-class StanzaSyntaxRetagger(Tagger):
+
+class StanzaSyntaxTagger2(Tagger):
     """
-    This is a retagger that creates a new layer where the spans that have None values in 
-    the stanza_syntax_without_entity layer will have a negative id and head based on the original stanza_syntax layer. 
+    This is an entity ignore tagger that creates a layer with the subtrees from stanza_syntax_ignore_entity layer
+    "removed" so that the spans will have None values. The short sentence after subtree removal is tagged with 
+    StanzaSyntaxTagger and the nwe spans are added to the output layer of this tagger.
     """
     
-    conf_param = ['add_parent_and_children', 'syntax_dependency_retagger', 'input_type',  
-                  'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger', 'ud_validation_retagger' ]
+    conf_param = ['add_parent_and_children', 'syntax_dependency_retagger',
+                  'input_type', 'dir', 'mark_syntax_error', 'mark_agreement_error', 'agreement_error_retagger',
+                  'ud_validation_retagger', 'resources_path', 'ignore_layer', 'stanza_tagger']
 
     def __init__(self,
-                 output_layer='stanza_syntax_with_entity',
+                 output_layer='stanza_syntax_without_entity',
                  sentences_layer='sentences',
                  words_layer='words',
                  input_morph_layer='morph_analysis',
-                 stanza_syntax_layer = "stanza_syntax",
-                 stanza_deprel_ignore_layer = "stanza_syntax_without_entity",
+                 ignore_layer = None, # e.g "stanza_syntax_ignore_entity",
                  input_type='morph_extended',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
+                 resources_path=None,
                  mark_syntax_error=False,
                  mark_agreement_error=False,
+                 stanza_tagger = None
                  ):
         
         self.add_parent_and_children = add_parent_and_children
@@ -40,6 +45,18 @@ class StanzaSyntaxRetagger(Tagger):
         self.output_layer = output_layer
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
         self.input_type = input_type
+        self.resources_path = resources_path
+        self.ignore_layer = ignore_layer
+
+        if not resources_path:
+            # Try to get the resources path for stanzasyntaxtagger. Attempt to download resources, if missing
+            self.dir = get_resource_paths("stanzasyntaxtagger", only_latest=True, download_missing=True)
+        else:
+            self.dir = resources_path
+        # Check that resources path has been set
+        if self.dir is None:
+            raise Exception('Models of StanzaSyntaxTagger are missing. '+\
+                            'Please use estnltk.download("stanzasyntaxtagger") to download the models.')
 
         self.syntax_dependency_retagger = None
         if add_parent_and_children:
@@ -62,9 +79,10 @@ class StanzaSyntaxRetagger(Tagger):
         if self.input_type not in ['sentences', 'morph_analysis', 'morph_extended', "stanza_syntax"]:
             raise ValueError('Invalid input type {}'.format(input_type))
 
-        
-        if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
-            self.input_layers = [sentences_layer, input_morph_layer, words_layer, stanza_syntax_layer, stanza_deprel_ignore_layer]
+        self.input_layers = [sentences_layer, words_layer, input_morph_layer, ignore_layer]     
+
+        self.stanza_tagger = StanzaSyntaxTagger(input_type=self.input_type, input_morph_layer=self.input_type, 
+                                            add_parent_and_children=True, resources_path=self.resources_path)
 
 
     def _make_layer_template(self):
@@ -72,7 +90,7 @@ class StanzaSyntaxRetagger(Tagger):
         layer = Layer(name=self.output_layer,
                       text_object=None,
                       attributes=self.output_attributes,
-                      parent=self.input_layers[3],
+                      parent=self.input_layers[1], 
                       ambiguous=False )
         if self.add_parent_and_children:
             layer.serialisation_module = syntax_v0.__version__
@@ -81,35 +99,37 @@ class StanzaSyntaxRetagger(Tagger):
 
     def _make_layer(self, text, layers, status=None):
         
-        stanza_syntax_layer = layers[self.input_layers[3]]
-        stanza_deprel_ignore_layer = layers[self.input_layers[4]]
+        ignore_layer = layers[self.input_layers[3]]
+        word_layer = layers[self.input_layers[1]]
 
         layer = self._make_layer_template()
         layer.text_object=text
 
-        
-        for i, span in enumerate(stanza_deprel_ignore_layer.spans):
-            if span.id == None:
-                new_span = list(stanza_syntax_layer.spans)[i]
-                feats = None
-                if 'feats' in stanza_syntax_layer.attributes:
-                    feats = new_span['feats']
-                
-                attributes = {'id': -new_span.id, 'lemma': new_span['lemma'], 'upostag': new_span['upostag'], 'xpostag': new_span['xpostag'], 'feats': feats,
-                                'head': -new_span['head'], 'deprel': new_span['deprel'], "status": "removed", 'deps': '_', 'misc': '_'}
-                
-                layer.add_annotation(new_span, **attributes)
-            else:
-                feats = None
-                if 'feats' in stanza_deprel_ignore_layer.attributes:
-                    feats = span['feats']
-                
-                attributes = {'id': span.id, 'lemma': span['lemma'], 'upostag': span['upostag'], 'xpostag': span['xpostag'], 'feats': feats,
-                                'head': span['head'], 'deprel': span['deprel'], "status": "remained", 'deps': '_', 'misc': '_'}
-                
-                layer.add_annotation(span, **attributes)
-        
 
+        ignored_tokens = [word for span in ignore_layer for word in span.words]
+        tokens = [span for span in word_layer if span not in ignored_tokens]
+        short_sent = " ".join([span.text for span in tokens])
+
+        # tag the "short" sentence
+        short_sentnce = Text(short_sent)
+        short_sentnce.tag_layer('morph_extended')
+        self.stanza_tagger.tag( short_sentnce )
+        
+        
+        ss = 0 # location in short_sent 
+        for i, span in enumerate(word_layer.spans):
+            if span not in ignored_tokens:                
+                new_span = short_sentnce.stanza_syntax[ss]         
+                feats = None
+                if 'feats' in short_sentnce.stanza_syntax.attributes:
+                    feats = new_span['feats']               
+                attributes = {'id': new_span.id, 'lemma': new_span['lemma'], 'upostag': new_span['upostag'], 'xpostag': new_span['xpostag'], 'feats': feats,
+                                'head': new_span['head'], 'deprel': new_span['deprel'], "status": "remained", 'deps': '_', 'misc': '_'}               
+                layer.add_annotation(span, **attributes)
+                
+                ss += 1                 
+        
+    
         if self.add_parent_and_children:
             # Add 'parent_span' & 'children' to the syntax layer.
             self.syntax_dependency_retagger.change_layer(text, {self.output_layer: layer})
