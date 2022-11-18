@@ -27,19 +27,29 @@ class Sentence(nx.DiGraph):
         """
         title = None
         filename = None
+        custom_colors = None
         highlight = []
         if 'title' in kwargs:
             title = kwargs['title']
-
+            
         if 'filename' in kwargs:
             filename = kwargs['filename']
 
         if 'highlight' in kwargs:
             highlight = kwargs['highlight']
 
-        # soovitud tipud punaseks
-        color_map = ['red' if node in highlight else 'lightskyblue' for node in self]
+        if 'custom_colors' in kwargs:
+            custom_colors = kwargs['custom_colors']
 
+        if not custom_colors:
+            colors = ['lightskyblue' for node in self]
+        else:
+            colors = custom_colors
+        # soovitud tipud punaseks
+
+        color_map = ['red' if node in highlight else colors[i] for (i,node) in enumerate(self.nodes)]
+
+        #print (color_map)
         # joonise suurus, et enamik puudest ära mahuks
         plt.rcParams["figure.figsize"] = (18.5, 10.5)
 
@@ -108,6 +118,11 @@ class Sentence(nx.DiGraph):
         """Tagastab array-na syntaksipuu graafi propreteid, tippu 0 ignoreerib"""
         return [graph.nodes[node][property_name] for node in sorted([node for node in graph.nodes]) if node]
 
+    def text(self):
+        return ' '.join(self.get_prop('form'))
+
+    def tokensTotal(self):
+        return len(self.get_prop('form'))
 
     def get_nodes_diff(graph1, graph2):
         """leiab, millised tipud suuremast graafist1 on puudu graafis2"""
