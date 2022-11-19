@@ -1,0 +1,9 @@
+# Ignore (I)Pyhton trash
+**/.ipynb_checkpoints/
+**/__pycache__/
+**/.idea/
+
+# Ignore trash
+**/.DS_Store
+**/._*
+**/.~lock.*
