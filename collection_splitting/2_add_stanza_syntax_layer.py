@@ -46,9 +46,13 @@ else:
         input_type="morph_extended"
         stanza_tagger = StanzaSyntaxTagger(input_type=input_type, input_morph_layer=input_type, add_parent_and_children=True, resources_path=model_path)
         entity_tagger = EntityTagger(deprel =input_deprel, input_type="stanza_syntax", morph_layer="morph_extended")
-        ignore_tagger = StanzaSyntaxTagger2( ignore_layer = "stanza_syntax_ignore_entity", input_type="morph_extended", 
+        ignore_tagger = StanzaSyntaxTagger2( ignore_layer = "stanza_syntax_ignore_entity"+"_"+input_deprel, 
+                                            input_type="morph_extended", 
                                                     input_morph_layer="morph_extended", 
                                                       add_parent_and_children=True, resources_path=model_path)
+        retagger = StanzaSyntaxRetagger(stanza_syntax_layer="stanza_syntax", 
+                                without_entity_layer="stanza_syntax_without_entity"+"_"+input_deprel, 
+                                ignore_layer="stanza_syntax_ignore_entity"+"_"+input_deprel)
     except Exception as e: 
         print("Problem with model path or creating the tagger: ", str(e).strip())
         raise SystemExit
@@ -95,14 +99,20 @@ if "stanza_syntax_without_entity" in collection.layers or table_exists(target_st
     print("Without Entity (stanza_syntax_without_entity) kiht või tabel on juba olemas.")
 else:
     collection.add_layer( layer_template=ignore_tagger.get_layer_template() ) 
+    
+table_name = layer_table_name(config["target_database"]["collection"],retagger.get_layer_template().name)
+if "stanza_syntax_with_entity" in collection.layers or table_exists(target_storage,table_name ):
+    print("With Entity (stanza_syntax_with_entity) kiht või tabel on juba olemas.")
+else:
+    collection.add_layer( layer_template=retagger.get_layer_template() ) 
      
 
 try:
     # tag a block
     collection.create_layer_block( stanza_tagger, (module, remainder), mode='append' )
     collection.create_layer_block( entity_tagger, (module, remainder), mode='append' )
-    collection.create_layer_block( ignore_tagger, (module, remainder), mode='append' )
-    
+    #collection.create_layer_block( ignore_tagger, (module, remainder), mode='append' )
+    #collection.create_layer_block( retagger, (module, remainder), mode='append' )
 except Exception as e: 
     print("Problem during tagging: ", str(e).strip())
     target_storage.close()

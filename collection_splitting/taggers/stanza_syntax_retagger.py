@@ -30,8 +30,10 @@ class StanzaSyntaxRetagger(Retagger):
         self.stanza_syntax_layer = stanza_syntax_layer
         self.without_entity_layer = without_entity_layer
         self.ignore_layer = ignore_layer
-        
-        self.output_layer = output_layer
+        if self.ignore_layer!=None:
+            self.output_layer = output_layer+"_"+self.ignore_layer.split("_")[-1:][0]
+        else:
+            self.output_layer=output_layer
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', 'parent_span', 'children',  "status")
                 
         self.input_layers = [stanza_syntax_layer, without_entity_layer, ignore_layer]

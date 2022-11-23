@@ -42,11 +42,15 @@ class StanzaSyntaxTagger2(Tagger):
         self.add_parent_and_children = add_parent_and_children
         self.mark_syntax_error = mark_syntax_error
         self.mark_agreement_error = mark_agreement_error
-        self.output_layer = output_layer
+        self.ignore_layer = ignore_layer
+        if self.ignore_layer!=None:
+            self.output_layer = output_layer+"_"+self.ignore_layer.split("_")[-1:][0]
+        else:
+            self.output_layer=output_layer
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
         self.input_type = input_type
         self.resources_path = resources_path
-        self.ignore_layer = ignore_layer
+        
 
         if not resources_path:
             # Try to get the resources path for stanzasyntaxtagger. Attempt to download resources, if missing
@@ -60,12 +64,12 @@ class StanzaSyntaxTagger2(Tagger):
 
         self.syntax_dependency_retagger = None
         if add_parent_and_children:
-            self.syntax_dependency_retagger = SyntaxDependencyRetagger(conll_syntax_layer=output_layer)
+            self.syntax_dependency_retagger = SyntaxDependencyRetagger(conll_syntax_layer=self.output_layer)
             self.output_attributes += ('parent_span', 'children')
 
         self.ud_validation_retagger = None
         if mark_syntax_error:
-            self.ud_validation_retagger = UDValidationRetagger(output_layer=output_layer)
+            self.ud_validation_retagger = UDValidationRetagger(output_layer=self.output_layer)
             self.output_attributes += ('syntax_error', 'error_message')
 
         self.agreement_error_retagger = None
@@ -73,7 +77,7 @@ class StanzaSyntaxTagger2(Tagger):
             if not add_parent_and_children:
                 raise ValueError('`add_parent_and_children` must be True for marking agreement errors.')
             else:
-                self.agreement_error_retagger = DeprelAgreementRetagger(output_layer=output_layer)
+                self.agreement_error_retagger = DeprelAgreementRetagger(output_layer=self.output_layer)
                 self.output_attributes += ('agreement_deprel',)
 
         if self.input_type not in ['sentences', 'morph_analysis', 'morph_extended', "stanza_syntax"]:

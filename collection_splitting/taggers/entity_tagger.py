@@ -36,7 +36,7 @@ class EntityTagger(Tagger):
         import stanza
 
         self.deprel = deprel
-        self.output_layer = output_layer
+        self.output_layer = output_layer+"_"+self.deprel 
         self.output_attributes = ('entity_type', 'free_entity', 'is_valid')
         self.input_type = input_type
         self.deprel = deprel
