@@ -5,7 +5,7 @@ from collections import defaultdict
 def get_nodes_by_attributes(syntaxtree,  attrname, attrvalue ):
     """Tipu leidmine atribuudi väärtuse järgi"""
     nodes = defaultdict(list)
-    {nodes[v].append(k) for k, v in nx.get_node_attributes(syntaxtree.graph,attrname).items()}
+    {nodes[v].append(k) for k, v in nx.get_node_attributes(syntaxtree.graph, attrname).items()}
     if attrvalue in nodes:
         return dict(nodes)[attrvalue]
     return []

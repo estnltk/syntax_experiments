@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from taggers.syntax_tree_operations import *
 
 
-class SyntaxTree(nx.DiGraph):
+class SyntaxTree():
 
     """Defineerib süntaksipuu networkx suunamata graafina."""
 
@@ -23,6 +23,7 @@ class SyntaxTree(nx.DiGraph):
         self.nodes = G.nodes 
         self.edges = G.edges 
         self.graph = G
+        
 
         
     #TODO params to

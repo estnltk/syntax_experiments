@@ -4,7 +4,7 @@ from estnltk.storage.postgres import PostgresStorage
 from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
 from taggers.entity_tagger import EntityTagger
 from taggers.stanza_syntax_tagger import StanzaSyntaxTagger2
-#from taggers.stanza_syntax_retagger import StanzaSyntaxRetagger
+from taggers.stanza_syntax_retagger import StanzaSyntaxRetagger
 
 from estnltk.storage.postgres import table_exists
 from estnltk.storage.postgres import layer_table_name
