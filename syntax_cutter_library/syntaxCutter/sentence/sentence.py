@@ -31,7 +31,7 @@ class Sentence(nx.DiGraph):
         highlight = []
         if 'title' in kwargs:
             title = kwargs['title']
-            
+
         if 'filename' in kwargs:
             filename = kwargs['filename']
 
@@ -89,6 +89,10 @@ class Sentence(nx.DiGraph):
             if isinstance(data['id'], int):
                 #paneme graafi kokku
                 G.add_node(data['id'], id=data['id'], lemma=data['lemma'], pos=data['upostag'], deprel=data['deprel'], form=data['form'])
+                #kogu conllu node word info
+                for k in dict(data).keys():
+                    if not k in G.nodes.keys():
+                        G.nodes[data['id']][k] = data[k]
                 G.add_edge(data['id'] - data['id'] + data['head'], data['id'], deprel = data['deprel'])
         return G
 
