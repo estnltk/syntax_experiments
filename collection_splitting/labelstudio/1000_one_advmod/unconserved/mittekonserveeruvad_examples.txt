@@ -1,0 +1,916 @@
+originaal: Mullu kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks .
+eemaldada: Mullu
+konserveerunud: kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks .
+
+originaal: On tal vast iseloom !
+eemaldada: vast
+konserveerunud: On tal iseloom !
+
+originaal: Võib-olla on otsus ärijuhtimist tudeerima asuda mu alateadlik soov taganemisteed kindlustada , ” arutleb Evelin .
+eemaldada: Võib-olla
+konserveerunud: on otsus ärijuhtimist tudeerima asuda mu alateadlik soov taganemisteed kindlustada , ” arutleb Evelin .
+
+originaal: Eemalolek suurtelt lavadelt on tema sõnul taotluslik , et mitte enne plaadi ilmumist kuulajaid eksitada .
+eemaldada: mitte
+konserveerunud: Eemalolek suurtelt lavadelt on tema sõnul taotluslik , et enne plaadi ilmumist kuulajaid eksitada .
+
+originaal: Kadri oli perekonna hing , kõige parem sõber ja hea kuulaja .
+eemaldada: kõige
+konserveerunud: Kadri oli perekonna hing , parem sõber ja hea kuulaja .
+
+originaal: ” Jaan usub , et Kadrile poleks meeldinud , kui ta üksi jääks .
+eemaldada: üksi
+konserveerunud: ” Jaan usub , et Kadrile poleks meeldinud , kui ta jääks .
+
+originaal: Ei ühele ega teisele olnud laevahuku põhjus mingiks saladuseks .
+eemaldada: Ei
+konserveerunud: ühele ega teisele olnud laevahuku põhjus mingiks saladuseks .
+
+originaal: Aino Järvesoole saadetud kirjadest saaks vapustava raamatu fassaaditagusest Eestist , kus sirguv nooruk läheb pigem võõrleegioni kui Eesti sõjaväkke , sest tema meelest on riik , kus ta elab , võõras ja lastevaenulik .
+eemaldada: pigem
+konserveerunud: Aino Järvesoole saadetud kirjadest saaks vapustava raamatu fassaaditagusest Eestist , kus sirguv nooruk läheb võõrleegioni kui Eesti sõjaväkke , sest tema meelest on riik , kus ta elab , võõras ja lastevaenulik .
+
+originaal: Kirjutajad loetlevad lausraiskamisi , nagu haridusministeeriumi Tartusse kolimine , poliitilised turismireisid , kallid autod , luksuslikud remondid jne ; poole miljoni krooni riigi rahaga Saaremaale rajatud golfiväljak , raudteenõustamise miljonid või Maapanga raha , mille kantisid endale need , kes vangimõistetud Eenmaale korraldusi jagasid .
+eemaldada: nagu
+konserveerunud: Kirjutajad loetlevad lausraiskamisi , haridusministeeriumi Tartusse kolimine , poliitilised turismireisid , kallid autod , luksuslikud remondid jne ; poole miljoni krooni riigi rahaga Saaremaale rajatud golfiväljak , raudteenõustamise miljonid või Maapanga raha , mille kantisid endale need , kes vangimõistetud Eenmaale korraldusi jagasid .
+
+originaal: Ja kes iseäranis teenekad .
+eemaldada: iseäranis
+konserveerunud: Ja kes teenekad .
+
+originaal: Ehk mõtleb president Meri välja mõne uue auraha neile meestele medalina kaelas kandmiseks ?
+eemaldada: Ehk
+konserveerunud: mõtleb president Meri välja mõne uue auraha neile meestele medalina kaelas kandmiseks ?
+
+originaal: Tuli ju selle loomiseks tappa kalu .
+eemaldada: ju
+konserveerunud: Tuli selle loomiseks tappa kalu .
+
+originaal: Jüri algul nõustus , hiljem aga mingil põhjusel keeldus .
+eemaldada: hiljem
+konserveerunud: Jüri algul nõustus , aga mingil põhjusel keeldus .
+
+originaal: Kord tungis Ants isale kallale , ema Meeta ärritus , sai infarkti ja suri .
+eemaldada: Kord
+konserveerunud: tungis Ants isale kallale , ema Meeta ärritus , sai infarkti ja suri .
+
+originaal: Tänaseks pole Kukkede perekonnast enam kedagi elus , viimasena suri 1990. aastate algul isa , kes pärast poja traagilist surma oli hakanud habet kasvatama .
+eemaldada: Tänaseks
+konserveerunud: pole Kukkede perekonnast enam kedagi elus , viimasena suri 1990. aastate algul isa , kes pärast poja traagilist surma oli hakanud habet kasvatama .
+
+originaal: Nõnda ei valmistanud edasijõudmine talle erilisi raskusi .
+eemaldada: Nõnda
+konserveerunud: ei valmistanud edasijõudmine talle erilisi raskusi .
+
+originaal: Toda novellistide laialt levinud lemmikvõtet , terviku peegeldumist detailis , kasutab Külvet erineva eduga pea kõikides lugudes .
+eemaldada: laialt
+konserveerunud: Toda novellistide levinud lemmikvõtet , terviku peegeldumist detailis , kasutab Külvet erineva eduga pea kõikides lugudes .
+
+originaal: Mõne aasta eest sai meie kirjanduskriitikas välja öeldud mõte , justnagu pärssinuks Stalini nime kohustuslik väljajätmine proosatekstidest kirjanduse arengut .
+eemaldada: justnagu
+konserveerunud: Mõne aasta eest sai meie kirjanduskriitikas välja öeldud mõte , pärssinuks Stalini nime kohustuslik väljajätmine proosatekstidest kirjanduse arengut .
+
+originaal: Ülima täiuse ahelas on Eesti oludes üks nõrk lüli - surnuaeda platsi hankima või olemasolevale platsile uut hauda registreerima peab lahkunu lähedane ise minema .
+eemaldada: ise
+konserveerunud: Ülima täiuse ahelas on Eesti oludes üks nõrk lüli - surnuaeda platsi hankima või olemasolevale platsile uut hauda registreerima peab lahkunu lähedane minema .
+
+originaal: Ja kus on teie kõnemees , nad pole muusikuga kokku leppinud !
+eemaldada: kokku
+konserveerunud: Ja kus on teie kõnemees , nad pole muusikuga leppinud !
+
+originaal: Rapla urnitreialitel on kogemusi toodangu Ameerikasse eksportimisega - erinevalt meil kasutusel olevast kolmeliitrisest urnist nõuab Ameerika standard neljaliitrist tuhaanumat .
+eemaldada: erinevalt meil kasutusel olevast kolmeliitrisest urnist
+konserveerunud: Rapla urnitreialitel on kogemusi toodangu Ameerikasse eksportimisega - nõuab Ameerika standard neljaliitrist tuhaanumat .
+
+originaal: “ Ühel hetkel inimene vaatab seda urni , järgmisel on ta seal sees , ” filosofeerib Villand .
+eemaldada: seal
+konserveerunud: “ Ühel hetkel inimene vaatab seda urni , järgmisel on ta sees , ” filosofeerib Villand .
+
+originaal: Kalmistutel pakutakse hooldamisteenust neile , kes kaugemal elavad või käsi määrida kardavad .
+eemaldada: kaugemal
+konserveerunud: Kalmistutel pakutakse hooldamisteenust neile , kes elavad või käsi määrida kardavad .
+
+originaal: Geograafiliselt paiknesid need kõikides Eesti linnades ja väikeasulates , mis muutis nad rahvalähedaseks ja usaldusväärseks .
+eemaldada: Geograafiliselt
+konserveerunud: paiknesid need kõikides Eesti linnades ja väikeasulates , mis muutis nad rahvalähedaseks ja usaldusväärseks .
+
+originaal: Kahjuks ei leia ühistegevus krediidiasutustes tänapäeval sellist kõlapinda kui eelmise sajandi algul .
+eemaldada: Kahjuks
+konserveerunud: ei leia ühistegevus krediidiasutustes tänapäeval sellist kõlapinda kui eelmise sajandi algul .
+
+originaal: Nüüd on 10 tegutsevat ühistulist finantsasutust hakanud koostööd tegema ja asutanud selleks katusorganisatsioonina Eesti Hoiu-laenuühistute Liidu .
+eemaldada: Nüüd
+konserveerunud: on 10 tegutsevat ühistulist finantsasutust hakanud koostööd tegema ja asutanud selleks katusorganisatsioonina Eesti Hoiu-laenuühistute Liidu .
+
+originaal: Nende keskmine kapitali adekvaatsus oli 62,5% , samal ajal kui kommertspankades on ta alla 20 protsendi ( minimaalne nõue 10% ) .
+eemaldada: alla
+konserveerunud: Nende keskmine kapitali adekvaatsus oli 62,5% , samal ajal kui kommertspankades on ta 20 protsendi ( minimaalne nõue 10% ) .
+
+originaal: Enne kui hakata rahva käest kogutud ressurssi kulutama , peab olema veendunud , mida tahetakse saavutada .
+eemaldada: Enne kui
+konserveerunud: hakata rahva käest kogutud ressurssi kulutama , peab olema veendunud , mida tahetakse saavutada .
+
+originaal: Kas see noormees , siseminister või parlament .
+eemaldada: Kas
+konserveerunud: see noormees , siseminister või parlament .
+
+originaal: Loodusmeediat jälgiti sel perioodil aktiivselt , kuid osalt defitsiidi sündroomi tõttu , sest ajakirjade tellimine - elik ligipääs infole - oli piiratud .
+eemaldada: aktiivselt , kuid osalt
+konserveerunud: Loodusmeediat jälgiti sel perioodil defitsiidi sündroomi tõttu , sest ajakirjade tellimine - elik ligipääs infole - oli piiratud .
+
+originaal: Samas on ühiskonna valdav materialistlik suunitlus toonud kaasa süsteemikriitiliste indiviidide tekke , kollektiivsus naaseb killustatud indiviidide väärtuspõhise koondumisena .
+eemaldada: Samas
+konserveerunud: on ühiskonna valdav materialistlik suunitlus toonud kaasa süsteemikriitiliste indiviidide tekke , kollektiivsus naaseb killustatud indiviidide väärtuspõhise koondumisena .
+
+originaal: Loodus on süsteemi piirialal , sellest kõneldakse vähe ; peamiseks kõneaineseks on keskkond .
+eemaldada: vähe
+konserveerunud: Loodus on süsteemi piirialal , sellest kõneldakse ; peamiseks kõneaineseks on keskkond .
+
+originaal: Tõepoolest , valimised toimuvad Eestis iga nelja aasta tagant ja neist hoidumine tähendaks otsustamisõiguse andmist kellelegi teisele .
+eemaldada: Tõepoolest
+konserveerunud: , valimised toimuvad Eestis iga nelja aasta tagant ja neist hoidumine tähendaks otsustamisõiguse andmist kellelegi teisele .
+
+originaal: Esialgu aitas eelmiste valimiste järel reformijate ülekaalu tasandada üksikkandidaadina volikokku tulnud volikogu esimees Ülo Uluots , kuid pärast tema surma kaks aastat tagasi , on ohjad ühe poliitilise jõu käes .
+eemaldada: Esialgu
+konserveerunud: aitas eelmiste valimiste järel reformijate ülekaalu tasandada üksikkandidaadina volikokku tulnud volikogu esimees Ülo Uluots , kuid pärast tema surma kaks aastat tagasi , on ohjad ühe poliitilise jõu käes .
+
+originaal: Näiteks möödunud aastal toimunud Daimler/Chrysleri liidu puhul paraneb Chrysleri juurdepääs Euroopa turule ning Daimler-Benz saab kinnitada senisest tugevamalt kanda USA-s .
+eemaldada: tugevamalt
+konserveerunud: Näiteks möödunud aastal toimunud Daimler/Chrysleri liidu puhul paraneb Chrysleri juurdepääs Euroopa turule ning Daimler-Benz saab kinnitada senisest kanda USA-s .
+
+originaal: Riigikogu Euroopa Nõukogu Parlamentaarse Assamblee ( ENPA ) delegatsiooni liikmete hinnangul mõjus nende tähelepanu keskmes olek möödunud nädalal Strasboug'is hästi Eesti mainele .
+eemaldada: hästi
+konserveerunud: Riigikogu Euroopa Nõukogu Parlamentaarse Assamblee ( ENPA ) delegatsiooni liikmete hinnangul mõjus nende tähelepanu keskmes olek möödunud nädalal Strasboug'is Eesti mainele .
+
+originaal: Osa neist kannab mõne teise loomaliigi , ka inimese geeni .
+eemaldada: ka
+konserveerunud: Osa neist kannab mõne teise loomaliigi , inimese geeni .
+
+originaal: Seetõttu peab neid uurima elusolendites , " selgitab Karis .
+eemaldada: Seetõttu
+konserveerunud: peab neid uurima elusolendites , " selgitab Karis .
+
+originaal: " Teda ei uskunud keegi , ometi osutusid kuulsa keskmängija sõnad tõeks .
+eemaldada: ometi
+konserveerunud: " Teda ei uskunud keegi , osutusid kuulsa keskmängija sõnad tõeks .
+
+originaal: Ent mehed ei saagi teisiti , sest nad teavad : Ewingule tuleb hankida meistrisõrmus .
+eemaldada: teisiti
+konserveerunud: Ent mehed ei saagi , sest nad teavad : Ewingule tuleb hankida meistrisõrmus .
+
+originaal: Kõigepealt peaks riik lõpetama elamureformi ning kiirendama korteriomandite seadmist ning seadusega reguleerima pikaajaliste kinnisvaratagatisega laenude andmise .
+eemaldada: Kõigepealt
+konserveerunud: peaks riik lõpetama elamureformi ning kiirendama korteriomandite seadmist ning seadusega reguleerima pikaajaliste kinnisvaratagatisega laenude andmise .
+
+originaal: " Seal oli kombineeritud institutsionaalse mälu sära ja kirglik tõlgendamisoskus , " kirjutas ta .
+eemaldada: Seal
+konserveerunud: " oli kombineeritud institutsionaalse mälu sära ja kirglik tõlgendamisoskus , " kirjutas ta .
+
+originaal: Hiljem õppis Ane majandustehnikumis ja pedagoogikaülikoolis .
+eemaldada: Hiljem
+konserveerunud: õppis Ane majandustehnikumis ja pedagoogikaülikoolis .
+
+originaal: Erinevalt eelmistest maratonidest on 32.
+eemaldada: Erinevalt eelmistest maratonidest
+konserveerunud: on 32.
+
+originaal: LISCO erastamisleping annab ostjale õiguse kohustusi eirata , kui need takistavad nõukogul ja juhtkonnal ettevõtte juhtimist selliselt , nagu nad seda õigeks peavad , kirjutas Verslo zinios .
+eemaldada: selliselt
+konserveerunud: LISCO erastamisleping annab ostjale õiguse kohustusi eirata , kui need takistavad nõukogul ja juhtkonnal ettevõtte juhtimist , nagu nad seda õigeks peavad , kirjutas Verslo zinios .
+
+originaal: John Hagelin ( Natural Law Party ) tegi kõige radikaalsema avalduse , väites , et " meelelahutustööstus peaks tegema jõupingutusi selleks , leida uusi teid Napsterit ja sarnaste teenuste kasutamiseks " maksa-iga-korra-eest " " .
+eemaldada: kõige
+konserveerunud: John Hagelin ( Natural Law Party ) tegi radikaalsema avalduse , väites , et " meelelahutustööstus peaks tegema jõupingutusi selleks , leida uusi teid Napsterit ja sarnaste teenuste kasutamiseks " maksa-iga-korra-eest " " .
+
+originaal: Püha kuulub Jumalale ja seega võib Jumala pühadus peegelduda igast inimesest .
+eemaldada: seega
+konserveerunud: Püha kuulub Jumalale ja võib Jumala pühadus peegelduda igast inimesest .
+
+originaal: Tema sõnul on Vene üksused tõrjutud paljudel suundadel tagasi lähtepositsioonidele , kust nad jaanuari keskpaiku alustasid tormijooksu Groznõile .
+eemaldada: keskpaiku
+konserveerunud: Tema sõnul on Vene üksused tõrjutud paljudel suundadel tagasi lähtepositsioonidele , kust nad jaanuari alustasid tormijooksu Groznõile .
+
+originaal: Täna toimus Vabariigi Valitsus , Eesti Ametiühingute Keskliidu ning Eesti Tööandjate ja Tööstuse Keskliidu vahel järjekordne läbirääkimiste voor .
+eemaldada: Täna
+konserveerunud: toimus Vabariigi Valitsus , Eesti Ametiühingute Keskliidu ning Eesti Tööandjate ja Tööstuse Keskliidu vahel järjekordne läbirääkimiste voor .
+
+originaal: Luba on vaja seetõttu , et Kohli kui Riigi-päeva liiget kaitseb saadikupuutumatus .
+eemaldada: seetõttu
+konserveerunud: Luba on vaja , et Kohli kui Riigi-päeva liiget kaitseb saadikupuutumatus .
+
+originaal: Pehmelt öeldes . "
+eemaldada: Pehmelt
+konserveerunud: öeldes . "
+
+originaal: Õigupoolest , kahe allpoolse Balti riigiga on asi korras .
+eemaldada: Õigupoolest
+konserveerunud: , kahe allpoolse Balti riigiga on asi korras .
+
+originaal: Mitte päris .
+eemaldada: Mitte
+konserveerunud: päris .
+
+originaal: Perekonnadraama " American Beauty " ( " Tabamata ilu " ) on esitatud sel aastal kaheksale Oscarile , sealhulgas parima filmi kategoorias .
+eemaldada: sealhulgas
+konserveerunud: Perekonnadraama " American Beauty " ( " Tabamata ilu " ) on esitatud sel aastal kaheksale Oscarile , parima filmi kategoorias .
+
+originaal: Samas ei saa temalt juhtimisõigust ära võtta , kui ta ise oma juhiluba ei tagasta .
+eemaldada: Samas
+konserveerunud: ei saa temalt juhtimisõigust ära võtta , kui ta ise oma juhiluba ei tagasta .
+
+originaal: Kuid nüüd on ajad teised ja oleks absurdne võrrelda esinduslikke tarkvarafirmasid ja küüditamist .
+eemaldada: nüüd
+konserveerunud: Kuid on ajad teised ja oleks absurdne võrrelda esinduslikke tarkvarafirmasid ja küüditamist .
+
+originaal: Homme müüvad oma raamatuid kirjastused " Eesti Raamat " ja " Kunst " , kolmapäeval " Eesti Entsüklopeediakirjastus " , neljapäeval " TEA " ja reedel " Varrak " .
+eemaldada: Homme
+konserveerunud: müüvad oma raamatuid kirjastused " Eesti Raamat " ja " Kunst " , kolmapäeval " Eesti Entsüklopeediakirjastus " , neljapäeval " TEA " ja reedel " Varrak " .
+
+originaal: Neli aastat varem kohtusid samad rivaalid Mexico MMi kullamängus , siis saatis 3 : 2 edu lõunaameeriklasi .
+eemaldada: Neli aastat varem
+konserveerunud: kohtusid samad rivaalid Mexico MMi kullamängus , siis saatis 3 : 2 edu lõunaameeriklasi .
+
+originaal: Samas on Utsari esilekerkimine süsteemiväline .
+eemaldada: Samas
+konserveerunud: on Utsari esilekerkimine süsteemiväline .
+
+originaal: " Uisuliidult sain tuge niipalju , et võisin kevadel käimata jäänud Rootsi-laagrile määratud 10 000 krooni eest sõidupiletid osta , " ütles Hernits .
+eemaldada: niipalju
+konserveerunud: " Uisuliidult sain tuge , et võisin kevadel käimata jäänud Rootsi-laagrile määratud 10 000 krooni eest sõidupiletid osta , " ütles Hernits .
+
+originaal: Ma ei näe seda nii , nagu oleksin Tartust ära tulnud .
+eemaldada: nii
+konserveerunud: Ma ei näe seda , nagu oleksin Tartust ära tulnud .
+
+originaal: Tallinn munitsipaalsaunast ilma .
+eemaldada: ilma
+konserveerunud: Tallinn munitsipaalsaunast .
+
+originaal: Tavaks on , et kõigil lipsumeestel lõigatakse pärast kella kuut õhtul lips pooleks .
+eemaldada: pooleks
+konserveerunud: Tavaks on , et kõigil lipsumeestel lõigatakse pärast kella kuut õhtul lips .
+
+originaal: Muide , ansambli järgmisel aastal ilmuval plaadil on üks lugu pühendatud Bikersi pubile
+eemaldada: Muide
+konserveerunud: , ansambli järgmisel aastal ilmuval plaadil on üks lugu pühendatud Bikersi pubile
+
+originaal: Neivelti hinnangul oleks otstarbekam kehtestada hoiustele mingi piir , millest kõrgemalt tuleb hakata tulumaksu maksma .
+eemaldada: millest kõrgemalt
+konserveerunud: Neivelti hinnangul oleks otstarbekam kehtestada hoiustele mingi piir , tuleb hakata tulumaksu maksma .
+
+originaal: Ajakirjanike küsimusele , kas ta arvab , et suudab rahakogumisega korvata annetuste vastuvõtmisest parteile tekitatud kahju , vastas Kohl : " Partei on olnud minu kodu " .
+eemaldada: kas
+konserveerunud: Ajakirjanike küsimusele , ta arvab , et suudab rahakogumisega korvata annetuste vastuvõtmisest parteile tekitatud kahju , vastas Kohl : " Partei on olnud minu kodu " .
+
+originaal: Esmakordselt on messil kaitsejõudude peastaap , Rocca al Mare kool ja riigikogu .
+eemaldada: Esmakordselt
+konserveerunud: on messil kaitsejõudude peastaap , Rocca al Mare kool ja riigikogu .
+
+originaal: Kokku müüs riigikantselei oksjonil üheteistkümnest müüki pandud autost kümme .
+eemaldada: Kokku
+konserveerunud: müüs riigikantselei oksjonil üheteistkümnest müüki pandud autost kümme .
+
+originaal: " See võis olla üks põhjusi , miks uppus kalalaev Katrin , kuid täpset põhjust ei saa teada enne , kui uurimine selle välja selgitab . "
+eemaldada: enne
+konserveerunud: " See võis olla üks põhjusi , miks uppus kalalaev Katrin , kuid täpset põhjust ei saa teada , kui uurimine selle välja selgitab . "
+
+originaal: " Ka on viimasel ajal mitmed laevad Hiiumaa ja Saaremaa lähedal puulasti merre kaotanud . "
+eemaldada: Ka
+konserveerunud: " on viimasel ajal mitmed laevad Hiiumaa ja Saaremaa lähedal puulasti merre kaotanud . "
+
+originaal: Väidetavalt maksis Liibüa iga pantvangi eest miljon dollarit lunaraha .
+eemaldada: Väidetavalt
+konserveerunud: maksis Liibüa iga pantvangi eest miljon dollarit lunaraha .
+
+originaal: Viimasel kahekümnel kilomeetril on kaks tõusu , ajalugu näitab , et just seal pannakse paremusjärjestus paika . "
+eemaldada: seal
+konserveerunud: Viimasel kahekümnel kilomeetril on kaks tõusu , ajalugu näitab , et just pannakse paremusjärjestus paika . "
+
+originaal: Enam kui praktilist toimetajatööd nõuab see amet head tegevjuhti , tuntud nägu ja oskust avalikkusega suhelda .
+eemaldada: Enam
+konserveerunud: kui praktilist toimetajatööd nõuab see amet head tegevjuhti , tuntud nägu ja oskust avalikkusega suhelda .
+
+originaal: Kas oleme Jumala eksinud laps , kes otsib päästet , mis talle on tõotatud ?
+eemaldada: Kas
+konserveerunud: oleme Jumala eksinud laps , kes otsib päästet , mis talle on tõotatud ?
+
+originaal: " Tänu kõrgele kohale edetabelis ma töötu seisust ei peljanud , " ütleb rattur .
+eemaldada: kõrgele
+konserveerunud: " Tänu kohale edetabelis ma töötu seisust ei peljanud , " ütleb rattur .
+
+originaal: Tartu Ehitus- ja Kergetööstuskool kaalub kahe oma õpilase väljaheitmist , kui kohus nad Tartu Pauluse kalmistu sadakonna haua rüüstamises süüdi mõistab , kirjutab tänane Postimees .
+eemaldada: süüdi
+konserveerunud: Tartu Ehitus- ja Kergetööstuskool kaalub kahe oma õpilase väljaheitmist , kui kohus nad Tartu Pauluse kalmistu sadakonna haua rüüstamises mõistab , kirjutab tänane Postimees .
+
+originaal: Järgmisel nädalal selgub EPL-i lugeja formaadieelistus , millest sõltuvalt võib alates septembrist tulla kõne alla EPL-i tavasuuruse kahanemine .
+eemaldada: millest sõltuvalt
+konserveerunud: Järgmisel nädalal selgub EPL-i lugeja formaadieelistus , võib alates septembrist tulla kõne alla EPL-i tavasuuruse kahanemine .
+
+originaal: Väidetavasti teenis fond suure osa oma varasemate aastate kasumist intressivahede vähenemise pealt .
+eemaldada: Väidetavasti
+konserveerunud: teenis fond suure osa oma varasemate aastate kasumist intressivahede vähenemise pealt .
+
+originaal: Relvajõududel ei tohi olla võimalust kulutada raha täitevvõimu teadmata või tema soovi vastaselt .
+eemaldada: vastaselt
+konserveerunud: Relvajõududel ei tohi olla võimalust kulutada raha täitevvõimu teadmata või tema soovi .
+
+originaal: Turniiri atraktiivseimaks mängijaks ning pealtvaatajate lemmikuks peeti Endla teatri näitlejat Sepo Seemani , kes arvas , et ta oli kõige nõmedam mängija .
+eemaldada: kõige
+konserveerunud: Turniiri atraktiivseimaks mängijaks ning pealtvaatajate lemmikuks peeti Endla teatri näitlejat Sepo Seemani , kes arvas , et ta oli nõmedam mängija .
+
+originaal: " Kui toimetaja seda uskuma jääks , et reede öösel teen ma 100-kroonise piletiga ööklubis tööd , " ohkab ameeriklanna ja ostab pileti .
+eemaldada: reede öösel
+konserveerunud: " Kui toimetaja seda uskuma jääks , et teen ma 100-kroonise piletiga ööklubis tööd , " ohkab ameeriklanna ja ostab pileti .
+
+originaal: On ju senine praktika näidanud , et maavanem läheb poliitkaubaks hoolimata sellest , mida ütleb seadus .
+eemaldada: ju
+konserveerunud: On senine praktika näidanud , et maavanem läheb poliitkaubaks hoolimata sellest , mida ütleb seadus .
+
+originaal: Kaob ju pärast reformiprotsessi lõpulejõudmise ning omavalitsuste eeldatavat ühinemist maavalitsuste järele vajadus .
+eemaldada: ju
+konserveerunud: Kaob pärast reformiprotsessi lõpulejõudmise ning omavalitsuste eeldatavat ühinemist maavalitsuste järele vajadus .
+
+originaal: Samuti on valitsus sõnades seadnud prioriteediks Eesti igakülgse ettevalmistamise EL-i täisliikmeks saamiseks .
+eemaldada: Samuti
+konserveerunud: on valitsus sõnades seadnud prioriteediks Eesti igakülgse ettevalmistamise EL-i täisliikmeks saamiseks .
+
+originaal: " Ega selliste pisiasjade pärast hakka keegi politseid tülitama . "
+eemaldada: Ega
+konserveerunud: " selliste pisiasjade pärast hakka keegi politseid tülitama . "
+
+originaal: Samas saab peale liisinglepingu vaadata liisitud objekti ning sellega seotud kindlustuspoliisi andmeid .
+eemaldada: Samas
+konserveerunud: saab peale liisinglepingu vaadata liisitud objekti ning sellega seotud kindlustuspoliisi andmeid .
+
+originaal: Luige hinnangul laienemise esimene ring pigem rahustab kui ärritab Venemaad .
+eemaldada: pigem
+konserveerunud: Luige hinnangul laienemise esimene ring rahustab kui ärritab Venemaad .
+
+originaal: Siis hakkavad inimesed Suletud Ruumist välja tulema .
+eemaldada: Siis
+konserveerunud: hakkavad inimesed Suletud Ruumist välja tulema .
+
+originaal: Eesti Päevalehe artiklid Vene Ühtsuspartei nimekirjas olevatest , kuid sellesse parteisse mitte astunud eestlastest viisid keskkriminaalpolitsei süüdistuse esitamiseni partei juhatuse liikmele Eduard Sedaševile .
+eemaldada: mitte
+konserveerunud: Eesti Päevalehe artiklid Vene Ühtsuspartei nimekirjas olevatest , kuid sellesse parteisse astunud eestlastest viisid keskkriminaalpolitsei süüdistuse esitamiseni partei juhatuse liikmele Eduard Sedaševile .
+
+originaal: Sedašev ennast süüdi ei tunnistanud , vaid nentis , et ta ei kontrollinud andmete õigsust .
+eemaldada: süüdi
+konserveerunud: Sedašev ennast ei tunnistanud , vaid nentis , et ta ei kontrollinud andmete õigsust .
+
+originaal: Peetsi sõnul pole keskmiselt võttes palgad üle mõistuse suured .
+eemaldada: keskmiselt
+konserveerunud: Peetsi sõnul pole võttes palgad üle mõistuse suured .
+
+originaal: Riided ei kõlvanud tal kuhugi . "
+eemaldada: kuhugi
+konserveerunud: Riided ei kõlvanud tal . "
+
+originaal: Vabariigi President Arnold Rüütel nimetas eile , 13. juunil uueks Kaitsejõudude Peastaabi ülemaks kolonel Alar Lanemani .
+eemaldada: eile
+konserveerunud: Vabariigi President Arnold Rüütel nimetas , 13. juunil uueks Kaitsejõudude Peastaabi ülemaks kolonel Alar Lanemani .
+
+originaal: Katrin , mida te Streimannilt pärast 7,5 aasta möödumist avariist ootate ?
+eemaldada: pärast
+konserveerunud: Katrin , mida te Streimannilt 7,5 aasta möödumist avariist ootate ?
+
+originaal: Huvitav , kas keegi neist otsustajatest on Streimanni kriminaalasja toimikuga tutvunud .
+eemaldada: kas
+konserveerunud: Huvitav , keegi neist otsustajatest on Streimanni kriminaalasja toimikuga tutvunud .
+
+originaal: Hiljem kirjutas ta kolm erinevat seletuskirja .
+eemaldada: Hiljem
+konserveerunud: kirjutas ta kolm erinevat seletuskirja .
+
+originaal: " Olen seda teemat mõnes väljaandes kommenteerinud ja praegu pole mul midagi uut lisada , " ütles Kaal .
+eemaldada: praegu
+konserveerunud: " Olen seda teemat mõnes väljaandes kommenteerinud ja pole mul midagi uut lisada , " ütles Kaal .
+
+originaal: Mõnedest asjadest on nende käe all saanud kunstitaiesed , näiteks neoonvärvilise karvaga tumbad , mida vaadates on raske arvata , et need kunagi midagi muud on olnud .
+eemaldada: näiteks
+konserveerunud: Mõnedest asjadest on nende käe all saanud kunstitaiesed , neoonvärvilise karvaga tumbad , mida vaadates on raske arvata , et need kunagi midagi muud on olnud .
+
+originaal: EAL saatis 7. novembril haridusministrile , sotsiaalministrile ning riigikogu rahandus- , sotsiaal- ja kultuurikomisjonile kirja , milles juhtis tähelepanu tõigale , et hoolimata arstide koolituse programmi muutusest järgmisel aastal on riigieelarve projektis residentuurikulud võrreldes eelmise aastaga sama suured .
+eemaldada: EAL
+konserveerunud: saatis 7. novembril haridusministrile , sotsiaalministrile ning riigikogu rahandus- , sotsiaal- ja kultuurikomisjonile kirja , milles juhtis tähelepanu tõigale , et hoolimata arstide koolituse programmi muutusest järgmisel aastal on riigieelarve projektis residentuurikulud võrreldes eelmise aastaga sama suured .
+
+originaal: Seejärel palutakse leinajad kaubanduskeskuse paigale .
+eemaldada: Seejärel
+konserveerunud: palutakse leinajad kaubanduskeskuse paigale .
+
+originaal: Samas peaks iga arukas inimene mõistma , et parkimise eest maksmine on autostunud ühiskonnas normaalne .
+eemaldada: Samas
+konserveerunud: peaks iga arukas inimene mõistma , et parkimise eest maksmine on autostunud ühiskonnas normaalne .
+
+originaal: Raviasutuse nõukogule jääb võimalus kehtestada voodipäevatasu või mitte seda teha .
+eemaldada: mitte
+konserveerunud: Raviasutuse nõukogule jääb võimalus kehtestada voodipäevatasu või seda teha .
+
+originaal: N Liidus olid eestlased need , kes elasid paremini tänu oma töökultuurile ja traditsioonidele .
+eemaldada: paremini
+konserveerunud: N Liidus olid eestlased need , kes elasid tänu oma töökultuurile ja traditsioonidele .
+
+originaal: Tahes tahtmata tuleb sel puhul küsida , milline on meie kultuuripoliitika rahapaigutamise efektiivsus ?
+eemaldada: Tahes
+konserveerunud: tahtmata tuleb sel puhul küsida , milline on meie kultuuripoliitika rahapaigutamise efektiivsus ?
+
+originaal: Seda on rohkem kui vaadati ETV-d 31. detsembril ( 2 h ja 31 min. ) .
+eemaldada: rohkem kui
+konserveerunud: Seda on vaadati ETV-d 31. detsembril ( 2 h ja 31 min. ) .
+
+originaal: Sportlase sõnul oleks ta rahul , kui suudaks Salt Lake Citys korrata Nagano esitust , siis oli Eesti parim iluuisutaja 20.
+eemaldada: siis
+konserveerunud: Sportlase sõnul oleks ta rahul , kui suudaks Salt Lake Citys korrata Nagano esitust , oli Eesti parim iluuisutaja 20.
+
+originaal: Rootsis võimul olevatele sotsiaal-demokraatidele algas valimiste aasta hästi , kuna viimase küsitluse põhjal pooldab neid 60 protsenti valijatest .
+eemaldada: valimiste aasta hästi
+konserveerunud: Rootsis võimul olevatele sotsiaal-demokraatidele algas , kuna viimase küsitluse põhjal pooldab neid 60 protsenti valijatest .
+
+originaal: " Poska ja Uus-Sadama tänava vahel olev teelõik on viletsas olukorras ja seal tuleb kolme nädalaga välja vahetada pool kilomeetrit trammiteed , kaasa arvatud keerukoht ole Narva maantee .
+eemaldada: seal
+konserveerunud: " Poska ja Uus-Sadama tänava vahel olev teelõik on viletsas olukorras ja tuleb kolme nädalaga välja vahetada pool kilomeetrit trammiteed , kaasa arvatud keerukoht ole Narva maantee .
+
+originaal: Siis saaksid uusi laudu-toole ja riiuleid Sõle gümnaasium , Vanalinna hariduskolleegium , Hiiu põhikool ja Kadrioru saksa gümnaasium .
+eemaldada: Siis
+konserveerunud: saaksid uusi laudu-toole ja riiuleid Sõle gümnaasium , Vanalinna hariduskolleegium , Hiiu põhikool ja Kadrioru saksa gümnaasium .
+
+originaal: " Kui maleliit katab suurmeistril kõik turniiriga seotud kulud , maletab Ehlvest tulemuslikult ja teda saadab edu .
+eemaldada: tulemuslikult
+konserveerunud: " Kui maleliit katab suurmeistril kõik turniiriga seotud kulud , maletab Ehlvest ja teda saadab edu .
+
+originaal: Eesti Televisioon vaidlustas seadusevastaselt näidatud Saaremaa viina reklaami eest saadud 80 000kroonise rahatrahvi Tallinna ringkonnakohtus , kuna telekanal on seisukohal , et nemad pole seadust rikkunud .
+eemaldada: seadusevastaselt
+konserveerunud: Eesti Televisioon vaidlustas näidatud Saaremaa viina reklaami eest saadud 80 000kroonise rahatrahvi Tallinna ringkonnakohtus , kuna telekanal on seisukohal , et nemad pole seadust rikkunud .
+
+originaal: Tema sõnul reklaamiseadus sponsorlusele mingeid piiranguid ei sea ning seetõttu on esimese astme kohtus telekanalile määratud rahatrahv põhjendamatu .
+eemaldada: seetõttu
+konserveerunud: Tema sõnul reklaamiseadus sponsorlusele mingeid piiranguid ei sea ning on esimese astme kohtus telekanalile määratud rahatrahv põhjendamatu .
+
+originaal: Korduva rikkumise korral on sanktsioonid karmimad ning siis võib kohus rikkujat karistada kuni 100.
+eemaldada: siis
+konserveerunud: Korduva rikkumise korral on sanktsioonid karmimad ning võib kohus rikkujat karistada kuni 100.
+
+originaal: Ja õigesti räägivad , äratuntavad asjad on kunstis pikka aega unustuses olnud .
+eemaldada: õigesti
+konserveerunud: Ja räägivad , äratuntavad asjad on kunstis pikka aega unustuses olnud .
+
+originaal: Kella 12 -14 toimuvad ekskursioonid Toompeale ja all- linna .
+eemaldada: all-
+konserveerunud: Kella 12 -14 toimuvad ekskursioonid Toompeale ja linna .
+
+originaal: " Esiteks , mul on möödunudaastane litsents .
+eemaldada: Esiteks
+konserveerunud: " , mul on möödunudaastane litsents .
+
+originaal: Viimane tulistamisintsident toimus esmaspäeval kell 21.15 kohaliku aja järgi Fairfaxi maakonnas , kus tapeti 47aastane Arlingtonist , Virginiast pärit Linda Franklin .
+eemaldada: Virginiast pärit
+konserveerunud: Viimane tulistamisintsident toimus esmaspäeval kell 21.15 kohaliku aja järgi Fairfaxi maakonnas , kus tapeti 47aastane Arlingtonist , Linda Franklin .
+
+originaal: Nii naiste kui meeste hulgas stardivad esikohapretendendid viitstardist , nagu esilagselt oligi planeeritud , kirjutab  .
+eemaldada: nagu
+konserveerunud: Nii naiste kui meeste hulgas stardivad esikohapretendendid viitstardist , esilagselt oligi planeeritud , kirjutab  .
+
+originaal: " Terve rea asjaolude tõttu , sealhulgas otseste , ma ütleksin , poliitiliste keeldude tõttu , ei toimu sel aastal Tallinnas pidu Vivat Rossija , millega me Tallinnas viimaste aastate jooksul harjunud oleme , " sõnas Uspenski .
+eemaldada: sealhulgas
+konserveerunud: " Terve rea asjaolude tõttu , otseste , ma ütleksin , poliitiliste keeldude tõttu , ei toimu sel aastal Tallinnas pidu Vivat Rossija , millega me Tallinnas viimaste aastate jooksul harjunud oleme , " sõnas Uspenski .
+
+originaal: Sageli on postkastid katkised , pole lukustatavad ning neil puudub omaniku nimi või aadress .
+eemaldada: Sageli
+konserveerunud: on postkastid katkised , pole lukustatavad ning neil puudub omaniku nimi või aadress .
+
+originaal: Kirjakandjale peab olema tagatud juurdepääs postkastile , sest sageli peab töötaja kulutama aega , et kirjakastini jõuda .
+eemaldada: sageli
+konserveerunud: Kirjakandjale peab olema tagatud juurdepääs postkastile , sest peab töötaja kulutama aega , et kirjakastini jõuda .
+
+originaal: Üksinda jäetud tüdruku leidis mägede patrull , kelle ekipaaž sidus tüdruku katki hõõrdunud jalad , andis süüa ja leidis ööbimiskoha lähimas külas .
+eemaldada: Üksinda
+konserveerunud: jäetud tüdruku leidis mägede patrull , kelle ekipaaž sidus tüdruku katki hõõrdunud jalad , andis süüa ja leidis ööbimiskoha lähimas külas .
+
+originaal: Seejärel kannavad jooksjad eri riikidest tõrvikut olümpialinna .
+eemaldada: Seejärel
+konserveerunud: kannavad jooksjad eri riikidest tõrvikut olümpialinna .
+
+originaal: Kokku läbib tõrvik teekonnal olümpiastaadionile 137 000 kilomeetrit .
+eemaldada: Kokku
+konserveerunud: läbib tõrvik teekonnal olümpiastaadionile 137 000 kilomeetrit .
+
+originaal: Esimene " Kaks takti ette " oli eetris 1972. aastal .
+eemaldada: ette
+konserveerunud: Esimene " Kaks takti " oli eetris 1972. aastal .
+
+originaal: Siseministeeriumi kinnitusel tegeleb ebaseadusliku relvaäriga suur hulk inimesi , eriti aga nn rahvavabastusarmee võitlejad .
+eemaldada: eriti
+konserveerunud: Siseministeeriumi kinnitusel tegeleb ebaseadusliku relvaäriga suur hulk inimesi , aga nn rahvavabastusarmee võitlejad .
+
+originaal: " Ausalt öelda ma teist sellist korda hetkel meenutada ei suudagi .
+eemaldada: Ausalt
+konserveerunud: " öelda ma teist sellist korda hetkel meenutada ei suudagi .
+
+originaal: Teisiti ei saa tööd teha , see peab meeldima .
+eemaldada: Teisiti
+konserveerunud: ei saa tööd teha , see peab meeldima .
+
+originaal: Euroopa Komisjonile valmistavad muret rahvastiku vananemine ning madal sündimus , mistõttu kutsutakse riike rohujuure tasandil probleemiga tegelema .
+eemaldada: mistõttu
+konserveerunud: Euroopa Komisjonile valmistavad muret rahvastiku vananemine ning madal sündimus , kutsutakse riike rohujuure tasandil probleemiga tegelema .
+
+originaal: Venemaa valitsus otsustas välja vahetada valdava enamuse Venemaa koolide arvutites kasutatavatest arvutiprogrammidest ja operatsioonisüsteemidest , kuna praegu on need 90 protsendi ulatuses varastatud .
+eemaldada: praegu
+konserveerunud: Venemaa valitsus otsustas välja vahetada valdava enamuse Venemaa koolide arvutites kasutatavatest arvutiprogrammidest ja operatsioonisüsteemidest , kuna on need 90 protsendi ulatuses varastatud .
+
+originaal: Seni ei ole maksuhaldur kõnealuseid tehinguid maksustanud , kuid vajadusel kaalub seadusest tuleneva õiguse kasutamist .
+eemaldada: Seni
+konserveerunud: ei ole maksuhaldur kõnealuseid tehinguid maksustanud , kuid vajadusel kaalub seadusest tuleneva õiguse kasutamist .
+
+originaal: Ei , sa nägid midagi enamat .
+eemaldada: Ei
+konserveerunud: , sa nägid midagi enamat .
+
+originaal: Üleeile esines ÜRO-s kõnega USA president George W. Bush .
+eemaldada: Üleeile
+konserveerunud: esines ÜRO-s kõnega USA president George W. Bush .
+
+originaal: Juhtkonstaabel Margus Trees ütles , et kevadest on kokkulepe abipolitseinikest kaitseliitlastega , kes hakkavad jalgratastega patrullimas käima , samamoodi läheb kevadest käima motorolleripatrull .
+eemaldada: samamoodi
+konserveerunud: Juhtkonstaabel Margus Trees ütles , et kevadest on kokkulepe abipolitseinikest kaitseliitlastega , kes hakkavad jalgratastega patrullimas käima , läheb kevadest käima motorolleripatrull .
+
+originaal: Esmaspäeval kell 16.47 helistas Falcki juhtimiskeskusse mees , kes ütles , et hetk tagasi olid taskuvargad üritanud Harju tänaval tema emalt näpata rahakotti , teatas Falcki pressiesindaja .
+eemaldada: tagasi
+konserveerunud: Esmaspäeval kell 16.47 helistas Falcki juhtimiskeskusse mees , kes ütles , et hetk olid taskuvargad üritanud Harju tänaval tema emalt näpata rahakotti , teatas Falcki pressiesindaja .
+
+originaal: Kuhu nemad oma suurtükkidega ees , sinna meie soldatid püssidega järele !
+eemaldada: sinna
+konserveerunud: Kuhu nemad oma suurtükkidega ees , meie soldatid püssidega järele !
+
+originaal: Ei , seinal on suitsetamist keelav silt .
+eemaldada: Ei
+konserveerunud: , seinal on suitsetamist keelav silt .
+
+originaal: Siis kandis praegune Peterburi tee Suur-Raevalla tänava nime , " selgitas Nerman .
+eemaldada: Siis
+konserveerunud: kandis praegune Peterburi tee Suur-Raevalla tänava nime , " selgitas Nerman .
+
+originaal: " Praegu on liisijatel hirm ning lepingud vormistatakse ümber , " tõdes Nissan Nordic Europe'i Balti osakonna juht Margus Mikk .
+eemaldada: Praegu
+konserveerunud: " on liisijatel hirm ning lepingud vormistatakse ümber , " tõdes Nissan Nordic Europe'i Balti osakonna juht Margus Mikk .
+
+originaal: Või-malus sel juhul end lunastada on osta vähem reostavatelt riikidelt nende ärakasutamata saastekvoote .
+eemaldada: vähem
+konserveerunud: Või-malus sel juhul end lunastada on osta reostavatelt riikidelt nende ärakasutamata saastekvoote .
+
+originaal: Samas on sajad inimesed Hiinas pandud epideemia kartuses karantiini .
+eemaldada: Samas
+konserveerunud: on sajad inimesed Hiinas pandud epideemia kartuses karantiini .
+
+originaal: " See tõstis , jah , motivatsiooni , " kinnitas Tombak .
+eemaldada: , jah
+konserveerunud: " See tõstis , motivatsiooni , " kinnitas Tombak .
+
+originaal: Kolmekesi - Ree püsis kaaslaste tuules - tööd rügades tehti peagrupiga ees mõne kilomeetriga turvaline vahe sisse .
+eemaldada: Kolmekesi
+konserveerunud: - Ree püsis kaaslaste tuules - tööd rügades tehti peagrupiga ees mõne kilomeetriga turvaline vahe sisse .
+
+originaal: Öösel seisab väikese baari ukse ees mees .
+eemaldada: Öösel
+konserveerunud: seisab väikese baari ukse ees mees .
+
+originaal: Ela nagu sipelgas , tööta nagu sipelgas .
+eemaldada: nagu
+konserveerunud: Ela sipelgas , tööta nagu sipelgas .
+
+originaal: Hiljem lülitati ehitis kaitstavate mälestiste nimistusse .
+eemaldada: Hiljem
+konserveerunud: lülitati ehitis kaitstavate mälestiste nimistusse .
+
+originaal: Eesti naiskonna parimad on edetabelikoha poolest allpool : Kaia Kanepi 121. ja Maret Ani 131. kohal .
+eemaldada: allpool
+konserveerunud: Eesti naiskonna parimad on edetabelikoha poolest : Kaia Kanepi 121. ja Maret Ani 131. kohal .
+
+originaal: Tänavu on Pirita randa paigaldatud 37 riietuskabiini - 18 kabiini rohkem kui möödnud aastal .
+eemaldada: Tänavu
+konserveerunud: on Pirita randa paigaldatud 37 riietuskabiini - 18 kabiini rohkem kui möödnud aastal .
+
+originaal: Palvuste ajaks tõsteti kaks kirjutuslauda üksteise peale - nii saadi ruumi , " rääkis tuntud näitleja ja Tallinna linnavolikogu liige Ahmetov .
+eemaldada: nii
+konserveerunud: Palvuste ajaks tõsteti kaks kirjutuslauda üksteise peale - saadi ruumi , " rääkis tuntud näitleja ja Tallinna linnavolikogu liige Ahmetov .
+
+originaal: Null-tulumaksumäära puhul tuleb küsida , kas see on meie ettevõtete huvides .
+eemaldada: kas
+konserveerunud: Null-tulumaksumäära puhul tuleb küsida , see on meie ettevõtete huvides .
+
+originaal: Äkki on parem minna Iirimaa teed , kus on ühtne väheste eranditega ettevõtete tulumaksumäär soodsal 12,5 protsendi tasemel ?
+eemaldada: Äkki
+konserveerunud: on parem minna Iirimaa teed , kus on ühtne väheste eranditega ettevõtete tulumaksumäär soodsal 12,5 protsendi tasemel ?
+
+originaal: Uut maksustrateegiat hakkame sügisest välja töötama , võib-olla on järgmiseks sügiseks meil konkreetne positsioon olemas .
+eemaldada: võib-olla
+konserveerunud: Uut maksustrateegiat hakkame sügisest välja töötama , on järgmiseks sügiseks meil konkreetne positsioon olemas .
+
+originaal: " Kui maanteesildu on Eestis 800 , siis rippsildu võib näppudel üles lugeda , " rääkis Kirotam .
+eemaldada: siis
+konserveerunud: " Kui maanteesildu on Eestis 800 , rippsildu võib näppudel üles lugeda , " rääkis Kirotam .
+
+originaal: Aga millised on tänased jõulukombed helilooja Raimo Kangro , kirjanik Leelo Tungla ja nende kolmelapselises peres , päris lõunalekutsuja edasi .
+eemaldada: päris
+konserveerunud: Aga millised on tänased jõulukombed helilooja Raimo Kangro , kirjanik Leelo Tungla ja nende kolmelapselises peres , lõunalekutsuja edasi .
+
+originaal: " Ja kohe laskis saatejuht eestikeelse laulu täies pikkuses inglisekeelsele otsa .
+eemaldada: kohe
+konserveerunud: " Ja laskis saatejuht eestikeelse laulu täies pikkuses inglisekeelsele otsa .
+
+originaal: Orkester mürisenud naerda nagu rahvusmeeskoor .
+eemaldada: nagu
+konserveerunud: Orkester mürisenud naerda rahvusmeeskoor .
+
+originaal: Miks nii tõsine ?
+eemaldada: nii
+konserveerunud: Miks tõsine ?
+
+originaal: " Eestis on kaitsetollidest maalitud tont , kelle ümber tantsitakse , teadmata , kas tegemist ongi tondiga . "
+eemaldada: kas
+konserveerunud: " Eestis on kaitsetollidest maalitud tont , kelle ümber tantsitakse , teadmata , tegemist ongi tondiga . "
+
+originaal: Poolas sain tugeva õlatrauma , aeg-ajalt andis tunda mullune seljavigastus . "
+eemaldada: aeg-ajalt
+konserveerunud: Poolas sain tugeva õlatrauma , andis tunda mullune seljavigastus . "
+
+originaal: Elasin nii nagu professionaalsele sportlasele kohane .
+eemaldada: nii nagu
+konserveerunud: Elasin professionaalsele sportlasele kohane .
+
+originaal: Inimesed ei mõista altmineku põhjuseid ning hakkavad arutlema - kas Pertelsoni vaevab mingi kompleks ? "
+eemaldada: kas
+konserveerunud: Inimesed ei mõista altmineku põhjuseid ning hakkavad arutlema - Pertelsoni vaevab mingi kompleks ? "
+
+originaal: Nüüd jääb äparduste korral aega kosumiseks . "
+eemaldada: Nüüd
+konserveerunud: jääb äparduste korral aega kosumiseks . "
+
+originaal: Ent vähk pole vältimatu - see areneb " vaid " 14 protsendil suitsetajatel .
+eemaldada: vaid
+konserveerunud: Ent vähk pole vältimatu - see areneb " " 14 protsendil suitsetajatel .
+
+originaal: Kuid pärast esmaspäevast kohtumist Emsisega otsustas Uus Aeg teda mitte toetada .
+eemaldada: mitte
+konserveerunud: Kuid pärast esmaspäevast kohtumist Emsisega otsustas Uus Aeg teda toetada .
+
+originaal: Siis peaks sellest saama linna suurim venekeelse kirjanduse kauplus .
+eemaldada: Siis
+konserveerunud: peaks sellest saama linna suurim venekeelse kirjanduse kauplus .
+
+originaal: 1. töö on parim kaitse vaesuse vastu - uus seadus motiveerib inimest töötama ja teenima töist tulu , mitte toetustest elama .
+eemaldada: mitte
+konserveerunud: 1. töö on parim kaitse vaesuse vastu - uus seadus motiveerib inimest töötama ja teenima töist tulu , toetustest elama .
+
+originaal: Seega ei ole lotomiljonäridel uut lehte mõtet osta .
+eemaldada: Seega
+konserveerunud: ei ole lotomiljonäridel uut lehte mõtet osta .
+
+originaal: TT : Sagedamini on rööve olnud Astangu-Järveotsa vahelisel tühermaal .
+eemaldada: Sagedamini
+konserveerunud: TT : on rööve olnud Astangu-Järveotsa vahelisel tühermaal .
+
+originaal: Siis möödus meist sõiduauto Ford Probe .
+eemaldada: Siis
+konserveerunud: möödus meist sõiduauto Ford Probe .
+
+originaal: Ta oli austatud kogu Euroopas ja seepärast annan suure kurbusega edasi oma kaastunde . "
+eemaldada: seepärast
+konserveerunud: Ta oli austatud kogu Euroopas ja annan suure kurbusega edasi oma kaastunde . "
+
+originaal: Ühtlasi annab ta sellega selge signaali üleolevast suhtumisest ajakirjandusse .
+eemaldada: Ühtlasi
+konserveerunud: annab ta sellega selge signaali üleolevast suhtumisest ajakirjandusse .
+
+originaal: Mootorratas ei andnud teed paremalt tulnud sõiduautole .
+eemaldada: paremalt
+konserveerunud: Mootorratas ei andnud teed tulnud sõiduautole .
+
+originaal: Parkimistasu maksmata jätnud autojuhtidele koostasid Falcki kontrolörid Tallinnas juulis 6174 viivistasuotsust ( VTO ) , kuu varem oli neid 4155.
+eemaldada: kuu varem
+konserveerunud: Parkimistasu maksmata jätnud autojuhtidele koostasid Falcki kontrolörid Tallinnas juulis 6174 viivistasuotsust ( VTO ) , oli neid 4155.
+
+originaal: Peamiselt turustatakse Daisy kaubamärgiga pehmepaberi tooteid Eesti , Läti , Leedu ja Skandinaavia turul .
+eemaldada: Peamiselt
+konserveerunud: turustatakse Daisy kaubamärgiga pehmepaberi tooteid Eesti , Läti , Leedu ja Skandinaavia turul .
+
+originaal: " Kahju , et Veeral ( Baranova - toim ) nii läks .
+eemaldada: nii
+konserveerunud: " Kahju , et Veeral ( Baranova - toim ) läks .
+
+originaal: Esimesed pildigaleriid tekkisid renessansiajastul ja sealt alguse saanud maalide eksponeerimise komme jäi püsima sajanditeks .
+eemaldada: sealt
+konserveerunud: Esimesed pildigaleriid tekkisid renessansiajastul ja alguse saanud maalide eksponeerimise komme jäi püsima sajanditeks .
+
+originaal: Alustasin oma garaažigaleriiga Pärnus sellepärast , et tahtsin näituseid teha .
+eemaldada: sellepärast
+konserveerunud: Alustasin oma garaažigaleriiga Pärnus , et tahtsin näituseid teha .
+
+originaal: Kuid alati ei tähenda parteide liitumine poliitikas tehet 1 + 1 = 2.
+eemaldada: alati
+konserveerunud: Kuid ei tähenda parteide liitumine poliitikas tehet 1 + 1 = 2.
+
+originaal: Eesti ajaloos on olnud olukord , kus 1932. aasta valimistel saavutatud kolme suurima partei toetusprotsendid 40 , 22 ja 21 võrdusid 1934. aasta jaanuaris kokku vähem kui 50-ga .
+eemaldada: vähem kui 50-ga
+konserveerunud: Eesti ajaloos on olnud olukord , kus 1932. aasta valimistel saavutatud kolme suurima partei toetusprotsendid 40 , 22 ja 21 võrdusid 1934. aasta jaanuaris kokku .
+
+originaal: 1920. aastate parteide ( üle ) küllusest ( 10-14 parteid riigikogus ) jäi 1932. aastaks ühinemislaine järel alles kolm suurt ( sotsialistid , Rahvuslik Keskerakond ja põllumehed koos asunikega ) ning kolm marginaalset parteid .
+eemaldada: alles
+konserveerunud: 1920. aastate parteide ( üle ) küllusest ( 10-14 parteid riigikogus ) jäi 1932. aastaks ühinemislaine järel kolm suurt ( sotsialistid , Rahvuslik Keskerakond ja põllumehed koos asunikega ) ning kolm marginaalset parteid .
+
+originaal: Diana matustel on lubanud laulda Elton John , samas kui Itaalia tenor Luciano Pavarotti lükkas tagasi Buckinghami palee palve tulla esinema .
+eemaldada: samas kui
+konserveerunud: Diana matustel on lubanud laulda Elton John , Itaalia tenor Luciano Pavarotti lükkas tagasi Buckinghami palee palve tulla esinema .
+
+originaal: Ettepaneku selleks tegi erakonna piirkonnajuhatus , põhjuseks Kristiine halduskogu esimehe valimised eelmise aasta novembris , kui Korp hääletas vastupidiselt erakonna otsusele halduskogu esimehe valimisel keskerakondlase Natalja Vaino poolt .
+eemaldada: vastupidiselt
+konserveerunud: Ettepaneku selleks tegi erakonna piirkonnajuhatus , põhjuseks Kristiine halduskogu esimehe valimised eelmise aasta novembris , kui Korp hääletas erakonna otsusele halduskogu esimehe valimisel keskerakondlase Natalja Vaino poolt .
+
+originaal: Vaatamata mehe priskele ja hoolitsetud , isegi heatahtlikule välimusele seostatakse Mogilevitšit Vene ajakirjanduses mitme palgamõrva tellimisega .
+eemaldada: isegi
+konserveerunud: Vaatamata mehe priskele ja hoolitsetud , heatahtlikule välimusele seostatakse Mogilevitšit Vene ajakirjanduses mitme palgamõrva tellimisega .
+
+originaal: Mullu tarnis Gazprom Ukraina kaudu Euroopasse 110 miljardit kuupmeetrit gaasi .
+eemaldada: Mullu
+konserveerunud: tarnis Gazprom Ukraina kaudu Euroopasse 110 miljardit kuupmeetrit gaasi .
+
+originaal: Viimane tähendab samu muusikuid , kes osalenud Bonzo ja Tõuni plaatide salvestamisel : lisaks Bonzole ( laul , suupill , mbira , kitarr ) ja Tõunile ( laul , kitarr , havaikitarr , mbira ) on seal Alari Piispea ( kontrabass , tuba ) , Ahti Bachblum ( klaver , harmoonium ) , Margus Tammemägi ( löökpillid , vibrafon ) , Meelis Unt ( saksofonid , klarnet ) , Tanel Aavakivi ( trompet ) ja Lauri Liivak ( heli ) .
+eemaldada: on seal
+konserveerunud: Viimane tähendab samu muusikuid , kes osalenud Bonzo ja Tõuni plaatide salvestamisel : lisaks Bonzole ( laul , suupill , mbira , kitarr ) ja Tõunile ( laul , kitarr , havaikitarr , mbira ) Alari Piispea ( kontrabass , tuba ) , Ahti Bachblum ( klaver , harmoonium ) , Margus Tammemägi ( löökpillid , vibrafon ) , Meelis Unt ( saksofonid , klarnet ) , Tanel Aavakivi ( trompet ) ja Lauri Liivak ( heli ) .
+
+originaal: Kaarli kiriku juurde oli üles rivistatud rühmad kõigist kaitseliidu malevatest ning naiskodukaitse ja üliõpilaskorporatsiooni Rotalia rühm , kokku 17 rühma ja 18 liputoimkonda üle 500 inimese rivis .
+eemaldada: kokku
+konserveerunud: Kaarli kiriku juurde oli üles rivistatud rühmad kõigist kaitseliidu malevatest ning naiskodukaitse ja üliõpilaskorporatsiooni Rotalia rühm , 17 rühma ja 18 liputoimkonda üle 500 inimese rivis .
+
+originaal: Et nende haudu ei leitud , toimus matus fiktiivselt .
+eemaldada: fiktiivselt
+konserveerunud: Et nende haudu ei leitud , toimus matus .
+
+originaal: Kindlasti toetavad viimaseid literaadid ja Tõnu Ehasalu , kes eilses Postimehes arvab , et just nemad asendavad Eestis puuduvat kunstiteooriat .
+eemaldada: Kindlasti
+konserveerunud: toetavad viimaseid literaadid ja Tõnu Ehasalu , kes eilses Postimehes arvab , et just nemad asendavad Eestis puuduvat kunstiteooriat .
+
+originaal: Nooreks pereks loetakse perekonda või üksikvanemat , kes kasvatab vähemalt ühte alla 16-aastast last .
+eemaldada: vähemalt
+konserveerunud: Nooreks pereks loetakse perekonda või üksikvanemat , kes kasvatab ühte alla 16-aastast last .
+
+originaal: Ehitama hakkame suve lõpus või sügise alguses , praegu käivad ettevalmistustööd , ütles Merko elamuehitusdivisjoni direktor Tiit Kuusik .
+eemaldada: praegu
+konserveerunud: Ehitama hakkame suve lõpus või sügise alguses , käivad ettevalmistustööd , ütles Merko elamuehitusdivisjoni direktor Tiit Kuusik .
+
+originaal: Praegu käib ta korra nädalas arsti juures kontrollis .
+eemaldada: Praegu
+konserveerunud: käib ta korra nädalas arsti juures kontrollis .
+
+originaal: Viimased arvamusküsitlused annavad alust arvata , et NATO-ga liitumist pooldab 57 protsenti valijaist ja otsustavalt on selle vastu 23 protsenti .
+eemaldada: otsustavalt
+konserveerunud: Viimased arvamusküsitlused annavad alust arvata , et NATO-ga liitumist pooldab 57 protsenti valijaist ja on selle vastu 23 protsenti .
+
+originaal: Rindekohviku külalised saavad sõjaaegse muusika saatel ja vanaaegses õhustikus osta traditsioonilisi Soome hõrgutisi nagu pannkoogid moosi ja suhkruga , katlas keedetud kohv ja hernesupp .
+eemaldada: nagu
+konserveerunud: Rindekohviku külalised saavad sõjaaegse muusika saatel ja vanaaegses õhustikus osta traditsioonilisi Soome hõrgutisi pannkoogid moosi ja suhkruga , katlas keedetud kohv ja hernesupp .
+
+originaal: Nüüd on karistuse teada saanud klubidel kolm päeva selleks , et see edasi kaevata .
+eemaldada: Nüüd
+konserveerunud: on karistuse teada saanud klubidel kolm päeva selleks , et see edasi kaevata .
+
+originaal: Organisatsiooni eksperdid nimetavad ajakirjanike mõrvamist " äärmuslikuks , kuid mitte ainsaks tsensuuri meetodiks " .
+eemaldada: mitte
+konserveerunud: Organisatsiooni eksperdid nimetavad ajakirjanike mõrvamist " äärmuslikuks , kuid ainsaks tsensuuri meetodiks " .
+
+originaal: Seega tuli kohtul Hansar selles osas õigeks mõista , sest üks fotografeeritutest oli 14- ja teine 16-aastane .
+eemaldada: Seega
+konserveerunud: tuli kohtul Hansar selles osas õigeks mõista , sest üks fotografeeritutest oli 14- ja teine 16-aastane .
+
+originaal: Praegu aitab pensionipõlve pidav odameister vahel vasaraheitjat Terje Matsikut .
+eemaldada: Praegu
+konserveerunud: aitab pensionipõlve pidav odameister vahel vasaraheitjat Terje Matsikut .
+
+originaal: Sealt Sellis mune hauduva linnu avastaski .
+eemaldada: Sealt
+konserveerunud: Sellis mune hauduva linnu avastaski .
+
+originaal: Mäletatavasti on Türgi mitmel korral viinud oma väed karistusoperatsioonideks üle Iraagi piiri .
+eemaldada: Mäletatavasti
+konserveerunud: on Türgi mitmel korral viinud oma väed karistusoperatsioonideks üle Iraagi piiri .
+
+originaal: Kui Konstantin oli noorem , meeldis talle laulmisest rohkem viiulit mängida .
+eemaldada: rohkem
+konserveerunud: Kui Konstantin oli noorem , meeldis talle laulmisest viiulit mängida .
+
+originaal: Seejärel lindistab Kaljuste koor Londonis Pärdi uue plaadi .
+eemaldada: Seejärel
+konserveerunud: lindistab Kaljuste koor Londonis Pärdi uue plaadi .
+
+originaal: Siinne jaanuaripimedus , teate küll - kui veerand kolm päeval pimedaks läheb , on ängistav . "
+eemaldada: küll
+konserveerunud: Siinne jaanuaripimedus , teate - kui veerand kolm päeval pimedaks läheb , on ängistav . "
+
+originaal: Küll teeb seda mu meelest Tagore oma ammuste tekstidega .
+eemaldada: Küll
+konserveerunud: teeb seda mu meelest Tagore oma ammuste tekstidega .
+
+originaal: Tavakohaselt küsib STV selle töö eest 492 krooni .
+eemaldada: Tavakohaselt
+konserveerunud: küsib STV selle töö eest 492 krooni .
+
+originaal: Hind kerkib Fortum Tartu kliendile veerandi võrra - seniselt 399 kroonilt megavatt-tunnist 504 kroonile , kirjutab Tartu Postimees .
+eemaldada: seniselt 399 kroonilt megavatt-tunnist 504 kroonile
+konserveerunud: Hind kerkib Fortum Tartu kliendile veerandi võrra - , kirjutab Tartu Postimees .
+
+originaal: Aasperes esinevad kunstnikud on eri generatsioonidest ( vanahärra Evald Okasest kunstiakadeemia tudengiteni ) ja eri maailmavaadetega ( kristlikust Jüri Arrakust krišnaiitlike Kadri Kangilaski ja Toomas Tõnissooni ) ning kõnelevad eri kunstikeeltes ( kohal on fotorealistlik Maarit Murka , sürrealistlik Mati Kütt jpt , kui veel -isme ritta seada ) .
+eemaldada: kui veel
+konserveerunud: Aasperes esinevad kunstnikud on eri generatsioonidest ( vanahärra Evald Okasest kunstiakadeemia tudengiteni ) ja eri maailmavaadetega ( kristlikust Jüri Arrakust krišnaiitlike Kadri Kangilaski ja Toomas Tõnissooni ) ning kõnelevad eri kunstikeeltes ( kohal on fotorealistlik Maarit Murka , sürrealistlik Mati Kütt jpt , -isme ritta seada ) .
+
+originaal: Lossis tundub ilu loomulik .
+eemaldada: Lossis
+konserveerunud: tundub ilu loomulik .
+
+originaal: " Kui me üle-eelmise aasta sügisel naiskonnaga MMil ehk olümpiakatsevõistlusel 9. koha saime , kanti meid hetkega maha - ei raha , ei võistlusi .
+eemaldada: ehk
+konserveerunud: " Kui me üle-eelmise aasta sügisel naiskonnaga MMil olümpiakatsevõistlusel 9. koha saime , kanti meid hetkega maha - ei raha , ei võistlusi .
+
+originaal: Samuti puuduvad Luigel võlad pankadele , eraisikutele ning liisingud ja hüpoteegid .
+eemaldada: Samuti
+konserveerunud: puuduvad Luigel võlad pankadele , eraisikutele ning liisingud ja hüpoteegid .
+
+originaal: Majanduslike huvide deklaratsiooni andmetel on president Lennart Meri Hansapangale võlgu 1 022 402 krooni , valitsuse liikmetest on suurim võlg peaminister Mart Laaril , kes on Hansapangast laenanud 1 035 150 krooni .
+eemaldada: võlgu
+konserveerunud: Majanduslike huvide deklaratsiooni andmetel on president Lennart Meri Hansapangale 1 022 402 krooni , valitsuse liikmetest on suurim võlg peaminister Mart Laaril , kes on Hansapangast laenanud 1 035 150 krooni .
+
+originaal: Sellest koorub välja mingi statistiline keskmine , aga mitte iga üksiku inimese hädad .
+eemaldada: mitte
+konserveerunud: Sellest koorub välja mingi statistiline keskmine , aga iga üksiku inimese hädad .
+
+originaal: Asi läks nii hulluks , et pidin närviparanduskeskuses paariks nädalaks aja maha võtma .
+eemaldada: nii
+konserveerunud: Asi läks hulluks , et pidin närviparanduskeskuses paariks nädalaks aja maha võtma .
+
+originaal: " Praegusajal on varem rajatud maaparandussüsteemidele suurt kahju teinud paljude maade peremehetus .
+eemaldada: varem
+konserveerunud: " Praegusajal on rajatud maaparandussüsteemidele suurt kahju teinud paljude maade peremehetus .
+
+originaal: Nimelt kasseeris Hugh Rodham 400 000 dollarit selle eest , et ta suutis Bill Clintonilt välja rääkida armuandmise kahele süüdimõistetud kurjategijale .
+eemaldada: Nimelt
+konserveerunud: kasseeris Hugh Rodham 400 000 dollarit selle eest , et ta suutis Bill Clintonilt välja rääkida armuandmise kahele süüdimõistetud kurjategijale .
+
+originaal: Seejärel töötas ta Rannu ja Elva , 1979. aastast Tartu Pauluse koguduse õpetajana .
+eemaldada: Seejärel
+konserveerunud: töötas ta Rannu ja Elva , 1979. aastast Tartu Pauluse koguduse õpetajana .
+
+originaal: üheksa protsenti elanikest kulutab kuus kuni 4000 krooni , 1,5 protsenti kuni 8000 ning üks protsent üle 8000 krooni .
+eemaldada: üle
+konserveerunud: üheksa protsenti elanikest kulutab kuus kuni 4000 krooni , 1,5 protsenti kuni 8000 ning üks protsent 8000 krooni .
+
+originaal: Alarm hakkas tööle hoone pööningul , kuid analüüsid näitasid , et sinna sattunud aur on ohutu ega ole närvigaas , teatas politsei .
+eemaldada: sinna
+konserveerunud: Alarm hakkas tööle hoone pööningul , kuid analüüsid näitasid , et sattunud aur on ohutu ega ole närvigaas , teatas politsei .
+
+originaal: Kaks aastat tagasi maksis kinnistu 1 135 000 krooni , millest 11 350 tasuti erastamisväärtpaberites , nüüd hindab kinnisvarabüroo LVM kinnistu mitteametlikuks ligikaudseks maksumuseks kolm miljonit krooni .
+eemaldada: nüüd
+konserveerunud: Kaks aastat tagasi maksis kinnistu 1 135 000 krooni , millest 11 350 tasuti erastamisväärtpaberites , hindab kinnisvarabüroo LVM kinnistu mitteametlikuks ligikaudseks maksumuseks kolm miljonit krooni .
+
+originaal: Samas ei avalikustanud Kask , kui suure miinusega ettevõtte iga kuu töötab .
+eemaldada: Samas
+konserveerunud: ei avalikustanud Kask , kui suure miinusega ettevõtte iga kuu töötab .
+
+originaal: Varem pole ta vabatahtlik olnud .
+eemaldada: Varem
+konserveerunud: pole ta vabatahtlik olnud .
+
+originaal: Sealne kogemus on mul meeles , pealegi ei meeldi mulle suhtumine , et kui midagi palutakse teha , siis küsitakse , mis ma selle eest saan , " leiab Kirso .
+eemaldada: pealegi
+konserveerunud: Sealne kogemus on mul meeles , ei meeldi mulle suhtumine , et kui midagi palutakse teha , siis küsitakse , mis ma selle eest saan , " leiab Kirso .
+
+originaal: Ta ei pea end eurovisioonifänniks , ka ei tõmba teda vabatahtlikuks võimalus näha Malta lauljat või kohvi joovat Tanel Padarit .
+eemaldada: ka
+konserveerunud: Ta ei pea end eurovisioonifänniks , ei tõmba teda vabatahtlikuks võimalus näha Malta lauljat või kohvi joovat Tanel Padarit .
+
+originaal: Homme on Eesti Draamateatri suur saal laste päralt , kell 16 esietendub David Woodi lastenäidend " Kiigepuu " .
+eemaldada: Homme
+konserveerunud: on Eesti Draamateatri suur saal laste päralt , kell 16 esietendub David Woodi lastenäidend " Kiigepuu " .
+
+originaal: Siis on võimalik teksti suvepuhkuse järel lihvida , " lausus Adams , kes loodab , et seadus võetakse sel aastal vastu .
+eemaldada: Siis
+konserveerunud: on võimalik teksti suvepuhkuse järel lihvida , " lausus Adams , kes loodab , et seadus võetakse sel aastal vastu .
+
+originaal: Rüütlil õnnestus põgeneda enne , kui politseipatrull sündmuskohale jõudis .
+eemaldada: enne
+konserveerunud: Rüütlil õnnestus põgeneda , kui politseipatrull sündmuskohale jõudis .
+
+originaal: Ellujäänud karupoeg on emane , üldse oli pesakonnas kaks emast ja üks isane karupoeg .
+eemaldada: üldse
+konserveerunud: Ellujäänud karupoeg on emane , oli pesakonnas kaks emast ja üks isane karupoeg .
+
+originaal: Täna esitab Lambin soomlasele Vesa Surenkinile kutse tulla turniirile Eesti meeskonda juhendama .
+eemaldada: Täna
+konserveerunud: esitab Lambin soomlasele Vesa Surenkinile kutse tulla turniirile Eesti meeskonda juhendama .
+
+originaal: Igalt poolt öeldi Vehmile , et asja uuritakse , aga vaevalt küll , et keegi lubab ennast filmida .
+eemaldada: vaevalt
+konserveerunud: Igalt poolt öeldi Vehmile , et asja uuritakse , aga küll , et keegi lubab ennast filmida .
+
+originaal: Eesti taasisesisvumisel olid liidutehaste töölised Ilnitski kinnitusel kõige kaitsetumad .
+eemaldada: kõige
+konserveerunud: Eesti taasisesisvumisel olid liidutehaste töölised Ilnitski kinnitusel kaitsetumad .
+
