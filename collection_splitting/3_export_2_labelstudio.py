@@ -67,18 +67,37 @@ try:
     ignore_layer = "stanza_syntax_ignore_entity_"+input_deprel 
     collection.selected_layers = ["stanza_syntax", ignore_layer]
     
-    # TODO instead of first 1000, take random 1000 sentences 
-    collection_to_labelstudio(collection[:1000], regular_layers=[ignore_layer],
-                          filename=res_path)
+    # take random 1000 sentences 
+    sample = collection.select().sample( 30, amount_type='PERCENTAGE', seed=12345 )
+    
+    txt_ids = []
+    for txt in sample:
+        if len(collection[txt[0]].ignore_layer) == 1:
+            txt_ids.append(txt[0])
+        if len(txt_ids) == 1000:
+            break
+            
+     collection2 = []
+
+    for txtid in txt_ids:
+        collection2.append(collection[txtid])
+    
+    collection_to_labelstudio(collection2, regular_layers=[ignore_layer],filename=res_path)
     
     if fpath != None:
         # TODO linux path wants "/" at the beginning of full path 
         conf_save = os.path.join("/", fpath, "ls_conf.txt")
+        idx_save = os.path.join("/", fpath, "ls_ids.txt")
     else:
         conf_save = "ls_conf.txt"
+        idx_save = "ls_ids.txt"
     
     with open(conf_save, "w", encoding="utf-8") as f:
         f.write(conf_gen(classes=[ignore_layer]))
+        
+    with open(idx_save, "w", encoding="utf-8") as f:
+        for listitem in txt_ids:
+            f.write(f'{listitem}\n')
     
     
 except Exception as e: 

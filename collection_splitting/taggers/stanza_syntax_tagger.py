@@ -26,11 +26,11 @@ class StanzaSyntaxTagger2(Tagger):
                   'ud_validation_retagger', 'resources_path', 'ignore_layer', 'stanza_tagger']
 
     def __init__(self,
-                 output_layer='stanza_syntax_without_entity',
+                 output_layer='syntax_without_entity',
                  sentences_layer='sentences',
                  words_layer='words',
                  input_morph_layer='morph_analysis',
-                 ignore_layer = None, # e.g "stanza_syntax_ignore_entity",
+                 ignore_layer = None, # e.g "syntax_ignore_entity_advmod",
                  input_type='morph_extended',  # or 'morph_extended', 'sentences'
                  add_parent_and_children=False,
                  resources_path=None,
@@ -109,6 +109,8 @@ class StanzaSyntaxTagger2(Tagger):
         layer = self._make_layer_template()
         layer.text_object=text
 
+        empty_layer = self._make_layer_template()
+        empty_layer.text_object=text
 
         ignored_tokens = [word for span in ignore_layer for word in span.words]
         tokens = [span for span in word_layer if span not in ignored_tokens]
@@ -119,19 +121,23 @@ class StanzaSyntaxTagger2(Tagger):
         short_sentnce.tag_layer('morph_extended')
         self.stanza_tagger.tag( short_sentnce )
         
-        
-        ss = 0 # location in short_sent 
-        for i, span in enumerate(word_layer.spans):
-            if span not in ignored_tokens:                
-                new_span = short_sentnce.stanza_syntax[ss]         
-                feats = None
-                if 'feats' in short_sentnce.stanza_syntax.attributes:
-                    feats = new_span['feats']               
-                attributes = {'id': new_span.id, 'lemma': new_span['lemma'], 'upostag': new_span['upostag'], 'xpostag': new_span['xpostag'], 'feats': feats,
-                                'head': new_span['head'], 'deprel': new_span['deprel'], "status": "remained", 'deps': '_', 'misc': '_'}               
-                layer.add_annotation(span, **attributes)
-                
-                ss += 1                 
+        try:
+            ss = 0 # location in short_sent 
+            for i, span in enumerate(word_layer.spans):
+                if span not in ignored_tokens:         
+                    
+                    new_span = short_sentnce.stanza_syntax[ss]      
+                    
+                    feats = None
+                    if 'feats' in short_sentnce.stanza_syntax.attributes:
+                        feats = new_span['feats']               
+                    attributes = {'id': new_span.id, 'lemma': new_span['lemma'], 'upostag': new_span['upostag'], 'xpostag': new_span['xpostag'], 'feats': feats,
+                                    'head': new_span['head'], 'deprel': new_span['deprel'], "status": "remained", 'deps': '_', 'misc': '_'}               
+                    layer.add_annotation(span, **attributes)
+                    
+                    ss += 1                 
+        except Exception as e:
+            return empty_layer
         
     
         if self.add_parent_and_children:

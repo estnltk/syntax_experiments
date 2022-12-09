@@ -24,7 +24,7 @@ class EntityTagger(Tagger):
     conf_param = ['input_type',  "deprel"]
 
     def __init__(self,
-                 output_layer='stanza_syntax_ignore_entity',
+                 output_layer='syntax_ignore_entity',
                  sentences_layer='sentences',
                  words_layer='words',
                  morph_layer='morph_analysis',
@@ -37,7 +37,7 @@ class EntityTagger(Tagger):
 
         self.deprel = deprel
         self.output_layer = output_layer+"_"+self.deprel 
-        self.output_attributes = ('entity_type', 'free_entity', 'is_valid')
+        self.output_attributes = ('entity_type', 'free_entity', 'is_valid', "syntax_conservation_score")
         self.input_type = input_type
         self.deprel = deprel
     
@@ -73,6 +73,6 @@ class EntityTagger(Tagger):
         
         for node in ignore_nodes:
             new_span = EnvelopingBaseSpan(get_subtree_spans(syntaxtree, stanza_syntax_layer, node))            
-            layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None)
+            layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None, syntax_conservation_score=None)
 
         return layer

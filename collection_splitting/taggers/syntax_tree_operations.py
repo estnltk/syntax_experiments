@@ -23,3 +23,22 @@ def get_subtree_spans(syntaxtree, stanza_layer, node):
     sub_spans = [spn.base_span for spn in stanza_layer for sn in sub_nodes if spn.id == sn]
     return sub_spans
 
+
+def get_graph_edge_difference(syntaxtree_orig, syntaxtree_short):
+    orig_edges = [edge for edge in syntaxtree_orig.edges(data=True)]
+    short_edges = [edge for edge in syntaxtree_short.edges(data=True)]
+    
+    in_graph = 0
+    missing = 0
+    total = len(short_edges)
+    for edge in short_edges:
+        if edge in orig_edges:
+            in_graph+= 1
+        else:
+            #print(edge)
+            missing += 1
+            
+    return total, in_graph, missing
+
+
+

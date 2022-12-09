@@ -21,7 +21,7 @@ class StanzaSyntaxRetagger(Retagger):
     conf_param = [ 'stanza_syntax_layer', 'without_entity_layer', 'ignore_layer']
 
     def __init__(self,
-                 output_layer='stanza_syntax_with_entity',                 
+                 output_layer='syntax_with_entity',                 
                  stanza_syntax_layer = None, # e.g "stanza_syntax", 
                  without_entity_layer = None, # e.g "stanza_syntax_without_entity",
                  ignore_layer = None, # e.g "stanza_syntax_ignore_entity",                 
