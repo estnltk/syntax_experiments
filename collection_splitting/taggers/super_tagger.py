@@ -72,7 +72,6 @@ class SuperTagger(Tagger):
     
         from taggers.entity_tagger import EntityTagger
         from taggers.stanza_syntax_tagger import StanzaSyntaxTagger2
-        from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
     
         stanza_syntax_layer = layers[self.input_layers[3]]
         layer = self._make_layer_template()
@@ -90,18 +89,12 @@ class SuperTagger(Tagger):
         ignore_tagger.tag( txt )
         
         without_entity_layer = "syntax_without_entity_" + self.deprel 
-        # stanza for short sentence (for syntaxtree)
-        short_sentence = " ".join(txt[without_entity_layer].text)
-        short_sent = Text(short_sentence)
-        stanza_tagger = StanzaSyntaxTagger(input_type="morph_extended", input_morph_layer="morph_extended", add_parent_and_children=True, resources_path=self.model_path)
-        short_sent.tag_layer('morph_extended')
-        stanza_tagger.tag( short_sent )
-        
+       
         # syntaxtrees to get edges 
         syntaxtree_orig = SyntaxTree(syntax_layer_sentence=txt.stanza_syntax)
-        syntaxtree_short = SyntaxTree(syntax_layer_sentence=short_sent.stanza_syntax)
+        syntaxtree_short = SyntaxTree(syntax_layer_sentence=txt[without_entity_layer])
 
-        print(syntaxtree_orig.edges(data=True))
+        #print(syntaxtree_orig.edges(data=True))
         
         # get how many edges of short sentence tree are in the original tree
         total, in_graph, missing = get_graph_edge_difference(syntaxtree_orig, syntaxtree_short)
@@ -110,8 +103,8 @@ class SuperTagger(Tagger):
         if total != 0:
             LAS_score = round(in_graph*100/total, 1)
         
-        print("in", in_graph, "\nmissing", missing)
-        print(syntaxtree_short.edges(data=True))
+        #print("in", in_graph, "\nmissing", missing)
+        #print(syntaxtree_short.edges(data=True))
 
         for span in txt[self.ignore_layer]:
             attributes = {'entity_type': span["entity_type"], 'free_entity': span['free_entity'], 'is_valid': span['is_valid'], 
