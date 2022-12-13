@@ -9,6 +9,10 @@ from estnltk.converters.serialisation_modules import syntax_v0
 
 from estnltk import Text
 
+from taggers.entity_tagger import EntityTagger
+from taggers.stanza_syntax_tagger import StanzaSyntaxTagger2
+
+
 from taggers.syntax_tree import SyntaxTree 
 from taggers.syntax_tree_operations import *
 import networkx as nx
@@ -22,7 +26,7 @@ class SuperTagger(Tagger):
     from the spans that should be removed if words with given deprels are removed.
     """
     
-    conf_param = ['input_type',  "deprel", "ignore_layer", "model_path" ]
+    conf_param = ['input_type',  "deprel", "ignore_layer", "model_path", "entity_tagger" , "ignore_tagger"]
 
     def __init__(self,
                  output_layer='syntax_ignore_entity',
@@ -33,21 +37,23 @@ class SuperTagger(Tagger):
                  input_type='stanza_syntax',  # or 'morph_extended', 'sentences'                
                  deprel = None,
                  ignore_layer = None,  # e.g "syntax_ignore_entity_advmod",
-                 model_path = None
+                 model_path = None,
+                
                  ):
         # Make an internal import to avoid explicit stanza dependency
         import stanza
 
-        self.deprel = deprel
+        
         if deprel == None:
             raise ValueError('Invalid deprel {}'.format(deprel))
+        self.deprel = deprel
             
         self.output_layer = output_layer+"_"+self.deprel 
         self.output_attributes = ('entity_type', 'free_entity', 'is_valid', "syntax_conservation_score")
         self.input_type = input_type
         self.deprel = deprel
         self.ignore_layer = output_layer+ "_" + self.deprel
-    
+        
         if self.input_type in ['morph_analysis', 'morph_extended', "stanza_syntax"]:
             self.input_layers = [sentences_layer, morph_layer, words_layer, stanza_syntax_layer]
         else:
@@ -56,6 +62,10 @@ class SuperTagger(Tagger):
         self.model_path = model_path
         if not model_path:
             raise ValueError('Missing model path')
+            
+        self.entity_tagger = EntityTagger(deprel =self.deprel, input_type=self.input_type, morph_layer="morph_extended")   
+        self.ignore_tagger = StanzaSyntaxTagger2( ignore_layer = self.ignore_layer, input_type="morph_extended", 
+                                                    input_morph_layer="morph_extended",  add_parent_and_children=True, resources_path=self.model_path)
 
 
     def _make_layer_template(self):
@@ -69,10 +79,7 @@ class SuperTagger(Tagger):
 
 
     def _make_layer(self, text, layers, status=None):
-    
-        from taggers.entity_tagger import EntityTagger
-        from taggers.stanza_syntax_tagger import StanzaSyntaxTagger2
-    
+       
         stanza_syntax_layer = layers[self.input_layers[3]]
         layer = self._make_layer_template()
         layer.text_object=text
@@ -80,13 +87,10 @@ class SuperTagger(Tagger):
         txt = copy.deepcopy(text)
 
         # layer with removable spans 
-        entity_tagger = EntityTagger(deprel =self.deprel, input_type=self.input_type, morph_layer="morph_extended")
-        entity_tagger.tag( txt )
+        self.entity_tagger.tag( txt )
         
         # shortened sentence layer 
-        ignore_tagger = StanzaSyntaxTagger2( ignore_layer = self.ignore_layer, input_type="morph_extended", 
-                                                    input_morph_layer="morph_extended",  add_parent_and_children=True, resources_path=self.model_path)
-        ignore_tagger.tag( txt )
+        self.ignore_tagger.tag( txt )
         
         without_entity_layer = "syntax_without_entity_" + self.deprel 
        
@@ -107,7 +111,7 @@ class SuperTagger(Tagger):
         #print(syntaxtree_short.edges(data=True))
 
         for span in txt[self.ignore_layer]:
-            attributes = {'entity_type': span["entity_type"], 'free_entity': span['free_entity'], 'is_valid': span['is_valid'], 
+            attributes = {'entity_type': span["entity_type"], 'free_entity': span["free_entity"], 'is_valid': span['is_valid'], 
                                             'syntax_conservation_score': LAS_score}               
             layer.add_annotation(span, **attributes)
         
