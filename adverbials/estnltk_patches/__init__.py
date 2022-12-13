@@ -1,2 +1,6 @@
 from .syntax_tree import SyntaxTree
 from .entity_tagger import EntityTagger
+
+from .syntax_tree_operations import filter_nodes_by_attributes
+from .syntax_tree_operations import filter_spans_by_attributes
+from .syntax_tree_operations import extract_base_spans_of_subtree

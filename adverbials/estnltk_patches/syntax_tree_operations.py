@@ -1,25 +1,24 @@
 import networkx as nx
-from collections import defaultdict
+from estnltk import Span
+from estnltk import BaseSpan
 
-# TODO: clear this function up
-def get_nodes_by_attributes(syntaxtree,  attrname, attrvalue ):
-    """Tipu leidmine atribuudi väärtuse järgi"""
-    nodes = defaultdict(list)
-    {nodes[v].append(k) for k, v in nx.get_node_attributes(syntaxtree.graph,attrname).items()}
-    if attrvalue in nodes:
-        return dict(nodes)[attrvalue]
-    return []
+from .syntax_tree import SyntaxTree
+
+from typing import Any
+from typing import List
 
 
-def get_all_decendants(graph, node):
-    """Tagasta list tipu kõikidest lastest (tippude id-d)"""
-    #return graph.successors(node) # annab ainult ühe otsese järglase
-    return nx.nodes(nx.dfs_tree(graph, node))
+def filter_nodes_by_attributes(tree: SyntaxTree, attribute: str, value: Any) -> List[int]:
+    """Returns list of nodes in the syntax tree that have the desired attribute value"""
+    return [node for node, data in tree.nodes.items() if attribute in data and data[attribute] == value]
 
 
-def get_subtree_spans(syntaxtree, stanza_layer, node):
-    """Tagasta list alampuu tippude base_span-idest"""
-    sub_nodes = list(get_all_decendants(syntaxtree.graph, node))
-    sub_spans = [spn.base_span for spn in stanza_layer for sn in sub_nodes if spn.id == sn]
-    return sub_spans
+def filter_spans_by_attributes(tree: SyntaxTree, attribute: str, value: Any) -> List[Span]:
+    """Returns list of spans in the syntax tree that have the desired attribute value"""
+    return [data['span'] for node, data in tree.nodes.items() if attribute in data and data[attribute] == value]
 
+
+def extract_base_spans_of_subtree(tree: SyntaxTree, root: int) -> List[BaseSpan]:
+    """Returns base-spans of the entire subtree from left to right in the text."""
+    nodes = tree.graph.nodes
+    return [nodes[idx]['span'].base_span for idx in sorted(nx.dfs_postorder_nodes(tree.graph, root))]

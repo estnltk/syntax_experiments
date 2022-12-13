@@ -1,27 +1,47 @@
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
 import matplotlib.pyplot as plt
-from .syntax_tree_operations import *
+#from .syntax_tree_operations import *
+
+from estnltk import Layer
 
 
 class SyntaxTree:
 
-    """Defineerib süntaksipuu networkx suunamata graafina."""
+    """
+    Represent syntax layer as a directed graph with various annotations.
 
-    def __init__(self, syntax_layer_sentence):
-        """stanza stanza_syntax objektist graafi tegemine"""
-        self.syntax_layer_sentence = syntax_layer_sentence
-        self.nodes = []
-        self.edges = []
-        self.graph = None
-        G = nx.DiGraph()
-        for data in self.syntax_layer_sentence:
-            if isinstance(data['id'], int):
-                G.add_node(data['id'], id=data['id'], lemma=data['lemma'], pos=data['upostag'], deprel=data['deprel'], form=data.text, span=data)
-                G.add_edge(data['id'] - data['id'] + data['head'], data['id'], deprel = data['deprel'])
-        self.nodes = G.nodes 
-        self.edges = G.edges 
-        self.graph = G
+    TODO: describe what annotaions are available and why they are useful
+
+    Defineerib süntaksipuu networkx suunamata graafina.
+    """
+
+    def __init__(self, syntax_layer_sentence: Layer):
+        """
+        stanza stanza_syntax objektist graafi tegemine"""
+        graph = nx.DiGraph()
+        for data in syntax_layer_sentence:
+            if not isinstance(data['id'], int):
+                continue
+
+            # Miks sul on tipuga siduda just need atribuudid
+            # Kui sa annad ette span-i, siis on sellest loetav kogu info
+            # Ainus pühjus teisi atribuute lisada on nende järgi tippe välja tõmmata
+            graph.add_node(
+                data['id'],
+                lemma=data['lemma'],
+                pos=data['upostag'],
+                deprel=data['deprel'],
+                form=data.text,
+                span=data)
+            graph.add_edge(
+                data['id'] - data['id'] + data['head'],
+                data['id'],
+                deprel=data['deprel'])
+
+        self.graph = graph
+        self.nodes = graph.nodes
+        self.edges = graph.edges
 
         
     #TODO params to
