@@ -26,8 +26,8 @@ python 2_add_stanza_syntax_layer.py advmod 2 0 conf.ini
 tags texts 0, 2, 4, ...
 
 ## 
-Folder 'taggers' contains EntityTagger, StanzaSyntaxTagger2, StanzaSyntaxRetagger and additional files containing functions for operating with syntax trees.
+Folder 'taggers' contains EntityTagger, StanzaSyntaxTagger2, StanzaSyntaxRetagger, SuperTagger and additional files containing functions for operating with syntax trees.
 
 ##
-EntityTagger example.ipynb contains examples of sentences tagged with all 3 taggers.
+EntityTagger example.ipynb contains examples of sentences tagged the taggers.
 
