@@ -15,15 +15,25 @@ The configuration file name can be given without path (if conf.ini file is in th
 
 
 
-## Script 2_add_stanza_syntax_layer.py takes the same agruments as script 1 and additionally deprel.
+## Script 2_add_stanza_syntax_layer.py takes the same agruments as script 1.
 
 Additional needed section "stanza_syntax" with field "model_path" has to be defined.
 Model path should be defined as:
 model_path=r"path\to\stanza\syntax\tagger"
 
 example:
-python 2_add_stanza_syntax_layer.py advmod 2 0 conf.ini 
+python 2_add_stanza_syntax_layer.py 2 0 conf.ini 
 tags texts 0, 2, 4, ...
+
+
+## Script 3_add_ignore_entity_layer.py takes one additional argument: deprel
+This script can be run if the stanza_syntax layer exists.
+
+example:
+python 3_add_ignore_entity_layer.py advmod 2 0 conf.ini 
+tags texts 0, 2, 4, ...
+
+
 
 ## 
 Folder 'taggers' contains EntityTagger, StanzaSyntaxTagger2, StanzaSyntaxRetagger, SuperTagger and additional files containing functions for operating with syntax trees.

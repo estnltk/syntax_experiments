@@ -1,7 +1,7 @@
 from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
 
-from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
+from taggers.super_tagger import SuperTagger
 
 from estnltk.storage.postgres import table_exists
 from estnltk.storage.postgres import layer_table_name
@@ -10,10 +10,11 @@ import argparse
 import os
 import datetime
 
-# example: python 2_add_stanza_syntax_layer.py 2 0 conf.ini 
+# example: python 3_add_ignore_entity_layer.py advmod 2 0 conf.ini 
 # processes texts 0, 2, 4, ...
 
-parser = argparse.ArgumentParser(description = "Tags layer block with stanza tagger.")
+parser = argparse.ArgumentParser(description = "Tags layer block with super tagger and creates layer 'syntax_ignore_entity' where the subtrees of given deprel are stored. (expects that stanza syntax layer already exists)")
+parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.", type=str)
 parser.add_argument("module", help="Module for layer block. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("remainder", help="Remainder for layer block. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("file", help="Configuration ini file name.", type=str)
@@ -21,6 +22,7 @@ args = vars(parser.parse_args())
 
 module = args["module"]
 remainder = args["remainder"]
+input_deprel = args["deprel"]
 
 # read configuration
 file_name = args["file"]
@@ -38,8 +40,9 @@ if "model_path" not in list(config["stanza_syntax"]):
 else:
     try:
         model_path = config["stanza_syntax"]["model_path"]
-        input_type="morph_extended"
-        stanza_tagger = StanzaSyntaxTagger(input_type=input_type, input_morph_layer=input_type, add_parent_and_children=True, resources_path=model_path)
+        super_tagger = SuperTagger(deprel =input_deprel, input_type="stanza_syntax", 
+                           ignore_layer="syntax_ignore_entity_"+input_deprel, model_path = model_path)
+        
     except Exception as e: 
         print("Problem with model path or creating the tagger: ", str(e).strip())
         raise SystemExit
@@ -69,16 +72,17 @@ target_storage = PostgresStorage(host=config["target_database"]["host"],
 collection = target_storage[config["target_database"]["collection"]]
 
 # check if table exists
-table_name = layer_table_name(config["target_database"]["collection"],stanza_tagger.get_layer_template().name)
-if "stanza_syntax" in collection.layers or table_exists(target_storage,table_name ):
-    print("Stanza Syntax kiht või tabel on juba olemas.")
+table_name = layer_table_name(config["target_database"]["collection"],super_tagger.get_layer_template().name)
+if "syntax_ignore_entity_"+input_deprel in collection.layers or table_exists(target_storage,table_name ):
+    print(f"Ignore Entity (syntax_ignore_entity_{input_deprel}) kiht või tabel on juba olemas.")
 else:
-    collection.add_layer( layer_template=stanza_tagger.get_layer_template() )   
+    collection.add_layer( layer_template=super_tagger.get_layer_template() ) 
+
 
 try:
     #print(f"Started tagging: {datetime.datetime.now()}")
     # tag a block
-    collection.create_layer_block( stanza_tagger, (module, remainder), mode='append' )
+    collection.create_layer_block( super_tagger, (module, remainder), mode='append' )
 
 except Exception as e: 
     print("Problem during tagging: ", str(e).strip())
