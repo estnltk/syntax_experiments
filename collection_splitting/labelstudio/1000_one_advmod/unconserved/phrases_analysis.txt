@@ -1,0 +1,129 @@
+Välja on toodud advmod sõnad, mida esines mittekonserveerunud lausetes kõige rohkem (10+ korda)
+
+
+ `ka`:  Lisasissetuleku allikana nähakse nii astmelist tulumaksu kui ka Tallinna ja Harjumaa ettevõtluse taasmaksustamist .
+ 
+ põhjendus: 109 juhtu; "kui ka" puhul ei saaks eemaldada; mõnel juhul lause tähendus muutuks
+ 
+ kas on vaba:  jah
+ 
+ kas on advmod:  ???
+ 
+ 
+  `veel`:  Kolm kannatanut , kes veel elumärki andsid , viidi kiirabiautoga haiglasse , kuid kaks neist surid teel .
+ 
+ põhjendus: 24 juhtu; 
+ 
+ kas on vaba:  jah
+ 
+ kas on advmod:  ???
+ 
+ 
+  `väga`:  Kirstud on väga erineva suurusega , poolteise meetri sügavune hauakaevik aga standardne .
+ 
+ põhjendus: 24 juhtu; 
+ 
+ kas on vaba: jah
+ 
+ kas on advmod: ???
+ 
+ 
+  `siis`:  Kui Estonia komisjon oli oma aruande avaldanud , siis selgus , et läkski .
+ 
+ põhjendus: 22 juhtu; 
+ 
+ kas on vaba:  mõnel juhul mitte
+ 
+ kas on advmod:  ???
+ 
+ 
+  `juba`:  Kanada on tegemas või juba teinud sama .
+ 
+ põhjendus: 14 juhtu; 
+ 
+ kas on vaba: jah
+ 
+ kas on advmod:  ???
+ 
+ 
+  `nii`:  Meie üritame anda Läänes endistele struktuuridele uut sisu nii , et jätkuks vastutust ja arenguruumi nii noortele kui vanadele ohvitseridele .
+ 
+ põhjendus: 14 juhtu; 
+ 
+ kas on vaba: 
+ 
+ kas on advmod:  ???
+ 
+ 
+`täna`:   Tallinna halduskohtus jäi täna ära istung , kus pidi arutusele tulema Keskerakonna liikme Ain Seppiku kaebus Jüri Mõisa linnapeaks valimise kohta .
+ 
+ põhjendus: 14 juhtu;  9 juhul vaba, ülejäänutel mitte
+ 
+ kas on vaba: ???
+ 
+ kas on advmod:  ???
+ 
+ 
+`aga`:  Solovjovi sõnul jääb aga vee hinna määramise õigus linnavalitsusele .
+ 
+ põhjendus: 14 juhtu; 
+ 
+ kas on vaba: jah
+ 
+ kas on advmod:  ???
+ 
+ 
+`eile`:  Koonderakonna peasekretär Juhan Hindov ütles eile , et üheks erakorralise kongressi korraldamise põhjuseks on Ülo Nugise tekitatud ebaterve õhkkond erakonnas .
+ 
+ põhjendus: 13 juhtu; 
+ 
+ kas on vaba:  mõnel juhul mitte
+ 
+ kas on advmod:  ???
+ 
+ 
+`vaid`:  Korrusmajade renoveerimisprogrammist on puudu on vaid selge riiklik otsus , mõningad muudatused kehtivas seadusandluses ning mõne vajaliku institutsiooni loomine .
+ 
+ põhjendus: 13 juhtu;  1 juhul pole vaba
+ 
+ kas on vaba: jah?
+ 
+ kas on advmod:   ???
+ 
+ 
+ 
+ `kõige`:  Kuid sel kõige viimasel tunnil oli Kadri saatuse tahtel üksi .
+ 
+ põhjendus: 12 juhtu; 
+ 
+ kas on vaba:  ???; 4 juhul pole vaba
+ 
+ kas on advmod:  ???
+ 
+ 
+ `umbes`:  Kolm aastat tagasi astus valgesse hõlsti rüütatud Evelin Jeruusalemmas lavale ning laulis telekaamerate vahendusel umbes sajale miljonile inimesele .
+ 
+ põhjendus: 12 juhtu; 
+ 
+ kas on vaba: jah
+ 
+ kas on advmod:  ???
+ 
+ 
+ `siiski`:  Keskpanga hinnangul jääb inflatsioon siiski mullusele tasemele .
+ 
+ põhjendus: 11 juhtu; 
+ 
+ kas on vaba:  jah
+ 
+ kas on advmod: ???
+ 
+ 
+ 
+  `praegu`:  USA ja Iisraeli ametnikud peavad praegu kõnelusi , mida põgenenud luureohvitseriga teha .
+ 
+ põhjendus: 10 juhtu; osadel juhtudel vaba, osadel mitte 
+ 
+ kas on vaba:  ???
+ 
+ kas on advmod: ???
