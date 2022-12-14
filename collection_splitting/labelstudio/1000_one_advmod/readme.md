@@ -9,5 +9,5 @@ advmod näitelausete saamine:
 | advmod| free entity | bound entity |
 |:-------|:---|:---|
 | conserved              | 0                   | 0   |
-| id             | 771  | 229       |
+| unconserved            | 771  | 229       |
 
