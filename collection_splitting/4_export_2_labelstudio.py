@@ -7,7 +7,7 @@ import os
 from collection_to_ls import collection_to_labelstudio, conf_gen
 
 
-# example: python 3_export_2_labelstudio.py advmod conf.ini ls_export_v1.json 
+# example: python 4_export_2_labelstudio.py advmod conf.ini ls_export_v1.json 20 12345 1
 # exports the necessary layers for advmod infto json 
 
 
@@ -15,9 +15,15 @@ parser = argparse.ArgumentParser(description = "Takes the stanza layer and ignor
 parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.", type=str)
 parser.add_argument("config_file", help="Configuration ini file name.", type=str)
 parser.add_argument("result_file", help="Results json file name.", type=str)
+parser.add_argument("percent", help="Percentage of data to take randomly.", type=int)
+parser.add_argument("seed", help="Seed for taking the data.", type=int)
+parser.add_argument("entity_count", help="For filtering sentences. Only sentences with given number of given deprel will be chosen.", type=int)
 args = vars(parser.parse_args())
 
 input_deprel = args["deprel"]
+percent = args["percent"]
+seed = args["seed"]
+entity_count = args["entity_count"]
 
 # read configuration
 file_name = args["config_file"]
@@ -68,11 +74,11 @@ try:
     collection.selected_layers = ["stanza_syntax", ignore_layer]
     
     # take random 1000 sentences 
-    sample = collection.select().sample( 30, amount_type='PERCENTAGE', seed=12345 )
+    sample = collection.select().sample( percent, amount_type='PERCENTAGE', seed=seed )
     
     txt_ids = []
     for txt in sample:
-        if len(collection[txt[0]].ignore_layer) == 1:
+        if len(collection[txt[0]].ignore_layer) == entity_count:
             txt_ids.append(txt[0])
         if len(txt_ids) == 1000:
             break
