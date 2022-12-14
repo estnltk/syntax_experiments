@@ -1,0 +1,10 @@
+# Ignore (I)Pyhton and GNU R trash
+**/.ipynb_checkpoints/
+**/__pycache__/
+**/.idea/
+**/.Rhistory
+
+# Ignore trash
+**/.DS_Store
+**/._*
+**/.~lock.*
