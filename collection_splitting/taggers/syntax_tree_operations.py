@@ -1,29 +1,32 @@
+
 import networkx as nx
-from collections import defaultdict
+from estnltk import Span
+from estnltk import BaseSpan
 
-# TODO: clear this function up
-def get_nodes_by_attributes(syntaxtree,  attrname, attrvalue ):
-    """Tipu leidmine atribuudi väärtuse järgi"""
-    nodes = defaultdict(list)
-    {nodes[v].append(k) for k, v in nx.get_node_attributes(syntaxtree.graph, attrname).items()}
-    if attrvalue in nodes:
-        return dict(nodes)[attrvalue]
-    return []
+from .syntax_tree import SyntaxTree
 
+from typing import Any
+from typing import List
 
-def get_all_decendants(graph, node):
-    """Tagasta list tipu kõikidest lastest (tippude id-d)"""
-    #return graph.successors(node) # annab ainult ühe otsese järglase
-    return nx.nodes(nx.dfs_tree(graph, node))
+from estnltk.taggers.standard.syntax.syntax_error_count_tagger import by_sentences
 
 
-def get_subtree_spans(syntaxtree, stanza_layer, node):
-    """Tagasta list alampuu tippude base_span-idest"""
-    sub_nodes = list(get_all_decendants(syntaxtree.graph, node))
-    sub_spans = [spn.base_span for spn in stanza_layer for sn in sub_nodes if spn.id == sn]
-    return sub_spans
+def filter_nodes_by_attributes(tree: SyntaxTree, attribute: str, value: Any) -> List[int]:
+    """Returns list of nodes in the syntax tree that have the desired attribute value"""
+    return [node for node, data in tree.nodes.items() if attribute in data and data[attribute] == value]
 
 
+def filter_spans_by_attributes(tree: SyntaxTree, attribute: str, value: Any) -> List[Span]:
+    """Returns list of spans in the syntax tree that have the desired attribute value"""
+    return [data['span'] for node, data in tree.nodes.items() if attribute in data and data[attribute] == value]
+
+
+def extract_base_spans_of_subtree(tree: SyntaxTree, root: int) -> List[BaseSpan]:
+    """Returns base-spans of the entire subtree from left to right in the text."""
+    nodes = tree.graph.nodes
+    return [nodes[idx]['span'].base_span for idx in sorted(nx.dfs_postorder_nodes(tree.graph, root))]
+    
+    
 def get_graph_edge_difference(syntaxtree_orig, syntaxtree_short):
     orig_edges = [edge for edge in syntaxtree_orig.edges(data=True)]
     short_edges = [edge for edge in syntaxtree_short.edges(data=True)]
@@ -35,10 +38,19 @@ def get_graph_edge_difference(syntaxtree_orig, syntaxtree_short):
         if edge in orig_edges:
             in_graph+= 1
         else:
-            #print(edge)
             missing += 1
             
     return total, in_graph, missing
 
+def get_las_score(layer_orig, layer_short):
+    lases = []
+    for spans, deprels, LASes, UASes, LAs in by_sentences(layer_orig, layer_short):
+        if spans is not None:
+            # Labelled Attachment Score (LAS)
+            # Unlabelled Attachment Score (UAS)  round(UASes.count(0)*100/len(UASes),1)
+            # Label Accuracy (LA)  round(LAs.count(0)*100/len(LAs),1)
 
+            return  round(LASes.count(0)*100/len(LASes),1),  round(UASes.count(0)*100/len(UASes),1),  round(LAs.count(0)*100/len(LAs),1)  
+        return None, None, None 
+        
 

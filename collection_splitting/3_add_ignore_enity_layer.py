@@ -80,16 +80,16 @@ else:
 
 
 try:
-    #print(f"Started tagging: {datetime.datetime.now()}")
+    print(f"Started tagging: {datetime.datetime.now()}")
     # tag a block
     collection.create_layer_block( super_tagger, (module, remainder), mode='append' )
 
 except Exception as e: 
     print("Problem during tagging: ", str(e).strip())
-    #print(f"Program exits with error: {datetime.datetime.now()}")
+    print(f"Program exits with error: {datetime.datetime.now()}")
     target_storage.close()
     raise SystemExit
     
-#print(f"Finished tagging: {datetime.datetime.now()}")
+print(f"Finished tagging: {datetime.datetime.now()}")
 target_storage.close()
 
