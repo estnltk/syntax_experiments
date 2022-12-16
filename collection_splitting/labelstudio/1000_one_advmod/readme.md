@@ -8,6 +8,6 @@ advmod näitelausete saamine:
 
 | advmod| free entity | bound entity |
 |:-------|:---|:---|
-| conserved              | 0                   | 0   |
-| unconserved            | 771  | 229       |
+| conserved              | 22   | 3   |
+| unconserved            | 749  | 226 |
 
