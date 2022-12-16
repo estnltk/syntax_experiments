@@ -1,1 +1,23 @@
 text,id,label,review,text_id,las,uas,la
+“ Meil käis lihtsalt krõks !,2010,"[{""start"": 12, ""end"": 20, ""text"": ""lihtsalt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,182,100.0,100.0,60.0
+"Kuigi nende poolt küsitud laenuintress on kõrgem pankade omast , on neil siiani turunišš linnades olemas .",2078,"[{""start"": 73, ""end"": 79, ""text"": ""siiani"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,1096,100.0,100.0,75.0
+Nabokovi aadlike mängud ei tule Tallinna kesklinnas kuidagi välja,2161,"[{""start"": 52, ""end"": 59, ""text"": ""kuidagi"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,2454,100.0,100.0,87.5
+Esmaspäeva õhtul kell kuus läks Raivo taas politseijaoskonda .,2166,"[{""start"": 38, ""end"": 42, ""text"": ""taas"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,2508,100.0,100.0,75.0
+Petlike araablase-vuntsidega ja euroopa tumesinise pintsakuga mees surus kannatamatult huuled kokku .,2205,"[{""start"": 73, ""end"": 86, ""text"": ""kannatamatult"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,3243,100.0,100.0,72.7
+Läti pangad reageerisid uudisele negatiivselt .,2234,"[{""start"": 33, ""end"": 45, ""text"": ""negatiivselt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,3653,100.0,100.0,80.0
+Peatreener Üllar Kerde otsustab lõpliku koosseisu täna hommikul .,2302,"[{""start"": 50, ""end"": 54, ""text"": ""täna"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,5235,100.0,100.0,75.0
+Kohtumise algus sujus raskelt .,2308,"[{""start"": 22, ""end"": 29, ""text"": ""raskelt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,5347,100.0,100.0,75.0
+Ja saab ka .,2340,"[{""start"": 8, ""end"": 10, ""text"": ""ka"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,5981,100.0,100.0,66.7
+""" Soomlasi on meil õppinud varemgi .",2373,"[{""start"": 27, ""end"": 34, ""text"": ""varemgi"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,6514,100.0,100.0,83.3
+Peaminister Matti Vanhase teine valitsus astus eile Soomes ametisse .,2551,"[{""start"": 47, ""end"": 51, ""text"": ""eile"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,9521,100.0,100.0,77.8
+Elektriraudtee kommunikatsioonijuhi Kuldar Väärsi sõnul toimub üleminek elektroonilisele süsteemile järk-järgult .,2593,"[{""start"": 100, ""end"": 112, ""text"": ""järk-järgult"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,10123,100.0,100.0,90.0
+Pakihoiuga tegelev töötaja tekitab kauplusele pealegi lisakulusid .,2663,"[{""start"": 46, ""end"": 53, ""text"": ""pealegi"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,11392,100.0,100.0,71.4
+""" Hei , Puhvetikapp ! "" hüüdis fänn kord tribüünilt .",2702,"[{""start"": 36, ""end"": 40, ""text"": ""kord"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,12071,100.0,90.0,80.0
+Venemaa soovis tõenäoliselt kättemaksuks oran ?,2796,"[{""start"": 15, ""end"": 27, ""text"": ""tõenäoliselt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,13431,100.0,100.0,40.0
+Vaata ka :,2801,"[{""start"": 6, ""end"": 8, ""text"": ""ka"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,13501,100.0,100.0,50.0
+Alates 16. novembrist lendab Estonian Air taas Kopenhaagenisse .,2841,"[{""start"": 42, ""end"": 46, ""text"": ""taas"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,14181,100.0,100.0,75.0
+Vaata ka :,2850,"[{""start"": 6, ""end"": 8, ""text"": ""ka"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,14368,100.0,100.0,50.0
+"Programm on kokku seatud a cappella orelisaatega kooriteostest , "" I am the true vine "" ja "" Missa Syllabica "" a cappella-versioonid kõlavad Eestis esmakordselt .",2864,"[{""start"": 148, ""end"": 160, ""text"": ""esmakordselt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,14551,100.0,100.0,96.2
+""" Milano ammendas end minu jaoks täielikult .",2960,"[{""start"": 33, ""end"": 43, ""text"": ""täielikult"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,15901,100.0,100.0,85.7
+Sõrmused viis ta hiljem pandimajja .,2990,"[{""start"": 17, ""end"": 23, ""text"": ""hiljem"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,16547,100.0,100.0,60.0
+"Et talunik ei taganenud , peatas noormees äkitselt sõiduki .",2994,"[{""start"": 42, ""end"": 50, ""text"": ""äkitselt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",yes,16580,100.0,100.0,77.8

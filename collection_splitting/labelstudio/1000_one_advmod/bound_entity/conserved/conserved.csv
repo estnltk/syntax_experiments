@@ -1,1 +1,4 @@
 text,id,label,review,text_id,las,uas,la
+On tal vast iseloom !,2002,"[{""start"": 7, ""end"": 11, ""text"": ""vast"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",no,24,100.0,100.0,50.0
+"Riided ei kõlvanud tal kuhugi . """,2411,"[{""start"": 23, ""end"": 29, ""text"": ""kuhugi"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",no,7282,100.0,100.0,83.3
+"Et nende haudu ei leitud , toimus matus fiktiivselt .",2810,"[{""start"": 40, ""end"": 51, ""text"": ""fiktiivselt"", ""labels"": [""stanza_syntax_ignore_entity_advmod""]}]",no,13682,100.0,88.9,88.9
