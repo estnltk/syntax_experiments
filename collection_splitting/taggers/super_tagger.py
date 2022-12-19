@@ -75,17 +75,6 @@ class SuperTagger(Tagger):
 
         without_entity_layer = "syntax_without_entity_" + self.deprel
 
-        # syntaxtrees to get edges
-        #syntaxtree_orig = SyntaxTree(syntax_layer_sentence=txt.stanza_syntax)
-        #syntaxtree_short = SyntaxTree(syntax_layer_sentence=txt[without_entity_layer])
-
-        # get how many edges of short sentence tree are in the original tree
-        #total, in_graph, missing = get_graph_edge_difference(syntaxtree_orig, syntaxtree_short)
-
-        #las_score = None
-        #if total != 0:
-        #    las_score = round(in_graph * 100 / total, 1)
-            
         las_score, uas, la  = get_las_score(txt.stanza_syntax, txt[without_entity_layer])
         
         for span in txt[self.ignore_layer]:

@@ -1,0 +1,13 @@
+
+<View>
+    <Labels name="label" toName="text">
+	<Label value="syntax_ignore_entity_obl" background="#9393B7"/> 
+
+    </Labels>
+<Text name="text" value="$text"/>
+<Header value="Is the entity free?"/>
+<Choices name="review" toName="text">
+    <Choice value="yes"/>
+    <Choice value="no"/>
+</Choices>
+</View>

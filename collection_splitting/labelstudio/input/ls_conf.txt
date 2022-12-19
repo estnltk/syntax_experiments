@@ -1,0 +1,13 @@
+
+<View>
+    <Labels name="label" toName="text">
+	<Label value="stanza_syntax_ignore_entity_advmod" background="#33E0F9"/> 
+
+    </Labels>
+<Text name="text" value="$text"/>
+<Header value="Are the annotations correct?"/>
+<Choices name="review" toName="text">
+    <Choice value="yes"/>
+    <Choice value="no"/>
+</Choices>
+</View>

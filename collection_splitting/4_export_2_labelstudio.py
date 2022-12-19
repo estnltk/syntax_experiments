@@ -70,33 +70,32 @@ collection = target_storage[config["target_database"]["collection"]]
 
 
 try:
-    ignore_layer = "stanza_syntax_ignore_entity_"+input_deprel 
+    ignore_layer = "syntax_ignore_entity_"+input_deprel 
     collection.selected_layers = ["stanza_syntax", ignore_layer]
     
     # take random 1000 sentences 
     sample = collection.select().sample( percent, amount_type='PERCENTAGE', seed=seed )
-    
+
     txt_ids = []
     for txt in sample:
-        if len(collection[txt[0]].ignore_layer) == entity_count:
+        if len(collection[txt[0]][ignore_layer]) == entity_count:
             txt_ids.append(txt[0])
         if len(txt_ids) == 1000:
             break
-            
-     collection2 = []
+     
+    collection2 = []
 
     for txtid in txt_ids:
         collection2.append(collection[txtid])
-    
+ 
     collection_to_labelstudio(collection2, regular_layers=[ignore_layer],filename=res_path)
-    
+  
+    conf_save = f"ls_1000_{input_deprel}_conf.txt"
+    idx_save = f"ls_1000_{input_deprel}_ids.txt"
     if fpath != None:
         # TODO linux path wants "/" at the beginning of full path 
-        conf_save = os.path.join("/", fpath, "ls_conf.txt")
-        idx_save = os.path.join("/", fpath, "ls_ids.txt")
-    else:
-        conf_save = "ls_conf.txt"
-        idx_save = "ls_ids.txt"
+        conf_save = os.path.join("/", fpath, f"ls_1000_{input_deprel}_conf.txt")
+        idx_save = os.path.join("/", fpath, f"ls_1000_{input_deprel}_ids.txt")
     
     with open(conf_save, "w", encoding="utf-8") as f:
         f.write(conf_gen(classes=[ignore_layer]))
