@@ -1,56 +1,90 @@
+# Märgendusjuhend
 
-Märgendatud laused on jagatud kolme kategooriasse:
+## I. Lõppeesmärk 
+Märgendamise lõppeesmärk on jagada laiendid lauses eemaldamise tulemuse järgi kolme kategooriasse: 
 
-`1) free entity`: laiend on vaba ja laiendi eemaldamisel tekib loomulik lause
+* seotud laiendid (`bound_entity`)
+* eemaldatavad vabad laiendid (`free_entity`)
+* sõnajärge muutvad vabad laiendid (`unnatural_sentences`) 
 
-`2a) bound entity`: laiend on seotud 
-
-`2b) unnatural sentences`: laiend on vaba aga selle eemaldamisel tekib ebaloomuliku sõnajärjega lause  
-
-
-`free entity näited`:
-
-originaal: Tähtis on omada piisavalt raha , et oleks mugav olla .
-
-eemaldada: piisavalt
-
-tulemus: Tähtis on omada raha , et oleks mugav olla .
-
-põhjus: laiend on vaba ja eemaldamisel jääb lause mõte piisavalt samaks ning ei teki ebaloomulikku sõnade järjekorda 
+Seotud laiendid on laiendid mille eemaldamine lausest muudab lause mõtet. 
+Vabade laiendide eemadamine jätab lause mõtte samaks, kaovad vaid detailid näiteks kuidas või kus tegevus toimub. 
+Enamasti on vabade ja seotud laiendite eristamine lihtne. On mõned erandid, mida me käsitleme põhjalikumalt allpool.
 
 
+Näiteks on _piisavalt_ eemaldatav vaba laiend lauses
 
-`bound entity näited`:
+> Tähtis on omada <u>**piisavalt**</u> raha, et oleks mugav olla.
 
-originaal: Ei ühele ega teisele olnud laevahuku põhjus mingiks saladuseks .
+sest selle eemaldamine ei muuda lause põhisisu ja alles jääb loomuliku sõnajärjega lause
 
-eemaldada: Ei
+> Tähtis on omada raha, et oleks mugav olla.
 
-tulemus: ühele ega teisele olnud laevahuku põhjus mingiks saladuseks .
+Samas võib vaba laiendi eemaldamine tuua kaasa vajaduse allesjäänud lause sõnajärge muuta. Näiteks on laiend _mullu_ lauses 
 
-põhjus: laiend ei ole vaba ja eemaldamisel muutub lause arusaamatuks
+> <u>**Mullu**</u> kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks.
+
+vaba laiend, kuid laiendi eemaldamisel tekib ebaloomuliku sõnajärjega lause  
+
+> Kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks.
+
+mille asemel tuleks kasutada ümberjärjestatud sõnajärjega lauset
+
+> Ajakiri People kuulutas ta lahutatud lapsevanemate kategoorias musterisaks.
+
+Meie töö kontekstis on oluline eristada vabasid laiendeid, mille eemaldamine sunnib muutma lause sõnajärge. 
+Kuna sellised ebaloomuliku lausejärjega laused ei esine tavatekstides, siis selliste lausete kasutamine süntaksianalüsaatori treenimisel ja evalveerimisel pole otstarbekohane
+
+## II. Märgendusskeem
+
+Praktilisel märgendamisel on otstarbekas vasta kõigepealt küsimusele
+
+* Kas lühendatud lause on loomuliku sõnajärjega?
+
+ja alles pärast seda tegeleda küsimustega
+
+* Kas eemaldatav tekstifragment on laiend?
+* Kas eemaldatav tekstifragment on vaba laiend?
+
+> Kaire, kas me peaks seda peale suruma märgendusskeemiga?
+> St näitama ainult lühendatud lauset ja küsima kas see on loomulik lause ja alles pärast küsima, kas loomulik lause on saadud vaba või seotud laiendi eemaldamisel.
+> Või on efektiivsem vastata neile küsimustele korraga?  
 
 
+## III. Iseloomulikud näited
 
-`unnatural sentences näited`:
+### Eemaldatavad vabad laiendid
 
-originaal: Mullu kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks .
+Laiend on vaba ja eemaldamisel jääb lause mõte piisavalt samaks ning ei teki ebaloomulikku sõnade järjekorda: 
 
-eemaldada: Mullu
+> <u>**Tähtis**</u> on omada piisavalt raha, et oleks mugav olla. <br/>
+> Tähtis on omada raha, et oleks mugav olla.
 
-tulemus: kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks .
+Kuigi lause sisu muutub jääb lause põhiolemus samaks -- me imestame tema iseloomu üle:
 
-põhjus: laiend on vaba, aga eemaldamisel tekib ebaloomulik sõnade järjekord
+> On tal <u>**vast**</u> iseloom! <br/>
+> On tal iseloom!
 
 
-originaal: On tal vast iseloom !
+### Seotud laiendid
 
-eemaldada: vast
+Laiend _ei_ on seotud ja eemaldamisel muutub lause arusaamatuks:
 
-tulemus: On tal iseloom !
+> <u>**Ei**</u> ühele ega teisele olnud laevahuku põhjus mingiks saladuseks. <br/>
+> Ühele ega teisele olnud laevahuku põhjus mingiks saladuseks .
 
-põhjus: laiend on vaba, aga eemaldamisel muutub lause semantika
 
+### Sõnajärge muutvad vabad laiendid 
+
+Kuigi laiend on vaba, siis eemaldamisel tekib ebaloomulik sõnade järjekord:
+
+> <u>**Mullu**</u> kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks. <br/>
+> Kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks.
+
+
+### Ebakorrektsed laiendid
+
+Siia lähevad süntaksi vigadest tingitud laiendite moodustamise vead.
 
 
 
