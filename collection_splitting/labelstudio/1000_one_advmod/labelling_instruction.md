@@ -82,6 +82,9 @@ Kuigi laiend on vaba, siis eemaldamisel tekib ebaloomulik sõnade järjekord:
 > Kuulutas ajakiri People ta lahutatud lapsevanemate kategoorias musterisaks.
 
 
+>”<u>**Võib-olla**</u> on otsus ärijuhtimist tudeerima asuda mu alateadlik soov taganemisteed kindlustada,” arutleb Evelin. <br>
+> ”On otsus ärijuhtimist tudeerima asuda mu alateadlik soov taganemisteed kindlustada,” arutleb Evelin.
+
 ### Ebakorrektsed laiendid
 
 Siia lähevad süntaksi vigadest tingitud laiendite moodustamise vead.
