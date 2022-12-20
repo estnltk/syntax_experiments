@@ -57,7 +57,7 @@ ja alles pärast seda tegeleda küsimustega
 
 Laiend on vaba ja eemaldamisel jääb lause mõte piisavalt samaks ning ei teki ebaloomulikku sõnade järjekorda: 
 
-> <u>**Tähtis**</u> on omada piisavalt raha, et oleks mugav olla. <br/>
+> Tähtis on omada <u>**piisavalt**</u> raha, et oleks mugav olla. <br/>
 > Tähtis on omada raha, et oleks mugav olla.
 
 Kuigi lause sisu muutub jääb lause põhiolemus samaks -- me imestame tema iseloomu üle:

@@ -7,7 +7,6 @@ from taggers.syntax_tree import SyntaxTree
 from taggers.syntax_tree_operations import *
 import copy
 
-
 class SuperTagger(Tagger):
     """
     This is a deprel ignore tagger applied to stanza_syntax layer that creates a new layer
@@ -75,7 +74,8 @@ class SuperTagger(Tagger):
 
         without_entity_layer = "syntax_without_entity_" + self.deprel
 
-        las_score, uas, la  = get_las_score(txt.stanza_syntax, txt[without_entity_layer])
+        #las_score, uas, la  = get_las_score(txt.stanza_syntax, txt[without_entity_layer])
+        las_score, uas, la = get_graph_edge_difference(txt.stanza_syntax, txt[without_entity_layer], txt[self.ignore_layer])
         
         for span in txt[self.ignore_layer]:
             attributes = {'entity_type': span["entity_type"], 'free_entity': span["free_entity"],
