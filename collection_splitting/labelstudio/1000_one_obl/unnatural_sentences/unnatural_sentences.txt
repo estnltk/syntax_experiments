@@ -1,0 +1,700 @@
+originaal: Ta tõdeb , et selle aja jooksul on tema publik kõvasti muutunud :
+eemaldada: selle aja jooksul
+tulemus: Ta tõdeb , et on tema publik kõvasti muutunud :
+
+originaal: Lisaks muusikategemisele produtseerib ta oma plaadifirma Slim Shady hip-hop-artistide muusikat .
+eemaldada: Lisaks muusikategemisele
+tulemus: produtseerib ta oma plaadifirma Slim Shady hip-hop-artistide muusikat .
+
+originaal: Ootamatu tõrge tekkis ka plaadiümbrisega .
+eemaldada: ka plaadiümbrisega
+tulemus: Ootamatu tõrge tekkis .
+
+originaal: Mul on olnud võimalik mingeid situatsioone lihtsamalt lahendada .
+eemaldada: Mul
+tulemus: on olnud võimalik mingeid situatsioone lihtsamalt lahendada .
+
+originaal: Teisest küljest aga kahandab avaliku elu tegelaseks olemine privaatsust .
+eemaldada: Teisest küljest
+tulemus: aga kahandab avaliku elu tegelaseks olemine privaatsust .
+
+originaal: ” Hoolimata arstide selgest sõnumist , et Joosep rääkimist selgeks ei õpi , on Jaan optimistlik .
+eemaldada: Hoolimata arstide selgest sõnumist , et Joosep rääkimist selgeks ei õpi ,
+tulemus: ” on Jaan optimistlik .
+
+originaal: Estonia puhul peeti sellist omadust justkui loomulikuks .
+eemaldada: Estonia puhul
+tulemus: peeti sellist omadust justkui loomulikuks .
+
+originaal: Kuid Bureau Veritase puhul ei saa seda kuidagi teha .
+eemaldada: Bureau Veritase puhul
+tulemus: Kuid ei saa seda kuidagi teha .
+
+originaal: 1990. aasta suvel vaatas Bureau Veritas Estline'i omanduseks saanud laeva uuesti üle ja kirjutas klassitunnistusse taas  Deep Sea  .
+eemaldada: 1990. aasta suvel
+tulemus: vaatas Bureau Veritas Estline'i omanduseks saanud laeva uuesti üle ja kirjutas klassitunnistusse taas  Deep Sea  .
+
+originaal: Samuti on ümberlükkamatu tõsiasi , et nende laevade puhul tähendanuks visiiri lahtirebenemine lõppu .
+eemaldada: nende laevade puhul
+tulemus: Samuti on ümberlükkamatu tõsiasi , et tähendanuks visiiri lahtirebenemine lõppu .
+
+originaal: Laevanduses on konkurents halastamatu .
+eemaldada: Laevanduses
+tulemus: on konkurents halastamatu .
+
+originaal: Pika kirja lõpus tsiteerib ta Ülo Koitu : “ Eestlane olla oli uhke ja hää .
+eemaldada: Pika kirja lõpus
+tulemus: tsiteerib ta Ülo Koitu : “ Eestlane olla oli uhke ja hää .
+
+originaal: Selguse vähenemisega suureneb ootamatute allergiliste haiguste oht .
+eemaldada: Selguse vähenemisega
+tulemus: suureneb ootamatute allergiliste haiguste oht .
+
+originaal: Ühest küljest on see tõesti nii , loomise eeltingimuseks on vabadus .
+eemaldada: Ühest küljest
+tulemus: on see tõesti nii , loomise eeltingimuseks on vabadus .
+
+originaal: Ülejäänud haiglatel on lepingud Kristini matusebürooga surnukambrite kasutamiseks .
+eemaldada: Ülejäänud haiglatel
+tulemus: on lepingud Kristini matusebürooga surnukambrite kasutamiseks .
+
+originaal: Kristini morgis on palgal ka üks naisinimene .
+eemaldada: Kristini morgis
+tulemus: on palgal ka üks naisinimene .
+
+originaal: “ Tänapäeval klõpsutab igaüks oma seebikarpi ning fotograafi pole vaja , ” selgitab Daum .
+eemaldada: Tänapäeval
+tulemus: “ klõpsutab igaüks oma seebikarpi ning fotograafi pole vaja , ” selgitab Daum .
+
+originaal: Kivi lõikamiseks , lihvimiseks ja poleerimiseks on rakkes vähemalt kolm inimest .
+eemaldada: Kivi lõikamiseks , lihvimiseks ja poleerimiseks
+tulemus: on rakkes vähemalt kolm inimest .
+
+originaal: Eesti taasiseseisvumise järel tehti panus kommertspankadele , kuigi kooperatiivpankade asutamine Nõukogude Liidu 1988. aasta pangandusreformi raames oli lubatud .
+eemaldada: Eesti taasiseseisvumise järel
+tulemus: tehti panus kommertspankadele , kuigi kooperatiivpankade asutamine Nõukogude Liidu 1988. aasta pangandusreformi raames oli lubatud .
+
+originaal: Eestis oli algselt laenu- ja hoiuühistute asutamise aluseks Eesti Panga presidendi käskkiri 23. veebruarist 1993. aastal .
+eemaldada: Eestis
+tulemus: oli algselt laenu- ja hoiuühistute asutamise aluseks Eesti Panga presidendi käskkiri 23. veebruarist 1993. aastal .
+
+originaal: Esimesed hoiu-laenuühistud Eestis tekkisid erastamisprotsessi käigus .
+eemaldada: erastamisprotsessi käigus
+tulemus: Esimesed hoiu-laenuühistud Eestis tekkisid .
+
+originaal: Kanadas on ühistuliste pankade turuosa ca 6% ( Sõrg , Einola , 2003 ) .
+eemaldada: Kanadas
+tulemus: on ühistuliste pankade turuosa ca 6% ( Sõrg , Einola , 2003 ) .
+
+originaal: Ka Leedus on üheks põhjuseks , nagu eespool kirjutasime , kommertspankade kontorite sulgemine .
+eemaldada: Ka Leedus
+tulemus: on üheks põhjuseks , nagu eespool kirjutasime , kommertspankade kontorite sulgemine .
+
+originaal: Tõnis Blank on HLÜ eeliseid välja toonud järgmiselt : “ HLÜdel on mitmeid eeliseid : teades ja tundes kohalikke ettevõtjaid , on võimalik võtta suuremaid riske ; laenu saamine on kergem ; kehtib sotsiaalne kontroll - liikmete taust on teada ; laenatakse välja ka tunduvalt väiksemaid summasid kui kommertspangad ; väikesemahuliste projektide korral on ka võimalik kahjum väiksem ; põhimõtteliselt on kergem tagasi teenida väiksemat investeeringut kui suurt .
+eemaldada: väikesemahuliste projektide korral
+tulemus: Tõnis Blank on HLÜ eeliseid välja toonud järgmiselt : “ HLÜdel on mitmeid eeliseid : teades ja tundes kohalikke ettevõtjaid , on võimalik võtta suuremaid riske ; laenu saamine on kergem ; kehtib sotsiaalne kontroll - liikmete taust on teada ; laenatakse välja ka tunduvalt väiksemaid summasid kui kommertspangad ; on ka võimalik kahjum väiksem ; põhimõtteliselt on kergem tagasi teenida väiksemat investeeringut kui suurt .
+
+originaal: Aga suurte asjade puhul tuleb seda raudselt teha .
+eemaldada: suurte asjade puhul
+tulemus: Aga tuleb seda raudselt teha .
+
+originaal: Pühapäeval asub ketast lennutama tänavu Eesti rekordit uuendanud Aleksander Tammert .
+eemaldada: Pühapäeval
+tulemus: asub ketast lennutama tänavu Eesti rekordit uuendanud Aleksander Tammert .
+
+originaal: 800 meetri poolfinaalid joostakse reedel , 27. augustil .
+eemaldada: reedel , 27. augustil
+tulemus: 800 meetri poolfinaalid joostakse .
+
+originaal: Kolm aastat tagasi märkisid vaatlejad , et tegelikult võitis valimised linnapea Urmas Sukles , kes sai üksi kolmandiku hääli .
+eemaldada: Kolm aastat tagasi
+tulemus: märkisid vaatlejad , et tegelikult võitis valimised linnapea Urmas Sukles , kes sai üksi kolmandiku hääli .
+
+originaal: Keskerakonna nimekirjas figureerib taas Haapsalu ekslinnapea Tiit Beeren , kes vahepeal on juhtinud Maardu linna .
+eemaldada: Keskerakonna nimekirjas
+tulemus: figureerib taas Haapsalu ekslinnapea Tiit Beeren , kes vahepeal on juhtinud Maardu linna .
+
+originaal: Linnajuhtimisse on vaja värsket verd .
+eemaldada: Linnajuhtimisse
+tulemus: on vaja värsket verd .
+
+originaal: Teise võimalusena korruptsiooni vastu võitlemisel analüüsib toll enda ja piirivalve andmeid .
+eemaldada: Teise võimalusena korruptsiooni vastu võitlemisel
+tulemus: analüüsib toll enda ja piirivalve andmeid .
+
+originaal: Pole välistatud , et kümne aasta pärast valitseb maailma autotööstust neli-viis kontserni , kes on alla neelanud kõik senised iseseisvad autotootjad .
+eemaldada: kümne aasta pärast
+tulemus: Pole välistatud , et valitseb maailma autotööstust neli-viis kontserni , kes on alla neelanud kõik senised iseseisvad autotootjad .
+
+originaal: Tarbija jaoks ei too autofirmade ühinemine või liitmine oluliselt midagi kaasa .
+eemaldada: Tarbija jaoks
+tulemus: ei too autofirmade ühinemine või liitmine oluliselt midagi kaasa .
+
+originaal: Eelmisel nädalal kontrollisid Eesti piirivalvurid Venemaa kodanikku Sergei Vasetshkini , kelle pagasi hulgas oli suur kogus Vene natside propagandamaterjale , kirjutas ajaleht Estonija .
+eemaldada: Eelmisel nädalal
+tulemus: kontrollisid Eesti piirivalvurid Venemaa kodanikku Sergei Vasetshkini , kelle pagasi hulgas oli suur kogus Vene natside propagandamaterjale , kirjutas ajaleht Estonija .
+
+originaal: Pärast ajalehe postkastidesse panemist kutsus Bairash majaelanikke üles ka rahvuslikku vaenu õhutavat trükist tellima .
+eemaldada: Pärast ajalehe postkastidesse panemist
+tulemus: kutsus Bairash majaelanikke üles ka rahvuslikku vaenu õhutavat trükist tellima .
+
+originaal: Eestist sai lipu kuus väikesadamat - Pärnu jahtsadam , Haapsalu , Nasva ja ESS Kalevi jahtklubid ning Roomassaare ja Vergi sadamad .
+eemaldada: Eestist
+tulemus: sai lipu kuus väikesadamat - Pärnu jahtsadam , Haapsalu , Nasva ja ESS Kalevi jahtklubid ning Roomassaare ja Vergi sadamad .
+
+originaal: Gamesati kavandatavad inglis- , prantsus- , saksa- ja hispaaniakeelsed programmid on suunatud Hispaania , Prantsuse , Suurbritannia , Beneluxi riikide ning Saksa vaatajatele .
+eemaldada: Hispaania , Prantsuse , Suurbritannia , Beneluxi riikide ning Saksa vaatajatele
+tulemus: Gamesati kavandatavad inglis- , prantsus- , saksa- ja hispaaniakeelsed programmid on suunatud .
+
+originaal: " Ka haiguste mudelina on hiir väga hea organism , " ütleb Alar Karis .
+eemaldada: Ka haiguste mudelina
+tulemus: " on hiir väga hea organism , " ütleb Alar Karis .
+
+originaal: Lehm koos piimaga ravimeid lüpsma
+eemaldada: koos piimaga
+tulemus: Lehm ravimeid lüpsma
+
+originaal: Eesti Ekspressil on Põhja-Eestis ja Tallinnas 121.000 , ?
+eemaldada: Eesti Ekspressil
+tulemus: on Põhja-Eestis ja Tallinnas 121.000 , ?
+
+originaal: Korrusmajade renoveerimisprogrammist on puudu on vaid selge riiklik otsus , mõningad muudatused kehtivas seadusandluses ning mõne vajaliku institutsiooni loomine .
+eemaldada: Korrusmajade renoveerimisprogrammist
+tulemus: on puudu on vaid selge riiklik otsus , mõningad muudatused kehtivas seadusandluses ning mõne vajaliku institutsiooni loomine .
+
+originaal: Naiste seas olid rahulolematuse peapõhjuseks abieluprobleemid , kuid mehed ei nimetanud sedasorti raskusi üldse .
+eemaldada: Naiste seas
+tulemus: olid rahulolematuse peapõhjuseks abieluprobleemid , kuid mehed ei nimetanud sedasorti raskusi üldse .
+
+originaal: ERA Panga klientide jaoks on seega jäänud vaid üks küsimus - kas DEG saab ERA Panga investoriks ?
+eemaldada: ERA Panga klientide jaoks
+tulemus: on seega jäänud vaid üks küsimus - kas DEG saab ERA Panga investoriks ?
+
+originaal: Hiljem õppis Ane majandustehnikumis ja pedagoogikaülikoolis .
+eemaldada: majandustehnikumis ja pedagoogikaülikoolis
+tulemus: Hiljem õppis Ane .
+
+originaal: Ajalehe teatel ähvardab sulgemine Klaipeda-Stockholmi ja Klaipeda-Mukrani liine .
+eemaldada: Ajalehe teatel
+tulemus: ähvardab sulgemine Klaipeda-Stockholmi ja Klaipeda-Mukrani liine .
+
+originaal: Uues Testamendis Pauluse järgi võib püha olla iga koguduse liige .
+eemaldada: Uues Testamendis Pauluse järgi
+tulemus: võib püha olla iga koguduse liige .
+
+originaal: Armi sõnul peab tasu kinnitama Tartu Maakonnakohus .
+eemaldada: Armi sõnul
+tulemus: peab tasu kinnitama Tartu Maakonnakohus .
+
+originaal: Kõrgeima hinnaga tehing tehti 141 krooni juures .
+eemaldada: 141 krooni juures
+tulemus: Kõrgeima hinnaga tehing tehti .
+
+originaal: Üle kahe protsendi kallinesid Merko Ehituse ja Optiva Panga aktsiad .
+eemaldada: Üle kahe protsendi
+tulemus: kallinesid Merko Ehituse ja Optiva Panga aktsiad .
+
+originaal: Just selle häda vastu pakub Declor looduslikku isepäevitavat emulsiooni Seducteur , mis muudab naha jumekaks ja säravaks .
+eemaldada: Just selle häda vastu
+tulemus: pakub Declor looduslikku isepäevitavat emulsiooni Seducteur , mis muudab naha jumekaks ja säravaks .
+
+originaal: 90ndate alguse moeajakirjadele andsid jumet Naomi Campbell , Linda Evangelista , Cindy Crawford , Christy Turlington ja Claudia Schiffer .
+eemaldada: 90ndate alguse moeajakirjadele
+tulemus: andsid jumet Naomi Campbell , Linda Evangelista , Cindy Crawford , Christy Turlington ja Claudia Schiffer .
+
+originaal: Kokkupõrke tagajärjel sai Tarmo kohapeal surma .
+eemaldada: Kokkupõrke tagajärjel
+tulemus: sai Tarmo kohapeal surma .
+
+originaal: Aga sellega , kuidas ennast kaitsta , peab Eesti pidevalt tööd tegema , arendades kaitsevõimet .
+eemaldada: sellega , kuidas ennast kaitsta ,
+tulemus: Aga peab Eesti pidevalt tööd tegema , arendades kaitsevõimet .
+
+originaal: Gaas oleks parim , aga mul ei ole lähedal gaasitrassi .
+eemaldada: mul
+tulemus: Gaas oleks parim , aga ei ole lähedal gaasitrassi .
+
+originaal: Teie kodumaal on veiste arvu ja paiknemise andmebaasid palju täpsemad kui elanikkonna omad .
+eemaldada: Teie kodumaal
+tulemus: on veiste arvu ja paiknemise andmebaasid palju täpsemad kui elanikkonna omad .
+
+originaal: Maksuinspektsiooni hinnangul ei ole Media-Most maksujõuline ja sellepärast tuleb välja kuulutada tema pankrott .
+eemaldada: Maksuinspektsiooni hinnangul
+tulemus: ei ole Media-Most maksujõuline ja sellepärast tuleb välja kuulutada tema pankrott .
+
+originaal: Sõiduautojuhtidele väljastab tervisetõendi perearst ning kutselistele autojuhtidele liiklusmeditsiini komisjon .
+eemaldada: Sõiduautojuhtidele
+tulemus: väljastab tervisetõendi perearst ning kutselistele autojuhtidele liiklusmeditsiini komisjon .
+
+originaal: Autojuhtimisel on ohtlikud ka vererõhku alandavad ravimid , mis võivad tekitada peapööritust ning tema verevarustust võivad häirida kõikvõimalikud südamevahendid , lisas ta .
+eemaldada: Autojuhtimisel
+tulemus: on ohtlikud ka vererõhku alandavad ravimid , mis võivad tekitada peapööritust ning tema verevarustust võivad häirida kõikvõimalikud südamevahendid , lisas ta .
+
+originaal: Selleks kulub hinnanguliselt 3,5 miljonit krooni .
+eemaldada: Selleks
+tulemus: kulub hinnanguliselt 3,5 miljonit krooni .
+
+originaal: Sellel aastal tunnistas probleemi olemasolu 22% vastanutest , 78% eitas probleemi olemasolu .
+eemaldada: Sellel aastal
+tulemus: tunnistas probleemi olemasolu 22% vastanutest , 78% eitas probleemi olemasolu .
+
+originaal: Paar aastat tagasi olevat jälle vaenuliku riigi luurajad sisse toonud inimliha sööva bakteri .
+eemaldada: Paar aastat tagasi
+tulemus: olevat jälle vaenuliku riigi luurajad sisse toonud inimliha sööva bakteri .
+
+originaal: Soodsa hinnaga on saadaval raamatukogu väljaanded - retrospektiivse rahvusbibliograafia köited , kogumik " Eesti vanimad raamatud Tallinnas " , Kalju Lepiku bibliograafia ning postkaardikomplekt " Vanemate eestikeelsete raamatute illustratsioone " .
+eemaldada: Soodsa hinnaga
+tulemus: on saadaval raamatukogu väljaanded - retrospektiivse rahvusbibliograafia köited , kogumik " Eesti vanimad raamatud Tallinnas " , Kalju Lepiku bibliograafia ning postkaardikomplekt " Vanemate eestikeelsete raamatute illustratsioone " .
+
+originaal: Lahkumismatšil löövad kaasa ka Rudi Völler , Jürgen Klinsmann , Andreas Brehme , Stefan Reuter , Jürgen Kohler , Mario Basler , Matthias Sammer , Belgia väravavaht Jean-Marie Pfaff ja teised omaaegsed superässad .
+eemaldada: Lahkumismatšil
+tulemus: löövad kaasa ka Rudi Völler , Jürgen Klinsmann , Andreas Brehme , Stefan Reuter , Jürgen Kohler , Mario Basler , Matthias Sammer , Belgia väravavaht Jean-Marie Pfaff ja teised omaaegsed superässad .
+
+originaal: Teisel poolajal läks mäng lahtisemaks kui enne vaheaega , mõlemad meeskonnad ründasid julgelt .
+eemaldada: Teisel poolajal
+tulemus: läks mäng lahtisemaks kui enne vaheaega , mõlemad meeskonnad ründasid julgelt .
+
+originaal: " Alles sel talvel läks asi hulluks . "
+eemaldada: Alles sel talvel
+tulemus: " läks asi hulluks . "
+
+originaal: " Pärast pisukest pausi lisab Lilian Kotter , et ehk siiski hoopis tema ülehindab vaatajat .
+eemaldada: Pärast pisukest pausi
+tulemus: " lisab Lilian Kotter , et ehk siiski hoopis tema ülehindab vaatajat .
+
+originaal: Meil on hädasti vaja tuntud avalikke seksuaalvähemuste esindajaid , " ütleb Lilian Kotter .
+eemaldada: Meil
+tulemus: on hädasti vaja tuntud avalikke seksuaalvähemuste esindajaid , " ütleb Lilian Kotter .
+
+originaal: " Minu meelest on seda teemat niigi liiga palju .
+eemaldada: Minu meelest
+tulemus: " on seda teemat niigi liiga palju .
+
+originaal: " Märkimisperioodi lõpus oli SEBi kontrolli all 95,1 protsenti Ühispanga aktsiatest .
+eemaldada: Märkimisperioodi lõpus
+tulemus: " oli SEBi kontrolli all 95,1 protsenti Ühispanga aktsiatest .
+
+originaal: Lisaks neile kahele valisid aktsionärid Ühispanga uude nõukokku Koit Uusi , Mart Avarmaa , Aadu Luukase , Tord Martin Olofssoni , Per-Arne Magnus Carlssoni ja Petteri Karttuneni .
+eemaldada: Lisaks neile kahele
+tulemus: valisid aktsionärid Ühispanga uude nõukokku Koit Uusi , Mart Avarmaa , Aadu Luukase , Tord Martin Olofssoni , Per-Arne Magnus Carlssoni ja Petteri Karttuneni .
+
+originaal: Samal ajal on neil intensiivselt puhastav toime .
+eemaldada: Samal ajal
+tulemus: on neil intensiivselt puhastav toime .
+
+originaal: Uues Eesti Päevalehes on olemas kõik samad osad , mis olid ka vanas .
+eemaldada: Uues Eesti Päevalehes
+tulemus: on olemas kõik samad osad , mis olid ka vanas .
+
+originaal: Hiigelspurdi jooksul mängis pearolli Aivar Kuusmaa .
+eemaldada: Hiigelspurdi jooksul
+tulemus: mängis pearolli Aivar Kuusmaa .
+
+originaal: Kavkaz-tsentri andmeil sai surma 19 rahulikku elanikku .
+eemaldada: Kavkaz-tsentri andmeil
+tulemus: sai surma 19 rahulikku elanikku .
+
+originaal: Groznõi Oktoobri rajoonis hävitasid tšetšeenid ühe Vene vägede soomustransportööri ning kaks autot UAZ .
+eemaldada: Groznõi Oktoobri rajoonis
+tulemus: hävitasid tšetšeenid ühe Vene vägede soomustransportööri ning kaks autot UAZ .
+
+originaal: ETV kanalile on üle tulnud ka " Bingo loto " .
+eemaldada: ETV kanalile
+tulemus: on üle tulnud ka " Bingo loto " .
+
+originaal: ETV Tartu stuudiolt on oodata uut saatesarja igapäevaelust .
+eemaldada: ETV Tartu stuudiolt
+tulemus: on oodata uut saatesarja igapäevaelust .
+
+originaal: Suurepärane uudis on ka see , et oktoobrist hakkab Jüri Aarma taas tegema saadet " Siin ja praegu " .
+eemaldada: oktoobrist
+tulemus: Suurepärane uudis on ka see , et hakkab Jüri Aarma taas tegema saadet " Siin ja praegu " .
+
+originaal: Algajale tekitab tavaliselt probleeme ka lühenditest arusaamine .
+eemaldada: Algajale
+tulemus: tekitab tavaliselt probleeme ka lühenditest arusaamine .
+
+originaal: Ühisettevõttel on kavas hakata pakkuma portaali teenuseid , vahendusteenuseid erinevate kauplemiskeskkondade ja kliendi vahendamissüsteemide kaudu , logistikateenuseid ning tarkvara- ja tehnoloogialahendusi .
+eemaldada: Ühisettevõttel
+tulemus: on kavas hakata pakkuma portaali teenuseid , vahendusteenuseid erinevate kauplemiskeskkondade ja kliendi vahendamissüsteemide kaudu , logistikateenuseid ning tarkvara- ja tehnoloogialahendusi .
+
+originaal: Finaalnelikusse pääsu soosikute hulka kuuluvad kindlasti mõlemad Venemaa klubid .
+eemaldada: Finaalnelikusse pääsu soosikute hulka
+tulemus: kuuluvad kindlasti mõlemad Venemaa klubid .
+
+originaal: Itaalia üleujutustes on hukkunud vähemalt 12 inimest , 15 inimest on teadmata kadunud .
+eemaldada: Itaalia üleujutustes
+tulemus: on hukkunud vähemalt 12 inimest , 15 inimest on teadmata kadunud .
+
+originaal: Eelmise nädala lõpus polnud Estonias ühtegi gripihaiget .
+eemaldada: Eelmise nädala lõpus
+tulemus: polnud Estonias ühtegi gripihaiget .
+
+originaal: Kuuel aastal järjest ( 1987-1992 ) tõi Delta Lanciale autofirmade tiitli .
+eemaldada: Kuuel aastal järjest ( 1987-1992 )
+tulemus: tõi Delta Lanciale autofirmade tiitli .
+
+originaal: Meistrivõistlustel jagab Nybit Polarise ja BC Tallinnaga kolmandat kohta .
+eemaldada: Meistrivõistlustel
+tulemus: jagab Nybit Polarise ja BC Tallinnaga kolmandat kohta .
+
+originaal: Ministrite järsu palgatõusu vastu on protestinud ka Mõõdukate fraktsioon , kuigi on tunnistanud , et palgatõus on vajalik .
+eemaldada: Ministrite järsu palgatõusu vastu
+tulemus: on protestinud ka Mõõdukate fraktsioon , kuigi on tunnistanud , et palgatõus on vajalik .
+
+originaal: " Igal juhul ei saanud see olla lasti nihkumise süü .
+eemaldada: Igal juhul
+tulemus: " ei saanud see olla lasti nihkumise süü .
+
+originaal: Kogu Lõuna- ja Kesk-Eestile on see ühendus pealinna , lennujaama ja sadamatega .
+eemaldada: Kogu Lõuna- ja Kesk-Eestile
+tulemus: on see ühendus pealinna , lennujaama ja sadamatega .
+
+originaal: Vassiljevi sõnul pole viivitusel suuremat tähtsust .
+eemaldada: Vassiljevi sõnul
+tulemus: pole viivitusel suuremat tähtsust .
+
+originaal: " Eetika mõttes on TELE2 kampaania väga inetu , " sõnas Starmani tegevdirektor Peeter Kern .
+eemaldada: Eetika mõttes
+tulemus: " on TELE2 kampaania väga inetu , " sõnas Starmani tegevdirektor Peeter Kern .
+
+originaal: " Seda kohtumist polnud meil mingit õigust võita , " tunnistas Miller .
+eemaldada: Seda kohtumist
+tulemus: " polnud meil mingit õigust võita , " tunnistas Miller .
+
+originaal: Eestis on registreeritud 82 114 veokit , 6731 tsiklit ja 6169 bussi .
+eemaldada: Eestis
+tulemus: on registreeritud 82 114 veokit , 6731 tsiklit ja 6169 bussi .
+
+originaal: " Meilt on võimalik tellida ka lisateenuseid .
+eemaldada: Meilt
+tulemus: " on võimalik tellida ka lisateenuseid .
+
+originaal: Samas peaks küll päevselge olema , et usul ja teadusel on hulk kattuvaid piirkondi , kus viljakas saab olla üksnes vastastikuses koostöös .
+eemaldada: üksnes vastastikuses koostöös
+tulemus: Samas peaks küll päevselge olema , et usul ja teadusel on hulk kattuvaid piirkondi , kus viljakas saab olla .
+
+originaal: Seoses klubi likvideerimisega 1999. aasta lõpul on kahanenud ka eelarve .
+eemaldada: Seoses klubi likvideerimisega 1999. aasta lõpul
+tulemus: on kahanenud ka eelarve .
+
+originaal: Ta lisas , et kinniseks ei saa rannariba siiski kuulutada ja päikesetõusust päikeseloojanguni võivad kõik seal olla .
+eemaldada: päikesetõusust päikeseloojanguni
+tulemus: Ta lisas , et kinniseks ei saa rannariba siiski kuulutada ja võivad kõik seal olla .
+
+originaal: " Hiljemalt novembris hakkab uus masin trükkima , " lubas ta .
+eemaldada: Hiljemalt novembris
+tulemus: " hakkab uus masin trükkima , " lubas ta .
+
+originaal: Tsiviilkontrolliks on vajalik rahandusministeerium , mis koostab riigieelarve ja korraldab selle täitmist , kontrollides seeläbi valitsemiskulusid .
+eemaldada: Tsiviilkontrolliks
+tulemus: on vajalik rahandusministeerium , mis koostab riigieelarve ja korraldab selle täitmist , kontrollides seeläbi valitsemiskulusid .
+
+originaal: Meil võib siia lisada ka riigikontrolli , mis samuti mitte ei juhi , vaid kontrollib kaitseväge .
+eemaldada: Meil
+tulemus: võib siia lisada ka riigikontrolli , mis samuti mitte ei juhi , vaid kontrollib kaitseväge .
+
+originaal: Ta lisas , et sel aastal oli konkurents tihedam ja Raschinski näitas väga head mängu .
+eemaldada: sel aastal
+tulemus: Ta lisas , et oli konkurents tihedam ja Raschinski näitas väga head mängu .
+
+originaal: Polke teostele on iseloomulik pildiruumi jaotamine läbikumavateks kihtideks ja maaliliste , graafiliste , abstraktsete ja figuratiivsete elementide ühendamine dünaamiliseks visuaalseks tervikuks .
+eemaldada: Polke teostele
+tulemus: on iseloomulik pildiruumi jaotamine läbikumavateks kihtideks ja maaliliste , graafiliste , abstraktsete ja figuratiivsete elementide ühendamine dünaamiliseks visuaalseks tervikuks .
+
+originaal: Omavoliliselt vürste mängivate või sulitsevate maavanemate korralekutsumiseks pole aga vähemasti KMÜ valitsused ühtegi liigutust teinud .
+eemaldada: Omavoliliselt vürste mängivate või sulitsevate maavanemate korralekutsumiseks
+tulemus: pole aga vähemasti KMÜ valitsused ühtegi liigutust teinud .
+
+originaal: Tänapäeval on algteadmised pangandusest ja börsindusest täiskasvanud inimesele sama vajalikud kui oskus kingapaelu siduda .
+eemaldada: Tänapäeval
+tulemus: on algteadmised pangandusest ja börsindusest täiskasvanud inimesele sama vajalikud kui oskus kingapaelu siduda .
+
+originaal: " Ega selliste pisiasjade pärast hakka keegi politseid tülitama . "
+eemaldada: selliste pisiasjade pärast
+tulemus: " Ega hakka keegi politseid tülitama . "
+
+originaal: Päeval pole inimesi kodus ja pärast võib-olla ei lasta meid sisse või aetakse koer kallale , " lausus Järv .
+eemaldada: Päeval
+tulemus: pole inimesi kodus ja pärast võib-olla ei lasta meid sisse või aetakse koer kallale , " lausus Järv .
+
+originaal: 2001. aastal on hoogustunud käibevahendite ja ehituse finantseerimine faktooringtoodete abil .
+eemaldada: 2001. aastal
+tulemus: on hoogustunud käibevahendite ja ehituse finantseerimine faktooringtoodete abil .
+
+originaal: Eestlaste jaoks on NATO veel täheühend , millel pole seost tegeliku eluga .
+eemaldada: Eestlaste jaoks
+tulemus: on NATO veel täheühend , millel pole seost tegeliku eluga .
+
+originaal: Sellel tasandil väärtustab harta enam osalusdemokraatiat .
+eemaldada: Sellel tasandil
+tulemus: väärtustab harta enam osalusdemokraatiat .
+
+originaal: " Seaduse kohaselt on kaitseväeteenistus üks riigiteenistuse alaliike .
+eemaldada: Seaduse kohaselt
+tulemus: " on kaitseväeteenistus üks riigiteenistuse alaliike .
+
+originaal: Kümnest vormelitiimist on Ferraril , McLarenil , BAR-il , Jordanil ja Renault'l mitmeaastane sponsorleping tubakafirmadega .
+eemaldada: Kümnest vormelitiimist
+tulemus: on Ferraril , McLarenil , BAR-il , Jordanil ja Renault'l mitmeaastane sponsorleping tubakafirmadega .
+
+originaal: ; Arvutiklassis istub kümmekond vanurit .
+eemaldada: Arvutiklassis
+tulemus: ; istub kümmekond vanurit .
+
+originaal: Keskuurimisbüroo abidirektori Kersti Jundase sõnul on väidetaval narkomõrval nüüd koguni kaks raskendavat asjaolu .
+eemaldada: Keskuurimisbüroo abidirektori Kersti Jundase sõnul
+tulemus: on väidetaval narkomõrval nüüd koguni kaks raskendavat asjaolu .
+
+originaal: Ka Tallinna tuletõrje- ja päästeameti pressiesindaja Priit Laose hinnangul oli tegu ilmselt süütamisega .
+eemaldada: Ka Tallinna tuletõrje- ja päästeameti pressiesindaja Priit Laose hinnangul
+tulemus: oli tegu ilmselt süütamisega .
+
+originaal: Eestis vähenevad rahvuslikud eripärad ning toimub jagunemine eesti- ja venekeelseks elanikkonnaks , muretseb Jaak Prozes .
+eemaldada: Eestis
+tulemus: vähenevad rahvuslikud eripärad ning toimub jagunemine eesti- ja venekeelseks elanikkonnaks , muretseb Jaak Prozes .
+
+originaal: Sellel aga tudengid osaleda ei soovinud .
+eemaldada: Sellel
+tulemus: aga tudengid osaleda ei soovinud .
+
+originaal: Minu jaoks oli asi siis lahendatud .
+eemaldada: Minu jaoks
+tulemus: oli asi siis lahendatud .
+
+originaal: " Paljudes proovides oli vereplasmat järel vähe , 22 korral alla ühe milliliitri ja 25 juhul täpselt üks milliliiter .
+eemaldada: Paljudes proovides
+tulemus: " oli vereplasmat järel vähe , 22 korral alla ühe milliliitri ja 25 juhul täpselt üks milliliiter .
+
+originaal: Meie reeglitega aga on see välistatud . "
+eemaldada: Meie reeglitega
+tulemus: aga on see välistatud . "
+
+originaal: Vaatamata stardikapitali puudumisele ei kõhelnud Pisike , Timur ja Reet oma poe avamise ideed realiseerimast .
+eemaldada: Vaatamata stardikapitali puudumisele
+tulemus: ei kõhelnud Pisike , Timur ja Reet oma poe avamise ideed realiseerimast .
+
+originaal: Tornikiivri taastamistööde ja uue kella ostmise heaks saab teha annetusi Nordea Panga arvetele : nr. 17403179 ( EEK ) ja nr. 17403182 ( EUR ) .
+eemaldada: Tornikiivri taastamistööde ja uue kella ostmise heaks
+tulemus: saab teha annetusi Nordea Panga arvetele : nr. 17403179 ( EEK ) ja nr. 17403182 ( EUR ) .
+
+originaal: Raviasutuse nõukogule jääb võimalus kehtestada voodipäevatasu või mitte seda teha .
+eemaldada: Raviasutuse nõukogule
+tulemus: jääb võimalus kehtestada voodipäevatasu või mitte seda teha .
+
+originaal: Tema sõnul pole seetõttu võimalik tagantjärele tegevusi dokumentaalselt tõestada .
+eemaldada: Tema sõnul
+tulemus: pole seetõttu võimalik tagantjärele tegevusi dokumentaalselt tõestada .
+
+originaal: Raski sõnul on vabatahtlikult tänaseks lahkunud kolm-neli inimest ning mõni inimene on veel ära minemas .
+eemaldada: Raski sõnul
+tulemus: on vabatahtlikult tänaseks lahkunud kolm-neli inimest ning mõni inimene on veel ära minemas .
+
+originaal: Pärastlõunal olid suuremad riigimaanteed valdavalt soolaniisked , paiguti soolamärjad .
+eemaldada: Pärastlõunal
+tulemus: olid suuremad riigimaanteed valdavalt soolaniisked , paiguti soolamärjad .
+
+originaal: Väiksematel teedel on teekatted aga peamiselt lumised ja libedad .
+eemaldada: Väiksematel teedel
+tulemus: on teekatted aga peamiselt lumised ja libedad .
+
+originaal: Valitsuses tulnuks aga probleemid selgeks vaielda , ütles Kallas Riigikogus .
+eemaldada: Valitsuses
+tulemus: tulnuks aga probleemid selgeks vaielda , ütles Kallas Riigikogus .
+
+originaal: Arnold Rüütli kantselei näol on selline asutus juba kenasti kujunemas , looduslikult kaunis kohas pealegi .
+eemaldada: Arnold Rüütli kantselei näol
+tulemus: on selline asutus juba kenasti kujunemas , looduslikult kaunis kohas pealegi .
+
+originaal: Riigihanked on lõppenud ka kahe renoveeritava lasteaia sisustamiseks ning uue mööbli saavad Tondi lasteaed-algkool ( 321 167 krooni , müüb Standard ) ja lasteaed Kraavikrõll ( 341 460 krooni , müüb Holster ) .
+eemaldada: kahe renoveeritava lasteaia sisustamiseks
+tulemus: Riigihanked on lõppenud ka ning uue mööbli saavad Tondi lasteaed-algkool ( 321 167 krooni , müüb Standard ) ja lasteaed Kraavikrõll ( 341 460 krooni , müüb Holster ) .
+
+originaal: Rootsi väitel pole ta Ramat löönud , Rama väidab aga vastupidist .
+eemaldada: Rootsi väitel
+tulemus: pole ta Ramat löönud , Rama väidab aga vastupidist .
+
+originaal: Tasuta on võimalik külastada Tallinna Linnamuuseumi , endist Kastellaani maja Kadriorus , nüüdset E. Vilde muuseumit , A.H. Tammsaare muuseumit , Meremuuseumit Paksu Margareeta suurtükitornis , Jäälõhkujat Suur Tõll Tallinna sadamas , Väliskunstimuuseumit Kadrioru lossis , Kiek in de Köki suurtükitorni ( Tallinna kindlustuste ajalugu ) , Raevanglat ( näitus " Fotokunst Eestis " ) , Eesti Kunstimuuseumit ( Rüütelkonna hoones Toompeal ) ning kõiki Eesti Kunstimuuseumi filiaale ( Tarbekunstimuuseum , Niguliste kirik-muuseum , Adamson-Ericu muuseum , Kr.
+eemaldada: Tasuta
+tulemus: on võimalik külastada Tallinna Linnamuuseumi , endist Kastellaani maja Kadriorus , nüüdset E. Vilde muuseumit , A.H. Tammsaare muuseumit , Meremuuseumit Paksu Margareeta suurtükitornis , Jäälõhkujat Suur Tõll Tallinna sadamas , Väliskunstimuuseumit Kadrioru lossis , Kiek in de Köki suurtükitorni ( Tallinna kindlustuste ajalugu ) , Raevanglat ( näitus " Fotokunst Eestis " ) , Eesti Kunstimuuseumit ( Rüütelkonna hoones Toompeal ) ning kõiki Eesti Kunstimuuseumi filiaale ( Tarbekunstimuuseum , Niguliste kirik-muuseum , Adamson-Ericu muuseum , Kr.
+
+originaal: Kõigil juhtudel oli tegemist Keskerakonna plakatitega .
+eemaldada: Kõigil juhtudel
+tulemus: oli tegemist Keskerakonna plakatitega .
+
+originaal: ENPA sessioonile oli kutsutud esinema ka Iraani parlamendi Majlise spiiker Ghoram Ali Haddad-Adel , aga mitte Iraani parlamendi , vaid Araabia parlamentaarse assamblee esimehena .
+eemaldada: ENPA sessioonile
+tulemus: oli kutsutud esinema ka Iraani parlamendi Majlise spiiker Ghoram Ali Haddad-Adel , aga mitte Iraani parlamendi , vaid Araabia parlamentaarse assamblee esimehena .
+
+originaal: B-finaalis pälvisid kolmanda koha norralannad Helgeland-Nordahl ( 7.11 , 35 ) .
+eemaldada: B-finaalis
+tulemus: pälvisid kolmanda koha norralannad Helgeland-Nordahl ( 7.11 , 35 ) .
+
+originaal: Vananeva naisekeha kujutisele anti positiivne tähendus alles siis , kui naiskunstnikud asusid naise identiteeti ja kehalisi protsesse aktiivselt visualiseerima .
+eemaldada: Vananeva naisekeha kujutisele
+tulemus: anti positiivne tähendus alles siis , kui naiskunstnikud asusid naise identiteeti ja kehalisi protsesse aktiivselt visualiseerima .
+
+originaal: Kaitseväe teabeülem major Peeter Tali ütles , et eilse seisuga oli major Ühtegi endiselt luurepataljoni ülem .
+eemaldada: eilse seisuga
+tulemus: Kaitseväe teabeülem major Peeter Tali ütles , et oli major Ühtegi endiselt luurepataljoni ülem .
+
+originaal: Esmaspäeval tähistab 51. sünnipäeva vabadusvõitleja ja Hirvepargi meeleavalduse organiseerija Heiki Ahonen .
+eemaldada: Esmaspäeval
+tulemus: tähistab 51. sünnipäeva vabadusvõitleja ja Hirvepargi meeleavalduse organiseerija Heiki Ahonen .
+
+originaal: Tööteel suri mullu kuus inimest , üle-eelmisel aastal üks ja 1999. aastal viis töötajat , teatas tööinspektsiooni avalike suhete nõunik Tõnu Vare .
+eemaldada: Tööteel
+tulemus: suri mullu kuus inimest , üle-eelmisel aastal üks ja 1999. aastal viis töötajat , teatas tööinspektsiooni avalike suhete nõunik Tõnu Vare .
+
+originaal: Tema korterist viisid politseinikud kaasa arvutid ja üle kümne CD-plaadi .
+eemaldada: Tema korterist
+tulemus: viisid politseinikud kaasa arvutid ja üle kümne CD-plaadi .
+
+originaal: Eve Viilupi sõnul on osalemissoovi saatnud 701 noort .
+eemaldada: Eve Viilupi sõnul
+tulemus: on osalemissoovi saatnud 701 noort .
+
+originaal: Küllap teate - temast on ajakirjanduses juttu olnud küll .
+eemaldada: temast
+tulemus: Küllap teate - on ajakirjanduses juttu olnud küll .
+
+originaal: Muuseumi esimesed ruumid üüriti Rakvere Ühispanga majas .
+eemaldada: Rakvere Ühispanga majas
+tulemus: Muuseumi esimesed ruumid üüriti .
+
+originaal: ( Ja sel viisil on parlament kindlasti ühiskondlike pingete väga oluliseks rahumeelseks maandajaks . )
+eemaldada: sel viisil
+tulemus: ( Ja on parlament kindlasti ühiskondlike pingete väga oluliseks rahumeelseks maandajaks . )
+
+originaal: Kunstiakadeemias osutusid kõige kuumemateks erialadeks sisearhitektuur ja graafiline disain .
+eemaldada: Kunstiakadeemias
+tulemus: osutusid kõige kuumemateks erialadeks sisearhitektuur ja graafiline disain .
+
+originaal: Roomajatest leiavad seal kodu kameeleonid , iguaanid , gekod ja mitmed maoliigid .
+eemaldada: Roomajatest
+tulemus: leiavad seal kodu kameeleonid , iguaanid , gekod ja mitmed maoliigid .
+
+originaal: ; Koolis oli vastutus väiksem .
+eemaldada: Koolis
+tulemus: ; oli vastutus väiksem .
+
+originaal: " Kuulsin , et Missos on selliseid asju tehtud .
+eemaldada: Missos
+tulemus: " Kuulsin , et on selliseid asju tehtud .
+
+originaal: " Miks sa kirjutad oma haigeid osakonnast välja nii kiiresti ?
+eemaldada: osakonnast
+tulemus: " Miks sa kirjutad oma haigeid välja nii kiiresti ?
+
+originaal: Pärast Iraagi sõja takerdumist vägivallakeerisesse on USA aga üha enam hakanud otsima ÜRO tuge .
+eemaldada: Pärast Iraagi sõja takerdumist vägivallakeerisesse
+tulemus: on USA aga üha enam hakanud otsima ÜRO tuge .
+
+originaal: Elektriraudtee kommunikatsioonijuhi Kuldar Väärsi sõnul toimub üleminek elektroonilisele süsteemile järk-järgult .
+eemaldada: Elektriraudtee kommunikatsioonijuhi Kuldar Väärsi sõnul
+tulemus: toimub üleminek elektroonilisele süsteemile järk-järgult .
+
+originaal: Mängija käsutusse olid samas juba antud nii lepingujärgne auto kui ka korter .
+eemaldada: Mängija käsutusse
+tulemus: olid samas juba antud nii lepingujärgne auto kui ka korter .
+
+originaal: Meditsiinilisel ülevaatusel põrumise tõttu väideti olevat kehtetu ka klubidevaheline leping .
+eemaldada: Meditsiinilisel ülevaatusel põrumise tõttu
+tulemus: väideti olevat kehtetu ka klubidevaheline leping .
+
+originaal: Muul ajal võtab kodanikke ja avaldusi vastu kaitseliitlasest abipolitseinik .
+eemaldada: Muul ajal
+tulemus: võtab kodanikke ja avaldusi vastu kaitseliitlasest abipolitseinik .
+
+originaal: Seminaril räägivad Venemaa eksperdid õiguskaitseorganite meditsiinilis-kriminalistikalisest tegevusest , tundmatute laipade tuvastamisest ning allkirjade ja käekirjade ekspertiisi kaasaegsetest probleemidest .
+eemaldada: Seminaril
+tulemus: räägivad Venemaa eksperdid õiguskaitseorganite meditsiinilis-kriminalistikalisest tegevusest , tundmatute laipade tuvastamisest ning allkirjade ja käekirjade ekspertiisi kaasaegsetest probleemidest .
+
+originaal: Uutest 4-silindrilistest mudelitest on kõige võimsam BMW 320i .
+eemaldada: Uutest 4-silindrilistest mudelitest
+tulemus: on kõige võimsam BMW 320i .
+
+originaal: Eestis kulub palju energiat halbade kliimaolude korvamiseks .
+eemaldada: Eestis
+tulemus: kulub palju energiat halbade kliimaolude korvamiseks .
+
+originaal: Tema sõnul jäidki aga paari korteri uksed suletuks .
+eemaldada: Tema sõnul
+tulemus: jäidki aga paari korteri uksed suletuks .
+
+originaal: Et pesumasin on olemas enamasti igas lapsega majapidamises , pole pesemine enam probleem , kirjutab Virumaa Teataja .
+eemaldada: igas lapsega majapidamises
+tulemus: Et pesumasin on olemas enamasti , pole pesemine enam probleem , kirjutab Virumaa Teataja .
+
+originaal: Ajaloolase Robert Nermani sõnul alustati praeguse Tallinna-Narva maantee ( tuntud ka kui Peterburi tee - toim ) ehitamist 1940. aastate lõpus tollase nõukogude võimu poolt .
+eemaldada: Ajaloolase Robert Nermani sõnul
+tulemus: alustati praeguse Tallinna-Narva maantee ( tuntud ka kui Peterburi tee - toim ) ehitamist 1940. aastate lõpus tollase nõukogude võimu poolt .
+
+originaal: 75 protsenti projekti maksumusest kaetakse seejuures Euroopa Liidu ISPA programmi rahaga .
+eemaldada: Euroopa Liidu ISPA programmi rahaga
+tulemus: 75 protsenti projekti maksumusest kaetakse seejuures .
+
+originaal: Peale erakonna ase- esimehe ameti on Laasi ka Kristiine linnaosa vanem .
+eemaldada: Peale erakonna ase- esimehe ameti
+tulemus: on Laasi ka Kristiine linnaosa vanem .
+
+originaal: Läti Eesti Seltsi esinaise Pärja Svarpstina sõnul on seekordse ESTO eelarve ligikaudu 1,5 miljonit krooni .
+eemaldada: Läti Eesti Seltsi esinaise Pärja Svarpstina sõnul
+tulemus: on seekordse ESTO eelarve ligikaudu 1,5 miljonit krooni .
+
+originaal: Mulle meeldib see lugu .
+eemaldada: Mulle
+tulemus: meeldib see lugu .
+
+originaal: Eesti Reformierakonna fraktsiooni nimel esitas Savi kandidatuuri Maret Maripuu .
+eemaldada: Eesti Reformierakonna fraktsiooni nimel
+tulemus: esitas Savi kandidatuuri Maret Maripuu .
+
+originaal: Riigikogu aseesimeeste valimisel oli kehtetuid hääletamissedeleid 1.
+eemaldada: Riigikogu aseesimeeste valimisel
+tulemus: oli kehtetuid hääletamissedeleid 1.
+
+originaal: Siseministeeriumi teatel sai 30 inimest viga .
+eemaldada: Siseministeeriumi teatel
+tulemus: sai 30 inimest viga .
+
+originaal: Faksist ja paljundusmasinast veel siiski unistada ei juleta .
+eemaldada: Faksist ja paljundusmasinast
+tulemus: veel siiski unistada ei juleta .
+
+originaal: Hinnavahe tekib tarbimiskoguste erinevuste tõttu .
+eemaldada: tarbimiskoguste erinevuste tõttu
+tulemus: Hinnavahe tekib .
+
+originaal: Sillaehitusest käib aga jõud üle , " rääkis Treial .
+eemaldada: Sillaehitusest
+tulemus: käib aga jõud üle , " rääkis Treial .
+
+originaal: Ja täpsustas siis : " Mulle meenutab see restoran natukene meieaegset ülikooli kohvikut .
+eemaldada: Mulle
+tulemus: Ja täpsustas siis : " meenutab see restoran natukene meieaegset ülikooli kohvikut .
+
+originaal: " Asi on ikka täiesti masendav , iga aastaga läheb eelarve järjest väiksemaks . "
+eemaldada: iga aastaga
+tulemus: " Asi on ikka täiesti masendav , läheb eelarve järjest väiksemaks . "
+
+originaal: Sampo personaal- ja jaepanganduse direktori Margus Žuravljovi sõnul pole tegemist ühekordse kampaaniaga .
+eemaldada: Sampo personaal- ja jaepanganduse direktori Margus Žuravljovi sõnul
+tulemus: pole tegemist ühekordse kampaaniaga .
+
+originaal: Selleks aastaks ennustab Nordea Pank sama aktiivset eluasemelaenu võtmist kui läinud aastal .
+eemaldada: Selleks aastaks
+tulemus: ennustab Nordea Pank sama aktiivset eluasemelaenu võtmist kui läinud aastal .
+
+originaal: Vanaema hinnangul peaks ka ema ise aru saama , et nii on õige .
+eemaldada: Vanaema hinnangul
+tulemus: peaks ka ema ise aru saama , et nii on õige .
+
+originaal: " Pärast Atlanta olümpiamänge sai trenni pisut kergemalt võetud , " arutleb ta .
+eemaldada: Pärast Atlanta olümpiamänge
+tulemus: " sai trenni pisut kergemalt võetud , " arutleb ta .
+
+originaal: Enne esimesi öökülmi saab seal veel imetleda roosiõite lopsakust ja nuusutada õrna , suviselt magusat lillelõhna .
+eemaldada: Enne esimesi öökülmi
+tulemus: saab seal veel imetleda roosiõite lopsakust ja nuusutada õrna , suviselt magusat lillelõhna .
+

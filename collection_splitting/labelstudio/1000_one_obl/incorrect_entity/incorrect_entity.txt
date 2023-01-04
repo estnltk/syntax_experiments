@@ -1,0 +1,20 @@
+originaal: Laeva ehitamisel oli jämedalt eiratud konventsiooni Eluohutus Merel ( SOLAS ) esmanõudeid .
+eemaldada: Laeva ehitamisel oli jämedalt eiratud konventsiooni Eluohutus Merel ( SOLAS ) esmanõudeid
+tulemus: .
+
+originaal: Haapsalu oli 1994. aastal , mil Suklesest sai Isamaa ja Liberaalide ( nüüd Reformierakond ) toel linnapea , mahajäänud linnake : peaaegu kasutamiskõlbmatu oli Paralepa rand , sanatoorium ei töötanud , midagi uut ei ehitatud , ajaloolised mälestised lagunesid lootusetult .
+eemaldada: Suklesest
+tulemus: Haapsalu oli 1994. aastal , mil sai Isamaa ja Liberaalide ( nüüd Reformierakond ) toel linnapea , mahajäänud linnake : peaaegu kasutamiskõlbmatu oli Paralepa rand , sanatoorium ei töötanud , midagi uut ei ehitatud , ajaloolised mälestised lagunesid lootusetult .
+
+originaal: ta heaks , aga ootab tulemust .
+eemaldada: ta heaks , aga ootab tulemust .
+tulemus: 
+
+originaal: ehhist toodud kaasaegset pöörangut .
+eemaldada: ehhist
+tulemus: toodud kaasaegset pöörangut .
+
+originaal: Tallinnas registreeriti 426 lapse sünd , Tartumaal 141 , Ida-Virumaal 138 , Harjumaal 100 , Pärnumaal 66 , Viljandimaal 53 , Lääne-Virumaal 48 , Saaremaal 30 , Põlvamaal 28 , Raplamaal 28 , Valgamaal 27 , Järvamaal 23 , Võrumaal 22 , Jõgevamaal 20 , Läänemaal 20 ning Hiiumaal 5 lapse sünd.
+eemaldada: Tallinnas
+tulemus: registreeriti 426 lapse sünd , Tartumaal 141 , Ida-Virumaal 138 , Harjumaal 100 , Pärnumaal 66 , Viljandimaal 53 , Lääne-Virumaal 48 , Saaremaal 30 , Põlvamaal 28 , Raplamaal 28 , Valgamaal 27 , Järvamaal 23 , Võrumaal 22 , Jõgevamaal 20 , Läänemaal 20 ning Hiiumaal 5 lapse sünd.
+
