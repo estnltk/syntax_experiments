@@ -2,7 +2,6 @@ from estnltk import Text
 import random
 import json
 from typing import List
-from estnltk.storage.postgres import PostgresStorage
 
 
 def conf_gen(classes: List[str]):
@@ -13,10 +12,12 @@ def conf_gen(classes: List[str]):
     end_block = """
     </Labels>
 <Text name="text" value="$text"/>
-<Header value="Are the annotations correct?"/>
+<Header value="Is the entity free, bound, incorrect or causes unnatural sentence?"/>
 <Choices name="review" toName="text">
-    <Choice value="yes"/>
-    <Choice value="no"/>
+    <Choice value="free"/>
+    <Choice value="bound"/>
+    <Choice value="unnatural"/>
+    <Choice value="not correct entity"/>
 </Choices>
 </View>"""
 
@@ -30,12 +31,14 @@ def conf_gen(classes: List[str]):
     return conf_string
 
 
-def one_text(text: Text, regular_layers: List[str], classification_layer:str = None, ner_layer:str = None):
+def one_text(text: Text, regular_layers: List[str], classification_layer: str = None, ner_layer: str = None):
     predictions = []
+    results = {}
     score = None
 
     if classification_layer:
         if len(text[classification_layer]) > 0:
+            print("üks")
             span = text[classification_layer][0]
 
             label = text[classification_layer][0]['label']
@@ -51,7 +54,7 @@ def one_text(text: Text, regular_layers: List[str], classification_layer:str = N
                     "end": span.end,
                     "score": float(score),
                     "text": span.text,
-                    "labels":[
+                    "labels": [
                         str(classification_layer + "_" + label)
                     ]
                 }
@@ -81,15 +84,15 @@ def one_text(text: Text, regular_layers: List[str], classification_layer:str = N
                             "end": span.end,
                             "score": float(score),
                             "text": span.text,
-                            "labels":[
+                            "labels": [
                                 str(ner_layer + suffix)
                             ]
                         }
                     })
 
     for layer in regular_layers:
-        for span in text[layer]:
-
+        if len(text[layer]) == 1:
+            span = text[layer][0]
             predictions.append({
 
                 'to_name': "text",
@@ -99,20 +102,41 @@ def one_text(text: Text, regular_layers: List[str], classification_layer:str = N
                     "start": span.start,
                     "end": span.end,
                     "text": span.text,
-                    "labels":[
+                    "labels": [
                         str(layer)
                     ]
                 }
             })
+            results = {
+                'data': {'text': text.text},
+                'predictions': [{
+                    'result': predictions}]
+            }
 
-    results = {
-    'data': {'text': text.text},
-    'predictions': [{
-        'result': predictions}]
-    }
+        elif len(text[layer]) > 1:
+            results = []
+            for i, span in enumerate(text[layer]):
+                predictions = [{
+                    'to_name': "text",
+                    'from_name': "label",
+                    'type': 'labels',
+                    'value': {
+                        "start": span.start,
+                        "end": span.end,
+                        "text": span.text,
+                        "labels": [
+                            str(layer)
+                        ]
+                    }
+                }]
+                results.append({
+                    'data': {'text': text.text},
+                    'predictions': [{
+                        'result': predictions}]
+                })
 
-    if score and classification_layer:
-        results['predictions'][0]['score'] = float(score)
+    # if score and classification_layer:
+    #    results['predictions'][0]['score'] = float(score)
 
     return results
 
@@ -127,11 +151,19 @@ def collection_to_labelstudio(collection,
     # assert something
 
     texts_list = [text for text in collection]
-    data = [one_text(
+
+    data1 = [one_text(
         text,
         classification_layer=classification_layer,
         ner_layer=ner_layer,
         regular_layers=regular_layers) for text in texts_list]
+    data = []
+    for elem in data1:
+        if type(elem) == list:
+            for e in elem:
+                data.append(e)
+        else:
+            data.append(elem)
 
     with open(filename, 'w') as f:
         json.dump(data, f)

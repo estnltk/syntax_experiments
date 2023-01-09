@@ -1,15 +1,11 @@
-from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
-
 from read_config import read_config
 import argparse
 import os
 from collection_to_ls import collection_to_labelstudio, conf_gen
 
-
-# example: python 4_export_2_labelstudio.py advmod conf.ini ls_export_v1.json 20 12345 1
+# example: python 4_export_2_labelstudio.py advmod conf.ini ls_export_v1.json 20 12345 
 # exports the necessary layers for advmod infto json 
-
 
 parser = argparse.ArgumentParser(description = "Takes the stanza layer and ignored entities layer of given advmod and creates a json file with data and configuration file for labelstudio. Configuration file will be saved to the same folder as the data json file or where the script was run.")
 parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.", type=str)
@@ -17,13 +13,13 @@ parser.add_argument("config_file", help="Configuration ini file name.", type=str
 parser.add_argument("result_file", help="Results json file name.", type=str)
 parser.add_argument("percent", help="Percentage of data to take randomly.", type=int)
 parser.add_argument("seed", help="Seed for taking the data.", type=int)
-parser.add_argument("entity_count", help="For filtering sentences. Only sentences with given number of given deprel will be chosen.", type=int)
+#parser.add_argument("entity_count", help="For filtering sentences. Only sentences with given number of given deprel will be chosen.", type=int)
 args = vars(parser.parse_args())
 
 input_deprel = args["deprel"]
 percent = args["percent"]
 seed = args["seed"]
-entity_count = args["entity_count"]
+#entity_count = args["entity_count"]
 
 # read configuration
 file_name = args["config_file"]
@@ -56,15 +52,15 @@ for option in ["host", "port", "database_name", "username", "password", "work_sc
         raise SystemExit
 
         
-# database for exporting to labelstudio 
+# database for exporting to label-studio
 target_storage = PostgresStorage(host=config["target_database"]["host"],
-                          port=config["target_database"]["port"],
-                          dbname=config["target_database"]["database_name"],
-                          user=config["target_database"]["username"],
-                          password=config["target_database"]["password"],
-                          schema=config["target_database"]["work_schema"], 
-                          role=config["target_database"]["role"],
-                          temporary=False)        
+                                 port=config["target_database"]["port"],
+                                 dbname=config["target_database"]["database_name"],
+                                 user=config["target_database"]["username"],
+                                 password=config["target_database"]["password"],
+                                 schema=config["target_database"]["work_schema"],
+                                 role=config["target_database"]["role"],
+                                 temporary=False)
         
 collection = target_storage[config["target_database"]["collection"]]
 
@@ -78,13 +74,12 @@ try:
 
     txt_ids = []
     for txt in sample:
-        if len(collection[txt[0]][ignore_layer]) == entity_count:
+        if len(collection[txt[0]][ignore_layer]) > 0:  # entity_count:
             txt_ids.append(txt[0])
         if len(txt_ids) == 1000:
             break
      
     collection2 = []
-
     for txtid in txt_ids:
         collection2.append(collection[txtid])
  
@@ -92,8 +87,8 @@ try:
   
     conf_save = f"ls_1000_{input_deprel}_conf.txt"
     idx_save = f"ls_1000_{input_deprel}_ids.txt"
-    if fpath != None:
-        # TODO linux path wants "/" at the beginning of full path 
+    if fpath is not None:
+        # linux path wants "/" at the beginning of full path
         conf_save = os.path.join("/", fpath, f"ls_1000_{input_deprel}_conf.txt")
         idx_save = os.path.join("/", fpath, f"ls_1000_{input_deprel}_ids.txt")
     
@@ -103,12 +98,10 @@ try:
     with open(idx_save, "w", encoding="utf-8") as f:
         for listitem in txt_ids:
             f.write(f'{listitem}\n')
-    
-    
+
 except Exception as e: 
     print("Problem with exporting the layers: ", str(e).strip())
     target_storage.close()
     raise SystemExit
     
 target_storage.close()
-
