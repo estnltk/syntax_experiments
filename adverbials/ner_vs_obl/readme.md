@@ -1,0 +1,1 @@
+Iga txt-fail sisaldab failinimele vastavaid näiteid. Ühel real on tabiga eraldatult lause, vastavast lausest leitud NER-tag ning OBL-tag selles järjekorras.
