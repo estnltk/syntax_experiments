@@ -64,12 +64,12 @@ Laiend on vaba ja eemaldamisel jääb lause mõte piisavalt samaks ning ei teki 
 > <u>**Minuga**</u> oleks võinud juhtuda midagi tõeliselt halba. <br/>
 > Oleks võinud juhtuda midagi tõeliselt halba.
 
-> <u>**Neile**<u> meie praegune haldusaparaat ei vasta.
+> <u>**Neile**<u> meie praegune haldusaparaat ei vasta. <br/>
 > Meie praegune haldusaparaat ei vasta.
 
 Kui esialgses lauses oli esimene sõna verb, siis laiendi eemaldamine ei tähenda tingimata ebaloomulikku sõnade järjekorda (vt sektsiooni "Sõnajärge muutvad vabad laiendid")
 
-> Pöörab pilgu <u>**oma poegadele Jaanusele ( 17 ) ja Joosepile**<u> ning lisab , et tegelikult on patt öelda , et elu on raske.
+> Pöörab pilgu <u>**oma poegadele Jaanusele ( 17 ) ja Joosepile**<u> ning lisab , et tegelikult on patt öelda , et elu on raske. <br/>
 > Pöörab pilgu ning lisab , et tegelikult on patt öelda , et elu on raske .
 
 
