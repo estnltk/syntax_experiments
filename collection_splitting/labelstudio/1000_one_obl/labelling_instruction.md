@@ -64,6 +64,13 @@ Laiend on vaba ja eemaldamisel jääb lause mõte piisavalt samaks ning ei teki 
 > <u>**Minuga**</u> oleks võinud juhtuda midagi tõeliselt halba. <br/>
 > Oleks võinud juhtuda midagi tõeliselt halba.
 
+> <u>**Neile**<u> meie praegune haldusaparaat ei vasta.
+> Meie praegune haldusaparaat ei vasta.
+
+Kui esialgses lauses oli esimene sõna verb, siis laiendi eemaldamine ei tähenda tingimata ebaloomulikku sõnade järjekorda (vt sektsiooni "Sõnajärge muutvad vabad laiendid")
+
+> Pöörab pilgu <u>**oma poegadele Jaanusele ( 17 ) ja Joosepile**<u> ning lisab , et tegelikult on patt öelda , et elu on raske.
+> Pöörab pilgu ning lisab , et tegelikult on patt öelda , et elu on raske .
 
 
 ### Seotud laiendid
@@ -83,13 +90,13 @@ Laiend <u>**kubismist**</u> on seotud verbivormiga <u>toodud</u> eemaldamisel mu
 > Kretski ei kasutanud ära <u>**kubismist**</u> toodud kaasaegset pöörangut .</br>
 > Kretski ei kasutanud ära toodud kaasaegset pöörangut .
 
-Üldiselt on seotud laiend otseselt seotud verbi, mõne verbivormiga (nud, tud, des) või ühendverbiga. Tüüpilisemad näited antud märgendude kontekstis on verbidega:
+Üldiselt on seotud laiend otseselt seotud verbi, mõne verbivormiga (nud, tud, des) või ühendverbiga. Tüüpilisemad näited antud märgenduste kontekstis on verbidega:
 
 * kippuma, tikkuma;
-* asuma, paiknema peituma, jääma, jätma
+* asuma, paiknema, peituma, jääma, jätma
 * mahtuma, ulatuma
 
-seotud kohalaiendid. Aga nende verbidega võivad olla seotud ka teisrt tüüpi laiendid. 
+seotud kohalaiendid. Aga nende verbidega võivad olla seotud ka teist tüüpi laiendid. 
 
 Oluline on märgata, et laiendi tüüpi ei mõjuta kontekstist lähtuv eeldatav lausestruktuur.
 Laiend <u>**Tallinnas**</u> on vaba laiend hoolimata sellest, et lühendatud lause esimene osalause langeb stiilist välja:
@@ -139,4 +146,3 @@ Siia lähevad süntaksi vigadest tingitud laiendite moodustamise vead.
 
 > <u>**Laeva ehitamisel oli jämedalt eiratud konventsiooni Eluohutus Merel ( SOLAS ) esmanõudeid**</u>. <br/>
 > .
-
