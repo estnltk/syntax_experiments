@@ -24,7 +24,7 @@ args = vars(parser.parse_args())
 module = args["module"]
 remainder = args["remainder"]
 input_deprel = args["deprel"]
-ignore_layer_name  = input_deprel = args["ignore layer name"]
+ignore_layer_name = args["ignore layer name"]
 
 # read configuration
 file_name = args["config file"]
