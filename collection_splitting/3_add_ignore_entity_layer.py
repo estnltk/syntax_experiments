@@ -10,22 +10,24 @@ import argparse
 import os
 import datetime
 
-# example: python 3_add_ignore_entity_layer.py advmod 2 0 conf.ini 
+# example: python 3_add_ignore_entity_layer.py advmod 2 0 conf.ini obl_phrases
 # processes texts 0, 2, 4, ...
 
 parser = argparse.ArgumentParser(description = "Tags layer block with super tagger and creates layer 'syntax_ignore_entity' where the subtrees of given deprel are stored. (expects that stanza syntax layer already exists)")
 parser.add_argument("deprel", help="Deprel for removing subtrees of the sentence.", type=str)
 parser.add_argument("module", help="Module for layer block. Selecting texts with text_id % module == remainder.", type=int)
 parser.add_argument("remainder", help="Remainder for layer block. Selecting texts with text_id % module == remainder.", type=int)
-parser.add_argument("file", help="Configuration ini file name.", type=str)
+parser.add_argument("config file", help="Configuration ini file name.", type=str)
+parser.add_argument("ignore layer name", help="Name of the ignore layer (obl_phrases etc).", type=str)
 args = vars(parser.parse_args())
 
 module = args["module"]
 remainder = args["remainder"]
 input_deprel = args["deprel"]
+ignore_layer_name  = input_deprel = args["ignore layer name"]
 
 # read configuration
-file_name = args["file"]
+file_name = args["config file"]
 if os.path.isfile(file_name):
     fname = os.path.basename(file_name).split('/')[-1]
     config = read_config(fname, file_name)
@@ -41,7 +43,7 @@ else:
     try:
         model_path = config["stanza_syntax"]["model_path"]
         super_tagger = SuperTagger(deprel =input_deprel, input_type="stanza_syntax", 
-                           ignore_layer="syntax_ignore_entity_"+input_deprel, model_path = model_path)
+                           ignore_layer=ignore_layer_name, model_path = model_path)
         
     except Exception as e: 
         print("Problem with model path or creating the tagger: ", str(e).strip())
@@ -73,8 +75,8 @@ collection = target_storage[config["target_database"]["collection"]]
 
 # check if table exists
 table_name = layer_table_name(config["target_database"]["collection"],super_tagger.get_layer_template().name)
-if "syntax_ignore_entity_"+input_deprel in collection.layers or table_exists(target_storage,table_name ):
-    print(f"Ignore Entity (syntax_ignore_entity_{input_deprel}) kiht või tabel on juba olemas.")
+if ignore_layer_name in collection.layers or table_exists(target_storage,table_name ):
+    print(f"{ignore_layer_name} kiht või tabel on juba olemas.")
 else:
     collection.add_layer( layer_template=super_tagger.get_layer_template() ) 
 

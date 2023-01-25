@@ -44,7 +44,7 @@ class StanzaSyntaxTagger2(Tagger):
         self.mark_agreement_error = mark_agreement_error
         self.ignore_layer = ignore_layer
         if self.ignore_layer!=None:
-            self.output_layer = output_layer+"_"+self.ignore_layer.split("_")[-1:][0]
+            self.output_layer = output_layer#+"_"+self.ignore_layer.split("_")[-1:][0]
         else:
             self.output_layer=output_layer
         self.output_attributes = ('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc', "status")
