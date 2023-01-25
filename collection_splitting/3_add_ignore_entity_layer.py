@@ -78,7 +78,7 @@ table_name = layer_table_name(config["target_database"]["collection"],super_tagg
 if ignore_layer_name in collection.layers or table_exists(target_storage,table_name ):
     print(f"{ignore_layer_name} kiht või tabel on juba olemas.")
 else:
-    collection.add_layer( layer_template=super_tagger.get_layer_template() ) 
+    collection.add_layer( layer_template=super_tagger.get_layer_template() , sparse=True) 
 
 
 try:
