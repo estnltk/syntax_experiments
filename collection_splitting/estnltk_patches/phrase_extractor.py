@@ -3,9 +3,9 @@ from estnltk.taggers import Tagger
 from estnltk import EnvelopingBaseSpan
 from estnltk.taggers.system.rule_taggers import Ruleset
 from typing import Union
-from .syntax_tree import SyntaxTree
-from .syntax_tree_operations import filter_nodes_by_attributes
-from .syntax_tree_operations import extract_base_spans_of_subtree
+from estnltk_patches.syntax_tree import SyntaxTree
+from estnltk_patches.syntax_tree_operations import filter_nodes_by_attributes
+from estnltk_patches.syntax_tree_operations import extract_base_spans_of_subtree
 
 
 class PhraseExtractor(Tagger):

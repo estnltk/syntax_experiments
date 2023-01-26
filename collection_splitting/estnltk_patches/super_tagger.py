@@ -1,10 +1,10 @@
 
 from estnltk import Layer
 from estnltk.taggers import Tagger
-from taggers.phrase_extractor import PhraseExtractor
-from taggers.stanza_syntax_tagger import StanzaSyntaxTagger2
-from taggers.syntax_tree import SyntaxTree
-from taggers.syntax_tree_operations import *
+from estnltk_patches.phrase_extractor import PhraseExtractor
+from estnltk_patches.stanza_syntax_tagger import StanzaSyntaxTagger2
+from estnltk_patches.syntax_tree import SyntaxTree
+from estnltk_patches.syntax_tree_operations import *
 import copy
 
 class SuperTagger(Tagger):
