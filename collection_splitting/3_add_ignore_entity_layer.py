@@ -1,8 +1,8 @@
 from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
 
-from taggers.super_tagger import SuperTagger
-
+from estnltk_patches.super_tagger import SuperTagger
+from estnltk_patches.phrase_extractor import PhraseExtractor
 from estnltk.storage.postgres import table_exists
 from estnltk.storage.postgres import layer_table_name
 from read_config import read_config
@@ -10,7 +10,7 @@ import argparse
 import os
 import datetime
 
-# example: python 3_add_ignore_entity_layer.py advmod 2 0 conf.ini obl_phrases
+# example: python 3_add_ignore_entity_layer.py obl 2 0 conf.ini obl_phrases
 # processes texts 0, 2, 4, ...
 
 parser = argparse.ArgumentParser(description = "Tags layer block with super tagger and creates layer 'syntax_ignore_entity' where the subtrees of given deprel are stored. (expects that stanza syntax layer already exists)")
@@ -24,7 +24,7 @@ args = vars(parser.parse_args())
 module = args["module"]
 remainder = args["remainder"]
 input_deprel = args["deprel"]
-ignore_layer_name = args["ignore layer name"]
+ignore_layer_name  = args["ignore layer name"]
 
 # read configuration
 file_name = args["config file"]
@@ -44,6 +44,8 @@ else:
         model_path = config["stanza_syntax"]["model_path"]
         super_tagger = SuperTagger(deprel =input_deprel, input_type="stanza_syntax", 
                            ignore_layer=ignore_layer_name, model_path = model_path)
+        #phrase_tagger = PhraseExtractor(deprel=input_deprel, input_type="stanza_syntax", 
+        #                        syntax_layer="stanza_syntax", output_layer=ignore_layer_name)
         
     except Exception as e: 
         print("Problem with model path or creating the tagger: ", str(e).strip())
@@ -80,11 +82,10 @@ if ignore_layer_name in collection.layers or table_exists(target_storage,table_n
 else:
     collection.add_layer( layer_template=super_tagger.get_layer_template() , sparse=True) 
 
-
 try:
     print(f"Started tagging: {datetime.datetime.now()}")
     # tag a block
-    collection.create_layer_block( super_tagger, (module, remainder), mode='append' )
+    collection.create_layer_block( super_tagger, (module, remainder), mode='append' ) 
 
 except Exception as e: 
     print("Problem during tagging: ", str(e).strip())
