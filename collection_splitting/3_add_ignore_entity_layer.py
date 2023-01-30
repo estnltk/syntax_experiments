@@ -1,7 +1,7 @@
 from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
 
-from estnltk_patches.super_tagger import SuperTagger
+from taggers.super_tagger import SuperTagger
 from estnltk_patches.phrase_extractor import PhraseExtractor
 from estnltk.storage.postgres import table_exists
 from estnltk.storage.postgres import layer_table_name
@@ -35,21 +35,14 @@ else:
     print("Could not find the specified configuration file.")
     raise SystemExit
 
-# check needed fields for tagger
-if "model_path" not in list(config["stanza_syntax"]):
-    print("Stanza model path is not defined!")
+
+try:
+    phrase_tagger = PhraseExtractor(deprel=input_deprel, input_type="stanza_syntax", 
+                            syntax_layer="stanza_syntax", output_layer=ignore_layer_name)
+    
+except Exception as e: 
+    print("Problem with creating the tagger: ", str(e).strip())
     raise SystemExit
-else:
-    try:
-        model_path = config["stanza_syntax"]["model_path"]
-        super_tagger = SuperTagger(deprel =input_deprel, input_type="stanza_syntax", 
-                           ignore_layer=ignore_layer_name, model_path = model_path)
-        #phrase_tagger = PhraseExtractor(deprel=input_deprel, input_type="stanza_syntax", 
-        #                        syntax_layer="stanza_syntax", output_layer=ignore_layer_name)
-        
-    except Exception as e: 
-        print("Problem with model path or creating the tagger: ", str(e).strip())
-        raise SystemExit
 
 # check necessary fields for db connection
 for option in ["host", "port", "database_name", "username", "password", "work_schema", "role", "collection"]:
@@ -76,16 +69,16 @@ target_storage = PostgresStorage(host=config["target_database"]["host"],
 collection = target_storage[config["target_database"]["collection"]]
 
 # check if table exists
-table_name = layer_table_name(config["target_database"]["collection"],super_tagger.get_layer_template().name)
+table_name = layer_table_name(config["target_database"]["collection"],phrase_tagger.get_layer_template().name)
 if ignore_layer_name in collection.layers or table_exists(target_storage,table_name ):
     print(f"{ignore_layer_name} kiht või tabel on juba olemas.")
 else:
-    collection.add_layer( layer_template=super_tagger.get_layer_template() , sparse=True) 
+    collection.add_layer( layer_template=phrase_tagger.get_layer_template() , sparse=True) 
 
 try:
     print(f"Started tagging: {datetime.datetime.now()}")
     # tag a block
-    collection.create_layer_block( super_tagger, (module, remainder), mode='append' ) 
+    collection.create_layer_block( phrase_tagger, (module, remainder), mode='append' ) 
 
 except Exception as e: 
     print("Problem during tagging: ", str(e).strip())
