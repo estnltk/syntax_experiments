@@ -121,7 +121,7 @@ Paljudel juhtudel on ebaloomuliku sõnajärje tunnuseks verbi paiknemine lause v
 > <u>**Mul**</u> on olnud võimalik mingeid situatsioone lihtsamalt lahendada . <br/>
 > On olnud võimalik mingeid situatsioone lihtsamalt lahendada . <br/>
 
-> Kuid <u>**Bureau Veritase**</u> puhul ei saa seda kuidagi teha .<br/>
+> Kuid <u>**Bureau Veritase puhul**</u> ei saa seda kuidagi teha .<br/>
 > Kuid puhul ei saa seda kuidagi teha .
 
 Samas tekitavad mõned sellised siiski loomuliku lausejärjega lühendatud lauseid, kuigi lause sisu muutub täielikult: 
