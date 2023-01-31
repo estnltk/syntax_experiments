@@ -7,16 +7,6 @@ from estnltk_patches.syntax_tree import SyntaxTree
 from estnltk_patches.syntax_tree_operations import filter_nodes_by_attributes
 from estnltk_patches.syntax_tree_operations import extract_base_spans_of_subtree
 
-from estnltk_core.converters.serialisation_registry import SERIALISATION_REGISTRY
-from estnltk.converters.serialisation_modules import syntax_v1
-from estnltk.converters.serialisation_modules import legacy_v0
-
-if 'syntax_v1' not in SERIALISATION_REGISTRY:
-    SERIALISATION_REGISTRY['syntax_v1'] = syntax_v1
-if 'legacy_v0' not in SERIALISATION_REGISTRY:
-    SERIALISATION_REGISTRY['legacy_v0'] = legacy_v0
-
-
 class PhraseExtractor(Tagger):
     """
     Extracts various types of phases based on UD-syntax. 

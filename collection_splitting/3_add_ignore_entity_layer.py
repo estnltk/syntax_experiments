@@ -5,7 +5,6 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
 
-from taggers.super_tagger import SuperTagger
 from estnltk_patches.phrase_extractor import PhraseExtractor
 from estnltk.storage.postgres import table_exists
 from estnltk.storage.postgres import layer_table_name
@@ -15,13 +14,10 @@ import os
 import datetime
 
 from estnltk_core.converters.serialisation_registry import SERIALISATION_REGISTRY
-from estnltk.converters.serialisation_modules import syntax_v1
-from estnltk.converters.serialisation_modules import legacy_v0
+from serialisation_module import syntax_v1
 
 if 'syntax_v1' not in SERIALISATION_REGISTRY:
     SERIALISATION_REGISTRY['syntax_v1'] = syntax_v1
-if 'legacy_v0' not in SERIALISATION_REGISTRY:
-    SERIALISATION_REGISTRY['legacy_v0'] = legacy_v0
 
 
 # example: python 3_add_ignore_entity_layer.py obl 2 0 conf.ini obl_phrases
