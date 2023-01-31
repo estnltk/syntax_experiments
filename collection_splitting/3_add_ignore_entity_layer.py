@@ -1,3 +1,7 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+
 from estnltk import Text
 from estnltk.storage.postgres import PostgresStorage
 
@@ -9,6 +13,16 @@ from read_config import read_config
 import argparse
 import os
 import datetime
+
+from estnltk_core.converters.serialisation_registry import SERIALISATION_REGISTRY
+from estnltk.converters.serialisation_modules import syntax_v1
+from estnltk.converters.serialisation_modules import legacy_v0
+
+if 'syntax_v1' not in SERIALISATION_REGISTRY:
+    SERIALISATION_REGISTRY['syntax_v1'] = syntax_v1
+if 'legacy_v0' not in SERIALISATION_REGISTRY:
+    SERIALISATION_REGISTRY['legacy_v0'] = legacy_v0
+
 
 # example: python 3_add_ignore_entity_layer.py obl 2 0 conf.ini obl_phrases
 # processes texts 0, 2, 4, ...

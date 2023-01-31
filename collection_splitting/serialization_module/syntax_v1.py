@@ -4,6 +4,7 @@ from typing import Union
 
 from estnltk_core.layer.base_layer import to_base_span
 from estnltk_core.layer.layer import Layer
+from estnltk import Span 
 
 __version__ = 'syntax_v1'
 
@@ -23,20 +24,13 @@ def layer_to_dict(layer):
     attributes = []
     for attr in layer.attributes:
         if attr == "root":
-            if type(annotation[attr])!="estnltk_core.layer.span.Span":
+            if len(layer[attr])!=0 and type(layer[attr][0])!=Span:
                 attributes.append(attr)
-        if attr not in {'parent_span', 'children'}:
+        elif attr not in {'parent_span', 'children'}:
             attributes.append(attr)
-            
+
     for span in layer:
-        annotation_dict = []
-        for annotation in span.annotations:
-            for attr in attributes:
-                if attr == "root":
-                    annotation_dict.append({"root_id": annotation[attr]['id'] })
-                    annotation_dict.append({attr: annotation[attr] })
-                else:
-                    annotation_dict.append({attr: annotation[attr] })
+        annotation_dict = [{attr: annotation[attr] for attr in attributes} for annotation in span.annotations]
         spans.append({'base_span': span.base_span.raw(),
                       'annotations': annotation_dict})
     layer_dict['spans'] = spans

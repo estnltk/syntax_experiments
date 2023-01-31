@@ -7,6 +7,15 @@ from estnltk_patches.syntax_tree import SyntaxTree
 from estnltk_patches.syntax_tree_operations import filter_nodes_by_attributes
 from estnltk_patches.syntax_tree_operations import extract_base_spans_of_subtree
 
+from estnltk_core.converters.serialisation_registry import SERIALISATION_REGISTRY
+from estnltk.converters.serialisation_modules import syntax_v1
+from estnltk.converters.serialisation_modules import legacy_v0
+
+if 'syntax_v1' not in SERIALISATION_REGISTRY:
+    SERIALISATION_REGISTRY['syntax_v1'] = syntax_v1
+if 'legacy_v0' not in SERIALISATION_REGISTRY:
+    SERIALISATION_REGISTRY['legacy_v0'] = legacy_v0
+
 
 class PhraseExtractor(Tagger):
     """
@@ -29,7 +38,7 @@ There are sensible decorators for each phrasetype.
                  syntax_layer="stanza_syntax",
                  input_type='stanza_syntax',  # or 'morph_extended', 'sentences'                
                  deprel=None,
-                 output_attributes = ['entity_type', 'free_entity', 'is_valid', 'root']
+                 output_attributes = ['entity_type', 'free_entity', 'is_valid', 'root_id', 'root']
 
                  ):
         
@@ -50,8 +59,9 @@ There are sensible decorators for each phrasetype.
         layer = Layer(name=self.output_layer,
                       text_object=None,
                       attributes=self.output_attributes,
-                      enveloping=self.input_layers[1],
-                      ambiguous=False)
+                      enveloping=self.input_layers[3],
+                      ambiguous=False,
+                      serialisation_module='syntax_v1')
         return layer
 
     def _make_layer(self, text, layers, status=None):
@@ -60,16 +70,15 @@ There are sensible decorators for each phrasetype.
         layer.text_object = text
         
         syntax_layer = self.input_layers[3]
-        
         text_word_idx = 0
+
         for sentence in text.sentences:       
             sent_end = text_word_idx + len(sentence)
             syntaxtree = SyntaxTree(syntax_layer_sentence=text[syntax_layer][text_word_idx:sent_end])
             ignore_nodes = filter_nodes_by_attributes(syntaxtree, 'deprel', self.deprel)
-            
             for node in ignore_nodes:
                 new_span = EnvelopingBaseSpan(sorted(extract_base_spans_of_subtree(syntaxtree, node)))
-                layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None,
+                layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None, root_id=syntaxtree.graph.nodes[node]['span']["id"],
                                      root=syntaxtree.graph.nodes[node]['span'])
                                      
             text_word_idx = sent_end
