@@ -35,10 +35,13 @@ else:
 if "model_path" not in list(config["stanza_syntax"]):
     print("Stanza model path is not defined!")
     raise SystemExit
+if  "input_type" not in list(config["tagger_parameters"]):
+	print("Missing input_type parameter!")
+    raise SystemExit
 else:
     try:
         model_path = config["stanza_syntax"]["model_path"]
-        input_type="morph_extended"
+        input_type = config["tagger_parameters"]["input_type"]
         stanza_tagger = StanzaSyntaxTagger(input_type=input_type, input_morph_layer=input_type, add_parent_and_children=True, resources_path=model_path)
     except Exception as e: 
         print("Problem with model path or creating the tagger: ", str(e).strip())

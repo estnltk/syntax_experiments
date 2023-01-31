@@ -45,14 +45,19 @@ else:
     print("Could not find the specified configuration file.")
     raise SystemExit
 
-
-try:
-    phrase_tagger = PhraseExtractor(deprel=input_deprel, input_type="stanza_syntax", 
-                            syntax_layer="stanza_syntax", output_layer=ignore_layer_name)
-    
-except Exception as e: 
-    print("Problem with creating the tagger: ", str(e).strip())
+if "syntax_layer" not in list(config["tagger_parameters"]) or "input_type" not in list(config["tagger_parameters"]):
+    print("Missing syntax_layer or input_type parameter!")
     raise SystemExit
+else:
+    try:
+        syntax_layer = config["tagger_parameters"]["syntax_layer"]
+        input_type = config["tagger_parameters"]["input_type"]
+        phrase_tagger = PhraseExtractor(deprel=input_deprel, input_type=input_type, 
+                                syntax_layer=syntax_layer, output_layer=ignore_layer_name)
+        
+    except Exception as e: 
+        print("Problem with creating the tagger: ", str(e).strip())
+        raise SystemExit
 
 # check necessary fields for db connection
 for option in ["host", "port", "database_name", "username", "password", "work_schema", "role", "collection"]:
