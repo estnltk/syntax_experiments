@@ -3,6 +3,9 @@ from estnltk.taggers import Tagger
 from estnltk import EnvelopingBaseSpan
 from estnltk.taggers.system.rule_taggers import Ruleset
 from typing import Union
+from estnltk_neural.taggers.syntax.stanza_tagger.stanza_tagger import StanzaSyntaxTagger
+from estnltk_patches.stanza_syntax_tagger import StanzaSyntaxTagger2
+
 from estnltk_patches.syntax_tree import SyntaxTree
 from estnltk_patches.syntax_tree_operations import filter_nodes_by_attributes
 from estnltk_patches.syntax_tree_operations import extract_base_spans_of_subtree
@@ -16,11 +19,10 @@ User can specify decorator to filter out and annotate phrases.
 There are sensible decorators for each phrasetype. 
     """
     
-    conf_param = ['input_type', "deprel"]
+    conf_param = ['input_type', "deprel", "decorator", "resources_path", "ignore_tagger", "stanza_tagger"]
 
     def __init__(self,
-                 #ruleset: Union[str, dict, list, Ruleset] = None,
-                 #decorator: callable=None,
+                 decorator: callable=None,
                  output_layer='syntax_ignore_entity',
                  sentences_layer='sentences',
                  words_layer='words',
@@ -28,12 +30,12 @@ There are sensible decorators for each phrasetype.
                  syntax_layer="stanza_syntax",
                  input_type='stanza_syntax',  # or 'morph_extended', 'sentences'                
                  deprel=None,
-                 output_attributes = ['entity_type', 'free_entity', 'is_valid', 'root_id', 'root']
-
+                 output_attributes = ['root_id', 'root'],
+                 
+                 resources_path = None
                  ):
         
-        #self.ruleset = ruleset
-        #self.decorator = decorator
+        self.decorator = decorator
         self.deprel = deprel
         self.output_layer = output_layer
         self.output_attributes = output_attributes
@@ -43,6 +45,17 @@ There are sensible decorators for each phrasetype.
             self.input_layers = [sentences_layer, morph_layer, words_layer, syntax_layer]
         else:
             raise ValueError('Invalid input type {}'.format(input_type))
+            
+        if self.decorator:    
+            self.resources_path = resources_path
+            if not self.resources_path:
+                raise ValueError('Missing resources path for StanzaSyntaxTagger')
+            tagger_input_type = "morph_extended"
+            self.stanza_tagger = StanzaSyntaxTagger(input_type=tagger_input_type, input_morph_layer=tagger_input_type, 
+                                                add_parent_and_children=True, resources_path=self.resources_path)
+            self.ignore_tagger = StanzaSyntaxTagger2(ignore_layer=self.output_layer, input_type="morph_extended",
+                                                 input_morph_layer="morph_extended", add_parent_and_children=True,
+                                                 resources_path=self.resources_path)
 
     def _make_layer_template(self):
         """Creates and returns a template of the layer."""
@@ -68,8 +81,12 @@ There are sensible decorators for each phrasetype.
             ignore_nodes = filter_nodes_by_attributes(syntaxtree, 'deprel', self.deprel)
             for node in ignore_nodes:
                 new_span = EnvelopingBaseSpan(sorted(extract_base_spans_of_subtree(syntaxtree, node)))
-                layer.add_annotation(new_span, entity_type=None, free_entity=None, is_valid=None, root_id=syntaxtree.graph.nodes[node]['span']["id"],
-                                     root=syntaxtree.graph.nodes[node]['span'])
+                annotations = {"root_id":syntaxtree.graph.nodes[node]['span']["id"],
+                                     "root":syntaxtree.graph.nodes[node]['span']}
+                if self.decorator:
+                    annotations = self.decorator(text, new_span, annotations, self.ignore_tagger, self.stanza_tagger, self.output_layer, syntax_layer)
+                    
+                layer.add_annotation(new_span, **annotations)
                                      
             text_word_idx = sent_end
 

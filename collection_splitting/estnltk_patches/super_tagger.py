@@ -75,7 +75,7 @@ class SuperTagger(Tagger):
         without_entity_layer = "syntax_without_entity" #+ "_" + self.deprel
 
         #las_score, uas, la  = get_las_score(txt.stanza_syntax, txt[without_entity_layer])
-        las_score, uas, la = get_graph_edge_difference(txt.stanza_syntax, txt[without_entity_layer], txt[self.ignore_layer])
+        las_score, uas, la = get_graph_edge_difference(txt.stanza_syntax, txt[without_entity_layer], txt[self.ignore_layer], False)
         for span in txt[self.ignore_layer]:
             attributes = {'entity_type': span["entity_type"], 'free_entity': span["free_entity"],
                           'is_valid': span['is_valid'],
