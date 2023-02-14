@@ -1,0 +1,13 @@
+experiment,LAS_test,LAS_train,LAS_gap,UAS_test,UAS_train
+eval_stanza_morph_extended_half_data_001,0.8239,0.9412,0.1173,0.8630,0.9551
+eval_stanza_morph_extended_half_data_002,0.8216,0.9144,0.0928,0.8606,0.9371
+eval_stanza_morph_extended_half_data_003,0.8218,0.9415,0.1197,0.8603,0.9553
+eval_stanza_morph_extended_half_data_004,0.8208,0.9338,0.1130,0.8580,0.9501
+eval_stanza_morph_extended_half_data_005,0.8211,0.9245,0.1034,0.8609,0.9430
+eval_stanza_morph_extended_half_data_006,0.8178,0.9205,0.1027,0.8580,0.9408
+eval_stanza_morph_extended_half_data_007,0.8214,0.9221,0.1007,0.8601,0.9421
+eval_stanza_morph_extended_half_data_008,0.8230,0.9307,0.1078,0.8620,0.9477
+eval_stanza_morph_extended_half_data_009,0.8248,0.9330,0.1083,0.8630,0.9493
+eval_stanza_morph_extended_half_data_010,0.8189,0.9220,0.1031,0.8577,0.9423
+eval_stanza_morph_extended_half_data_AVG,0.8215,0.9284,0.1069,0.8604,0.9463
+eval_stanza_morph_extended_half_data_ensemble,0.8396,0.9101,0.0704,0.8768,0.9330

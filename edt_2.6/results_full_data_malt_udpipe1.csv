@@ -1,0 +1,4 @@
+experiment,LAS_test,LAS_train,LAS_gap,UAS_test,UAS_train
+eval_malt_morph_extended_full,0.7136,0.8423,0.1288,0.7722,0.8744
+eval_udpipe1_default_morph_extended,0.7477,0.8420,0.0943,0.8009,0.8790
+eval_udpipe1_embeddings_morph_extended,0.7627,0.9112,0.1484,0.8127,0.9331
