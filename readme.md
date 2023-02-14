@@ -25,9 +25,9 @@ Most important settings of data pre-processing, training and evaluation are defi
 
 	* `python  02b_make_gaps.py  conf_edt_v26_Stanza_ME_gap_experiments.ini`
 
-* `03_train.py` -- Trains stanza parser models. Executes all sections starting with `train_stanza_` in input configuration file. Example:
+* `03_train_stanza.py` -- Trains stanza parser models. Executes all sections starting with `train_stanza_` in input configuration file. Example:
 
-	* `python  03_train.py  conf_edt_v26_Stanza_ME_full.ini`
+	* `python  03_train_stanza.py  conf_edt_v26_Stanza_ME_full.ini`
 
 * `03b_optimize_malt.py` -- Optimizes MaltParser before training: produces feature selection files. Requires Python 2.7. Executes all sections starting with `maltoptimize_` in input configuration file. Example:
 
@@ -37,9 +37,9 @@ Most important settings of data pre-processing, training and evaluation are defi
 
 	* `python  03c_train_malt_udpipe.py  conf_edt_v26_MaltParser_ME_full.ini`
 
-* `04_predict.py` -- Applies trained stanza parser models on evaluation data to get predictions. Writes predictions to conllu files. Executes all sections starting with `predict_stanza_` in input configuration file. Example:
+* `04_predict_stanza.py` -- Applies trained stanza parser models on evaluation data to get predictions. Writes predictions to conllu files. Executes all sections starting with `predict_stanza_` in input configuration file. Example:
 
-	* `python  04_predict.py  conf_edt_v26_stanza_morph_extended_full.ini`
+	* `python  04_predict_stanza.py  conf_edt_v26_stanza_morph_extended_full.ini`
 
 * `04b_predict_malt_udpipe.py` -- Applies trained MaltParser and/or UDPipe-1 models on evaluation data to get predictions. Writes predictions to conllu files. Executes all sections starting with `predict_malt_` and `predict_udpipe1_` in input configuration file. Example:
 
