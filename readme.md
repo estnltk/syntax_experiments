@@ -39,13 +39,13 @@ Most important settings of data pre-processing, training and evaluation are defi
 
 * `04_predict_stanza.py` -- Applies trained stanza parser models on evaluation data to get predictions. Writes predictions to conllu files. Executes all sections starting with `predict_stanza_` in input configuration file. Example:
 
-	* `python  04_predict_stanza.py  conf_edt_v26_stanza_morph_extended_full.ini`
+	* `python  04_predict_stanza.py  conf_edt_v26_Stanza_ME_full.ini`
 
 * `04b_predict_malt_udpipe.py` -- Applies trained MaltParser and/or UDPipe-1 models on evaluation data to get predictions. Writes predictions to conllu files. Executes all sections starting with `predict_malt_` and `predict_udpipe1_` in input configuration file. Example:
 
 	* `python  04b_predict_malt_udpipe.py  conf_edt_v26_MaltParser_ME_full.ini`
 
-* `05_evaluate.py` -- Evaluates predictions: compares predicted files to gold standard files and calculates LAS/UAS scores. Executes all sections starting with `eval_` in given configuration files (multiple csv files can be given as an input). Writes results into file `results.csv` in a sub directory closest to the execution directory (for given configurations, the path will be: `edt_2.6/results.csv`). You can also give name of the output csv file as an input argument of the script. Example usage:
+* `05_evaluate.py` -- Evaluates predictions: compares predicted files to gold standard files and calculates LAS/UAS scores. Executes all sections starting with `eval_` in given configuration files (multiple INI files can be given as an input). Writes results into file `results.csv` in a sub directory closest to the execution directory (for given configurations, the path will be: `edt_2.6/results.csv`). You can also give name of the output csv file as an input argument of the script. Example usage:
 
 	* `python  05_evaluate.py  conf_edt_v26_MaltParser_ME_full.ini  results_maltparser.csv`
 
