@@ -1,18 +1,18 @@
 from estnltk import Layer
 from estnltk.taggers import Tagger
 from estnltk import EnvelopingBaseSpan
-from estnltk_patches.syntax_tree import SyntaxTree
-from estnltk_patches.syntax_tree_operations import filter_nodes_by_attributes
-from estnltk_patches.syntax_tree_operations import extract_base_spans_of_subtree
+from syntax_tree import SyntaxTree
+from syntax_tree_operations import filter_nodes_by_attributes
+from syntax_tree_operations import extract_base_spans_of_subtree
 
 
 class PhraseExtractor(Tagger):
     """
     Extracts various types of phases based on UD-syntax. 
-Creates layer syntax_ignore_entity by default or with given name.
-By default, search subtrees with specific dependency relations but there are other options.
-User can specify decorator to filter out and annotate phrases. 
-There are sensible decorators for each phrase type.
+    Creates layer syntax_ignore_entity by default or with given name.
+    By default, search subtrees with specific dependency relations but there are other options.
+    User can specify decorator to filter out and annotate phrases.
+    There are sensible decorators for each phrase type.
     """
 
     conf_param = ['input_type', "deprel", "decorator", "output_layer"]
