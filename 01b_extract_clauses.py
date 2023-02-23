@@ -18,10 +18,10 @@ from syntax_sketches.clause_export import export_cleaned_clause
 
 def extract_clauses( conf_file ):
     '''
-    SplitExtracts clauses from CONLLU files with EstNLTK's ClauseTagger based 
-    on the configuration. 
-    Settings/parameters of tagging will be read from the given 
-    `conf_file`. 
+    Splits sentences in CONLLU files into clauses with EstNLTK, 
+    cleans clauses and saves as new CONLLU files.
+    Inputs/outputs and parameters of the processing will be read 
+    from the given `conf_file`. 
     Executes sections in the configuration starting with prefix 
     'extract_clauses_'. 
     '''
@@ -46,6 +46,8 @@ def extract_clauses( conf_file ):
             if not config.has_option(section, 'output_dir'):
                 raise ValueError(f'Error in {conf_file}: section {section!r} is missing "output_dir" parameter.')
             output_dir = config[section]['output_dir']
+            if input_dir == output_dir:
+                raise ValueError(f'Error in {conf_file}: section {section!r} "output_dir" cannot be same as "input_dir".')
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir, exist_ok=True)
             remove_empty_nodes = config[section].getboolean('remove_empty_nodes', True)
