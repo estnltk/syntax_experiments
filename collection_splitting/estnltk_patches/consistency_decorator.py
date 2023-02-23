@@ -1,6 +1,6 @@
 from estnltk import Layer
-from syntax_tree_operations import *
-from stanza_syntax_tagger import StanzaSyntaxTagger2
+from .syntax_tree_operations import *
+from .stanza_syntax_tagger import StanzaSyntaxTagger2
 
 
 class ConsistencyDecorator:

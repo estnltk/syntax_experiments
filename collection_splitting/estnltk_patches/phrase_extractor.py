@@ -1,9 +1,9 @@
 from estnltk import Layer
 from estnltk.taggers import Tagger
 from estnltk import EnvelopingBaseSpan
-from syntax_tree import SyntaxTree
-from syntax_tree_operations import filter_nodes_by_attributes
-from syntax_tree_operations import extract_base_spans_of_subtree
+from .syntax_tree import SyntaxTree
+from .syntax_tree_operations import filter_nodes_by_attributes
+from .syntax_tree_operations import extract_base_spans_of_subtree
 
 
 class PhraseExtractor(Tagger):
