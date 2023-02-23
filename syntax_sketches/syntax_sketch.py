@@ -85,6 +85,32 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
     """
     Computes syntax sketch for a clause that encodes information about the root node and the first level child nodes.
     By default the first level child nodes are lexicographically ordered in the sketch.
+    
+    Examples:
+    
+    wordforms: ['Ma', 'kaldun', 'arvama']
+    ids:       [1, 2, 3]
+    heads:     [2, 0, 2]
+    postags:   ['P', 'V', 'V']
+    deprels:   ['nsubj', 'root', 'xcomp']
+    root_loc:  1
+    output:    '[V]nsubj(L)xcomp(L)'
+
+    wordforms: ['Vermeeri', 'saatus', 'oli', 'teistsugune']
+    ids:       [6, 7, 8, 9]
+    heads:     [7, 9, 9, 3]
+    postags:   ['S', 'S', 'V', 'P']
+    deprels:   ['nmod', 'nsubj:cop', 'cop', 'ccomp']
+    root_loc:  3
+    output:    '[S]cop(L)nsubj:cop(L)'
+    
+    wordforms: ['uus', 'ooper', 'tuleb', 'habras', 'ja', 'ilus']
+    ids:       [8, 9, 10, 11, 12, 13]
+    heads:     [9, 10, 2, 10, 13, 11]
+    postags:   ['A', 'S', 'V', 'A', 'J', 'A']
+    deprels:   ['amod', 'nsubj', 'ccomp', 'xcomp', 'cc', 'conj']
+    root_loc:  2
+    output:    '[V]nsubj(L)xcomp(P)'
     """
 
     assert len(clause['root_loc']) == 1, "The clause must have a single root"
@@ -92,10 +118,14 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
     # Compute root tag for the sketch
     root_tag = clause['postags'][clause['root_loc'][0]]
     if root_tag == 'V':
+        # group of verbs
         sketch_root = 'V'
     elif root_tag in ['S', 'P', 'A', 'Y', 'N']:
+        # non-verbs: substantives, pronouns, adjectives,
+        # acronyms/abbreviations, numerals
         sketch_root = 'S'
     else:
+        # remaining postags
         sketch_root = 'X'
 
     # Compute sketches for child nodes
