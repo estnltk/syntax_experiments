@@ -93,7 +93,7 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
     heads:     [2, 0, 2]
     postags:   ['P', 'V', 'V']
     deprels:   ['nsubj', 'root', 'xcomp']
-    root_loc:  1
+    root_loc:  [1]
     output:    '[V]nsubj(L)xcomp(L)'
 
     wordforms: ['Vermeeri', 'saatus', 'oli', 'teistsugune']
@@ -101,7 +101,7 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
     heads:     [7, 9, 9, 3]
     postags:   ['S', 'S', 'V', 'P']
     deprels:   ['nmod', 'nsubj:cop', 'cop', 'ccomp']
-    root_loc:  3
+    root_loc:  [3]
     output:    '[S]cop(L)nsubj:cop(L)'
     
     wordforms: ['uus', 'ooper', 'tuleb', 'habras', 'ja', 'ilus']
@@ -109,7 +109,7 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
     heads:     [9, 10, 2, 10, 13, 11]
     postags:   ['A', 'S', 'V', 'A', 'J', 'A']
     deprels:   ['amod', 'nsubj', 'ccomp', 'xcomp', 'cc', 'conj']
-    root_loc:  2
+    root_loc:  [2]
     output:    '[V]nsubj(L)xcomp(P)'
     """
 
