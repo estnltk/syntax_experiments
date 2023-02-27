@@ -1,7 +1,10 @@
 from estnltk import Layer
 
-from typing import List, Dict
+from typing import List, Dict, Optional
 
+# =====================================================
+#   Creating syntax sketches
+# =====================================================
 
 def subtree_size(heads: List[int], tails: List[int], root: int) -> int:
     """
@@ -152,3 +155,58 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
         return '[{root}]{children}'.format(root=sketch_root, children=''.join(first_level))
 
 
+# =====================================================
+#   Filtering lists of clauses by sketches
+# =====================================================
+
+def extract_sketches(clause_conllus: List[str], clause_dicts: List[Dict[str, list]], 
+                     target_sketch:str, amount:Optional[int]=None, verbose:bool=False):
+    '''
+    Extracts given amount of target_sketch from clause_conllus and clause_dicts. 
+    Returns extracted items. 
+    If amount is None (default), then extracts all clauses corresponding to the sketch.
+    Returns triple: (extracted_conllus, extracted_dicts, number_of_extracted_items)
+    '''
+    assert len(clause_conllus) == len(clause_dicts), \
+        'Unexpectedly, numers of conllu clauses and corresponding clause dicts differ: '+\
+        f' {len(clause_conllus)} vs {len(clause_dicts)}'
+    extracted = []
+    extracted_dicts = []
+    for clause_id, clause_conllu in enumerate(clause_conllus):
+        clause_dict = clause_dicts[clause_id]
+        sketch = syntax_sketch(clause_dict)
+        if sketch == target_sketch:
+            if amount is None or len(extracted) < amount:
+                extracted.append( clause_conllu )
+                extracted_dicts.append( clause_dict )
+    if verbose:
+        print('Extracted {} instances of sketch {}'. format(len(extracted), target_sketch))
+    return extracted, extracted_dicts, len(extracted)
+
+
+def remove_sketches(clause_conllus: List[str], clause_dicts: List[Dict[str, list]], 
+                    target_sketch:str, amount:Optional[int]=None, verbose:bool=False):
+    '''
+    Removes given amount of target_sketch from clause_conllus and clause_dicts. 
+    Returns preserved items (and count of removed items). 
+    If amount is None (default), then removes all clauses corresponding to the sketch.
+    Returns triple: (preserved_conllus, preserved_dicts, number_of_removed_items)
+    '''
+    assert len(clause_conllus) == len(clause_dicts), \
+        'Unexpectedly, numers of conllu clauses and corresponding clause dicts differ: '+\
+        f' {len(clause_conllus)} vs {len(clause_dicts)}'
+    preserved = []
+    preserved_dicts = []
+    removed = 0
+    for clause_id, clause_conllu in enumerate(clause_conllus):
+        clause_dict = clause_dicts[clause_id]
+        sketch = syntax_sketch(clause_dict)
+        if sketch == target_sketch:
+            if amount is None or removed < amount:
+                removed += 1
+                continue
+        preserved.append( clause_conllu )
+        preserved_dicts.append( clause_dict )
+    if verbose:
+        print('Removed {} instances of sketch {}'. format(removed, target_sketch))
+    return preserved, preserved_dicts, removed
