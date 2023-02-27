@@ -51,7 +51,7 @@ def extract_clauses( conf_file ):
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir, exist_ok=True)
             remove_empty_nodes = config[section].getboolean('remove_empty_nodes', True)
-            skip_list = remove_empty_nodes = config[section].get('skip_list', '')
+            skip_list = config[section].get('skip_list', '')
             if len(skip_list) > 0:
                 skip_list = skip_list.split(',')
                 skip_list = [fname.strip() for fname in skip_list]
