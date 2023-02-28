@@ -155,6 +155,16 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
         return '[{root}]{children}'.format(root=sketch_root, children=''.join(first_level))
 
 
+def safe_sketch_name(sketch_name: str):
+    '''
+    Makes sketch name safe so that it can be used as (a part of) file name.
+    Returns safe name.
+    '''
+    safe_name = sketch_name.replace(':', 'COLON').replace(')', '').replace('(', '').replace('[', '').replace(']', '')
+    assert safe_name.isidentifier()
+    return safe_name
+
+
 # =====================================================
 #   Filtering lists of clauses by sketches
 # =====================================================
