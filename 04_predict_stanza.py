@@ -206,6 +206,12 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 tagger_path = config[section].get('tagger_path', 'estnltk_neural.taggers.StanzaSyntaxTagger')
                 dry_run = config[section].getboolean('dry_run', dry_run)
                 use_gpu = config[section].getboolean('use_gpu', False)
+                # test_matrix prediction mode: 
+                # * Run all models on all test files
+                # * Skip predictions on train files if train files are missing;
+                test_matrix = config[section].getboolean('test_matrix', False) 
+                if test_matrix and not test_file_is_pattern:
+                    raise ValueError('(!) test_matrix can only be used if test file name is a regular expression')
                 output_prefix = config[section].get('output_file_prefix', 'predicted_')
                 seed = config[section].getint('seed', 43)
                 lang = config[section].get('lang', 'et')
@@ -225,8 +231,8 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                               output_dir, output_file_prefix=output_prefix, subexp=subexp, 
                               test_file_is_pattern=test_file_is_pattern, parser=parser, 
                               use_estnltk=use_estnltk, morph_layer=morph_layer, seed=seed, 
-                              tagger_path=tagger_path, lang=lang, use_gpu=use_gpu, 
-                              dry_run=dry_run )
+                              tagger_path=tagger_path, lang=lang, test_matrix=test_matrix, 
+                              use_gpu=use_gpu, dry_run=dry_run )
     if not section_found:
         print(f'No section starting with "predict_stanza_" in {conf_file}.')
 
@@ -235,7 +241,7 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
                   output_path, output_file_prefix='predicted_', subexp=None, 
                   test_file_is_pattern=False, parser='stanza', use_estnltk=False, 
                   morph_layer=None, seed=None, tagger_path=None, lang='et', 
-                  use_gpu=False, dry_run=False ):
+                  test_matrix=False, use_gpu=False, dry_run=False ):
     '''
     Runs models of multiple sub-experiments on (train/test) files from `data_folder`. 
     Outputs prediction conllu files to `output_path`. 
@@ -247,6 +253,13 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
     Optinally, if test_file_is_pattern=True, then `test_file_path` is compiled to 
     a regular expression (must have named group 'exp') and used to find a test file 
     corresponding to train file from `data_folder`. 
+    
+    By default, each model is evaluated only on either a single test file or 
+    a test file corresponding to the training file (of the sub-experiment). 
+    If test_matrix==True, then each model is evaluated on all test files 
+    (and if no train files can be found, no evaluation is done on train 
+    files). The test_matrix mode only works with test_file_is_pattern=True 
+    option.
     
     Use parameter `subexp` to restrict predictions only to a single sub-experiment 
     instead of performing all sub-experiments. 
@@ -283,6 +296,8 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
             raise ValueError(f'Unable to convert {test_file_path!r} to regexp') from err
         if 'exp' not in test_file_regex.groupindex:
             raise ValueError(f'Regexp {test_file_path!r} is missing named group "exp"')
+    if test_matrix and test_file_regex is None:
+        raise Exception(f'(!) test_matrix can only be used if test_file_regex is provided')
     # Convert train_file_pattern to regular experssion
     train_file_regex = None
     if not isinstance(train_file_pattern, str):
@@ -293,58 +308,112 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
         raise ValueError(f'Unable to convert {train_file_pattern!r} to regexp') from err
     if 'exp' not in train_file_regex.groupindex:
         raise ValueError(f'Regexp {train_file_pattern!r} is missing named group "exp"')
+    #
     # Collect experiment input files
+    #
     models_folder_files = [ fname for fname in os.listdir(models_folder) ]
     experiment_data = { 'train':[], 'test':[], 'models': [], 'numbers':[] }
-    for fname in sorted( os.listdir(data_folder) ):
-        m = train_file_regex.match(fname)
-        if m:
-            if not (fname.lower()).endswith('.conllu'):
-                raise Exception( f'(!) invalid file {fname}: train file '+\
-                                  'must have extension .conllu' )
-            fpath = os.path.join(data_folder, fname)
-            # Training file varies, depending on the sub set of data
-            experiment_data['train'].append( fpath )
-            no = m.group('exp')
-            if no not in experiment_data['numbers']:
-                experiment_data['numbers'].append(no)
-            if test_file_regex is None:
-                # No regexp for test file:
-                # Test file is always the same
-                experiment_data['test'].append( test_file_path )
-            else:
-                # Test file regexp provided:
-                # Find test file corresponding to train file
-                found_test_file = None
+    if not test_matrix:
+        # ==============================================================
+        #  Default mode:
+        #  * run each model on its train file
+        #  * run each model on its test file or on the global test file
+        # ==============================================================
+        for fname in sorted( os.listdir(data_folder) ):
+            m = train_file_regex.match(fname)
+            if m:
+                if not (fname.lower()).endswith('.conllu'):
+                    raise Exception( f'(!) invalid file {fname}: train file '+\
+                                      'must have extension .conllu' )
+                fpath = os.path.join(data_folder, fname)
+                # Training file varies, depending on the sub set of data
+                experiment_data['train'].append( fpath )
+                no = m.group('exp')
+                if no not in experiment_data['numbers']:
+                    experiment_data['numbers'].append(no)
+                if test_file_regex is None:
+                    # No regexp for test file:
+                    # Test file is always the same (global test file)
+                    experiment_data['test'].append( test_file_path )
+                else:
+                    # Test file regexp provided:
+                    # Find test file corresponding to train file
+                    found_test_file = None
+                    for fname_2 in sorted( os.listdir(data_folder) ):
+                        m2 = test_file_regex.match(fname_2)
+                        if m2:
+                            no2 = m2.group('exp')
+                            if no2 == no:
+                                found_test_file = \
+                                    os.path.join(data_folder, fname_2)
+                                break
+                    if found_test_file is not None:
+                        experiment_data['test'].append( found_test_file )
+                    else:
+                        raise Exception(f'(!) Unable to find test file corresponding '+\
+                                        f'to train file {fname!r} from {data_folder!r}.')
+                # Find corresponding model from the models folder
+                target_model_file = f"model_{no}.pt"
+                model_found = False
+                for model_fname in models_folder_files:
+                    if model_fname == target_model_file:
+                        mfpath = os.path.join(models_folder, model_fname)
+                        experiment_data['models'].append(mfpath)
+                        model_found = True
+                        break
+                if not model_found:
+                    if not dry_run:
+                        raise Exception(f'(!) Unable to find model {target_model_file!r} from {models_folder!r}')
+                    else:
+                        # Try run, emulate only, don't chk for models
+                        experiment_data['models'].append(target_model_file)
+    else:
+        # ==============================================================
+        #  Test matrix mode:
+        #  * run each model on its train file (if train file is available)
+        #  * run each model on all test files
+        # ==============================================================
+        for fname in sorted( os.listdir(data_folder) ):
+            m = test_file_regex.match(fname)
+            if m:
+                if not (fname.lower()).endswith('.conllu'):
+                    raise Exception( f'(!) invalid file {fname}: test file '+\
+                                      'must have extension .conllu' )
+                no = m.group('exp')
+                if no not in experiment_data['numbers']:
+                    experiment_data['numbers'].append(no)
+                # Placeholder for test file to pass checks below
+                found_test_file = os.path.join(data_folder, fname)
+                experiment_data['test'].append( found_test_file )
+                # Find corresponding model from the models folder
+                target_model_file = f"model_{no}.pt"
+                model_found = False
+                for model_fname in models_folder_files:
+                    if model_fname == target_model_file:
+                        mfpath = os.path.join(models_folder, model_fname)
+                        experiment_data['models'].append(mfpath)
+                        model_found = True
+                        break
+                if not model_found:
+                    if not dry_run:
+                        raise Exception(f'(!) Unable to find model {target_model_file!r} from {models_folder!r}')
+                    else:
+                        # Try run, emulate only, don't chk for models
+                        experiment_data['models'].append(target_model_file)
+                # Try to find corresponding train file (optional)
+                found_train_file = None
                 for fname_2 in sorted( os.listdir(data_folder) ):
-                    m2 = test_file_regex.match(fname_2)
+                    m2 = train_file_regex.match(fname_2)
                     if m2:
                         no2 = m2.group('exp')
                         if no2 == no:
-                            found_test_file = \
+                            found_train_file = \
                                 os.path.join(data_folder, fname_2)
                             break
-                if found_test_file is not None:
-                    experiment_data['test'].append( found_test_file )
-                else:
-                    raise Exception(f'(!) Unable to find test file corresponding '+\
-                                    f'to train file {fname!r} from {data_folder!r}.')
-            # Find corresponding model from the models folder
-            target_model_file = f"model_{no}.pt"
-            model_found = False
-            for model_fname in models_folder_files:
-                if model_fname == target_model_file:
-                    mfpath = os.path.join(models_folder, model_fname)
-                    experiment_data['models'].append(mfpath)
-                    model_found = True
-                    break
-            if not model_found:
-                if not dry_run:
-                    raise Exception(f'(!) Unable to find model {target_model_file!r} from {models_folder!r}')
-                else:
-                    # Try run, emulate only, don't chk for models
-                    experiment_data['models'].append(target_model_file)
-    # Validate that we have all required files
+                experiment_data['train'].append(found_train_file)
+    #
+    # Validate that we have correct numbers of experiment files
+    #
     for subset in ['train']:
         if len(experiment_data[subset]) == 0:
             raise Exception(f'Unable to find any {subset} files '+\
@@ -358,12 +427,14 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
             no1 = len(experiment_data[subset])
             no2 = len(experiment_data['models'])
             raise Exception(f'Number of {subset} files ({no1}) does not match '+\
-                            f'the number of models ({no2}).')
+                                f'the number of models ({no2}).')
     if subexp is not None:
         if subexp not in experiment_data['numbers']:
             raise ValueError( f'(!) sub-experiment {subexp!r} not in collected '+\
                               f'experiment names: {experiment_data["numbers"]}.' )
+    #
     # Launch experiments
+    #
     if not dry_run:
         start_time = datetime.now()
         for i in range( len(experiment_data['numbers']) ):
@@ -375,22 +446,38 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
                 # Skip other experiments
                 continue
             if parser == 'stanza':
-                # Predict on train data
-                train_output = os.path.join(output_path, f'{output_file_prefix}train_{exp_no}.conllu')
-                if use_estnltk:
-                    predict_with_stanza_tagger(train_file, morph_layer, model_file, train_output, 
-                                               tagger_path=tagger_path, seed=seed, lang=lang, 
-                                               use_gpu=use_gpu)
-                else:
-                    predict_with_stanza(train_file, model_file, train_output, lang=lang, use_gpu=use_gpu)
+                # Predict on train data (optional in test_matrix mode)
+                if train_file is not None:
+                    train_output = os.path.join(output_path, f'{output_file_prefix}train_{exp_no}.conllu')
+                    if use_estnltk:
+                        predict_with_stanza_tagger(train_file, morph_layer, model_file, train_output, 
+                                                   tagger_path=tagger_path, seed=seed, lang=lang, 
+                                                   use_gpu=use_gpu)
+                    else:
+                        predict_with_stanza(train_file, model_file, train_output, lang=lang, use_gpu=use_gpu)
                 # Predict on test data
-                test_output = os.path.join(output_path, f'{output_file_prefix}test_{exp_no}.conllu')
-                if use_estnltk:
-                    predict_with_stanza_tagger(test_file, morph_layer, model_file, test_output, 
-                                               tagger_path=tagger_path, seed=seed, lang=lang, 
-                                               use_gpu=use_gpu)
+                if not test_matrix:
+                    # Predict on single test file
+                    test_output = os.path.join(output_path, f'{output_file_prefix}test_{exp_no}.conllu')
+                    if use_estnltk:
+                        predict_with_stanza_tagger(test_file, morph_layer, model_file, test_output, 
+                                                   tagger_path=tagger_path, seed=seed, lang=lang, 
+                                                   use_gpu=use_gpu)
+                    else:
+                        predict_with_stanza(test_file, model_file, test_output, lang=lang, use_gpu=use_gpu)
                 else:
-                    predict_with_stanza(test_file, model_file, test_output, lang=lang, use_gpu=use_gpu)
+                    # Predict for matrix: predict on all test files
+                    for j in range( len(experiment_data['numbers']) ):
+                        exp_no2 = experiment_data['numbers'][j]
+                        test_file2 = experiment_data['test'][j]
+                        test_output = os.path.join(output_path, \
+                            f'{output_file_prefix}_model_{exp_no}_test_{exp_no2}.conllu')
+                        if use_estnltk:
+                            predict_with_stanza_tagger(test_file2, morph_layer, model_file, test_output, 
+                                                       tagger_path=tagger_path, seed=seed, lang=lang, 
+                                                       use_gpu=use_gpu)
+                        else:
+                            predict_with_stanza(test_file2, model_file, test_output, lang=lang, use_gpu=use_gpu)
             print()
         print()
         print(f'Total time elapsed: {datetime.now()-start_time}')

@@ -158,69 +158,112 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 test_file_re = None
                 if test_file_is_pattern:
                     test_file_re = _create_regexp_pattern(test_file, 'test_file')
+                # test_matrix prediction mode: 
+                # * Run all models on all test files
+                # * Skip predictions on train files if train files are missing
+                test_matrix = config[section].getboolean('test_matrix', False)
+                if test_matrix and test_file_re is None:
+                    raise ValueError(f'(!) test_matrix can only be used if test file name is a regular expression')
                 # MaltParser options
                 maltparser_dir = config[section].get('maltparser_dir', DEFAULT_MALTPARSER_DIR)
                 maltparser_jar = config[section].get('maltparser_jar', DEFAULT_MALTPARSER_JAR)
                 # UDPipe-1 options
                 udpipe_dir = config[section].get('udpipe_dir', DEFAULT_UDPIPE_DIR)
-                # Iterate over input files and predict
+                # Collect input data
+                # Collect all train files
+                all_train_files = {}
                 for in_fname in sorted(os.listdir(input_dir)):
                     if in_fname.endswith('.conllu'):
                         m1 = train_file_re.match(in_fname)
                         if m1:
-                            # Got the train file!
-                            cur_train_file = os.path.join(input_dir, in_fname)
-                            cur_subexp = m1.group('exp')
-                            if subexp is not None:
-                                if cur_subexp != subexp:
-                                    continue
-                            # Try to find corresponding test file
-                            cur_test_file = test_file
-                            if test_file_re is not None:
-                                cur_test_file = None
-                                for in_fname2 in sorted(os.listdir(input_dir)):
-                                    if in_fname2.endswith('.conllu'):
-                                        m2 = test_file_re.match(in_fname2)
-                                        if m2:
-                                            test_file_subexp = m2.group('exp')
-                                            if cur_subexp == test_file_subexp:
-                                                cur_test_file = \
-                                                    os.path.join(input_dir, in_fname2)
-                                                break
-                                if cur_test_file is None:
-                                    raise Exception(f'(!) Could not find test file matching pattern {test_file!r} '+\
-                                                    f'for experiment {cur_subexp!r} from {input_dir!r}.')
-                            if parser == 'maltparser':
-                                model_file = f'model_{cur_subexp}.mco'
+                            train_fpath = os.path.join(input_dir, in_fname)
+                            subexp = m1.group('exp')
+                            all_train_files[subexp] = train_fpath
+                # Collect all test files
+                all_test_files = {}
+                if test_file_re is not None:
+                    # If test_file regex is provided, then collect test files via regexp
+                    for in_fname in sorted(os.listdir(input_dir)):
+                        if in_fname.endswith('.conllu'):
+                            m2 = test_file_re.match(in_fname)
+                            if m2:
+                                test_file_subexp = m2.group('exp')
+                                assert test_file_subexp not in all_test_files.keys(), \
+                                    f'Duplicate test files for experiment {test_file_subexp}'
+                                all_test_files[test_file_subexp] = \
+                                    os.path.join(input_dir, in_fname2)
+                else:
+                    # If test_file regex is missing, assign a single test file for 
+                    # all experiments (global testing)
+                    for cur_subexp in sorted( all_train_files.keys() ):
+                        all_test_files[cur_subexp] = test_file
+                # Sanity checks
+                if len(all_test_files.keys()) > 0 and len(all_train_files.keys()) > 0:
+                    if not (all_train_files.keys() == all_test_files.keys()):
+                        raise ValueError('(!) Mismatching train and test files: '+\
+                                         f' train files: {all_train_files.values()!r} '+\
+                                         f'  test files: {all_test_files.values()!r} ')
+                elif len(all_test_files.keys()) == 0 and len(all_train_files.keys()) == 0:
+                    raise ValueError(f'(!) No train or test files found from {input_dir}')
+                #
+                # Iterate over input files and predict
+                #
+                for cur_subexp in sorted( all_test_files.keys() ):
+                    cur_test_file = all_test_files[cur_subexp]
+                    cur_train_file = all_train_files.get(cur_subexp, None)
+                    assert cur_train_file is not None or test_matrix
+                    if parser == 'maltparser':
+                        model_file = f'model_{cur_subexp}.mco'
+                    else:
+                        model_file = f'model_{cur_subexp}.udpipe'
+                    # Try to find corresponding model from the models subdirectory
+                    if model_file not in models_dir_files:
+                        raise Exception(f'(!) Could not find model file {model_file!r} for experiment '+\
+                                        f'{cur_subexp!r} from {models_dir!r}.')
+                    model_path = os.path.join(models_dir, model_file)
+                    # Run model for predictions
+                    if not dry_run:
+                        train_output_file = f'{output_file_prefix}train_{cur_subexp}.conllu'
+                        test_output_file  = f'{output_file_prefix}test_{cur_subexp}.conllu'
+                        if parser == 'maltparser':
+                            # Predict on train (optional in test_matrix mode)
+                            if cur_train_file is not None:
+                                predict_maltparser(model_path, cur_train_file, train_output_file, output_dir, 
+                                                   maltparser_dir=maltparser_dir,
+                                                   maltparser_jar=maltparser_jar)
+                            # Predict on test
+                            if not test_matrix:
+                                predict_maltparser(model_path, cur_test_file, test_output_file, output_dir, 
+                                                   maltparser_dir=maltparser_dir,
+                                                   maltparser_jar=maltparser_jar)
                             else:
-                                model_file = f'model_{cur_subexp}.udpipe'
-                            # Try to find corresponding model from the models subdirectory
-                            if model_file not in models_dir_files:
-                                raise Exception(f'(!) Could not find model file {model_file!r} for experiment '+\
-                                                f'{cur_subexp!r} from {models_dir!r}.')
-                            model_path = os.path.join(models_dir, model_file)
-                            # Run model for predictions
-                            if not dry_run:
-                                train_output_file = f'{output_file_prefix}train_{cur_subexp}.conllu'
-                                test_output_file  = f'{output_file_prefix}test_{cur_subexp}.conllu'
-                                if parser == 'maltparser':
-                                    # Predict on train
-                                    predict_maltparser(model_path, cur_train_file, train_output_file, output_dir, 
+                                # predict on all test files
+                                for test_subexp in sorted(all_test_files.keys()):
+                                    test_output_fpath = os.path.join(output_path, \
+                                        f'{output_file_prefix}_model_{cur_subexp}_test_{test_subexp}.conllu')
+                                    cur_test_file = all_test_files[test_subexp]
+                                    predict_maltparser(model_path, cur_test_file, test_output_fpath, output_dir, 
                                                        maltparser_dir=maltparser_dir,
                                                        maltparser_jar=maltparser_jar)
-                                    # Predict on test
-                                    predict_maltparser(model_path, cur_test_file, test_output_file, output_dir, 
-                                                       maltparser_dir=maltparser_dir,
-                                                       maltparser_jar=maltparser_jar)
-                                elif parser == 'udpipe1':
-                                    # Predict on train
-                                    predict_udpipe1(model_path, cur_train_file, train_output_file, output_dir, 
+                        elif parser == 'udpipe1':
+                            # Predict on train (optional in test_matrix mode)
+                            if cur_train_file is not None:
+                                predict_udpipe1(model_path, cur_train_file, train_output_file, output_dir, 
+                                                udpipe_dir=udpipe_dir)
+                            # Predict on test
+                            if not test_matrix:
+                                predict_udpipe1(model_path, cur_test_file, test_output_file, output_dir, 
+                                                udpipe_dir=udpipe_dir)
+                            else:
+                                # predict on all test files
+                                for test_subexp in sorted(all_test_files.keys()):
+                                    test_output_fpath = os.path.join(output_path, \
+                                        f'{output_file_prefix}_model_{cur_subexp}_test_{test_subexp}.conllu')
+                                    cur_test_file = all_test_files[test_subexp]
+                                    predict_udpipe1(model_path, cur_test_file, test_output_fpath, output_dir, 
                                                     udpipe_dir=udpipe_dir)
-                                    # Predict on test
-                                    predict_udpipe1(model_path, cur_test_file, test_output_file, output_dir, 
-                                                    udpipe_dir=udpipe_dir)
-                                else:
-                                    raise Exception(f'Unexpected parser name: {parser!r}')
+                        else:
+                            raise Exception(f'Unexpected parser name: {parser!r}')
     if not section_found:
         print(f'No section starting with "predict_malt_" or "predict_udpipe1_" in {conf_file}.')
 
