@@ -158,10 +158,10 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 test_file_re = None
                 if test_file_is_pattern:
                     test_file_re = _create_regexp_pattern(test_file, 'test_file')
-                # test_matrix prediction mode: 
-                # * Run all models on all test files
-                # * Skip predictions on train files if train files are missing
-                test_matrix = config[section].getboolean('test_matrix', False)
+                # skip_train: do not predict on train files
+                skip_train = config[section].getboolean('skip_train', False)
+                # test_matrix prediction mode: run all models on all test files
+                test_matrix = config[section].getboolean('test_matrix', False) 
                 if test_matrix and test_file_re is None:
                     raise ValueError(f'(!) test_matrix can only be used if test file name is a regular expression')
                 # MaltParser options
@@ -226,8 +226,8 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                         train_output_file = f'{output_file_prefix}train_{cur_subexp}.conllu'
                         test_output_file  = f'{output_file_prefix}test_{cur_subexp}.conllu'
                         if parser == 'maltparser':
-                            # Predict on train (optional in test_matrix mode)
-                            if cur_train_file is not None:
+                            # Predict on train data (optional, can be skipped)
+                            if cur_train_file is not None and not skip_train:
                                 predict_maltparser(model_path, cur_train_file, train_output_file, output_dir, 
                                                    maltparser_dir=maltparser_dir,
                                                    maltparser_jar=maltparser_jar)
@@ -240,14 +240,14 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                                 # predict on all test files
                                 for test_subexp in sorted(all_test_files.keys()):
                                     test_output_fpath = os.path.join(output_path, \
-                                        f'{output_file_prefix}_model_{cur_subexp}_test_{test_subexp}.conllu')
+                                        f'{output_file_prefix}model_{cur_subexp}_test_{test_subexp}.conllu')
                                     cur_test_file = all_test_files[test_subexp]
                                     predict_maltparser(model_path, cur_test_file, test_output_fpath, output_dir, 
                                                        maltparser_dir=maltparser_dir,
                                                        maltparser_jar=maltparser_jar)
                         elif parser == 'udpipe1':
-                            # Predict on train (optional in test_matrix mode)
-                            if cur_train_file is not None:
+                            # Predict on train data (optional, can be skipped)
+                            if cur_train_file is not None and not skip_train:
                                 predict_udpipe1(model_path, cur_train_file, train_output_file, output_dir, 
                                                 udpipe_dir=udpipe_dir)
                             # Predict on test
@@ -258,7 +258,7 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                                 # predict on all test files
                                 for test_subexp in sorted(all_test_files.keys()):
                                     test_output_fpath = os.path.join(output_path, \
-                                        f'{output_file_prefix}_model_{cur_subexp}_test_{test_subexp}.conllu')
+                                        f'{output_file_prefix}model_{cur_subexp}_test_{test_subexp}.conllu')
                                     cur_test_file = all_test_files[test_subexp]
                                     predict_udpipe1(model_path, cur_test_file, test_output_fpath, output_dir, 
                                                     udpipe_dir=udpipe_dir)

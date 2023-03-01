@@ -206,9 +206,9 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 tagger_path = config[section].get('tagger_path', 'estnltk_neural.taggers.StanzaSyntaxTagger')
                 dry_run = config[section].getboolean('dry_run', dry_run)
                 use_gpu = config[section].getboolean('use_gpu', False)
-                # test_matrix prediction mode: 
-                # * Run all models on all test files
-                # * Skip predictions on train files if train files are missing;
+                # skip_train: do not predict on train files
+                skip_train = config[section].getboolean('skip_train', False)
+                # test_matrix prediction mode: run all models on all test files
                 test_matrix = config[section].getboolean('test_matrix', False) 
                 if test_matrix and not test_file_is_pattern:
                     raise ValueError('(!) test_matrix can only be used if test file name is a regular expression')
@@ -231,8 +231,8 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                               output_dir, output_file_prefix=output_prefix, subexp=subexp, 
                               test_file_is_pattern=test_file_is_pattern, parser=parser, 
                               use_estnltk=use_estnltk, morph_layer=morph_layer, seed=seed, 
-                              tagger_path=tagger_path, lang=lang, test_matrix=test_matrix, 
-                              use_gpu=use_gpu, dry_run=dry_run )
+                              tagger_path=tagger_path, lang=lang, skip_train=skip_train, 
+                              test_matrix=test_matrix, use_gpu=use_gpu, dry_run=dry_run )
     if not section_found:
         print(f'No section starting with "predict_stanza_" in {conf_file}.')
 
@@ -241,7 +241,7 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
                   output_path, output_file_prefix='predicted_', subexp=None, 
                   test_file_is_pattern=False, parser='stanza', use_estnltk=False, 
                   morph_layer=None, seed=None, tagger_path=None, lang='et', 
-                  test_matrix=False, use_gpu=False, dry_run=False ):
+                  skip_train=False, test_matrix=False, use_gpu=False, dry_run=False ):
     '''
     Runs models of multiple sub-experiments on (train/test) files from `data_folder`. 
     Outputs prediction conllu files to `output_path`. 
@@ -254,12 +254,15 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
     a regular expression (must have named group 'exp') and used to find a test file 
     corresponding to train file from `data_folder`. 
     
-    By default, each model is evaluated only on either a single test file or 
-    a test file corresponding to the training file (of the sub-experiment). 
-    If test_matrix==True, then each model is evaluated on all test files 
-    (and if no train files can be found, no evaluation is done on train 
-    files). The test_matrix mode only works with test_file_is_pattern=True 
-    option.
+    By default, each model is evaluated on a train file, and only on either a 
+    single test file or a test file corresponding to the training file (of the 
+    sub-experiment). 
+    If skip_train==True, then no evaluation is done on train files. Note, however, 
+    that even with skip_train==True, either `train_file_pattern` must be provided 
+    or corresponding test file pattern must be provided, as these are required 
+    for determining sub-experiment names and finding corresponding models.
+    If test_matrix==True, then each model is evaluated on all test files. 
+    The test_matrix mode only works with test_file_is_pattern=True option.
     
     Use parameter `subexp` to restrict predictions only to a single sub-experiment 
     instead of performing all sub-experiments. 
@@ -316,7 +319,7 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
     if not test_matrix:
         # ==============================================================
         #  Default mode:
-        #  * run each model on its train file
+        #  * run each model on its train file (if not skip_train)
         #  * run each model on its test file or on the global test file
         # ==============================================================
         for fname in sorted( os.listdir(data_folder) ):
@@ -446,8 +449,8 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
                 # Skip other experiments
                 continue
             if parser == 'stanza':
-                # Predict on train data (optional in test_matrix mode)
-                if train_file is not None:
+                # Predict on train data (optional, can be skipped)
+                if train_file is not None and not skip_train:
                     train_output = os.path.join(output_path, f'{output_file_prefix}train_{exp_no}.conllu')
                     if use_estnltk:
                         predict_with_stanza_tagger(train_file, morph_layer, model_file, train_output, 
@@ -471,7 +474,7 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
                         exp_no2 = experiment_data['numbers'][j]
                         test_file2 = experiment_data['test'][j]
                         test_output = os.path.join(output_path, \
-                            f'{output_file_prefix}_model_{exp_no}_test_{exp_no2}.conllu')
+                            f'{output_file_prefix}model_{exp_no}_test_{exp_no2}.conllu')
                         if use_estnltk:
                             predict_with_stanza_tagger(test_file2, morph_layer, model_file, test_output, 
                                                        tagger_path=tagger_path, seed=seed, lang=lang, 
