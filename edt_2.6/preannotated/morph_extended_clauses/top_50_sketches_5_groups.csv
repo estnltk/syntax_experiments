@@ -1,0 +1,6 @@
+,grouped_sketches,support
+0,[V]nsubj(L)obl(L);[V]nsubj(L)obl(L)obl(P);[S]advmod(L)cop(L)nsubj:cop(L);[S]cop(L)nsubj:cop(P);[V]aux(L)nsubj(L)obl(L);[V]obj(L)obl(L);[V]nsubj(L)xcomp(P);[V]obj(P)obl(L);[V]obj(P);[V]obj(L),4157
+1,[S]nmod(L);[V]advmod(L)nsubj(P);[V]aux(L)nsubj(L)obj(L);[S]amod(L);[V]advmod(L);[V];[V]nsubj(L)obj(P);[S];[V]nsubj(L)obj(P)obl(L);[V]nsubj(P)obl(L),5167
+2,[V]obj(L)obl(P);[V]nsubj(L)obj(L);[S]amod(L)cop(L)nsubj:cop(L);[V]advmod(L)obl(L);[S]cop(L)nmod(L)nsubj:cop(L);[V]advmod(L)nsubj(L)obj(L);[V]nsubj(L)obj(L)obl(P);[V]advmod(L)nsubj(L)obj(L)obl(L);[V]advmod(L)obj(L);[S]cop(L)nsubj:cop(L),3374
+3,[V]nsubj(L)obj(L)obl(L);[S]advmod(L);[S]cop(L)nsubj:cop(L)obl(L);[V]nsubj(L)obl(P);[V]nsubj(P)obl(P);[V]advmod(L)nsubj(L)obl(P);[V]nsubj(L);[V]advmod(L)nsubj(L);[V]nsubj(L)xcomp(L);[V]obl(P),4904
+4,[V]nsubj(L)obl(L)obl(L);[V]advmod(L)nsubj(L)obl(L);[V]aux(L);[X];[V]xcomp(P);[V]aux(L)nsubj(L);[S]nummod(L);[V]nsubj(P);[V]nsubj(P)obj(L);[V]obl(L),3332
