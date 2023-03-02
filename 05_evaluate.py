@@ -128,10 +128,11 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 macro_average = config[section].getboolean('macro_average', False)
                 param_count_words = config[section].getboolean('count_words', count_words)
                 experiment_name_prefix = config[section].get('name_prefix', section)
-                punct_tokens_file = config[section].get('punct_tokens_file', None)
-                punct_tokens_set = load_punct_tokens( punct_tokens_file )  # Attempt to load from file. If None, return empty set
                 if not experiment_name_prefix.endswith('_'):
                     experiment_name_prefix = experiment_name_prefix + '_'
+                punct_tokens_file = config[section].get('punct_tokens_file', None)
+                punct_tokens_set = load_punct_tokens( punct_tokens_file ) # Attempt to load from file. If None, return empty set
+                output_csv_file = config[section].get('output_csv_file', None) # Output eval results to csv file straight away
                 # Patterns for capturing names of training sub-experiment files
                 train_file_pat = r'(?P<exp>\d+)_train_all.conllu'
                 # Override sub-experiment patterns (if required)
@@ -147,6 +148,8 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     raise ValueError(f'Unable to convert {train_file_pat!r} to regexp') from err
                 if 'exp' not in train_file_regex.groupindex:
                     raise ValueError(f'Regexp {train_file_pat!r} is missing named group "exp"')
+                # skip_train: do not evaluate on train files
+                skip_train = config[section].getboolean('skip_train', False)
                 test_file_regex = None
                 if test_file_is_pattern:
                     if not isinstance(gold_test, str):
@@ -157,58 +160,135 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                         raise ValueError(f'Unable to convert {gold_test!r} to regexp') from err
                     if 'exp' not in test_file_regex.groupindex:
                         raise ValueError(f'Regexp {gold_test!r} is missing named group "exp"')
-                # Try to collect evaluation files
-                evaluation_files = []
-                if os.path.exists(predictions_dir) and os.path.exists(gold_splits_dir) and \
-                   (test_file_regex is not None or os.path.exists(gold_test)):
+                # test_matrix evaluation mode: evaluate all models on all test files
+                test_matrix = config[section].getboolean('test_matrix', False)
+                if macro_average and test_matrix:
+                    raise Exception('macro_average not implemented for test_matrix evaluation mode')
+                # ==============================================================
+                #  Evaluation modes:
+                #
+                #  Default mode:
+                #  * eval each model on its train file (if not skip_train)
+                #  * eval each model on its test file or on the global test file
+                #
+                #  Test matrix mode:
+                #  * eval each model on its train file (if not skip_train)
+                #  * eval each model on all test files
+                # ==============================================================
+                # Validate main paths
+                # Find out missing paths
+                paths_to_check = [predictions_dir, gold_splits_dir]
+                if not test_file_is_pattern:
+                    paths_to_check.append(gold_test)
+                missing_paths = []
+                for input_path in paths_to_check:
+                    if not os.path.exists(input_path):
+                        missing_paths.append(input_path)
+                if missing_paths:
+                    # ==================================================
+                    #  Report missing main paths
+                    # ==================================================
+                    if ignore_missing:
+                        print(f'Skipping evaluation because of missing dirs/files: {missing_paths!r}')
+                    else:
+                        raise FileNotFoundError(f'(!) Cannot evaluate, missing evaluation dirs/files: {missing_paths!r}')
+                else:
+                    # ==================================================
+                    #  Main paths are OK. Proceed with gathering files
+                    # ==================================================
+                    # Try to collect evaluation files
+                    # Gold train files
+                    all_gold_train_files = {}
+                    for gold_file in sorted( os.listdir(gold_splits_dir) ):
+                        if (gold_file.lower()).endswith('.conllu'):
+                            m = train_file_regex.match(gold_file)
+                            if m:
+                                no = m.group('exp')
+                                all_gold_train_files[no] = \
+                                    os.path.join(gold_splits_dir, gold_file)
+                    # Gold test files
+                    all_gold_test_files = {}
+                    if test_file_regex is not None:
+                        # Multiple test files
+                        for gold_file in sorted(os.listdir(gold_splits_dir)):
+                            if (gold_file.lower()).endswith('.conllu'):
+                                m2 = test_file_regex.match(gold_file)
+                                if m2:
+                                    no2 = m2.group('exp')
+                                    all_gold_test_files[no2] = \
+                                        os.path.join(gold_splits_dir, gold_file)
+                    else:
+                        # Single test file for all models
+                        for cur_subexp in sorted( all_gold_train_files.keys() ):
+                            all_gold_test_files[cur_subexp] = gold_test
+                        # Exception if no gold train/test files are available
+                        if len(all_gold_train_files.keys()) == 0:
+                            raise Exception('(!) Unable to construct sub experiment names, '+\
+                                            f'because no train files were found from {gold_splits_dir}. '+\
+                                            f'Please check that {train_file_pat!r} is a proper regexp for '+\
+                                            'recognizing train files from the directory.')
+                    # Some sanity checks
+                    if len(all_gold_train_files.keys()) > 0 or len(all_gold_test_files.keys()) > 0:
+                        if not skip_train:
+                            # Train and test set names must match
+                            if not (all_gold_train_files.keys() == all_gold_test_files.keys()):
+                                raise ValueError('(!) Mismatching train and test sub-experiment '+\
+                                                 'names in gold_splits_dir. Missing any files? '+\
+                                                 f'Train experiments: {list(all_gold_train_files.keys())!r}; '+\
+                                                 f'Test experiments: {list(all_gold_test_files.keys())!r} ')
+                        else:
+                            if not len(all_gold_test_files.keys()) > 0:
+                                raise ValueError(f'(!) No test files found from {gold_splits_dir}')
+                    elif len(all_gold_train_files.keys()) == 0 and len(all_gold_test_files.keys()) == 0:
+                        raise ValueError(f'(!) No train or test files found from {gold_splits_dir}')
+                    # ==================================================
+                    #  Iterate over sub experiments and evaluate
+                    # ==================================================
                     evaluations_done = 0
                     results_macro_avg = dict()
-                    for gold_file in sorted( os.listdir(gold_splits_dir) ):
-                        m = train_file_regex.match(gold_file)
-                        if m:
-                            if not (gold_file.lower()).endswith('.conllu'):
-                                raise Exception( f'(!) invalid file {gold_file}: train file '+\
-                                                  'must have extension .conllu' )
-                            no = m.group('exp')
-                            experiment_name = f'{experiment_name_prefix}{no}'
-                            missing_files = []
-                            gold_train = os.path.join(gold_splits_dir, gold_file)
-                            current_gold_test = gold_test
-                            if test_file_regex is not None:
-                                # Find gold_test corresponding to gold_train
-                                gold_test_found = False
-                                for gold_file_2 in sorted(os.listdir(gold_splits_dir)):
-                                    m2 = test_file_regex.match(gold_file_2)
-                                    if m2:
-                                        no2 = m2.group('exp')
-                                        if no == no2:
-                                            current_gold_test = \
-                                                os.path.join(gold_splits_dir, gold_file_2)
-                                            gold_test_found = True
-                                            break
-                                if not gold_test_found:
-                                    warnings.warn(f'Unable to find test file corresponding to '+\
-                                                  f'train file {gold_file!r} from {gold_splits_dir!r}.')
-                                    missing_files.append( current_gold_test )
-                            predicted_train = None
-                            predicted_test = None
-                            # Find corresponding train prediction
-                            target_predicted_train = f'{predictions_prefix}train_{no}.conllu'
-                            predicted_train = os.path.join(predictions_dir, target_predicted_train)
-                            # Find corresponding test prediction
-                            target_predicted_test = f'{predictions_prefix}test_{no}.conllu'
-                            predicted_test = os.path.join(predictions_dir, target_predicted_test)
-                            # Find out whether prediction files exist
-                            for predicted_path in [predicted_train, predicted_test]:
-                                if not os.path.exists(predicted_path) or \
-                                   not os.path.isfile(predicted_path):
-                                    missing_files.append(predicted_path)
-                            if len(missing_files) == 0:
-                                # All required files exist: evaluate
+                    intermediate_results = []
+                    for cur_subexp in sorted( all_gold_test_files.keys() ):
+                        current_gold_test = all_gold_test_files[cur_subexp]
+                        gold_train = all_gold_train_files.get(cur_subexp, None)
+                        assert gold_train is not None or test_matrix
+                        missing_prediction_files = []
+                        # Find corresponding train prediction
+                        target_predicted_train = f'{predictions_prefix}train_{cur_subexp}.conllu'
+                        predicted_train = os.path.join(predictions_dir, target_predicted_train)
+                        # Find corresponding test predictions
+                        if test_matrix:
+                            # Multiple test predictions (1 from each model)
+                            predicted_test_files  = []
+                            predicted_test_models = []
+                            for model_subexp in sorted(all_gold_test_files.keys()):
+                                test_output_fpath = os.path.join(predictions_dir, \
+                                    f'{predictions_prefix}model_{model_subexp}_test_{cur_subexp}.conllu')
+                                predicted_test_files.append( test_output_fpath )
+                                predicted_test_models.append( model_subexp )
+                        else:
+                            # Single test prediction
+                            target_predicted_test = f'{predictions_prefix}test_{cur_subexp}.conllu'
+                            predicted_test_files  = [os.path.join(predictions_dir, target_predicted_test)]
+                            predicted_test_models = [None]
+                        # Check for existence of files
+                        paths_to_check2 = []
+                        if not skip_train:
+                            paths_to_check2.append( predicted_train )
+                        paths_to_check2.extend( predicted_test_files )
+                        for predicted_path in paths_to_check2:
+                            if not os.path.exists(predicted_path) or \
+                               not os.path.isfile(predicted_path):
+                                missing_prediction_files.append(predicted_path)
+                        if len(missing_prediction_files) == 0:
+                            # ==================================================
+                            #   All required files exist: evaluate
+                            # ==================================================
+                            for predicted_test, model_subexp in zip(predicted_test_files, predicted_test_models):
                                 results = score_experiment( predicted_test, current_gold_test, 
                                                             predicted_train, gold_train, 
                                                             format_string=None,
                                                             count_words=param_count_words,
+                                                            skip_train=skip_train, 
                                                             punct_tokens_set=punct_tokens_set )
                                 if macro_average:
                                     # Collect macro averages
@@ -226,6 +306,11 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                                         else:
                                             results_rounded[k] = '{}'.format(v)
                                     results = results_rounded
+                                # experiment name (depends on whether we use test matrix or not)
+                                if not test_matrix:
+                                    experiment_name = f'{experiment_name_prefix}{cur_subexp}'
+                                else:
+                                    experiment_name = f'{experiment_name_prefix}model_{model_subexp}_test_{cur_subexp}'
                                 # find experiment directory closest to root in experiment path
                                 exp_root = get_experiment_path_root(current_gold_test)
                                 if exp_root not in collected_results.keys():
@@ -233,45 +318,73 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                                 if verbose:
                                     print(exp_root, experiment_name, results)
                                 collected_results[exp_root][experiment_name] = results
+                                intermediate_results.append( (experiment_name, cur_subexp, model_subexp, results) )
                                 evaluations_done += 1
+                        else:
+                            # Missing files
+                            if ignore_missing:
+                                print(f'Skipping evaluation because of missing files: {missing_prediction_files!r}')
                             else:
-                                # Missing files
-                                if ignore_missing:
-                                    print(f'Skipping evaluation because of missing files: {missing_files!r}')
+                                raise FileNotFoundError(f'(!) Cannot evaluate, missing evaluation files: {missing_prediction_files!r}')
+                    if macro_average and evaluations_done > 1:
+                        # Find macro averages
+                        calculated_averages = dict()
+                        for k, v in results_macro_avg.items():
+                            calculated_averages[k] = mean(v)
+                            if round:
+                                if k not in ['train_words', 'test_words']:
+                                    calculated_averages[k] = \
+                                        ('{'+format_string+'}').format( calculated_averages[k] )
                                 else:
-                                    raise FileNotFoundError(f'(!) Cannot evaluate, missing evaluation files: {missing_files!r}')
-                    if evaluations_done > 1:
-                        if macro_average:
-                            # Find macro averages
-                            calculated_averages = dict()
-                            for k, v in results_macro_avg.items():
-                                calculated_averages[k] = mean(v)
-                                if round:
-                                    if k not in ['train_words', 'test_words']:
-                                        calculated_averages[k] = \
-                                            ('{'+format_string+'}').format( calculated_averages[k] )
-                                    else:
-                                        calculated_averages[k] = \
-                                            ('{}').format( int(calculated_averages[k]) )
-                            assert exp_root in collected_results.keys()
-                            experiment_name = f'{experiment_name_prefix}{"AVG"}'
-                            if verbose:
-                                print(exp_root, experiment_name, calculated_averages)
-                            collected_results[exp_root][experiment_name] = calculated_averages
-                    else:
-                        # Report no eval files found
-                        print(f'Could not find any gold train files matching pattern {train_file_pat!r} from {gold_splits_dir!r}.')
-                else:
-                    # Find out missing paths
-                    missing_paths = []
-                    for input_path in [predictions_dir, gold_splits_dir, gold_test]:
-                        if not os.path.exists(input_path):
-                            missing_paths.append(input_path)
-                    # Report missing paths
-                    if ignore_missing:
-                        print(f'Skipping evaluation because of missing dirs/files: {missing_paths!r}')
-                    else:
-                        raise FileNotFoundError(f'(!) Cannot evaluate, missing evaluation dirs/files: {missing_paths!r}')
+                                    calculated_averages[k] = \
+                                        ('{}').format( int(calculated_averages[k]) )
+                        assert exp_root in collected_results.keys()
+                        experiment_name = f'{experiment_name_prefix}{"AVG"}'
+                        if verbose:
+                            print(exp_root, experiment_name, calculated_averages)
+                        collected_results[exp_root][experiment_name] = calculated_averages
+                        intermediate_results.append( (experiment_name, None, None, calculated_averages) )
+                    # ==================================================
+                    #  Output intermediate results (optional)
+                    # ==================================================
+                    if output_csv_file is not None and intermediate_results:
+                        print(f'Writing evaluation results into {output_csv_file} ...')
+                        with open(output_csv_file, 'w', encoding='utf-8', newline='') as output_csv:
+                            csv_writer = csv.writer(output_csv)
+                            if test_matrix:
+                                # Write matrix of results
+                                # rows: test sets, columns: models
+                                subexp_names = []
+                                for r in intermediate_results:
+                                    if r[1] not in subexp_names:
+                                        subexp_names.append(r[1])
+                                header = [''] + subexp_names
+                                csv_writer.writerow( header )
+                                values = []
+                                lines_written = 0
+                                for (full_exp_name, exp1, exp2, results) in intermediate_results:
+                                    if (exp1 is not None) and (exp2 is not None):
+                                        if not values:
+                                            values.append(exp1)
+                                        values.append(results['LAS_test'])
+                                        assert exp1 == values[0]
+                                        assert exp2 == subexp_names[len(values)-2]
+                                        if len(values) == len(subexp_names) + 1:
+                                            csv_writer.writerow( values )
+                                            lines_written += 1
+                                            values = []
+                                assert lines_written == len(subexp_names)
+                            else:
+                                # Write listing of results
+                                result_fields = list(intermediate_results[0][3].keys())
+                                header = ['experiment'] + result_fields
+                                csv_writer.writerow( header )
+                                for (full_exp_name, exp1, exp2, results) in intermediate_results:
+                                    values = [full_exp_name]
+                                    for key in header[1:]:
+                                        values.append( results[key] )
+                                    assert len(values) == len(header)
+                                    csv_writer.writerow( values )
     return collected_results
 
 
@@ -305,7 +418,7 @@ def load_punct_tokens( fname ):
 
 def score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                       gold_path=None, predicted_path=None, format_string=None,
-                      count_words=False, punct_tokens_set=None ):
+                      skip_train=False, count_words=False, punct_tokens_set=None ):
     '''
     Calculates train and test LAS/UAS scores and gaps between train and test LAS 
     using given predicted and gold standard conllu files. 
@@ -316,6 +429,8 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
     "LAS_gap", "UAS_test", "UAS_train").
     If `count_words=True`, then adds evaluation word counts (keys 'train_words' 
     and 'test_words') to the results.
+    If `skip_train` is True, then calculates only test scores and returns dictionary 
+    with calculated test scores (keys: "LAS_test", "UAS_test").
     '''
     # Check/validate input files 
     input_files = { \
@@ -324,6 +439,9 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
         'predicted_train': predicted_train, 
         'gold_train': gold_train }
     for name, fpath in input_files.items():
+        if skip_train and name.endswith('_train'):
+            # skip evaluation on train files
+            continue
         full_path = fpath
         if fpath is None:
             raise FileNotFoundError(f'(!) Unexpected None value for {name} file name.')
@@ -340,25 +458,27 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
                                    input_files['predicted_test'],
                                    count_words=count_words,
                                    punct_tokens_set=punct_tokens_set)
-    train_scores = calculate_scores(input_files['gold_train'], 
-                                    input_files['predicted_train'],
-                                    count_words=count_words,
-                                    punct_tokens_set=punct_tokens_set)
-    LAS_test = test_scores['LAS']
-    UAS_test = test_scores['UAS']
-    LAS_train = train_scores['LAS']
-    UAS_train = train_scores['UAS']
-    results_dict = {'LAS_test' : LAS_test, 
-                    'LAS_train' : LAS_train, 
-                    'LAS_gap' : LAS_train - LAS_test,
-                    'UAS_test' : UAS_test, 
-                    'UAS_train' : UAS_train}
+    if skip_train:
+        train_scores = None
+        results_dict = {'LAS_test' : test_scores['LAS'], 
+                        'UAS_test' : test_scores['UAS'] }
+    else:
+        train_scores = calculate_scores(input_files['gold_train'], 
+                                        input_files['predicted_train'],
+                                        count_words=count_words,
+                                        punct_tokens_set=punct_tokens_set)
+        results_dict = {'LAS_test' : test_scores['LAS'], 
+                        'LAS_train' : train_scores['LAS'], 
+                        'LAS_gap' : train_scores['LAS'] - test_scores['LAS'],
+                        'UAS_test' : test_scores['UAS'], 
+                        'UAS_train' : train_scores['UAS']}
     if format_string is not None:
         for k, v in results_dict.items():
             results_dict[k] = ('{'+format_string+'}').format(v)
     if count_words:
         results_dict['test_words'] = test_scores['total_words']
-        results_dict['train_words'] = train_scores['total_words']
+        if not skip_train:
+            results_dict['train_words'] = train_scores['total_words']
     return results_dict
 
 
