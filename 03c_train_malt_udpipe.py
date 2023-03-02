@@ -374,7 +374,7 @@ def train_udpipe1(output_model, train_corpus, output_dir, parser_options=None, c
         if 'embedding_form_file=' not in parser_options:
             parser_options += f';embedding_form_file={embeddings_path}'
         else:
-            # Updated form embeddings file path
+            # Updated from embeddings file path
             parser_options = re.sub(r';embedding_form_file=([^; ])+',
                                     f';embedding_form_file={embeddings_path}', 
                                     parser_options)

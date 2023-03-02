@@ -1,6 +1,8 @@
+from random import Random
+
 from estnltk import Layer
 
-from typing import List, Dict, Optional
+from typing import List, Dict, Union, Any, Optional
 
 # =====================================================
 #   Creating syntax sketches
@@ -84,7 +86,7 @@ def clean_clause(clause: Layer) -> Dict[str, list]:
         wordforms=wordforms, lemmas=lemmas, features=features)
 
 
-def syntax_sketch(clause: Dict[str, list], ordered=True):
+def syntax_sketch(clause: Dict[str, list], ordered=True) -> str:
     """
     Computes syntax sketch for a clause that encodes information about the root node and the first level child nodes.
     By default the first level child nodes are lexicographically ordered in the sketch.
@@ -155,7 +157,7 @@ def syntax_sketch(clause: Dict[str, list], ordered=True):
         return '[{root}]{children}'.format(root=sketch_root, children=''.join(first_level))
 
 
-def safe_sketch_name(sketch_name: str):
+def safe_sketch_name(sketch_name: str) -> str:
     '''
     Makes sketch name safe so that it can be used as (a part of) file name.
     Returns safe name.
@@ -166,6 +168,30 @@ def safe_sketch_name(sketch_name: str):
 
 
 # =====================================================
+#   Distribute syntax sketches randomly into bins
+# =====================================================
+
+def rand_group_sketches(sketches: List[Union[str, List[Any]]], n:int, seed:int=5) \
+                                             -> List[List[Union[str, List[Any]]]]:
+    '''
+    Distributes given sketches randomly into n same size groups. 
+    Returns list of lists of sketches, one sub list for each group. 
+    '''
+    result = []
+    if not n <= len(sketches):
+        raise ValueError(f'(!) Number of sketches ({len(sketches)}) '+\
+                         f'is smaller than number of groups ({n}).')
+    rnd = Random(seed)
+    rnd.shuffle(sketches)
+    for i in range(n):
+        result.append([])
+    for sid, sketch in enumerate(sketches):
+        result[sid % n].append(sketch)
+    assert len(sketches) == sum([len(g) for g in result])
+    return result
+
+
+# =====================================================
 #   Filtering lists of clauses by sketches
 # =====================================================
 
@@ -173,6 +199,8 @@ def extract_sketches(clause_conllus: List[str], clause_dicts: List[Dict[str, lis
                      target_sketch:str, amount:Optional[int]=None, verbose:bool=False):
     '''
     Extracts given amount of target_sketch from clause_conllus and clause_dicts. 
+    Note that the extraction operation is virtual: the input lists clause_conllus 
+    and clause_dicts are not affected.
     Returns extracted items. 
     If amount is None (default), then extracts all clauses corresponding to the sketch.
     Returns triple: (extracted_conllus, extracted_dicts, number_of_extracted_items)
@@ -198,7 +226,9 @@ def remove_sketches(clause_conllus: List[str], clause_dicts: List[Dict[str, list
                     target_sketch:str, amount:Optional[int]=None, verbose:bool=False):
     '''
     Removes given amount of target_sketch from clause_conllus and clause_dicts. 
-    Returns preserved items (and count of removed items). 
+    Note that the removal operation is virtual: the input lists clause_conllus and 
+    clause_dicts are not affected.
+    Returns preserved items after removal (and count of removed items). 
     If amount is None (default), then removes all clauses corresponding to the sketch.
     Returns triple: (preserved_conllus, preserved_dicts, number_of_removed_items)
     '''
@@ -219,4 +249,34 @@ def remove_sketches(clause_conllus: List[str], clause_dicts: List[Dict[str, list
         preserved_dicts.append( clause_dict )
     if verbose:
         print('Removed {} instances of sketch {}'. format(removed, target_sketch))
+    return preserved, preserved_dicts, removed
+
+
+def remove_sketches_group(clause_conllus: List[str], clause_dicts: List[Dict[str, list]], 
+                          target_sketches:List[str], verbose:bool=False):
+    '''
+    Removes all target_sketches from clause_conllus and clause_dicts. 
+    Note that the removal operation is virtual: the input lists clause_conllus and 
+    clause_dicts are not affected.
+    Returns preserved items after the removal (and total count of removed items). 
+    Returns triple: (preserved_conllus, preserved_dicts, number_of_removed_items)
+    '''
+    assert len(clause_conllus) == len(clause_dicts), \
+        'Unexpectedly, numers of conllu clauses and corresponding clause dicts differ: '+\
+        f' {len(clause_conllus)} vs {len(clause_dicts)}'
+    assert len(target_sketches) > 0, 'Unexpectedly, got an empty target_sketches list'
+    preserved = []
+    preserved_dicts = []
+    removed = 0
+    target_sketches_set = set(target_sketches)
+    for clause_id, clause_conllu in enumerate(clause_conllus):
+        clause_dict = clause_dicts[clause_id]
+        sketch = syntax_sketch(clause_dict)
+        if sketch in target_sketches_set:
+            removed += 1
+            continue
+        preserved.append( clause_conllu )
+        preserved_dicts.append( clause_dict )
+    if verbose:
+        print('Removed {} instances of sketches {}'. format(removed, target_sketches))
     return preserved, preserved_dicts, removed
