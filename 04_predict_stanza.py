@@ -254,15 +254,15 @@ def bulk_predict( data_folder, models_folder, train_file_pattern, test_file_path
     a regular expression (must have named group 'exp') and used to find a test file 
     corresponding to train file from `data_folder`. 
     
-    By default, each model is evaluated on a train file, and only on either a 
-    single test file or a test file corresponding to the training file (of the 
-    sub-experiment). 
+    By default, each model is evaluated on a train file, and on either a single 
+    test file or a test file corresponding to the training file (of the sub-
+    experiment). 
     If skip_train==True, then no evaluation is done on train files. Note, however, 
-    that even with skip_train==True, either `train_file_pattern` must be provided 
-    or corresponding test file pattern must be provided, as these are required 
-    for determining sub-experiment names and finding corresponding models.
+    that even with skip_train==True, `train_file_pattern` must be provided, as it
+    is required for determining sub-experiment names and finding corresponding 
+    models.
     If test_matrix==True, then each model is evaluated on all test files. 
-    The test_matrix mode only works with test_file_is_pattern=True option.
+    The test_matrix mode only works with test_file_is_pattern=True option. 
     
     Use parameter `subexp` to restrict predictions only to a single sub-experiment 
     instead of performing all sub-experiments. 

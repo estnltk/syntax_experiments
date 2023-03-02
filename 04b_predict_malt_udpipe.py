@@ -191,7 +191,7 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                                 assert test_file_subexp not in all_test_files.keys(), \
                                     f'Duplicate test files for experiment {test_file_subexp}'
                                 all_test_files[test_file_subexp] = \
-                                    os.path.join(input_dir, in_fname2)
+                                    os.path.join(input_dir, in_fname)
                 else:
                     # If test_file regex is missing, assign a single test file for 
                     # all experiments (global testing)
@@ -200,9 +200,9 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 # Sanity checks
                 if len(all_test_files.keys()) > 0 and len(all_train_files.keys()) > 0:
                     if not (all_train_files.keys() == all_test_files.keys()):
-                        raise ValueError('(!) Mismatching train and test files: '+\
-                                         f' train files: {all_train_files.values()!r} '+\
-                                         f'  test files: {all_test_files.values()!r} ')
+                        raise ValueError('(!) Mismatching train and test sub-experiment '+\
+                                         f'names. Train experiments: {all_train_files.keys()!r}; '+\
+                                         f'Test experiments: {all_test_files.keys()!r} ')
                 elif len(all_test_files.keys()) == 0 and len(all_train_files.keys()) == 0:
                     raise ValueError(f'(!) No train or test files found from {input_dir}')
                 #

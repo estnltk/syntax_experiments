@@ -4,12 +4,12 @@
 
 * Install [estnltk](https://github.com/estnltk/estnltk) (version 1.7.2+ is required);
 * Install [stanza](https://github.com/stanfordnlp/stanza) (we used version 1.4.2);
-* For some of the experiments, you'll also need MaltParser, MaltOptimizer, and UDPipe-1; 
+* For some of the experiments, you'll also need [MaltParser](https://maltparser.org), [MaltOptimizer](http://nil.fdi.ucm.es/maltoptimizer), [UDPipe-1](https://ufal.mff.cuni.cz/udpipe/1) and [gensim](https://radimrehurek.com/gensim); 
 * Download and unpack [Estonian UD corpus](https://github.com/UniversalDependencies/UD_Estonian-EDT/tags) (we used version 2.6);
 
 ### Configuration files
 
-Most important settings of data pre-processing, training and evaluation are defined in configuration INI files. You can find INI files from [confs](confs/) folder. In order to run a processing step, pass name of an INI file as an input to the script.
+Most important settings of data pre-processing, training and evaluation are defined in configuration INI files. You can find these files in [confs](confs/) folder. In order to run a processing step, pass name of an INI file as an input to the script.
 
 ### Processing steps (scripts)
 
