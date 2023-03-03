@@ -1,8 +1,10 @@
+import os, os.path
 from random import Random
 
 from estnltk import Layer
+from estnltk.converters.conll.conll_importer import conll_to_text
 
-from typing import List, Dict, Union, Any, Optional
+from typing import List, Dict, Union, Any, Tuple, Optional
 
 # =====================================================
 #   Creating syntax sketches
@@ -165,6 +167,66 @@ def safe_sketch_name(sketch_name: str) -> str:
     safe_name = sketch_name.replace(':', 'COLON').replace(')', '').replace('(', '').replace('[', '').replace(']', '')
     assert safe_name.isidentifier()
     return safe_name
+
+
+# =====================================================
+#   Compute sketches for the whole corpus
+# =====================================================
+
+def compute_sketches(input_dir:str, skip_files:List[str]=[], verbose:bool=True) -> Tuple[List[str], int]:
+    '''
+    Loads clauses from conllu files in the input_dir and computes syntax sketches
+    for all clauses that have a single root.
+    Assumes that all conllu files in the input_dir have been created via script 
+    "01b_extract_clauses.py", that is, they contain clauses instead of sentences. 
+    Optionally, you can skip some of the input files via parameter skip_files.
+    Returns tuple: (list_of_sketches, clauses_count_total) 
+    '''
+    # 1) Import data from conllu files, rename sentences -> clauses and validate
+    expected_layers = {'clauses', 'ud_syntax', 'words'}
+    whole_data = []
+    for fname in os.listdir(input_dir):
+        if fname in skip_files:
+            continue
+        if fname.endswith('.conllu'):
+            text_obj = conll_to_text( os.path.join(input_dir, fname), 
+                                      'ud_syntax', 
+                                      remove_empty_nodes=True)
+            text_obj.meta['file'] = fname
+            # Rename sentences layer 
+            # (because it actually contains clauses, not sentences)
+            clauses_layer = text_obj.pop_layer('sentences')
+            clauses_layer.name = 'clauses'
+            text_obj.add_layer(clauses_layer)
+            # Validate text layers
+            assert text_obj.layers == expected_layers, \
+                f'Unexpected layers {text_obj.layers!r}'
+            whole_data.append(text_obj)
+    # 2) Create sketches from the data
+    clauses_count_total = 0
+    invalid_clauses_total = 0
+    sketches = []
+    for text_obj in whole_data:
+        clauses_count = 0
+        for clause in text_obj.clauses:
+            cleaned_clause = clean_clause(clause)
+            if len(cleaned_clause['root_loc']) != 1:
+                # At this point, assuming input processed with 
+                # "01b_extract_clauses.py", we actually should 
+                # not encounter any invalid clauses ...
+                invalid_clauses_total += 1
+                continue
+            sketches.append(syntax_sketch(cleaned_clause))
+            clauses_count += 1
+        if verbose:
+            print(text_obj.meta['file'], '|', f'#clauses:   {clauses_count}')
+        clauses_count_total += clauses_count
+    if verbose:
+        print()
+        print(f'#clauses total:   {clauses_count_total}')
+        if invalid_clauses_total > 0:
+            print(f'#invalid clauses total:   {invalid_clauses_total}')
+    return sketches, clauses_count_total
 
 
 # =====================================================
