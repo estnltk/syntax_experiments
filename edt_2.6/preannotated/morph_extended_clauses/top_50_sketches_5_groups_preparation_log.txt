@@ -1,0 +1,293 @@
+Performing make_sketches_table_morph_extended_top_50 ...
+et_edt-ud-dev-morph_extended.conllu | #clauses:   5708
+et_edt-ud-test-morph_extended.conllu | #clauses:   6033
+et_edt-ud-train-morph_extended.conllu | #clauses:   43966
+
+#clauses total:   55707
+Writing sketches freq table into edt_2.6/preannotated/morph_extended_clauses/top_50_sketches.csv.
+Performing prepare_knockout_morph_extended_top_50_sketches_5randomgroups ...
+et_edt-ud-dev-morph_extended.conllu | #clauses: 5708
+et_edt-ud-test-morph_extended.conllu | #clauses: 6033
+et_edt-ud-train-morph_extended.conllu | #clauses: 43966
+[V]nsubj(L)
+    extracted 193 clauses from test
+[S]
+    extracted 247 clauses from test
+[V]nsubj(L)obl(L)
+    extracted 88 clauses from test
+[V]
+    extracted 102 clauses from test
+[S]cop(L)nsubj:cop(L)
+    extracted 81 clauses from test
+[V]nsubj(L)obj(L)
+    extracted 62 clauses from test
+[V]advmod(L)nsubj(L)
+    extracted 65 clauses from test
+[V]obj(L)
+    extracted 65 clauses from test
+[V]obl(L)
+    extracted 51 clauses from test
+[V]nsubj(L)obj(L)obl(L)
+    extracted 44 clauses from test
+    extracted 6 clauses from train
+[V]obj(L)obl(L)
+    extracted 49 clauses from test
+    extracted 1 clauses from train
+[S]advmod(L)cop(L)nsubj:cop(L)
+    extracted 33 clauses from test
+    extracted 17 clauses from train
+[V]nsubj(L)obl(P)
+    extracted 35 clauses from test
+    extracted 15 clauses from train
+[V]nsubj(P)
+    extracted 52 clauses from test
+[V]advmod(L)nsubj(L)obl(L)
+    extracted 51 clauses from test
+[S]nmod(L)
+    extracted 36 clauses from test
+    extracted 14 clauses from train
+[V]nsubj(P)obl(L)
+    extracted 43 clauses from test
+    extracted 7 clauses from train
+[V]nsubj(L)obj(P)
+    extracted 44 clauses from test
+    extracted 6 clauses from train
+[V]advmod(L)nsubj(L)obj(L)
+    extracted 39 clauses from test
+    extracted 11 clauses from train
+[S]cop(L)nsubj:cop(P)
+    extracted 42 clauses from test
+    extracted 8 clauses from train
+[V]advmod(L)
+    extracted 39 clauses from test
+    extracted 11 clauses from train
+[V]nsubj(L)obl(L)obl(L)
+    extracted 36 clauses from test
+    extracted 14 clauses from train
+[X]
+    extracted 50 clauses from test
+[V]nsubj(L)xcomp(P)
+    extracted 22 clauses from test
+    extracted 28 clauses from train
+[V]obj(P)
+    extracted 28 clauses from test
+    extracted 22 clauses from train
+[V]aux(L)nsubj(L)
+    extracted 25 clauses from test
+    extracted 25 clauses from train
+[S]cop(L)nsubj:cop(L)obl(L)
+    extracted 39 clauses from test
+    extracted 11 clauses from train
+[S]nummod(L)
+    extracted 24 clauses from test
+    extracted 26 clauses from train
+[V]nsubj(L)xcomp(L)
+    extracted 32 clauses from test
+    extracted 18 clauses from train
+[V]nsubj(L)obl(L)obl(P)
+    extracted 23 clauses from test
+    extracted 27 clauses from train
+[V]advmod(L)obj(L)
+    extracted 24 clauses from test
+    extracted 26 clauses from train
+[V]nsubj(P)obj(L)
+    extracted 28 clauses from test
+    extracted 22 clauses from train
+[V]aux(L)nsubj(L)obj(L)
+    extracted 25 clauses from test
+    extracted 25 clauses from train
+[V]xcomp(P)
+    extracted 17 clauses from test
+    extracted 33 clauses from train
+[S]amod(L)cop(L)nsubj:cop(L)
+    extracted 29 clauses from test
+    extracted 21 clauses from train
+[V]nsubj(P)obl(P)
+    extracted 12 clauses from test
+    extracted 38 clauses from train
+[V]obl(P)
+    extracted 12 clauses from test
+    extracted 38 clauses from train
+[V]aux(L)nsubj(L)obl(L)
+    extracted 18 clauses from test
+    extracted 32 clauses from train
+[S]amod(L)
+    extracted 21 clauses from test
+    extracted 29 clauses from train
+[V]advmod(L)obl(L)
+    extracted 15 clauses from test
+    extracted 35 clauses from train
+[V]obj(P)obl(L)
+    extracted 22 clauses from test
+    extracted 28 clauses from train
+[V]nsubj(L)obj(P)obl(L)
+    extracted 19 clauses from test
+    extracted 31 clauses from train
+[S]cop(L)nmod(L)nsubj:cop(L)
+    extracted 21 clauses from test
+    extracted 29 clauses from train
+[V]nsubj(L)obj(L)obl(P)
+    extracted 18 clauses from test
+    extracted 32 clauses from train
+[V]advmod(L)nsubj(L)obj(L)obl(L)
+    extracted 19 clauses from test
+    extracted 31 clauses from train
+[V]advmod(L)nsubj(L)obl(P)
+    extracted 18 clauses from test
+    extracted 32 clauses from train
+[V]obj(L)obl(P)
+    extracted 16 clauses from test
+    extracted 34 clauses from train
+[S]advmod(L)
+    extracted 23 clauses from test
+    extracted 27 clauses from train
+[V]advmod(L)nsubj(P)
+    extracted 15 clauses from test
+    extracted 35 clauses from train
+[V]aux(L)
+    extracted 19 clauses from test
+    extracted 31 clauses from train
+ Saved 3007 test clauses into edt_2.6/preannotated/morph_extended_clauses/knockout_5groups_initial\test_50x50.conllu.
+ Saved 43087 train clauses into edt_2.6/preannotated/morph_extended_clauses/knockout_5groups_initial\train_pure.conllu.
+
+group: 0
+[V]nsubj(L)obl(L)
+[V]obj(L)
+[V]obj(L)obl(L)
+[S]advmod(L)cop(L)nsubj:cop(L)
+[S]cop(L)nsubj:cop(P)
+[V]nsubj(L)xcomp(P)
+[V]obj(P)
+[V]nsubj(L)obl(L)obl(P)
+[V]aux(L)nsubj(L)obl(L)
+[V]obj(P)obl(L)
+  Saved 553 test clauses into test_group0.conllu.
+  Removed 403 clauses and saved remaining 5305 dev clauses into dev_group0.conllu.
+  Removed 3201 clauses and saved remaining 39886 train clauses into train_group0.conllu.
+group: 1
+[S]
+[V]
+[S]nmod(L)
+[V]nsubj(P)obl(L)
+[V]nsubj(L)obj(P)
+[V]advmod(L)
+[V]aux(L)nsubj(L)obj(L)
+[S]amod(L)
+[V]nsubj(L)obj(P)obl(L)
+[V]advmod(L)nsubj(P)
+  Saved 749 test clauses into test_group1.conllu.
+  Removed 599 clauses and saved remaining 5109 dev clauses into dev_group1.conllu.
+  Removed 3819 clauses and saved remaining 39268 train clauses into train_group1.conllu.
+group: 2
+[S]cop(L)nsubj:cop(L)
+[V]nsubj(L)obj(L)
+[V]advmod(L)nsubj(L)obj(L)
+[V]advmod(L)obj(L)
+[S]amod(L)cop(L)nsubj:cop(L)
+[V]advmod(L)obl(L)
+[S]cop(L)nmod(L)nsubj:cop(L)
+[V]nsubj(L)obj(L)obl(P)
+[V]advmod(L)nsubj(L)obj(L)obl(L)
+[V]obj(L)obl(P)
+  Saved 543 test clauses into test_group2.conllu.
+  Removed 340 clauses and saved remaining 5368 dev clauses into dev_group2.conllu.
+  Removed 2491 clauses and saved remaining 40596 train clauses into train_group2.conllu.
+group: 3
+[V]nsubj(L)
+[V]advmod(L)nsubj(L)
+[V]nsubj(L)obj(L)obl(L)
+[V]nsubj(L)obl(P)
+[S]cop(L)nsubj:cop(L)obl(L)
+[V]nsubj(L)xcomp(L)
+[V]nsubj(P)obl(P)
+[V]obl(P)
+[V]advmod(L)nsubj(L)obl(P)
+[S]advmod(L)
+  Saved 658 test clauses into test_group3.conllu.
+  Removed 477 clauses and saved remaining 5231 dev clauses into dev_group3.conllu.
+  Removed 3769 clauses and saved remaining 39318 train clauses into train_group3.conllu.
+group: 4
+[V]obl(L)
+[V]nsubj(P)
+[V]advmod(L)nsubj(L)obl(L)
+[V]nsubj(L)obl(L)obl(L)
+[X]
+[V]aux(L)nsubj(L)
+[S]nummod(L)
+[V]nsubj(P)obj(L)
+[V]xcomp(P)
+[V]aux(L)
+  Saved 504 test clauses into test_group4.conllu.
+  Removed 358 clauses and saved remaining 5350 dev clauses into dev_group4.conllu.
+  Removed 2467 clauses and saved remaining 40620 train clauses into train_group4.conllu.
+
+group: 0
+[V]nsubj(L)obl(L)
+[V]obj(L)
+[V]obj(L)obl(L)
+[S]advmod(L)cop(L)nsubj:cop(L)
+[S]cop(L)nsubj:cop(P)
+[V]nsubj(L)xcomp(P)
+[V]obj(P)
+[V]nsubj(L)obl(L)obl(P)
+[V]aux(L)nsubj(L)obl(L)
+[V]obj(P)obl(L)
+  Saved 553 test clauses into test_group0.conllu.
+  Removed 403 clauses randomly and saved remaining 5305 dev clauses into dev_group0.conllu.
+  Removed 3201 clauses randomly and saved remaining 39886 train clauses into train_group0.conllu.
+group: 1
+[S]
+[V]
+[S]nmod(L)
+[V]nsubj(P)obl(L)
+[V]nsubj(L)obj(P)
+[V]advmod(L)
+[V]aux(L)nsubj(L)obj(L)
+[S]amod(L)
+[V]nsubj(L)obj(P)obl(L)
+[V]advmod(L)nsubj(P)
+  Saved 749 test clauses into test_group1.conllu.
+  Removed 599 clauses randomly and saved remaining 5109 dev clauses into dev_group1.conllu.
+  Removed 3819 clauses randomly and saved remaining 39268 train clauses into train_group1.conllu.
+group: 2
+[S]cop(L)nsubj:cop(L)
+[V]nsubj(L)obj(L)
+[V]advmod(L)nsubj(L)obj(L)
+[V]advmod(L)obj(L)
+[S]amod(L)cop(L)nsubj:cop(L)
+[V]advmod(L)obl(L)
+[S]cop(L)nmod(L)nsubj:cop(L)
+[V]nsubj(L)obj(L)obl(P)
+[V]advmod(L)nsubj(L)obj(L)obl(L)
+[V]obj(L)obl(P)
+  Saved 543 test clauses into test_group2.conllu.
+  Removed 340 clauses randomly and saved remaining 5368 dev clauses into dev_group2.conllu.
+  Removed 2491 clauses randomly and saved remaining 40596 train clauses into train_group2.conllu.
+group: 3
+[V]nsubj(L)
+[V]advmod(L)nsubj(L)
+[V]nsubj(L)obj(L)obl(L)
+[V]nsubj(L)obl(P)
+[S]cop(L)nsubj:cop(L)obl(L)
+[V]nsubj(L)xcomp(L)
+[V]nsubj(P)obl(P)
+[V]obl(P)
+[V]advmod(L)nsubj(L)obl(P)
+[S]advmod(L)
+  Saved 658 test clauses into test_group3.conllu.
+  Removed 477 clauses randomly and saved remaining 5231 dev clauses into dev_group3.conllu.
+  Removed 3769 clauses randomly and saved remaining 39318 train clauses into train_group3.conllu.
+group: 4
+[V]obl(L)
+[V]nsubj(P)
+[V]advmod(L)nsubj(L)obl(L)
+[V]nsubj(L)obl(L)obl(L)
+[X]
+[V]aux(L)nsubj(L)
+[S]nummod(L)
+[V]nsubj(P)obj(L)
+[V]xcomp(P)
+[V]aux(L)
+  Saved 504 test clauses into test_group4.conllu.
+  Removed 358 clauses randomly and saved remaining 5350 dev clauses into dev_group4.conllu.
+  Removed 2467 clauses randomly and saved remaining 40620 train clauses into train_group4.conllu.
