@@ -4,7 +4,9 @@
 
 * Install [estnltk](https://github.com/estnltk/estnltk) (version 1.7.2+ is required);
 * Install [stanza](https://github.com/stanfordnlp/stanza) (we used version 1.4.2);
-* For some of the experiments, you'll also need [MaltParser](https://maltparser.org), [MaltOptimizer](http://nil.fdi.ucm.es/maltoptimizer), [UDPipe-1](https://ufal.mff.cuni.cz/udpipe/1) and [gensim](https://radimrehurek.com/gensim); 
+* Install [scikit-learn](https://scikit-learn.org/) (we used version 1.2.1);
+* For some of the experiments, you'll also need [MaltParser](https://maltparser.org), [MaltOptimizer](http://nil.fdi.ucm.es/maltoptimizer), [UDPipe-1](https://ufal.mff.cuni.cz/udpipe/1) and [gensim](https://radimrehurek.com/gensim);
+* For visualization of the results, you'll need [matplotlib](https://matplotlib.org/stable/), [seaborn](https://seaborn.pydata.org/), [plotnine](https://plotnine.readthedocs.io/en/stable/); 
 * Download and unpack [Estonian UD corpus](https://github.com/UniversalDependencies/UD_Estonian-EDT/tags) (we used version 2.6);
 
 ### Configuration files
@@ -16,6 +18,16 @@ Most important settings of data pre-processing, training and evaluation are defi
 * `01_ud_preprocessing.py` -- Converts gold standard UD corpus to EstNLTK's format: overwrites values of `lemma`, `upos`, `xpos` and `feats` with EstNLTK's automatic morphological analyses (from layers `morph_analysis` / `morph_extended` / `ud_morph_analysis`).  Alternatively, you can also skip the conversion altogether and just clean the gold standard files and copy to the experiments folder. Executes all sections starting with `preannotation_` and `copy_` in input configuration file. Example usage:
 
 	* `python  01_ud_preprocessing.py  confs/conf_edt_v26_Stanza_ME_full.ini`
+
+* `01b_extract_clauses.py` -- Splits sentences in CONLLU files into clauses (with EstNLTK's ClauseTagger). Cleans clauses (removes conjunctions and punctuation at the beginning and/or at the end of a clause), and exports cleaned clauses as CONLLU files. Executes all sections starting with `extract_clauses_` in input configuration file. This is a preprocessing step required by _syntax sketches knockout experiments_. Example usage:
+
+	* `python  01b_extract_clauses.py  confs/conf_edt_v26_Stanza_ME_sketches_knockout_5_groups.ini`
+
+* `01c_analyse_sketches.ipynb` -- computes sketches from the whole corpus and provides (descriptive) data analysis of sketches. Optional step in _syntax sketches knockout experiments_.
+
+* `01d_prepare_sketches.py` -- Creates frequency table of syntax sketches, and prepares datasets for sketches knockout experiments: removes clauses corresponding to sketches systematically from train, dev and test sets. Executes sections in the configuration starting with prefix `make_sketches_table_` and `prepare_knockout_`. This is a preprocessing step required by _syntax sketches knockout experiments_. Example usage: 
+
+	* `python  01d_prepare_sketches.py  confs/conf_edt_v26_Stanza_ME_sketches_knockout_5_groups.ini`
 
 * `02_split_data.py` -- Creates data splits (or joins) for model training and evaluation. Executes all sections starting with `split_` and `join_` in input configuration file. Example usage:
 
@@ -57,3 +69,5 @@ Note: configurations also contain overlapping parts, e.g. once you've run UD pre
 * [06_result_tables.ipynb](06_result_tables.ipynb) -- tables with the experiment results read from CSV files;
 
 * [07_smaller_data_exp_and_extrapolation.ipynb](07_smaller_data_exp_and_extrapolation.ipynb) -- draw figures about smaller data experiments (experiments where training set size is gradually increased) and extrapolate the results;
+
+* [08_results_sketches_knockout_5groups.ipynb](08_results_sketches_knockout_5groups.ipynb) -- results of the _syntax sketches knockout experiments_;
