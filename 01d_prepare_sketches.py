@@ -67,8 +67,100 @@ def prepare_sketches_main( conf_file ):
             # Compute sketches frequency TOP N and save into CSV file
             compute_sketches_freq_table( input_dir, top_n, output_csv_file, skip_files=skip_list, verbose=True )
         elif section.startswith('prepare_knockout_'):
-            # !! TODO 
-            pass
+            section_found = True
+            print(f'Performing {section} ...')
+            # Collect knockout preparation parameters
+            # input_dir -- contains train/dev/test conllu files with clauses
+            if not config.has_option(section, 'input_dir'):
+                raise ValueError(f'Error in {conf_file}: section {section!r} is missing "input_dir" parameter.')
+            input_dir = config[section]['input_dir']
+            if not os.path.isdir(input_dir):
+                raise FileNotFoundError(f'Error in {conf_file}: invalid "input_dir" value {input_dir!r} in {section!r}.')
+            # top_sketches_file -- CSV file containing top_n sketches (created via 'make_sketches_table_')
+            if not config.has_option(section, 'top_sketches_file'):
+                raise ValueError(f'Error in {conf_file}: section {section!r} is missing "top_sketches_file" parameter.')
+            top_sketches_file = config[section]['top_sketches_file']
+            if not os.path.isfile(top_sketches_file):
+                raise FileNotFoundError(f'Error in {conf_file}: invalid or missing "top_sketches_file" value '+\
+                                        f'{top_sketches_file!r} in {section!r}.')
+            # min_support -- the minimun number of clauses from top n sketches in test panel. 
+            # If test set does not contain at least min_support clauses of a sketch, then missing 
+            # number of clauses will be extracted and removed from the train set. 
+            min_support = config[section].getint('min_support', 50)
+            # random_groups -- distributes top_n_sketches randomly into random_groups bins, 
+            # and prepares knockout splits on groups instead of on all sketches. 
+            # If None (default), then prepares knockout splits on all top_n_sketches separately.
+            random_groups = config[section].getint('random_groups', None)
+            grouping_seed = config[section].getint('grouping_seed', 1)
+            top_sketches_grouped_file = config[section].get('top_sketches_grouped_file', None)
+            # create_control -- instead of preparing knockout data on top_n_sketches or corresponding groups, 
+            # pick same amounts of clauses randomly for control experiment.
+            create_control = config[section].getboolean('create_control', False)
+            create_control_seed = config[section].getint('create_control_seed', 5)
+            # initial_output_dir -- for saving test panel and pure train data
+            if not config.has_option(section, 'initial_output_dir'):
+                raise ValueError(f'Error in {conf_file}: section {section!r} is missing "initial_output_dir" parameter.')
+            initial_output_dir = config[section]['initial_output_dir']
+            initial_train_fname = config[section].get('initial_train_fname', 'train_pure.conllu')
+            initial_test_fname  = config[section].get('initial_test_fname', None)
+            # final_output_dir -- for saving knockout splits data
+            if not config.has_option(section, 'final_output_dir'):
+                raise ValueError(f'Error in {conf_file}: section {section!r} is missing "final_output_dir" parameter.')
+            final_output_dir = config[section]['final_output_dir']
+            # Load input data
+            whole_data_map = load_clauses_datasets(input_dir)
+            top_n_sketches = read_csv(top_sketches_file, index_col=0).values.tolist()
+            # Create output directories and required file names
+            if not os.path.exists(initial_output_dir):
+                os.makedirs(initial_output_dir, exist_ok=True)
+            if not os.path.exists(final_output_dir):
+                os.makedirs(final_output_dir, exist_ok=True)
+            if initial_test_fname is None:
+                initial_test_fname = f'test_{len(top_n_sketches)}x{min_support}.conllu'
+            initial_test_fname  = os.path.join(initial_output_dir, initial_test_fname)
+            initial_train_fname = os.path.join(initial_output_dir, initial_train_fname)
+            if random_groups is not None:
+                # ==================================
+                #  Knockout grouped top sketches 
+                # ==================================
+                if random_groups is not None and top_sketches_grouped_file is None:
+                    top_sketches_grouped_file = f'top_{len(top_n_sketches)}_sketches_{random_groups}_groups.csv'
+                    # Put top_sketches_grouped_file into same folder as top_sketches_file
+                    head, tail = os.path.split( top_sketches_file )
+                    if len(head) > 0:
+                        top_sketches_grouped_file = os.path.join( head, top_sketches_grouped_file )
+                # Group sketches
+                grouped_sketches = group_top_sketches_randomly(top_n_sketches, random_groups, top_sketches_grouped_file, 
+                                                               seed=grouping_seed)
+                # Create test panel and pure train
+                test_data, test_data_sketches = \
+                    create_test_panel_and_pure_train(top_n_sketches, whole_data_map, initial_test_fname, 
+                                                     initial_train_fname, min_support=min_support)
+                # Create knockout data 
+                control_removed = create_knockout_files_from_grouped_sketches(grouped_sketches, test_data_sketches, 
+                                                                              test_data, whole_data_map, final_output_dir,
+                                                                              dry_run=create_control)
+                if create_control:
+                    # Create randomized control data
+                    create_random_control_files_from_grouped_sketches(grouped_sketches, test_data_sketches, test_data, 
+                                                                      whole_data_map, control_removed, final_output_dir, 
+                                                                      seed=create_control_seed)
+            else:
+                # ==================================
+                #  Knockout all top sketches        
+                # ==================================
+                # Create test panel and pure train
+                test_data, test_data_sketches = \
+                    create_test_panel_and_pure_train(top_n_sketches, whole_data_map, initial_test_fname, 
+                                                     initial_train_fname, min_support=min_support)
+                # Create knockout data 
+                control_removed = create_knockout_files_from_sketches(test_data_sketches, test_data, whole_data_map, 
+                                                                      final_output_dir, dry_run=create_control)
+                if create_control:
+                    # Create randomized control data
+                    create_random_control_files_from_sketches(test_data_sketches, test_data, whole_data_map, 
+                                                              control_removed, final_output_dir, 
+                                                              seed=create_control_seed)
     if section_found:
         print(f'Total processing time: {datetime.now()-start}')
     else:
@@ -107,6 +199,9 @@ def load_clauses_datasets(input_dir:str, skip_files:List[str]=[], verbose:bool=T
     '''
     Loads train, dev and test datasets from conllu files in the input_dir.
     The input_dir must contain exactly one file of each type.
+    Assumes that all conllu files in the input_dir have been created via 
+    script "01b_extract_clauses.py", that is, they contain clauses instead 
+    of sentences. 
     Returns dictionary mapping keys {'train', 'dev', 'test'} to lists 
     [file_name, list_of_clause_conllu_strings, list_of_clause_dicts].
     '''
@@ -159,7 +254,7 @@ def create_test_panel_and_pure_train(top_sketches_list:List[Any], whole_data_map
                                      test_file:str, train_file:str, min_support:int=50, 
                                      verbose:bool=True) -> Tuple[List[str], List[List[str]]]:
     '''
-    Create a panel test set, extracting all occurrences of top_sketches_list from test set.
+    Creates a panel test set, extracting all occurrences of top_sketches_list from test set.
     If test set does not contain at least min_support (default: 50) clauses of a sketch, 
     then extracts and removes missing number of clauses from the train set. 
     Saves the panel test set into test_fname, and purified train set (that has no overlap 
@@ -169,7 +264,7 @@ def create_test_panel_and_pure_train(top_sketches_list:List[Any], whole_data_map
     c = 0
     test_data = []
     test_data_sketches = []
-    for sketch, support in top_sketches_list:
+    for sketch, support in sorted(top_sketches_list, key=lambda x:x[1], reverse=True):
         # Extract all sketches from the test set
         test_conllu = whole_data_map['test'][1]
         test_dicts  = whole_data_map['test'][2]
@@ -246,7 +341,7 @@ def group_top_sketches_randomly(top_sketches_list:List[Any], N:int, output_csv_f
 
 def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test_data_sketches:List[str], 
                                                 test_data:List[List[str]], whole_data_map:Dict[str,List[Any]], 
-                                                output_dir:str, verbose:bool=True) -> List[Tuple[int, int, int]]:
+                                                output_dir:str, dry_run:bool=False, verbose:bool=True) -> List[Tuple[int, int, int]]:
     '''
     Creates knockout train, dev and test files based on the grouped_sketches.
     For each sketch group, removes all clauses corresponding to sketches of the 
@@ -255,6 +350,9 @@ def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test
     Saves resulting files into output_dir, under names 'test_group{GID}.conllu',
     'train_group{GID}.conllu', 'dev_group{GID}.conllu', where GID is the index 
     of the sketch group.
+    If dry_run==True, then only emulates saving sketches into files, but does 
+    not write any actual files. Use this option if you want to collect removal 
+    statistics for preparation of control experiments.
     Returns tuple: 
     (sketch group index, no of clauses removed from train, no of clauses removed from dev)
     '''
@@ -275,7 +373,8 @@ def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test
                     print(sketch)
                 group_clauses.extend(test_conll)
         out_test_fname = f'test_group{gid}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_test_fname), group_clauses )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_test_fname), group_clauses )
         if verbose:
              print(f'  Saved {len(group_clauses)} test clauses into {out_test_fname}.')
         #
@@ -288,7 +387,8 @@ def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test
         preserved_conllu, preserved_dicts, removed_amount_dev = \
             remove_sketches_group(all_conllu, all_dicts, group)
         out_dev_fname = f'dev_group{gid}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_dev_fname), preserved_conllu )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_dev_fname), preserved_conllu )
         if verbose:
             print(f'  Removed {removed_amount_dev} clauses and saved remaining {len(preserved_conllu)} dev clauses into {out_dev_fname}.')
         #
@@ -304,7 +404,8 @@ def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test
         preserved_conllu, preserved_dicts, removed_amount_train = \
             remove_sketches_group(all_conllu, all_dicts, group)
         out_train_fname = f'train_group{gid}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_train_fname), preserved_conllu )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_train_fname), preserved_conllu )
         if verbose:
             print(f'  Removed {removed_amount_train} clauses and saved remaining {len(preserved_conllu)} train clauses into {out_train_fname}.')
         # Remember how much we removed (for control experiments)
@@ -387,7 +488,7 @@ def create_random_control_files_from_grouped_sketches(grouped_sketches:List[Any]
 
 def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:List[List[str]], 
                                         whole_data_map:Dict[str,List[Any]], output_dir:str, 
-                                        verbose:bool=True) -> List[Tuple[int, int, int]]:
+                                        dry_run:bool=False, verbose:bool=True) -> List[Tuple[int, int, int]]:
     '''
     Creates knockout train, dev and test files based for all test_data_sketches. 
     For sketch in test_data_sketches, removes its clauses from train and dev, and 
@@ -395,6 +496,9 @@ def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:
     Saves resulting files into output_dir, under names 'test_{SKETCH}.conllu',
     'train_{SKETCH}.conllu', 'dev_{SKETCH}.conllu', where SKETCH is the name 
     of the sketch (made safe via safe_sketch_name(...)).
+    If dry_run==True, then only emulates saving sketches into files, but does 
+    not write any actual files. Use this option if you want to collect removal 
+    statistics for preparation of control experiments.
     Returns tuple: 
     (sketch name, no of clauses removed from train, no of clauses removed from dev)
     '''
@@ -408,7 +512,8 @@ def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:
         # Subset for test
         #
         out_test_fname = f'test_{sketch_id}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_test_fname), test_conll )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_test_fname), test_conll )
         if verbose:
              print(f'  Saved {len(test_conll)} test clauses into {out_test_fname}.')
         #
@@ -421,7 +526,8 @@ def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:
         preserved_conllu, preserved_dicts, removed_amount_dev = \
             remove_sketches(all_conllu, all_dicts, sketch)
         out_dev_fname = f'dev_{sketch_id}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_dev_fname), preserved_conllu )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_dev_fname), preserved_conllu )
         if verbose:
             print(f'  Removed {removed_amount_dev} clauses and saved remaining {len(preserved_conllu)} dev clauses into {out_dev_fname}.')
         #
@@ -437,7 +543,8 @@ def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:
         preserved_conllu, preserved_dicts, removed_amount_train = \
             remove_sketches(all_conllu, all_dicts, sketch)
         out_train_fname = f'train_{sketch_id}.conllu'
-        write_conllu_file( os.path.join(output_dir, out_train_fname), preserved_conllu )
+        if not dry_run:
+            write_conllu_file( os.path.join(output_dir, out_train_fname), preserved_conllu )
         if verbose:
             print(f'  Removed {removed_amount_train} clauses and saved remaining {len(preserved_conllu)} train clauses into {out_train_fname}.')
         # Remember how much we removed (for control experiments)
