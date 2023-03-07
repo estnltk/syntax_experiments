@@ -3,6 +3,9 @@
 #    performs evaluations described in configuration 
 #    files: compares predicted files to gold standard 
 #    files and finds LAS/UAS scores.
+#    Depending on the configuration, can also calculate
+#    parsing errors decomposed via clause boundaries 
+#    (E1, E2, E3).
 #
 #    Supported settings:
 #       * full_data
@@ -10,6 +13,8 @@
 #       * crossvalidation
 #       * half_data
 #       * smaller_data
+#
+#    Requires EstNLTK version 1.7.2+.
 #
 
 import sys
@@ -20,6 +25,9 @@ import configparser
 import warnings
 
 import conllu
+
+from estnltk.converters.conll.conll_importer import conll_to_text
+from estnltk.converters.conll.conll_importer import add_layer_from_conll
 
 
 def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=True, round=True, count_words=False):
@@ -540,6 +548,153 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, pun
          'LA': la_match_count / total_words}
     if count_words:
         result['total_words'] = total_words
+    return result
+
+
+def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_empty_nodes=True,
+                     add_impact=True, add_rel_error=True, add_counts=True, format_string=None):
+    '''
+    Adds automatic clause annotations to the input text (via EstNLTK), and decomposes 
+    errors made by the system according to dependency misplacements inside or outside 
+    the clause. The following error types are distinguished:
+    
+    * E1 (local error): according to both gold standard and parser, the head of a word is 
+    inside the same clause but gold standard and parser do not agree on the exact word 
+    and/or deprel;
+    
+    * E2 (local-global error): according to gold standard, the head of a word is inside 
+    the same clause, but parser thinks it is outside of the clause;
+    
+    * E3 (global error): according to gold standard, the word's head is outside of the 
+    clause, and the parser got the head wrong (placed it either inside or outside the 
+    clause);
+    
+    Discards punctuation (tokens with xpos == 'Z', or alternatively, tokens appearing 
+    in given punct_tokens_set) from error calculations.
+    
+    Returns dictionary with calculated error counts ('E1', 'E2', 'E3'), and 
+    additional statistics (see parameters add_impact, add_rel_error and add_counts 
+    below for details).
+    
+    Requires EstNLTK version 1.7.2+.
+
+    Parameters
+    -----------
+    gold_file
+        CONLL-U format input file with gold standard syntax annotations
+    predicted_file
+        CONLL-U format input file with automatically predicted syntax annotations
+    punct_tokens_set
+        set with tokens that are considered as punctionation and that will be 
+        discarded from evaluation. Undefined by default.
+    remove_empty_nodes
+        If True (default), then null / empty nodes (of the enhanced representation) 
+        will be removed from input files (and discarded from calculations).
+    add_impact
+        If True (default), then calculates impacts and adds 'E1_impact', 'E2_impact', 
+        and 'E3_impact' to the returned dictionary. Impact is the percentage of the 
+        error from all errors. 
+    add_rel_error
+        If True (default), then calculates relative errors and adds 'E1_rel_error', 
+        'E2_rel_error', and 'E3_rel_error' to the returned dictionary. Relative error 
+        is the percentage from all arcs that can lead to given error type.
+    add_counts
+        If True (default), then adds token counts 'total_no_punct', 'correct', 
+        'gold_in_clause', 'gold_out_of_clause', 'total_words', 'punct', 
+        'unequal_length' to the returned dictionary.
+    format_string:
+        If `format_string` provided (not None), then uses it to reformat values of 
+        impacts and relative errors. For instance, if `format_string=':.4f'`, then 
+        impacts and relative errors will be rounded to 4 decimals.
+    '''
+    if punct_tokens_set is None:
+        punct_tokens_set = set()
+    # Load gold standard and automatic annotations into separate layers
+    text = conll_to_text(gold_file, syntax_layer='gold', remove_empty_nodes=remove_empty_nodes)
+    add_layer_from_conll(file=predicted_file, text=text, syntax_layer='parsed')
+    # Validate input sizes
+    assert len(text['gold']) == len(text['parsed']), \
+        f"(!) Mismatching input sizes: gold_words: {len(text['gold'])}, predicted_words: {len(text['parsed'])}"
+    # Add automatic clauses annotation
+    text.tag_layer('clauses')
+    # Count errors
+    punct = 0
+    e1 = 0
+    e2 = 0
+    e3 = 0
+    correct = 0
+    unequal_length = 0
+    total = 0
+    total_no_punct = 0
+    gold_in_clause = 0
+    gold_out_of_clause = 0
+    for idx, clause in enumerate(text.clauses):
+        wordforms = list(clause.gold.text)
+        gold_heads = list(clause.gold.head)
+        gold_deprel = list(clause.gold.deprel)
+        gold_pos = list(clause.gold.xpostag)
+        try:
+            parsed_heads = list(clause.parsed.head)
+            parsed_deprel = list(clause.parsed.deprel)
+        except AssertionError:
+            unequal_length += len(gold_heads)
+            total += len(gold_heads)
+            continue
+        in_clause_heads = list(clause.gold.id)
+        for wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in zip(wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
+            total += 1
+            if wordform in punct_tokens_set:
+                punct += 1
+                pass
+            elif pos == 'Z':
+                punct += 1
+                pass
+            else:
+                total_no_punct += 1
+                if gold_head in in_clause_heads:
+                    gold_in_clause += 1
+                    if gold_head == parsed_head and gold_dep == parsed_dep:
+                        correct += 1
+                    else:
+                        if parsed_head in in_clause_heads:
+                            # local error: misplaced dependency inside the clause
+                            e1 += 1
+                        else:
+                            # overarcing error:
+                            # misplaced dependency outside the clause, 
+                            # although it should be inside the clause
+                            e2 += 1
+                else:
+                    gold_out_of_clause += 1
+                    if gold_head == parsed_head and gold_dep == parsed_dep:
+                        correct += 1
+                    else:
+                        # global error: misplaced dependency which should be 
+                        # outside the clause
+                        e3 += 1
+    # Calculate impacts/relative errors and format results (if required)
+    result = {'E1': e1, 'E2': e2, 'E3': e3}
+    if add_impact:
+        result['E1_impact'] = e1/(total_no_punct-correct)
+        result['E2_impact'] = e2/(total_no_punct-correct)
+        result['E3_impact'] = e3/(total_no_punct-correct)
+    if add_rel_error:
+        result['E1_rel_error'] = e1/gold_in_clause
+        result['E2_rel_error'] = e2/gold_in_clause
+        result['E3_rel_error'] = e3/gold_out_of_clause
+    if add_counts:
+        result['total_no_punct'] = total_no_punct
+        result['correct'] = correct
+        result['gold_in_clause'] = gold_in_clause
+        result['gold_out_of_clause'] = gold_out_of_clause
+        result['total_words'] = total
+        result['punct'] = punct
+        result['unequal_length'] = unequal_length
+    if format_string is not None:
+        # Reformat impacts and relative errors
+        for k, v in result.items():
+            if k.endswith(('_impact', '_rel_error')):
+                result[k] = ('{'+format_string+'}').format(v)
     return result
 
 

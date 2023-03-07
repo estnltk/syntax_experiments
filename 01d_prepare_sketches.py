@@ -350,7 +350,7 @@ def create_knockout_files_from_grouped_sketches(grouped_sketches:List[Any], test
     Saves resulting files into output_dir, under names 'test_group{GID}.conllu',
     'train_group{GID}.conllu', 'dev_group{GID}.conllu', where GID is the index 
     of the sketch group.
-    If dry_run==True, then only emulates saving sketches into files, but does 
+    If dry_run==True, then only imitates saving sketches into files, but does 
     not write any actual files. Use this option if you want to collect removal 
     statistics for preparation of control experiments.
     Returns tuple: 
@@ -496,7 +496,7 @@ def create_knockout_files_from_sketches(test_data_sketches:List[str], test_data:
     Saves resulting files into output_dir, under names 'test_{SKETCH}.conllu',
     'train_{SKETCH}.conllu', 'dev_{SKETCH}.conllu', where SKETCH is the name 
     of the sketch (made safe via safe_sketch_name(...)).
-    If dry_run==True, then only emulates saving sketches into files, but does 
+    If dry_run==True, then only imitates saving sketches into files, but does 
     not write any actual files. Use this option if you want to collect removal 
     statistics for preparation of control experiments.
     Returns tuple: 
