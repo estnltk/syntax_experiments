@@ -2,10 +2,8 @@
 #    Looks through all experiment configurations, and 
 #    performs evaluations described in configuration 
 #    files: compares predicted files to gold standard 
-#    files and finds LAS/UAS scores.
-#    Depending on the configuration, can also calculate
-#    parsing errors decomposed via clause boundaries 
-#    (E1, E2, E3).
+#    files and finds LAS/UAS scores or different types
+#    of parsing errors (E1, E2, E3).
 #
 #    Supported settings:
 #       * full_data
@@ -41,6 +39,11 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
     Use parameter collected_results to overwrite the dictionary with your own (in order to 
     collect evaluation results over multiple configuration files). If parameter is None, a 
     new dictionary will be created. 
+    
+    A special case: if the evaluation counts different types of parsing errors (the 
+    configuration setting count_error_types=True), then the configuration must provide 
+    output_csv_file and results will be saved right away into the given csv file; 
+    in this case, nothing will be added to collected_results.
 
     Returns collected_results. 
 
@@ -68,46 +71,103 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
             experiment_type_clean = (experiment_type.strip()).lower()
             if experiment_type_clean not in ['full_data', 'crossvalidation', 'half_data', 'smaller_data', 'multi_experiment']:
                 raise ValueError('(!) Unexpected experiment_type value: {!r}'.format(experiment_type))
+            intermediate_results = []
+            output_csv_file = None
+            test_matrix = False
             if experiment_type_clean == 'full_data':
-                # ------------------------------------------
+                # --------------------------------------------------------------
                 # 'full_data'
-                # ------------------------------------------
-                # gold_train and gold_test with paths
-                if not config.has_option(section, 'gold_train'):
-                    raise ValueError(f'Error in {conf_file}: section {section!r} is missing "gold_train" parameter.')
-                gold_train = config[section]['gold_train']
+                # --------------------------------------------------------------
+                # ==============================================================
+                #  Full-data experiment evaluation modes:
+                #
+                #  Default mode:
+                #  * eval on train file, compute LAS and UAS (if not skip_train)
+                #  * eval on test file, compute LAS and UAS
+                #
+                #  Error types mode:
+                #  * eval on train file, count different types of errors (if not 
+                #    skip_train)
+                #  * eval on test file, count different types of errors
+                # ==============================================================
+                # gold_test and predicted_test with paths
                 if not config.has_option(section, 'gold_test'):
                     raise ValueError(f'Error in {conf_file}: section {section!r} is missing "gold_test" parameter.')
                 gold_test = config[section]['gold_test']
-                gold_train_exists = os.path.exists(gold_train)
-                gold_test_exists  = os.path.exists(gold_test)
-                # predicted_train and predicted_test with paths
-                if not config.has_option(section, 'predicted_train'):
-                    raise ValueError(f'Error in {conf_file}: section {section!r} is missing "predicted_train" parameter.')
-                predicted_train = config[section]['predicted_train']
+                gold_test_exists = os.path.exists(gold_test)
                 if not config.has_option(section, 'predicted_test'):
                     raise ValueError(f'Error in {conf_file}: section {section!r} is missing "predicted_test" parameter.')
                 predicted_test = config[section]['predicted_test']
-                predicted_train_exists = os.path.exists(predicted_train)
-                predicted_test_exists  = os.path.exists(predicted_test)
+                predicted_test_exists = os.path.exists(predicted_test)
+                # skip_train: do not evaluate on train files
+                skip_train = config[section].getboolean('skip_train', False)
+                # gold_train and predicted_train with paths
+                if skip_train:
+                    # ignore train files. empty values as placeholders
+                    gold_train = ''; gold_train_exists=True
+                    predicted_train = ''; predicted_train_exists=True
+                else:
+                    # validate that train files have been provided
+                    if not config.has_option(section, 'gold_train'):
+                        raise ValueError(f'Error in {conf_file}: section {section!r} is missing "gold_train" parameter.')
+                    gold_train = config[section]['gold_train']
+                    gold_train_exists = os.path.exists(gold_train)
+                    if not config.has_option(section, 'predicted_train'):
+                        raise ValueError(f'Error in {conf_file}: section {section!r} is missing "predicted_train" parameter.')
+                    predicted_train = config[section]['predicted_train']
+                    predicted_train_exists = os.path.exists(predicted_train)
+                # other parameters
+                error_types_mode = config[section].getboolean('count_error_types', False)
                 param_count_words = config[section].getboolean('count_words', count_words)
                 experiment_name = config[section].get('name', section)
                 punct_tokens_file = config[section].get('punct_tokens_file', None)
                 punct_tokens_set = load_punct_tokens( punct_tokens_file )  # Attempt to load from file. If None, return empty set
+                output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
+                if output_csv_file is None and error_types_mode:
+                    raise ValueError(f'Error in {conf_file} section {section!r}: '+\
+                                     f'count_error_types requires setting "output_csv_file" parameter.')
+                # Sanity check to avoid accidental confusion with 'multi_experiment'
+                if config.has_option(section, 'test_matrix') and config[section].getboolean('test_matrix', False):
+                    raise ValueError(f'Error in {conf_file}, section {section!r}: '+\
+                                     f'test_matrix option works only with experiment_type = multi_experiment.')
                 all_files_exist = gold_train_exists and gold_test_exists and \
                                   predicted_train_exists and predicted_test_exists
                 if all_files_exist:
                     format_string = ':.4f' if round else None
-                    results = score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
-                                                gold_path=None, predicted_path=None, format_string=format_string,
-                                                count_words=param_count_words, punct_tokens_set=punct_tokens_set )
-                    if verbose:
-                        print(results)
-                    # find experiment directory closest to root in experiment path
-                    exp_root = get_experiment_path_root(gold_test)
-                    if exp_root not in collected_results.keys():
-                        collected_results[exp_root] = dict()
-                    collected_results[exp_root][experiment_name] = results
+                    if not error_types_mode:
+                        #
+                        # Default eval mode (calculate LAS and UAS)
+                        #
+                        results = score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
+                                                    gold_path=None, predicted_path=None, format_string=format_string,
+                                                    count_words=param_count_words, skip_train=skip_train, 
+                                                    punct_tokens_set=punct_tokens_set )
+                        if verbose:
+                            print(results)
+                        # find experiment directory closest to root in experiment path
+                        exp_root = get_experiment_path_root(gold_test)
+                        if exp_root not in collected_results.keys():
+                            collected_results[exp_root] = dict()
+                        collected_results[exp_root][experiment_name] = results
+                        intermediate_results.append( (experiment_name, None, None, results) )
+                    else:
+                        #
+                        # Error types eval mode (count E1, E2, E3)
+                        #
+                        exp_name_raw = experiment_name if experiment_name.endswith('_') else experiment_name+'_'
+                        if not skip_train:
+                            train_errors = calculate_errors(gold_train, predicted_train, punct_tokens_set=punct_tokens_set, 
+                                                            remove_empty_nodes=True, add_counts=param_count_words, 
+                                                            format_string=format_string)
+                            if verbose:
+                                print(f'{exp_name_raw}on_train |', train_errors)
+                            intermediate_results.append( (f'{exp_name_raw}on_train', None, None, train_errors) )
+                        test_errors = calculate_errors(gold_test, predicted_test, punct_tokens_set=punct_tokens_set, 
+                                                       remove_empty_nodes=True, add_counts=param_count_words, 
+                                                       format_string=format_string)
+                        if verbose:
+                            print(f'{exp_name_raw}on_test |', test_errors)
+                        intermediate_results.append( (f'{exp_name_raw}on_test', None, None, test_errors) )
                 else:
                     missing_files = [f for f in [predicted_test, gold_test, predicted_train, gold_train] if not os.path.exists(f)]
                     if ignore_missing:
@@ -115,12 +175,23 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     else:
                         raise FileNotFoundError(f'(!) Cannot evaluate, missing evaluation files: {missing_files!r}')
             elif experiment_type_clean in ['crossvalidation', 'half_data', 'smaller_data', 'multi_experiment']:
-                # ------------------------------------------
+                # --------------------------------------------------------------
                 # 'multi_experiment' (general)
                 # 'crossvalidation'
                 # 'half_data'
                 # 'smaller_data'
-                # ------------------------------------------
+                # --------------------------------------------------------------
+                # ==============================================================
+                #  Multi-experiment evaluation modes (LAS, UAS):
+                #
+                #  Default mode:
+                #  * eval each model on its train file (if not skip_train)
+                #  * eval each model on its test file or on the global test file
+                #
+                #  Test matrix mode:
+                #  * eval each model on its train file (if not skip_train)
+                #  * eval each model on all test files
+                # ==============================================================
                 # gold_test and gold_splits_dir
                 if not config.has_option(section, 'gold_test'):
                     raise ValueError(f'Error in {conf_file}: section {section!r} is missing "gold_test" parameter.')
@@ -131,6 +202,11 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 gold_splits_dir = config[section]['gold_splits_dir']
                 if not config.has_option(section, 'predictions_dir'):
                     raise ValueError(f'Error in {conf_file}: section {section!r} is missing "predictions_dir" parameter.')
+                # Sanity check to avoid accidental confusion with 'full_data' experiments
+                error_types_mode = config[section].getboolean('count_error_types', False)
+                if error_types_mode:
+                    raise NotImplementedError(f'Error in {conf_file}, section {section!r}: '+\
+                                              f'count_error_types is not implemented for {experiment_type} evaluation.')
                 predictions_dir = config[section]['predictions_dir']
                 predictions_prefix = config[section].get('predictions_prefix', 'predicted_')
                 macro_average = config[section].getboolean('macro_average', False)
@@ -140,7 +216,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     experiment_name_prefix = experiment_name_prefix + '_'
                 punct_tokens_file = config[section].get('punct_tokens_file', None)
                 punct_tokens_set = load_punct_tokens( punct_tokens_file ) # Attempt to load from file. If None, return empty set
-                output_csv_file = config[section].get('output_csv_file', None) # Output eval results to csv file straight away
+                output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
                 # Patterns for capturing names of training sub-experiment files
                 train_file_pat = r'(?P<exp>\d+)_train_all.conllu'
                 # Override sub-experiment patterns (if required)
@@ -172,17 +248,6 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 test_matrix = config[section].getboolean('test_matrix', False)
                 if macro_average and test_matrix:
                     raise Exception('macro_average not implemented for test_matrix evaluation mode')
-                # ==============================================================
-                #  Evaluation modes:
-                #
-                #  Default mode:
-                #  * eval each model on its train file (if not skip_train)
-                #  * eval each model on its test file or on the global test file
-                #
-                #  Test matrix mode:
-                #  * eval each model on its train file (if not skip_train)
-                #  * eval each model on all test files
-                # ==============================================================
                 # Validate main paths
                 # Find out missing paths
                 paths_to_check = [predictions_dir, gold_splits_dir]
@@ -254,7 +319,6 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     # ==================================================
                     evaluations_done = 0
                     results_macro_avg = dict()
-                    intermediate_results = []
                     for cur_subexp in sorted( all_gold_test_files.keys() ):
                         current_gold_test = all_gold_test_files[cur_subexp]
                         gold_train = all_gold_train_files.get(cur_subexp, None)
@@ -352,47 +416,47 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                             print(exp_root, experiment_name, calculated_averages)
                         collected_results[exp_root][experiment_name] = calculated_averages
                         intermediate_results.append( (experiment_name, None, None, calculated_averages) )
-                    # ==================================================
-                    #  Output intermediate results (optional)
-                    # ==================================================
-                    if output_csv_file is not None and intermediate_results:
-                        print(f'Writing evaluation results into {output_csv_file} ...')
-                        with open(output_csv_file, 'w', encoding='utf-8', newline='') as output_csv:
-                            csv_writer = csv.writer(output_csv)
-                            if test_matrix:
-                                # Write matrix of results
-                                # rows: test sets, columns: models
-                                subexp_names = []
-                                for r in intermediate_results:
-                                    if r[1] not in subexp_names:
-                                        subexp_names.append(r[1])
-                                header = [''] + subexp_names
-                                csv_writer.writerow( header )
-                                values = []
-                                lines_written = 0
-                                for (full_exp_name, exp1, exp2, results) in intermediate_results:
-                                    if (exp1 is not None) and (exp2 is not None):
-                                        if not values:
-                                            values.append(exp1)
-                                        values.append(results['LAS_test'])
-                                        assert exp1 == values[0]
-                                        assert exp2 == subexp_names[len(values)-2]
-                                        if len(values) == len(subexp_names) + 1:
-                                            csv_writer.writerow( values )
-                                            lines_written += 1
-                                            values = []
-                                assert lines_written == len(subexp_names)
-                            else:
-                                # Write listing of results
-                                result_fields = list(intermediate_results[0][3].keys())
-                                header = ['experiment'] + result_fields
-                                csv_writer.writerow( header )
-                                for (full_exp_name, exp1, exp2, results) in intermediate_results:
-                                    values = [full_exp_name]
-                                    for key in header[1:]:
-                                        values.append( results[key] )
-                                    assert len(values) == len(header)
+            # ==================================================
+            #  Output intermediate results (optional)
+            # ==================================================
+            if output_csv_file is not None and intermediate_results:
+                print(f'Writing evaluation results into {output_csv_file} ...')
+                with open(output_csv_file, 'w', encoding='utf-8', newline='') as output_csv:
+                    csv_writer = csv.writer(output_csv)
+                    if test_matrix:
+                        # Write matrix of results
+                        # rows: test sets, columns: models
+                        subexp_names = []
+                        for r in intermediate_results:
+                            if r[1] not in subexp_names:
+                                subexp_names.append(r[1])
+                        header = [''] + subexp_names
+                        csv_writer.writerow( header )
+                        values = []
+                        lines_written = 0
+                        for (full_exp_name, exp1, exp2, results) in intermediate_results:
+                            if (exp1 is not None) and (exp2 is not None):
+                                if not values:
+                                    values.append(exp1)
+                                values.append(results['LAS_test'])
+                                assert exp1 == values[0]
+                                assert exp2 == subexp_names[len(values)-2]
+                                if len(values) == len(subexp_names) + 1:
                                     csv_writer.writerow( values )
+                                    lines_written += 1
+                                    values = []
+                        assert lines_written == len(subexp_names)
+                    else:
+                        # Write listing of results
+                        result_fields = list(intermediate_results[0][3].keys())
+                        header = ['experiment'] + result_fields
+                        csv_writer.writerow( header )
+                        for (full_exp_name, exp1, exp2, results) in intermediate_results:
+                            values = [full_exp_name]
+                            for key in header[1:]:
+                                values.append( results[key] )
+                            assert len(values) == len(header)
+                            csv_writer.writerow( values )
     return collected_results
 
 
@@ -602,7 +666,7 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
         If True (default), then adds token counts 'total_no_punct', 'correct', 
         'gold_in_clause', 'gold_out_of_clause', 'total_words', 'punct', 
         'unequal_length' to the returned dictionary.
-    format_string:
+    format_string
         If `format_string` provided (not None), then uses it to reformat values of 
         impacts and relative errors. For instance, if `format_string=':.4f'`, then 
         impacts and relative errors will be rounded to 4 decimals.

@@ -11,7 +11,7 @@
 
 ### Configuration files
 
-Most important settings of data pre-processing, training and evaluation are defined in configuration INI files. You can find these files in [confs](confs/) folder. In order to run a processing step, pass name of an INI file as an input to the script.
+Most important settings of data pre-processing, training and evaluation are defined in configuration INI files. You can find these files in [confs](confs/) folder. In order to run a processing step, pass name of an INI file as an argument to the script.
 
 ### Processing steps (scripts)
 
