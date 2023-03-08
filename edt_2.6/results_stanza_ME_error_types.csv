@@ -1,0 +1,2 @@
+experiment,E1,E2,E3,E1_impact,E2_impact,E3_impact,E1_rel_error,E2_rel_error,E3_rel_error,total_no_punct,correct,gold_in_clause,gold_out_of_clause,total_words,punct,unequal_length
+stanza_ME_error_types_on_test,4821,398,1162,0.7555,0.0624,0.1821,0.1413,0.0117,0.1733,40815,34434,34108,6707,48491,7676,0
