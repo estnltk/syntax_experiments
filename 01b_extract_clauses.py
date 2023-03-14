@@ -87,6 +87,9 @@ def extract_clauses( conf_file ):
                         output_file.write(export_cleaned_clause(cleaned_clause))
                         valid_clauses += 1
                     
+                    # Add final empty line (to avoid UDError: The CoNLL-U file does not end with empty line)
+                    output_file.write('\n\n')
+                    
                     print('Valid clauses:   {}'.format(valid_clauses))
                     print('Invalid clauses: {} (missing root)'.format(invalid_clauses))
                     output_file.close()

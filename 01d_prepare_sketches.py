@@ -112,7 +112,7 @@ def prepare_sketches_main( conf_file ):
                 skip_list = skip_list.split(',')
                 skip_list = [fname.strip() for fname in skip_list]
             # Load input data
-            whole_data_map = load_clauses_datasets(input_dir, skip_list=skip_list)
+            whole_data_map = load_clauses_datasets(input_dir, skip_files=skip_list)
             top_n_sketches = read_csv(top_sketches_file, index_col=0).values.tolist()
             # Create output directories and required file names
             if not os.path.exists(initial_output_dir):
