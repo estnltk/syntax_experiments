@@ -239,7 +239,7 @@ def modify_directory( in_dir, out_dir, gap_experiments, conll_file_pat=None, ski
     print(f'Total time elapsed: {datetime.now()-start_time}')
 
 
-def load_cg_list( in_file='visl_lemmas.txt', clean_lemmas=True, return_set=True ):
+def load_cg_list( in_file='background_data/visl_lemmas.txt', clean_lemmas=True, return_set=True ):
     '''
     Loads list of lemmas that were used in the EstCG syntax from in_file.
     Cleans the list: removes lemmas that are likely regular expression patterns, 
@@ -250,7 +250,7 @@ def load_cg_list( in_file='visl_lemmas.txt', clean_lemmas=True, return_set=True 
         raise FileNotFoundError(f'(!) Unable to find cg list file {in_file!r}')
     visl_regexes = []
     visl_lemmas_clean = []
-    with open('visl_lemmas.txt', 'r', encoding='utf-8') as fin:
+    with open(in_file, 'r', encoding='utf-8') as fin:
         lemmas_raw_all = fin.readlines()
         lemmas_raw = [l.strip() for l in lemmas_raw_all]
         for l in lemmas_raw:
