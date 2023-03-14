@@ -173,7 +173,7 @@ def safe_sketch_name(sketch_name: str) -> str:
 #   Compute sketches for the whole corpus
 # =====================================================
 
-def compute_sketches(input_dir:str, skip_files:List[str]=[], verbose:bool=True) -> Tuple[List[str], int]:
+def compute_sketches(input_dir:str, skip_files:List[str]=['train_full.conllu'], verbose:bool=True) -> Tuple[List[str], int]:
     '''
     Loads clauses from conllu files in the input_dir and computes syntax sketches
     for all clauses that have a single root.

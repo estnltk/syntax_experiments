@@ -60,7 +60,7 @@ def prepare_sketches_main( conf_file ):
                 raise ValueError(f'Error in {conf_file}: section {section!r} is missing "output_csv_file" parameter.')
             output_csv_file = config[section]['output_csv_file']
             top_n = config[section].getint('top_n', 50)
-            skip_list = config[section].get('skip_list', [])
+            skip_list = config[section].get('skip_list', 'train_full.conllu')
             if len(skip_list) > 0:
                 skip_list = skip_list.split(',')
                 skip_list = [fname.strip() for fname in skip_list]
@@ -107,8 +107,12 @@ def prepare_sketches_main( conf_file ):
             if not config.has_option(section, 'final_output_dir'):
                 raise ValueError(f'Error in {conf_file}: section {section!r} is missing "final_output_dir" parameter.')
             final_output_dir = config[section]['final_output_dir']
+            skip_list = config[section].get('skip_list', 'train_full.conllu')
+            if len(skip_list) > 0:
+                skip_list = skip_list.split(',')
+                skip_list = [fname.strip() for fname in skip_list]
             # Load input data
-            whole_data_map = load_clauses_datasets(input_dir)
+            whole_data_map = load_clauses_datasets(input_dir, skip_list=skip_list)
             top_n_sketches = read_csv(top_sketches_file, index_col=0).values.tolist()
             # Create output directories and required file names
             if not os.path.exists(initial_output_dir):
