@@ -615,8 +615,9 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, pun
     return result
 
 
-def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_empty_nodes=True,
-                     add_impact=True, add_rel_error=True, add_counts=True, format_string=None):
+def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_empty_nodes=True, 
+                     add_impact=True, add_rel_error=True, add_counts=True, root_outside_clause=True, 
+                     format_string=None):
     '''
     Adds automatic clause annotations to the input text (via EstNLTK), and decomposes 
     errors made by the system according to dependency misplacements inside or outside 
@@ -635,6 +636,11 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
     
     Discards punctuation (tokens with xpos == 'Z', or alternatively, tokens appearing 
     in given punct_tokens_set) from error calculations.
+    
+    Note: by default, root nodes (words with head==0) are always considered as being 
+    "outside the clause". Use flag root_outside_clause=False to count root nodes as 
+    being "inside the clause" (this will increase E1 errors while decreasing E2 and E3 
+    errors).
     
     Returns dictionary with calculated error counts ('E1', 'E2', 'E3'), and 
     additional statistics (see parameters add_impact, add_rel_error and add_counts 
@@ -666,6 +672,10 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
         If True (default), then adds token counts 'total_no_punct', 'correct', 
         'gold_in_clause', 'gold_out_of_clause', 'total_words', 'punct', 
         'unequal_length' to the returned dictionary.
+    root_outside_clause:
+        If True (default), then root nodes (words with head==0) are always considered 
+        as being "outside the clause". Otherwise, root nodes are considered as being 
+        "inside the clause".
     format_string
         If `format_string` provided (not None), then uses it to reformat values of 
         impacts and relative errors. For instance, if `format_string=':.4f'`, then 
@@ -705,6 +715,13 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
             total += len(gold_heads)
             continue
         in_clause_heads = list(clause.gold.id)
+        if not root_outside_clause:
+            # Count root node as being "inside 
+            # the clause" rather than "outside 
+            # the clause" (which is default).
+            # This shifts error distribution
+            # from E2 & E3 to E1.
+            in_clause_heads.append( 0 )
         for wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in zip(wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
             total += 1
             if wordform in punct_tokens_set:
@@ -734,7 +751,8 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
                         correct += 1
                     else:
                         # global error: misplaced dependency which should be 
-                        # outside the clause
+                        # outside the clause (but was placed incorrectly
+                        # inside or outside the clause)
                         e3 += 1
     # Calculate impacts/relative errors and format results (if required)
     result = {'E1': e1, 'E2': e2, 'E3': e3}
