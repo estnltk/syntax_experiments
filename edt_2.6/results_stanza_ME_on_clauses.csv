@@ -1,0 +1,2 @@
+experiment,LAS_test,LAS_train,LAS_gap,UAS_test,UAS_train
+eval_stanza_morph_extended_on_clauses,0.8644,0.9307,0.0663,0.8954,0.9507
