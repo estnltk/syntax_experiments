@@ -70,4 +70,4 @@ Note: configurations also contain overlapping parts, e.g. once you've run UD pre
 
 * [07_smaller_data_exp_and_extrapolation.ipynb](07_smaller_data_exp_and_extrapolation.ipynb) -- draw figures about smaller data experiments (experiments where training set size is gradually increased) and extrapolate the results;
 
-* [08_results_sketches_knockout_5groups.ipynb](08_results_sketches_knockout_5groups.ipynb) -- results of the _syntax sketches knockout experiments_;
+* [08_results_sketches_knockout_5groups.ipynb](08_results_sketches_knockout_5groups.ipynb) -- results of the _clauses experiment_ and _syntax sketches knockout experiments_;
