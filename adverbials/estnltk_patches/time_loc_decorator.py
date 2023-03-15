@@ -13,8 +13,8 @@ class TimeLocDecorator:
         self.wn = Wordnet()
         time_lemmas_path = '{}/time_lemmas.csv'.format(os.path.dirname(os.path.abspath(__file__)))
         self.time_lemmas = pd.read_csv(time_lemmas_path, encoding="UTF8")
-        #loc_lemmas_path = '{}/loc_lemmas.csv'.format(os.path.dirname(os.path.abspath(__file__)))
-        #self.loc_lemmas = pd.read_csv(loc_lemmas_path, encoding="UTF8")
+        loc_lemmas_path = '{}/loc_lemmas.csv'.format(os.path.dirname(os.path.abspath(__file__)))
+        self.loc_lemmas = pd.read_csv(loc_lemmas_path, encoding="UTF8")
         self.loc_form = ['sg ill', 'sg in', 'sg el', 'sg all', 'sg ad', 'sg abl',
                          'pl ill', 'pl in', 'pl el', 'pl all', 'pl ad', 'pl abl']
         self.loc_wn = ["piirkond", "koht", "äritegevuskoht", "maa", "asula", "tegevusala",
@@ -43,12 +43,11 @@ class TimeLocDecorator:
                 "obl_type": obl_type})
             return annotations
 
-        # Uncomment if file with LOC lemmas is ready
-        '''if obl_form in self.loc_form and obl_lemma in self.loc_lemmas:
+        if obl_form in self.loc_form and obl_lemma in self.loc_lemmas:
             obl_type = "LOC"
             annotations.update({
                 "obl_type": obl_type})
-            return annotations'''
+            return annotations
 
         synsets = self.wn[obl_lemma]
         if len(synsets) == 1:
