@@ -79,15 +79,23 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 if not config.has_option(section, 'output_dir'):
                     raise ValueError(f'Error in {conf_file}: section {section!r} is missing "output_dir" parameter.')
                 output_dir = config[section]['output_dir']
-                # use_estnltk=True and use_ensemble=False -- run model with estnltk's preprocessing and StanzaSyntaxTagger;
-                # use_estnltk=True and use_ensemble=True  -- run model with estnltk's preprocessing and StanzaSyntaxEnsembleTagger;
-                # use_estnltk=False                       -- run model on input feats loaded from conllu file;
+                # 1) use_estnltk=True and use_ensemble=False -- run model with estnltk's preprocessing and StanzaSyntaxTagger;
+                # 2) use_estnltk=True and use_ensemble=True  -- run model with estnltk's preprocessing and StanzaSyntaxEnsembleTagger
+                #     and use_majority_voting=False             (with aggregation_algorithm="las_coherence");
+                # 3) use_estnltk=True and use_ensemble=True  -- run model with estnltk's preprocessing and StanzaSyntaxEnsembleTagger
+                #     and use_majority_voting=True              (with aggregation_algorithm="majority_voting");
+                # 4) use_estnltk=False                       -- run model on input feats loaded from conllu file;
                 use_estnltk  = config[section].getboolean('use_estnltk', False)
                 use_ensemble = config[section].getboolean('use_ensemble', False)
+                use_majority_voting = config[section].getboolean('use_majority_voting', False)
                 if use_ensemble and not use_estnltk:
                     raise ValueError(f'Error in {conf_file}: section {section!r} conflicting '+\
                                      'configuration use_estnltk=False and use_ensemble=True. '+\
                                      'Cannot use ensemble tagger without estnltk.' )
+                if use_majority_voting and not use_ensemble:
+                    raise ValueError(f'Error in {conf_file}: section {section!r} conflicting '+\
+                                     'configuration use_ensemble=False and use_majority_voting=True. '+\
+                                     'Cannot use majority_voting without ensemble.' )
                 default_tagger_path = 'estnltk_neural.taggers.StanzaSyntaxTagger' if not use_ensemble else \
                                       'estnltk_neural.taggers.StanzaSyntaxEnsembleTagger'
                 tagger_path = config[section].get('tagger_path', default_tagger_path)
@@ -142,6 +150,7 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                             # run StanzaSyntaxEnsembleTagger
                             predict_with_stanza_ensemble_tagger(train_file, morph_layer, model_files, train_output, 
                                                                 tagger_path=tagger_path, seed=seed, lang=lang, 
+                                                                use_majority_voting=use_majority_voting, 
                                                                 use_gpu=use_gpu, scores_seed=scores_seed)
                     else:
                         # run vanilla stanza
@@ -161,6 +170,7 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                             # run StanzaSyntaxEnsembleTagger
                             predict_with_stanza_ensemble_tagger(test_file, morph_layer, model_files, test_output, 
                                                                 tagger_path=tagger_path, seed=seed, lang=lang, 
+                                                                use_majority_voting=use_majority_voting, 
                                                                 use_gpu=use_gpu, scores_seed=scores_seed)
                     else:
                         # run vanilla stanza
@@ -611,7 +621,8 @@ def predict_with_stanza_tagger(input_path, morph_layer, model_path, output_path,
 
 def predict_with_stanza_ensemble_tagger(input_path, morph_layer, model_paths, output_path, 
                                         tagger_path='estnltk_neural.taggers.StanzaSyntaxEnsembleTagger', 
-                                        seed=None, scores_seed=None, lang='et', use_gpu=False, verbose=True):
+                                        seed=None, scores_seed=None, use_majority_voting=False, 
+                                        lang='et', use_gpu=False, verbose=True):
     '''
     Applies estnltk's StanzaSyntaxEnsembleTagger on given input CONLLU file to get depparse predictions. 
     Uses estnltk's preprocessing to load and re-annotate document (adds morph_layer). 
@@ -630,9 +641,12 @@ def predict_with_stanza_ensemble_tagger(input_path, morph_layer, model_paths, ou
     :param tagger_path: full import path of StanzaSyntaxEnsembleTagger
     :param seed:        seed of the random process creating unambiguous morph analysis layer
     :param scores_seed: seed of the random process picking one parse from multiple parses with max score
+    :param use_majority_voting: whether StanzaSyntaxEnsembleTagger should use 'majority_voting' as the 
+                                aggregation algorithm
     '''
     tagger_loader = \
         create_stanza_ensemble_tagger_loader( tagger_path, model_paths, morph_layer, 
+                                              use_majority_voting=use_majority_voting, 
                                               use_gpu=use_gpu, seed=seed, scores_seed=scores_seed )
     tagger = tagger_loader.tagger  # Load tagger
     if verbose:
@@ -663,7 +677,8 @@ def create_stanza_tagger_loader( tagger_path, model_path, input_morph_layer, use
                          output_attributes=('id', 'lemma', 'upostag', 'xpostag', 'feats', 'head', 'deprel', 'deps', 'misc'),
                          parameters=parameters )
                                       
-def create_stanza_ensemble_tagger_loader( tagger_path, model_paths, input_morph_layer, use_gpu=False, seed=None, scores_seed=None ):
+def create_stanza_ensemble_tagger_loader( tagger_path, model_paths, input_morph_layer, use_majority_voting=False, 
+                                          use_gpu=False, seed=None, scores_seed=None ):
     '''Creates estnltk's TaggerLoader for customized importing of StanzaSyntaxEnsembleTagger.'''
     from estnltk_core.taggers import TaggerLoader
     parameters={ 'input_morph_layer': input_morph_layer, 
@@ -673,6 +688,8 @@ def create_stanza_ensemble_tagger_loader( tagger_path, model_paths, input_morph_
         parameters['random_pick_seed'] = seed
     if isinstance(scores_seed, int):
         parameters['random_pick_max_score_seed'] = scores_seed
+    if use_majority_voting:
+        parameters['aggregation_algorithm'] = 'majority_voting'
     return TaggerLoader( 'stanza_ensemble_syntax', 
                          ['sentences', input_morph_layer, 'words'], 
                          tagger_path, 
