@@ -120,6 +120,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 error_types_mode = config[section].getboolean('count_error_types', False)
                 param_count_words = config[section].getboolean('count_words', count_words)
                 experiment_name = config[section].get('name', section)
+                exclude_punct = config[section].getboolean('exclude_punct', False)
                 punct_tokens_file = config[section].get('punct_tokens_file', None)
                 punct_tokens_set = load_punct_tokens( punct_tokens_file )  # Attempt to load from file. If None, return empty set
                 output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
@@ -141,7 +142,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                         results = score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                                                     gold_path=None, predicted_path=None, format_string=format_string,
                                                     count_words=param_count_words, skip_train=skip_train, 
-                                                    punct_tokens_set=punct_tokens_set )
+                                                    exclude_punct=exclude_punct, punct_tokens_set=punct_tokens_set )
                         if verbose:
                             print(results)
                         # find experiment directory closest to root in experiment path
@@ -214,6 +215,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 experiment_name_prefix = config[section].get('name_prefix', section)
                 if not experiment_name_prefix.endswith('_'):
                     experiment_name_prefix = experiment_name_prefix + '_'
+                exclude_punct = config[section].getboolean('exclude_punct', False)
                 punct_tokens_file = config[section].get('punct_tokens_file', None)
                 punct_tokens_set = load_punct_tokens( punct_tokens_file ) # Attempt to load from file. If None, return empty set
                 output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
@@ -361,6 +363,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                                                             format_string=None,
                                                             count_words=param_count_words,
                                                             skip_train=skip_train, 
+                                                            exclude_punct=exclude_punct, 
                                                             punct_tokens_set=punct_tokens_set )
                                 if macro_average:
                                     # Collect macro averages
@@ -490,7 +493,8 @@ def load_punct_tokens( fname ):
 
 def score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                       gold_path=None, predicted_path=None, format_string=None,
-                      skip_train=False, count_words=False, punct_tokens_set=None ):
+                      skip_train=False, count_words=False, exclude_punct=False, 
+                      punct_tokens_set=None ):
     '''
     Calculates train and test LAS/UAS scores and gaps between train and test LAS 
     using given predicted and gold standard conllu files. 
@@ -529,15 +533,17 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
     test_scores = calculate_scores(input_files['gold_test'], 
                                    input_files['predicted_test'],
                                    count_words=count_words,
+                                   exclude_punct=exclude_punct,
                                    punct_tokens_set=punct_tokens_set)
     if skip_train:
         train_scores = None
         results_dict = {'LAS_test' : test_scores['LAS'], 
-                        'UAS_test' : test_scores['UAS'] }
+                        'UAS_test' : test_scores['UAS']}
     else:
         train_scores = calculate_scores(input_files['gold_train'], 
                                         input_files['predicted_train'],
                                         count_words=count_words,
+                                        exclude_punct=exclude_punct,
                                         punct_tokens_set=punct_tokens_set)
         results_dict = {'LAS_test' : test_scores['LAS'], 
                         'LAS_train' : train_scores['LAS'], 
@@ -554,14 +560,22 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
     return results_dict
 
 
-def calculate_scores(gold_path: str, predicted_path: str, count_words=False, punct_tokens_set=None):
+def calculate_scores(gold_path: str, predicted_path: str, count_words=False, exclude_punct=False, punct_tokens_set=None):
     '''
     Calculates LAS, UAS and LA scores based on gold annotations and predicted annotations 
     loaded from conllu files `gold_path` and `predicted_path`. 
-    Discards punctuation (tokens with xpos == 'Z', or alternatively, tokens appearing in given 
-    punct_tokens_set) and null nodes (tokens with non-integer id-s) from calculations.
+    Assumes that there are no tokenization differences in the gold and predicted outputs. 
+    If exclude_punct==True, then discards punctuation (tokens with xpos == 'Z', or alternatively, 
+    tokens appearing in given punct_tokens_set) from calculations.
+    Always discards null nodes (tokens with non-integer id-s) from calculations.
     Returns dictionary with scores (keys: "LAS", "UAS", "LA").
     If `count_words=True`, then adds evaluation word count (key 'total_words') to the results.
+    
+    Note: if exclude_punct==False, then the LAS calculated here is compatible with the LAS.f1 
+    calculated in CoNLL 2018 Shared Task. But there's one exception: in the CoNLL 2018 evaluation, 
+    language-specific deprel subtypes are truncated (e.g. 'acl:relcl' is reduced to 'acl' in 
+    both predicted and gold), but we compare deprels as they are. As a result, CoNLL 2018 
+    evaluation can give higher scores than this method.
     '''
     # Load annotated texts from conllu files
     gold_sents = None
@@ -580,17 +594,23 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, pun
 
     for i, gold_sentence in enumerate(gold_sents):
         predicted_sentece = predicted_sents[i]
+        gold_sentence_words = [w['form'] for w in gold_sentence]
+        auto_sentence_words = [w['form'] for w in predicted_sentece]
+        assert gold_sentence_words == auto_sentence_words, \
+            f'Tokenization mismatch in {predicted_path!r} | {gold_sentence_words} vs {auto_sentence_words}'
         word_tracker = 0
         for gold_word in gold_sentence:
             if not isinstance(gold_word['id'], int):
                 continue
-            if punct_tokens_set is not None:
-                if gold_word['form'] in punct_tokens_set:
+            if exclude_punct:
+                # Exclude punctuation from evaluation
+                if punct_tokens_set is not None:
+                    if gold_word['form'] in punct_tokens_set:
+                        word_tracker += 1
+                        continue
+                if gold_word['xpos'] == 'Z':
                     word_tracker += 1
                     continue
-            if gold_word['xpos'] == 'Z':
-                word_tracker += 1
-                continue
 
             total_words += 1
 
