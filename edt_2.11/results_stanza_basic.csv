@@ -1,2 +1,2 @@
 experiment,LAS_test,LAS_train,LAS_gap,UAS_test,UAS_train
-eval_stanza_morph_extended_full_data,0.8442,0.9200,0.0758,0.8786,0.9418
+eval_stanza_morph_extended_full_data,0.8484,0.9247,0.0764,0.8775,0.9430
