@@ -572,10 +572,10 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, exc
     If `count_words=True`, then adds evaluation word count (key 'total_words') to the results.
     
     Note: if exclude_punct==False, then the LAS calculated here is compatible with the LAS.f1 
-    calculated in CoNLL 2018 Shared Task. But there's one exception: in the CoNLL 2018 evaluation, 
-    language-specific deprel subtypes are truncated (e.g. 'acl:relcl' is reduced to 'acl' in 
-    both predicted and gold), but we compare deprels as they are. As a result, CoNLL 2018 
-    evaluation can give higher scores than this method.
+    calculated in CoNLL 2018 Shared Task. However, there's an exception: in the CoNLL 2018 
+    evaluation, language-specific deprel subtypes are truncated (e.g. 'acl:relcl' is reduced 
+    to 'acl' in both predicted and gold), but we compare deprels as they are. As a result, 
+    CoNLL 2018 evaluation can give higher scores than this method.
     '''
     # Load annotated texts from conllu files
     gold_sents = None
