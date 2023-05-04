@@ -19,6 +19,7 @@ import sys
 import csv, re
 import os, os.path
 from statistics import mean
+import random
 import configparser
 import warnings
 
@@ -54,8 +55,8 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
     :param verbose: if True, then scores will be output to screen immediately after calculation.
     :param round: if True, then rounds scores to 4 decimals; otherwise collects unrounded scores.
     :param count_words: if True, then reports evaluation word counts (under keys 'train_words' 
-           and 'test_words'). Note that evaluation excludes punctuation and null nodes from 
-           scoring.
+           and 'test_words'). Note that evaluation excludes null nodes from scoring (optionally,
+           punctuation can also be excluded by setting exclude_punct=True in conf_file).
     '''
     if collected_results is None:
         collected_results = dict()
@@ -124,6 +125,16 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 punct_tokens_file = config[section].get('punct_tokens_file', None)
                 punct_tokens_set = load_punct_tokens( punct_tokens_file )  # Attempt to load from file. If None, return empty set
                 output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
+                error_sample_size = config[section].getint('error_sample_size', 100)
+                output_train_error_sample_file = config[section].get('output_train_error_sample_file', None)
+                output_test_error_sample_file = config[section].get('output_test_error_sample_file', None)
+                if not error_types_mode:
+                    if output_train_error_sample_file is not None:
+                        raise ValueError(f'Error in {conf_file}, section {section!r}: error sampling (output_train_error_sample_file) '+\
+                                          'only works with option count_error_types=True.')
+                    if output_test_error_sample_file is not None:
+                        raise ValueError(f'Error in {conf_file}, section {section!r}: error sampling (output_test_error_sample_file) '+\
+                                          'only works with option count_error_types=True.')
                 if output_csv_file is None and error_types_mode:
                     raise ValueError(f'Error in {conf_file} section {section!r}: '+\
                                      f'count_error_types requires setting "output_csv_file" parameter.')
@@ -159,13 +170,15 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                         if not skip_train:
                             train_errors = calculate_errors(gold_train, predicted_train, punct_tokens_set=punct_tokens_set, 
                                                             remove_empty_nodes=True, add_counts=param_count_words, 
-                                                            format_string=format_string)
+                                                            format_string=format_string, error_sample_size=error_sample_size, 
+                                                            error_sample_output_file=output_train_error_sample_file)
                             if verbose:
                                 print(f'{exp_name_raw}on_train |', train_errors)
                             intermediate_results.append( (f'{exp_name_raw}on_train', None, None, train_errors) )
                         test_errors = calculate_errors(gold_test, predicted_test, punct_tokens_set=punct_tokens_set, 
                                                        remove_empty_nodes=True, add_counts=param_count_words, 
-                                                       format_string=format_string)
+                                                       format_string=format_string, error_sample_size=error_sample_size, 
+                                                       error_sample_output_file=output_test_error_sample_file)
                         if verbose:
                             print(f'{exp_name_raw}on_test |', test_errors)
                         intermediate_results.append( (f'{exp_name_raw}on_test', None, None, test_errors) )
@@ -637,7 +650,7 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, exc
 
 def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_empty_nodes=True, 
                      add_impact=True, add_rel_error=True, add_counts=True, root_outside_clause=True, 
-                     format_string=None):
+                     format_string=None, error_sample_size=None, error_sample_output_file=None):
     '''
     Adds automatic clause annotations to the input text (via EstNLTK), and decomposes 
     errors made by the system according to dependency misplacements inside or outside 
@@ -691,7 +704,8 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
     add_counts
         If True (default), then adds token counts 'total_no_punct', 'correct', 
         'gold_in_clause', 'gold_out_of_clause', 'total_words', 'punct', 
-        'unequal_length' to the returned dictionary.
+        'unequal_length' 'E1_missed_root', 'E2_missed_root', 'E3_missed_root' 
+        to the returned dictionary.
     root_outside_clause:
         If True (default), then root nodes (words with head==0) are always considered 
         as being "outside the clause". Otherwise, root nodes are considered as being 
@@ -700,6 +714,14 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
         If `format_string` provided (not None), then uses it to reformat values of 
         impacts and relative errors. For instance, if `format_string=':.4f'`, then 
         impacts and relative errors will be rounded to 4 decimals.
+    error_sample_size
+        Optional. The number of erroneously parsed sentences to be randomly extracted 
+        and saved into error_sample_output_file.
+        Only applies if both error_sample_size and error_sample_output_file are defined.
+    error_sample_output_file
+        Optional. A path to a output file into which randomly extracted erroneously 
+        parsed sentences will be saved.
+        Only applies if both error_sample_size and error_sample_output_file are defined.
     '''
     if punct_tokens_set is None:
         punct_tokens_set = set()
@@ -722,11 +744,17 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
     total_no_punct = 0
     gold_in_clause = 0
     gold_out_of_clause = 0
+    e1_missed_root = 0
+    e2_missed_root = 0
+    e3_missed_root = 0
+    error_locations = {'E1':[], 'E2':[], 'E3': []}
     for idx, clause in enumerate(text.clauses):
         wordforms = list(clause.gold.text)
         gold_heads = list(clause.gold.head)
         gold_deprel = list(clause.gold.deprel)
         gold_pos = list(clause.gold.xpostag)
+        gold_word_loc = list(clause.base_span)
+        assert len(gold_word_loc) == len(wordforms)
         try:
             parsed_heads = list(clause.parsed.head)
             parsed_deprel = list(clause.parsed.deprel)
@@ -742,7 +770,10 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
             # This shifts error distribution
             # from E2 & E3 to E1.
             in_clause_heads.append( 0 )
-        for wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in zip(wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
+        for word_loc, wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in \
+                zip(gold_word_loc, wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
+            is_gold_root = (gold_head == 0)
+            (gold_start, gold_end) = word_loc.start, word_loc.end
             total += 1
             if wordform in punct_tokens_set:
                 punct += 1
@@ -760,11 +791,17 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
                         if parsed_head in in_clause_heads:
                             # local error: misplaced dependency inside the clause
                             e1 += 1
+                            if is_gold_root:
+                                e1_missed_root += 1
+                            error_locations['E1'].append( (gold_start, gold_end) )
                         else:
                             # overarcing error:
                             # misplaced dependency outside the clause, 
                             # although it should be inside the clause
                             e2 += 1
+                            if is_gold_root:
+                                e2_missed_root += 1
+                            error_locations['E2'].append( (gold_start, gold_end) )
                 else:
                     gold_out_of_clause += 1
                     if gold_head == parsed_head and gold_dep == parsed_dep:
@@ -774,6 +811,14 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
                         # outside the clause (but was placed incorrectly
                         # inside or outside the clause)
                         e3 += 1
+                        if is_gold_root:
+                            e3_missed_root += 1
+                        error_locations['E3'].append( (gold_start, gold_end) )
+    if error_sample_output_file is not None and isinstance(error_sample_size, int):
+        # Pick randomly a sample of errors and write into a file
+        extract_error_samples(text, error_locations, 
+                              error_sample_output_file, 
+                              n=error_sample_size, seed=1)
     # Calculate impacts/relative errors and format results (if required)
     result = {'E1': e1, 'E2': e2, 'E3': e3}
     if add_impact:
@@ -792,12 +837,91 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
         result['total_words'] = total
         result['punct'] = punct
         result['unequal_length'] = unequal_length
+        result['E1_missed_root'] = e1_missed_root
+        result['E2_missed_root'] = e2_missed_root
+        result['E3_missed_root'] = e3_missed_root
     if format_string is not None:
         # Reformat impacts and relative errors
         for k, v in result.items():
             if k.endswith(('_impact', '_rel_error')):
                 result[k] = ('{'+format_string+'}').format(v)
     return result
+
+
+def extract_error_samples(text, error_locations, output_file, n=100, seed=1, clauses_layer='clauses', 
+                                                 senteces_layer='sentences', gold_syntax_layer='gold', 
+                                                 auto_syntax_layer='parsed'):
+    '''
+    Extracts erroneously parsed sentences based on collected E1, E2, E3 error_locations. 
+    By default, extracts randomly n=100 samples of each error, or, if n > len(errors), 
+    extracts all erroneously parsed sentences from the error type. 
+    Writes extracted sentences into output_file.
+    '''
+    assert clauses_layer in text.layers
+    assert senteces_layer in text.layers
+    assert gold_syntax_layer in text.layers
+    assert auto_syntax_layer in text.layers
+    sent_locations = [(s.start, s.end, sid) for sid, s in enumerate(text[senteces_layer])]
+    # Clear output file
+    with open(output_file, 'w', encoding='utf-8') as out_f:
+        pass
+    rnd = random.Random(seed)
+    for err_key in error_locations.keys():
+        err_sentences = []
+        extracted_err_sents = []
+        # Get all sentences containing errors
+        for (err_start, err_end) in error_locations[err_key]:
+            for (s_start, s_end, s_id) in sent_locations:
+                if s_start <= err_start and err_end <= s_end:
+                    if (s_start, s_end, s_id) not in err_sentences:
+                        err_sentences.append( (s_start, s_end, s_id) )
+                    break
+        if n < len(err_sentences):
+            # Make a random pick (if more than n sentences)
+            picked_sentences = rnd.sample(err_sentences, n)
+        else:
+            # Take all sentences with errors
+            picked_sentences = err_sentences
+        # Format sentences (mark errors)
+        for (s_start, s_end, s_id) in picked_sentences:
+            sent_errors = set()
+            for (err_start, err_end) in error_locations[err_key]:
+                if s_start <= err_start and err_end <= s_end:
+                    sent_errors.add( (err_start, err_end) )
+            sent_formatted = []
+            for word_span in text[senteces_layer][s_id]:
+                gold_word = text[gold_syntax_layer].get(word_span.base_span)
+                auto_word = text[auto_syntax_layer].get(word_span.base_span)
+                w_start, w_end = word_span.start, word_span.end
+                gold_id = gold_word.annotations[0]['id']
+                gold_deprel = gold_word.annotations[0]['deprel']
+                auto_deprel = auto_word.annotations[0]['deprel']
+                gold_head = gold_word.annotations[0]['head']
+                auto_head = auto_word.annotations[0]['head']
+                word_text = word_span.text
+                error_type = ''
+                deprel_with_err = f'{gold_deprel}'
+                if (gold_deprel != auto_deprel):
+                    deprel_with_err = f'{deprel_with_err}({auto_deprel})'
+                head_with_err = f'{gold_head}'
+                if (gold_head != auto_head):
+                    head_with_err = f'{head_with_err}({auto_head})'
+                if (w_start, w_end) in sent_errors:
+                    error_type = f'(!{err_key})'
+                sent_formatted.append( f'{gold_id} {word_text} {head_with_err} {deprel_with_err} {error_type}' )
+            sent_formatted.append('')
+            extracted_err_sents.append( '\n'.join(sent_formatted) )
+        print(f'Writing {len(extracted_err_sents)} samples of {err_key} errors into {output_file} ...')
+        with open(output_file, 'a', encoding='utf-8') as out_f:
+            out_f.write('='*100)
+            out_f.write('\n')
+            out_f.write(f'  {err_key}')
+            out_f.write('\n')
+            out_f.write('='*100)
+            out_f.write('\n')
+            for err_sent in extracted_err_sents:
+                out_f.write(err_sent)
+                out_f.write('\n')
 
 
 # ========================================================================
