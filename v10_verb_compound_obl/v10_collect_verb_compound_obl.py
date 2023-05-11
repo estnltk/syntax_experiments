@@ -26,12 +26,11 @@ from estnltk_patches import syntax_v1
 if 'syntax_v1' not in SERIALISATION_REGISTRY:
     SERIALISATION_REGISTRY['syntax_v1'] = syntax_v1
 
-
-
 def eprint(*args, **kwargs):
     print(*args, file=sys.stdout, **kwargs)
 
 
+# Abimeetodid tööks graafidega
 class GraphMethods:
     # kahe listi ühisosa
     @staticmethod
@@ -125,6 +124,7 @@ class DbMethods:
 
     @staticmethod
     def prep_coll_db(do_truncate = True):
+        """ loob vajalikud db tabelid ja indeksid """
         global TABLENAME, cursor, conn
 
         cursor.execute(f"""CREATE TABLE IF NOT EXISTS collections_processed
@@ -194,6 +194,7 @@ class DbMethods:
 
     @staticmethod
     def save_coll_to_db(collocations, lastcollection):
+        """ salvestab andmed db tabelisse """
         
         global TABLENAME, cursor, conn, cases
         sql_colls = []
@@ -272,6 +273,9 @@ class DbMethods:
 
 # helping functions
 def feats_get_case(arr):
+    """
+    https://github.com/EstSyntax/EstCG/ (käänded)
+    """
     for attr in arr:
         if attr in ('nom',  # nimetav
                     'gen',  # omastav
@@ -280,8 +284,8 @@ def feats_get_case(arr):
                     'ill',  # sisse
                     'in',  # sees
                     'el',  # seest
-                    'ad',  # alale
-                    'all',  # alal
+                    'all',  # alale
+                    'ad',  # alal
                     'abl',  # alalt
                     'tr',  # saav
                     'term',  # rajav
@@ -294,7 +298,10 @@ def feats_get_case(arr):
 
 
 def do_skip_verb(graph, verb):
-    
+    """ 
+    funktsioon verbide filtreerimiseks
+    jäetakse vahele need verbid, millel pole "kindlat" aega ja isikut
+    """
     feats = graph.nodes[verb]['feats'].keys()
     
     # kui on umbisikuline
@@ -306,18 +313,10 @@ def do_skip_verb(graph, verb):
     if not len(GraphMethods.intersection(['past', 'impf', 'pres'], feats)):
         #print(graph.nodes[verb])
         return True
-    
-    #GraphMethods.draw_graph(graph, title=' '.join([graph.nodes[n]['form'] for n in sorted(graph.nodes) if n ]), highlight=[verb])
-    #if 'mod' in feats:
-    #    print(graph.nodes[verb])
-    #    GraphMethods.draw_graph(graph, title=' '.join([graph.nodes[n]['form'] for n in graph.nodes if n ]), highlight=[verb])
-    #if len(GraphMethods.intersection(['ps1', 'ps2', 'ps3'], feats)):
-    #    print(graph.nodes[verb])
-    #    GraphMethods.draw_graph(graph, title=' '.join([graph.nodes[n]['form'] for n in graph.nodes if n ]), highlight=[verb])
-    #    return True
-    
+       
     return False
-    
+
+# seda tabeli väljade massiivi kasutatakse hiljem tabelis indeksite loomiseks
 key_fields = ('verb'
                 , 'verb_compound'
                 , 'obl_root'
@@ -328,7 +327,7 @@ key_fields = ('verb'
                 , 'timex' ,
                 )
 
-# required for ordering
+# suhte prioriteet
 relations = ['match', 'contains', 'inside', 'intersects', '-']
 
 
@@ -341,7 +340,9 @@ intersects:  OBL span lõikub NER/TIMEX spaniga
 
 """
 def get_relation_type(obl_nodes, other_nodes):
-    
+    """
+    Tagastab obl fraasi suhte teise fraasi suhtes
+    """
     obl_nodes = sorted(obl_nodes)
     other_nodes = sorted(other_nodes)
     
@@ -375,8 +376,14 @@ def get_relation_type(obl_nodes, other_nodes):
 examples_combinations = []
 def extract_something(text, colId, collocations):
     """
+       kogub lausest kokku kollokatsioonid ja näitelausete collectionId-d
+       text - esntltk Text (1 lause) + kihid 
+           'v171_named_entities', 
+           'v172_stanza_syntax', 
+           'v172_obl_phrases', 
+           'v172_pre_timexes'
+       colId - lause collectionId andmebaasis
        
-
     """
     
     keys = []
@@ -401,7 +408,6 @@ def extract_something(text, colId, collocations):
     
     # verb nodes
     verb_nodes = GraphMethods.get_nodes_by_attributes(graph, attrname='pos', attrvalue='V')
-    #print ('verb_nodes', verb_nodes)
     
     # compound:prt
     compound_nodes = GraphMethods.get_nodes_by_attributes(graph, attrname='deprel', attrvalue='compound:prt')
@@ -416,10 +422,6 @@ def extract_something(text, colId, collocations):
             'root_lemma': graph.nodes[obl.root_id]['lemma'],
             'root_case': feats_get_case(graph.nodes[obl.root_id]['feats'])
         })
-        
-        
-    #print ('obl_data', obl_data)
-       
         
     # ---
     # 4. collect NER info
@@ -438,8 +440,6 @@ def extract_something(text, colId, collocations):
             
         })
         
-    #print ('ner_data', ner_data)
-    
     #----
     # 5. collect TIMEX info
     timex_data = []
@@ -454,18 +454,12 @@ def extract_something(text, colId, collocations):
         except:
             # last node that starts before timex span starts
             first_node = [n for n in graph.nodes if n and graph.nodes[n]['start']<timex.start][-1]
-            #display (text.words)
-            #print ('timex', timex, f'timex.start: {timex.start}', f'timex.end: {timex.end}')
-            #print ('first node', first_node)
-        
+
         try:
             last_node = GraphMethods.get_nodes_by_attributes(graph, attrname='end', attrvalue=timex.end)[0]
         except:
             # fist node that ends after timex span ends
             last_node = [n for n in graph.nodes if n and graph.nodes[n]['end']>timex.start][0]
-            #display (text.words)
-            #print ('timex', timex, f'timex.start: {timex.start}', f'timex.end: {timex.end}')
-            #print ('last node', last_node)
             
 
         timex_data.append({
@@ -474,17 +468,16 @@ def extract_something(text, colId, collocations):
         })
         
 
-    
     # iteratsioon üle verbide
-    # kogume kokku compound järjestatud
-    # itereerime üle obl fraaside, kui mõne fraasi juur on selle verbi alluv (siin tuleb optimeerida ?)
-    # timex ja ner kohta pannakse tabelisse kõige prioriteetsem seos. Seoste prioriteet on paigas relations massiivis
+    # verbi compound alluvad kogutakse kokku ja järjestatakse alfabeetiliselt
+    # itereeritakse üle obl fraaside, kus fraasi juur on selle verbi alluv (ükskõik, kui kaugel verbist)  
+    # timex ja ner kohta pannakse tabelisse kõige prioriteetsem seos 
+    # seoste prioriteet on paigas massiivis relations
     
     #key = (verb_lemma, verb_compound, obl_lemma, obl_case, ner_loc, ner_per, ner_org, timex)
     for verb in verb_nodes:
         
         # do skip collocation if verb is "unusual"
-        
         if do_skip_verb(graph, verb): continue
         
         # childnodes
@@ -503,8 +496,6 @@ def extract_something(text, colId, collocations):
         if not len(obl_data):
             #key = (verb_lemma, verb_compound, obl_lemma, obl_case, ner_loc, ner_per, ner_org, timex)
             keys.append( (v_lemma , verb_compound, '' , '', '', '', '', '', ))
-            
-            #add to collacations
             continue
         
         for obl in obl_data:
@@ -517,7 +508,6 @@ def extract_something(text, colId, collocations):
             
             timex_relations = []
             for timex in timex_data:
-               
                 timex_relations.append(get_relation_type( obl['nodes'], timex['nodes']))
             
             key = (v_lemma, 
@@ -529,32 +519,6 @@ def extract_something(text, colId, collocations):
                    ner_relations['ORG'][0] if len(ner_relations['ORG']) else '-', 
                    timex_relations[0] if len(timex_relations) else '-' , ) 
             keys.append( key)
-            
-            #  code to save example trees for debugging
-            if 0:
-                img_key = key[4:]
-                if not img_key in examples_combinations:
-
-                    try:
-                        key_string = ' || '.join( [f'{key_fields[i]}: {k}' for i, k in enumerate(key)])
-                        GraphMethods.draw_graph(graph=graph, 
-                                        filename='./examples/'+str(colId)+'__'+str(key), 
-                                        highlight=obl['nodes'], 
-                                        title=' '.join( [graph.nodes[n]['form'] for n in sorted(graph.nodes) if n ])
-                                                    + '\t\t\n' + str(key_string) 
-                                                    + '\t\t\n NER: ' + str(text['v171_named_entities']) 
-                                                    + '\t\t\n TIMEX: ' + str(text['v172_pre_timexes']) 
-                                       )
-                        examples_combinations.append(img_key)
-
-                    except:
-                        pass
-
-            #print ('ner_relations', ner_relations)
-            #print ('timex_relations', timex_relations, sorted(timex_relations, key=relations.index))
-            #print (key)
-        
-
 
     for key in keys:
         if not key in collocations:
@@ -562,8 +526,6 @@ def extract_something(text, colId, collocations):
         collocations[key]['total'] += 1
         collocations[key]['examples'].append(colId)
    
-    
-
     return collocations,
     
 
@@ -591,7 +553,6 @@ storage = PostgresStorage(pgpass_file='~/.pgpass',
 
 collection = storage[collectionName]
 
-# print (collection)
 
 collocations = {}
 
