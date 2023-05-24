@@ -1,0 +1,7869 @@
+   5463 minema 
+   4684 kuuluma 
+   4004 jõudma 
+   3841 tulema 
+   3596 suhtuma 
+   3526 jääma 
+   3165 puutuma 
+   3088 sattuma 
+   2383 saama 
+   2278 viima 
+   1910 panema 
+   1822 tooma 
+   1794 sõitma 
+   1648 pääsema 
+   1504 tegema 
+   1426 mahtuma 
+   1358 saatma 
+   1350 astuma 
+   1233 saabuma 
+   1171 kogunema 
+   1157 sobima 
+   1152 uskuma 
+   1080 andma 
+    996 olema 
+    990 tungima 
+    963 jätma 
+    931 investeerima 
+    924 kolima 
+    904 ilmuma 
+    904 asuma 
+    881 võtma 
+    881 suunduma 
+    870 tekkima 
+    757 lendama 
+    744 sisenema 
+    729 kutsuma 
+    683 käima 
+    672 siirduma 
+    666 kaduma 
+    618 helistama 
+    611 langema 
+    610 liikuma 
+    583 tahtma 
+    577 lisanduma 
+    569 olema vaja
+    568 hakkama 
+    546 kirjutama 
+    540 laskma 
+    534 paigutama 
+    530 lisama 
+    527 jooksma 
+    519 pidama 
+    515 tõusma 
+    508 kukkuma 
+    505 pöörduma 
+    485 ulatuma 
+    483 surema 
+    477 maksma 
+    475 armuma 
+    468 sekkuma 
+    459 naasma 
+    457 kandma 
+    452 istuma 
+    446 ajama 
+    436 lööma 
+    428 koonduma 
+    426 ootama 
+    425 viskama 
+    416 leidma 
+    412 vaatama 
+    405 vedama 
+    399 toimuma 
+    396 tõstma 
+    386 seadma 
+    380 alustama 
+    372 tõmbama 
+    368 minema tagasi
+    366 laekuma 
+    364 ronima 
+    353 toimetama 
+    353 suruma 
+    346 põgenema 
+    346 lubama 
+    336 tulema tagasi
+    334 lahkuma 
+    334 jätkuma 
+    327 kerkima 
+    322 looma 
+    319 tähendama 
+    319 pistma 
+    316 tormama 
+    316 suunama 
+    313 pakkuma 
+    311 vajuma 
+    310 takerduma 
+    309 pugema 
+    306 toppima 
+    303 ostma 
+    297 süvenema 
+    295 uppuma 
+    295 levima 
+    295 hüppama 
+    294 jääma kinni
+    293 rändama 
+    291 kihutama 
+    287 nägema 
+    285 asetama 
+    284 sukelduma 
+    280 ehitama 
+    279 juhtima 
+    277 esitama 
+    275 kippuma 
+    272 soovima 
+    271 voolama 
+    270 mahtuma ära
+    267 peitma 
+    267 kanduma 
+    258 heitma 
+    255 lükkama 
+    253 kasvama 
+    248 jõudma tagasi
+    246 meelitama 
+    243 nõudma 
+    242 algama 
+    241 valima 
+    234 valama 
+    234 imbuma 
+    230 muutuma 
+    228 tekitama 
+    226 haigestuma 
+    224 näitama 
+    223 otsima 
+    220 keerama 
+    219 pöörduma tagasi
+    216 ütlema 
+    211 juhatama 
+    210 laskuma 
+    209 korraldama 
+    207 kasutama 
+    206 teadma 
+    204 rajama 
+    203 paluma 
+    201 torkama 
+    198 elama 
+    195 koguma 
+    194 tabama 
+    193 jaguma 
+    193 aitama 
+    191 vajama 
+    190 müüma 
+    187 rääkima 
+    184 kalduma 
+    183 mängima 
+    182 saama sisse
+    182 muutma 
+    182 juhtuma 
+    179 panustama 
+    179 paiskama 
+    179 lõpetama 
+    178 minema edasi
+    177 astuma sisse
+    176 kuluma 
+    176 kaotama 
+    175 nimetama 
+    175 murdma sisse
+    173 võtma kaasa
+    173 maanduma 
+    173 avama 
+    172 kinnitama 
+    170 sööstma 
+    168 tundma 
+    168 jagama 
+    165 sündima 
+    165 määrama 
+    164 seisma 
+    164 paigaldama 
+    162 võitma 
+    161 toetama 
+    161 tasuma 
+    161 murdma 
+    159 teatama 
+    159 kiinduma 
+    158 paistma 
+    156 nakatuma 
+    154 tooma kaasa
+    153 tooma tagasi
+    153 süstima 
+    153 jääma alles
+    149 põrutama 
+    146 suurenema 
+    146 sundima 
+    146 libisema 
+    144 töötama 
+    144 jätkama 
+    143 sättima 
+    142 sõidutama 
+    141 kõndima 
+    141 kulgema 
+    141 kiirustama 
+    141 eksima 
+    140 mattuma 
+    140 hoidma 
+    138 unustama 
+    138 marssima 
+    138 kaasama 
+    136 laienema 
+    136 järgnema 
+    135 soovitama 
+    134 haarama 
+    133 lugema 
+    133 avanema 
+    132 suutma 
+    131 kiskuma 
+    130 kandideerima 
+    129 valitsema 
+    129 tõmbuma 
+    129 esinema 
+    127 tulema juurde
+    127 sulgema 
+    127 pürgima 
+    127 lülituma 
+    127 edastama 
+    126 koondama 
+    126 jagunema 
+    125 sokutama 
+    124 suubuma 
+    121 siginema 
+    121 puuduma 
+    119 tagama 
+    119 püüdma 
+    119 paiskuma 
+    118 trügima 
+    118 kavandama 
+    117 tulistama 
+    117 takistama 
+    117 puudutama 
+    117 matma 
+    116 pagema 
+    114 jääma edasi
+    113 süüvima 
+    113 sumbuma 
+    113 riietuma 
+    112 vähenema 
+    112 jalutama 
+    111 osalema 
+    111 läbima 
+    111 hiilima 
+    110 taotlema 
+    110 segama 
+    109 poetama 
+    109 kõlbama 
+    108 lülitama 
+    108 külastama 
+    107 mõtlema 
+    107 moodustama 
+    106 valguma 
+    106 lõppema 
+    106 lootma 
+    105 taanduma 
+    105 saama tagasi
+    105 pöörama 
+    105 kargama 
+    104 õnnestuma 
+    104 väljuma 
+    103 suurendama 
+    103 kuulma 
+    102 veerema 
+    102 minema sisse
+    102 elama sisse
+    101 viima tagasi
+    101 sulama 
+    100 otsustama 
+     99 tulema sisse
+     99 reisima 
+     98 tirima 
+     98 peituma 
+     98 istutama 
+     97 teenima 
+     97 põhjustama 
+     97 pakkima 
+     97 lõikama 
+     97 lennutama 
+     97 kaebama 
+     97 jääma maha
+     96 tõukama 
+     96 meenutama 
+     95 mõjuma 
+     95 kirjutama sisse
+     95 arvama 
+     92 tellima 
+     92 sõitma tagasi
+     91 ületama 
+     91 tõttama 
+     91 tassima 
+     91 sõitma edasi
+     91 sammuma 
+     91 kohtuma 
+     90 üritama 
+     90 ühinema 
+     90 tulema kokku
+     90 tegelema 
+     90 plaanima 
+     90 läkitama 
+     89 võimaldama 
+     89 vajutama 
+     89 puhuma 
+     89 kavatsema 
+     88 siduma 
+     88 põikama 
+     88 märkima 
+     88 mahutama 
+     88 liikuma edasi
+     87 korjama 
+     86 nihkuma 
+     86 lipsama 
+     86 keelama 
+     86 hääletama 
+     85 sulanduma 
+     85 pressima 
+     84 varjuma 
+     84 saatma tagasi
+     84 nägema ette
+     84 minema ära
+     84 avaldama 
+     83 uputama 
+     83 piisama 
+     83 laulma 
+     83 kujunema 
+     83 keelduma 
+     83 kallama 
+     82 sisaldama 
+     82 pumpama 
+     81 välistama 
+     81 virutama 
+     81 küündima 
+     81 kaaluma 
+     80 pudenema 
+     80 piiluma 
+     78 viskuma 
+     78 uurima 
+     78 sisendama 
+     78 loopima 
+     78 kostma 
+     76 vastama 
+     76 pääsema sisse
+     76 osutuma 
+     76 oskama 
+     76 mööduma 
+     76 mõistma 
+     76 loobuma 
+     76 laduma 
+     76 kehtima 
+     74 ruttama 
+     74 ihkama 
+     73 tootma 
+     73 proovima 
+     72 panema üles
+     72 leiduma 
+     72 kastma 
+     72 jõudma välja
+     71 ähvardama 
+     71 sulguma 
+     71 sadama 
+     71 olema tarvis
+     71 mõjutama 
+     71 küsima 
+     70 viima sisse
+     70 tooma juurde
+     70 meeldima 
+     69 rebima 
+     69 kindlustama 
+     69 kestma 
+     69 jooma 
+     68 puistama 
+     68 mässima 
+     68 külvama 
+     68 hindama 
+     67 vahtima 
+     67 tähistama 
+     67 sõitma sisse
+     67 eeldama 
+     67 asutama 
+     66 ühendama 
+     66 vähendama 
+     66 tooma sisse
+     66 põimima 
+     66 jääma sisse
+     66 iseloomustama 
+     65 väljendama 
+     65 võtma ette
+     65 tegutsema 
+     65 sisestama 
+     65 põhjendama 
+     65 näima 
+     65 minema üle
+     65 lähetama 
+     65 jälgima 
+     64 õppima 
+     64 vahendama 
+     63 põlema 
+     63 planeerima 
+     63 panema sisse
+     63 käsitlema 
+     63 kiitma 
+     62 võtma vastu
+     62 valmima 
+     62 ujuma 
+     62 süüdistama 
+     62 pooldama 
+     62 langetama 
+     62 kõlama 
+     62 kaasnema 
+     62 avastama 
+     61 värbama 
+     61 püstitama 
+     61 mähkuma 
+     61 kirjeldama 
+     60 ründama 
+     60 riputama 
+     60 kujutama 
+     60 kuhjuma 
+     60 kiikama 
+     60 kaevama 
+     60 kaduma ära
+     59 tunnistama 
+     59 sõltuma 
+     59 rikkuma 
+     58 taguma 
+     58 raiuma 
+     58 libistama 
+     58 hajuma 
+     57 täitma 
+     57 hukkuma 
+     56 ladestuma 
+     56 juurduma 
+     55 võitlema 
+     55 sööma 
+     55 püsima 
+     55 pääsema tagasi
+     55 klammerduma 
+     55 eksportima 
+     55 eelistama 
+     54 viima edasi
+     54 usaldama 
+     54 tungima sisse
+     54 sõlmima 
+     54 soodustama 
+     54 laadima 
+     54 joonistama 
+     53 tulema välja
+     53 hõlmama 
+     53 hilinema 
+     53 eraldama 
+     52 veeretama 
+     52 vahetama 
+     52 tutvustama 
+     52 tunduma 
+     52 toimima 
+     52 pruukima 
+     52 panema tagasi
+     52 lohistama 
+     52 alistama 
+     51 registreerima 
+     51 peksma 
+     51 lõikuma 
+     51 kanduma üle
+     51 jätma maha
+     50 selguma 
+     50 pühkima 
+     50 puurima 
+     50 peatama 
+     50 arutama 
+     49 tilkuma 
+     49 sobituma 
+     49 panema kinni
+     49 kontrollima 
+     49 julgema 
+     49 investeerima kokku
+     49 imenduma 
+     48 tulema kaasa
+     48 suunduma edasi
+     48 paigutuma 
+     48 märkama 
+     48 lekkima 
+     48 kuulama 
+     48 kartma 
+     48 kanduma edasi
+     48 harjutama 
+     47 vältima 
+     47 nihutama 
+     47 muretsema 
+     47 laiendama 
+     47 kolima tagasi
+     46 töötama välja
+     46 sooritama 
+     46 minema vaja
+     46 keskenduma 
+     46 arenema 
+     45 valmistuma 
+     45 startima 
+     45 riietama 
+     45 kinnistuma 
+     45 haihtuma 
+     44 transportima 
+     44 parkima 
+     44 mäletama 
+     44 minema välja
+     44 liituma 
+     44 kommenteerima 
+     44 asetuma 
+     43 ununema 
+     43 tänama 
+     43 sugenema 
+     43 saavutama 
+     43 kogema 
+     43 katma 
+     43 karjuma 
+     43 jääma alla
+     42 viitsima 
+     42 valmistama 
+     42 tahtma tagasi
+     42 suskama 
+     42 peatuma 
+     42 organiseerima 
+     42 lõhkuma 
+     42 kuuluma kokku
+     42 koosnema 
+     42 kamandama 
+     41 selgitama 
+     41 salvestama 
+     41 saatma edasi
+     41 passima 
+     41 minema alla
+     41 jaotuma 
+     41 hüüdma 
+     40 viitama 
+     40 uuristama 
+     40 sõitma välja
+     40 seadma sisse
+     40 raputama 
+     40 lukustama 
+     39 viibima 
+     39 sihtima 
+     39 pälvima 
+     39 põrkama 
+     39 prantsatama 
+     39 naerma 
+     39 kukutama 
+     39 kerima 
+     39 katkestama 
+     39 eralduma 
+     38 tüürima 
+     38 tõlkima 
+     38 seisnema 
+     38 olema nõus
+     38 lõpma 
+     38 lippama 
+     38 lendama tagasi
+     38 käsutama 
+     38 keerutama 
+     38 jaotama 
+     38 hoiatama 
+     38 erinema 
+     37 varisema 
+     37 soetama 
+     37 rühkima 
+     37 pääsema edasi
+     37 potsatama 
+     37 palkama 
+     37 mähkima 
+     37 lööma sisse
+     37 kleepima 
+     37 kasvatama 
+     37 jõudma kohale
+     36 tooma kokku
+     36 sülitama 
+     36 riputama üles
+     36 põdema 
+     36 pritsima 
+     36 kuluma ära
+     36 kehtestama 
+     36 huvitama 
+     35 väärima 
+     35 varjama 
+     35 valvama 
+     35 säilima 
+     35 sobitama 
+     35 rammima 
+     35 rakendama 
+     35 puhkema 
+     35 pilduma 
+     35 paranema 
+     35 moodustuma 
+     35 magama 
+     35 kaevuma 
+     35 imema 
+     35 esindama 
+     35 armastama 
+     34 venima 
+     34 tarduma 
+     34 saama kokku
+     34 põhinema 
+     34 omama 
+     34 minema järele
+     34 lendama edasi
+     34 kujundama 
+     34 kinkima 
+     34 kannatama 
+     34 haakuma 
+     34 eksisteerima 
+     34 eksima ära
+     33 võtma kokku
+     33 tühjendama 
+     33 tulvama 
+     33 tarnima 
+     33 tarima 
+     33 suunduma tagasi
+     33 saama juurde
+     33 rändama edasi
+     33 pühendama 
+     33 panema välja
+     33 maalima 
+     33 lükkama edasi
+     33 liitma 
+     33 kulutama 
+     33 kergitama 
+     33 jäädvustama 
+     33 hõikama 
+     33 algatama 
+     32 tulenema 
+     32 tapma 
+     32 talletama 
+     32 sõitma läbi
+     32 salvestuma 
+     32 saabuma tagasi
+     32 päästma 
+     32 nautima 
+     32 hankima 
+     31 võrdlema 
+     31 usutama 
+     31 nõustuma 
+     31 minema kaasa
+     31 mahtuma sisse
+     31 kuulutama 
+     31 kaebama edasi
+     31 jääma ära
+     31 ennustama 
+     31 arvestama 
+     31 annetama 
+     30 üllatama 
+     30 viima kaasa
+     30 upitama 
+     30 tükkima 
+     30 tulema järele
+     30 taastama 
+     30 sööbima 
+     30 sätestama 
+     30 siirduma tagasi
+     30 parandama 
+     30 panema kokku
+     30 paiknema 
+     30 levitama 
+     30 lajatama 
+     30 kobima 
+     30 hoiduma 
+     29 vaibuma 
+     29 tutvuma 
+     29 tulema üle
+     29 treenima 
+     29 tingima 
+     29 purjetama 
+     29 piirama 
+     29 majutama 
+     29 koostama 
+     29 jooksma kokku
+     29 ehtima 
+     28 õpetama 
+     28 tõmbuma tagasi
+     28 tikkuma 
+     28 söötma 
+     28 rabama 
+     28 põletama 
+     28 põikama sisse
+     28 nähtuma ette
+     28 marssima sisse
+     28 laekuma kokku
+     28 kutsuma kokku
+     28 kukkuma alla
+     28 kuhjama 
+     28 konkureerima 
+     28 kiirustama tagasi
+     28 kandma üle
+     28 eelnema 
+     27 võima 
+     27 viima ära
+     27 tulema ära
+     27 toksima 
+     27 röövima 
+     27 registreeruma 
+     27 purustama 
+     27 pillama 
+     27 peegelduma 
+     27 peegeldama 
+     27 olema rahul
+     27 nakatama 
+     27 liigitama 
+     27 andma edasi
+     26 ärkama 
+     26 vurama 
+     26 vormistama 
+     26 vinnama 
+     26 varuma 
+     26 tulema vastu
+     26 tervitama 
+     26 suhtlema 
+     26 sirutama 
+     26 rõivastuma 
+     26 rõhutama 
+     26 reageerima 
+     26 pigistama 
+     26 ootama ees
+     26 minema läbi
+     26 kütma 
+     26 kutsuma tagasi
+     26 korduma 
+     26 kolima üle
+     26 kohustama 
+     26 kohtama 
+     26 kapselduma 
+     26 kaitsema 
+     26 jooksma tagasi
+     25 valmistama ette
+     25 unistama 
+     25 tuiskama 
+     25 postitama 
+     25 peitma ära
+     25 munema 
+     25 minema üles
+     25 laotuma 
+     25 kühveldama 
+     25 kopeerima 
+     25 kaitsma 
+     25 kaduma tagasi
+     25 jääma kokku
+     25 jääma järele
+     25 istuma maha
+     25 igatsema 
+     25 hääbuma 
+     25 avalduma 
+     24 väänama 
+     24 võistlema 
+     24 voogama 
+     24 vallutama 
+     24 tõestama 
+     24 tugevdama 
+     24 tilgutama 
+     24 talutama 
+     24 taganema 
+     24 sattuma tagasi
+     24 sattuma kokku
+     24 rõõmustama 
+     24 roomama 
+     24 püüdlema 
+     24 pelgama 
+     24 panema püsti
+     24 osutama 
+     24 lükkuma 
+     24 lämbuma 
+     24 laenama 
+     24 kustuma 
+     24 kupatama 
+     24 kolima ära
+     24 kaunistama 
+     24 ilmnema 
+     24 häirima 
+     24 hõõruma 
+     24 hargnema 
+     24 haavama 
+     24 emigreeruma 
+     24 asuma ümber
+     23 väitma 
+     23 võtma tagasi
+     23 veetma 
+     23 tegema ära
+     23 seadma üles
+     23 riivama 
+     23 rentima 
+     23 peletama 
+     23 mõõtma 
+     23 minema kokku
+     23 lähtuma 
+     23 levima edasi
+     23 laskma tagasi
+     23 langema tagasi
+     23 käima läbi
+     23 kusema 
+     23 kritiseerima 
+     23 kolima sisse
+     23 kinnituma 
+     23 kallutama 
+     23 jooksma sisse
+     23 integreeruma 
+     23 edestama 
+     23 armuma ära
+     23 alandama 
+     23 aheldama 
+     22 üürima 
+     22 vuhisema 
+     22 vigastama 
+     22 venitama 
+     22 vabastama 
+     22 uppuma ära
+     22 ulatama 
+     22 tõrjuma 
+     22 tulema kohale
+     22 söandama 
+     22 rändama tagasi
+     22 põimuma 
+     22 paljastama 
+     22 liikuma tagasi
+     22 liigutama 
+     22 laskma sisse
+     22 kõnelema 
+     22 kõikuma 
+     22 kutsuma üles
+     22 kutsuma kaasa
+     22 kustutama 
+     22 kostuma 
+     22 komistama 
+     22 kolima ümber
+     22 kantima 
+     22 kahjustama 
+     22 kahandama 
+     22 juhendama 
+     22 hingama 
+     22 fikseerima 
+     22 ehmatama 
+     22 eemalduma 
+     21 võtma ära
+     21 viima üle
+     21 viima välja
+     21 vaatama sisse
+     21 täiendama 
+     21 tuletama 
+     21 tooma välja
+     21 tekkima juurde
+     21 sõnama 
+     21 smugeldama 
+     21 rippuma 
+     21 ratsutama 
+     21 pääsema ligi
+     21 punuma 
+     21 protestima 
+     21 pidama kinni
+     21 minema vastu
+     21 maabuma 
+     21 lükkama tagasi
+     21 lahustuma 
+     21 käituma 
+     21 kõmmutama 
+     21 kinnistama 
+     21 kiirgama 
+     21 kibelema 
+     21 kajastama 
+     21 hävima 
+     21 eskortima 
+     21 astuma tagasi
+     21 andma üle
+     20 väljenduma 
+     20 voorima 
+     20 tõmbama kaasa
+     20 tulema ette
+     20 talletuma 
+     20 sulatama 
+     20 sikutama 
+     20 pärinema 
+     20 olema lahti
+     20 ohustama 
+     20 kujutama ette
+     20 kordama 
+     20 koputama 
+     20 kontsentreeruma 
+     20 hoolitsema 
+     20 harrastama 
+     20 aitama kaasa
+     19 ümbritsema 
+     19 väntama 
+     19 viima läbi
+     19 uhtuma 
+     19 tühistama 
+     19 tunnustama 
+     19 trükkima 
+     19 torkima 
+     19 surema ära
+     19 soosima 
+     19 siirduma edasi
+     19 seletama 
+     19 saatma laiali
+     19 saama edasi
+     19 pühenduma 
+     19 piirduma 
+     19 omandama 
+     19 meenuma 
+     19 maksma kinni
+     19 loovutama 
+     19 lonkima 
+     19 loksuma 
+     19 liuglema 
+     19 kauplema 
+     19 kahanema 
+     19 jääma puudu
+     19 integreerima 
+     19 hääletama sisse
+     18 ära 
+     18 vajuma tagasi
+     18 vabanema 
+     18 tõotama 
+     18 tõkestama 
+     18 tegema kaasa
+     18 tantsima 
+     18 särama 
+     18 säilitama 
+     18 sittuma 
+     18 siirdama 
+     18 saama välja
+     18 rüütama 
+     18 naelutama 
+     18 minema laiali
+     18 käivitama 
+     18 käima välja
+     18 jääma välja
+     18 jõudma kokku
+     18 ilmuma tagasi
+     18 hammustama 
+     18 blokeerima 
+     17 äratama 
+     17 õmblema 
+     17 võrduma 
+     17 vastutama 
+     17 tõstma tagasi
+     17 tulema läbi
+     17 tuikuma 
+     17 tuhisema 
+     17 triivima 
+     17 tooma üle
+     17 tegema läbi
+     17 süütama 
+     17 sõudma 
+     17 seisma ees
+     17 sarnanema 
+     17 sagenema 
+     17 ravima 
+     17 raksatama 
+     17 põrkuma 
+     17 põlema sisse
+     17 puutuma kokku
+     17 purunema 
+     17 pommitama 
+     17 neelama 
+     17 naeratama 
+     17 müüma edasi
+     17 minema lahti
+     17 kukkuma tagasi
+     17 kuduma 
+     17 kiirendama 
+     17 kergendama 
+     17 katkema 
+     17 kahtlustama 
+     17 jääma üle
+     17 hoidma ära
+     17 elama läbi
+     17 ebaõnnestuma 
+     17 arendama 
+     17 andma välja
+     16 võtma maha
+     16 viskama tagasi
+     16 viima kokku
+     16 viima alla
+     16 vedama laiali
+     16 toetuma 
+     16 sünnitama 
+     16 saama läbi
+     16 reklaamima 
+     16 raskendama 
+     16 rahuldama 
+     16 prognoosima 
+     16 pakkuma välja
+     16 noppima 
+     16 nirisema 
+     16 määratlema 
+     16 monteerima 
+     16 manama 
+     16 lipsama sisse
+     16 lausuma 
+     16 küüditama 
+     16 kõmpima 
+     16 kõigutama 
+     16 kujutlema 
+     16 koristama 
+     16 kirjutama alla
+     16 kiitma heaks
+     16 kiiluma 
+     16 keelustama 
+     16 katsuma 
+     16 jääma vahele
+     16 jätma ära
+     16 jõudma edasi
+     16 jaksama 
+     16 installeerima 
+     16 importima 
+     16 hävitama 
+     16 harjuma 
+     16 eitama 
+     16 demonstreerima 
+     16 asendama 
+     16 andma tagasi
+     16 ajendama 
+     15 õigustama 
+     15 õhkuma 
+     15 valdama 
+     15 ulatuma tagasi
+     15 tõmbama tagasi
+     15 tunnetama 
+     15 tiksuma 
+     15 tasuma ära
+     15 sööma sisse
+     15 sõitma vastu
+     15 sõitma kokku
+     15 sõitma kaasa
+     15 seilama 
+     15 puhastama 
+     15 pikkima 
+     15 panema ära
+     15 panema ette
+     15 oksendama 
+     15 nägema välja
+     15 neelduma 
+     15 määrima 
+     15 murduma 
+     15 lebama 
+     15 lahendama 
+     15 küünitama 
+     15 kulmineeruma 
+     15 kraapima 
+     15 komberdama 
+     15 kiruma 
+     15 kippuma tagasi
+     15 katsetama 
+     15 kappama 
+     15 kahtlema 
+     15 jääma ilma
+     15 hõivama 
+     15 heiskama 
+     15 garanteerima 
+     15 eritama 
+     15 astuma välja
+     14 ytlema 
+     14 viipama 
+     14 viima üles
+     14 veenma 
+     14 vallandama 
+     14 tulema peale
+     14 tulema alla
+     14 trehvama 
+     14 trampima 
+     14 tooma ära
+     14 toitma 
+     14 teenindama 
+     14 süvendama 
+     14 sõitma ära
+     14 sulama sisse
+     14 soostuma 
+     14 sisalduma 
+     14 sillutama 
+     14 settima 
+     14 sattuma vastu
+     14 sadama sisse
+     14 pöörama tagasi
+     14 pussitama 
+     14 purskama 
+     14 pihustama 
+     14 panema ümber
+     14 opereerima 
+     14 nühkima 
+     14 minema tarvis
+     14 lükkima 
+     14 lonkama 
+     14 kvalifitseeruma 
+     14 kuuluma peale
+     14 kohaldama 
+     14 kihutama tagasi
+     14 kahmama 
+     14 jätma sisse
+     14 jõustuma 
+     14 jõudma alles
+     14 jooksma kinni
+     14 jagama laiali
+     14 installima 
+     14 hõljuma 
+     14 haakima 
+     14 evakueerima 
+     14 esitlema 
+     14 edenema 
+     14 avalikustama 
+     14 andma ära
+     14 andma sisse
+     14 ammutama 
+     14 akumuleeruma 
+     14 abielluma 
+     13 ärgitama 
+     13 viima ette
+     13 valgustama 
+     13 vaevama 
+     13 vaatlema 
+     13 vaatama läbi
+     13 tõusma tagasi
+     13 tuvastama 
+     13 tunglema 
+     13 tippima 
+     13 teostama 
+     13 tatsama 
+     13 taluma 
+     13 sõitma järele
+     13 segunema 
+     13 saatma ära
+     13 saama täis
+     13 saama kaasa
+     13 ronima tagasi
+     13 pääsema läbi
+     13 põrnitsema 
+     13 putkama 
+     13 purskuma 
+     13 pukseerima 
+     13 pugema tagasi
+     13 projitseerima 
+     13 projekteerima 
+     13 pildistama 
+     13 panema alla
+     13 olenema 
+     13 närima 
+     13 maksma kokku
+     13 mahtuma kokku
+     13 logima sisse
+     13 leppima kokku
+     13 laskma maha
+     13 laotama 
+     13 lahutama 
+     13 lagunema 
+     13 laastama 
+     13 kätkema 
+     13 käima ringi
+     13 kõrvetama 
+     13 kuulutama välja
+     13 klappima 
+     13 jääma ette
+     13 jälitama 
+     13 jahtima 
+     13 ilmutama 
+     13 hoovama 
+     13 hoidma kinni
+     13 haarama kaasa
+     13 astuma üles
+     13 aitama tagasi
+     12 vupsama 
+     12 viitma 
+     12 vedama kaasa
+     12 varastama 
+     12 vajuma sisse
+     12 ummistama 
+     12 tulema üles
+     12 tormama tagasi
+     12 toimetama tagasi
+     12 tampima 
+     12 tallama 
+     12 tagastama 
+     12 taaruma 
+     12 sõimama 
+     12 suunama tagasi
+     12 suunama edasi
+     12 sosistama 
+     12 sisustama 
+     12 seostuma 
+     12 saama vastu
+     12 ronima üles
+     12 ronima sisse
+     12 remontima 
+     12 reguleerima 
+     12 puhkama 
+     12 programmeerima 
+     12 plahvatama 
+     12 pissima 
+     12 petma 
+     12 panema peale
+     12 panema maha
+     12 panema juurde
+     12 olema vastu
+     12 nõrguma 
+     12 napsama 
+     12 naasma tagasi
+     12 meisterdama 
+     12 maksma tagasi
+     12 mainima 
+     12 lööma ära
+     12 lähenema 
+     12 looma sisse
+     12 lendama välja
+     12 lekitama 
+     12 lavastama 
+     12 lahvatama 
+     12 külmuma 
+     12 kärpima 
+     12 kurtma 
+     12 krabama 
+     12 kodeerima 
+     12 kivistuma 
+     12 kiiluma kinni
+     12 jäädvustuma 
+     12 jätma alles
+     12 järgima 
+     12 juurutama 
+     12 informeerima 
+     12 elama üle
+     12 domineerima 
+     11 värvima 
+     11 võtma üle
+     11 võtma välja
+     11 võtma juurde
+     11 võlgnema 
+     11 voolama tagasi
+     11 villima 
+     11 vihisema 
+     11 valima välja
+     11 vaatama üle
+     11 vaatama alla
+     11 urineerima 
+     11 ulatuma välja
+     11 täpsustama 
+     11 täituma 
+     11 tulema edasi
+     11 toppima tagasi
+     11 tappima 
+     11 tajuma 
+     11 tahtma ära
+     11 sööma ära
+     11 suudlema 
+     11 suitsetama 
+     11 sorteerima 
+     11 sirutuma 
+     11 silitama 
+     11 seostama 
+     11 roolima 
+     11 rebenema 
+     11 realiseerima 
+     11 pääsema ringi
+     11 pidurdama 
+     11 pidama vastu
+     11 pesema 
+     11 peibutama 
+     11 peetuma 
+     11 peegelduma tagasi
+     11 paotama 
+     11 müüma maha
+     11 minema kohale
+     11 minema juurde
+     11 magama maha
+     11 lükkuma edasi
+     11 lunastama 
+     11 litsuma 
+     11 liigituma 
+     11 lihtsustama 
+     11 leevendama 
+     11 langema välja
+     11 ladustama 
+     11 kummutama 
+     11 kujunema välja
+     11 koperdama 
+     11 kirjutama üles
+     11 kihutama välja
+     11 kasutama ära
+     11 karistama 
+     11 jutustama 
+     11 julgustama 
+     11 juhatama sisse
+     11 istuma ümber
+     11 innustama 
+     11 imbuma sisse
+     11 igatsema tagasi
+     11 hüppama tagasi
+     11 hüppama sisse
+     11 eristama 
+     11 emigreerima 
+     11 broneerima 
+     11 asustama 
+     10 ühenduma 
+     10 väsima 
+     10 võitlema välja
+     10 voolama sisse
+     10 voolama kokku
+     10 viskama ära
+     10 viima kohale
+     10 vestlema 
+     10 varjutama 
+     10 vangistama 
+     10 valetama 
+     10 uuenema 
+     10 uhama 
+     10 tungima edasi
+     10 toimetama edasi
+     10 tegema kokku
+     10 taunima 
+     10 tarvitama 
+     10 tarbima 
+     10 süttima 
+     10 sõitma mööda
+     10 sõitma kohale
+     10 sõitma ette
+     10 sõeluma 
+     10 silmitsema 
+     10 seiskuma 
+     10 segama vahele
+     10 sadestuma 
+     10 saatma välja
+     10 saama peale
+     10 saama otsa
+     10 ronima välja
+     10 rahastama 
+     10 pääsema välja
+     10 pääsema kokku
+     10 pärima 
+     10 põrkama kokku
+     10 platseeruma 
+     10 pistma tagasi
+     10 pikendama 
+     10 peitsima 
+     10 paluma tagasi
+     10 paiskama tagasi
+     10 paeluma 
+     10 ootama tagasi
+     10 nutma 
+     10 nappima 
+     10 minema peale
+     10 minema mööda
+     10 minema ette
+     10 manitsema 
+     10 loojuma 
+     10 leidma üles
+     10 laskuma alla
+     10 laskma lahti
+     10 köitma 
+     10 kärutama 
+     10 kuulduma 
+     10 kroonima 
+     10 koguma kokku
+     10 kleepuma 
+     10 keerama tagasi
+     10 kallinema 
+     10 kahekordistuma 
+     10 jääma eemale
+     10 jõudma sisse
+     10 jõudma ringi
+     10 jõudma alla
+     10 jooksma ringi
+     10 jooksma järele
+     10 ilmuma kohale
+     10 ilmestama 
+     10 hirmutama 
+     10 hiilima tagasi
+     10 haldama 
+     10 erituma 
+     10 deponeerima 
+     10 asenduma 
+      9 äsama 
+      9 õhutama 
+      9 väisama 
+      9 võtma sisse
+      9 võtma kinni
+      9 varieeruma 
+      9 valguma laiali
+      9 vabandama 
+      9 vaatama üles
+      9 uuendama 
+      9 tõstatama 
+      9 tõlgendama 
+      9 tugevnema 
+      9 tooma esile
+      9 testima 
+      9 terroriseerima 
+      9 teavitama 
+      9 sülgama 
+      9 sügama 
+      9 säästma 
+      9 sõitma otsa
+      9 sõitma kinni
+      9 suusatama 
+      9 suruma tagasi
+      9 solvama 
+      9 sirguma 
+      9 sattuma läbi
+      9 saama maha
+      9 saama lahti
+      9 saama alla
+      9 röögatama 
+      9 rõhuma 
+      9 roojama 
+      9 rihtima 
+      9 protesteerima 
+      9 pillutama 
+      9 pikeerima 
+      9 otsima läbi
+      9 murdma läbi
+      9 matkama 
+      9 mahutama ära
+      9 lugema läbi
+      9 lubama tagasi
+      9 lendama laiali
+      9 kukkuma vastu
+      9 kukkuma läbi
+      9 kuivatama 
+      9 kostma ära
+      9 korrastama 
+      9 konsulteerima 
+      9 komandeerima 
+      9 kohendama 
+      9 kisendama 
+      9 kimama 
+      9 keerama sisse
+      9 kasvama sisse
+      9 kasima 
+      9 kargama kinni
+      9 kandma laiali
+      9 kammima 
+      9 jääma üles
+      9 jääma vastu
+      9 jääma rahule
+      9 jääma püsti
+      9 jääma peale
+      9 jääma kõrvale
+      9 jooksma üle
+      9 jalutama tagasi
+      9 ilmuma välja
+      9 ihaldama 
+      9 hüppama alla
+      9 hämmastama 
+      9 häbenema 
+      9 hakkama kinni
+      9 haarduma 
+      9 elavdama 
+      9 eemaldama 
+      9 deklareerima 
+      9 austama 
+      9 astuma edasi
+      9 andma juurde
+      9 ajama tagasi
+      9 ahvatlema 
+      9 ahmima 
+      9 aeglustama 
+      8 ärritama 
+      8 õhkama 
+      8 väljastama 
+      8 võluma 
+      8 vudima 
+      8 viskama sisse
+      8 vilksatama 
+      8 viljelema 
+      8 viicima 
+      8 vihkama 
+      8 vihjama 
+      8 vedama välja
+      8 vedama tagasi
+      8 varisema kokku
+      8 vanduma 
+      8 valutama 
+      8 vahetama välja
+      8 vaevuma 
+      8 tähendama üles
+      8 tulema alles
+      8 tsiteerima 
+      8 tormama välja
+      8 tormama sisse
+      8 tonksama 
+      8 tammuma 
+      8 tagurdama 
+      8 taastuma 
+      8 taandama 
+      8 sähvatama 
+      8 sõitma maha
+      8 suikuma 
+      8 spurtima 
+      8 silkama 
+      8 siduma kinni
+      8 sebima 
+      8 sallima 
+      8 saatma kokku
+      8 rüüpama 
+      8 röökima 
+      8 rulluma 
+      8 rivistuma 
+      8 rikkuma ära
+      8 reetma 
+      8 reastama 
+      8 pöörama sisse
+      8 pärssima 
+      8 põrkama vastu
+      8 põgenema tagasi
+      8 pugema sisse
+      8 pudistama 
+      8 poetuma 
+      8 pettuma 
+      8 passitama 
+      8 panema valmis
+      8 pakendama 
+      8 ostma kokku
+      8 olema juurde, vaja
+      8 nähtuma 
+      8 nurjama 
+      8 mõtlema välja
+      8 murdma välja
+      8 mobiliseerima 
+      8 maitsma 
+      8 maandama 
+      8 lülitama välja
+      8 lööma kinni
+      8 läbistama 
+      8 lõikama sisse
+      8 lugema ette
+      8 lootsima 
+      8 logima 
+      8 liduma 
+      8 lenduma 
+      8 lendlema 
+      8 lendama vastu
+      8 lendama sisse
+      8 laiuma 
+      8 lahterdama 
+      8 lahenema 
+      8 laekuma tagasi
+      8 käänama 
+      8 käivituma 
+      8 kõndima tagasi
+      8 kuuluma ringi
+      8 kummarduma 
+      8 kukkuma välja
+      8 kukkuma kokku
+      8 kuivama 
+      8 kruvima 
+      8 kruttima 
+      8 kratsima 
+      8 kombineerima 
+      8 kogunema kokku
+      8 keetma 
+      8 keelama ära
+      8 kebima 
+      8 kasseerima 
+      8 kargama sisse
+      8 kanaliseeruma 
+      8 kaikuma 
+      8 jõudma läbi
+      8 jooksma ära
+      8 jooksma välja
+      8 jooksma läbi
+      8 jooksma alla
+      8 jahtuma 
+      8 istuma tagasi
+      8 imetlema 
+      8 hüppama kinni
+      8 häkkima 
+      8 hõiskama 
+      8 helistama tagasi
+      8 faksima 
+      8 astuma ette
+      8 asetama tagasi
+      8 arvutama 
+      8 anduma 
+      8 andma üles
+      8 analüüsima 
+      8 ajama kokku
+      8 abistama 
+      7 ümisema 
+      7 õõnestama 
+      7 võõrustama 
+      7 vormima 
+      7 viskama välja
+      7 visandama 
+      7 vilistama 
+      7 viivitama 
+      7 viimistlema 
+      7 viima juurde
+      7 viigistama 
+      7 vihtuma 
+      7 veenduma 
+      7 vedelema 
+      7 vantsima 
+      7 vallanduma 
+      7 valguma tagasi
+      7 vaidlustama 
+      7 vaevlema 
+      7 unustama maha
+      7 tümitama 
+      7 tükeldama 
+      7 töötlema 
+      7 tõmbama ära
+      7 tõmbama välja
+      7 tuginema 
+      7 tihkama 
+      7 tarvitsema 
+      7 tankima 
+      7 sümboliseerima 
+      7 söövitama 
+      7 sörkima 
+      7 söitima 
+      7 sõitma alla
+      7 sõidutama tagasi
+      7 suruma vastu
+      7 suruma sisse
+      7 surema kokku
+      7 sujuma 
+      7 sigima 
+      7 sibama 
+      7 sahisema 
+      7 saama üles
+      7 saama üle
+      7 saama alles
+      7 rüüstama 
+      7 ruttama tagasi
+      7 rullima 
+      7 riskima 
+      7 reinvesteerima 
+      7 realiseeruma 
+      7 randuma 
+      7 rakenduma 
+      7 päädima 
+      7 põristama 
+      7 põimima sisse
+      7 puhuma sisse
+      7 propageerima 
+      7 pretendeerima 
+      7 piiluma sisse
+      7 pakutama 
+      7 paisuma 
+      7 paistma ära
+      7 olema tagasi
+      7 nõrgenema 
+      7 nuuskama 
+      7 norima 
+      7 möllima 
+      7 murendama 
+      7 manööverdama 
+      7 lükkama sisse
+      7 lööma maha
+      7 läxima 
+      7 lõhnama 
+      7 loosima 
+      7 lisama juurde
+      7 lihvima 
+      7 leidma tagasi
+      7 laskuma tagasi
+      7 laskma ära
+      7 laskma läbi
+      7 langema alla
+      7 lahmima 
+      7 kündma 
+      7 käima ära
+      7 kuuluma üle
+      7 kumama 
+      7 kriipima 
+      7 kribima 
+      7 krahmama 
+      7 koormama 
+      7 kolistama 
+      7 kolima eemale
+      7 kolima edasi
+      7 koksama 
+      7 kohustuma 
+      7 kobima tagasi
+      7 kiskuma tagasi
+      7 kisama 
+      7 kehastuma 
+      7 keerduma 
+      7 keelitama 
+      7 kaugenema 
+      7 kandma tagasi
+      7 kandma ette
+      7 kandma edasi
+      7 kammitsema 
+      7 kahetsema 
+      7 jääma tagasi
+      7 jääma ringi
+      7 jahutama 
+      7 imama 
+      7 hõlbustama 
+      7 hooldama 
+      7 hoidma kokku
+      7 hellitama 
+      7 heitlema 
+      7 halvenema 
+      7 finantseerima 
+      7 filmima 
+      7 esitama vastu
+      7 ennistama 
+      7 eirama 
+      7 edutama 
+      7 delegeerima 
+      7 astuma kõrvale
+      7 arvustama 
+      7 alluma 
+      7 akkama 
+      7 ajama taga
+      7 ajama püsti
+      6 ülendama 
+      6 ässitama 
+      6 õnnitlema 
+      6 õiendama 
+      6 võtma peale
+      6 võtma lahti
+      6 võtma alla
+      6 võimendama 
+      6 vulisema 
+      6 voolama edasi
+      6 viima laiali
+      6 vehkima 
+      6 varustama 
+      6 vapustama 
+      6 vankuma 
+      6 vahistama 
+      6 vaatama vastu
+      6 uinuma 
+      6 täheldama 
+      6 tõukama tagasi
+      6 tõstma ümber
+      6 tõstma ette
+      6 tõstma esile
+      6 tõendama 
+      6 tõdema 
+      6 tungima kallale
+      6 tulistama läbi
+      6 tulema maha
+      6 tuigerdama 
+      6 trügima sisse
+      6 trahvima 
+      6 torkama tagasi
+      6 toppima sisse
+      6 tooma kohale
+      6 toimetama kokku
+      6 tirima tagasi
+      6 tiirlema 
+      6 teisaldama 
+      6 tegema tagasi
+      6 tegema peale
+      6 tegema lahti
+      6 tassima kokku
+      6 taguma vastu
+      6 sõitma laiali
+      6 sumama 
+      6 soovima tagasi
+      6 sobima kokku
+      6 seonduma 
+      6 segama ära
+      6 seadustama 
+      6 sattuma sisse
+      6 sammuma tagasi
+      6 saatma üle
+      6 saatma läbi
+      6 saama ära
+      6 saama mööda
+      6 ronima alla
+      6 reserveerima 
+      6 reisima edasi
+      6 pühitsema 
+      6 pöörlema 
+      6 pääsema alla
+      6 põrutama vastu
+      6 purema 
+      6 prahvatama 
+      6 pooma üles
+      6 piidlema 
+      6 patsutama 
+      6 pantima 
+      6 paisutama 
+      6 paigutama kokku
+      6 pagendama 
+      6 paaduma 
+      6 ostma ära
+      6 organiseeruma 
+      6 olema kohal
+      6 okupeerima 
+      6 nördima 
+      6 nõustama 
+      6 nõjatuma 
+      6 nussima 
+      6 noomima 
+      6 nentima 
+      6 märkima üles
+      6 muljuma 
+      6 muhelema 
+      6 motiveerima 
+      6 minema ümber
+      6 minema koos
+      6 minema ilma
+      6 minema alles
+      6 matma maha
+      6 masseerima 
+      6 maskeeruma 
+      6 maksma sisse
+      6 lykkama 
+      6 lööma välja
+      6 lõikama läbi
+      6 loksuma tagasi
+      6 lohisema 
+      6 lobisema 
+      6 limpsima 
+      6 liimima 
+      6 liikuma läbi
+      6 leppima 
+      6 lehvitama 
+      6 laskma välja
+      6 lappama 
+      6 lamama 
+      6 lahkuma tagasi
+      6 lagunema ära
+      6 kükitama 
+      6 käratama 
+      6 kängitsema 
+      6 käima sisse
+      6 käima kokku
+      6 kõrguma 
+      6 kõrbema 
+      6 kõndima sisse
+      6 kõmpima tagasi
+      6 kuvama 
+      6 kummardama 
+      6 kukkuma sisse
+      6 kritseldama 
+      6 kostitama 
+      6 korjama kokku
+      6 kohtlema 
+      6 kiusama 
+      6 kirjutama ümber
+      6 kimbutama 
+      6 kiirguma 
+      6 kattuma 
+      6 kasvama välja
+      6 kaotama ära
+      6 kajastuma 
+      6 kajama 
+      6 kaema 
+      6 jäätuma 
+      6 jääma juurde
+      6 jätma pooleli
+      6 jõudma üles
+      6 jõudma pärale
+      6 jõllitama 
+      6 juhtima tagasi
+      6 jooksma vastu
+      6 jooksma laiali
+      6 jalutama sisse
+      6 investeerima tagasi
+      6 immitsema 
+      6 ignoreerima 
+      6 hülgama 
+      6 himustama 
+      6 heitma tagasi
+      6 hauduma 
+      6 ekslema 
+      6 dikteerima 
+      6 barrikadeerima 
+      6 astuma alla
+      6 arenema edasi
+      6 ankurdama 
+      6 andma kaasa
+      6 aktsepteerima 
+      6 aeguma 
+      5 ylema 
+      5 üllatuma 
+      5 ääristama 
+      5 ärrituma 
+      5 äparduma 
+      5 õppima ära
+      5 väärtustama 
+      5 võitma vastu
+      5 vuristama 
+      5 voolama juurde
+      5 viskama maha
+      5 virutama vastu
+      5 vinguma 
+      5 viima eemale
+      5 varitsema 
+      5 vannutama 
+      5 valima tagasi
+      5 valama juurde
+      5 vaikima 
+      5 vaatama välja
+      5 vaatama tagasi
+      5 vaatama pealt
+      5 vaaruma 
+      5 uudistama 
+      5 uputama ära
+      5 ujutama 
+      5 tõusma kokku
+      5 tõstma üle
+      5 tõmbuma kokku
+      5 turvama 
+      5 turnima 
+      5 tulema kaasas
+      5 tulema ilma
+      5 trotsima 
+      5 traavima 
+      5 tormama alla
+      5 tootma tagasi
+      5 tooma täis
+      5 togima 
+      5 teenima ära
+      5 tavatsema 
+      5 tassima kaasa
+      5 sünteesima 
+      5 sängitama 
+      5 sõtkuma 
+      5 sõitma ringi
+      5 sõdima 
+      5 suunduma välja
+      5 sumpama 
+      5 sulpsatama 
+      5 sulpsama 
+      5 sulandama 
+      5 spetsialiseeruma 
+      5 soristama 
+      5 sisenema läbi
+      5 siluma 
+      5 serveerima 
+      5 seirama 
+      5 sattuma ringi
+      5 sattuma ette
+      5 sattuma alla
+      5 salvama 
+      5 saastama 
+      5 saama võidu
+      5 saama ringi
+      5 saama kõrvale
+      5 saama ette
+      5 saagima 
+      5 rõivastama 
+      5 refereerima 
+      5 ratifitseerima 
+      5 raporteerima 
+      5 raiskama 
+      5 rahunema 
+      5 põrutama tagasi
+      5 põrutama sisse
+      5 põgenema ära
+      5 puksima 
+      5 pudenema laiali
+      5 provotseerima 
+      5 pressima sisse
+      5 pooma 
+      5 pomisema 
+      5 plartsatama 
+      5 pitsitama 
+      5 pistma sisse
+      5 pingutama 
+      5 pikenema 
+      5 piinama 
+      5 pihustuma 
+      5 peksma vastu
+      5 peksma läbi
+      5 pedaalima 
+      5 pankrotistuma 
+      5 panema vastu
+      5 panema kaasa
+      5 paluma ära
+      5 painutama 
+      5 painduma 
+      5 pagema tagasi
+      5 otsima taga
+      5 ostma tagasi
+      5 osalema kokku
+      5 orienteeruma 
+      5 olema välja
+      5 ohkama 
+      5 nõudma tagasi
+      5 nõelama 
+      5 nikkuma 
+      5 needma 
+      5 müristama 
+      5 mätsima 
+      5 mässama 
+      5 märgistama 
+      5 murdma vastu
+      5 murdma tagasi
+      5 muigama 
+      5 mudima 
+      5 moonutama 
+      5 meelitama välja
+      5 meelitama tagasi
+      5 meelitama kokku
+      5 matkima 
+      5 maksustama 
+      5 lööma vastu
+      5 lööma lahti
+      5 läigatama 
+      5 luuletama 
+      5 lupsama 
+      5 looma vastu
+      5 loivama 
+      5 lohutama 
+      5 loetlema 
+      5 liipama 
+      5 liikuma välja
+      5 langema kokku
+      5 laksatama 
+      5 lakkama 
+      5 laiutama 
+      5 ladestama 
+      5 külmutama 
+      5 külmuma kinni
+      5 kõrvaldama 
+      5 kõrgenema 
+      5 kuuluma välja
+      5 kutsuma ära
+      5 kureerima 
+      5 kumama läbi
+      5 kukkuma ära
+      5 kukkuma maha
+      5 korjuma 
+      5 kootuma 
+      5 kooskõlastama 
+      5 konvoeerima 
+      5 kohama 
+      5 klõbistama 
+      5 kihutama edasi
+      5 kerkima üles
+      5 kehastama 
+      5 keevitama 
+      5 keerlema 
+      5 kasvama üles
+      5 kantseldama 
+      5 kandideerima kohale
+      5 kakama 
+      5 kaevama edasi
+      5 kaapima 
+      5 jätma kõrvale
+      5 juhtima välja
+      5 juhatama edasi
+      5 jooksutama 
+      5 jooksma mööda
+      5 johtuma 
+      5 irvitama 
+      5 inspireerima 
+      5 inkorporeerima 
+      5 immutama 
+      5 imiteerima 
+      5 imestama 
+      5 imbuma tagasi
+      5 hüplema 
+      5 häälestama 
+      5 häkkima sisse
+      5 hoidma lahti
+      5 hiilgama 
+      5 heitma ette
+      5 hajutama 
+      5 filtreeruma 
+      5 evakueeruma 
+      5 etendama 
+      5 eristuma 
+      5 erastama 
+      5 elavnema 
+      5 elama välja
+      5 elama kaasa
+      5 elama alla
+      5 eksitama 
+      5 edendama 
+      5 defineerima 
+      5 barrikadeeruma 
+      5 avarduma 
+      5 autasustama 
+      5 aurama 
+      5 asuma tagasi
+      5 astuma läbi
+      5 astuma juurde
+      5 assotsieeruma 
+      5 arutlema 
+      5 andma kokku
+      5 ammenduma 
+      5 allkirjastama 
+      5 ajama läbi
+      5 aerutama 
+      4 ütlema välja
+      4 ööbima 
+      4 õgima 
+      4 väsitama 
+      4 võtma üles
+      4 võltsima 
+      4 voolima 
+      4 vonklema 
+      4 viskama vastu
+      4 viskama ette
+      4 vingerdama 
+      4 vihastama 
+      4 veerema sisse
+      4 vedama üles
+      4 vedama kokku
+      4 vedama edasi
+      4 vajuma laiali
+      4 vajuma kinni
+      4 vaidlema 
+      4 vahelduma 
+      4 vaatama otsa
+      4 vaatama alt, üles
+      4 vaagima 
+      4 ukerdama 
+      4 uhuma 
+      4 uhtma 
+      4 tärkama 
+      4 täristama 
+      4 täienema 
+      4 tõusma püsti
+      4 tõttama tagasi
+      4 tuupima 
+      4 tundma ära
+      4 tumestama 
+      4 tulistama ees
+      4 tulema valmis
+      4 tulema vaja
+      4 tulema taga
+      4 tulema esile
+      4 trükkima sisse
+      4 troonima 
+      4 treima 
+      4 tootma sisse
+      4 toksima sisse
+      4 toksama 
+      4 toimetama läbi
+      4 toibuma 
+      4 timmima 
+      4 tikkima 
+      4 tekitama juurde
+      4 teisenema 
+      4 tegema ümber
+      4 tegema välja
+      4 tegema valmis
+      4 tegema sisse
+      4 tassima tagasi
+      4 tasandama 
+      4 taipama 
+      4 tahtma välja
+      4 taganema tagasi
+      4 taasiseseisvuma 
+      4 taanduma tagasi
+      4 sööstma tagasi
+      4 sättima üles
+      4 sõnastama 
+      4 sõitma välja, vastu
+      4 sõitma peale
+      4 sõitma lähedal
+      4 suruma kokku
+      4 surema välja
+      4 sumatama 
+      4 sublimeeruma 
+      4 sortima 
+      4 sokutama sisse
+      4 skaneerima 
+      4 sirgeldama 
+      4 sigitama 
+      4 siginema juurde
+      4 seiklema 
+      4 segama kokku
+      4 sasima 
+      4 sajatama 
+      4 sahkerdama 
+      4 sahistama 
+      4 sadama alla
+      4 saatma mööda
+      4 saatma järele
+      4 saama ligi
+      4 saama kinni
+      4 saabuma läbi
+      4 saabuma kokku
+      4 rääkima ära
+      4 rändama välja
+      4 rändama läbi
+      4 ristima 
+      4 riisuma 
+      4 riietuma ümber
+      4 restaureerima 
+      4 renoveerima 
+      4 raksama 
+      4 rabelema 
+      4 raatsima 
+      4 püüdma kinni
+      4 pöörama ära
+      4 pääsema lahti
+      4 pääsema alles
+      4 põruma 
+      4 põrkuma tagasi
+      4 põlema ära
+      4 putuma 
+      4 pumpama sisse
+      4 puistama laiali
+      4 programmeerima sisse
+      4 produtseerima 
+      4 pookima 
+      4 pidurduma 
+      4 pidama välja
+      4 pidama maha
+      4 peletama tagasi
+      4 peksma puruks
+      4 peetama 
+      4 peeretama 
+      4 patrullima 
+      4 panema tähele
+      4 panema taha
+      4 panema edasi
+      4 pakitama 
+      4 paistma sisse
+      4 otsima üles
+      4 osatama 
+      4 oopima 
+      4 omistama 
+      4 olema võlgu
+      4 olema kinni
+      4 olema alles
+      4 nügima 
+      4 näppima 
+      4 näima ette
+      4 nõudma juurde
+      4 nõrgendama 
+      4 nuusutama 
+      4 noolima 
+      4 nokkima 
+      4 niitma 
+      4 neelama alla
+      4 nakatuma kokku
+      4 möirgama 
+      4 märkima ära
+      4 mängima välja
+      4 mõtisklema 
+      4 moodustama kokku
+      4 modelleerima 
+      4 minetama 
+      4 minema täis
+      4 minema otsa
+      4 minema lahku
+      4 minema kõrvale
+      4 minema ees
+      4 minema eemale
+      4 menetlema 
+      4 meilima 
+      4 marssima läbi
+      4 manustama 
+      4 manduma 
+      4 maksma ära
+      4 maksma välja
+      4 mahtuma juurde
+      4 lüpsma 
+      4 lülitama ümber
+      4 lükkama kokku
+      4 lükkama alla
+      4 lööma ette
+      4 läitma 
+      4 lõhkuma ära
+      4 lõhkema 
+      4 lõhestama 
+      4 lõbustama 
+      4 lukustuma 
+      4 luhtuma 
+      4 lugema sisse
+      4 loopima laiali
+      4 looklema 
+      4 lohistama tagasi
+      4 listima 
+      4 linastuma 
+      4 liisima 
+      4 liikuma ringi
+      4 libastuma 
+      4 lendama üles
+      4 lendama ära
+      4 lendama mööda
+      4 lendama kokku
+      4 leiutama 
+      4 lartsatama 
+      4 lappima 
+      4 laotama laiali
+      4 langema maha
+      4 lammutama 
+      4 lakkuma 
+      4 lahustama 
+      4 lahkuma edasi
+      4 küsitlema 
+      4 küpsetama 
+      4 köhima 
+      4 käärima 
+      4 käskima 
+      4 käsitama 
+      4 känguma 
+      4 käima üle
+      4 käima vastu
+      4 käima kaasas
+      4 kägistama 
+      4 kägarduma 
+      4 kõverduma 
+      4 kõmatama 
+      4 kõhklema 
+      4 kuuluma alla
+      4 kustutama ära
+      4 kulgema läbi
+      4 kuivama ära
+      4 kosuma 
+      4 koputama vastu
+      4 kopsima 
+      4 koorima 
+      4 koondama kokku
+      4 koolma 
+      4 kooberdama 
+      4 konverteerima 
+      4 konfiskeerima 
+      4 kondenseeruma 
+      4 komplekteerima 
+      4 kompenseerima 
+      4 kompama 
+      4 kollitama 
+      4 kolksatama 
+      4 kolima välja
+      4 kolima kokku
+      4 kohmitsema 
+      4 kohisema 
+      4 kohanema 
+      4 kohandama 
+      4 kogunema välja
+      4 kobama 
+      4 klõpsima 
+      4 klassifitseerima 
+      4 kirema 
+      4 kindlustuma 
+      4 kihutama vastu
+      4 kihutama alla
+      4 ketrama 
+      4 kerkima tagasi
+      4 kerima tagasi
+      4 keerama lahti
+      4 keerama kinni
+      4 katma kinni
+      4 kasvama kinni
+      4 kannustama 
+      4 kangutama 
+      4 kandma kaasas
+      4 kanaliseerima 
+      4 kamandama tagasi
+      4 kakerdama 
+      4 kadestama 
+      4 kaarduma 
+      4 jöudnuma 
+      4 jääma pooleli
+      4 jääma lahti
+      4 jätma edasi
+      4 jõudma ilma
+      4 jõudma ette
+      4 jooma ära
+      4 jooksma üles
+      4 jalutama läbi
+      4 itsitama 
+      4 istuma peal
+      4 istuma kokku
+      4 intervjueerima 
+      4 ilutsema 
+      4 ihalema 
+      4 hüüatama 
+      4 hüvitama 
+      4 hääletama tagasi
+      4 hulluma 
+      4 hirmuma 
+      4 hiivama 
+      4 halvendama 
+      4 hakkima 
+      4 hakkama tagasi
+      4 hajuma ära
+      4 grupeerima 
+      4 genereerima 
+      4 forsseerima 
+      4 esitama kokku
+      4 esietenduma 
+      4 ehmuma 
+      4 ehitama sisse
+      4 eestima 
+      4 dirigeerima 
+      4 debüteerima 
+      4 baseeruma 
+      4 astuma peale
+      4 askeldama 
+      4 arvutama ümber
+      4 arvestama sisse
+      4 ankurduma 
+      4 andma vastu
+      4 alistuma 
+      4 akumuleerima 
+      4 ajastama 
+      4 ajama välja
+      4 ajama sisse
+      4 aimama 
+      4 ahistama 
+      3 ütlema üles
+      3 ütlema ära
+      3 ütlema sisse
+      3 öökima 
+      3 õõtsuma 
+      3 õppima kokku
+      3 õnnistama 
+      3 õitsema 
+      3 vötnuma 
+      3 vääratama 
+      3 väänduma 
+      3 väsima ära
+      3 värvuma 
+      3 vältama 
+      3 välgatama 
+      3 võõpama 
+      3 võtma edasi
+      3 võpatama 
+      3 vorpima 
+      3 vormuma 
+      3 voolama välja
+      3 voogama tagasi
+      3 voltima 
+      3 volksama 
+      3 viskama üles
+      3 viskama alla
+      3 virutama kinni
+      3 virguma 
+      3 vinditama 
+      3 vilksama 
+      3 viima ringi
+      3 viima peale
+      3 vestma 
+      3 vedama ringi
+      3 vedama juurde
+      3 vastandama 
+      3 varieerima 
+      3 vananema 
+      3 valama laiali
+      3 vajuma kõrvale
+      3 vahetuma 
+      3 vahetama vastu
+      3 usutlema 
+      3 unuma 
+      3 ujutama üle
+      3 uisutama 
+      3 uhkama 
+      3 töötama vastu
+      3 tähendama tagasi
+      3 tõusma üles
+      3 tõusma ette
+      3 tõusetuma 
+      3 tõstma üles
+      3 tõstma välja
+      3 tõstma ringi
+      3 tõstatuma 
+      3 tõrvama 
+      3 tõrkuma 
+      3 tõrjuma välja
+      3 tõmblema 
+      3 tõmbama üles
+      3 tõmbama sisse
+      3 tõmbama lahti
+      3 tõmbama ette
+      3 tõmbama alla
+      3 tõlkima tagasi
+      3 tõhustama 
+      3 turustama 
+      3 turgatama 
+      3 tungima tagasi
+      3 tungima läbi
+      3 tulema tagant
+      3 tulema ringi
+      3 tulema pealt
+      3 tulema otsa
+      3 tulema kinni
+      3 tuikuma tagasi
+      3 tsenderdama 
+      3 trummeldama 
+      3 triikima 
+      3 torkama välja
+      3 torkama sisse
+      3 torgatama 
+      3 toppima ära
+      3 toonitama 
+      3 tooma üles
+      3 tooma ilma
+      3 tooma edasi
+      3 tooma alla
+      3 toimetama välja
+      3 toimetama kohale
+      3 tohterdama 
+      3 tituleerima 
+      3 tippima sisse
+      3 tipnema 
+      3 tiirutama 
+      3 tihenema 
+      3 terendama 
+      3 teravnema 
+      3 tekkima sisse
+      3 tekkima alla
+      3 tegema üle
+      3 tegema tarvis
+      3 tegema ringi
+      3 tegema maha
+      3 teadvustama 
+      3 teadma ära
+      3 tatsama tagasi
+      3 tasuma kokku
+      3 tassima sisse
+      3 tassima alla
+      3 tasakaalustama 
+      3 tartuma 
+      3 tantsitama 
+      3 tahtma kaasa
+      3 šokeerima 
+      3 süstematiseerima 
+      3 sündima juurde
+      3 sööstma välja
+      3 sööma täis
+      3 sähvama 
+      3 säetuma 
+      3 sõudma tagasi
+      3 sõitma üles
+      3 sõitma puruks
+      3 sõitma juurde
+      3 sõitma ilma
+      3 suunama kokku
+      3 surmama 
+      3 surisema 
+      3 suretama 
+      3 sundima tagasi
+      3 summutama 
+      3 sukeldama 
+      3 suhtuma ette
+      3 suhtuma alla
+      3 suhestama 
+      3 sublimeerima 
+      3 stimuleerima 
+      3 stabiliseeruma 
+      3 spondeerima 
+      3 sorisema 
+      3 sopsama 
+      3 soovima juurde
+      3 soonima 
+      3 soojendama 
+      3 soikuma 
+      3 sodima 
+      3 sisistama 
+      3 sisenema ilma
+      3 seksima 
+      3 seisma kinni
+      3 seiskama 
+      3 seestuma 
+      3 seadma ette
+      3 sattuma välja
+      3 sattuma ilma
+      3 sattuma edasi
+      3 salgama 
+      3 sakkima 
+      3 saatma üles
+      3 saatma sisse
+      3 saatma ilma
+      3 saama valmis
+      3 saama pärast
+      3 saama alt
+      3 saalima 
+      3 saabuma kohale
+      3 rüvetama 
+      3 rühmituma 
+      3 rühkima üles
+      3 räntsatama 
+      3 rõkkama 
+      3 ruulima 
+      3 ropsima 
+      3 ropendama 
+      3 roomama tagasi
+      3 ronima ära
+      3 ronima otsa
+      3 ronima mööda
+      3 rokkima 
+      3 risustama 
+      3 ringlema 
+      3 reostuma 
+      3 rekonstrueerima 
+      3 rehitsema 
+      3 regama ära
+      3 rebima välja
+      3 rebima lahti
+      3 rebestama 
+      3 raevuma 
+      3 pöörduma järele
+      3 pääsema mööda
+      3 pääsema ette
+      3 pärandama 
+      3 põrkama tagasi
+      3 põrgatama 
+      3 põlistama 
+      3 põletama maha
+      3 puutuma ära
+      3 puutuma vastu
+      3 puurima sisse
+      3 purjetama tagasi
+      3 punnima 
+      3 pumpama ümber
+      3 pulbitsema 
+      3 printima 
+      3 premeerima 
+      3 postima 
+      3 positsioneerima 
+      3 poolitama 
+      3 planeerima sisse
+      3 plaksatama 
+      3 plagama 
+      3 plaanitsema 
+      3 pistma välja
+      3 piserdama 
+      3 piirnema 
+      3 pihtima 
+      3 pidama lahti
+      3 pidama kokku
+      3 pidama ees
+      3 pexima 
+      3 perima 
+      3 peitma tagasi
+      3 pehmendama 
+      3 paugutama 
+      3 paterdama 
+      3 pasandama 
+      3 parseldama 
+      3 paotuma 
+      3 panema üle
+      3 panema taga
+      3 panema otsa
+      3 panema kõrvale
+      3 panema ilma
+      3 palistama 
+      3 paitama 
+      3 paistma välja
+      3 paiskuma välja
+      3 paiskuma vastu
+      3 paiskama kokku
+      3 painama 
+      3 paiknema ümber
+      3 paikama 
+      3 paigutama ära
+      3 pahvatama 
+      3 pahandama 
+      3 otsustama tagasi
+      3 ostma juurde
+      3 orgunnima 
+      3 ootama ära
+      3 onama 
+      3 omastama 
+      3 olema ära
+      3 olema vaja, juurde
+      3 olema kokku, vaja
+      3 odavnema 
+      3 näpistama 
+      3 näima pealt
+      3 nägema läbi
+      3 nägema juurde
+      3 nõrgestama 
+      3 nõksatama 
+      3 nurjuma 
+      3 nuiama 
+      3 nuhtlema 
+      3 nokitsema 
+      3 niitima 
+      3 niisutama 
+      3 nihkuma tagasi
+      3 nihkuma edasi
+      3 naksama 
+      3 naerma välja
+      3 naasma alles
+      3 naalduma 
+      3 müüma ära
+      3 müksama 
+      3 müdistama 
+      3 määrduma 
+      3 mässima sisse
+      3 mängitama 
+      3 mängima sisse
+      3 mädanema ära
+      3 mõtlema tagasi
+      3 mõtlema sisse
+      3 mõtestama 
+      3 mõrvama 
+      3 mõlgutama 
+      3 mõjustama 
+      3 mõistma välja
+      3 muunduma 
+      3 muukima 
+      3 moonduma 
+      3 mitmekordistuma 
+      3 minema taha
+      3 minema ringi
+      3 minema maha
+      3 minema kinni
+      3 meelitama juurde
+      3 marssima tagasi
+      3 maksma läbi
+      3 majandama 
+      3 maitsema 
+      3 maanduma tagasi
+      3 lülituma sisse
+      3 lülitama sisse
+      3 lükkama lahti
+      3 lühenema 
+      3 lühendama 
+      3 lööma puruks
+      3 lööma kokku
+      3 lööma edasi
+      3 lööma alla
+      3 lärmama 
+      3 lämmatama 
+      3 lõõtsutama 
+      3 lõõtsuma 
+      3 lõõmama 
+      3 lõikama ära
+      3 lunima 
+      3 looma välja
+      3 looma tagasi
+      3 looma juurde
+      3 loksutama 
+      3 lohistama eemale
+      3 logistama 
+      3 lippama tagasi
+      3 lindistama 
+      3 liikuma üles
+      3 liigendama 
+      3 lihtsustuma 
+      3 libistama tagasi
+      3 libistama ette
+      3 libisema välja
+      3 levima laiali
+      3 lendama kohale
+      3 lehvima 
+      3 lasuma 
+      3 lasnuma 
+      3 laskma üles
+      3 laskma üle
+      3 laskma täis
+      3 laskma mööda
+      3 laskma alla
+      3 laksima 
+      3 lahterduma 
+      3 lahendama ära
+      3 laduma ümber
+      3 laduma ette
+      3 laadima sisse
+      3 laadima maha
+      3 küsitama 
+      3 külmuma ära
+      3 küllastuma 
+      3 külastama kokku
+      3 köhatama 
+      3 kärisema 
+      3 käitama 
+      3 käima ümber
+      3 käima tagasi
+      3 käima taga
+      3 käima edasi
+      3 kägardama 
+      3 kõpsutama 
+      3 kõngema 
+      3 kõndima läbi
+      3 kõksama 
+      3 kõhistama 
+      3 kutsuma välja
+      3 kutsuma esile
+      3 kutsuma edasi
+      3 kutsuma alla
+      3 kurvastama 
+      3 kummitama 
+      3 kulgema välja
+      3 kulgema tagasi
+      3 kukkuma vahele
+      3 kukkuma puruks
+      3 kuivama kokku
+      3 kuhjama kokku
+      3 kostma läbi
+      3 kosima 
+      3 korrumpeeruma 
+      3 korrigeerima 
+      3 korraldama kokku
+      3 korjama tagasi
+      3 kopitama 
+      3 kopima 
+      3 kootuma sisse
+      3 koolitama 
+      3 koogutama 
+      3 kontsentreerima 
+      3 kogunema juurde
+      3 kogunema ette
+      3 kleepuma kinni
+      3 kiskuma ära
+      3 kiskuma kaasa
+      3 kirjutama välja
+      3 kirjutama juurde
+      3 kippuma ära
+      3 kindlustama ringi
+      3 kiljuma 
+      3 kiirustama edasi
+      3 kiirenema 
+      3 kiikama sisse
+      3 kihutama välja, vastu
+      3 kihutama sisse
+      3 kihutama läbi
+      3 kepslema 
+      3 keksima 
+      3 keerama ära
+      3 keerama alla
+      3 kauplema välja
+      3 katapulteeruma 
+      3 kasvama kokku
+      3 karmistama 
+      3 kannatama välja
+      3 kangestuma 
+      3 kandma kokku
+      3 kandma alla
+      3 kammima läbi
+      3 kalpsama 
+      3 kallama täis
+      3 kallama maha
+      3 kaklema 
+      3 kahlama 
+      3 kahekordistama 
+      3 kaebama peale
+      3 kaduma alla
+      3 kaardistama 
+      3 kaaluma üles
+      3 jöudima 
+      3 jääma võlgu
+      3 jääma vaja
+      3 jääma täis
+      3 jääma otsa
+      3 jääma kaasa
+      3 jääma järel
+      3 jääma ees
+      3 jätma kokku
+      3 jätma kinni
+      3 järjestama 
+      3 jäljendama 
+      3 jõudma üle
+      3 jõudma vastu
+      3 jõudma otsa
+      3 jõudma koos
+      3 jõudma järele
+      3 juurduma sisse
+      3 juubeldama 
+      3 jumaldama 
+      3 julgestama 
+      3 juhtuma sisse
+      3 juhtima vastu
+      3 juhinduma 
+      3 jootma 
+      3 joonistuma 
+      3 joonima 
+      3 joonduma 
+      3 jooksma juurde
+      3 jamama 
+      3 jalutama alla
+      3 jagunema laiali
+      3 jagama välja
+      3 istutama ümber
+      3 istutama maha
+      3 istuma välja
+      3 istuma taga
+      3 istuma sisse
+      3 istuma sees
+      3 istuma alla
+      3 irduma 
+      3 inspekteerima 
+      3 improviseerima 
+      3 imenduma tagasi
+      3 ilmuma juurde
+      3 illustreerima 
+      3 iganema 
+      3 hyppama 
+      3 hüppama üle
+      3 hüppama välja
+      3 hüppama vastu
+      3 hüppama järele
+      3 hüpitama 
+      3 hälbima 
+      3 häbistama 
+      3 hõõruma laiali
+      3 hõikuma 
+      3 huvituma 
+      3 hulpima 
+      3 hukkama 
+      3 hoiustama 
+      3 hirnuma 
+      3 hingeldama 
+      3 hiilima sisse
+      3 helisema 
+      3 heiastuma 
+      3 haukama 
+      3 hanguma 
+      3 halvama 
+      3 hakkama pihta
+      3 hajuma laiali
+      3 haigestuma kokku
+      3 haamerdama 
+      3 graveerima 
+      3 eskortima tagasi
+      3 erutama 
+      3 elustama 
+      3 elama lähedal
+      3 ekspluateerima 
+      3 ehitama välja
+      3 dubleerima 
+      3 doseerima 
+      3 digima 
+      3 diagnoosima 
+      3 aurustuma 
+      3 auditeerima 
+      3 astuma vastu
+      3 astuma vahele
+      3 astuma täis
+      3 astuma koos
+      3 astuma alles
+      3 andma ringi
+      3 ampsama 
+      3 alustama tagasi
+      3 alustama läbi
+      3 alanema 
+      3 akrediteerima 
+      3 aitama välja
+      3 aitama vastu
+      3 ahmama 
+      3 aetama 
+      3 aeglustuma 
+      3 aduma 
+      2 yritama 
+      2 üppama 
+      2 ülistama 
+      2 ühtlustama 
+      2 ühendama kokku
+      2 ärkama tagasi
+      2 äigama 
+      2 ähvardama tagasi
+      2 ägama 
+      2 õõtsutama 
+      2 õppima edasi
+      2 õngitsema välja
+      2 õngitsema 
+      2 õmblema kinni
+      2 õhkima 
+      2 vürtsitama 
+      2 värisema 
+      2 vänderdama 
+      2 välkuma 
+      2 väljutama 
+      2 väljuma tagasi
+      2 võõrandama 
+      2 võttama 
+      2 võtma ringi
+      2 võtma pealt
+      2 võtma lähedal
+      2 võtma läbi
+      2 võtma kõrvalt
+      2 võrsuma 
+      2 võrgutama 
+      2 võnkuma 
+      2 võitma kokku
+      2 võitlema vastu
+      2 võistlema välja
+      2 võimenduma 
+      2 võiduma 
+      2 vurtsatama 
+      2 vurisema 
+      2 vurama ette
+      2 votima 
+      2 voorima kokku
+      2 voolama ära
+      2 voolama maha
+      2 voolama läbi
+      2 voolama laiali
+      2 voolama alla
+      2 vooderdama 
+      2 volitama 
+      2 viskuma maha
+      2 viskama üle
+      2 viskama pealt
+      2 viskama peale
+      2 viskama otsa
+      2 viskama läbi
+      2 viskama laiali
+      2 viskama lahti
+      2 viskama kaasa
+      2 viskama juurde
+      2 virutama puruks
+      2 virelema 
+      2 vintsima 
+      2 viluma 
+      2 villima ümber
+      2 vilkuma 
+      2 vilgutama 
+      2 viima ilma
+      2 vibutama 
+      2 vettima 
+      2 vermima 
+      2 veristama 
+      2 veetlema 
+      2 veeretama tagasi
+      2 veerema laiali
+      2 veerema alla
+      2 vedima 
+      2 vedama sisse
+      2 vedama läbi
+      2 vedama kohale
+      2 vedama kinni
+      2 vedama alt
+      2 vastanduma 
+      2 vassima 
+      2 varisema alla
+      2 vangerdama 
+      2 valmistuma ette
+      2 vallutama tagasi
+      2 valgustuma 
+      2 valguma välja
+      2 valguma juurde
+      2 valama välja
+      2 valama tagasi
+      2 valama sisse
+      2 valama maha
+      2 vakatama 
+      2 vajutama alla
+      2 vajuma läbi
+      2 vajuma kokku
+      2 vajuma alla
+      2 vaimustuma 
+      2 vahtima üles
+      2 vahtima sisse
+      2 vahtima alla
+      2 vaguma 
+      2 vabandama välja
+      2 vaatama kõrvalt
+      2 uuristuma 
+      2 uskuma tagasi
+      2 urisema 
+      2 unustama ära
+      2 ummistuma 
+      2 ulpima 
+      2 ulguma 
+      2 ulatuma üle
+      2 ulatuma sisse
+      2 ulatuma kokku
+      2 ujuma tagasi
+      2 uitama 
+      2 uimama 
+      2 uhtuma tagasi
+      2 tühjenema 
+      2 tüdinema 
+      2 töötama üles
+      2 töötama üle
+      2 töötama kokku
+      2 tönkama 
+      2 täpsustuma 
+      2 täima 
+      2 tähtsustama 
+      2 tõusma lahti
+      2 tõusma kõrvale
+      2 tõusma esile
+      2 tõusma alles
+      2 tõukuma 
+      2 tõttama edasi
+      2 tõstma ära
+      2 tõstma valmis
+      2 tõstma sisse
+      2 tõmbama vastu
+      2 tõmbama kinni
+      2 tõlkima ära
+      2 tuututama 
+      2 tuulutama 
+      2 turtsatama 
+      2 turgutama 
+      2 tupeerima 
+      2 tunnistama üles
+      2 tunguma 
+      2 tunglema ümber
+      2 tungima üles
+      2 tungima vastu
+      2 tungima lahti
+      2 tundma läbi
+      2 tundma kaasa
+      2 tundma ette
+      2 tullema 
+      2 tulema vast
+      2 tulema vahele
+      2 tulema tarvis
+      2 tulema tagant, välja
+      2 tulema sees
+      2 tulema lahti
+      2 tulema koos
+      2 tulema ilma, kaasa, sisse
+      2 tulema ees
+      2 tuiama 
+      2 tuhnima 
+      2 tuduma 
+      2 tsentraliseerima 
+      2 trügima tagasi
+      2 triblama 
+      2 traumeerima 
+      2 transportima tagasi
+      2 transleerima 
+      2 transformeerima 
+      2 trampima sisse
+      2 traalima 
+      2 traageldama 
+      2 tossutama 
+      2 tormlema 
+      2 tormama üles
+      2 tormama täis
+      2 toppima üles
+      2 toppama 
+      2 tootma üle
+      2 tooma vastu
+      2 tooma järele
+      2 tooma ette
+      2 tooma alles
+      2 toimuma lähedal
+      2 toimuma läbi
+      2 tohtima 
+      2 tirima alla
+      2 tippima maha
+      2 tinutama 
+      2 tintinnabuli-stiilima 
+      2 tinistama 
+      2 tilkuma tagasi
+      2 tilkuma alla
+      2 tikutama 
+      2 tiivustama 
+      2 tihendama 
+      2 teostuma 
+      2 tembeldama 
+      2 tekkima ette
+      2 tekitama alla
+      2 tegutsema vastu
+      2 tegema üles
+      2 tegema järel
+      2 teesklema 
+      2 teenima välja
+      2 teenima juurde
+      2 tassima laiali
+      2 tarretama 
+      2 tapma ära
+      2 taotlema tagasi
+      2 taotlema juurde
+      2 takerduma kinni
+      2 tahtma ringi
+      2 tahtma kohale
+      2 tahtma juurde
+      2 tagurdama tagasi
+      2 taguma sisse
+      2 taganema välja
+      2 taganema sisse
+      2 taaruma tagasi
+      2 syvenema 
+      2 sütitama 
+      2 sünkroniseerima 
+      2 sügelema 
+      2 söövituma 
+      2 sööstma sisse
+      2 sööstma läbi
+      2 sööstma alla
+      2 sörkima tagasi, otsa
+      2 sättima sisse
+      2 sättima ette
+      2 sädistama 
+      2 sõlmuma 
+      2 sõitma üle
+      2 sõitma välja, täis
+      2 sõitma täis
+      2 sõitma pärast
+      2 sõitma koos
+      2 sõitma eest
+      2 sõimama läbi
+      2 sõidutama välja
+      2 sõidutama laiali
+      2 suvatsema 
+      2 suurenema kokku
+      2 suunduma juurde
+      2 suunduma alla
+      2 suunama välja
+      2 suunama juurde
+      2 suumima 
+      2 suskama tagasi
+      2 susisema 
+      2 suruma peale
+      2 suruma kinni
+      2 surfama 
+      2 surema üle
+      2 surema alla
+      2 supsatama 
+      2 supsama 
+      2 sulpsama tagasi
+      2 sulanduma ilma
+      2 sulama tagasi
+      2 suhtuma tagasi
+      2 suhtuma kinni
+      2 suhtestuma 
+      2 suhestuma 
+      2 sugema 
+      2 sorkama 
+      2 soovima kokku
+      2 soolama 
+      2 soojenema 
+      2 solksama 
+      2 solgutama 
+      2 sokutama ette
+      2 soendama 
+      2 sobima ära
+      2 skännima 
+      2 skanneerima 
+      2 siunama 
+      2 sisisema 
+      2 sisenema edasi
+      2 sirtsutama 
+      2 sirama 
+      2 silmama 
+      2 silkama tagasi
+      2 silduma 
+      2 sikutama välja
+      2 siirduma eest
+      2 siginema järel
+      2 siduma külge
+      2 siduma kokku
+      2 siblima 
+      2 sibama alla
+      2 shokeerima 
+      2 sexima 
+      2 sepitsema 
+      2 sepistama 
+      2 semmima 
+      2 selginema 
+      2 selekteerima 
+      2 seisma vastu
+      2 seisma tagasi
+      2 seisma peal
+      2 seisma kõrvale
+      2 seisatama 
+      2 seilama tagasi
+      2 seilama edasi
+      2 sehkendama 
+      2 segama valmis
+      2 seedima 
+      2 seebitama 
+      2 sedastama 
+      2 seadma tagasi
+      2 seadistama 
+      2 sattuma ära
+      2 sattuma tagasi, otsa
+      2 sattuma peale
+      2 sattuma maha
+      2 sattuma kaasa
+      2 sattuma järel
+      2 sattuma alles
+      2 sammuma üles
+      2 sammuma sisse
+      2 sammuma edasi
+      2 sakutama 
+      2 saatma kohale
+      2 saatma ette
+      2 saatma alla
+      2 saama vaja
+      2 saama tagant
+      2 saama sees
+      2 saama pihta
+      2 saama peksma
+      2 saama pealt
+      2 saama parata
+      2 saama külge
+      2 saama jälile
+      2 saama edasi, edasi
+      2 saama all
+      2 saagima maha
+      2 saagima läbi
+      2 saabuma järele
+      2 rüselema 
+      2 ründama lähedal
+      2 rühmitama 
+      2 rühkima tagasi
+      2 rühkima ringi
+      2 rügama 
+      2 rääkima sisse
+      2 räuskama 
+      2 räsima 
+      2 rändama sisse
+      2 rändama kokku
+      2 ruttama järele
+      2 rookima 
+      2 roobitsema 
+      2 ronima kokku
+      2 roiskuma 
+      2 rivistama üles
+      2 rivistama 
+      2 ristuma 
+      2 ristama 
+      2 riputama alla
+      2 rikastama 
+      2 resideerima 
+      2 reostama kokku
+      2 reostama 
+      2 reisima läbi
+      2 registreerima ümber
+      2 regama 
+      2 reeksportima 
+      2 reastuma 
+      2 ravitsema 
+      2 rappuma 
+      2 rappima 
+      2 rammima sisse
+      2 pürgima tagasi
+      2 pühkima ära
+      2 pöörduma välja
+      2 pöördama 
+      2 pögenema 
+      2 päästma tagasi
+      2 pääsema üles
+      2 pääsema kõrvale
+      2 pääsema kohale
+      2 pääsema juurde
+      2 pääsema ilma
+      2 põrutama mööda
+      2 põrutama edasi
+      2 põrutama alla
+      2 põrkuma vastu
+      2 põmmutama 
+      2 põlgama 
+      2 põimuma sisse
+      2 põiklema 
+      2 põgenema otsa
+      2 põgenema edasi
+      2 puudutama peale
+      2 puttima 
+      2 puterdama 
+      2 pusima 
+      2 purjetama edasi
+      2 punnitama 
+      2 pumpama juurde
+      2 puistama maha
+      2 puhuma vastu
+      2 puhuma tagasi
+      2 puhuma laiali
+      2 pugema välja
+      2 pudenema alla
+      2 proovima läbi
+      2 promoma 
+      2 projitseeruma 
+      2 projekteeruma 
+      2 progresseeruma 
+      2 pressima välja
+      2 praotama 
+      2 praktiseerima 
+      2 poseerima 
+      2 porisema 
+      2 popsuma 
+      2 poetama tagasi
+      2 plõksima 
+      2 pleekima 
+      2 pitseerima 
+      2 pissitama 
+      2 pingestama 
+      2 pillama maha
+      2 pilkama 
+      2 pilgutama 
+      2 piketeerima 
+      2 piitsutama 
+      2 piiskama 
+      2 piiksuma 
+      2 pigistama kinni
+      2 petma välja
+      2 pesitsema 
+      2 pendeldama 
+      2 peletama laiali
+      2 peegeldama tagasi
+      2 paukuma 
+      2 paugatama 
+      2 paterdama tagasi
+      2 partsatama 
+      2 parodeerima 
+      2 parkima kõrvale
+      2 pantuma 
+      2 panema vahele
+      2 panema täis
+      2 panema tagasi, ära
+      2 panema plehku
+      2 panema pealt
+      2 panema nõus
+      2 panema läbi
+      2 panema koos
+      2 panema asemele
+      2 pandnuma 
+      2 paluma üles
+      2 paluma kaasa
+      2 pakkuma vastu
+      2 pakkuma sisse
+      2 pakkima lahti
+      2 pakkima kokku
+      2 pajatama 
+      2 paistma tagant
+      2 paiskuma välja, vastu
+      2 paiskuma ees
+      2 paiskuma alla
+      2 paiskama laiali
+      2 paiskama alla
+      2 painduma ära
+      2 paigutuma ümber
+      2 paigutama ümber
+      2 paigutama tagasi
+      2 paigutama sisse
+      2 paigutama otsa
+      2 paigutama ette
+      2 paigaldama kokku
+      2 otsama 
+      2 ostma üles
+      2 ostma sisse
+      2 ostma kaasa
+      2 ootama ringi
+      2 ootama kokku
+      2 olima 
+      2 oletama 
+      2 olema üles
+      2 olema sees
+      2 olema peal
+      2 olema kokku
+      2 olema kaasa
+      2 olema ilma
+      2 olema edasi
+      2 ohverdama 
+      2 nüsima 
+      2 nöörima 
+      2 närima läbi
+      2 nälgima 
+      2 näitama üles
+      2 näitama ära
+      2 näitama peale
+      2 nägema sisse
+      2 nägema otsa
+      2 nägema kokku
+      2 nägema ees
+      2 nõudma välja
+      2 nõudma sisse
+      2 nõrutama 
+      2 nõrisema 
+      2 nõiduma 
+      2 nuumama 
+      2 nuputama 
+      2 nullima 
+      2 nuhutama 
+      2 nohisema 
+      2 niristama 
+      2 nipsama 
+      2 nimetama peale
+      2 nikastama 
+      2 nihverdama 
+      2 nihestama 
+      2 neetima 
+      2 nakkuma 
+      2 nakkama 
+      2 naima 
+      2 nabima 
+      2 müüma välja
+      2 müüma tagasi
+      2 müüma kokku
+      2 mürtsatama 
+      2 möönma 
+      2 möödnuma 
+      2 möllama 
+      2 mölisema ära
+      2 mölisema 
+      2 määrima ära
+      2 mängima ära
+      2 mängima läbi
+      2 mäluma 
+      2 mädanema 
+      2 mõõtma tagasi
+      2 mõtsima 
+      2 mõtlema peale
+      2 mõrvama edasi
+      2 mõranema 
+      2 mõnitama 
+      2 mõistma tagasi
+      2 mustama 
+      2 musitseerima 
+      2 muserdama 
+      2 murenema 
+      2 murdma ära
+      2 murdma maha
+      2 munsterdama 
+      2 mugandama 
+      2 monteerima üles
+      2 minestama 
+      2 minema taga
+      2 minema rikki
+      2 minema rahul
+      2 mekkima 
+      2 meelitama üle
+      2 meelitama kaasa
+      2 materialiseeruma 
+      2 maskeerima 
+      2 marssima otsa
+      2 marssima mööda
+      2 manooverdama 
+      2 maksma ümber
+      2 maksma üle
+      2 maksma juurde
+      2 maksma asemel
+      2 majutuma 
+      2 maitsestama 
+      2 mahutuma 
+      2 mahtuma välja
+      2 mahtuma vaja
+      2 mahtuma ringi
+      2 mahtuma peale
+      2 mahtuma läbi
+      2 mahtuma alla
+      2 mahitama 
+      2 mahendama 
+      2 maanduma vastu
+      2 maadlema 
+      2 m6ttetuma 
+      2 lülituma ümber
+      2 lülituma välja
+      2 lülitama tagasi
+      2 lükkama ümber
+      2 lükkama üles
+      2 lükkama lahti, peale
+      2 lööma üles
+      2 lööma mööda
+      2 lööma läbi
+      2 lööma ees
+      2 lösutama 
+      2 lärtsatama 
+      2 lämbuma ära
+      2 läkitama tagasi
+      2 läikima 
+      2 lõõskama 
+      2 lõppema ringi
+      2 lõpetama ära
+      2 lõpetama tagasi
+      2 lõimuma 
+      2 lõimima 
+      2 lõikuma sisse
+      2 lõhkama 
+      2 lõhenema 
+      2 lõgistama 
+      2 lõdisema 
+      2 luusima ringi
+      2 luukama 
+      2 lustima 
+      2 lugema üle
+      2 lugema välja
+      2 lugema kokku
+      2 lubama ilma
+      2 lubama edasi
+      2 loputama 
+      2 loovima 
+      2 loopima tagasi
+      2 looma ümber
+      2 looma ära
+      2 looma vastu, ära
+      2 looma puruks
+      2 looma peale
+      2 looma mööda
+      2 looma lahti
+      2 looma kinni
+      2 looma ette
+      2 lookama 
+      2 lonkima tagasi
+      2 lompama 
+      2 lokkima 
+      2 logisema 
+      2 lobistama 
+      2 lisanduma kõrvale
+      2 lisanduma juurde
+      2 lisama kõrvale
+      2 lipsama tagasi
+      2 liikuma üle
+      2 liikuma mööda
+      2 liikuma alla
+      2 liigenduma 
+      2 liginema 
+      2 libisema vastu
+      2 libisema tagasi
+      2 libisema ees
+      2 libisema alla
+      2 leostuma 
+      2 lendama üle
+      2 leidma sisse
+      2 leidma kõrvalt
+      2 leidma eest
+      2 leetuma 
+      2 laulma sisse
+      2 laulma kaasa
+      2 laskuma edasi
+      2 laskma pealt
+      2 laskma kokku
+      2 laskma edasi
+      2 lappama läbi
+      2 laperdama 
+      2 laostama 
+      2 langema ära
+      2 langema sisse
+      2 langema peale
+      2 langema edasi
+      2 laksama 
+      2 lajatama vastu
+      2 laitma maha
+      2 laienema välja
+      2 laekuma juurde
+      2 laduma tagasi
+      2 laagerduma 
+      2 laadima tagasi
+      2 küürima 
+      2 küündima välja
+      2 küündima sisse
+      2 küündima kokku
+      2 küttima 
+      2 kütma üles
+      2 külmetuma 
+      2 külastama üle
+      2 käänduma 
+      2 kääksutama 
+      2 kärvama 
+      2 kärgatama 
+      2 käima vahele
+      2 käima peale
+      2 käima mööda
+      2 käima maha
+      2 käima kallal
+      2 käima juurde
+      2 käima alla
+      2 käima all
+      2 kõndima välja
+      2 kõndima ringi
+      2 kõndima juurde
+      2 kõmistama 
+      2 kõlgutama 
+      2 kõlama üle
+      2 kuumenema 
+      2 kuuluma kinni
+      2 kuuluma juurde
+      2 kuulma ära
+      2 kuulma pealt
+      2 kuulama üle
+      2 kutsustuma 
+      2 kutsuma vastu
+      2 kutsuma kohale
+      2 kutsuma juurde
+      2 kurnama 
+      2 kurjustama 
+      2 kupatama tagasi
+      2 kumuleeruma 
+      2 kulutama sisse
+      2 kulgema mööda
+      2 kulgema edasi
+      2 kukutama läbi
+      2 kukkuma pealt
+      2 kukkuma lähedal
+      2 kukkuma kõrvale
+      2 kukkuma ette
+      2 kukkuma ees
+      2 kujunema edasi
+      2 kudistama 
+      2 kudema 
+      2 krõbistama 
+      2 kruvima tagasi
+      2 krooksuma 
+      2 kriiskama 
+      2 kriimustama 
+      2 kreemitama 
+      2 krampuma 
+      2 kraamima välja
+      2 koukima 
+      2 kosutama 
+      2 kostma otsa
+      2 korvama 
+      2 korjama ära
+      2 kopsama 
+      2 koppima 
+      2 kooruma 
+      2 koordineerima 
+      2 koonduma ringi
+      2 koonduma kokku
+      2 koolutama 
+      2 koodima 
+      2 konvertima 
+      2 konstrueerima 
+      2 konsolideeruma 
+      2 kompromiteerima 
+      2 komplitseerima 
+      2 komistama edasi
+      2 kombineeruma 
+      2 komberdama tagasi
+      2 kolkima 
+      2 kolisema 
+      2 kolima kõrvale
+      2 kolima kaasa
+      2 kohanduma 
+      2 kogunema valmis
+      2 kogunema tagasi
+      2 kodeerima sisse
+      2 kobistama 
+      2 klähvima 
+      2 klõpsutama 
+      2 klõpsama 
+      2 klopsima kokku
+      2 kleepima üles
+      2 kitsenema 
+      2 kissitama 
+      2 kiskuma maha
+      2 kiskuma lahti
+      2 kiskuma alla
+      2 kirtsutama 
+      2 kirjutama ära
+      2 kirjutama valmis
+      2 kirjutama vaja
+      2 kirjutama maha
+      2 kirjutama kokku
+      2 kirjendama 
+      2 kimama tagasi
+      2 kiitlema 
+      2 kiirustama järele
+      2 kiikuma 
+      2 kihutama ringi
+      2 kihutama otsa
+      2 kihutama mööda
+      2 kihutama lähedal, alla
+      2 kihutama kohale
+      2 kihistama 
+      2 kibestuma 
+      2 kerkima ette
+      2 keppima 
+      2 kekkima 
+      2 kehastuma ümber
+      2 keerama ümber
+      2 keerama üle
+      2 keerama välja
+      2 keerama ringi
+      2 keerama kokku
+      2 keerama ette
+      2 keema 
+      2 keelama maha
+      2 keelama kaasa
+      2 kattima 
+      2 karmistuma 
+      2 karjuma üle
+      2 kargama välja
+      2 kargama tagasi
+      2 kargama püsti
+      2 kapseldama 
+      2 kapituleeruma 
+      2 kaotama vastu
+      2 kantima üle
+      2 kangastuma 
+      2 kanduma eemale
+      2 kandma üles
+      2 kandma välja
+      2 kandma maha
+      2 kandma läbi
+      2 kandideerima tagasi
+      2 kamandama kokku
+      2 kallistama 
+      2 kallama ümber
+      2 kallama üle
+      2 kallama tagasi
+      2 kallama kõrvale
+      2 kalduma ära
+      2 kalduma ette
+      2 kalduma ees
+      2 kakkuma 
+      2 kainestama 
+      2 kahvatuma 
+      2 kaevama üles
+      2 kaevama välja
+      2 kaevama tagasi
+      2 kaevama maha
+      2 kaduma taha
+      2 kaduma sisse
+      2 kaduma kõrvale
+      2 jääma läbi
+      2 jääma külge
+      2 jääma kohale
+      2 jätma üles
+      2 jätma välja
+      2 jätma vahele
+      2 jätma peale
+      2 jätma lahti
+      2 jätma kohale
+      2 jätma kaasa
+      2 jätma ette
+      2 jätma alla
+      2 jätkuma välja
+      2 jätkuma vastu
+      2 jätkuma juurde
+      2 jätkama peale
+      2 jätkama edasi
+      2 järjekorratama 
+      2 järgnema tagasi
+      2 jälgima kõrvalt
+      2 jõudma valmis
+      2 jõudma tagant
+      2 jõudma peale
+      2 jõudma mööda
+      2 jõudma maha
+      2 jõudma lahti
+      2 jutlustama 
+      2 juhtima juurde
+      2 juhtima alla
+      2 juhatama läbi
+      2 juhatama juurde
+      2 joudnuma 
+      2 joonistama sisse
+      2 jooksma peale
+      2 jooksma ette
+      2 jalutama edasi
+      2 jahmuma 
+      2 jahmatama 
+      2 jagama ära
+      2 jagama tarvis
+      2 j6udnuma 
+      2 istuma peale
+      2 istuma kõrvale
+      2 istuma ees
+      2 investeerima juurde
+      2 investeerima edasi
+      2 innustuma 
+      2 infiltreeruma 
+      2 imponeerima 
+      2 imestuma 
+      2 imema sisse
+      2 imema läbi
+      2 imbuma edasi
+      2 ilmuma ära
+      2 ilmuma alles
+      2 ihkama tagasi
+      2 igavlema 
+      2 igatsema ära
+      2 idanema 
+      2 hüppama taha
+      2 hüppama pealt
+      2 häälitsema 
+      2 hääletama edasi
+      2 häälestuma 
+      2 hääldama 
+      2 hävinema 
+      2 hädamaanduma 
+      2 hõõruma sisse
+      2 huvitama ära
+      2 hullutama 
+      2 hulkuma 
+      2 huikama 
+      2 hoolima 
+      2 hoogustuma 
+      2 hoidma vastu
+      2 hoidma tagasi
+      2 hoidma peal
+      2 hoidma koos
+      2 hoidma all
+      2 hingama sisse
+      2 hindama ümber
+      2 helkima 
+      2 helistama kokku
+      2 helistama ette
+      2 heitma välja
+      2 heitma maha
+      2 heidutama 
+      2 heegeldama 
+      2 heastama 
+      2 haukuma 
+      2 harutama lahti
+      2 harima 
+      2 hankima tagasi
+      2 hallatama 
+      2 hakatama 
+      2 haisema 
+      2 haigestuma alla
+      2 habetuma 
+      2 haarama tagasi
+      2 haakima külge
+      2 haagitama 
+      2 grupeeruma 
+      2 fännama 
+      2 fokuseerima 
+      2 flirtima 
+      2 filtreerima 
+      2 figureerima 
+      2 fantaseerima 
+      2 evitama 
+      2 evakueerima külge
+      2 esitama sisse
+      2 esilinastuma 
+      2 eralduma kokku
+      2 eraldama kokku
+      2 ennetama 
+      2 emiteerima 
+      2 elama otsas
+      2 eksponeerima 
+      2 ehitama ümber
+      2 ehitama juurde
+      2 eenduma 
+      2 doteerima 
+      2 diskvalifitseerima 
+      2 disainima 
+      2 desinfitseerima 
+      2 deporteerima 
+      2 betoneerima 
+      2 avastama kokku
+      2 asuma üles
+      2 asuma vastu
+      2 asuma tarvis
+      2 asuma lähedal
+      2 asuma kokku
+      2 asuma edasi
+      2 astuma üle
+      2 astuma ära
+      2 astuma maha
+      2 astuma lahti
+      2 astuma kaasa
+      2 astuma ilma
+      2 asima 
+      2 asetsema 
+      2 asetama ette
+      2 arvestama ümber
+      2 arvama ära
+      2 arvama sisse
+      2 arreteerima 
+      2 arendama edasi
+      2 apelleerima 
+      2 annuma 
+      2 andma vaja
+      2 andma alt
+      2 andestama 
+      2 alustama üle
+      2 algatama vastu
+      2 algama üle
+      2 algama tagasi
+      2 alahindama 
+      2 ajama üles
+      2 ajama ära
+      2 ajama alla
+      2 aitama vaja
+      2 aitama edasi
+      2 aimama ette
+      2 ahnitsema 
+      2 ahhetama 
+      2 ahenema 
+      2 aheldama külge
+      2 adapteerima 
+      2 absorbeeruma 
+      1 yxima 
+      1 ytsima 
+      1 ytlema sisse
+      1 ytlema puudu
+      1 ykstunnema ära
+      1 yhendama 
+      1 üürima välja
+      1 üürgama 
+      1 ütlema vahele
+      1 ütlema vaatamata
+      1 ütlema ringi
+      1 ütlema peale
+      1 ütlema lähedal
+      1 ütlema läbi
+      1 ütlema järele
+      1 ütlema ette
+      1 ütlema alla
+      1 ümisema juurde
+      1 ümardama 
+      1 üllitama 
+      1 üllatuma üle
+      1 üllatama ringi
+      1 üle-jääma 
+      1 üleilmastuma 
+      1 ülehindama 
+      1 üldistuma 
+      1 ülbitsema 
+      1 ühtlustuma 
+      1 ühtima 
+      1 ühitama 
+      1 ühilduma 
+      1 ühestükkima 
+      1 ühendama läbi
+      1 ühendama lahti
+      1 ölduma 
+      1 äärestama 
+      1 ärkama üles
+      1 ärkama taga
+      1 ärkama läbi
+      1 ärima 
+      1 ära vahele
+      1 äratama üles
+      1 äratama vastu
+      1 äratama raames
+      1 äratama lahti
+      1 ära maha
+      1 äkkima 
+      1 äiutama 
+      1 äigama vastu
+      1 ägama vastu
+      1 äestama 
+      1 õõtsuma üles
+      1 õtlema 
+      1 õrritama 
+      1 õppima tarvis
+      1 õppima sisse
+      1 õpetama tarvis
+      1 õnnestuma tarvis
+      1 õnnestama 
+      1 õgima ära
+      1 õelduma 
+      1 wõetuma 
+      1 willima 
+      1 wenema 
+      1 walmima 
+      1 vöttima 
+      1 väärtustuma 
+      1 väärastuma 
+      1 väärastama 
+      1 väärama 
+      1 väänlema 
+      1 väänama ümber
+      1 väänama välja
+      1 väsitama ära
+      1 värskendama 
+      1 väristama kinni
+      1 väristama 
+      1 värbama kokku
+      1 värbama juurde
+      1 väntama tagasi
+      1 väljuma tagant
+      1 väljenduma välja
+      1 vähkrema 
+      1 vähendama vastu
+      1 vähendama kohal
+      1 vähendama ette
+      1 vägistama 
+      1 võõristama 
+      1 võõranduma 
+      1 võtma ümber, kinni
+      1 võtma ümber
+      1 võtma täis
+      1 võtma tagasi, kokku
+      1 võtma tagasi, kaasa
+      1 võtma taga
+      1 võtma rahul
+      1 võtma puruks
+      1 võtma lahku
+      1 võtma käsile
+      1 võtma kõrvale
+      1 võtma kokku, tagasi
+      1 võtma kokku, peale
+      1 võtma kaasa, kaasa
+      1 võtma ilma
+      1 võtma ees, sisse
+      1 võtma ees, maha
+      1 võtima 
+      1 võrdsustuma 
+      1 võnkkuma 
+      1 võmmima 
+      1 võluma ära
+      1 võluma välja
+      1 võitma tagasi
+      1 võitma ringi
+      1 võitlema võidu
+      1 võitlema tagasi
+      1 võitlema eest
+      1 võitama 
+      1 võistlema ära
+      1 võimlema 
+      1 võimendama üle
+      1 võima vaja
+      1 võima maha
+      1 võimaldama ringi
+      1 võimaldama kokku
+      1 või-maldama alles
+      1 võidutsema 
+      1 vurama tagasi
+      1 vurama läbi
+      1 vurama alla
+      1 vupsatama alla
+      1 vupsatama 
+      1 vupsama tagasi
+      1 vuhistama alla
+      1 vuhisema tagasi
+      1 vuhisema sisse
+      1 vuhisema mööda
+      1 vuhisema edasi
+      1 vudima tagasi
+      1 voolama üle
+      1 voolama peale
+      1 voolama alla, välja
+      1 vonklema edasi, üles
+      1 vohama 
+      1 vitsima 
+      1 viskuma tagasi
+      1 viskuma otsa
+      1 viskuma ette
+      1 viskuma edasi
+      1 viskuma alla
+      1 visklema 
+      1 viskama ühte
+      1 viskama välja, alla
+      1 viskama valmis
+      1 viskama täis
+      1 viskama püsti
+      1 viskama puruks
+      1 viskama külili
+      1 viskama kõrvale, ära
+      1 viskama kõrvale
+      1 viskama kokku
+      1 viskama kinni
+      1 viskama eemale
+      1 viskama alles
+      1 viskama alla, mööda
+      1 viseerima 
+      1 virutama tagant
+      1 virutama pihta
+      1 virutama alla
+      1 virgutama 
+      1 vinnama üle
+      1 vinnama püsti
+      1 vinduma 
+      1 vilkuma tagasi
+      1 vilksatama sisse
+      1 vilksama sisse, välja
+      1 viljastama 
+      1 vilistama välja
+      1 vilgatama 
+      1 viitma järele
+      1 viitcima 
+      1 viitama kohal
+      1 viitama ilma
+      1 viistima 
+      1 viirastuma ees
+      1 viipama sisse
+      1 viima välja, ära
+      1 viima välja, tagasi
+      1 viima võidu
+      1 viima vastu
+      1 viima valmis
+      1 viima vaja
+      1 viima täis
+      1 viima rabedavõitu
+      1 viima pärast, tagasi
+      1 viima pealt
+      1 viima otsa
+      1 viima läbi, välja
+      1 viima lahti
+      1 viima kõrvalt, ära
+      1 viima kõrvale
+      1 viima koos
+      1 viima kilda
+      1 viima järele
+      1 viima all
+      1 viilima 
+      1 viigistama ringi
+      1 viibutama ette
+      1 viibutama 
+      1 vihtlema 
+      1 vihmaulikondama 
+      1 vihistama 
+      1 vihisema koha
+      1 vihastama välja
+      1 vigisema 
+      1 vigastuma 
+      1 vigastama ära
+      1 vigastama vastu
+      1 vicima 
+      1 vibutuma 
+      1 vibreerima 
+      1 vibama 
+      1 vetsima 
+      1 vetruma tagasi
+      1 vesistama 
+      1 vernima 
+      1 veretama ära
+      1 veretama 
+      1 venitama välja
+      1 venitama sisse
+      1 venima tagasi
+      1 venima edasi
+      1 venestuma 
+      1 veljendama 
+      1 veitsima 
+      1 vehkima maha
+      1 veetma tagasi
+      1 veetma järel
+      1 veeretama ilma
+      1 veeretama ette
+      1 veerema ära
+      1 veerema tagasi
+      1 veerema maha
+      1 veerema järele
+      1 veerema alles
+      1 vedelema kõrval
+      1 vedama üle
+      1 vedama ära
+      1 vedama vaja
+      1 vedama täis
+      1 vedama taha
+      1 vedama mööda, edasi
+      1 vedama maha
+      1 vedama kihla
+      1 vedama kaasas
+      1 vedama järel
+      1 vedama eemale
+      1 vedama alla
+      1 vedama all
+      1 vatrama tagasi
+      1 vastama ära
+      1 vastama vastu
+      1 vastama tarvis
+      1 vastama sisse
+      1 vastama kokku
+      1 vastama ette
+      1 vasardama 
+      1 varuma tagasi
+      1 varuma ette
+      1 varjuma ette
+      1 varjama ära
+      1 varjama eest
+      1 varisema sisse
+      1 varieeruma ümber
+      1 varastama ära
+      1 varastama tagant
+      1 vapustama järel
+      1 vanutama 
+      1 vantsima kohale
+      1 valutama sisse
+      1 valmistuma vastu
+      1 valmistuma edasi
+      1 valmima ära
+      1 valmima pealt
+      1 vallutama järel
+      1 vallandama tagasi
+      1 valjenema 
+      1 valjendama 
+      1 valitsema vastu
+      1 valitsema lahti
+      1 valitsema koos
+      1 valitsema edasi
+      1 valima kõrvale
+      1 valima kokku
+      1 valima juurde
+      1 valima alla
+      1 valgustama tagasi
+      1 valguma ära
+      1 valguma sisse
+      1 valguma läbi
+      1 valguma kokku
+      1 valguma järel
+      1 valguma edasi
+      1 valetama sisse
+      1 valetama juurde
+      1 valama ümber
+      1 valama üle
+      1 valama valmis
+      1 valama täis
+      1 valama tagant
+      1 valama ringi
+      1 valama läbi
+      1 valama koos
+      1 valama kokku
+      1 valama kaasa
+      1 valama järele
+      1 valama alla
+      1 vajutuma 
+      1 vajutama välja
+      1 vajutama tagasi
+      1 vajutama sisse
+      1 vajutama kõrvale
+      1 vajutama kinni
+      1 vajutama edasi
+      1 vajuma vahele
+      1 vajuma maha
+      1 vajnuma 
+      1 vajama üles
+      1 vajama tarvis
+      1 vajama tagasi
+      1 vajama sisse
+      1 vajama peale
+      1 vajama mööda
+      1 vajama kõrvale
+      1 vajama kokku
+      1 vajama juurde
+      1 vajama edasi
+      1 vaigistama 
+      1 vaidlema vastu
+      1 vahtima vastu
+      1 vahtima lahti
+      1 vahistama kaasa
+      1 vahetama ümber
+      1 vahetama vastu, ümber
+      1 vahetama vastu, välja
+      1 vahetama tagasi
+      1 vadistama 
+      1 vadama 
+      1 vabanema üles
+      1 vabandusituletama 
+      1 vabanduma 
+      1 vabandama ees
+      1 vaatama ringi
+      1 vaatama pealt, peale
+      1 vaatama otsa, sisse
+      1 vaatama mööda
+      1 vaatama lahti
+      1 vaatama kokku
+      1 vaatama edasi
+      1 vaatama asemel
+      1 vaaritama 
+      1 vaakuma 
+      1 v6ixima 
+      1 v2henema 
+      1 uurima tarvis
+      1 uurima sisse
+      1 uurima läbi
+      1 uuduma 
+      1 utsitama 
+      1 utreerima 
+      1 ussitama 
+      1 usnuma 
+      1 uskuma üles
+      1 uskuma üle
+      1 uskuma ära
+      1 uskuma välja
+      1 uskuma taga
+      1 uskuma ringi
+      1 uskuma lahti
+      1 uskuma kaasa
+      1 uskuma edasi
+      1 usaldama täis
+      1 uritama 
+      1 urineerima vastu
+      1 urgitsema 
+      1 uppima 
+      1 upituma 
+      1 upitama tagasi
+      1 upitama järele
+      1 uperpallitama 
+      1 unustama välja
+      1 ununema maha
+      1 unistama edasi
+      1 unifitseerima 
+      1 unelema 
+      1 undama ringi
+      1 undama 
+      1 ummistama ära
+      1 umbusaldama 
+      1 umbuma 
+      1 uluma 
+      1 uletama 
+      1 ulatuma üles, välja
+      1 ulatuma eemale
+      1 ulatuma alt
+      1 ulatama tagasi
+      1 ulatama alt
+      1 ujuma üle
+      1 ujuma ära
+      1 ujuma välja
+      1 ujuma tagant, välja
+      1 ujuma sisse
+      1 ujuma ringi
+      1 ujuma kinni
+      1 ujuma juurde
+      1 ujuma alla
+      1 uitama mööda
+      1 uinutama 
+      1 uimerdama 
+      1 uimastama 
+      1 uhtuma ära
+      1 uhtuma laiali
+      1 uhtuma juurde
+      1 uhkama tagasi
+      1 udutama 
+      1 udnuma 
+      1 ubima 
+      1 tyletama 
+      1 tylema 
+      1 tyhjenema 
+      1 tyhjendama 
+      1 tüütama 
+      1 tüürima ringi
+      1 tüürima mööda
+      1 tüssama 
+      1 türmima 
+      1 tümpsuma 
+      1 tülpima 
+      1 tülgastuma 
+      1 tükkima ära
+      1 tükkima taga
+      1 tühjuma 
+      1 tühjendama ära
+      1 tüdima 
+      1 töötama ümber
+      1 töötama vaja
+      1 töötama tarvis, välja
+      1 töötama tagasi
+      1 töötama ringi
+      1 töötama läbi
+      1 töötama laiali
+      1 töötama heaks
+      1 töötama edasi
+      1 törtsutama 
+      1 töristama 
+      1 töntsima 
+      1 tökestama 
+      1 täiustuma 
+      1 täiustama 
+      1 täima kinni
+      1 täiendama ringi
+      1 tähistama üle
+      1 tähistama tagasi
+      1 tähendama pealt
+      1 tähendama maha
+      1 tähendama edasi
+      1 tõusma sisse
+      1 tõusma ringi
+      1 tõusma otsa
+      1 tõusma mööda
+      1 tõusma läbi
+      1 tõusma kohale
+      1 tõusma ilma
+      1 tõusma all
+      1 tõukama üles, sisse
+      1 tõukama välja
+      1 tõukama tagant
+      1 tõukama sisse
+      1 tõukama kõrvale
+      1 tõukama eemale
+      1 tõttama üle, välja
+      1 tõttama üles
+      1 tõttama juurde
+      1 tõstma vastu
+      1 tõstma otsa
+      1 tõstma mööda
+      1 tõstma läbi
+      1 tõstma kõrvale
+      1 tõstma kokku
+      1 tõstma kohale
+      1 tõstma juurde
+      1 tõstma alles
+      1 tõstatama ees
+      1 tõrjuma vastu
+      1 tõrjuma tagasi
+      1 tõrjuma kõrvale
+      1 tõrjuma eemale
+      1 tõmbuma vastu
+      1 tõmbuma ligi
+      1 tõmbuma kõrvale
+      1 tõmbuma eemale
+      1 tõmbama ümber
+      1 tõmbama üle
+      1 tõmbama vahele
+      1 tõmbama vahel
+      1 tõmbama täis
+      1 tõmbama rahul
+      1 tõmbama puruks
+      1 tõmbama peale
+      1 tõmbama maha
+      1 tõmbama läbi
+      1 tõmbama lõhki
+      1 tõmbama laiali
+      1 tõmbama kokku
+      1 tõmbama juurde
+      1 tõmbama eemale
+      1 tõmbama edasi
+      1 tõmbama alt, välja
+      1 tõmbama alt
+      1 tõlkima ümber
+      1 tõlkima valmis
+      1 tõlgendama vastu
+      1 tuuseldama laiali
+      1 tuuseldama 
+      1 tuuritama ringi
+      1 tuuritama läbi
+      1 tuuritama 
+      1 tuulama ringi
+      1 tutvustama kokku
+      1 tutvuma ees
+      1 turvama poolt
+      1 turtsuma 
+      1 tursuma 
+      1 turmama 
+      1 turgutama üles
+      1 tupsutama 
+      1 tupruma 
+      1 tunuma 
+      1 tunnistama vastu
+      1 tunnistama tagasi
+      1 tungima üle
+      1 tungima välja
+      1 tungima Sisse
+      1 tungima peale
+      1 tungima kaudu
+      1 tungima järele
+      1 tungima ees
+      1 tungima alla
+      1 tungima all
+      1 tundma vastu
+      1 tumenema 
+      1 tulvama sisse
+      1 tulletama 
+      1 tulketama 
+      1 tulistama välja
+      1 tulistama vastu
+      1 tulistama tagant
+      1 tulistama pihta
+      1 tulistama mööda
+      1 tulistama kokku
+      1 tulima 
+      1 tuletuma 
+      1 tuletama ära
+      1 tuletama välja
+      1 tuletama vaja
+      1 tuletama pealt
+      1 tuletama peale
+      1 tuletama maha
+      1 tuletama läbi
+      1 tuletama kõrvalt
+      1 tuletama juurde
+      1 tule-olema 
+      1 tulema ümber, tagasi
+      1 tulema ümber
+      1 tulema üleöö
+      1 tulema üle, lahti
+      1 tulema ära, ära
+      1 tulema välja, ära
+      1 tulema välja, kokku
+      1 tulema täis
+      1 tulema tagasi, tarvis
+      1 tulema tagasi, läbi
+      1 tulema tagasi, kaasa
+      1 tulema sisse, välja
+      1 tulema puudu
+      1 tulema pihta
+      1 tulema pidama
+      1 tulema pealt, maha
+      1 tulema peale, tagasi
+      1 tulema mööda
+      1 tulema maas
+      1 tulema läbi, tagasi
+      1 tulema ligi
+      1 tulema lahti, tagasi
+      1 tulema lahku
+      1 tulema kõrvalt
+      1 tulema koht
+      1 tulema koha
+      1 tulema kaudu
+      1 tulema kallale
+      1 tulema kaasa, tagasi
+      1 tulema ette, tagasi
+      1 tulema eest
+      1 tulema eemale
+      1 tulema asemele
+      1 tulema alt, üles
+      1 tulema all
+      1 tuksuma 
+      1 tuksatama 
+      1 tuiskama tagasi
+      1 tuikuma välja
+      1 tuikuma sisse
+      1 tuiama tagasi
+      1 tuhmuma 
+      1 tuhistama 
+      1 tuhisema välja
+      1 tuglema 
+      1 tudeerima 
+      1 tsiviliseerima 
+      1 tsentraliseeruma 
+      1 tsementeerima 
+      1 tsekkama 
+      1 trykkima 
+      1 trygima taga
+      1 trügima ära
+      1 trügima välja
+      1 trügima vahele
+      1 trügima mööda
+      1 trügima läbi
+      1 trügima edasi
+      1 trumpama üle
+      1 trumpama 
+      1 trukkima 
+      1 triivima tagasi
+      1 triikima üle
+      1 triblama tagasi
+      1 treenima välja
+      1 treenima vaja
+      1 transportima läbi
+      1 transportima laiali
+      1 trallama 
+      1 traavima mööda, ringi
+      1 tossama 
+      1 tormama vastu
+      1 tormama ringi
+      1 tormama laiali
+      1 tormama kaasas
+      1 tormama järele
+      1 tormama juurde
+      1 tormama ees
+      1 tormama edasi
+      1 torkama ära
+      1 torkama valmis
+      1 torkama taha
+      1 torkama pealt
+      1 torkama läbi
+      1 torkama kõrvale
+      1 torkama kokku
+      1 torkama alles
+      1 torisema 
+      1 toppima välja
+      1 toppima vahele
+      1 toppima püsti
+      1 toppima pealt
+      1 toppima peale
+      1 toppima otsa
+      1 toppima laiali
+      1 toppima kokku
+      1 toppima kinni
+      1 toppima juurde
+      1 toppima edasi
+      1 tootuma 
+      1 tootma kokku
+      1 tootma järel
+      1 tootma juurde
+      1 tootma allapoole
+      1 tooma varjule
+      1 tooma vaja
+      1 tooma tarvis
+      1 tooma pärast, tagasi
+      1 tooma peale
+      1 tooma läbi
+      1 tooma kõrvale
+      1 tooma kaupa
+      1 tooma hallivõitu
+      1 tooma ette, tagasi
+      1 tonuma 
+      1 tonkima 
+      1 tolmutama 
+      1 tolgendama 
+      1 toksima ilma
+      1 toimuma ümber
+      1 toimuma üle
+      1 toimuma sees
+      1 toimuma ees
+      1 toimuma edasi
+      1 toimetama üle
+      1 toimetama ära
+      1 toimetama maha
+      1 toimetama laiali
+      1 toimetama kõrvale
+      1 toimetama alles
+      1 toimetama alla
+      1 toetuma kokku
+      1 toetama maha
+      1 toetama läbi
+      1 toetama kokku
+      1 toestama 
+      1 tirima ära
+      1 tirima maha
+      1 tirima kaasa
+      1 tirima ette
+      1 tirima ees
+      1 tirima eemale
+      1 tirima alt, välja
+      1 tippima tagasi
+      1 tipnema lahti
+      1 timmima välja
+      1 tilkuma välja
+      1 tilkuma sisse
+      1 tilkuma maha
+      1 tilkuma läbi
+      1 tilkuma laiali
+      1 tilkuma juurde
+      1 tilbendama 
+      1 tiksuma juurde
+      1 tikkuma peale
+      1 tiirutama ringi
+      1 tiirutama mööda, ringi
+      1 tiirutama mööda
+      1 tihkuma 
+      1 tibutama 
+      1 tiagima 
+      1 threadima 
+      1 tervendama 
+      1 teritama 
+      1 teravustama 
+      1 teravdama 
+      1 temiidima 
+      1 tellima vastu
+      1 tellima tarvis
+      1 tellima kokku
+      1 tellima ilma
+      1 telefoneerima 
+      1 tekkima ülalpool
+      1 tekkima vast
+      1 tekkima tagasi
+      1 tekkima taga, juurde
+      1 tekkima taga
+      1 tekkima pärast
+      1 tekkima peale
+      1 tekkima nahka
+      1 tekkima kõrvale
+      1 tekkima ees
+      1 tekitama üle
+      1 tekitama vahele
+      1 tekitama sisse
+      1 tekitama järele
+      1 tekitama ette
+      1 tekitama ees
+      1 tekistama 
+      1 teisendama 
+      1 teipima 
+      1 tehendama 
+      1 tegema võlgu
+      1 tegema vastu
+      1 tegema vahele
+      1 tegema täis
+      1 tegema sees
+      1 tegema püsti
+      1 tegema pealt, ära
+      1 tegema pealt, lahti
+      1 tegema peal
+      1 tegema otsa
+      1 tegema mööda
+      1 tegema maatasa
+      1 tegema kõrvale
+      1 tegema koos
+      1 tegema kohal
+      1 tegema heaks
+      1 tegema eest
+      1 tegema ees
+      1 tegema edasi
+      1 tegelema peale
+      1 teenima ümber
+      1 teenima tagasi
+      1 teenima ringi
+      1 teenima kokku
+      1 tee-ehituma 
+      1 teatama peale
+      1 teadvustuma 
+      1 teadma ära, sisse
+      1 teadma sisse
+      1 teadma peale
+      1 teadma läbi
+      1 tatsuma 
+      1 tatsistama 
+      1 tatsama järele
+      1 tatoveerima 
+      1 tatistama 
+      1 tastuma 
+      1 tassima ära
+      1 tassima kohale
+      1 tassima kaupa
+      1 tasandama välja
+      1 tarvitama tagasi
+      1 tarretuma 
+      1 tarnima edasi
+      1 tarima sisse
+      1 tarima kaasa
+      1 tapsima ära
+      1 tappima ära
+      1 tapma lähedal
+      1 tapma koos
+      1 taotlema välja
+      1 tantsima lahti
+      1 tankima pealt
+      1 tankima kokku
+      1 tampima sisse
+      1 talutama tagasi
+      1 taltuma 
+      1 Tallinna-hääletama 
+      1 tallama sisse
+      1 talitsema 
+      1 talitlema 
+      1 talitama 
+      1 takistama maha
+      1 takistama kinni
+      1 takerduma taha
+      1 takerduma läbi
+      1 tahtsima välja
+      1 tahtma üles
+      1 tahtma üle
+      1 tahtma ära, tagasi
+      1 tahtma tarvis
+      1 tahtma tagasi, eemale
+      1 tahtma sisse
+      1 tahtma pealt
+      1 tahtma läbi
+      1 tahtma kokku
+      1 tahtma kinni
+      1 tahtma eemale
+      1 tahtma edasi
+      1 tahtma alla
+      1 tahsima 
+      1 tahmuma 
+      1 tahmama 
+      1 tagurdama otsa
+      1 taguma puruks
+      1 taguma läbi
+      1 taguma laiali
+      1 tagastuma 
+      1 tagandama 
+      1 tagama otsa
+      1 tabama välja
+      1 tabama vastu
+      1 tabama pealt
+      1 tabama lähedal
+      1 tabama läbi
+      1 tabama järel
+      1 tabama alla
+      1 taaslooma 
+      1 taaskäivituma 
+      1 taaskohtuma 
+      1 taaskaduma 
+      1 taaselustama 
+      1 taasavama 
+      1 taasalustama 
+      1 taarutama tagasi
+      1 taanduma kokku
+      1 taanduma ilma
+      1 taandarenema 
+      1 t6mbagima 
+      1 t6lgiksima 
+      1 synnima juurde
+      1 synnima 
+      1 sylitama 
+      1 süüvima võidu
+      1 süüdistama võlgu
+      1 süüdistama kokku
+      1 süübima 
+      1 süvenema taga
+      1 süvenema kõrvalt
+      1 süvenema alla
+      1 süvendama edasi
+      1 süstima tagasi
+      1 süstima läbi
+      1 süstima ette
+      1 süstima alla
+      1 sündima läbi
+      1 sündima kinni
+      1 sündima alla
+      1 sülitama ära
+      1 sülitama välja
+      1 sülitama vastu
+      1 sülitama täis
+      1 sülitama kaasa
+      1 sügama vastu
+      1 söötma sisse
+      1 sööstma üles
+      1 sööstma üle
+      1 sööstma ringi
+      1 sööstma pihta
+      1 sööstma järel
+      1 sööstma edasi
+      1 sööma sisse, ilma
+      1 sööma järel
+      1 sööbima sisse
+      1 sörkima tagasi
+      1 söitnuma sisse
+      1 söitnuma 
+      1 söidutama 
+      1 söestuma 
+      1 säädima 
+      1 sättuma 
+      1 sättima ümber
+      1 sättima ära
+      1 sättima välja
+      1 sättima valmis
+      1 sättima taha
+      1 sättima tagasi
+      1 sättima tagant
+      1 sättima maha
+      1 sättima alla
+      1 sätitama 
+      1 särtsatama 
+      1 säristama 
+      1 säiluma edasi
+      1 säiluma 
+      1 sõudnuma tagasi
+      1 sõudma välja, tagant
+      1 sõudma välja
+      1 sõudma tagant, välja
+      1 sõudma juurde
+      1 sõtkuma üles
+      1 sõnelema 
+      1 sõltuma vastu
+      1 sõkuma 
+      1 sõituma 
+      1 sõittima 
+      1 sõitmima 
+      1 sõitma ära, tagasi
+      1 sõitma ära, ringi
+      1 sõitma vastu, välja
+      1 sõitma taha
+      1 sõitma tagant
+      1 sõitma sisse, välja
+      1 sõitma ringi, sisse
+      1 sõitma onju
+      1 sõitma millalgi
+      1 sõitma lahti
+      1 sõitma külge
+      1 sõitma kõrvalt
+      1 sõitma kõrval
+      1 sõitma kaasas
+      1 sõitma eest, ära
+      1 sõitma edasi, tagasi, edasi
+      1 sõitma alt, üles
+      1 sõimama ära
+      1 sõimama kinni
+      1 sõidutama ära
+      1 sõidutama ringi
+      1 sõidutama kohale
+      1 sõidutama ette
+      1 sõidutama edasi
+      1 sõeluma läbi
+      1 sõbrustama 
+      1 sõbrunema 
+      1 suvitama 
+      1 suurenema valmis
+      1 suunuma 
+      1 suunima 
+      1 suunduvad-väljuma 
+      1 suunduma üles, tagasi
+      1 suunduma vastu
+      1 suunduma püsti
+      1 suunduma mööda
+      1 suunduma läbi
+      1 suunduma järele
+      1 suunduma ilma
+      1 suundnuma 
+      1 suunama ümber
+      1 suunama üle
+      1 suunama ära
+      1 suunama mööda
+      1 suunama ette
+      1 suunama eemale
+      1 suudlema taha
+      1 suudlema läbi
+      1 suubuma tagasi
+      1 susserdama 
+      1 suskama sisse
+      1 suruma ära
+      1 suruma vastu, sisse
+      1 suruma vahele, tarvis
+      1 suruma pealt
+      1 suruma maha
+      1 suruma lahti
+      1 suruma küüsi
+      1 suruma ette
+      1 suruma edasi
+      1 suruma alla
+      1 surkima 
+      1 suristama 
+      1 surema ära, vaja
+      1 surema vastu
+      1 surema teel
+      1 surema tagasi
+      1 surema sisse
+      1 surema pealt
+      1 surema läbi
+      1 surema ligi
+      1 surema all
+      1 suratama 
+      1 sundvärbama kokku
+      1 sundteisaldama 
+      1 sundima üle
+      1 sundima peale
+      1 sundima läbi
+      1 sundima kõhuli
+      1 sundima alla
+      1 sumpama tagasi
+      1 sumbuma välja
+      1 sumatama järele
+      1 sulpsatama tagasi
+      1 sulisema 
+      1 sulguma välja
+      1 sulguma tagasi
+      1 sulatama tagasi
+      1 sulatama sisse
+      1 sulandama kokku
+      1 sulama üles
+      1 sulama ära
+      1 sulama sisse, ära
+      1 sulama läbi
+      1 sulama lahti
+      1 sulama kokku
+      1 sulama kinni
+      1 sukima 
+      1 sukelduma ära
+      1 sukelduma tagasi
+      1 sukelduma sisse, välja
+      1 suitsuma 
+      1 suitsetama järel
+      1 suigatama 
+      1 suhtutama 
+      1 suhtuma üle
+      1 suhtuma välja
+      1 suhtuma vast
+      1 suhtuma valmis
+      1 suhtuma pooleli
+      1 suhtuma pooleks
+      1 suhtuma pealt
+      1 suhtuma maha
+      1 suhtuma kaasa
+      1 suhtuma edasi
+      1 suhtuma all
+      1 suhisema 
+      1 sugereerima 
+      1 subsideerima 
+      1 statoilima 
+      1 startima valmis
+      1 startima edasi
+      1 stagneeruma 
+      1 squirtima 
+      1 spämmima 
+      1 spurtima tagasi
+      1 spurtima ette
+      1 sprintima 
+      1 sprindima 
+      1 sportima 
+      1 sponsoreerima 
+      1 spondeerima peale
+      1 spekuleerima 
+      1 sotsialiseeruma 
+      1 sositama 
+      1 sosistama sisse
+      1 sorima 
+      1 sopsatama 
+      1 soovitama tarvis
+      1 soovitama tagasi
+      1 soovitama edasi
+      1 soovima kaasa
+      1 sooritama üle
+      1 sooritama alla
+      1 soonima ära
+      1 soonima sisse
+      1 soolama sisse
+      1 soodustama koos
+      1 sonkima 
+      1 songima üles
+      1 solvuma lahti, peale
+      1 solvuma 
+      1 solkima ära
+      1 solistama 
+      1 solisema 
+      1 sokutama otsa
+      1 sokutama kaasa
+      1 soitnuma 
+      1 sogama 
+      1 sodima täis
+      1 sobitama sisse
+      1 sobitama kokku
+      1 sobitama juurde
+      1 sobima valmis
+      1 sobima vaja
+      1 sobima tagasi
+      1 sobima sisse
+      1 sobima kõrvale
+      1 sobima kohale
+      1 sobima kaasa
+      1 sobima ette
+      1 sobima alla
+      1 smuugeldama 
+      1 smugeldama välja
+      1 smugeldama edasi
+      1 sleppima 
+      1 skoorima 
+      1 skannima 
+      1 siuhkama 
+      1 siuglema 
+      1 sittuma ära
+      1 sittuma täis
+      1 sittuma tagasi
+      1 sittama 
+      1 sisistama sisse
+      1 sisetama 
+      1 sisestama ära
+      1 sisestama tagasi
+      1 sisenema vastu
+      1 sisenema tagasi
+      1 sisenema kaasa
+      1 sisenema järel
+      1 sisendama ette
+      1 sisaldama valmis
+      1 sisaldama kokku
+      1 sirvima tagasi
+      1 sirvima 
+      1 sirutusid-kumerduma 
+      1 sirutuma välja
+      1 sirutuma tagasi
+      1 sirutama välja
+      1 sirutama ette
+      1 siristama 
+      1 sirisema alla
+      1 siputama 
+      1 sillerdama 
+      1 silksuma 
+      1 silkama sisse
+      1 silenema 
+      1 sildama kokku
+      1 sikutama tagasi
+      1 sikutama lahti
+      1 siirutama 
+      1 siirduma ära
+      1 siirduma välja
+      1 siirduma vaja
+      1 siirduma läbi
+      1 siirduma järel
+      1 siirduma ette
+      1 siirdama alla
+      1 sihvama 
+      1 signeerima 
+      1 siduma ümber
+      1 siduma lahti
+      1 siduma ette
+      1 siblima ringi
+      1 sibama kokku
+      1 shantazheerima 
+      1 Shania-Jenniferkreemitama 
+      1 setitama 
+      1 servima peale
+      1 servima 
+      1 sertifitseerima 
+      1 sepistama välja
+      1 seljatama ära
+      1 seljatama 
+      1 selguma ära
+      1 selguma ringi
+      1 seletuma 
+      1 seletama sisse
+      1 seletama pealt
+      1 seletama lahti
+      1 selekteerima välja
+      1 sekkuma vahele
+      1 sekkuma tagasi
+      1 sekkuma maha
+      1 sekkuma kaasa
+      1 seivima 
+      1 seisnema läbi
+      1 seisma tagasi, ees
+      1 seisma taga
+      1 seisma püsti
+      1 seisma otsas
+      1 seisma lähedal
+      1 seisma lahti
+      1 seisma ees, ringi
+      1 seisma edasi
+      1 segama sisse
+      1 segama läbi
+      1 seemendama 
+      1 sednuma 
+      1 sebima ringi
+      1 seadma ümber
+      1 seadma üle
+      1 seadma ära
+      1 seadma sisse, ilma
+      1 seadma püsti
+      1 seadma moodi
+      1 seadma juurde
+      1 seadma edasi
+      1 satuma 
+      1 sattuma valmis
+      1 sattuma vaja
+      1 sattuma täis
+      1 sattuma taha
+      1 sattuma sekka
+      1 sattuma puruks
+      1 sattuma otsa
+      1 sattuma ligi
+      1 sattuma kõrvale
+      1 sattuma alla, ära
+      1 sassuma 
+      1 sarnastama 
+      1 sarjama 
+      1 saneerima 
+      1 sandistama 
+      1 samplima 
+      1 sammuma välja
+      1 sammuma mööda
+      1 sammuma maha
+      1 sammuma läbi
+      1 sammuma juurde
+      1 sammuma ette
+      1 sammuma ees
+      1 sammuma eemale
+      1 sammuma alla, tagasi
+      1 sammalduma kinni
+      1 sammalduma 
+      1 samastuma 
+      1 samastama 
+      1 salvestama ära
+      1 salvestama välja
+      1 salvestama sisse
+      1 salamõrvama 
+      1 salaja-peitma 
+      1 sala-armuma 
+      1 sahmama 
+      1 sahkama kinni
+      1 sahkama 
+      1 sagima 
+      1 sadenema 
+      1 sadama välja
+      1 sadama tagant
+      1 sadama hulgi
+      1 sadama ette
+      1 sacima 
+      1 saavutama üle
+      1 saatsima ära
+      1 saatmima 
+      1 saatma üle, välja
+      1 saatma välja, edasi
+      1 saatma vastu
+      1 saatma tagasi, üle
+      1 saatma tagasi, ilma
+      1 saatma pärast
+      1 saatma maha
+      1 saatma läbi, ilma
+      1 saatma juurde, alles
+      1 saatma juurde
+      1 saatma eest, ära
+      1 saatma eest
+      1 saastuma 
+      1 saastama kokku
+      1 saandhima 
+      1 saama ära, ära
+      1 saama ära, alla
+      1 saama võlgu
+      1 saama villand
+      1 saama vast
+      1 saama varjule
+      1 saama valmis, kohal
+      1 saama vaja, välja
+      1 saama toona
+      1 saama tarvis
+      1 saama taha
+      1 saama tagasi, tagant, ära
+      1 saama taga
+      1 saama sisse, välja
+      1 saama sisse, sealtpoolt
+      1 saama sisse, kinni
+      1 saama sisse, alla
+      1 saama rahul
+      1 saama püsti
+      1 saama lohku
+      1 saama lahti, juurde
+      1 saama kohale
+      1 saama kohal
+      1 saama järel
+      1 saama ilma
+      1 saama eal
+      1 saama alates
+      1 saalima sisse
+      1 saagima ära
+      1 saagima välja
+      1 saabuma üle
+      1 saabuma valmis
+      1 saabuma täis
+      1 saabuma rahul
+      1 saabuma laiali
+      1 saabuma lahti
+      1 saabuma koos
+      1 saabuma koht
+      1 saabuma kallale
+      1 saabuma kaasas
+      1 saabuma järel
+      1 saabuma juurde
+      1 saabuma ilma
+      1 saabuma edasi
+      1 saabuma alles
+      1 rüüpama sisse
+      1 rüsima 
+      1 ründama ringi
+      1 ründama ees
+      1 rühkima edasi, üles
+      1 röövima lähedal
+      1 röökima tagasi
+      1 röökima sisse
+      1 röhitsema 
+      1 rögisema kohal
+      1 rögisema 
+      1 rääkima välja, ära
+      1 rääkima välja
+      1 rääkima tagasi
+      1 rääkima pealt
+      1 rääkima läbi
+      1 rändama üle
+      1 rändama ära
+      1 rändama ringi, tagasi
+      1 rändama ringi
+      1 rändama otsas
+      1 rändama mööda
+      1 rändama ilma
+      1 rändama edasi, laiali
+      1 rõõmustama üle
+      1 rõõmustama ette
+      1 rõkatama 
+      1 ruupsima 
+      1 ruumuma 
+      1 ruumima 
+      1 ruttama juurde
+      1 ruttama edasi
+      1 rulluma vastu
+      1 rulluma sisse
+      1 rulluma alla
+      1 ruleerima 
+      1 roteeruma 
+      1 ropsima täis
+      1 roostetama ära
+      1 roostetama sisse
+      1 roostetama kinni
+      1 roosatama 
+      1 roopima 
+      1 roomama sisse
+      1 roomama ringi
+      1 roomama mööda
+      1 roomama eest, ära
+      1 roomama alla
+      1 roolitama 
+      1 ronima sisse, välja
+      1 ronima püsti
+      1 ronima läbi
+      1 ronima kõrvale
+      1 ronima kohale
+      1 ronima järele
+      1 ronima edasi
+      1 rohtuma 
+      1 rohima 
+      1 robisema 
+      1 rivaalitsema 
+      1 riskima kinni
+      1 riskeerima 
+      1 riputama peale
+      1 riputama lahti
+      1 ripsutama 
+      1 rippuma taga
+      1 rippima 
+      1 ripnema 
+      1 ringlema üles
+      1 riknema 
+      1 rikkuma välja
+      1 rikastama kokku
+      1 riivama pooleli
+      1 riisuma kokku
+      1 riimuma 
+      1 riietuma üle
+      1 riidlema 
+      1 rihtima mööda
+      1 revideerima 
+      1 retsiteerima 
+      1 retransleerima 
+      1 respektima 
+      1 representeerima 
+      1 rentima edasi
+      1 renditama 
+      1 relisiisima 
+      1 reklaamima välja
+      1 reisima välja
+      1 reisima tagasi
+      1 reisima mööda
+      1 reisima kaasa
+      1 reinvesteerima tagasi
+      1 reinstallima peale
+      1 reinstallima 
+      1 rehmama 
+      1 reguleerima välja
+      1 regrupeeruma 
+      1 regristreerima ära
+      1 registreeruma kokku
+      1 registreerima tagasi
+      1 registreerima sisse
+      1 registreerima kokku
+      1 reformima 
+      1 reekima kokku
+      1 reekima 
+      1 redutama 
+      1 rebima ära
+      1 rebbima 
+      1 rebased-tulema 
+      1 reastuma ette, tagasi
+      1 reanimeerima 
+      1 rautama 
+      1 raugema 
+      1 ratuma 
+      1 ratsutama tagasi
+      1 ratsutama sisse
+      1 ratsustama 
+      1 raskenema 
+      1 raputama läbi, peale
+      1 rapsima 
+      1 rapsama kinni
+      1 rapsama 
+      1 raportima 
+      1 rammima täis
+      1 rammima tagasi
+      1 rammima puruks
+      1 rallima 
+      1 raksuma 
+      1 raksatama vastu
+      1 rajanema 
+      1 rajama läbi
+      1 raiuma välja
+      1 raiuma vastu
+      1 raiuma sisse
+      1 raiuma maha
+      1 raiuma läbi
+      1 raiuma lahti
+      1 rahustama 
+      1 rahunema maha
+      1 rahastama maha
+      1 rabisema 
+      1 rabelema välja
+      1 rabastuma 
+      1 raatsima välja
+      1 raamima 
+      1 pyydima 
+      1 pyhendama 
+      1 püüdma pealt, kinni
+      1 püüdma otsa
+      1 püstitama ilma
+      1 püsima taga
+      1 püsima sees, alles
+      1 püsima ringi
+      1 püsima alla
+      1 pürgima koos
+      1 pürgima kokku
+      1 pürgima ilma, eemale
+      1 pürgima alla
+      1 pühkima tagasi
+      1 pühkima maha
+      1 pühkima kokku
+      1 pühitsema sisse
+      1 pühendama läbi
+      1 pügama 
+      1 pöörsima 
+      1 pöörduma ümber
+      1 pöörduma ära
+      1 pöörduma vastu
+      1 pöörduma pealt, tagasi
+      1 pöörduma edasi
+      1 pöörduma alles
+      1 pöörduma alla
+      1 pöörama üles
+      1 pöörama vastu
+      1 pöörama tagant
+      1 pöörama läbi
+      1 pöörama ette
+      1 pööduma tagasi
+      1 pöletama 
+      1 päästma lahti
+      1 pääsima 
+      1 pääsema valla
+      1 pääsema vaja
+      1 pääsema täis
+      1 pääsema tagasi, ette
+      1 pääsema ringi, sisse
+      1 pääsema peale
+      1 pääsema maha
+      1 pääsema kõrval
+      1 pääsema »
+      1 pätsama 
+      1 pärnuma 
+      1 pärinema ilma
+      1 pärgama 
+      1 päranduma 
+      1 pälvima juurde
+      1 päevituma 
+      1 päevitama 
+      1 pädema 
+      1 põõnama 
+      1 põrutama välja
+      1 põrutama vastu, välja
+      1 põrutama tagant
+      1 põrutama peale
+      1 põrutama otsa
+      1 põrutama ette
+      1 põruma läbi
+      1 põrmustama 
+      1 põrkima 
+      1 põrkama maha, tagasi
+      1 põrkama lähedal, kokku
+      1 põlvnema 
+      1 põlistuma 
+      1 põletama ära
+      1 põletama sisse
+      1 põlema vastu, sisse
+      1 põlema sisse, ära
+      1 põlema maha
+      1 põlastama 
+      1 põksuma 
+      1 põimuma ümber
+      1 põimima ümber
+      1 põikama tagasi, alla
+      1 põhjustama vastu
+      1 põhjendama tagasi
+      1 põgenema laiali
+      1 põgenema alla
+      1 põdema üle
+      1 põdema välja
+      1 puutuma üles
+      1 puutuma ühte
+      1 puutuma väljast
+      1 puutuma välja
+      1 puutuma võlgu
+      1 puutuma ringi
+      1 puutuma pealt
+      1 puutuma peale
+      1 puutuma maha
+      1 puutuma lahku
+      1 puutuma kaasa
+      1 puutuma etteotsa
+      1 puutuma all
+      1 puuttima 
+      1 puuruma 
+      1 puurima läbi
+      1 puurima lahti
+      1 puurduma 
+      1 puukima 
+      1 puudutama ära
+      1 puudutama mööda
+      1 puudutama läbi
+      1 puskima 
+      1 purskama vastu
+      1 purskama-sörkima välja
+      1 purkima 
+      1 purjutama 
+      1 purjetama ümber
+      1 purjetama välja
+      1 purjetama mööda
+      1 purjetama läbi
+      1 puristama 
+      1 punuma sisse
+      1 punnitama peale
+      1 punnitama mööda
+      1 punguma 
+      1 punetama 
+      1 pumpama välja
+      1 pumpama täis
+      1 pumpama tagasi
+      1 pumpama ringi
+      1 pumpama läbi
+      1 pumpama edasi
+      1 pulseerima 
+      1 pukseerima vastu
+      1 puistama peale
+      1 puiklema 
+      1 puhuma taga
+      1 puhuma läbi
+      1 puhuma alla
+      1 puhkima välja
+      1 puhkema järel
+      1 puhkama taga
+      1 puhisema 
+      1 puhastama ära
+      1 puhastama välja
+      1 pugema vastu
+      1 pugema varjule
+      1 pugema taha
+      1 pugema tagant, välja
+      1 pugema läbi, tagasi
+      1 pugema ligi
+      1 pugema ilma
+      1 pugema alla
+      1 pudenema tagasi
+      1 pudenema maha
+      1 prääksatama 
+      1 prõmmima sisse
+      1 pruunistama 
+      1 protsessima 
+      1 proovima ära
+      1 proovima sisse
+      1 promeneerima 
+      1 projekteerima sisse
+      1 programmima 
+      1 prognoosima edasi
+      1 progema ära
+      1 progema 
+      1 profileerima 
+      1 pritsima välja
+      1 pritsima täis
+      1 pritsima laiali
+      1 pretenteerima 
+      1 pressuma 
+      1 pressima vastu
+      1 pressima puruks
+      1 pressima läbi
+      1 pressima lahti
+      1 pressima kokku
+      1 prepareerima 
+      1 prantsatama tagasi
+      1 praksatama 
+      1 pragunema 
+      1 pragisema 
+      1 praalima 
+      1 praakima 
+      1 praadima 
+      1 potsatama maha
+      1 potentseerima 
+      1 postitama tagasi
+      1 positiveerima 
+      1 posima 
+      1 popsutama ära
+      1 popsatama 
+      1 pooma ära
+      1 ponnistama ette
+      1 ponnistama 
+      1 pommitama mööda
+      1 polima 
+      1 poleerima 
+      1 poksima 
+      1 poetiseerima 
+      1 poetama välja
+      1 poetama maha
+      1 poetama kokku
+      1 poetama kaasas
+      1 poegima 
+      1 podistama 
+      1 podisema 
+      1 pocatama 
+      1 pobisema 
+      1 poanema 
+      1 plätserdama 
+      1 plärtsatama 
+      1 plõksutama 
+      1 plumpsatama 
+      1 plinkima 
+      1 plekkima 
+      1 plegima 
+      1 pleegitama 
+      1 planeerima kokku
+      1 planeerima juurde
+      1 planeerima alles
+      1 plaksutama 
+      1 plaksuma 
+      1 plagistama 
+      1 plagieerima 
+      1 plaanima tagasi
+      1 plaanima sisse
+      1 pitsitama läbi
+      1 pitseerima kinni
+      1 pistma ära
+      1 pistma tagant, välja
+      1 pistma peale
+      1 pistma läbi
+      1 pistma kokku
+      1 pistma kaasas
+      1 pisendama 
+      1 pipeteerima 
+      1 pipardama 
+      1 pintseldama 
+      1 pinnima 
+      1 pingutama üle
+      1 pingestuma 
+      1 pimestama 
+      1 pimendama 
+      1 pilutama 
+      1 pillutama laiali
+      1 pilgutama üle
+      1 pilduma tagasi
+      1 pilduma laiali
+      1 pikutama 
+      1 pikenema läbi
+      1 pikeerima tagasi
+      1 piisama ära
+      1 piisama vaja
+      1 piisama kinni
+      1 piiritlema 
+      1 piirduma vastu
+      1 piirduma sisse
+      1 piirama ümber
+      1 piirama sisse
+      1 piinlema 
+      1 piiluma välja
+      1 piiluma tagant, välja
+      1 piiluma tagant
+      1 piiluma läbi
+      1 piiksutama 
+      1 piidlema sisse
+      1 pihkuma 
+      1 pigistama ümber
+      1 pigistama puruks
+      1 pigistama kokku
+      1 pidutsema 
+      1 pidima 
+      1 pidama ümber
+      1 pidama üleval
+      1 pidama üle
+      1 pidama tagasi
+      1 pidama sisse
+      1 pidama püsti
+      1 pidama peal
+      1 pidama otsa
+      1 pidama ots
+      1 pidama nõus
+      1 pidama lähedal, kinni
+      1 pidama läbi, lahti
+      1 pidama ees, kinni
+      1 pidama edasi
+      1 pettuma ära
+      1 petma ära
+      1 pesema ära
+      1 pesema tagasi
+      1 pesema maha
+      1 peremehetsema 
+      1 penema 
+      1 pelguma 
+      1 peletama külge
+      1 peksmima 
+      1 peksma vastu, puruks
+      1 peksma sisse
+      1 peksma segi
+      1 peksma lahti
+      1 peksma edasi
+      1 pekslema 
+      1 peituma taha
+      1 peituma maha
+      1 peitsima ära
+      1 peitma valmis
+      1 peitma taha, ära
+      1 peitma taha
+      1 peitma sisse
+      1 peitma laiali
+      1 peitma kaasa
+      1 peetuma kinni
+      1 peenestama ära
+      1 peegelduma ümber
+      1 peedistama 
+      1 pedereerima 
+      1 peatuma ees
+      1 peatoimetama 
+      1 peatama vastu
+      1 peatama täis
+      1 peatama lähedal
+      1 paugutama ees
+      1 patustama 
+      1 patsutama vastu
+      1 patsatama rahul
+      1 patsatama 
+      1 patrullima üle
+      1 patroneerima 
+      1 patrama 
+      1 partsima 
+      1 parseldama maha
+      1 parkima ära
+      1 parkima ette
+      1 parenhüümima 
+      1 pareerima 
+      1 parandama ära
+      1 parandama tagasi
+      1 paralüseerima 
+      1 paradeerima 
+      1 panustama kokku
+      1 pantuma kinni
+      1 pannima 
+      1 panima 
+      1 panema ära, kinni
+      1 panema vahelt
+      1 panema vahel
+      1 panema tarvis, valmis
+      1 panema sisse, üles
+      1 panema sisse, tagasi
+      1 panema ringi
+      1 panema pärast
+      1 panema putku
+      1 panema pihta
+      1 panema pealt, kinni
+      1 panema onju
+      1 panema külge
+      1 panema kohale
+      1 panema kohal
+      1 panema keskel
+      1 panema kaasas
+      1 panema järele
+      1 panema esile
+      1 panema alles
+      1 palvetama peale
+      1 palvetama 
+      1 paluma vaja
+      1 paluma tarvis
+      1 paluma sisse
+      1 paluma pealt
+      1 paluma kõrvale
+      1 paluma kohale
+      1 paluma kinni
+      1 paluma kaudu
+      1 paluma edasi
+      1 paluma alla
+      1 palsameerima 
+      1 palmima 
+      1 palkama juurde
+      1 palkama edasi
+      1 paljastuma 
+      1 paljanduma 
+      1 palama 
+      1 pakutama ära
+      1 paksenema 
+      1 paksendama 
+      1 pakkuma üle
+      1 pakkuma ära
+      1 pakkuma tagasi
+      1 pakkuma kõrvale
+      1 pakkuma kaasa
+      1 pakkuma juurde
+      1 pakkuma ilma
+      1 pakkima ümber
+      1 pakkima kaasa
+      1 pakkima ilma
+      1 paistma tagasi
+      1 paistma läbi
+      1 paistma lahti
+      1 paistma kõrvalt
+      1 paistma ilma
+      1 paistma ette
+      1 paistetama 
+      1 paiskuma ümber
+      1 paiskuma tagasi
+      1 paiskuma sisse
+      1 paiskuma otsa
+      1 paiskuma laiali
+      1 paiskuma kõrvale
+      1 paiskuma eemale, edasi
+      1 paiskama üles
+      1 paiskama vastu
+      1 paiskama tagasi, maha
+      1 paiskama ringi
+      1 paiskama kõrvale
+      1 paiskama kaasa
+      1 paiskama eemale
+      1 paiskama edasi
+      1 painutama vastu
+      1 paiknema lähedal
+      1 paigutama välja
+      1 paigutama läbi
+      1 paigutama laiali
+      1 paigutama kõrvale
+      1 paigutama juurde
+      1 paigutama ilma
+      1 paigutama ees
+      1 paigaldama tagasi
+      1 paigaldama sisse
+      1 paigaldama otsa
+      1 paigaldama juurde
+      1 pahvima 
+      1 pahistama 
+      1 pahisema 
+      1 pagema ära
+      1 pagema varjule
+      1 pagema laiali
+      1 pagema alla
+      1 paenema 
+      1 paaruma 
+      1 paanitsema ära
+      1 paakuma 
+      1 otsustama ringi
+      1 otsustama läbi
+      1 otsima välja
+      1 otsima tagasi
+      1 otsima seest
+      1 otsima pealt
+      1 otsima kaasa
+      1 otsima juurde
+      1 otsima alles
+      1 osutuma sisse
+      1 osutama välja
+      1 ostma valmis
+      1 ostma läbi
+      1 ostan-müün-vahendama 
+      1 ostab-vahetama 
+      1 oskama tagasi
+      1 oskama sisse
+      1 orienteerima 
+      1 organiseerima tagasi
+      1 organiseerima kokku
+      1 organiseerima ette
+      1 organiseerima edasi
+      1 optimiseerima 
+      1 opteeruma tagasi
+      1 opteeruma 
+      1 opereerima tagasi
+      1 oovitama 
+      1 ootama ringi, vastast
+      1 ootama koos
+      1 ootama kaasa
+      1 ootama järgi
+      1 ootama ees, välja
+      1 oolima 
+      1 oodõtama 
+      1 omandama vastu
+      1 omama alles, peale
+      1 oli-olema 
+      1 olema ümber
+      1 olema vaja, kokku
+      1 olema vahelt
+      1 olema toona
+      1 olema taga
+      1 olema sisse, vaja
+      1 olema sisse
+      1 olema sees, tarvis
+      1 olema ringi
+      1 olema peale
+      1 olema mööda
+      1 olema maha
+      1 olema läbi
+      1 olema ligi
+      1 olema lahti, tagasi
+      1 olema kõrvale, vaja
+      1 olema kokku, võlgu
+      1 olema koht, täis
+      1 olema kohale
+      1 olema koha
+      1 olema kaasas
+      1 olema järele
+      1 olema juurde, tarvis
+      1 olema juurde
+      1 olema ette
+      1 olema alla
+      1 okima 
+      1 oidsima 
+      1 oelksima valmis
+      1 oelduma 
+      1 ocima 
+      1 nüsima katki
+      1 nüpeldama 
+      1 nühkima üle
+      1 nühkima vastu
+      1 nühkima sisse
+      1 nügima mööda
+      1 näänuma 
+      1 näägutama 
+      1 närvitsema 
+      1 närveerima 
+      1 närima sisse
+      1 närima kõrvale
+      1 närbuma 
+      1 näpsama 
+      1 nämmuma 
+      1 näksima 
+      1 näkkama otsa
+      1 näkitsema 
+      1 näitlikustama 
+      1 näitama välja
+      1 näitama tagasi
+      1 näitama otsa
+      1 näitama ilma
+      1 näima ees
+      1 nähtuma koos
+      1 nähtuma ette, läbi
+      1 nägema ära
+      1 nägema pealt
+      1 nägema peale
+      1 nägema otsas
+      1 nägema edasi
+      1 nõutama 
+      1 nõustuma tagasi
+      1 nõudma peale
+      1 nõudma kokku
+      1 nõudma alla
+      1 nõtkuma 
+      1 nõristama 
+      1 nõrguma edasi
+      1 nõrgendama eemale
+      1 nõksutama 
+      1 nõjatuma vastu
+      1 nõiduma välja
+      1 nõiduma kinni
+      1 nuuskima 
+      1 nuuksuma 
+      1 nuttama 
+      1 nutma ära
+      1 nutma taga
+      1 nussima ära
+      1 nuppuma 
+      1 nuhkima 
+      1 N. panema 
+      1 nottima maha
+      1 notsema 
+      1 noteerima 
+      1 nosima 
+      1 norutama 
+      1 normaliseeruma 
+      1 noppima võidu
+      1 noorendama 
+      1 nookama 
+      1 noogutama 
+      1 nokauteerima 
+      1 nipsutama 
+      1 nipsatama tagasi
+      1 ningvastustama 
+      1 nikutama 
+      1 Nikinutma 
+      1 nikerdama sisse
+      1 nikerdama 
+      1 nihverdama kõrvale
+      1 nihveldama sisse
+      1 nihutama tagasi
+      1 nihutama kõrvale
+      1 nihutama ette
+      1 nihutama edasi
+      1 nihkuma kokku
+      1 nihkuma eemale
+      1 neutraliseerima 
+      1 neiudtahtma 
+      1 negima 
+      1 neelduma tagasi
+      1 neelama peale
+      1 neelama järel
+      1 needma ära
+      1 navigeerima 
+      1 nautima läbi
+      1 nautima ees
+      1 narmendama 
+      1 napsitama 
+      1 nappima lähedal
+      1 N. andma 
+      1 naksatama kinni
+      1 naksatama 
+      1 nahutama 
+      1 nahistama 
+      1 naeruvääristama 
+      1 naerutama 
+      1 naerma ära
+      1 naeratama vastu
+      1 naeratama tagant
+      1 naelutama külge
+      1 naelutama kinni
+      1 nabistama 
+      1 naasma üle
+      1 naasma juurde
+      1 müütama 
+      1 müürima sisse
+      1 müürima 
+      1 müüma üle
+      1 müüma tarvis
+      1 müüma peale
+      1 mütsatama tagasi
+      1 mürtsuma 
+      1 müristama edasi
+      1 mürisema 
+      1 mürgituma 
+      1 müksima 
+      1 müksama tagasi
+      1 mühisema 
+      1 mötsima 
+      1 mörisema 
+      1 mökitama 
+      1 möistima 
+      1 möirgama kaasa
+      1 möelduma 
+      1 määrima laiali
+      1 määrima ilma
+      1 määrama ära
+      1 mätserdama 
+      1 mässuma 
+      1 mässima ümber
+      1 mässima tagasi
+      1 mässima kinni
+      1 mäslema 
+      1 märkima välja
+      1 märkima sisse
+      1 märkima maha
+      1 märkama välja
+      1 märkama lahti
+      1 männgima 
+      1 mängnuma 
+      1 mänglema 
+      1 mängima üle
+      1 mängima vastu
+      1 mängima tagasi
+      1 mängima ringi, välja
+      1 mängima ringi
+      1 mängima peale
+      1 mängima mööda
+      1 mängima maha
+      1 mängima lahti
+      1 mängima kokku
+      1 mängima kaasa
+      1 mängima ilma
+      1 mängima ette
+      1 mängima edasi
+      1 mämmuma tagasi
+      1 mäletama vastu
+      1 mälestama 
+      1 mähkuma ümber
+      1 mähkima sisse
+      1 mõõdistama 
+      1 mõtlema pealt, välja
+      1 mõtlema kinni
+      1 mõtlema järele
+      1 mõtlema ette
+      1 mõtlema alla
+      1 mõlkuma 
+      1 mõjuma tagasi
+      1 mõistma vastu
+      1 mõistma kokku
+      1 mõistma kinni
+      1 mõistma ilma
+      1 mõistma all
+      1 mõdlema sisse
+      1 muutuma edasi
+      1 muutma ära
+      1 muuma 
+      1 muukima lahti
+      1 mustuma 
+      1 musitama 
+      1 murtsima 
+      1 murrutama 
+      1 muretsema pärast
+      1 murdma sisse, vastu
+      1 murdma sisse, tagasi
+      1 murdma ringi, sisse
+      1 murdma kinni, sisse
+      1 munama 
+      1 mulksatama 
+      1 muljuma sisse
+      1 muljetama 
+      1 mulistama 
+      1 mulisema 
+      1 mukkima 
+      1 mugistama 
+      1 mugima kõrvale
+      1 mugima 
+      1 muganduma 
+      1 motlema 
+      1 morjendama 
+      1 moosima 
+      1 moondama 
+      1 moodustama üle
+      1 moodustama vahele
+      1 moodustama juurde
+      1 molutama ära, ära
+      1 moelduma 
+      1 modereerima 
+      1 mobiliseeruma 
+      1 mkutsuma 
+      1 mispuutuma 
+      1 minuma 
+      1 minema üles, ära
+      1 minema üles, alla
+      1 minema ühte
+      1 minema äärde
+      1 minema ära, välja
+      1 minema ära, tagasi
+      1 minema ära, ilma
+      1 minema välja, tagasi
+      1 minema võlgu
+      1 minema vastu, ette
+      1 minema valmis
+      1 minema vahele
+      1 minema tähele
+      1 minema tuttu
+      1 minema tagasi, ära
+      1 minema sisse, välja
+      1 minema sisse, tagasi
+      1 minema sees, täis
+      1 minema sees
+      1 minema ringi, lahti
+      1 minema peksma
+      1 minema peale, tagasi
+      1 minema peale, igasugu
+      1 minema nõus
+      1 minema mööda, välja
+      1 minema moodi
+      1 minema lähedal
+      1 minema läbi, välja
+      1 minema ligi
+      1 minema kõrvalt
+      1 minema krampi
+      1 minema kokku, vaja
+      1 minema kohal
+      1 minema katki
+      1 minema kallale
+      1 minema järel
+      1 minema ilma, tagasi
+      1 minema ilma, kaasa
+      1 minema eest, ära
+      1 minema ees, taga
+      1 minema edasi, välja
+      1 minema edasi, edasi
+      1 mineerima 
+      1 mimmuma 
+      1 miksima 
+      1 migreeruma 
+      1 migreerima 
+      1 metasteeruma 
+      1 metastaseeruma 
+      1 meldima 
+      1 meisterdama peale
+      1 meibima 
+      1 mehitama 
+      1 meenutama alt
+      1 meelitama ära
+      1 meelitama vastu
+      1 meelitama otsa
+      1 meelitama kohale
+      1 meelduma 
+      1 meeldima üles
+      1 meeldima juurde
+      1 mediteerima 
+      1 mattuma alla
+      1 matsutama 
+      1 matma kõrvale
+      1 matma kokku
+      1 matma kaasa, maha
+      1 matma kaasa
+      1 matkima ära
+      1 materdama 
+      1 Mategema 
+      1 masturbeerima 
+      1 masima 
+      1 marssima poolest
+      1 marssima kohale
+      1 marssima juurde
+      1 markeerima 
+      1 Marisihkama 
+      1 manööverdama sisse
+      1 manööverdama ette
+      1 manama sisse
+      1 manama ette
+      1 manageerima läbi
+      1 maletama 
+      1 maldama 
+      1 maksma üles
+      1 maksma valmis
+      1 maksma ringi
+      1 maksma rahul
+      1 maksma peale
+      1 maksma eest
+      1 maksma alla
+      1 majutama välja
+      1 mahvima ära
+      1 mahutama kokku
+      1 mahtuma üles
+      1 mahtuma valmis
+      1 mahtuma vahele
+      1 mahtuma vaevu
+      1 mahtuma täis
+      1 mahtuma püsti, ära
+      1 mahtuma läbi, ära
+      1 mahtuma läbi, kokku
+      1 mahtuma lahti
+      1 mahtuma kõrvale
+      1 mahtuma kohakuti
+      1 mahtuma järel
+      1 mahtuma esile
+      1 mahtnuma 
+      1 mahenema 
+      1 magatama maha
+      1 magama välja
+      1 maetima 
+      1 madalduma 
+      1 maarima 
+      1 maanduma kõrvale
+      1 maanduma kohale
+      1 maanduma ette
+      1 maanduma ees
+      1 maalima üles
+      1 maalima peale
+      1 m6istuma 
+      1 m6elduma 
+      1 lürpima 
+      1 lülituma tagasi
+      1 lükkima üles
+      1 lükkama ära
+      1 lükkama välja
+      1 lükkama taha
+      1 lükkama pikali
+      1 lükkama peale
+      1 lükkama kinni
+      1 lükkama ette
+      1 lükkama eemale
+      1 lööma ümber
+      1 lööma tagasi, ära
+      1 lööma tagasi
+      1 lööma püsti
+      1 lööma pihta
+      1 lööma pealt, läbi
+      1 lööma lahku
+      1 lööma kõrvale
+      1 lööma kinni, ümber
+      1 lööma järel
+      1 lööma juurde
+      1 lööma ette, läbi
+      1 lööbima 
+      1 lötsatama 
+      1 löristama 
+      1 löpuma 
+      1 löpetama 
+      1 löntsima 
+      1 löhuma 
+      1 läxima välja
+      1 lääpama 
+      1 lätsatama 
+      1 läratama 
+      1 läpatama 
+      1 länuma 
+      1 läntsima 
+      1 läntsatama 
+      1 lämmatama ära
+      1 lämmatama ringi
+      1 läksima 
+      1 läkitama mööda
+      1 läkitama läbi
+      1 läkastama 
+      1 läinud-tulema 
+      1 läindkima 
+      1 lähtuma edasi
+      1 lähetama edasi
+      1 läbistama tagant, ette
+      1 läbima üle
+      1 läbima ringi
+      1 läbima kohale
+      1 lõõgastuma 
+      1 lõugama 
+      1 lõrisema 
+      1 lõppema alla
+      1 lõpma ära
+      1 lõpma otsa
+      1 lõpetama välja
+      1 lõpetama taha
+      1 lõpetama ringi
+      1 lõpetama koos
+      1 lõpetama järel
+      1 lõimima läbi
+      1 lõikama tarvis
+      1 lõikama pealt
+      1 lõikama peale
+      1 lõikama maha
+      1 lõikama kohal
+      1 lõikama eest, ära
+      1 lõhustuma 
+      1 lõhestuma 
+      1 lõdvestama 
+      1 lõdvenema 
+      1 lõdvendama 
+      1 luusima ümber
+      1 luusima 
+      1 luurama 
+      1 lutsima 
+      1 luristama 
+      1 lupsama tagasi
+      1 lunima püsti
+      1 lunastama ringi
+      1 lukustuma üles
+      1 lukustama kinni
+      1 luiskama 
+      1 luhtuma järel
+      1 luhtama 
+      1 lugema ära
+      1 lubama välja
+      1 lubama sisse
+      1 lubama kokku
+      1 lubama alla
+      1 lorima 
+      1 lopsatama tagasi
+      1 lopetama 
+      1 loperdama 
+      1 loovutama juurde
+      1 loovima mööda
+      1 lootma tagasi
+      1 lootma ringi
+      1 lootma peale
+      1 lootma kokku
+      1 loosima välja
+      1 looritama 
+      1 loopima vastu
+      1 loopima maha
+      1 loopima esile
+      1 looma välja, maha
+      1 looma täis
+      1 looma sekka
+      1 looma püsti
+      1 looma maha
+      1 looma läbi
+      1 looma kõrvale
+      1 looma katki
+      1 looma edasi
+      1 looma alla
+      1 looklema sisse
+      1 looklema alla
+      1 lonksama 
+      1 lonkima üles, tagasi
+      1 lonkima üles
+      1 lonkima sisse
+      1 lonkima mööda
+      1 longerdama 
+      1 loll-lonkima 
+      1 lollitama 
+      1 loksuma ära
+      1 loksuma alla
+      1 loksahtama 
+      1 lokatsioonima 
+      1 lokaliseerima 
+      1 loitsima 
+      1 lohistama kaasa
+      1 lohistama järele
+      1 lohistama alla
+      1 lohisema otsa
+      1 lohisema kaasa
+      1 lohisema alt
+      1 logistama tagasi
+      1 loetlema üles
+      1 loendama 
+      1 lobima 
+      1 liuguma 
+      1 liuglema ära
+      1 littima 
+      1 litsuma sisse
+      1 litsuma kõrvale
+      1 lisanduma vastu
+      1 lisanduma kokku
+      1 lisandama 
+      1 lisama ära
+      1 lisama võidu
+      1 lisama lahti, võidu
+      1 liputama 
+      1 lipsatama 
+      1 lipsama välja
+      1 lipsama mööda
+      1 lippama järele
+      1 lippama edasi
+      1 lippama alla
+      1 lipitsema 
+      1 lindistama juurde
+      1 limssima 
+      1 limpsama 
+      1 likvideerima 
+      1 liituma läbi
+      1 liitma kokku
+      1 liimuma 
+      1 liimima kokku, ära
+      1 liimima kinni
+      1 liikuma ära, tagasi
+      1 liikuma sisse, välja
+      1 liikuma sisse
+      1 liikuma otsa
+      1 liikuma maha
+      1 liikuma laiali
+      1 liikuma lahti
+      1 liikuma kokku
+      1 liikuma kaasa
+      1 liikuma järele
+      1 liikuma ilma
+      1 liiklema edasi
+      1 liiklema 
+      1 liigutama üle
+      1 liigahtama 
+      1 liibuma vastu
+      1 liibuma 
+      1 liialdama 
+      1 ligunema 
+      1 lifima 
+      1 liduma tagasi
+      1 libistama üle
+      1 libistama vahele
+      1 libistama kaasa
+      1 libistama ees
+      1 libisema ära
+      1 libisema sisse
+      1 libisema ringi
+      1 libisema mööda
+      1 libisema kõrvale
+      1 levima üles
+      1 levima välja
+      1 levima tagasi
+      1 levima kokku
+      1 leppima vastu
+      1 lepitama 
+      1 leotama 
+      1 lentsima 
+      1 lennuvõimestuma 
+      1 lennutama vastu
+      1 lennutama toona
+      1 lennutama ringi
+      1 lennutama läbi
+      1 lennutama ilma
+      1 lennutama esile
+      1 lennutama edasi
+      1 lendsima 
+      1 lendlema tagasi
+      1 lendama üle, tagasi
+      1 lendama ühte
+      1 lendama täis
+      1 lendama tagant
+      1 lendama ringi
+      1 lendama pihta
+      1 lendama peale
+      1 lendama otsa
+      1 lendama maha
+      1 lendama lahti
+      1 lendama külili
+      1 lendama kinni
+      1 lendama kaasa
+      1 lendama eest, ära
+      1 lendama ees
+      1 lendama alla
+      1 lekkima ette
+      1 lejäänuma 
+      1 leitsima 
+      1 leitima pealt
+      1 leiguma 
+      1 leierdama 
+      1 leiduma tagasi
+      1 leiduma sees
+      1 leidma vastu
+      1 leidma lahti
+      1 leidma kokku
+      1 leidma ilma
+      1 leidma alt
+      1 lehvitama vastu
+      1 lehvima üles
+      1 lehkama 
+      1 legitimeerima 
+      1 leevendama kinni
+      1 leelutama sekka
+      1 leelutama 
+      1 leelotama 
+      1 leegitsema 
+      1 leebuma 
+      1 leavima 
+      1 lavastama sisse
+      1 lautima 
+      1 laulma välja
+      1 laulma maha
+      1 laulma ette
+      1 laulab-deklareerima 
+      1 lauglema 
+      1 latsatama 
+      1 lastima 
+      1 laskuma maha
+      1 laskuma ette, maha
+      1 laskuma ette
+      1 laskuma ees
+      1 laskma vahele
+      1 laskma tagasi, alla
+      1 laskma rippu
+      1 laskma ringi
+      1 laskma ligi
+      1 laskma laiali
+      1 laskma lahti, ära
+      1 laskma kinni
+      1 laskma ette
+      1 laskma alla, sisse
+      1 lapsatama 
+      1 laotama ette, maha
+      1 lansseerima 
+      1 langetama peale
+      1 langema ümber
+      1 langema vastu
+      1 langema ringi
+      1 langema läbi
+      1 langema kõrvale
+      1 langema kinni
+      1 lamineerima 
+      1 lamama maas
+      1 lamama ees
+      1 laksutama 
+      1 laksima tagasi
+      1 laksama vastu
+      1 laksama sisse
+      1 lakkama vastu
+      1 lajatama sisse
+      1 lajatama mööda
+      1 laiskuma 
+      1 lainetama 
+      1 lainema 
+      1 laimama 
+      1 laienema üle
+      1 laienema läbi
+      1 laienema edasi
+      1 laiendama välja
+      1 laiendama edasi
+      1 laiama 
+      1 lahvatama kokku
+      1 lahutama ringi
+      1 lahustuma ära
+      1 lahustuma tagasi
+      1 lahustuma sisse
+      1 lahtuma tagasi
+      1 lahtuma 
+      1 lahkuma vastu
+      1 lahkuma läbi
+      1 lahkuma lahti
+      1 lahkuma kokku
+      1 lahkuma ilma
+      1 lahknema 
+      1 lahkama 
+      1 lahjenema 
+      1 lahistama 
+      1 lahisema 
+      1 lahenduma 
+      1 lahastama 
+      1 lagunema laiali
+      1 lagundama 
+      1 lagastama 
+      1 laenutama 
+      1 laekuma kohale
+      1 laekuma alles
+      1 laduma üles
+      1 laduma välja
+      1 laduma sisse
+      1 laduma ringi
+      1 laduma juurde
+      1 ladistama 
+      1 ladenema 
+      1 laaduma 
+      1 laadima ümber
+      1 laadima üles
+      1 laadima alla
+      1 laaberdama 
+      1 kyyndima 
+      1 kyssima 
+      1 kylmuma ära
+      1 kykitama 
+      1 küütlema 
+      1 küütima 
+      1 küürutama 
+      1 küünitama otsa
+      1 küündima alla
+      1 küttima tagant
+      1 kütma ära
+      1 küsitlema välja
+      1 küsima tagasi
+      1 küsima kaasa
+      1 küpsema 
+      1 külvama laiali
+      1 külmuma sisse
+      1 külmetama ära
+      1 külmetama 
+      1 külmama 
+      1 külima 
+      1 külastama ära
+      1 külastama tarvis
+      1 külastama läbi
+      1 kügelema 
+      1 küdema 
+      1 köötsima tagasi
+      1 köhima välja
+      1 käänama kahekorra
+      1 käunuma üle
+      1 käsutama üles
+      1 käsutama tagasi
+      1 käskima tagasi
+      1 käsitsema 
+      1 kärvama ära
+      1 kärisema katki
+      1 kärbuma 
+      1 käntsatama 
+      1 käkerdama 
+      1 käituma maha
+      1 käitlema 
+      1 käima ära, alla
+      1 käima sekka
+      1 käima pihta
+      1 käima otsa
+      1 käima lähedal
+      1 käima lahti
+      1 käima kätte
+      1 käima kõrvale
+      1 käima koos
+      1 käima kohal
+      1 käima kinni
+      1 käima järel
+      1 käima juures
+      1 käima ette
+      1 käima ees, ringi
+      1 käima alles
+      1 kähvatama 
+      1 kähvama 
+      1 kähistama 
+      1 kähisema 
+      1 käharduma 
+      1 kägistama lähedal
+      1 käendama 
+      1 kõõritama 
+      1 kõõluma 
+      1 kõverdama 
+      1 kõrvutama 
+      1 kõrvetama ära
+      1 kõristama välja
+      1 kõrbema üle
+      1 kõpsutama tagasi
+      1 kõpitsema 
+      1 kõngema ära
+      1 kõnelema sisse
+      1 kõndima ära
+      1 kõndima taha
+      1 kõndima mööda, kokku
+      1 kõndima mööda
+      1 kõndima maha
+      1 kõndima järele
+      1 kõndima eemale
+      1 kõndima edasi
+      1 kõmisema 
+      1 kõlkuma 
+      1 kõlksutama 
+      1 kõlksuma 
+      1 kõlksatama 
+      1 kõlksama 
+      1 kõlistama 
+      1 kõlisema 
+      1 kõlama ümber
+      1 kõlama läbi
+      1 kõikuma juurde
+      1 kõikuma alla
+      1 kõhetuma 
+      1 kõdunema 
+      1 kõditama 
+      1 kõbima üles
+      1 kvalifitseeruma ümber
+      1 kvalifitseerima 
+      1 kuvama tagasi
+      1 kuumutama 
+      1 kuuluma toona
+      1 kuuluma tagasi
+      1 kuuluma otsa
+      1 kuuluma läbi
+      1 kuuluma käsikäes
+      1 kuuluma kõrvale
+      1 kuuluma kõrval
+      1 kuuluma koos
+      1 kuuluma kokku, alla
+      1 kuuluma kaasa, kaasa
+      1 kuuluma järgi
+      1 kuuluma ette
+      1 kuuluma edasi
+      1 kuulma välja
+      1 kuulma sisse
+      1 kuulma peal
+      1 kuulma kaasa
+      1 kuulama ära
+      1 kuulama pealt
+      1 kuulama läbi
+      1 kuukima 
+      1 kutustuma 
+      1 kutsuma üle
+      1 kutsuma vastu, välja
+      1 kutsuma vaja
+      1 kutsuma sisse
+      1 kutsuma ringi
+      1 kutsuma peale, tagasi
+      1 kutsuma läbi
+      1 kutsuma koos
+      1 kutsuma järele
+      1 kutsuma ette
+      1 kustutama täis
+      1 kusema vastu
+      1 kusema alla
+      1 kurtma kaasa
+      1 kurseerima 
+      1 kuritarvitama 
+      1 kuristama 
+      1 kurameerima 
+      1 kupeldama 
+      1 kunuma 
+      1 kummima 
+      1 kumisema 
+      1 kumerdama üles
+      1 kumerdama 
+      1 kuluma välja
+      1 kuluma tarvis
+      1 kuluma sisse
+      1 kuluma kokku, alla
+      1 kuluma järel
+      1 kulmineerima 
+      1 kulistama 
+      1 kulgema ümber
+      1 kulgema alla
+      1 kuldama 
+      1 kukutama alla
+      1 kukkuma valmis
+      1 kukkuma ringi
+      1 kukkuma rahul
+      1 kukkuma peale, kokku
+      1 kukkuma peale
+      1 kukkuma mööda
+      1 kukkuma lõhki
+      1 kukkuma laiali
+      1 kukkuma lahti
+      1 kukkuma käpuli
+      1 kukkuma koos, sisse
+      1 kukkuma kinni
+      1 kukkuma katki
+      1 kukkuma juurde
+      1 kukkuma edasi
+      1 kukerpallitama 
+      1 kujutama läbi
+      1 kujunema läbi
+      1 kujundama ümber
+      1 kuhtuma 
+      1 kugistama alla
+      1 kugistama 
+      1 kucuma 
+      1 kubisema 
+      1 ktekima 
+      1 kruvima üles
+      1 kruttima sisse
+      1 kruttima edasi
+      1 krudisema 
+      1 kristalliseeruma 
+      1 krimpsutama rahul
+      1 krikskokkama 
+      1 kriipsima peal
+      1 kribima üles
+      1 kreemitama sisse
+      1 krapsama 
+      1 krampuma kinni
+      1 krahmima 
+      1 krabistama 
+      1 krabisema 
+      1 kraapsama 
+      1 kraapima välja
+      1 kraapima maha
+      1 kraapama 
+      1 kraamima 
+      1 kraaksuma 
+      1 kraaksatama 
+      1 koukima alt
+      1 kottuma 
+      1 kottima 
+      1 kostuma ära
+      1 kostuma tagant
+      1 kostma üles
+      1 kostma välja
+      1 kostma sisse
+      1 kostma kõrvalt
+      1 kostma edasi
+      1 kostma alt
+      1 kostma alla
+      1 kortsutama 
+      1 korrutama 
+      1 korrespondeeruma 
+      1 korrastuma 
+      1 korralduma 
+      1 korraldama ümber
+      1 korraldama ära
+      1 korraldama välja
+      1 korraldama läbi
+      1 korraldama järel
+      1 korraldama edasi
+      1 korjama üles
+      1 korjama kaasa
+      1 korjama ette
+      1 koristama ära
+      1 koristama maha
+      1 kordinaadima 
+      1 koputama kaasa
+      1 kopsatama otsa
+      1 kopsatama 
+      1 kopima läbi
+      1 koperdama tagasi
+      1 kopeeruma 
+      1 kootuma kokku
+      1 kooskõlastuma 
+      1 kooserdama 
+      1 kooruma välja
+      1 koorima lahti
+      1 koonduma ümber
+      1 koonduma alla
+      1 koondnuma 
+      1 koondama eest
+      1 koolima 
+      1 kookima välja
+      1 konvoeerima läbi
+      1 konutama 
+      1 kontsentreerima ringi
+      1 kontrollima üle
+      1 kontrollima ära
+      1 kontrollima peale
+      1 kontrolletenduse-eelnema 
+      1 konstruima 
+      1 konstrueerima sisse
+      1 konsolideerima 
+      1 konserveeruma 
+      1 konserveerima 
+      1 konfima 
+      1 kondenseeruma ära
+      1 komposteerima 
+      1 komponeerima 
+      1 kompima 
+      1 kompileerima 
+      1 kommuteerima 
+      1 kommid-limpsima 
+      1 koltuma 
+      1 koloreerima 
+      1 koloniseeruma 
+      1 koloniseerima 
+      1 kolmekordistuma 
+      1 kollendama 
+      1 kollektsioneerima 
+      1 kolksama 
+      1 kolima ära, tagasi
+      1 kolima toona
+      1 kolima peale
+      1 kolima laiali
+      1 kolima ilma
+      1 kolima alles
+      1 kolima alla
+      1 koksama maha
+      1 koitma 
+      1 koitama 
+      1 kôigutama 
+      1 kohutama 
+      1 kohustuma tagasi
+      1 kohtuma ringi
+      1 kohtuma ees
+      1 kohmitsema kallal
+      1 kohkuma tagasi
+      1 kohitsema 
+      1 kohendama üles
+      1 kohandama tarvis
+      1 kogunema vaevu
+      1 kogunema täis
+      1 kogunema maha
+      1 kogunema läbi
+      1 kogunema kohale
+      1 kogunema alla
+      1 koguma üle
+      1 koguma vastu
+      1 koguma sekka
+      1 koguma ette
+      1 kogenema 
+      1 kogelema 
+      1 kodustama 
+      1 kodunema 
+      1 kobrutama 
+      1 kobisema ära
+      1 kobima kinni
+      1 kobatama 
+      1 kobama mööda
+      1 kobama laiali
+      1 koaguleeruma 
+      1 klõpsutama kinni
+      1 klõpsama sisse
+      1 kluuksuma 
+      1 klopsima 
+      1 kloppima 
+      1 kloonima 
+      1 klirisema 
+      1 klikkima 
+      1 kliisterdama 
+      1 kleepuma sisse
+      1 kleepuma külge
+      1 kleepima täis
+      1 kleepima tagasi
+      1 kleepima kinni
+      1 kleepima ette
+      1 klapitama 
+      1 klammerduma ümber
+      1 klammerduma külge
+      1 klammerdama 
+      1 klaasistuma 
+      1 klaaruma 
+      1 klaarima pärast
+      1 klaarima edasi
+      1 klaarima 
+      1 kivistuma ära
+      1 kivinema 
+      1 kitsendama 
+      1 kitkuma 
+      1 kiskuma ühte
+      1 kiskuma pealt, lahti
+      1 kiskuma pealt
+      1 kiskuma laiali
+      1 kiskuma kõrvale
+      1 kirutama 
+      1 kiruma tagasi
+      1 kirjutatama 
+      1 kirjutama võidu
+      1 kirjutama pärast
+      1 kirjutama läbi
+      1 kirjutama lahti
+      1 kirjutama koos
+      1 kirjutama ette
+      1 kirjeldama ära
+      1 kirjeldama kinni
+      1 kirjastama 
+      1 kirendama 
+      1 kippuma sisse
+      1 kippuma kinni
+      1 kippuma kaasa
+      1 kippuma eemale
+      1 kippuma edasi
+      1 kinnitama tagasi
+      1 kinnitama lahti
+      1 kinnitama kokku
+      1 kindlustama võidu
+      1 kimuma 
+      1 kimama ette
+      1 killustuma 
+      1 kilkama 
+      1 kikkima 
+      1 kiitma üles
+      1 kiiskama 
+      1 kiirustama ära
+      1 kiirustama vastu
+      1 kiirustama sisse
+      1 kiirustama juurde
+      1 kiirustama alla
+      1 kiirguma välja
+      1 kiirgama välja
+      1 kiirgama tagasi
+      1 kiinduma ära
+      1 kiinduma peale
+      1 kiilama 
+      1 kiikuma tagasi
+      1 kiigutama 
+      1 kihutama üles
+      1 kihutama tagant
+      1 kihutama laiali
+      1 kihutama kinni
+      1 kihutama järele
+      1 kihutama ette
+      1 kihutama ees
+      1 kihutama eemale
+      1 kihistuma 
+      1 kihisema 
+      1 kibelema välja
+      1 kibelema tagasi
+      1 kestma kokku
+      1 keskendama 
+      1 kerkima välja
+      1 kerkima otsa
+      1 kerkima lähedal
+      1 kerkima kõrvale
+      1 kerkima järel
+      1 kerkima juurde
+      1 kerkima esile
+      1 kerjama 
+      1 kerima üles
+      1 kerima välja
+      1 kergitama tagasi
+      1 kergitama mööda
+      1 kepsutama 
+      1 kelgutama 
+      1 kehutama 
+      1 kehtima vastu
+      1 kehtima ringi
+      1 kehtetama 
+      1 kehitama 
+      1 keetma otsa
+      1 keerutama üle
+      1 keerutama välja
+      1 keerama üles
+      1 keerama ära, ära
+      1 keerama valmis
+      1 keerama sisse, püsti
+      1 keerama peale, tagasi
+      1 keerama otsa
+      1 keerama läbi
+      1 keerama lukku
+      1 keerama edasi
+      1 keelitama tagasi
+      1 keelama alla
+      1 kaverdama 
+      1 kavatsema tagasi
+      1 kavaldama 
+      1 kaunistama edasi
+      1 kauguma 
+      1 katsuma ära
+      1 katma välja
+      1 katkuma 
+      1 katapulteerima 
+      1 katalüüsima 
+      1 kasvatama välja
+      1 kasvama täis
+      1 kasvama peale
+      1 kasvama otsa
+      1 kasvama läbi
+      1 kasvama juurde
+      1 kasvama edasi
+      1 kasvama alla
+      1 kasutatama 
+      1 kasutama üle
+      1 kasutama vastu
+      1 kasutama sisse
+      1 kastuma 
+      1 kastma tagasi
+      1 kastma maha
+      1 kasima tagasi
+      1 kartma ära
+      1 kartma tagasi
+      1 kartma sisse
+      1 karjutama 
+      1 kargama ära
+      1 kargama vastu
+      1 kargama tagant
+      1 kargama ringi
+      1 kargama kallale
+      1 kargama järele
+      1 kargama ilma
+      1 kargama alt
+      1 kargama alla
+      1 karastuma 
+      1 karastama 
+      1 kappama läbi
+      1 kappama laiali
+      1 kappama edasi
+      1 kaperdama 
+      1 kaotama ringi
+      1 kaotama läbi
+      1 kaotama iial
+      1 kantima ümber
+      1 kangutama maha
+      1 kangutama lahti
+      1 kanguma 
+      1 kangastama 
+      1 kanduma välja
+      1 kanduma vastu, edasi
+      1 kanduma tagasi
+      1 kanduma läbi
+      1 kanduma laiali
+      1 kanduma kaasa
+      1 kandma täis
+      1 kandma sisse
+      1 kandma peale, ette
+      1 kandma kinni
+      1 kandma kaasa
+      1 kandma juurde
+      1 kandma ilma
+      1 kandima 
+      1 kandideerima kokku
+      1 ka-lööma 
+      1 kaltsutama 
+      1 kalpsama välja
+      1 kalpsama sisse
+      1 kallutuma 
+      1 kallerduma 
+      1 kallama ära
+      1 kallama valmis
+      1 kallama sisse
+      1 kallama ringi
+      1 kallama läbi
+      1 kallama laiali
+      1 kallama kokku
+      1 kallama juurde
+      1 kalkuleerima sisse
+      1 kalkuleerima 
+      1 kalestuma 
+      1 kalduma üle
+      1 kalduma ühte
+      1 kalduma vastu
+      1 kalduma valmis
+      1 kalduma tagasi
+      1 kalduma lähedal
+      1 kalduma kõrvale
+      1 kalduma edasi
+      1 kaksama ära
+      1 kaksama 
+      1 kaklema ära
+      1 kakkuma ära
+      1 kakkuma välja
+      1 kakima 
+      1 kajama läbi
+      1 kaituma 
+      1 kaitsma eest
+      1 kaitsema vastu
+      1 kaitsema ette
+      1 kaisutama 
+      1 kairima 
+      1 kaifima 
+      1 kaiduma 
+      1 kahmima 
+      1 kahmama kaasa
+      1 kahlustama 
+      1 kahlama tagasi
+      1 kahlama läbi
+      1 kahjustuma 
+      1 kahistama 
+      1 kahima 
+      1 kahestuma 
+      1 kahe-kolmekordistuma 
+      1 kahanema peale
+      1 kaevanduma 
+      1 kaevandama 
+      1 kaevama ümber
+      1 kaevama valmis
+      1 kaevama läbi
+      1 kaema tagasi
+      1 kaema ringi
+      1 kaeblema 
+      1 kaebama tagasi
+      1 kaduma üles
+      1 kaduma sisse, ära
+      1 kaduma püsti
+      1 kaduma maha
+      1 kaduma läbi
+      1 kaduma kokku
+      1 kaduma kohale
+      1 kaduma järele
+      1 kaduma edasi
+      1 kaasajastama 
+      1 kaaperdama lähedal
+      1 kaaperdama 
+      1 kaapama 
+      1 kaanima 
+      1 kaanetama 
+      1 kaalutlema 
+      1 jöudsima 
+      1 jäätuma ära
+      1 jäätuma läbi
+      1 jäätuma kinni
+      1 jäätama kinni
+      1 jäätama 
+      1 jääma ümber
+      1 jääma üle, lahti
+      1 jääma välja, kinni
+      1 jääma välja, ilma
+      1 jääma väheks
+      1 jääma vait
+      1 jääma vahel
+      1 jääma tuttu
+      1 jääma tarvis
+      1 jääma taha
+      1 jääma tagasi, kinni
+      1 jääma sees
+      1 jääma ringi, kokku
+      1 jääma pärast
+      1 jääma maha, kinni
+      1 jääma ligi
+      1 jääma kägaras
+      1 jääma koos
+      1 jääma koha, kinni
+      1 jääma kinni, vahele
+      1 jääma kinni, kokku
+      1 jääma keskele
+      1 jääma keskel
+      1 jääma katki
+      1 jääma järgi
+      1 jääma jupiti
+      1 jääma all, kinni
+      1 jääma all
+      1 jääma »
+      1 jäudnuma 
+      1 jättama 
+      1 jätma üles, sisse
+      1 jätma ühte
+      1 jätma ära, koha
+      1 jätma võidu
+      1 jätma tarvis
+      1 jätma ringi
+      1 jätma rahule
+      1 jätma pealt
+      1 jätma läbi
+      1 jätma kehvavõitu
+      1 jätma järele
+      1 jätma ilma
+      1 jätma ette, maha
+      1 jätma all
+      1 jätkuma tarvis
+      1 jätkuma ringi
+      1 jätkuma ees
+      1 jätkuma edasi
+      1 jätkama pooleli
+      1 järkama 
+      1 järgnema vastu
+      1 järelduma 
+      1 järeldama 
+      1 järama 
+      1 jänuma 
+      1 jälgima pealt
+      1 jälestama 
+      1 jõutsima 
+      1 jõutima 
+      1 jõutama 
+      1 jõustuma vastu
+      1 jõustama 
+      1 jõusima 
+      1 jõuduma 
+      1 jõudsima 
+      1 jõudma ümber
+      1 jõudma üles, välja
+      1 jõudma üles, tagasi
+      1 jõudma vaja
+      1 jõudma täis
+      1 jõudma ringis
+      1 jõudma pealt, tagasi
+      1 jõudma pealt
+      1 jõudma peal
+      1 jõudma läbi, tagasi
+      1 jõudma koht
+      1 jõudma kohal
+      1 jõudma koha
+      1 jõudma kinni
+      1 jõudma kaasa
+      1 jõudma juurde
+      1 jõudma hakul
+      1 jõudma eemale
+      1 jõudma edasi, välja
+      1 jõudma edasi, edasi
+      1 jõudima 
+      1 jõrisema 
+      1 jõllitama sisse
+      1 jõllitama mööda
+      1 jõllitama alla
+      1 jõllama 
+      1 jõdima 
+      1 juurima 
+      1 juurdlema 
+      1 jutustama ümber
+      1 jutustama lahti
+      1 jurama 
+      1 jultuma 
+      1 julgema tagasi
+      1 jukuma 
+      1 juhtuma lähedal
+      1 juhtuma kohal
+      1 juhtuma kaasas
+      1 juhtuma alla
+      1 juhtnuma 
+      1 juhtima tagant
+      1 juhtima mööda
+      1 juhtima läbi, eemale
+      1 juhtima läbi
+      1 juhtima kokku
+      1 juhtima eemal
+      1 juhtima edasi
+      1 juhatama üles
+      1 juhatama valmis
+      1 juhatama tagasi
+      1 juhatama peale
+      1 juhatama kätte
+      1 joudsima 
+      1 joristama 
+      1 jorisema 
+      1 jooxnuma tagasi
+      1 joovastuma 
+      1 jootma sisse
+      1 joosnuma järele
+      1 jooskima tagasi
+      1 joonistama välja
+      1 joonistama maha
+      1 joonistama kõrvale
+      1 jooma tagasi
+      1 jooma sisse
+      1 jooksutama kinni
+      1 jooksma ära, tagasi
+      1 jooksma vastu, puruks
+      1 jooksma taha
+      1 jooksma tagant
+      1 jooksma peal
+      1 jooksma kõrvale
+      1 jooksma kohale
+      1 jooksma kaasas
+      1 jooksma eemale
+      1 jooksma edasi, juurde
+      1 jooksma edasi
+      1 jooksma all
+      1 jookima 
+      1 joinima 
+      1 jjoksnuma 
+      1 jetsima maha
+      1 jaurama ära
+      1 jaurama 
+      1 jaotama laiali
+      1 jaotama kokku
+      1 janunema 
+      1 januma 
+      1 jammima 
+      1 jalutama välja
+      1 jalutama ringi
+      1 jalutama peale
+      1 jalutama mööda
+      1 jalutama kokku
+      1 jalutama eemale
+      1 jakuuluma 
+      1 jahutama maha
+      1 jahuma 
+      1 jahtuma tagasi
+      1 jahtuma maha
+      1 jahenema 
+      1 jahendama 
+      1 jaguma ringi
+      1 jaguma kokku
+      1 jagelema 
+      1 jagama tagasi
+      1 jagama läbi
+      1 jagama lahti
+      1 jagama kaasa
+      1 jagama heaks
+      1 jagama edasi
+      1 j6udima 
+      1 ituma lahti
+      1 itsitama üle
+      1 istutama välja
+      1 istutama tagasi
+      1 istutama ringi
+      1 istuma üle
+      1 istuma ära
+      1 istuma vastas
+      1 istuma ringi
+      1 istuma punnis
+      1 istuma poolt
+      1 istuma otsas
+      1 istuma mööda, välja
+      1 istuma maha, eemale
+      1 istuma maas
+      1 istuma läbi
+      1 istuma kõrvale, maha
+      1 istuma kinni
+      1 istuma ette
+      1 istuma eemale
+      1 isoleerima 
+      1 iseseisvuma 
+      1 irwitama 
+      1 irvitama üle
+      1 irvitama peale
+      1 ironiseerima 
+      1 irnuma 
+      1 irmuma 
+      1 irisema 
+      1 irbuma 
+      1 iraagima 
+      1 invetseerima kokku
+      1 investeernuma 
+      1 investeerima üle
+      1 investeerima välja
+      1 investeerima vaja
+      1 investeerima kokku, kokku
+      1 invaliidistuma 
+      1 intrigeeruma 
+      1 intrigeerima 
+      1 intervjueerima tarvis
+      1 intensiivistama 
+      1 installima ära
+      1 inskribeeruma 
+      1 insalleeruma 
+      1 inkasseerima 
+      1 inisema 
+      1 importima tagasi
+      1 implanteerima 
+      1 immitsema välja
+      1 immigreeruma 
+      1 immigreerima 
+      1 immatrikuleerima 
+      1 imetama tagasi
+      1 imestama ringi
+      1 imendama 
+      1 imema kokku
+      1 imbuma välja
+      1 imbuma vastu
+      1 imbuma tagant
+      1 imbuma alla
+      1 imama sisse
+      1 ilustama 
+      1 ilmuma üles
+      1 ilmuma välja, alt
+      1 ilmuma tagant, välja
+      1 ilmuma tagant
+      1 ilmuma sisse
+      1 ilmuma ringi
+      1 ilmuma kõrvale
+      1 ilmuma järele
+      1 ilmuma järel
+      1 ilmuma ilma
+      1 ilmuma alt
+      1 illuma 
+      1 ilastama ära
+      1 iilima 
+      1 ihkama välja
+      1 identifitseerima kokku
+      1 identifitseerima 
+      1 hüüdma üles
+      1 hüüdma pealt
+      1 hüüdima 
+      1 hüppama ära, taha
+      1 hüppama ära
+      1 hüppama püsti
+      1 hüppama peale
+      1 hüppama otsa
+      1 hüppama keskel
+      1 hüppama järel
+      1 hüppama ees
+      1 hüpnotiseerima 
+      1 hüplema tagasi
+      1 hüpatama esile
+      1 hööritama 
+      1 hääletama vastu
+      1 häälestama sisse
+      1 hävitama kokku
+      1 hävima kokku
+      1 hängima 
+      1 hämmastuma 
+      1 häiruma 
+      1 hägustuma 
+      1 hädaldama 
+      1 hõõrutama 
+      1 hõõruma ära
+      1 hõõruma vastu
+      1 hõõruma läbi
+      1 hõõrduma 
+      1 hõõguma 
+      1 hõrenema 
+      1 hõlmama peale
+      1 hõljutama läbi
+      1 hõljuma välja
+      1 hõljuma ringi
+      1 hõi-vanuma 
+      1 hõisklema 
+      1 hõiskama kaasa
+      1 hõikama üle
+      1 hõikama tagasi
+      1 hõikama läbi
+      1 hõikama järele
+      1 hullama 
+      1 hulkuma mööda
+      1 huligaanitsema ees
+      1 huligaanitsema 
+      1 hukkuma vastu
+      1 hukkuma lähedal
+      1 hukkuma läbi
+      1 hukkuma kokku
+      1 huilgama 
+      1 hopsama 
+      1 hoppama 
+      1 hopatama 
+      1 hoovama sisse
+      1 hooplema 
+      1 hoobama 
+      1 hoiduma kõrvale
+      1 hoidma ära, alla
+      1 hoidma peal, edasi
+      1 hoidma järel
+      1 hirmutama sisse
+      1 hinkima 
+      1 hingestama 
+      1 hingeldama üle
+      1 hingama ära
+      1 hingama täis
+      1 hingama peale
+      1 hindama üle
+      1 hindama tagasi
+      1 himustama alla
+      1 hilinema tagasi
+      1 hiilima ära
+      1 hiilima välja
+      1 hiilima mööda
+      1 hiilima järele
+      1 hiilgama all
+      1 hiilama 
+      1 higistama 
+      1 helsitama 
+      1 helluma 
+      1 hellitama ära
+      1 hellitama kokku
+      1 helistanud-kirjutama 
+      1 helistama üle
+      1 helistama ära
+      1 helistama vastu
+      1 helistama vaja
+      1 helistama vahel
+      1 helistama tarvis
+      1 helistama edasi
+      1 helistama alla
+      1 helgatama 
+      1 helenema 
+      1 helendama 
+      1 heldima 
+      1 heitma ümber
+      1 heitma pealt, maha
+      1 heitma kõrvale
+      1 heitma ette, kinni
+      1 heitma eemale
+      1 heiskama kõrvale
+      1 heiastuma alla
+      1 hauduma välja
+      1 hauduma vastu
+      1 harjutama sisse
+      1 harjutama peal
+      1 harjuma sisse
+      1 hargnema laiali
+      1 hargitama 
+      1 hamsterdama 
+      1 hammustama ära
+      1 hammustama peale
+      1 hammustama all
+      1 hallitama ära
+      1 halastama 
+      1 hakkama välja
+      1 hakkama valmis
+      1 hakkama vaja
+      1 hakkama sisse
+      1 hakkama rahul
+      1 hakkama pealt
+      1 hakkama peale
+      1 hakkama otsa
+      1 hakkama kokku
+      1 hakkama ilma
+      1 hakkama edasi
+      1 haistma 
+      1 haipima 
+      1 haihtuma ära
+      1 haigutama 
+      1 haigestuma üle
+      1 haigestuma vastu
+      1 haigestuma kaasa
+      1 hagema 
+      1 haarasin-heitma 
+      1 haarama ümber
+      1 haarama pealt
+      1 haarama kinni
+      1 haarama alla
+      1 haakuma rahul
+      1 haakima kokku
+      1 h2irima 
+      1 h2benema 
+      1 getostuma 
+      1 garanteerima ringi
+      1 galopeerima 
+      1 gaasitama 
+      1 funktsioneerima 
+      1 funkama 
+      1 fotosünteesima 
+      1 formuleerima 
+      1 filtreeruma sisse
+      1 filtreeruma läbi
+      1 fikseerima ära
+      1 fikseerima tagasi
+      1 fieltima 
+      1 Fiat-andma 
+      1 fantaseerima juurde
+      1 exima ära
+      1 exima 
+      1 evima 
+      1 europiseerima 
+      1 etlema 
+      1 etenduma 
+      1 etableeruma 
+      1 esitama peale
+      1 esitama kõrvale
+      1 esitama edasi
+      1 esinema vastu
+      1 esinema täis
+      1 esinema peale
+      1 esinema kokku
+      1 esima 
+      1 erutuma 
+      1 erituma tagasi
+      1 eraldama tarvis
+      1 emuleerima 
+      1 emtima 
+      1 emigreeruma edasi
+      1 embama 
+      1 emailima 
+      1 elutsema 
+      1 elustuma 
+      1 elistama 
+      1 elimineerima välja
+      1 elektriseeruma 
+      1 elatuma sisse
+      1 elatuma 
+      1 elatama 
+      1 elanikke-olema 
+      1 elama vastu
+      1 elama sees
+      1 elama laiali
+      1 elama koos
+      1 elama kohal
+      1 elama edasi
+      1 ekstrapoleerima 
+      1 ekstraheeruma 
+      1 eksportima kokku
+      1 eksportima edasi
+      1 eksisteerima koos
+      1 eksima kokku
+      1 eksima alles
+      1 eitama tagasi
+      1 einestama 
+      1 ehmatama ära
+      1 ehmatama tagasi
+      1 ehituma 
+      1 ehitama valmis
+      1 ehitama peale
+      1 ehitama kõrvale
+      1 ehitama kokku
+      1 ehitama kaasa, peale
+      1 ehitama ilma
+      1 ehitama ette
+      1 efkylmetama 
+      1 eelküpsetama 
+      1 eeldama järel
+      1 edutama välja
+      1 edenema ringi
+      1 edenema edasi
+      1 edastama edasi
+      1 ebaõiglane-andma 
+      1 droppima 
+      1 downloadima 
+      1 domineerima vastu
+      1 dokumenteerima 
+      1 distantseeruma 
+      1 dislotseerima 
+      1 diskrimineerima 
+      1 difundeeruma 
+      1 diferentseerima 
+      1 detoneeruma 
+      1 destabiliseerima 
+      1 deserteeruma 
+      1 delfima 
+      1 dekoreerima 
+      1 dekodeerima tagasi
+      1 dekodeerima lahti
+      1 deklameerima 
+      1 defaultima 
+      1 croppima 
+      1 creisima 
+      1 C. minema 
+      1 chokotantsima 
+      1 bäkkima 
+      1 bäkima 
+      1 brausima 
+      1 boodima 
+      1 boikoteerima 
+      1 bluffima 
+      1 blokeeruma 
+      1 bladevõtma 
+      1 avitama välja
+      1 avastama tagasi
+      1 avardama 
+      1 avama üle
+      1 avama vastu
+      1 avama peale
+      1 avaldama alla
+      1 autentima 
+      1 aurutama 
+      1 aurama tagasi
+      1 audiatima 
+      1 atima 
+      1 asutama alla
+      1 asustama ümber
+      1 asustama kokku
+      1 asunud-pagema 
+      1 asuma üle
+      1 asuma ära
+      1 asuma taga
+      1 asuma sees
+      1 asuma otsas
+      1 asuma läbi
+      1 asuma kohal
+      1 asuma keskel
+      1 asuma alles
+      1 astuma üles, peale
+      1 astuma tagant
+      1 astuma mööda
+      1 astuma ligi
+      1 astuma kõrvalt
+      1 astuma kokku
+      1 astuma järel
+      1 astuma ees
+      1 astuma alt
+      1 assimileerima 
+      1 assigneerima 
+      1 aspireerima 
+      1 asfalteerima 
+      1 asetsema ümber
+      1 asetsema vastu
+      1 asetatama 
+      1 asetama ümber
+      1 asetama välja
+      1 asetama kõrvale
+      1 asetama alla
+      1 arvutama välja
+      1 arvutama sisse
+      1 arvestama ringi
+      1 arvestama ette, sisse
+      1 arvestama ette
+      1 arveldama 
+      1 arutama läbi
+      1 arreteerima lähedal
+      1 arrastama 
+      1 armnuma 
+      1 armasytama 
+      1 armastama välja
+      1 arhiveerima 
+      1 aretama 
+      1 arestima 
+      1 arenema ümber
+      1 arenema välja
+      1 arenema kõrvale
+      1 arbuma 
+      1 anuma 
+      1 antsima 
+      1 anntsima 
+      1 annetama kokku
+      1 annetama heaks
+      1 angažeerima 
+      1 angazheerima 
+      1 anema 
+      1 anduma üle
+      1 andma välja, kokku
+      1 andma valmis
+      1 andma tagant
+      1 andma pihta
+      1 andma peale
+      1 andma otsa
+      1 andma mööda
+      1 andma kätte
+      1 andma kõrvalt
+      1 andma järele
+      1 andma heaks
+      1 andma ennem
+      1 andma edasi, üles
+      1 andma alla
+      1 anastama 
+      1 amputeerima 
+      1 amerikaniseeruma 
+      1 alustama ära
+      1 alustama vastu
+      1 alustama ringi
+      1 alustama laiali
+      1 alustama ilma
+      1 allutama 
+      1 allrentima edasi
+      1 alistama ringi
+      1 alistama läbi
+      1 algatama kõrvale
+      1 algama üles
+      1 algama ringi
+      1 algama otsas
+      1 algama juurde
+      1 algama edasi
+      1 algama alla
+      1 alavääristama 
+      1 alatihakkama 
+      1 aktualiseeruma 
+      1 aktiviseeruma 
+      1 aktiviseerima 
+      1 aklimatiseeruma 
+      1 akkama kinni
+      1 ajama ümber
+      1 ajama üle
+      1 ajama vaja
+      1 ajama täis
+      1 ajama segi
+      1 ajama ringi
+      1 ajama peale
+      1 ajama otsa
+      1 ajama maha
+      1 ajama laiali
+      1 ajama lahti
+      1 ajama kõrvalt
+      1 ajama kinni
+      1 ajama ilma
+      1 ajama ette
+      1 ajama eemale
+      1 aitama üles
+      1 aitama üle
+      1 aitama kokku
+      1 aitama kinni, kaasa
+      1 aitama ette
+      1 aimuma 
+      1 ahvima 
+      1 ahmima sisse
+      1 ahendama 
+      1 ahelduma kinni
+      1 ahelduma 
+      1 ahastama 
+      1 aglutineerima 
+      1 agiteerima 
+      1 afišeerima 
+      1 aerutama kohale
+      1 aeglustama järele
+      1 adresseerima 
+      1 adopteerima 
+      1 adima 
+      1 addima juurde
+      1 absorbeerima 
+      1 aanuma 
+      1 aaduma 
