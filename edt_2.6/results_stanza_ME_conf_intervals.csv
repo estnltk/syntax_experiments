@@ -1,0 +1,2 @@
+experiment,LAS_test,LAS_train,UAS_test,UAS_train,LAS_gap,test_words,train_words
+eval_stanza_morph_extended_full_data_conf_intervals,0.8401; 0.8486; 0.8572,0.9161; 0.9176; 0.9191,0.8697; 0.8782; 0.8867,0.9363; 0.9378; 0.9393,0.0760; 0.0689; 0.0619,48491,389278
