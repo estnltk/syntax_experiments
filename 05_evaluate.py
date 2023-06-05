@@ -25,6 +25,9 @@ import warnings
 
 import conllu
 
+import scipy.stats as scipy_stats
+from numpy import array as n_array
+
 from estnltk.converters.conll.conll_importer import conll_to_text
 from estnltk.converters.conll.conll_importer import add_layer_from_conll
 
@@ -126,6 +129,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 punct_tokens_set = load_punct_tokens( punct_tokens_file )  # Attempt to load from file. If None, return empty set
                 output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
                 error_sample_size = config[section].getint('error_sample_size', 100)
+                add_conf_intervals = config[section].getboolean('add_conf_intervals', False)
                 output_train_error_sample_file = config[section].get('output_train_error_sample_file', None)
                 output_test_error_sample_file = config[section].get('output_test_error_sample_file', None)
                 if not error_types_mode:
@@ -135,6 +139,10 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     if output_test_error_sample_file is not None:
                         raise ValueError(f'Error in {conf_file}, section {section!r}: error sampling (output_test_error_sample_file) '+\
                                           'only works with option count_error_types=True.')
+                if error_types_mode:
+                    if add_conf_intervals:
+                        raise ValueError(f'Error in {conf_file}, section {section!r}: add_conf_intervals only works with the option '+\
+                                          'count_error_types=False.')
                 if output_csv_file is None and error_types_mode:
                     raise ValueError(f'Error in {conf_file} section {section!r}: '+\
                                      f'count_error_types requires setting "output_csv_file" parameter.')
@@ -152,6 +160,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                         #
                         results = score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                                                     gold_path=None, predicted_path=None, format_string=format_string,
+                                                    add_conf_intervals=add_conf_intervals, 
                                                     count_words=param_count_words, skip_train=skip_train, 
                                                     exclude_punct=exclude_punct, punct_tokens_set=punct_tokens_set )
                         if verbose:
@@ -505,9 +514,9 @@ def load_punct_tokens( fname ):
     return punct_tokens
 
 def score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
-                      gold_path=None, predicted_path=None, format_string=None,
-                      skip_train=False, count_words=False, exclude_punct=False, 
-                      punct_tokens_set=None ):
+                      gold_path=None, predicted_path=None, format_string=None, 
+                      add_conf_intervals=False, skip_train=False, count_words=False, 
+                      exclude_punct=False, punct_tokens_set=None ):
     '''
     Calculates train and test LAS/UAS scores and gaps between train and test LAS 
     using given predicted and gold standard conllu files. 
@@ -520,6 +529,9 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
     and 'test_words') to the results.
     If `skip_train` is True, then calculates only test scores and returns dictionary 
     with calculated test scores (keys: "LAS_test", "UAS_test").
+    If `add_conf_intervals` is True, then scores will be computed as mean values with
+    95% confidence intervals. Instead of a single value, each score will then be in 
+    form "lower_bound; mean; upper_bound".
     '''
     # Check/validate input files 
     input_files = { \
@@ -543,32 +555,63 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
             raise FileNotFoundError(f'(!) {name} file cannot be found at {full_path!r}.')
         input_files[name] = full_path
     # Calculate scores
-    test_scores = calculate_scores(input_files['gold_test'], 
-                                   input_files['predicted_test'],
-                                   count_words=count_words,
-                                   exclude_punct=exclude_punct,
-                                   punct_tokens_set=punct_tokens_set)
+    if add_conf_intervals:
+        test_scores = calculate_scores_with_conf_interval(input_files['gold_test'], 
+                                                          input_files['predicted_test'],
+                                                          N=10,
+                                                          seed=1,
+                                                          count_words=count_words,
+                                                          exclude_punct=exclude_punct,
+                                                          punct_tokens_set=punct_tokens_set)
+    else:
+        test_scores = calculate_scores(input_files['gold_test'], 
+                                       input_files['predicted_test'],
+                                       count_words=count_words,
+                                       exclude_punct=exclude_punct,
+                                       punct_tokens_set=punct_tokens_set)
+
     if skip_train:
         train_scores = None
         results_dict = {'LAS_test' : test_scores['LAS'], 
                         'UAS_test' : test_scores['UAS']}
     else:
-        train_scores = calculate_scores(input_files['gold_train'], 
-                                        input_files['predicted_train'],
-                                        count_words=count_words,
-                                        exclude_punct=exclude_punct,
-                                        punct_tokens_set=punct_tokens_set)
+        if add_conf_intervals:
+            train_scores = calculate_scores_with_conf_interval(input_files['gold_train'], 
+                                                               input_files['predicted_train'],
+                                                               N=10,
+                                                               seed=1,
+                                                               count_words=count_words,
+                                                               exclude_punct=exclude_punct,
+                                                               punct_tokens_set=punct_tokens_set)
+        else:
+            train_scores = calculate_scores(input_files['gold_train'], 
+                                            input_files['predicted_train'],
+                                            count_words=count_words,
+                                            exclude_punct=exclude_punct,
+                                            punct_tokens_set=punct_tokens_set)
         results_dict = {'LAS_test' : test_scores['LAS'], 
                         'LAS_train' : train_scores['LAS'], 
-                        'LAS_gap' : train_scores['LAS'] - test_scores['LAS'],
                         'UAS_test' : test_scores['UAS'], 
                         'UAS_train' : train_scores['UAS']}
+        if add_conf_intervals:
+            results_dict['LAS_gap'] = (train_scores['LAS'][0] - test_scores['LAS'][0],
+                                       train_scores['LAS'][1] - test_scores['LAS'][1],
+                                       train_scores['LAS'][2] - test_scores['LAS'][2])
+        else:
+            results_dict['LAS_gap'] = train_scores['LAS'] - test_scores['LAS']
     if format_string is not None:
         for k, v in results_dict.items():
-            results_dict[k] = ('{'+format_string+'}').format(v)
+            if isinstance(v, float):
+                results_dict[k] = ('{'+format_string+'}').format(v)
+            elif isinstance(v, tuple):
+                parts = [('{'+format_string+'}').format(vi) for vi in v]
+                results_dict[k] = '; '.join(parts)
+            else:
+                raise TypeError('(!) Value {!r} has unexpected type: {!r}'.format(v, type(v)))
     if count_words:
-        results_dict['test_words'] = test_scores['total_words']
-        if not skip_train:
+        if 'total_words' in test_scores:
+            results_dict['test_words'] = test_scores['total_words']
+        if not skip_train and 'total_words' in train_scores:
             results_dict['train_words'] = train_scores['total_words']
     return results_dict
 
@@ -645,6 +688,110 @@ def calculate_scores(gold_path: str, predicted_path: str, count_words=False, exc
          'LA': la_match_count / total_words}
     if count_words:
         result['total_words'] = total_words
+    return result
+
+
+def calculate_scores_with_conf_interval(gold_path: str, predicted_path: str, N:int=10, 
+                                        seed:int=1, confidence: float=0.95, count_words=False, 
+                                        exclude_punct=False, punct_tokens_set=None):
+    '''
+    A variant of `calculate_scores` that calculates LAS, UAS and LA scores with confidence intervals.
+    For that, the test sentences are shuffled and split into N sub sets, scores are measured on each 
+    sub set, and, finally, the confidence intervals for means of scores are computed assuming a Normal 
+    distribution.
+    
+    Returns dictionary with scores (keys: "LAS", "UAS", "LA"), in which each value is a triple:
+    (lower_bound, mean, upper_bound).
+    '''
+    # Load annotated texts from conllu files
+    gold_sents = None
+    predicted_sents = None
+    with open(gold_path, 'r', encoding='utf-8') as in_f:
+        gold_sents = conllu.parse(in_f.read())
+    with open(predicted_path, 'r', encoding='utf-8') as in_f_2:
+        predicted_sents = conllu.parse(in_f_2.read())
+    assert len(gold_sents) == len(predicted_sents), \
+        f'(!) Mismatching sizes: gold_sents: {len(gold_sents)}, predicted_sents: {len(predicted_sents)}'
+    # Pair all predicted and gold sentences
+    all_sentence_pairs = []
+    for i, gold_sentence in enumerate(gold_sents):
+        predicted_sentece = predicted_sents[i]
+        all_sentence_pairs.append( (i, gold_sentence, predicted_sentece) )
+    rnd = random.Random(seed)
+    # Randomize pairs and divide into N sub groups
+    rnd_groups = []
+    rnd.shuffle( all_sentence_pairs )
+    for i in range(N):
+        rnd_groups.append([])
+    for pid, (j, gold_s, pred_s) in enumerate(all_sentence_pairs):
+        rnd_groups[pid % N].append( (j, gold_s, pred_s) )
+    assert len(all_sentence_pairs) == sum([len(g) for g in rnd_groups])
+    # Calculate LAS scores for sub groups
+    LA_scores = []
+    UAS_scores = []
+    LAS_scores = []
+    abs_total_words = 0
+    for gid, group in enumerate(rnd_groups):
+        las_match_count = 0
+        uas_match_count = 0
+        la_match_count  = 0
+        total_words = 0  # total words in the group
+        for i, (j, gold_sentence, predicted_sentece) in enumerate(group):
+            gold_sentence_words = [w['form'] for w in gold_sentence]
+            auto_sentence_words = [w['form'] for w in predicted_sentece]
+            assert gold_sentence_words == auto_sentence_words, \
+                f'Tokenization mismatch in {predicted_path!r} | {gold_sentence_words} vs {auto_sentence_words}'
+            word_tracker = 0
+            for gold_word in gold_sentence:
+                if not isinstance(gold_word['id'], int):
+                    continue
+                if exclude_punct:
+                    # Exclude punctuation from evaluation
+                    if punct_tokens_set is not None:
+                        if gold_word['form'] in punct_tokens_set:
+                            word_tracker += 1
+                            continue
+                    if gold_word['xpos'] == 'Z':
+                        word_tracker += 1
+                        continue
+                total_words += 1
+                predicted_word = predicted_sentece[word_tracker]
+                if predicted_word['deprel'] == gold_word['deprel'] and predicted_word['head'] == gold_word['head']:
+                    las_match_count += 1
+                    la_match_count += 1
+                    uas_match_count += 1
+                elif predicted_word['deprel'] == gold_word['deprel']:
+                    la_match_count += 1
+                elif predicted_word['head'] == gold_word['head']:
+                    uas_match_count += 1
+                word_tracker += 1
+        # Calculate group scores
+        group_LAS = las_match_count / total_words
+        group_UAS = uas_match_count / total_words
+        group_LA  = la_match_count  / total_words
+        LA_scores.append( group_LA )
+        UAS_scores.append( group_UAS )
+        LAS_scores.append( group_LAS )
+        abs_total_words += total_words
+    assert len(LA_scores)  == N
+    assert len(LAS_scores) == N
+    assert len(UAS_scores) == N
+    # Calculate confidence intervals
+    LA_mean  = mean(LA_scores)
+    LAS_mean = mean(LAS_scores)
+    UAS_mean = mean(UAS_scores)
+    LAS_lower, LAS_upper = scipy_stats.norm.interval(confidence, loc=LAS_mean, 
+                                                     scale=scipy_stats.sem(n_array(LAS_scores)))
+    LA_lower, LA_upper   = scipy_stats.norm.interval(confidence, loc=LA_mean, 
+                                                     scale=scipy_stats.sem(n_array(LA_scores)))
+    UAS_lower, UAS_upper = scipy_stats.norm.interval(confidence, loc=UAS_mean, 
+                                                     scale=scipy_stats.sem(n_array(UAS_scores)))
+    result = \
+        {'LAS': (LAS_lower, LAS_mean,  LAS_upper),
+         'UAS': (UAS_lower, UAS_mean,  UAS_upper),
+         'LA':  (LA_lower,   LA_mean,   LA_upper)}
+    if count_words:
+        result['total_words'] = abs_total_words
     return result
 
 
@@ -853,7 +1000,7 @@ def extract_error_samples(text, error_locations, output_file, n=100, seed=1, cla
                                                  auto_syntax_layer='parsed'):
     '''
     Extracts erroneously parsed sentences based on collected E1, E2, E3 error_locations. 
-    By default, extracts randomly n=100 samples of each error, or, if n > len(errors), 
+    By default, extracts randomly n=100 samples of each error, or, if n >= len(errors), 
     extracts all erroneously parsed sentences from the error type. 
     Writes extracted sentences into output_file.
     '''
@@ -963,7 +1110,8 @@ if __name__ == '__main__':
                         header = ['experiment'] + exp_fields
                         csv_writer.writerow( header )
                     else:
-                        assert header[1:] == exp_fields
+                        assert header[1:] == exp_fields, \
+                          f'Error writing CSV: mismatching headers: {header[1:]!r} vs {exp_fields!r}'
                     values = [exp_name]
                     for key in header[1:]:
                         values.append( collected_results[exp_root][exp_name][key] )
