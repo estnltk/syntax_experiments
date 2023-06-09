@@ -37,8 +37,6 @@ Paksu kirjaga on märgitud väljad, mis moodustavad unikaalse indeksi.
 | **row_id** | int | rea id tabelis TABEL1| | |
 | **sentence_id** | int | kollektsiooni id postgres andmebaasis | | |
 | **root_id** | int | OBL fraasi juur (sõna nr) | | |
-| count | int | mitu korda näide esines |  | täitsa võimalik, et selle välja väärtus on antud versiooni tabelis alati 1 |
-
 
 
 

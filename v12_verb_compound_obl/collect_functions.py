@@ -92,8 +92,7 @@ class DbMethods:
         self._cursor.execute(f"""CREATE TABLE {self._TABLE2_NAME}
                         (row_id integer
                         , sentence_id integer
-                        , root_id integer
-                        , count integer);
+                        , root_id integer);
                         """)
 
         # tsv failist lugemise korral loome tabeli alati nullist
@@ -146,7 +145,6 @@ class DbMethods:
                     key[10],  # timex
                     example[0],  # sentence_id
                     example[1],  # root_id
-                    1
                 ))
 
         self._cursor.executemany(f"""
@@ -182,7 +180,7 @@ class DbMethods:
         """, sql_colls)
 
         self._cursor.executemany(f"""
-        INSERT INTO {self._TABLE2_NAME} (`row_id`, `sentence_id`, `root_id`, `count`)
+        INSERT INTO {self._TABLE2_NAME} (`row_id`, `sentence_id`, `root_id`)
             VALUES ( 
                 (SELECT `id` FROM {self._TABLE1_NAME} WHERE 
                     `verb` = ? 
@@ -196,10 +194,7 @@ class DbMethods:
                     AND `ner_per` = ? 
                     AND `ner_org` = ? 
                     AND `timex` = ? ),
-                ?, ?, ?)
-                ON CONFLICT(`row_id`, `sentence_id`, `root_id`)
-            DO UPDATE SET
-                `count` = `count` + excluded.`count`
+                ?, ?)
                 ;
         """, sql_examples)
 
