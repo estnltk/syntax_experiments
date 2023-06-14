@@ -71,3 +71,7 @@ Note: configurations also contain overlapping parts, e.g. once you've run UD pre
 * [07_smaller_data_exp_and_extrapolation.ipynb](07_smaller_data_exp_and_extrapolation.ipynb) -- draw figures about smaller data experiments (experiments where training set size is gradually increased) and extrapolate the results;
 
 * [08_results_clauses_and_sketches_knockout_5groups.ipynb](08_results_clauses_and_sketches_knockout_5groups.ipynb) -- results of the _clauses experiment_ and _syntax sketches knockout experiments_;
+
+### Extras
+
+* [X1_previously_reported_performances.ipynb](X1_previously_reported_performances.ipynb) -- a small recap of previously reported dependency parsing performances for Estonian and English;
