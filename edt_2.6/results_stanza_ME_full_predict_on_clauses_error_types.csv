@@ -1,2 +1,2 @@
 experiment,E1,E2,E3,E1_impact,E2_impact,E3_impact,E1_rel_error,E2_rel_error,E3_rel_error,total_no_punct,correct,gold_in_clause,gold_out_of_clause,total_words,punct,unequal_length,E1_missed_root,E2_missed_root,E3_missed_root
-stanza_ME_on_clauses_error_types_on_test,4501,327,337,0.8714,0.0633,0.0652,0.1405,0.0102,0.0555,38101,32936,32034,6067,39128,1027,0,0,0,328
+stanza_ME_full_on_clauses_error_types_on_test,4774,352,355,0.8710,0.0642,0.0648,0.1490,0.0110,0.0585,38101,32620,32034,6067,39128,1027,0,0,0,352
