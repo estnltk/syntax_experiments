@@ -13,10 +13,11 @@ import sys
 import shutil
 from datetime import datetime
 import subprocess
+from collections import defaultdict
+from decimal import Decimal, getcontext
+from random import Random
 
-from conllu import parse_incr
-from conllu.serializer import serialize_field
-
+import conllu
 import configparser
 
 # Change to local paths & files, if required
@@ -78,10 +79,41 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                 output_prefix = config[section].get('output_file_prefix', 'predicted_')
                 if not output_prefix.endswith('_'):
                     output_prefix += '_'
+                # use multiple models as an ensemble
+                use_ensemble = config[section].getboolean('use_ensemble', False)
+                use_majority_voting = config[section].getboolean('use_majority_voting', False)
+                aggregation_algorithm = 'las_coherence' if not use_majority_voting else 'majority_voting'
+                scores_seed = config[section].getint('scores_seed', 3)
+                # Get model file or files
+                model_file = None
+                model_files = []
+                if use_ensemble:
+                    # predict with ensemble: get models_dir
+                    if not config.has_option(section, 'models_dir'):
+                        raise ValueError(f'Error in {conf_file}: section {section!r} is missing "models_dir" parameter.')
+                    models_dir = config[section]['models_dir']
+                    if not os.path.isdir(models_dir):
+                        raise FileNotFoundError(f'Error in {conf_file}: invalid "models_dir" value {models_dir!r} in {section!r}.')
+                    # collect all model files from the directory
+                    if parser == 'maltparser':
+                        model_file_name_pattern = 'model_(.+).mco'
+                    else:
+                        model_file_name_pattern = 'model_(.+).udpipe'
+                    model_file_name_pattern = re.compile(model_file_name_pattern)
+                    for fname in os.listdir(models_dir):
+                        if model_file_name_pattern.match(fname):
+                            model_files.append( os.path.join(models_dir, fname) )
+                    if len(model_files) == 0:
+                        raise Exception( f'Error in {conf_file}: section {section!r}: Did not find any model files for '+\
+                                          'the ensemble tagger from models_dir={models_dir!r}.' )
+                else:
+                    # predict with a single model: get model file with path
+                    default_model = 'model.mco' if parser == 'maltparser' else 'model.udpipe'
+                    model_file = config[section].get('model_file', default_model)
+                    if not os.path.isfile(model_file):
+                        raise FileNotFoundError(f'Error in {conf_file}: invalid "model_file" value {model_file!r} in {section!r}.')
                 # other parameters
                 dry_run = config[section].getboolean('dry_run', dry_run)
-                default_model = 'model.mco' if parser == 'maltparser' else 'model.udpipe'
-                model_file = config[section].get('model_file', default_model)
                 # MaltParser options
                 maltparser_dir = config[section].get('maltparser_dir', DEFAULT_MALTPARSER_DIR)
                 maltparser_jar = config[section].get('maltparser_jar', DEFAULT_MALTPARSER_JAR)
@@ -91,23 +123,49 @@ def run_models_main( conf_file, subexp=None, dry_run=False ):
                     if parser == 'maltparser':
                         # Predict on train
                         output_file = f'{output_prefix}train.conllu'
-                        predict_maltparser(model_file, train_file, output_file, output_dir, 
-                                           maltparser_dir=maltparser_dir,
-                                           maltparser_jar=maltparser_jar)
+                        if not use_ensemble:
+                            predict_maltparser(model_file, train_file, output_file, output_dir, 
+                                               maltparser_dir=maltparser_dir,
+                                               maltparser_jar=maltparser_jar)
+                        else:
+                            predict_ensemble(parser, model_files, train_file, output_file, output_dir, 
+                                             aggregation_algorithm = aggregation_algorithm, 
+                                             random_pick_max_score_seed = scores_seed, 
+                                             maltparser_dir=maltparser_dir, 
+                                             maltparser_jar=maltparser_jar)
                         # Predict on test
                         output_file = f'{output_prefix}test.conllu'
-                        predict_maltparser(model_file, test_file, output_file, output_dir, 
-                                           maltparser_dir=maltparser_dir,
-                                           maltparser_jar=maltparser_jar)
+                        if not use_ensemble:
+                            predict_maltparser(model_file, test_file, output_file, output_dir, 
+                                               maltparser_dir=maltparser_dir,
+                                               maltparser_jar=maltparser_jar)
+                        else:
+                            predict_ensemble(parser, model_files, test_file, output_file, output_dir, 
+                                             aggregation_algorithm = aggregation_algorithm, 
+                                             random_pick_max_score_seed = scores_seed, 
+                                             maltparser_dir=maltparser_dir, 
+                                             maltparser_jar=maltparser_jar)
                     elif parser == 'udpipe1':
                         # Predict on train
                         output_file = f'{output_prefix}train.conllu'
-                        predict_udpipe1(model_file, train_file, output_file, output_dir, 
-                                        udpipe_dir=udpipe_dir)
+                        if not use_ensemble:
+                            predict_udpipe1(model_file, train_file, output_file, output_dir, 
+                                            udpipe_dir=udpipe_dir)
+                        else:
+                            predict_ensemble(parser, model_files, train_file, output_file, output_dir, 
+                                             aggregation_algorithm = aggregation_algorithm, 
+                                             random_pick_max_score_seed = scores_seed, 
+                                             udpipe_dir=udpipe_dir)
                         # Predict on test
                         output_file = f'{output_prefix}test.conllu'
-                        predict_udpipe1(model_file, test_file, output_file, output_dir, 
-                                        udpipe_dir=udpipe_dir)
+                        if not use_ensemble:
+                            predict_udpipe1(model_file, test_file, output_file, output_dir, 
+                                            udpipe_dir=udpipe_dir)
+                        else:
+                            predict_ensemble(parser, model_files, test_file, output_file, output_dir, 
+                                             aggregation_algorithm = aggregation_algorithm, 
+                                             random_pick_max_score_seed = scores_seed, 
+                                             udpipe_dir=udpipe_dir)
                     else:
                         raise Exception(f'Unexpected parser name: {parser!r}')
             elif experiment_type_clean in ['crossvalidation', 'half_data', 'smaller_data', 'multi_experiment']:
@@ -384,6 +442,145 @@ def predict_udpipe1(model_path, test_corpus, output_file, output_dir, udpipe_dir
                    output_path=output_path)
     # Execute
     subprocess.call(predict_command, shell=True)
+
+# ===============================================================
+#  Predict with MaltParser or UDPipe1 ensemble
+# ===============================================================
+
+def predict_ensemble(parser, model_files, test_corpus, output_file, output_dir, aggregation_algorithm = 'las_coherence', 
+                                                                                random_pick_max_score_seed = 3,
+                                                                                udpipe_dir=DEFAULT_UDPIPE_DIR, 
+                                                                                maltparser_dir=DEFAULT_MALTPARSER_DIR, 
+                                                                                maltparser_jar=DEFAULT_MALTPARSER_JAR):
+    '''
+    Runs an ensemble of MaltParser or UDPipe1 models on given test_corpus to get predictions and saves 
+    results as conllu into output_file.
+    output_file should be a file name, use output_dir to specify its location.
+    '''
+    assert parser in ['maltparser', 'udpipe1']
+    assert aggregation_algorithm in ['las_coherence', 'majority_voting']
+    # 1) Collect predictions from all of the models
+    temp_prediction_files = []
+    for model_id, model_file in enumerate(model_files):
+        if parser == 'maltparser':
+            # Predict on train
+            temp_output_file = f'temp_malt_predict_{model_id}.conllu'
+            predict_maltparser(model_file, test_corpus, temp_output_file, output_dir, 
+                               maltparser_dir=maltparser_dir,
+                               maltparser_jar=maltparser_jar)
+        elif parser == 'udpipe1':
+            # Predict on train
+            temp_output_file = f'temp_udpipe_predict_{model_id}.conllu'
+            predict_udpipe1(model_file, test_corpus, temp_output_file, output_dir, 
+                            udpipe_dir=udpipe_dir)
+        output_fpath = os.path.join(output_dir, temp_output_file)
+        temp_prediction_files.append( output_fpath )
+    # 2) Load corresponding predicted conllu contents
+    predicted_docs = []
+    for temp_output_file in temp_prediction_files:
+        assert os.path.exists(temp_output_file), \
+            f'(!) Missing {parser} output file {temp_output_file!r}.'
+        with open(temp_output_file, 'r', encoding='utf-8') as conllu_file:
+            predicted_docs.append( conllu.parse(conllu_file.read()) )
+    # 2.x) Validate that all docs have equal number of sentences
+    number_of_sentences = 0
+    for i in range(0, len(predicted_docs), 2):
+        if i+1 < len( predicted_docs ):
+            doc1_file = temp_prediction_files[i]
+            doc2_file = temp_prediction_files[i+1]
+            doc1 = predicted_docs[i]
+            doc2 = predicted_docs[i+1]
+            if len(doc1) != len(doc2):
+                raise ValueError( f'(!) Number of sentences differ in predicted output files: '+\
+                                  f' {doc1_file}: {len(doc1)} vs {doc2_file}: {len(doc2)}.' )
+            number_of_sentences = len(doc1)
+    # Random generator for choosing one dependency label if there are multiple labes with maximum scores
+    random_shuffler = Random()
+    random_shuffler.seed(random_pick_max_score_seed)
+    # 3) Iterate over all sentences and get aggregate predictions of each sentence
+    output_doc = []
+    for sent_id in range(number_of_sentences):
+        all_sent_predictions = []
+        for doc in predicted_docs:
+            all_sent_predictions.append(doc[sent_id])
+        if aggregation_algorithm == 'las_coherence':
+            # Find pairwise las scores for all sentences
+            lases_table = defaultdict(dict)
+            for model_a, sent_a in enumerate( all_sent_predictions ):
+                for model_b, sent_b in enumerate( all_sent_predictions ):
+                    lases_table[model_a][model_b] = sentence_LAS(sent_a, sent_b)
+            # Find average LAS for each model
+            sent_scores = dict()
+            getcontext().prec = 4
+            for base_model, score in lases_table.items():
+                decimals = list(map(Decimal, score.values()))
+                avg_score = sum(decimals) / Decimal(len(all_sent_predictions))
+                sent_scores[base_model] = avg_score
+            # Pick sentence with the highest avg LAS (the highest coherence)
+            max_score = max(sent_scores.values())
+            max_score_count = 0
+            max_score_models = []
+            for model, score in sent_scores.items():
+                if score == max_score:
+                    max_score_count += 1
+                    max_score_models.append(model)
+            random_shuffler.shuffle( max_score_models )
+            output_doc.append ( all_sent_predictions[ max_score_models[0] ] )
+        elif aggregation_algorithm == 'majority_voting':
+            sentence_length = len(all_sent_predictions[0])
+            extracted_words = []
+            # Get deprel with maximal votes for each token
+            for token_id in range(sentence_length):
+                voting_table = defaultdict(int)
+                label_token_map = {}
+                for sentence in all_sent_predictions:
+                    token = sentence[token_id]
+                    label = '{}__{}'.format(token['deprel'], token['head'])
+                    voting_table[label] += 1
+                    if label not in label_token_map.keys():
+                        label_token_map[label] = []
+                    label_token_map[label].append(token)
+                # Find maximum voting score and corresponding tokens
+                max_votes = max( voting_table.values() )
+                max_votes_labels = [l for l, v in voting_table.items() if v==max_votes]
+                max_votes_tokens = []
+                for label, tokens in label_token_map.items():
+                    if label in max_votes_labels:
+                        max_votes_tokens.extend(tokens)
+                # In case of a tie, pick a token randomly
+                random_shuffler.shuffle(max_votes_tokens)
+                extracted_words.append(max_votes_tokens[0])
+            assert len(extracted_words) == sentence_length
+            # Construct new sentence
+            new_sentence = all_sent_predictions[0].copy()
+            for token_id in range(sentence_length):
+                new_sentence[token_id] = extracted_words[token_id].copy()
+            output_doc.append( new_sentence )
+    assert len(output_doc) == number_of_sentences
+    # 4) Output picked sentences
+    final_output_fpath = os.path.join(output_dir, output_file)
+    with open(final_output_fpath, 'w', encoding='utf-8') as out_f:
+        for sentence in output_doc:
+            out_f.write( sentence.serialize() )
+    # 5) Finally, remove conllu files with temporary predictions
+    for temp_file in temp_prediction_files:
+        os.remove(temp_file)
+
+
+def sentence_LAS(sent1, sent2):
+    '''Calculates LAS between two conllu sentences.'''
+    wrong = 0
+    correct = 0
+    for tok1, tok2 in zip(sent1, sent2):
+        if tok1['xpos'] != 'Z':
+            if tok1['head'] == tok2['head'] and tok1['deprel'] == tok2['deprel']:
+                correct += 1
+            else:
+                wrong += 1
+    if wrong == 0 and correct == 0:
+        return 1
+    else:
+        return correct / (correct + wrong)
 
 # ========================================================================
 
