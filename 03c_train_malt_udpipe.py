@@ -158,13 +158,16 @@ def train_malt_udpipe_main( conf_file, subexp=None, dry_run=False ):
                             feature_model_file = None
                             # Try to find feature selection files (if any provided)
                             if len(all_feature_files) > 0:
+                                cur_subexp_lstrip = cur_subexp.lstrip('0')
                                 for feats_file in all_feature_files:
                                     f1 = final_options_file_re.match(feats_file)
                                     f2 = feature_model_file_re.match(feats_file)
-                                    if f1 and f1.group('exp') == cur_subexp:
+                                    if f1 and (f1.group('exp') == cur_subexp or \
+                                               f1.group('exp') == cur_subexp_lstrip):
                                         final_options_file = os.path.join(feature_files_dir, 
                                                                           feats_file)
-                                    if f2 and f2.group('exp') == cur_subexp:
+                                    if f2 and (f2.group('exp') == cur_subexp or \
+                                               f2.group('exp') == cur_subexp_lstrip):
                                         feature_model_file = os.path.join(feature_files_dir, 
                                                                           feats_file)
                                 if final_options_file is None:
