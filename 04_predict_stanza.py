@@ -14,6 +14,7 @@ import os, os.path
 import re
 import sys
 from datetime import datetime
+import warnings
 
 from conllu import parse_incr
 from conllu.serializer import serialize_field
@@ -714,6 +715,26 @@ def write_estnltk_text_to_conll(text, syntax_layer, output_path):
     with open(output_path, 'w', encoding='utf-8') as fout:
         fout.write( text_conll_str )
         fout.write('\n')
+    layer = text[syntax_layer]
+    if 'entropy' in layer.attributes:
+        if output_path.endswith('.conllu'):
+            # Write out prediction entropy results
+            output_path_entropy = output_path.replace('.conllu', '.entropy')
+            last_word_id = None
+            with open(output_path_entropy, 'w', encoding='utf-8') as fout:
+                for syntax_word in layer:
+                    ann = syntax_word.annotations[0]
+                    cur_word_id = int(ann['id'])
+                    if last_word_id is not None and cur_word_id == 1:
+                        # add sentence break
+                        fout.write('\n')
+                    fout.write( str(ann['votes'])+'\t'+str(ann['entropy']) )
+                    fout.write('\n')
+                    last_word_id = cur_word_id
+                fout.write('\n' * 2)
+        else:
+            warnings.warn( f'(!) Unexpected file ending in {output_path} (expected .conllu), '+\
+                           'skipping entropy file creation.' )
 
 # ========================================================================
 
