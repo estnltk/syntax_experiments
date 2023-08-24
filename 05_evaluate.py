@@ -130,6 +130,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                 output_csv_file = config[section].get('output_csv_file', None) # Output results to csv file right after evaluation
                 error_sample_size = config[section].getint('error_sample_size', 100)
                 add_conf_intervals = config[section].getboolean('add_conf_intervals', False)
+                calc_scores_with_entropy = config[section].getboolean('calc_scores_with_entropy', False)
                 output_train_error_sample_file = config[section].get('output_train_error_sample_file', None)
                 output_test_error_sample_file = config[section].get('output_test_error_sample_file', None)
                 if not error_types_mode:
@@ -143,6 +144,12 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                     if add_conf_intervals:
                         raise ValueError(f'Error in {conf_file}, section {section!r}: add_conf_intervals only works with the option '+\
                                           'count_error_types=False.')
+                    if calc_scores_with_entropy:
+                        raise ValueError(f'Error in {conf_file}, section {section!r}: calc_scores_with_entropy only works with '+\
+                                          'the option count_error_types=False.')
+                if calc_scores_with_entropy and add_conf_intervals:
+                    raise ValueError(f'Error in {conf_file}, section {section!r}: calc_scores_with_entropy and add_conf_intervals '+\
+                                      'cannot be used simultaneously. Set only one of the two parameters.')
                 if output_csv_file is None and error_types_mode:
                     raise ValueError(f'Error in {conf_file} section {section!r}: '+\
                                      f'count_error_types requires setting "output_csv_file" parameter.')
@@ -161,6 +168,7 @@ def eval_main(conf_file, collected_results=None, ignore_missing=True, verbose=Tr
                         results = score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                                                     gold_path=None, predicted_path=None, format_string=format_string,
                                                     add_conf_intervals=add_conf_intervals, 
+                                                    calc_scores_with_entropy=calc_scores_with_entropy, 
                                                     count_words=param_count_words, skip_train=skip_train, 
                                                     exclude_punct=exclude_punct, punct_tokens_set=punct_tokens_set )
                         if verbose:
@@ -515,7 +523,8 @@ def load_punct_tokens( fname ):
 
 def score_experiment( predicted_test, gold_test, predicted_train, gold_train, 
                       gold_path=None, predicted_path=None, format_string=None, 
-                      add_conf_intervals=False, skip_train=False, count_words=False, 
+                      add_conf_intervals=False, calc_scores_with_entropy=False, 
+                      skip_train=False, count_words=False, 
                       exclude_punct=False, punct_tokens_set=None ):
     '''
     Calculates train and test LAS/UAS scores and gaps between train and test LAS 
@@ -532,8 +541,14 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
     If `add_conf_intervals` is True, then scores will be computed as mean values with
     95% confidence intervals. Instead of a single value, each score will then be in 
     form "lower_bound; mean; upper_bound".
+    If `calc_scores_with_entropy` is True, then adds additional computations to 
+    default scores: computes LAS exclusively over words that have ensemble prediction 
+    entropy 0, and finds a correlation between ensemble prediction entropy and reversed 
+    gold standard match (0-match, 1-mismatch). Note: this only works if ensemble 
+    predictions have generated prediction .entropy files in addition to prediction 
+    .conllu files.
     '''
-    # Check/validate input files 
+    # Check/validate input files and parameters
     input_files = { \
         'predicted_test': predicted_test,
         'gold_test': gold_test, 
@@ -554,6 +569,9 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
         if not os.path.isfile(full_path):
             raise FileNotFoundError(f'(!) {name} file cannot be found at {full_path!r}.')
         input_files[name] = full_path
+    if calc_scores_with_entropy and add_conf_intervals:
+        raise ValueError('(!) Cannot use calc_scores_with_entropy and add_conf_intervals simultaneously. '+\
+                         'Pick only one of the input parameters.')
     # Calculate scores
     if add_conf_intervals:
         test_scores = calculate_scores_with_conf_interval(input_files['gold_test'], 
@@ -563,6 +581,11 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
                                                           count_words=count_words,
                                                           exclude_punct=exclude_punct,
                                                           punct_tokens_set=punct_tokens_set)
+    elif calc_scores_with_entropy:
+        test_scores = calculate_scores_with_entropy(input_files['gold_test'], 
+                                                    input_files['predicted_test'], 
+                                                    exclude_punct=exclude_punct, 
+                                                    punct_tokens_set=punct_tokens_set) 
     else:
         test_scores = calculate_scores(input_files['gold_test'], 
                                        input_files['predicted_test'],
@@ -583,6 +606,11 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
                                                                count_words=count_words,
                                                                exclude_punct=exclude_punct,
                                                                punct_tokens_set=punct_tokens_set)
+        elif calc_scores_with_entropy:
+            train_scores = calculate_scores_with_entropy(input_files['gold_train'], 
+                                                         input_files['predicted_train'],
+                                                         exclude_punct=exclude_punct,
+                                                         punct_tokens_set=punct_tokens_set)
         else:
             train_scores = calculate_scores(input_files['gold_train'], 
                                             input_files['predicted_train'],
@@ -599,9 +627,47 @@ def score_experiment( predicted_test, gold_test, predicted_train, gold_train,
                                        train_scores['LAS'][2] - test_scores['LAS'][2])
         else:
             results_dict['LAS_gap'] = train_scores['LAS'] - test_scores['LAS']
+    # Add scores with entropy
+    if calc_scores_with_entropy:
+        # LAS with zero entropy
+        results_dict['test_LAS_0_entropy'] = \
+                test_scores['LAS_with_0_entropy']
+        results_dict['test_LAS_0_entropy_matches'] = \
+                test_scores['LAS_with_0_entropy_matches']
+        results_dict['test_LAS_0_entropy_total_words'] = \
+                test_scores['LAS_with_0_entropy_total_words']
+        # Size of LAS with zero entropy with respect to full test
+        if 'total_words' in test_scores:
+            results_dict['test_LAS_0_entropy_total_words_%'] = \
+              (results_dict['test_LAS_0_entropy_total_words']/test_scores['total_words'])*100.0
+        # Correlation between LAS match and entropy
+        results_dict['test_LAS_vs_entropy_corr'] = \
+                test_scores['LAS_vs_entropy_correlation']
+        results_dict['test_LAS_vs_entropy_corr_pvalue'] = \
+                test_scores['LAS_vs_entropy_corr_pvalue']
+        if train_scores is not None:
+            # LAS with zero entropy
+            results_dict['train_LAS_0_entropy'] = \
+                    train_scores['LAS_with_0_entropy']
+            results_dict['train_LAS_0_entropy_matches'] = \
+                    train_scores['LAS_with_0_entropy_matches']
+            results_dict['train_LAS_0_entropy_total_words'] = \
+                    train_scores['LAS_with_0_entropy_total_words']
+            # Correlation between LAS match and entropy
+            results_dict['train_LAS_vs_entropy_corr'] = \
+                    train_scores['LAS_vs_entropy_correlation']
+            results_dict['train_LAS_vs_entropy_corr_pvalue'] = \
+                    train_scores['LAS_vs_entropy_corr_pvalue']
+            # Size of LAS with zero entropy with respect to full train
+            if 'total_words' in train_scores:
+                results_dict['train_LAS_0_entropy_total_words_%'] = \
+                  (results_dict['train_LAS_0_entropy_total_words']/train_scores['total_words'])*100.0
+    # Reformat results
     if format_string is not None:
         for k, v in results_dict.items():
-            if isinstance(v, float):
+            if isinstance(v, int):
+                continue
+            elif isinstance(v, float):
                 results_dict[k] = ('{'+format_string+'}').format(v)
             elif isinstance(v, tuple):
                 parts = [('{'+format_string+'}').format(vi) for vi in v]
@@ -792,6 +858,131 @@ def calculate_scores_with_conf_interval(gold_path: str, predicted_path: str, N:i
          'LA':  (LA_lower,   LA_mean,   LA_upper)}
     if count_words:
         result['total_words'] = abs_total_words
+    return result
+
+
+def entropy_file_exists(predicted_path: str):
+    '''
+    Checks whether an .entropy file corresponding to the given .conllu file exists. 
+    '''
+    predicted_path_entropy = None
+    if predicted_path.endswith('.conllu'):
+        predicted_path_entropy = predicted_path.replace('.conllu', '.entropy')
+        return os.path.isfile(predicted_path_entropy)
+    return False
+
+
+def calculate_scores_with_entropy(gold_path: str, predicted_path: str, exclude_punct=False, punct_tokens_set=None):
+    '''
+    Calculates LAS, UAS and LA scores based on gold annotations and predicted annotations, 
+    and extends the results with entropy scores. 
+    For entropy scores, computes LAS exclusively over words that have ensemble prediction 
+    entropy 0, and finds Pearson's correlation between the ensemble prediction entropy and a 
+    reversed gold standard matching (encoded as: 0-match, 1-mismatch). Note: this function 
+    only works if ensemble predictions have generated prediction .entropy files in addition 
+    to prediction .conllu files. If .entropy files are missing, the function fails with an 
+    exception.
+    Flags `exclude_punct` and `punct_tokens_set` behave the same way as in the function 
+    `calculate_scores`. 
+    '''
+    from scipy.stats import pearsonr
+    # Load annotated texts from conllu files
+    gold_sents = None
+    predicted_sents = None
+    with open(gold_path, 'r', encoding='utf-8') as in_f:
+        gold_sents = conllu.parse(in_f.read())
+    with open(predicted_path, 'r', encoding='utf-8') as in_f_2:
+        predicted_sents = conllu.parse(in_f_2.read())
+    assert len(gold_sents) == len(predicted_sents), \
+        f'(!) Mismatching sizes: gold_sents: {len(gold_sents)}, predicted_sents: {len(predicted_sents)}'
+    # Get entropy file path
+    predicted_path_entropy = None
+    if entropy_file_exists(predicted_path):
+        predicted_path_entropy = predicted_path.replace('.conllu', '.entropy')
+    else:
+        if not predicted_path.endswith('.conllu'):
+            warnings.warn( f'(!) Unexpected file ending in {predicted_path} (expected .conllu). ')
+        raise FileNotFoundError(\
+              f"(!) Unable to find .entropy file corresponding to {predicted_path!r}")
+    # Load entropy annotations
+    sentence_id = 0
+    words_entropy = []
+    with open(predicted_path_entropy, 'r', encoding='utf-8') as in_f_3:
+        for line in in_f_3:
+            line_clean = line.strip()
+            if len(line_clean) > 0:
+                votes, entropy = line_clean.split('\t')
+                entropy = float(entropy)
+                words_entropy.append( \
+                    { 'sentence_id': sentence_id,
+                      'entropy': entropy} )
+            else:
+                # Next sentence
+                sentence_id += 1
+    entropy_all = []
+    LAS_accuracy = []
+    LAS_accuracy_with_zero_entropy = []
+    UAS_accuracy = []
+    LA_accuracy  = []
+    global_word_tracker = 0
+    for i, gold_sentence in enumerate(gold_sents):
+        predicted_sentece = predicted_sents[i]
+        gold_sentence_words = [w['form'] for w in gold_sentence]
+        auto_sentence_words = [w['form'] for w in predicted_sentece]
+        assert gold_sentence_words == auto_sentence_words, \
+            f'Tokenization mismatch in {predicted_path!r} | {gold_sentence_words} vs {auto_sentence_words}'
+        sentence_word_tracker = 0
+        for gold_word in gold_sentence:
+            if not isinstance(gold_word['id'], int):
+                continue
+            if exclude_punct:
+                # Exclude punctuation from evaluation
+                if punct_tokens_set is not None:
+                    if gold_word['form'] in punct_tokens_set:
+                        global_word_tracker += 1
+                        sentence_word_tracker += 1
+                        continue
+                if gold_word['xpos'] == 'Z':
+                    global_word_tracker += 1
+                    sentence_word_tracker += 1
+                    continue
+            cur_word_entropy = words_entropy[global_word_tracker]['entropy']
+            predicted_word = predicted_sentece[sentence_word_tracker]
+            has_las_match = \
+                predicted_word['deprel'] == gold_word['deprel'] and predicted_word['head'] == gold_word['head']
+            has_la_match = \
+                predicted_word['deprel'] == gold_word['deprel']
+            has_uas_match = \
+                predicted_word['head'] == gold_word['head']
+            global_word_tracker += 1
+            sentence_word_tracker += 1
+            entropy_all.append(cur_word_entropy)
+            # Use encoding: 0-match, 1-mismatch in order 
+            # to better align matching with the entropy
+            # ( H(X)=0 certainty, H(X)>0 uncertainty )
+            LAS_accuracy.append(0 if has_las_match else 1)
+            LA_accuracy.append(0 if has_la_match else 1)
+            UAS_accuracy.append(0 if has_uas_match else 1)
+            if cur_word_entropy == 0.0:
+                # Use encoding: 0-mismatch, 1-match
+                LAS_accuracy_with_zero_entropy.append(1 if has_las_match else 0)
+    # Find correlation
+    corr, pvalue = pearsonr(entropy_all, LAS_accuracy)
+    result = \
+        {'LAS': LAS_accuracy.count(0) / len(LAS_accuracy), 
+         'UAS': UAS_accuracy.count(0) / len(UAS_accuracy), 
+         'LA':  LA_accuracy.count(0) / len(LA_accuracy), 
+         # LAS with zero entropy
+         'LAS_with_0_entropy_matches'     : LAS_accuracy_with_zero_entropy.count(1), 
+         'LAS_with_0_entropy_total_words' : len(LAS_accuracy_with_zero_entropy), 
+         'LAS_with_0_entropy': \
+            LAS_accuracy_with_zero_entropy.count(1) / len(LAS_accuracy_with_zero_entropy),  
+         # Correlation between LAS match and entropy
+         'LAS_vs_entropy_correlation': corr, 
+         'LAS_vs_entropy_corr_pvalue': pvalue, 
+         # All words used in calculations
+         'total_words':  len(LAS_accuracy)
+        }
     return result
 
 
