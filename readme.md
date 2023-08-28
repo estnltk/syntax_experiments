@@ -6,7 +6,7 @@
 * Install [stanza](https://github.com/stanfordnlp/stanza) (we used version 1.4.2);
 * Install [scikit-learn](https://scikit-learn.org/) (we used version 1.2.1);
 * For some of the experiments, you'll also need [MaltParser](https://maltparser.org), [MaltOptimizer](http://nil.fdi.ucm.es/maltoptimizer), [UDPipe-1](https://ufal.mff.cuni.cz/udpipe/1) and [gensim](https://radimrehurek.com/gensim);
-* For visualization of the results, you'll need [matplotlib](https://matplotlib.org/stable/), [seaborn](https://seaborn.pydata.org/), [plotnine](https://plotnine.readthedocs.io/en/stable/); 
+* For visualization of the results, you'll need [matplotlib](https://matplotlib.org/stable/), [seaborn](https://seaborn.pydata.org/), [plotnine](https://plotnine.readthedocs.io/en/stable/), [patchworklib](https://pypi.org/project/patchworklib/), [adjustText](https://pypi.org/project/adjustText/); 
 * Download and unpack [Estonian UD corpus](https://github.com/UniversalDependencies/UD_Estonian-EDT/tags) (most experiments were conducted with the corpus version 2.6, the version 2.11 was used for one experiment);
 
 ### Configuration files
