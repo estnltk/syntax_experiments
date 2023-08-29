@@ -1042,8 +1042,8 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
     add_counts
         If True (default), then adds token counts 'total_no_punct', 'correct', 
         'gold_in_clause', 'gold_out_of_clause', 'total_words', 'punct', 
-        'unequal_length' 'E1_missed_root', 'E2_missed_root', 'E3_missed_root' 
-        to the returned dictionary.
+        'unequal_length' 'E1_missed_root', 'E2_missed_root', 'E3_missed_root', 
+        'E2_with_E3', 'E2_without_E3' to the returned dictionary.
     root_outside_clause:
         If True (default), then root nodes (words with head==0) are always considered 
         as being "outside the clause". Otherwise, root nodes are considered as being 
@@ -1085,9 +1085,12 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
     e1_missed_root = 0
     e2_missed_root = 0
     e3_missed_root = 0
+    e2_together_with_e3 = 0
+    e2_without_e3 = 0
     error_locations = {'E1':[], 'E2':[], 'E3': []}
     for idx, clause in enumerate(text.clauses):
         wordforms = list(clause.gold.text)
+        gold_ids = list(clause.gold.id)
         gold_heads = list(clause.gold.head)
         gold_deprel = list(clause.gold.deprel)
         gold_pos = list(clause.gold.xpostag)
@@ -1100,7 +1103,12 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
             unequal_length += len(gold_heads)
             total += len(gold_heads)
             continue
-        in_clause_heads = list(clause.gold.id)
+        in_clause_heads = gold_ids[:]
+        # Collect clause roots (words pointing outside the clause)
+        clause_roots = []
+        for wid, head in zip(gold_ids, gold_heads):
+            if head not in gold_ids:
+                clause_roots.append(wid)
         if not root_outside_clause:
             # Count root node as being "inside 
             # the clause" rather than "outside 
@@ -1108,8 +1116,12 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
             # This shifts error distribution
             # from E2 & E3 to E1.
             in_clause_heads.append( 0 )
-        for word_loc, wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in \
-                zip(gold_word_loc, wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
+        # Collect specific errors inside clause 
+        # (which can be correlated)
+        clause_e2 = []
+        clause_e3 = []
+        for gold_id, word_loc, wordform, pos, gold_head, parsed_head, gold_dep, parsed_dep in \
+                zip(gold_ids, gold_word_loc, wordforms, gold_pos, gold_heads, parsed_heads, gold_deprel, parsed_deprel):
             is_gold_root = (gold_head == 0)
             (gold_start, gold_end) = word_loc.start, word_loc.end
             total += 1
@@ -1139,6 +1151,8 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
                             e2 += 1
                             if is_gold_root:
                                 e2_missed_root += 1
+                            if gold_head != parsed_head:
+                                clause_e2.append(gold_id)
                             error_locations['E2'].append( (gold_start, gold_end) )
                 else:
                     gold_out_of_clause += 1
@@ -1151,7 +1165,17 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
                         e3 += 1
                         if is_gold_root:
                             e3_missed_root += 1
+                        if gold_head != parsed_head and gold_id in clause_roots:
+                            clause_e3.append(gold_id)
                         error_locations['E3'].append( (gold_start, gold_end) )
+        if len(clause_e2) > 0:
+            if len(clause_e3) > 0:
+                # At least some of the clause roots were wrong and E2 errors appeared
+                e2_together_with_e3 += len( clause_e2 )
+            elif len(clause_e3) == 0:
+                # Clause roots were correct, but E2 errors still appeared 
+                # (parser pointed accidentially outside of the clause)
+                e2_without_e3 += len( clause_e2 )
     if error_sample_output_file is not None and isinstance(error_sample_size, int):
         # Pick randomly a sample of errors and write into a file
         extract_error_samples(text, error_locations, 
@@ -1178,6 +1202,10 @@ def calculate_errors(gold_file, predicted_file, punct_tokens_set=None, remove_em
         result['E1_missed_root'] = e1_missed_root
         result['E2_missed_root'] = e2_missed_root
         result['E3_missed_root'] = e3_missed_root
+        # E2 in clause which has (at least one) E3
+        result['E2_with_E3']    = e2_together_with_e3
+        # E2 in clause which does not have any E3
+        result['E2_without_E3'] = e2_without_e3
     if format_string is not None:
         # Reformat impacts and relative errors
         for k, v in result.items():
@@ -1200,6 +1228,8 @@ def extract_error_samples(text, error_locations, output_file, n=100, seed=1, cla
     assert gold_syntax_layer in text.layers
     assert auto_syntax_layer in text.layers
     sent_locations = [(s.start, s.end, sid) for sid, s in enumerate(text[senteces_layer])]
+    clause_starts = set([cl.start for cl in text[clauses_layer]])
+    clause_ends   = set([cl.end for cl in text[clauses_layer]])
     # Clear output file
     with open(output_file, 'w', encoding='utf-8') as out_f:
         pass
@@ -1222,10 +1252,20 @@ def extract_error_samples(text, error_locations, output_file, n=100, seed=1, cla
             picked_sentences = err_sentences
         # Format sentences (mark errors)
         for (s_start, s_end, s_id) in picked_sentences:
-            sent_errors = set()
-            for (err_start, err_end) in error_locations[err_key]:
-                if s_start <= err_start and err_end <= s_end:
-                    sent_errors.add( (err_start, err_end) )
+            # Gather all errors inside the given sentence
+            sent_focus_errors = set()
+            sent_other_errors = dict()
+            for alt_err_key in error_locations.keys():
+                for (err_start, err_end) in error_locations[alt_err_key]:
+                    if s_start <= err_start and err_end <= s_end:
+                        # Error inside the given sentence
+                        if err_key == alt_err_key:
+                            sent_focus_errors.add( (err_start, err_end) )
+                        else:
+                            if (err_start, err_end) not in sent_other_errors:
+                                sent_other_errors[(err_start, err_end)] = []
+                            sent_other_errors[(err_start, err_end)].append( alt_err_key )
+            # Display words with labellings & errors
             sent_formatted = []
             for word_span in text[senteces_layer][s_id]:
                 gold_word = text[gold_syntax_layer].get(word_span.base_span)
@@ -1240,13 +1280,20 @@ def extract_error_samples(text, error_locations, output_file, n=100, seed=1, cla
                 error_type = ''
                 deprel_with_err = f'{gold_deprel}'
                 if (gold_deprel != auto_deprel):
-                    deprel_with_err = f'{deprel_with_err}({auto_deprel})'
+                    deprel_with_err = f'{deprel_with_err} (auto: {auto_deprel})'
                 head_with_err = f'{gold_head}'
                 if (gold_head != auto_head):
-                    head_with_err = f'{head_with_err}({auto_head})'
-                if (w_start, w_end) in sent_errors:
-                    error_type = f'(!{err_key})'
+                    head_with_err = f'{head_with_err} (auto: {auto_head})'
+                if (w_start, w_end) in sent_focus_errors:
+                    error_type = f'((!{err_key}))'
+                elif (w_start, w_end) in sent_other_errors:
+                    other_err_keys = [e.lower() for e in sent_other_errors[(w_start, w_end)]]
+                    error_type = ';'.join(other_err_keys)
+                if word_span.start in clause_starts:
+                    sent_formatted.append('CLAUSE_START')
                 sent_formatted.append( f'{gold_id} {word_text} {head_with_err} {deprel_with_err} {error_type}' )
+                if word_span.end in clause_ends:
+                    sent_formatted.append('CLAUSE_END')
             sent_formatted.append('')
             extracted_err_sents.append( '\n'.join(sent_formatted) )
         print(f'Writing {len(extracted_err_sents)} samples of {err_key} errors into {output_file} ...')
