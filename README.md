@@ -1,3 +1,8 @@
-# syntax_experiments
+# Syntax experiments [legacy]
 
-Models' outputs are in folder: 04_train_models->output->{collection_name}->{experiment-name}->{model}
+---
+
+⚠️ This branch contains legacy syntactic parsing experiments, no longer under development nor supported.
+
+---
+
