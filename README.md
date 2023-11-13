@@ -20,12 +20,24 @@ The branch contains workflows for shortening sentences and preparing the results
 
 ### III. Consistency between adverbial phrases and named entities 
 
-Adverbial phrases often coincide with geographical location or time expression, but not always. In these experiments, we study this problem in detail. For that we use a stanza syntax analyzer to extract adverbials and dedicated taggers for isolating named entities and time expressions. After that we build a workflow for extracting sentences where these annaotations are in potential conflict and extract corresponding sentences for manual labelling.  
- 
+Adverbial phrases often coincide with geographical location or time expression, but not always. In these experiments, we study this problem in detail. For that we use a stanza syntax analyzer to extract adverbials and dedicated taggers for isolating named entities and time expressions. After that we build a workflow for extracting sentences where these annaotations are in potential conflict and extract corresponding sentences for manual labelling. 
+
+
 **Branch:**  [adverbials](https://github.com/estnltk/syntax_experiments/tree/adverbials) 
+
+### IV. Subcategorisation and argument structure
+
+Statistical methods for extracting information about subcategorisation of verbs using only automatically generated syntax for a large text corpus. 
+Subcategorization for verbs is defined by argument structure that specifies a list of selected arguments associated with specific lexical restrictions. 
+For Estonian, these restrictions are defined in terms of plausible cases.
+It is imporant to note that not all arguments in the argument structure are mandatory and that the same verb can have more than one argument structure. 
+
+Still it possible to use law of large numbers to extract important information about argument structure. 
+For that, we tabulate syntax level collocations between verb phrases and noun phrases defined through obl dependency relation. 
+
+**Branch:** [subcat](https://github.com/estnltk/syntax_experiments/tree/subcat)
 
 ### IV. Other brances
 
 * [semantic_labelling](https://github.com/estnltk/syntax_experiments/tree/semantic_labelling) -- <i>(add description here)</i>
-* [subcat](https://github.com/estnltk/syntax_experiments/tree/subcat) -- <i>(add description here)</i> 
 * [legacy](https://github.com/estnltk/syntax_experiments/tree/legacy) -- legacy experiments and developments, no longer supported;
