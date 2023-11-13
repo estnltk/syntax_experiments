@@ -49,4 +49,4 @@ This can be exploited to categorise nouns into sementic categories and the other
 
 Contains code of legacy experiments that are no longer supported
 
-* [legacy](https://github.com/estnltk/syntax_experiments/tree/legacy) -- legacy experiments and developments, no longer supported;
+**Branch:** [legacy](https://github.com/estnltk/syntax_experiments/tree/legacy) 
