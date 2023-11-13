@@ -37,7 +37,16 @@ For that, we tabulate syntax level collocations between verb phrases and noun ph
 
 **Branch:** [subcat](https://github.com/estnltk/syntax_experiments/tree/subcat)
 
-### IV. Other brances
+### V. Semantic labelling
 
-* [semantic_labelling](https://github.com/estnltk/syntax_experiments/tree/semantic_labelling) -- <i>(add description here)</i>
+Semantical categorisation based on the arguments structure.
+Verbs place semantic restrictions on their arguments. 
+This can be exploited to categorise nouns into sementic categories and the other way around -- find whether a particular argument of a verb must satisfy certain restrictions. 
+
+**Branch:** [semantic_labelling](https://github.com/estnltk/syntax_experiments/tree/semantic_labelling)
+
+### VI. Outdated experiments
+
+Contains code of legacy experiments that are no longer supported
+
 * [legacy](https://github.com/estnltk/syntax_experiments/tree/legacy) -- legacy experiments and developments, no longer supported;
