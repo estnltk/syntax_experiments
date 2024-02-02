@@ -8,6 +8,7 @@ from collections import defaultdict, Counter, OrderedDict
 from decimal import Decimal, getcontext
 from random import Random
 from typing import Tuple
+import warnings
 
 from scipy.stats import entropy
 
@@ -61,11 +62,11 @@ class StanzaSyntaxEnsembleTaggerWithEntropy(Tagger):
     Aggregation algorithm. For aggregating predictions from multiple models, there are currently 2 algorithms 
     available. The first / default method ('las_coherence') processes input sentence-wise and calculates LAS 
     scores between each model's sentence prediction and all other sentence predictions. The sentence prediction  
-    with the highest average LAS will be chosen for the output. This method ensures valid output tree structure. 
-    The second method ('majority_voting') processes input token-wise and picks a token with the most frequently 
-    predicted head & deprel; if there are multiple tokens with the same number of votes, then the token is 
-    chosen randomly. Note, however, that this method can produce invalid tree structures, as there is no 
-    mechanism to ensure that majority-voting-picked tokens will make up a valid tree. 
+    with the highest average LAS will be chosen for the output. This method ensures valid output tree structure.
+    The second method ('majority_voting') processes input token-wise and records predicted head & deprel frequencies 
+    for each token in a sentence. After that, it applies Chu–Liu/Edmonds' algorithm to construct a valid syntactic 
+    tree of the sentence over high frequency heads of each token. Any remaining ambiguities (e.g. choices between 
+    multiple different deprels for a head) will be resolved via random choice.
     You can set the aggregation algorithm via constructor parameter aggregation_algorithm. 
     
     Tutorial:
@@ -161,7 +162,7 @@ class StanzaSyntaxEnsembleTaggerWithEntropy(Tagger):
 
         self.syntax_dependency_retagger = None
         if add_parent_and_children:
-            self.syntax_dependency_retagger = SyntaxDependencyRetagger(conll_syntax_layer=output_layer)
+            self.syntax_dependency_retagger = SyntaxDependencyRetagger(syntax_layer=output_layer)
             self.output_attributes += ('parent_span', 'children')
 
         self.ud_validation_retagger = None
@@ -194,7 +195,9 @@ class StanzaSyntaxEnsembleTaggerWithEntropy(Tagger):
 
     def _make_layer(self, text, layers, status):
         # Make an internal import to avoid explicit stanza dependency
+        import numpy as np
         from stanza import Document
+        from stanza.models.common.chuliu_edmonds import chuliu_edmonds_one_root
         
         sentences_layer = self.input_layers[0]
         morph_layer = self.input_layers[1]
@@ -287,39 +290,60 @@ class StanzaSyntaxEnsembleTaggerWithEntropy(Tagger):
             assert self.aggregation_algorithm == "majority_voting"
             # 2) Majority voting: pick the dependency relation with the 
             #    highest number of votes over all model predictions.
-            #    This method can produce invalid tree structures.
             word_id = 0
             sentence_id = 0
-            sentence_word_id = 0
-            while word_id < len( parent_layer ):
-                sentence = None
-                voting_table = defaultdict(int)
-                # Get deprel votes for the word token
-                label_token_map = {}
-                for model, parsed_doc in parsed_texts.items():
-                    sentence = parsed_doc[sentence_id]
-                    token = sentence[sentence_word_id]
-                    label = '{}__{}'.format(token['deprel'], token['head'])
-                    voting_table[label] += 1
-                    if label not in label_token_map.keys():
-                        label_token_map[label] = []
-                    label_token_map[label].append(token)
-                # Find maximum voting score and corresponding tokens
-                max_votes = max( voting_table.values() )
-                max_votes_labels = [l for l, v in voting_table.items() if v==max_votes]
-                max_votes_tokens = []
-                for label, tokens in label_token_map.items():
-                    if label in max_votes_labels:
-                        max_votes_tokens.extend(tokens)
-                # In case of a tie, pick a token randomly
-                self._random2.shuffle(max_votes_tokens)
-                extracted_words.append(max_votes_tokens[0])
-                word_id += 1
-                sentence_word_id += 1
-                if sentence_word_id >= len(sentence):
-                    # Next sentence
-                    sentence_id += 1
-                    sentence_word_id = 0
+            while sentence_id < len(layers[sentences_layer]):
+                # 1) Collect words and votes for the current sentence
+                sentence_word_id = 0
+                sent_len = len(layers[sentences_layer][sentence_id])
+                voting_table = defaultdict(lambda: defaultdict(int))
+                label_token_map = defaultdict(lambda: defaultdict(list))
+                sent_matrix = np.zeros((sent_len+1, sent_len+1))
+                np.fill_diagonal(sent_matrix, -float('inf'))
+                while sentence_word_id < sent_len:
+                    # collect votes
+                    for model, parsed_doc in parsed_texts.items():
+                        assert len(parsed_doc) == len(layers[sentences_layer])
+                        sentence = parsed_doc[sentence_id]
+                        assert len(sentence) == sent_len
+                        token = sentence[sentence_word_id]
+                        label = '{}__{}'.format(token['deprel'], token['head'])
+                        voting_table[sentence_word_id][label] += 1
+                        label_token_map[sentence_word_id][label].append(token)
+                        head_int = int(token['head'])
+                        sent_matrix[sentence_word_id+1, head_int] += 1.0
+                    sentence_word_id += 1
+                    word_id += 1
+                # 2) use Chu–Liu/Edmonds' algorithm to find head_seq of a valid tree 
+                valid_tree_head_seq = chuliu_edmonds_one_root(sent_matrix)[1:]
+                # 3) For each word, find maximum voting score and corresponding tokens
+                for wid in sorted(voting_table.keys()):
+                    valid_head = valid_tree_head_seq[wid]
+                    max_votes_valid = []
+                    for l, v in voting_table[wid].items():
+                        if l.endswith('__{}'.format(valid_head)):
+                            max_votes_valid.append((l, v))
+                    if not max_votes_valid:
+                        # If something went wrong, then fall back to unchecked tree.
+                        word_str = layers[sentences_layer][sentence_id][wid]
+                        sentence_str = layers[sentences_layer][sentence_id].enclosing_text
+                        msg = ('(!) Unable to find a tree-bound head for '+\
+                               'word {!r} in sentence {!r}. ').format(word_str, sentence_str)
+                        msg += 'Falling back to unchecked tree construction, '
+                        msg += 'which may result in an invalid syntax tree.'
+                        warnings.warn(msg)
+                        max_votes_valid = voting_table[wid].items()
+                    max_votes = max([v for (l, v) in max_votes_valid])
+                    max_votes_labels = [l for l, v in max_votes_valid if v==max_votes]
+                    max_votes_tokens = []
+                    for label, tokens in label_token_map[wid].items():
+                        if label in max_votes_labels:
+                            max_votes_tokens.extend(tokens)
+                    # In case of a tie, pick a token randomly
+                    self._random2.shuffle(max_votes_tokens)
+                    extracted_words.append(max_votes_tokens[0])
+                # Next sentence
+                sentence_id += 1
             assert len(extracted_words) == len(parent_layer)
 
         layer = self._make_layer_template()
