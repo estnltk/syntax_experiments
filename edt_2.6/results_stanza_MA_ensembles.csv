@@ -1,0 +1,3 @@
+experiment,LAS_test,LAS_train,UAS_test,UAS_train,LAS_gap
+eval_stanza_ensemble_morph_analysis_full_data_default,0.8573,0.9330,0.8851,0.9510,0.0757
+eval_stanza_ensemble_morph_analysis_full_data_majority_voting,0.8573,0.9329,0.8858,0.9510,0.0756
