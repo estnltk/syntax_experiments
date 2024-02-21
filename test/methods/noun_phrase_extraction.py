@@ -28,7 +28,18 @@ obj_phrase_extractor = PhraseExtractor(deprel="obj", syntax_layer="stanza_syntax
 # head is xcomp (only if noun)
 xcomp_phrase_extractor = PhraseExtractor(decorator=partofspeech_filter, deprel="xcomp", syntax_layer="stanza_syntax",
                                         output_layer="xcomp_phrases")
-
+# head is nmod
+nmod_phrase_extractor = PhraseExtractor(deprel="nmod", syntax_layer="stanza_syntax",
+                                   output_layer="nmod_phrases")
+# head is appos
+appos_phrase_extractor = PhraseExtractor(deprel="appos", syntax_layer="stanza_syntax",
+                                   output_layer="appos_phrases")
+# head is parataxis (only if noun)
+parataxis_phrase_extractor = PhraseExtractor(decorator=partofspeech_filter, deprel="parataxis", syntax_layer="stanza_syntax",
+                                   output_layer="parataxis_phrases")
+# head is root (only if noun)
+root_phrase_extractor = PhraseExtractor(decorator=partofspeech_filter, deprel="root", syntax_layer="stanza_syntax",
+                                   output_layer="root_phrases")
 
 # -- initializing StanzaSyntaxtagger()
 stanza_tagger = StanzaSyntaxTagger(input_type='morph_analysis', input_morph_layer='morph_analysis',
@@ -47,7 +58,11 @@ def extract_noun_phrases(text_obj):
     nsubj_cop_phrase_extractor.tag( text_obj )
     obj_phrase_extractor.tag( text_obj )
     xcomp_phrase_extractor.tag( text_obj )
-    return text_obj.obl_phrases, text_obj.nsubj_phrases, text_obj.nsubj_cop_phrases, text_obj.obj_phrases, text_obj.xcomp_phrases
+    nmod_phrase_extractor.tag( text_obj )
+    appos_phrase_extractor.tag( text_obj )
+    parataxis_phrase_extractor.tag( text_obj )
+    root_phrase_extractor.tag( text_obj )
+    return text_obj
 
 # creates EstNLTK Text-objects from noun phrase layers
 def create_Text_objects(text_id, phrase_type, phrase_layer):
@@ -84,10 +99,16 @@ def append_data_to_df(all_phrase_text_objects):
 # appends phrases to DataFrame    
 def create_df(text_id, text_obj):
     text_obj.meta['text_id'] = text_id
-    obl_phrases, nsubj_phrases, nsubj_cop_phrases, obj_phrases, xcomp_phrases = extract_noun_phrases(text_obj)
-    obl_phrase_texts = create_Text_objects(text_id, 'obl_phrase', obl_phrases)
-    nsubj_phrase_texts = create_Text_objects(text_id, 'nsubj_phrase', nsubj_phrases)
-    nsubj_cop_phrase_texts = create_Text_objects(text_id, 'nsubj_cop_phrase', nsubj_cop_phrases)
-    obj_phrase_texts = create_Text_objects(text_id, 'obj_phrase', obj_phrases)
-    xcomp_phrase_texts = create_Text_objects(text_id, 'xcomp_phrase', xcomp_phrases)
-    return append_data_to_df(obl_phrase_texts+nsubj_phrase_texts+nsubj_cop_phrase_texts+obj_phrase_texts+xcomp_phrase_texts)
+    text_obj_with_phrases = extract_noun_phrases(text_obj)
+    
+    obl_phrase_texts = create_Text_objects(text_id, 'obl_phrase', text_obj_with_phrases.obl_phrases)
+    nsubj_phrase_texts = create_Text_objects(text_id, 'nsubj_phrase', text_obj_with_phrases.nsubj_phrases)
+    nsubj_cop_phrase_texts = create_Text_objects(text_id, 'nsubj_cop_phrase', text_obj_with_phrases.nsubj_cop_phrases)
+    obj_phrase_texts = create_Text_objects(text_id, 'obj_phrase', text_obj_with_phrases.obj_phrases)
+    xcomp_phrase_texts = create_Text_objects(text_id, 'xcomp_phrase', text_obj_with_phrases.xcomp_phrases)
+    nmod_phrase_texts = create_Text_objects(text_id, 'nmod_phrase', text_obj_with_phrases.nmod_phrases)
+    appos_phrase_texts = create_Text_objects(text_id, 'appos_phrase', text_obj_with_phrases.appos_phrases)
+    parataxis_phrase_texts = create_Text_objects(text_id, 'parataxis_phrase', text_obj_with_phrases.parataxis_phrases)
+    root_phrase_texts = create_Text_objects(text_id, 'root_phrase', text_obj_with_phrases.root_phrases)
+    
+    return append_data_to_df(obl_phrase_texts+nsubj_phrase_texts+nsubj_cop_phrase_texts+obj_phrase_texts+xcomp_phrase_texts+nmod_phrase_texts+appos_phrase_texts+parataxis_phrase_texts+root_phrase_texts)
