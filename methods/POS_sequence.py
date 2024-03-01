@@ -12,7 +12,10 @@ def get_POS_sequence(text_obj):
             # keeps only unique POS tags when POS is ambiguous, e.g. ['V', 'A', 'A'] -> ['V', 'A']
             char_unique = [char for indx, char in enumerate(char_list) if char not in char_list[:indx]]
             if len(char_unique) == 1:
-                pos_string+=char_unique[0]+"-"
+                if i < len(pos_list) - 1:
+                    pos_string+=char_unique[0]+"-"
+                else:
+                    pos_string+=char_unique[0]
             else:
                 pos_string+="("
                 for j, char in enumerate(char_unique):
