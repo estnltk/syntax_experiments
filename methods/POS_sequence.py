@@ -20,7 +20,10 @@ def get_POS_sequence(text_obj):
                 pos_string+="("
                 for j, char in enumerate(char_unique):
                     if j == len(char_unique) - 1:
-                        pos_string+=char+")-"
+                        if i < len(pos_list) - 1:
+                            pos_string+=char+")-"
+                        else:
+                            pos_string+=char+")"
                     else:
                         pos_string+=char+"|"
     return pos_string
