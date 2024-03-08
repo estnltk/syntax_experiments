@@ -1,6 +1,6 @@
 ## H-H
 
-Example phrase: *italics*Toomas Ilves
+Example phrase: *Toomas Ilves*
 
 Frequency: 5
 
@@ -10,7 +10,7 @@ Frequency: 5
 
 ## O-S
 
-Example phrase: *italics*Esimene lugemine
+Example phrase: *Esimene lugemine*
 
 Frequency: 3
 
@@ -20,7 +20,7 @@ Frequency: 3
 
 ## S-S
 
-Example phrase: *italics*raha tagasisaamiseks
+Example phrase: *raha tagasisaamiseks*
 
 Frequency: 3
 
@@ -30,7 +30,7 @@ Frequency: 3
 
 ## A-S
 
-Example phrase: *italics*väikese tööstaazhiga
+Example phrase: *väikese tööstaazhiga*
 
 Frequency: 2
 
@@ -40,7 +40,7 @@ Frequency: 2
 
 ## D-S
 
-Example phrase: *italics*isegi vanaduspensioniks
+Example phrase: *isegi vanaduspensioniks*
 
 Frequency: 1
 
