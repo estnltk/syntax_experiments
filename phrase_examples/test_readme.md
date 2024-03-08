@@ -1,6 +1,6 @@
 ## H-H
 
-Example phrase: *Toomas Ilves*
+Example phrase: *Marius Dovydenas*
 
 Frequency: 5
 
@@ -8,19 +8,9 @@ Frequency: 5
 
 % of POS-sequences with same length: 35.71
 
-## O-S
+Number of unique syntax trees: 1## O-S
 
-Example phrase: *Esimene lugemine*
-
-Frequency: 3
-
-% of all phrases: 6.12
-
-% of POS-sequences with same length: 21.43
-
-## S-S
-
-Example phrase: *raha tagasisaamiseks*
+Example phrase: *2. minutil*
 
 Frequency: 3
 
@@ -28,9 +18,19 @@ Frequency: 3
 
 % of POS-sequences with same length: 21.43
 
-## A-S
+Number of unique syntax trees: 2## S-S
 
-Example phrase: *väikese tööstaazhiga*
+Example phrase: *aku voolust*
+
+Frequency: 3
+
+% of all phrases: 6.12
+
+% of POS-sequences with same length: 21.43
+
+Number of unique syntax trees: 2## A-S
+
+Example phrase: *kurva filmi*
 
 Frequency: 2
 
@@ -38,7 +38,7 @@ Frequency: 2
 
 % of POS-sequences with same length: 14.29
 
-## D-S
+Number of unique syntax trees: 1## D-S
 
 Example phrase: *isegi vanaduspensioniks*
 
@@ -48,3 +48,4 @@ Frequency: 1
 
 % of POS-sequences with same length: 7.14
 
+Number of unique syntax trees: 1
