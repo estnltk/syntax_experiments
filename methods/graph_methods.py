@@ -12,6 +12,8 @@ def get_unique_POS(word):
     # if POS is ambiguous, only unique tags are kept, e.g. ['V', 'A', 'A'] -> ['V', 'A']
     if len(pos_list) > 1:
         char_unique = [char for indx, char in enumerate(pos_list) if char not in pos_list[:indx]]
+        if len(char_unique) < 2:
+            return char_unique[0]
         return '('+'|'.join(char_unique)+')'
     return pos_list[0]
 
@@ -19,15 +21,17 @@ def get_unique_POS(word):
 # -- helper method, checks if current word is tagged as ner/timex entity and returns entity type or 0
 def get_ner_timex(text_obj, stanza_word):
     ner = None
+    nertag = None
     if len(text_obj.ner) > 0:
         word = text_obj.words.get(stanza_word)
         for n in text_obj.ner:
             for part in n:
                 if part==word:
                     ner=word
+                    nertag=n.nertag
     timex = text_obj.timexes.get(stanza_word)
     if ner:
-        return 'ner'
+        return 'ner_'+nertag
     if timex:
         return 'timex'
     return '0'
@@ -106,7 +110,7 @@ def get_graph_code(graph, attribute_list=None):
     
     graph_code = ','.join(edge_list)
     
-    if attribute_list != None:
+    if attribute_list:
         for attr in attribute_list:
             node_list = []
             for edge in edges:

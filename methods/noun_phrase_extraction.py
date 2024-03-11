@@ -48,8 +48,6 @@ stanza_tagger = StanzaSyntaxTagger(input_type='morph_analysis', input_morph_laye
 # -- initializing NerTagger
 ner_tagger = NerTagger()
 
-# -- creating DataFrame
-df = pd.DataFrame(columns=['phrase', 'text_id', 'start_end', 'phrase_type', 'has_ner_entity', 'has_timex_entity'])
 
 # tags and returns noun phrases in input text
 def extract_noun_phrases(text_obj):
@@ -65,14 +63,16 @@ def extract_noun_phrases(text_obj):
     return text_obj
 
 # creates EstNLTK Text-objects from noun phrase layers
-def create_Text_objects(text_id, phrase_type, phrase_layer):
+def create_Text_objects(metadata, phrase_type, phrase_layer):
     text_objects = []
     for phrase in phrase_layer:
         phrase_string = " ".join(phrase.text)
         text_obj = Text(phrase_string).tag_layer(['morph_analysis', 'timexes'])
+        if metadata:
+            for key in metadata:
+                text_obj.meta[key] = metadata[key]
         text_obj.meta['phrase_type'] = phrase_type
-        text_obj.meta['text_id'] = text_id
-        text_obj.meta['start_end'] = tuple([phrase.start, phrase.end])
+        text_obj.meta['phrase_start_end'] = tuple([phrase.start, phrase.end])
         ner_tagger.tag(text_obj)
         stanza_tagger.tag(text_obj)
         text_objects.append(text_obj)
@@ -80,7 +80,7 @@ def create_Text_objects(text_id, phrase_type, phrase_layer):
 
 # helper function for noun_phrases_to_df, iterates over data and appends to DataFrame
 def append_data_to_df(all_phrase_text_objects):
-    global df
+    df = pd.DataFrame()
     for phrase in all_phrase_text_objects:
         # -- 0 -> false
         # -- 1 -> true
@@ -90,25 +90,28 @@ def append_data_to_df(all_phrase_text_objects):
             has_ner_entity = 1
         elif phrase.timexes:
             has_timex_entity = 1
-        temp_data = {'phrase': phrase, 'text_id': phrase.meta['text_id'], 'start_end': phrase.meta['start_end'], 'phrase_type': phrase.meta['phrase_type'], 
-                     'has_ner_entity': has_ner_entity, 'has_timex_entity': has_timex_entity}
+        temp_data = {}
+        temp_data.update({'phrase': phrase})
+        temp_data.update(phrase.meta)
+        temp_data.update({'has_ner_netity': has_ner_entity, 'has_timex_entity': has_timex_entity})
         temp = pd.DataFrame.from_records([temp_data])
         df = pd.concat([df, temp], ignore_index=True)
     return df
             
-# appends phrases to DataFrame    
-def create_df(text_id, text_obj):
-    text_obj.meta['text_id'] = text_id
+# appends phrases to DataFrame  
+def create_df(text_obj):
+        
     text_obj_with_phrases = extract_noun_phrases(text_obj)
     
-    obl_phrase_texts = create_Text_objects(text_id, 'obl_phrase', text_obj_with_phrases.obl_phrases)
-    nsubj_phrase_texts = create_Text_objects(text_id, 'nsubj_phrase', text_obj_with_phrases.nsubj_phrases)
-    nsubj_cop_phrase_texts = create_Text_objects(text_id, 'nsubj_cop_phrase', text_obj_with_phrases.nsubj_cop_phrases)
-    obj_phrase_texts = create_Text_objects(text_id, 'obj_phrase', text_obj_with_phrases.obj_phrases)
-    xcomp_phrase_texts = create_Text_objects(text_id, 'xcomp_phrase', text_obj_with_phrases.xcomp_phrases)
-    nmod_phrase_texts = create_Text_objects(text_id, 'nmod_phrase', text_obj_with_phrases.nmod_phrases)
-    appos_phrase_texts = create_Text_objects(text_id, 'appos_phrase', text_obj_with_phrases.appos_phrases)
-    parataxis_phrase_texts = create_Text_objects(text_id, 'parataxis_phrase', text_obj_with_phrases.parataxis_phrases)
-    root_phrase_texts = create_Text_objects(text_id, 'root_phrase', text_obj_with_phrases.root_phrases)
+    obl_phrase_texts = create_Text_objects(text_obj.meta, 'obl_phrase', text_obj_with_phrases.obl_phrases)
+    nsubj_phrase_texts = create_Text_objects(text_obj.meta, 'nsubj_phrase', text_obj_with_phrases.nsubj_phrases)
+    nsubj_cop_phrase_texts = create_Text_objects(text_obj.meta, 'nsubj_cop_phrase', text_obj_with_phrases.nsubj_cop_phrases)
+    obj_phrase_texts = create_Text_objects(text_obj.meta, 'obj_phrase', text_obj_with_phrases.obj_phrases)
+    xcomp_phrase_texts = create_Text_objects(text_obj.meta, 'xcomp_phrase', text_obj_with_phrases.xcomp_phrases)
+    nmod_phrase_texts = create_Text_objects(text_obj.meta, 'nmod_phrase', text_obj_with_phrases.nmod_phrases)
+    appos_phrase_texts = create_Text_objects(text_obj.meta, 'appos_phrase', text_obj_with_phrases.appos_phrases)
+    parataxis_phrase_texts = create_Text_objects(text_obj.meta, 'parataxis_phrase', text_obj_with_phrases.parataxis_phrases)
+    root_phrase_texts = create_Text_objects(text_obj.meta, 'root_phrase', text_obj_with_phrases.root_phrases)
     
     return append_data_to_df(obl_phrase_texts+nsubj_phrase_texts+nsubj_cop_phrase_texts+obj_phrase_texts+xcomp_phrase_texts+nmod_phrase_texts+appos_phrase_texts+parataxis_phrase_texts+root_phrase_texts)
+
