@@ -1,60 +1,90 @@
-## H-H
+## H-S
 
-Example phrase: *Marius Dovydenas*
-
-Frequency: 5
-
-% of all phrases: 10.2
-
-% of POS-sequences with same length: 35.71
-
-Number of unique syntax trees: 1
-
-## O-S
-
-Example phrase: *2. minutil*
-
-Frequency: 3
-
-% of all phrases: 6.12
-
-% of POS-sequences with same length: 21.43
-
-Number of unique syntax trees: 2
-
-## S-S
-
-Example phrase: *aku voolust*
-
-Frequency: 3
-
-% of all phrases: 6.12
-
-% of POS-sequences with same length: 21.43
-
-Number of unique syntax trees: 2
-
-## A-S
-
-Example phrase: *kurva filmi*
+Example phrase: *Prantsusmaa koju*
 
 Frequency: 2
 
-% of all phrases: 4.08
+% of all phrases: 5.71
 
-% of POS-sequences with same length: 14.29
+% of POS-sequences with same length: 25.0
 
-Number of unique syntax trees: 1
+Number of unique syntax trees (POS-tags): 1
 
-## D-S
+Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
-Example phrase: *isegi vanaduspensioniks*
+% of trees occurring once (POS-tags): 0.0
+
+% of trees occurring once (POS-tags and NER/TIMEX): 100.0
+
+## S-N
+
+Example phrase: *kuuli 19.00*
+
+Frequency: 2
+
+% of all phrases: 5.71
+
+% of POS-sequences with same length: 25.0
+
+Number of unique syntax trees (POS-tags): 1
+
+Number of unique syntax trees (POS-tags and NER/TIMEX): 1
+
+% of trees occurring once (POS-tags): 0.0
+
+% of trees occurring once (POS-tags and NER/TIMEX): 0.0
+
+## S-S
+
+Example phrase: *rattur tulevikukavadest*
+
+Frequency: 2
+
+% of all phrases: 5.71
+
+% of POS-sequences with same length: 25.0
+
+Number of unique syntax trees (POS-tags): 2
+
+Number of unique syntax trees (POS-tags and NER/TIMEX): 2
+
+% of trees occurring once (POS-tags): 100.0
+
+% of trees occurring once (POS-tags and NER/TIMEX): 100.0
+
+## A-S
+
+Example phrase: *uut treeningtsüklit*
 
 Frequency: 1
 
-% of all phrases: 2.04
+% of all phrases: 2.86
 
-% of POS-sequences with same length: 7.14
+% of POS-sequences with same length: 12.5
 
-Number of unique syntax trees: 1
+Number of unique syntax trees (POS-tags): 1
+
+Number of unique syntax trees (POS-tags and NER/TIMEX): 1
+
+% of trees occurring once (POS-tags): 100.0
+
+% of trees occurring once (POS-tags and NER/TIMEX): 100.0
+
+## D-N
+
+Example phrase: *veel 24*
+
+Frequency: 1
+
+% of all phrases: 2.86
+
+% of POS-sequences with same length: 12.5
+
+Number of unique syntax trees (POS-tags): 1
+
+Number of unique syntax trees (POS-tags and NER/TIMEX): 1
+
+% of trees occurring once (POS-tags): 100.0
+
+% of trees occurring once (POS-tags and NER/TIMEX): 100.0
 
