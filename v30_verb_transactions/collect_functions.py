@@ -56,6 +56,7 @@ class DbMethods:
             " `loc` text,"
             " `verb` text,"
             " `verb_compound` text,"
+            " `deprel` text,"
             " `feats` text);"
         )
         self._cursor.execute(
@@ -93,6 +94,7 @@ class DbMethods:
                     head["loc"],
                     head["verb"],
                     head["verb_compound"],
+                    head["deprel"],
                     head["feats"],
                 )
             )
@@ -117,9 +119,10 @@ class DbMethods:
             " loc,"
             " verb,"
             " verb_compound,"
+            " deprel,"
             " feats"
             ")"
-            " VALUES (?, ?, ?, ?, ?);",
+            " VALUES (?, ?, ?, ?, ?, ?);",
             transaction_heads,
         )
 
@@ -222,6 +225,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
             "verb": verb_lemma,
             "verb_compound": verb_compound,
             "feats": ",".join(sorted(graph.nodes[verb]["feats"])),
+            "deprel": graph.nodes[verb]["deprel"],
             "members": [],
         }
 

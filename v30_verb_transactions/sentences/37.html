@@ -1,0 +1,465 @@
+<html><head></head><body><h4>Layer</h4>
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>layer name</th>
+      <th>attributes</th>
+      <th>parent</th>
+      <th>enveloping</th>
+      <th>ambiguous</th>
+      <th>span count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v172_stanza_syntax</td>
+      <td>id, lemma, upostag, xpostag, feats, head, deprel, deps, misc, parent_span, children</td>
+      <td>morph_extended</td>
+      <td>None</td>
+      <td>False</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>text</th>
+      <th>id</th>
+      <th>lemma</th>
+      <th>upostag</th>
+      <th>xpostag</th>
+      <th>feats</th>
+      <th>head</th>
+      <th>deprel</th>
+      <th>deps</th>
+      <th>misc</th>
+      <th>parent_span</th>
+      <th>children</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kuigi</td>
+      <td>1</td>
+      <td>kuigi</td>
+      <td>J</td>
+      <td>J</td>
+      <td>{'crd': 'crd', 'sub': 'sub'}</td>
+      <td>4</td>
+      <td>mark</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('sõbranna', [{'id': 4, 'lemma': 'sõbranna', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>Jimmyl</td>
+      <td>2</td>
+      <td>Jimmyl</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'nom': 'nom', 'prop': 'prop'}</td>
+      <td>4</td>
+      <td>nsubj:cop</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('sõbranna', [{'id': 4, 'lemma': 'sõbranna', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>on</td>
+      <td>3</td>
+      <td>olema</td>
+      <td>V</td>
+      <td>V</td>
+      <td>{'af': 'af', 'pl': 'pl', 'ps': 'ps', 'aux': 'aux', 'ps3': 'ps3', 'pres': 'pres', 'indic': 'indic'}</td>
+      <td>4</td>
+      <td>cop</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('sõbranna', [{'id': 4, 'lemma': 'sõbranna', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>sõbranna</td>
+      <td>4</td>
+      <td>sõbranna</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'nom': 'nom'}</td>
+      <td>14</td>
+      <td>advcl</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('Kuigi', [{'id': 1, 'lemma': 'kuigi', 'upostag': 'J', 'xpostag': 'J', 'fe ..., type: &lt;class 'tuple'&gt;, length: 4</td>
+    </tr>
+    <tr>
+      <td>(</td>
+      <td>5</td>
+      <td>(</td>
+      <td>Z</td>
+      <td>Z</td>
+      <td>{}</td>
+      <td>7</td>
+      <td>punct</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastab', [{'id': 7, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': 'V' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>keda</td>
+      <td>6</td>
+      <td>kes</td>
+      <td>P</td>
+      <td>P</td>
+      <td>{'sg': 'sg', 'part': 'part'}</td>
+      <td>7</td>
+      <td>obj</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastab', [{'id': 7, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': 'V' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>kehastab</td>
+      <td>7</td>
+      <td>kehastama</td>
+      <td>V</td>
+      <td>V</td>
+      <td>{'af': 'af', 'ps': 'ps', 'sg': 'sg', 'aux': 'aux', 'ps3': 'ps3', 'pres': 'pres', 'indic': 'indic'}</td>
+      <td>4</td>
+      <td>parataxis</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('sõbranna', [{'id': 4, 'lemma': 'sõbranna', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('(', [{'id': 5, 'lemma': '(', 'upostag': 'Z', 'xpostag': 'Z', 'feats': {} ..., type: &lt;class 'tuple'&gt;, length: 5</td>
+    </tr>
+    <tr>
+      <td>Brittany</td>
+      <td>8</td>
+      <td>Brittany</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'gen': 'gen', 'prop': 'prop'}</td>
+      <td>7</td>
+      <td>nsubj</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastab', [{'id': 7, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': 'V' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('Murphy', [{'id': 9, 'lemma': 'Murphy', 'upostag': 'S', 'xpostag': 'S', ' ..., type: &lt;class 'tuple'&gt;, length: 1</td>
+    </tr>
+    <tr>
+      <td>Murphy</td>
+      <td>9</td>
+      <td>Murphy</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'gen': 'gen', 'prop': 'prop'}</td>
+      <td>8</td>
+      <td>flat</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('Brittany', [{'id': 8, 'lemma': 'Brittany', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>)</td>
+      <td>10</td>
+      <td>)</td>
+      <td>Z</td>
+      <td>Z</td>
+      <td>{}</td>
+      <td>7</td>
+      <td>punct</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastab', [{'id': 7, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': 'V' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>,</td>
+      <td>11</td>
+      <td>,</td>
+      <td>Z</td>
+      <td>Z</td>
+      <td>{}</td>
+      <td>7</td>
+      <td>punct</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastab', [{'id': 7, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': 'V' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>on</td>
+      <td>12</td>
+      <td>olema</td>
+      <td>V</td>
+      <td>V</td>
+      <td>{'af': 'af', 'pl': 'pl', 'ps': 'ps', 'mod': 'mod', 'ps3': 'ps3', 'pres': 'pres', 'indic': 'indic'}</td>
+      <td>14</td>
+      <td>cop</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>tõeline</td>
+      <td>13</td>
+      <td>tõeline</td>
+      <td>A</td>
+      <td>A</td>
+      <td>{'sg': 'sg', 'nom': 'nom', 'pos': 'pos'}</td>
+      <td>14</td>
+      <td>amod</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>armastus</td>
+      <td>14</td>
+      <td>armastus</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'nom': 'nom'}</td>
+      <td>0</td>
+      <td>root</td>
+      <td>_</td>
+      <td>_</td>
+      <td>None</td>
+      <td>("Span('sõbranna', [{'id': 4, 'lemma': 'sõbranna', 'upostag': 'S', 'xpostag': 'S ..., type: &lt;class 'tuple'&gt;, length: 6</td>
+    </tr>
+    <tr>
+      <td>tema</td>
+      <td>15</td>
+      <td>tema</td>
+      <td>P</td>
+      <td>P</td>
+      <td>{'sg': 'sg', 'gen': 'gen'}</td>
+      <td>16</td>
+      <td>nmod</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('elus', [{'id': 16, 'lemma': 'elu', 'upostag': 'S', 'xpostag': 'S', 'feats' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>elus</td>
+      <td>16</td>
+      <td>elu</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'in': 'in', 'sg': 'sg', 'com': 'com'}</td>
+      <td>14</td>
+      <td>nmod</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('tema', [{'id': 15, 'lemma': 'tema', 'upostag': 'P', 'xpostag': 'P', 'fea ..., type: &lt;class 'tuple'&gt;, length: 1</td>
+    </tr>
+    <tr>
+      <td>noorem</td>
+      <td>17</td>
+      <td>noorem</td>
+      <td>A</td>
+      <td>A</td>
+      <td>{'sg': 'sg', 'nom': 'nom', 'comp': 'comp'}</td>
+      <td>18</td>
+      <td>amod</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('õde', [{'id': 18, 'lemma': 'õde', 'upostag': 'S', 'xpostag': 'S', 'feats': ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>õde</td>
+      <td>18</td>
+      <td>õde</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'nom': 'nom'}</td>
+      <td>14</td>
+      <td>nsubj:cop</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('noorem', [{'id': 17, 'lemma': 'noorem', 'upostag': 'A', 'xpostag': 'A',  ..., type: &lt;class 'tuple'&gt;, length: 2</td>
+    </tr>
+    <tr>
+      <td>,</td>
+      <td>19</td>
+      <td>,</td>
+      <td>Z</td>
+      <td>Z</td>
+      <td>{}</td>
+      <td>26</td>
+      <td>punct</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastada', [{'id': 26, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': ' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>keda</td>
+      <td>20</td>
+      <td>kes</td>
+      <td>P</td>
+      <td>P</td>
+      <td>{'sg': 'sg', 'part': 'part'}</td>
+      <td>26</td>
+      <td>obj</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastada', [{'id': 26, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': ' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>vanuse</td>
+      <td>21</td>
+      <td>vanus</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'gen': 'gen'}</td>
+      <td>26</td>
+      <td>obl</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastada', [{'id': 26, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': ' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('välimuse', [{'id': 23, 'lemma': 'välimus', 'upostag': 'S', 'xpostag': 'S ..., type: &lt;class 'tuple'&gt;, length: 2</td>
+    </tr>
+    <tr>
+      <td>ja</td>
+      <td>22</td>
+      <td>ja</td>
+      <td>J</td>
+      <td>J</td>
+      <td>{'crd': 'crd', 'sub': 'sub'}</td>
+      <td>23</td>
+      <td>cc</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('välimuse', [{'id': 23, 'lemma': 'välimus', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>välimuse</td>
+      <td>23</td>
+      <td>välimus</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'gen': 'gen'}</td>
+      <td>21</td>
+      <td>conj</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('vanuse', [{'id': 21, 'lemma': 'vanus', 'upostag': 'S', 'xpostag': 'S', 'fe ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('ja', [{'id': 22, 'lemma': 'ja', 'upostag': 'J', 'xpostag': 'J', 'feats': ..., type: &lt;class 'tuple'&gt;, length: 1</td>
+    </tr>
+    <tr>
+      <td>poolest</td>
+      <td>24</td>
+      <td>poolest</td>
+      <td>K</td>
+      <td>K</td>
+      <td>{'post': 'post'}</td>
+      <td>21</td>
+      <td>case</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('vanuse', [{'id': 21, 'lemma': 'vanus', 'upostag': 'S', 'xpostag': 'S', 'fe ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>võinuks</td>
+      <td>25</td>
+      <td>võima</td>
+      <td>V</td>
+      <td>V</td>
+      <td>{'af': 'af', 'ps': 'ps', 'aux': 'aux', 'cond': 'cond', 'past': 'past'}</td>
+      <td>26</td>
+      <td>aux</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastada', [{'id': 26, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': ' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>kehastada</td>
+      <td>26</td>
+      <td>kehastama</td>
+      <td>V</td>
+      <td>V</td>
+      <td>{'inf': 'inf', 'main': 'main'}</td>
+      <td>18</td>
+      <td>acl:relcl</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('õde', [{'id': 18, 'lemma': 'õde', 'upostag': 'S', 'xpostag': 'S', 'feats': ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span(',', [{'id': 19, 'lemma': ',', 'upostag': 'Z', 'xpostag': 'Z', 'feats': { ..., type: &lt;class 'tuple'&gt;, length: 5</td>
+    </tr>
+    <tr>
+      <td>Eminemi</td>
+      <td>27</td>
+      <td>Eminem</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'gen': 'gen', 'prop': 'prop'}</td>
+      <td>28</td>
+      <td>nmod</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('tütar', [{'id': 28, 'lemma': 'tütar', 'upostag': 'S', 'xpostag': 'S', 'fea ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>tütar</td>
+      <td>28</td>
+      <td>tütar</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'com': 'com', 'nom': 'nom'}</td>
+      <td>26</td>
+      <td>nsubj</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('kehastada', [{'id': 26, 'lemma': 'kehastama', 'upostag': 'V', 'xpostag': ' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>("Span('Eminemi', [{'id': 27, 'lemma': 'Eminem', 'upostag': 'S', 'xpostag': 'S', ..., type: &lt;class 'tuple'&gt;, length: 2</td>
+    </tr>
+    <tr>
+      <td>Hailie</td>
+      <td>29</td>
+      <td>Hailie</td>
+      <td>S</td>
+      <td>S</td>
+      <td>{'sg': 'sg', 'nom': 'nom', 'prop': 'prop'}</td>
+      <td>28</td>
+      <td>appos</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('tütar', [{'id': 28, 'lemma': 'tütar', 'upostag': 'S', 'xpostag': 'S', 'fea ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+    <tr>
+      <td>.</td>
+      <td>30</td>
+      <td>.</td>
+      <td>Z</td>
+      <td>Z</td>
+      <td>{}</td>
+      <td>14</td>
+      <td>punct</td>
+      <td>_</td>
+      <td>_</td>
+      <td>Span('armastus', [{'id': 14, 'lemma': 'armastus', 'upostag': 'S', 'xpostag': 'S' ..., type: &lt;class 'estnltk_core.layer.span.Span'&gt;</td>
+      <td>()</td>
+    </tr>
+  </tbody>
+</table></body></html>
