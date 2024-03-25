@@ -12,4 +12,4 @@
 eval "$(conda shell.bash hook)"
 #conda init bash
 conda activate estnltk_collocations_py38
-srun python ./v30_fetch_examples.py
+srun python ./v30.py
