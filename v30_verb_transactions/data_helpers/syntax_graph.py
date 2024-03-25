@@ -4,7 +4,7 @@ from collections import defaultdict
 # needed for draw_graph function
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-import pygraphviz as pgv
+
 
 # from textwrap import wrap
 
@@ -124,6 +124,7 @@ class SyntaxGraph(BaseDiGraph):
         filename=None,
         highlight=[],
     ):
+        import pygraphviz as pgv
 
         # Create a default color for all nodes and a highlight color for selected nodes
         default_color = "lightskyblue"
