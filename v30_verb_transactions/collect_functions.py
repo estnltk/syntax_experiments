@@ -55,7 +55,8 @@ class DbMethods:
             " `sentence_id` text,"
             " `loc` text,"
             " `verb` text,"
-            " `verb_compound` text);"
+            " `verb_compound` text,"
+            " `feats` text);"
         )
         self._cursor.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS transaction_head_uniq"
@@ -92,6 +93,7 @@ class DbMethods:
                     head["loc"],
                     head["verb"],
                     head["verb_compound"],
+                    head["feats"],
                 )
             )
             for tr in head["members"]:
@@ -114,9 +116,10 @@ class DbMethods:
             " sentence_id,"
             " loc,"
             " verb,"
-            " verb_compound"
+            " verb_compound,"
+            " feats"
             ")"
-            " VALUES (?, ?, ?, ?);",
+            " VALUES (?, ?, ?, ?, ?);",
             transaction_heads,
         )
 
@@ -161,14 +164,12 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stdout, **kwargs)
 
 
-def extract_something(text, collection_id, data):
+def extract_something(text, collection_id, data, draw_tree=False, display_trees=False):
     """
     Collects custom data from text layers
     One sentence per text.
     # text should contain following layers:
-    * v172_obl_phrases - OBL
     * v172_stanza_syntax  - Stanza märgendus
-    * v172_clauses - osalaused
     * morph_analysis
     """
 
@@ -195,8 +196,7 @@ def extract_something(text, collection_id, data):
     # iteratsioon üle verbide
     # kogume kokku compound järjestatud
     # itereerime üle verbide
-
-    draw_tree = False
+    draw = False
     for verb in verb_nodes:
         # do skip collocation if verb is "unusual"
         if not graph.is_verb_normal(verb):
@@ -221,6 +221,7 @@ def extract_something(text, collection_id, data):
             "loc": verb,
             "verb": verb_lemma,
             "verb_compound": verb_compound,
+            "feats": ",".join(sorted(graph.nodes[verb]["feats"])),
             "members": [],
         }
 
@@ -237,9 +238,14 @@ def extract_something(text, collection_id, data):
             }
             transaction_head["members"].append(member)
         data.append(transaction_head)
-        draw_tree = True
+        draw = True
 
-    if collection_id < 20 and draw_tree:
-        graph.draw_graph2(filename=f"img/{collection_id}.png")
+    if draw_tree and draw and display_trees:
+        graph.draw_graph2(filename=f"sentences/{collection_id}.png")
+        open(f"sentences/{collection_id}.txt", "w").write(text.text)
+        open(f"sentences/{collection_id}.html", "w").write(
+            "<html><head></head><body>%s</body></html>"
+            % text["v172_stanza_syntax"]._repr_html_()
+        )
 
     return (data,)

@@ -120,10 +120,9 @@ class SyntaxGraph(BaseDiGraph):
 
     def draw_graph2(
         self,
-        title=None,
+        display=False,
         filename=None,
         highlight=[],
-        custom_colors=None,
     ):
 
         # Create a default color for all nodes and a highlight color for selected nodes
@@ -139,9 +138,18 @@ class SyntaxGraph(BaseDiGraph):
                 "lemma", ""
             )  # Default to empty string if lemma is not present
             color = highlight_color if node_id in highlight else default_color
-            G.add_node(
-                node_id, label=label, shape="ellipse", style="filled", fillcolor=color
-            )
+            if node_id:
+                G.add_node(
+                    node_id,
+                    label=label,
+                    shape="ellipse",
+                    style="filled",
+                    fillcolor=color,
+                )
+            else:
+                G.add_node(
+                    node_id, label=label, shape="none", style="none", fillcolor=color
+                )
 
         # Add edges with 'label' attribute set to the 'deprel' from the original graph
         for source, target, data in self.edges(data=True):
@@ -159,14 +167,16 @@ class SyntaxGraph(BaseDiGraph):
 
         # Draw graph to the specified file
         G.draw(filename)
-        print(f"Graph image '{filename}' has been generated.")
 
-        # Display the graph image if we're in a Jupyter notebook environment
-        img = mpimg.imread(filename)
-        plt.figure(figsize=(10, 10))
-        plt.imshow(img)
-        plt.axis("off")
-        plt.show()
+        if display:
+            # Display the graph image if we're in a Jupyter notebook environment
+            img = mpimg.imread(filename)
 
-        # Clear the current figure
-        plt.clf()
+            plt.figure(figsize=(10, 10))
+            plt.imshow(img)
+            plt.axis("off")
+            plt.show()
+
+            # Clear the current figure
+            plt.clf()
+        return
