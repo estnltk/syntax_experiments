@@ -253,7 +253,12 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
         )
         open(f"sentences/{collection_id}.txt", "w").write(text.text)
         open(f"sentences/{collection_id}.html", "w").write(
-            '<html><head></head><body><h1>%s</h1><img src="%s">%s</body></html>'
+            """<html>
+            <head>
+            <link rel="stylesheet" href="styles.css">
+            </head>
+            <body><h1>%s</h1>
+            <img src="%s">%s</body></html>"""
             % (
                 escape(text.text),
                 f"{collection_id}.png",
