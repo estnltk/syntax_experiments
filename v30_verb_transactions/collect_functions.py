@@ -2,6 +2,7 @@ import sys
 import sqlite3
 from data_helpers.utils import ListUtils
 from data_helpers.syntax_graph import SyntaxGraph
+from html import escape
 
 
 class DbMethods:
@@ -179,8 +180,6 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
     # 1. make stanza syntax graph
     graph = SyntaxGraph(text["v172_stanza_syntax"])
 
-    # graph.draw_graph2()
-
     # matrix for node distances
     dpath = graph.get_distances_matrix()
 
@@ -199,7 +198,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
     # iteratsioon üle verbide
     # kogume kokku compound järjestatud
     # itereerime üle verbide
-    draw = False
+    highlight = []
     for verb in verb_nodes:
         # do skip collocation if verb is "unusual"
         if not graph.is_verb_normal(verb):
@@ -229,10 +228,12 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
             "members": [],
         }
 
+        child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
+
         for m in sorted(kids):
             member = {
                 "loc": m,
-                "loc_rel": m - verb,
+                "loc_rel": child_pos[m] - child_pos[verb],
                 "deprel": graph.nodes[m]["deprel"],
                 "morf": "morf",
                 "form": graph.nodes[m]["form"],
@@ -242,14 +243,22 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
             }
             transaction_head["members"].append(member)
         data.append(transaction_head)
-        draw = True
+        highlight.append(verb)
 
-    if draw_tree and draw and display_trees:
-        graph.draw_graph2(filename=f"sentences/{collection_id}.png")
+    if draw_tree:
+        graph.draw_graph2(
+            filename=f"sentences/{collection_id}.png",
+            highlight=highlight,
+            display=display_trees,
+        )
         open(f"sentences/{collection_id}.txt", "w").write(text.text)
         open(f"sentences/{collection_id}.html", "w").write(
-            "<html><head></head><body>%s</body></html>"
-            % text["v172_stanza_syntax"]._repr_html_()
+            '<html><head></head><body><h1>%s</h1><img src="%s">%s</body></html>'
+            % (
+                escape(text.text),
+                f"{collection_id}.png",
+                text["v172_stanza_syntax"]._repr_html_(),
+            )
         )
 
     return (data,)
