@@ -53,8 +53,8 @@ class DbMethods:
         self._cursor.execute(
             "CREATE TABLE IF NOT EXISTS transaction_head"
             " (`id` INTEGER PRIMARY KEY AUTOINCREMENT,"
-            " `sentence_id` text,"
-            " `loc` text,"
+            " `sentence_id` int,"
+            " `loc` int,"
             " `verb` text,"
             " `verb_compound` text,"
             " `deprel` text,"
