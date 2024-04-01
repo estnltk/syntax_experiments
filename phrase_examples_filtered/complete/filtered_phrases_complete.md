@@ -1,6 +1,6 @@
 ## A-S-S
 
-Example phrase: *Tänavuse aasta alguses*
+Example phrase: *ümbritsevate pilvelõhkujate aknaist*
 
 Frequency: 278
 
@@ -16,7 +16,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 14
 
 ## S-S-S
 
-Example phrase: *kultuuriministeeriumi ninjade jõuk*
+Example phrase: *ettevõtluse tulumaksu kaotamise*
 
 Frequency: 232
 
@@ -32,7 +32,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 19
 
 ## H-S-S
 
-Example phrase: *Euroopa Ühenduste Teataja*
+Example phrase: *Eesti Vabariigi maareformi*
 
 Frequency: 201
 
@@ -48,7 +48,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 20
 
 ## S-A-S
 
-Example phrase: *silmaga nähtavat tervisehäda*
+Example phrase: *inimese normaalses elutegevuses*
 
 Frequency: 149
 
@@ -80,7 +80,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 8
 
 ## P-S-S
 
-Example phrase: *teie lolli nalja*
+Example phrase: *neid failisüsteeme vaikimisi*
 
 Frequency: 135
 
@@ -96,7 +96,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 17
 
 ## P-A-S
 
-Example phrase: *nendest saadav energiahulk*
+Example phrase: *Sellist rahvusvahelist seltskonda*
 
 Frequency: 124
 
@@ -112,7 +112,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 9
 
 ## S-S-K
 
-Example phrase: *patsiendi tervise kohta*
+Example phrase: *kuu aja jooksul*
 
 Frequency: 111
 
@@ -128,7 +128,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 7
 
 ## H-H-S
 
-Example phrase: *Madridi Reali jalgpallurid*
+Example phrase: *Euroopa Liiduga liitumiseks*
 
 Frequency: 109
 
@@ -144,7 +144,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 12
 
 ## P-S-K
 
-Example phrase: *nende kultuuride suhtes*
+Example phrase: *oma mängijate suhtes*
 
 Frequency: 103
 
@@ -160,7 +160,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 5
 
 ## S-H-H
 
-Example phrase: *Hispaanlanna Conchita Martinez*
+Example phrase: *Politoloog Rein Ruutsoo*
 
 Frequency: 93
 
@@ -176,7 +176,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 4
 
 ## A-S-K
 
-Example phrase: *kogu mängu jooksul*
+Example phrase: *vana simi eest*
 
 Frequency: 86
 
@@ -192,7 +192,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 4
 
 ## N-S-K
 
-Example phrase: *kümne teema vahel*
+Example phrase: *19 võistleja seast*
 
 Frequency: 75
 
@@ -208,7 +208,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## Z-S-Z
 
-Example phrase: *– saepuru –*
+Example phrase: *" punapassi "*
 
 Frequency: 66
 
@@ -224,7 +224,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## D-N-S
 
-Example phrase: *üle 179 punkti*
+Example phrase: *umbes nelikümmend protsenti*
 
 Frequency: 65
 
@@ -240,7 +240,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 6
 
 ## H-S-K
 
-Example phrase: *Ustimenko väljaandmise kohta*
+Example phrase: *Hebroni linna üle*
 
 Frequency: 61
 
@@ -256,7 +256,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 12
 
 ## H-S-H-H
 
-Example phrase: *Paldiski linnapea Kaupo Kallase*
+Example phrase: *Riigikohtu esimees Uno Lõhmus*
 
 Frequency: 60
 
@@ -272,7 +272,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 6
 
 ## A-A-S
 
-Example phrase: *jõuline kunstikriitiline mõte*
+Example phrase: *Korrapärane füüsiline trenn*
 
 Frequency: 54
 
@@ -288,7 +288,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 8
 
 ## K-S-S
 
-Example phrase: *pärast lapse sündi*
+Example phrase: *pärast piimasegu söömist*
 
 Frequency: 52
 
@@ -304,7 +304,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## S-Z-S
 
-Example phrase: *dial-upi*
+Example phrase: *psühholoogide-psühhiaatrite*
 
 Frequency: 48
 
@@ -320,7 +320,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 8
 
 ## H-Z-H
 
-Example phrase: *Türgi-Iraagi*
+Example phrase: *Navarro-Vallsi*
 
 Frequency: 48
 
@@ -336,7 +336,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 7
 
 ## K-N-S
 
-Example phrase: *kuni 20 protsenti*
+Example phrase: *ligi 50 organisatsioonides*
 
 Frequency: 48
 
@@ -352,7 +352,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 4
 
 ## N-S-S
 
-Example phrase: *15.000 krooni ulatuses*
+Example phrase: *22 sekundi piiri*
 
 Frequency: 48
 
@@ -368,7 +368,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 7
 
 ## O-S-S
 
-Example phrase: *2002. rahandusaasta eelarve*
+Example phrase: *2000. aasta oktoobris*
 
 Frequency: 48
 
@@ -384,7 +384,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 6
 
 ## H-A-S
 
-Example phrase: *Põhja-Eesti mereäärsetel liivaaladel*
+Example phrase: *Putini isiklikul korraldusel*
 
 Frequency: 46
 
@@ -400,7 +400,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 11
 
 ## N-N-S
 
-Example phrase: *sadu tuhandeid mobiiltelefone*
+Example phrase: *3 , 5 miljoni dollari*
 
 Frequency: 45
 
@@ -416,7 +416,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## H-H-H
 
-Example phrase: *International Herald Tribune*
+Example phrase: *Younes El Aynaouiga*
 
 Frequency: 45
 
@@ -432,7 +432,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 14
 
 ## D-P-S
 
-Example phrase: *ka sellest vaatevinklist*
+Example phrase: *ka minu allkiri*
 
 Frequency: 43
 
@@ -448,7 +448,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 5
 
 ## A-S-S-S
 
-Example phrase: *suure laulja lese olukorra*
+Example phrase: *konkureeriva kaabeltelevisooni firma kliendiga*
 
 Frequency: 41
 
@@ -464,7 +464,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 12
 
 ## Y-Z-S
 
-Example phrase: *S-keskusele*
+Example phrase: *MM - seisud*
 
 Frequency: 39
 
@@ -480,7 +480,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 8
 
 ## D-S-S
 
-Example phrase: *ka rahatrahvide suurenemine*
+Example phrase: *ainult inimese teadvuses*
 
 Frequency: 38
 
@@ -496,7 +496,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 8
 
 ## S-S-H-H
 
-Example phrase: *kultuurierinevuste asjatundja Richard Lewis*
+Example phrase: *Kaitseliidu ülem Lui Jaanson*
 
 Frequency: 33
 
@@ -512,7 +512,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 5
 
 ## Z-H-Z
 
-Example phrase: *( Can )*
+Example phrase: *( Norra )*
 
 Frequency: 32
 
@@ -528,7 +528,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 4
 
 ## H-S-S-H-H
 
-Example phrase: *Viljandi politsei abiprefekt Urmas Lindmäe*
+Example phrase: *Eesti Televisiooni juhi Tiina Kangro*
 
 Frequency: 32
 
@@ -544,7 +544,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 6
 
 ## D-D-S
 
-Example phrase: *väga palju ülepakutut*
+Example phrase: *väga palju inimesi*
 
 Frequency: 32
 
@@ -560,7 +560,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## S-Z-H
 
-Example phrase: *Lääne-Virumaa*
+Example phrase: *Lääne-Tallinna*
 
 Frequency: 32
 
@@ -576,7 +576,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 4
 
 ## H-S-S-S
 
-Example phrase: *Bravocomi roaming-partnerite arv välisriikides*
+Example phrase: *Pärnu linna kodulehekülg internetis*
 
 Frequency: 31
 
@@ -592,7 +592,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 10
 
 ## S-S-S-S
 
-Example phrase: *Mitteeestlaste Integratsiooni Sihtasutuse keelelaagrite*
+Example phrase: *eelnõusse menetlemise järjekorra määramise*
 
 Frequency: 31
 
@@ -608,7 +608,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 10
 
 ## S-A-S-S
 
-Example phrase: *Elektrivõrgu tehnilise seisundi parandamine*
+Example phrase: *planeedi eelviimase atmosfäärikihi pisimuutused*
 
 Frequency: 28
 
@@ -624,7 +624,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 9
 
 ## K-A-S
 
-Example phrase: *Enne uue leidmist*
+Example phrase: *Läbi kombeka nunnaderivi*
 
 Frequency: 27
 
@@ -640,7 +640,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 3
 
 ## A-S-A-S
 
-Example phrase: *keemiliste elementide suhtelist sisaldust*
+Example phrase: *kuningliku perekonna eelmistest visiitidest*
 
 Frequency: 26
 
@@ -656,7 +656,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 10
 
 ## P-P-S
 
-Example phrase: *Selle kõige tulemusena*
+Example phrase: *tema enda eluga*
 
 Frequency: 25
 
@@ -672,7 +672,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 11
 
 ## H-S-H
 
-Example phrase: *Käina hotellis Lõoke*
+Example phrase: *Balteco idaoperatsioonidelt Venemaal*
 
 Frequency: 24
 
@@ -688,7 +688,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 9
 
 ## N-A-S
 
-Example phrase: *200 kilomeetrise tunnikiirusega*
+Example phrase: *kolmele silmapaistvale muusikule*
 
 Frequency: 24
 
@@ -704,7 +704,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 3
 
 ## S-S-S-H-H
 
-Example phrase: *Majandusministeeriumi personaliosakonna peaspetsialisti Aili Petti*
+Example phrase: *kõnepulti keskkonnakomisjoni esimehe Arvo Haugi*
 
 Frequency: 23
 
@@ -720,7 +720,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 7
 
 ## A-S-Z
 
-Example phrase: *Lugupeetud siseminister !*
+Example phrase: *Suurepärane sõit !*
 
 Frequency: 22
 
@@ -736,7 +736,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 3
 
 ## S-S-A-S
 
-Example phrase: *pensionile jäämise eelsest palgast*
+Example phrase: *käibe vähenemise 50-protsendilise osaluse*
 
 Frequency: 22
 
@@ -752,7 +752,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 11
 
 ## D-C-S
 
-Example phrase: *kõige täpsemad aja*
+Example phrase: *juba pikemat aega*
 
 Frequency: 22
 
@@ -768,7 +768,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 2
 
 ## P-S-A-S
 
-Example phrase: *mingi arenguetapi kindlatele küsimustele*
+Example phrase: *mitu aastat vältav põud*
 
 Frequency: 22
 
@@ -784,7 +784,7 @@ Number of unique syntax trees (POS-tags and NER/TIMEX): 12
 
 ## P-N-S
 
-Example phrase: *nende kahe linnaosa*
+Example phrase: *Kõik 135 nime*
 
 Frequency: 22
 
