@@ -3,8 +3,11 @@
 Tree:
 
 1	OTHER	eelolev	3	acl
+
 2	OTHER	sügisene	3	amod
+
 3	TIMEX	pühapäev	0	root
+
 
 has_ner: False
 
@@ -20,9 +23,12 @@ count_of_tree: 1
 
 Tree:
 
-1	TIMEX	kolmapäevase	2	amod
-2	OTHER	intsidendi	0	root
-3	OTHER	kohta	2	case
+1	TIMEX	65-aastase	2	amod
+
+2	OTHER	presidendi	0	root
+
+3	OTHER	jaoks	2	case
+
 
 has_ner: False
 
@@ -39,8 +45,11 @@ count_of_tree: 3
 Tree:
 
 1	ORG	Valge	2	amod
+
 2	ORG	Maja	3	nmod
+
 3	OTHER	pressiesindaja	0	root
+
 
 has_ner: True
 
@@ -57,8 +66,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	kaasaegne	2	amod
+
 2	OTHER	ühiskond	0	root
+
 3	OTHER	elektrist	2	nmod
+
 
 has_ner: False
 
@@ -74,9 +86,12 @@ count_of_tree: 1
 
 Tree:
 
-1	TIMEX	suvise	2	amod
-2	OTHER	linnapildi	3	nmod
-3	OTHER	ilmestamiseks	0	root
+1	TIMEX	praeguste	2	amod
+
+2	OTHER	repolaenude	3	nmod
+
+3	OTHER	tähtajad	0	root
+
 
 has_ner: False
 
@@ -92,9 +107,12 @@ count_of_tree: 8
 
 Tree:
 
-1	TIMEX	eilsest	3	amod
-2	OTHER	Pühajärve	3	nmod
-3	OTHER	kuppelmaastikul	0	root
+1	TIMEX	kolmeaastast	3	amod
+
+2	OTHER	perearsti	3	nmod
+
+3	OTHER	õppeperioodi	0	root
+
 
 has_ner: False
 
@@ -111,8 +129,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	Möödunudnädalaste	2	amod
+
 2	ORG	Riigikogu	3	nmod
+
 3	OTHER	hääletustega	0	root
+
 
 has_ner: True
 
@@ -129,9 +150,13 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	järjekordse	3	amod
+
 2	LOC	Nõukogude	3	nmod
+
 3	LOC	Liidu	4	nmod
+
 4	OTHER	õigusjärgluse	0	root
+
 
 has_ner: True
 
@@ -148,9 +173,13 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	kogu	4	det
+
 2	LOC	Nõukogude	3	nmod
+
 3	LOC	Liidu	4	nmod
+
 4	OTHER	kukutamist	0	root
+
 
 has_ner: True
 
@@ -167,9 +196,13 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Valge	2	amod
+
 2	ORG	Maja	3	nmod
+
 3	OTHER	pressiesindaja	4	nmod
+
 4	OTHER	sõnul	0	root
+
 
 has_ner: True
 
@@ -186,9 +219,13 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	mullusuvise	2	amod
+
 2	OTHER	tunneliehitusega	3	nmod
+
 3	OTHER	kaubamaja	4	nmod
+
 4	OTHER	ristmikul	0	root
+
 
 has_ner: False
 
@@ -205,8 +242,11 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	22-aastane	2	amod
+
 2	OTHER	tallinlanna	0	root
+
 3	OTHER	:	2	punct
+
 
 has_ner: False
 
@@ -222,9 +262,12 @@ count_of_tree: 1
 
 Tree:
 
-1	OTHER	ka	3	advmod
-2	TIMEX	iga-aastast	3	amod
-3	OTHER	Tivolituuri	0	root
+1	OTHER	vaid	3	advmod
+
+2	TIMEX	laupäevase	3	amod
+
+3	OTHER	hommikutrenni	0	root
+
 
 has_ner: False
 
@@ -241,8 +284,11 @@ count_of_tree: 3
 Tree:
 
 1	OTHER	peale	3	case
+
 2	TIMEX	seitsme-aastasele	3	amod
+
 3	OTHER	poisile	0	root
+
 
 has_ner: False
 
@@ -259,8 +305,11 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	praegu	2	advmod
+
 2	OTHER	kehtivas	3	amod
+
 3	OTHER	seaduse	0	root
+
 
 has_ner: False
 
@@ -277,8 +326,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	veel	2	advmod
+
 2	OTHER	paar	3	nummod
+
 3	TIMEX	talve	0	root
+
 
 has_ner: False
 
@@ -295,8 +347,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	Panga	3	nmod
+
 2	TIMEX	mullune	3	amod
+
 3	OTHER	kasum	0	root
+
 
 has_ner: False
 
@@ -313,8 +368,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Eestis	2	obl
+
 2	OTHER	tegutsevate	3	acl
+
 3	OTHER	välisinvestorite	0	root
+
 
 has_ner: True
 
@@ -331,8 +389,11 @@ count_of_tree: 9
 Tree:
 
 1	LOC	Jaapani	3	amod
+
 2	OTHER	eakatest	3	amod
+
 3	OTHER	inimestest	0	root
+
 
 has_ner: True
 
@@ -348,9 +409,12 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Venemaa	3	nmod
-2	OTHER	viimasel	3	amod
-3	OTHER	ajal	0	root
+1	LOC	Norra	3	nmod
+
+2	OTHER	kuningliku	3	amod
+
+3	OTHER	perekonna	0	root
+
 
 has_ner: True
 
@@ -367,8 +431,11 @@ count_of_tree: 15
 Tree:
 
 1	PER	Putini	3	nmod
+
 2	OTHER	isiklikul	3	amod
+
 3	OTHER	korraldusel	0	root
+
 
 has_ner: True
 
@@ -385,8 +452,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Tartu	2	nmod
+
 2	OTHER	Raadi	3	nmod
+
 3	OTHER	Lennujaam	0	root
+
 
 has_ner: True
 
@@ -403,8 +473,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Vilniuses	0	root
+
 2	OTHER	John	1	appos
+
 3	OTHER	A. Cloud	2	flat
+
 
 has_ner: True
 
@@ -421,8 +494,11 @@ count_of_tree: 2
 Tree:
 
 1	LOC	San	0	root
+
 2	OTHER	Antonio	1	flat
+
 3	OTHER	Spursi	1	flat
+
 
 has_ner: True
 
@@ -439,8 +515,11 @@ count_of_tree: 1
 Tree:
 
 1	PER	Luiz	0	root
+
 2	OTHER	Felipe	1	flat
+
 3	OTHER	Scolari	1	flat
+
 
 has_ner: True
 
@@ -457,8 +536,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Sri	3	nmod
+
 2	LOC	Lankast	1	flat
+
 3	OTHER	ametivisiidilt	0	root
+
 
 has_ner: True
 
@@ -475,8 +557,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Euroopa	2	nmod
+
 2	LOC	Liidu	3	nmod
+
 3	OTHER	ühisturule	0	root
+
 
 has_ner: True
 
@@ -493,8 +578,11 @@ count_of_tree: 4
 Tree:
 
 1	ORG	Madridi	3	nmod
+
 2	ORG	Reali	1	flat
+
 3	OTHER	jalgpallurid	0	root
+
 
 has_ner: True
 
@@ -510,9 +598,12 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	Euroopa	2	nmod
-2	ORG	Liiduga	3	nmod
-3	OTHER	liitumiseks	0	root
+1	ORG	Tartu	2	nmod
+
+2	ORG	Ülikooli	3	nmod
+
+3	OTHER	ajaloo	0	root
+
 
 has_ner: True
 
@@ -528,9 +619,12 @@ count_of_tree: 5
 
 Tree:
 
-1	PER	Joao	3	nmod
-2	PER	Pinto	1	flat
-3	OTHER	puudumisel	0	root
+1	PER	Arthur	3	nmod
+
+2	PER	Laurentsi	1	flat
+
+3	OTHER	romaanil	0	root
+
 
 has_ner: True
 
@@ -547,8 +641,11 @@ count_of_tree: 31
 Tree:
 
 1	PER	Peeter	0	root
+
 2	PER	Punga	1	flat
+
 3	OTHER	eestvõtmisel	1	nmod
+
 
 has_ner: True
 
@@ -565,8 +662,11 @@ count_of_tree: 2
 Tree:
 
 1	LOC	Eesti	2	nmod
+
 2	OTHER	päritolu	3	nmod
+
 3	OTHER	Iisraeli	0	root
+
 
 has_ner: True
 
@@ -582,9 +682,12 @@ count_of_tree: 2
 
 Tree:
 
-1	LOC	Saksa	2	nmod
-2	OTHER	keel	0	root
-3	OTHER	Päevaõpe	2	appos
+1	LOC	Soome	2	nmod
+
+2	OTHER	jaekaubandusgrupi	0	root
+
+3	OTHER	Stockmann	2	appos
+
 
 has_ner: True
 
@@ -600,9 +703,12 @@ count_of_tree: 8
 
 Tree:
 
-1	LOC	Briti	2	nmod
-2	OTHER	saatkonnas	0	root
-3	OTHER	Washingtonis	2	nmod
+1	LOC	Eesti	2	nmod
+
+2	OTHER	Kirjandusmuuseumile	0	root
+
+3	OTHER	Tartus	2	nmod
+
 
 has_ner: True
 
@@ -619,8 +725,11 @@ count_of_tree: 6
 Tree:
 
 1	ORG	Neste	2	nmod
+
 2	OTHER	emafirma	0	root
+
 3	OTHER	Fortum	2	appos
+
 
 has_ner: True
 
@@ -637,8 +746,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Harju	2	nmod
+
 2	LOC	maakonnas	0	root
+
 3	OTHER	Sakus	2	nmod
+
 
 has_ner: True
 
@@ -654,10 +766,14 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	N. Liidu	2	nmod
-2	OTHER	välisministrile	0	root
-3	OTHER	Andrei	2	appos
-4	OTHER	Gromõkole	3	flat
+1	LOC	Eesti	2	nmod
+
+2	OTHER	suursaadik	0	root
+
+3	OTHER	Sven	2	appos
+
+4	OTHER	Jürgenson	3	flat
+
 
 has_ner: True
 
@@ -674,9 +790,13 @@ count_of_tree: 33
 Tree:
 
 1	LOC	Hispaania	2	nmod
+
 2	OTHER	macho	0	root
+
 3	OTHER	Enrique	2	flat
+
 4	OTHER	Iglesias	2	flat
+
 
 has_ner: True
 
@@ -693,9 +813,13 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Liibanoni	2	nmod
+
 2	OTHER	pealinnast	0	root
+
 3	LOC	Beirutist	2	appos
+
 4	OTHER	Süüriasse	3	flat
+
 
 has_ner: True
 
@@ -711,10 +835,14 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	Postimehe	2	nmod
-2	OTHER	ajalookäsitlust	0	root
-3	OTHER	Teet	2	appos
-4	OTHER	Kallase	3	flat
+1	ORG	Riigikohtu	2	nmod
+
+2	OTHER	esimees	0	root
+
+3	OTHER	Uno	2	appos
+
+4	OTHER	Lõhmus	3	flat
+
 
 has_ner: True
 
@@ -730,9 +858,12 @@ count_of_tree: 9
 
 Tree:
 
-1	LOC	Kosovo	2	nmod
-2	OTHER	kriisi	0	root
-3	OTHER	tõttu	2	case
+1	LOC	Peterburi	2	nmod
+
+2	OTHER	tee	0	root
+
+3	OTHER	ääres	2	case
+
 
 has_ner: True
 
@@ -749,8 +880,11 @@ count_of_tree: 23
 Tree:
 
 1	ORG	Kaitsepolitsei	2	nmod
+
 2	OTHER	süüdistuse	0	root
+
 3	OTHER	järgi	2	case
+
 
 has_ner: True
 
@@ -766,9 +900,12 @@ count_of_tree: 1
 
 Tree:
 
-1	PER	Ustimenko	2	nmod
-2	OTHER	väljaandmise	0	root
-3	OTHER	kohta	2	case
+1	PER	T. Rönnau	2	nmod
+
+2	OTHER	väite	0	root
+
+3	OTHER	kohaselt	2	case
+
 
 has_ner: True
 
@@ -785,8 +922,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	Kolmepäevase	2	amod
+
 2	OTHER	tervisefestivali	0	root
+
 3	OTHER	raames	2	case
+
 
 has_ner: False
 
@@ -802,9 +942,12 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Inglismaa	0	root
-2	OTHER	EM-mängu	1	nmod
-3	OTHER	tõttu	2	case
+1	LOC	Muuksi	0	root
+
+2	OTHER	bussipeatuse	1	nmod
+
+3	OTHER	lähedalt	2	case
+
 
 has_ner: True
 
@@ -821,8 +964,11 @@ count_of_tree: 5
 Tree:
 
 1	LOC	Hebroni	0	root
+
 2	LOC	linna	1	nmod
+
 3	OTHER	üle	2	case
+
 
 has_ner: True
 
@@ -838,9 +984,12 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Euroopa	2	nmod
-2	LOC	Liidu	0	root
-3	OTHER	puhul	2	case
+1	LOC	Eesti	2	nmod
+
+2	LOC	Vabariigi	0	root
+
+3	OTHER	ajal	2	case
+
 
 has_ner: True
 
@@ -856,9 +1005,12 @@ count_of_tree: 5
 
 Tree:
 
-1	ORG	Stockmanni	0	root
-2	OTHER	kaubamaja	1	nmod
-3	OTHER	asemel	2	case
+1	ORG	Talibani	0	root
+
+2	OTHER	pealetungi	1	nmod
+
+3	OTHER	eest	2	case
+
 
 has_ner: True
 
@@ -875,8 +1027,11 @@ count_of_tree: 2
 Tree:
 
 1	ORG	Sillamäe	0	root
+
 2	ORG	linnakohtu	1	nmod
+
 3	OTHER	ette	2	case
+
 
 has_ner: True
 
@@ -893,8 +1048,11 @@ count_of_tree: 1
 Tree:
 
 1	PER	Margus	0	root
+
 2	PER	Püvi	1	flat
+
 3	OTHER	ees	1	case
+
 
 has_ner: True
 
@@ -911,8 +1069,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Liibanoni	2	nmod
+
 2	OTHER	arengut	0	root
+
 3	OTHER	protokollis	2	nmod
+
 
 has_ner: True
 
@@ -929,8 +1090,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Jaapani	2	amod
+
 2	OTHER	keisri	3	nmod
+
 3	OTHER	sünnipäeva	0	root
+
 
 has_ner: True
 
@@ -946,9 +1110,12 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Soome	2	nmod
-2	OTHER	mereväe	3	nmod
-3	OTHER	laevadel	0	root
+1	LOC	Suurbritannia	2	nmod
+
+2	OTHER	valitsuskabineti	3	nmod
+
+3	OTHER	meediamonitoorijate	0	root
+
 
 has_ner: True
 
@@ -965,8 +1132,11 @@ count_of_tree: 71
 Tree:
 
 1	LOC	Torino	3	nmod
+
 2	OTHER	olümpia	3	nmod
+
 3	OTHER	teatesõidul	0	root
+
 
 has_ner: True
 
@@ -983,8 +1153,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Eesti	2	nmod
-2	LOC	Vabariigi	3	nmod
-3	OTHER	riigitegelastelt	0	root
+
+2	LOC	riigi	3	nmod
+
+3	OTHER	ajalugu	0	root
+
 
 has_ner: True
 
@@ -1000,9 +1173,12 @@ count_of_tree: 9
 
 Tree:
 
-1	ORG	Derby	2	nmod
-2	OTHER	pressiteenistuse	3	nmod
-3	OTHER	töötaja	0	root
+1	ORG	Neste	2	nmod
+
+2	OTHER	bensiini	3	nmod
+
+3	OTHER	hinda	0	root
+
 
 has_ner: True
 
@@ -1019,8 +1195,11 @@ count_of_tree: 7
 Tree:
 
 1	ORG	Hiiu	3	nmod
+
 2	ORG	Kaluri	1	flat
+
 3	OTHER	tsehhid	0	root
+
 
 has_ner: True
 
@@ -1036,9 +1215,12 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	Harvardi	2	nmod
-2	ORG	ülikooli	3	nmod
-3	OTHER	meditsiiniteadlaste	0	root
+1	ORG	Tallinna	2	nmod
+
+2	ORG	Külmhoone	3	nmod
+
+3	OTHER	peadirektorile	0	root
+
 
 has_ner: True
 
@@ -1054,9 +1236,12 @@ count_of_tree: 14
 
 Tree:
 
-1	PER	Rüütli	2	nmod
-2	OTHER	istumine	0	root
-3	OTHER	esireas	2	nmod
+1	PER	Jürgensoni	2	nmod
+
+2	OTHER	jätkamist	0	root
+
+3	OTHER	ametis	2	nmod
+
 
 has_ner: True
 
@@ -1072,9 +1257,12 @@ count_of_tree: 3
 
 Tree:
 
-1	PER	Kerttu	3	nmod
-2	PER	Rakke	1	flat
-3	OTHER	looming	0	root
+1	PER	Silvi	3	nmod
+
+2	PER	Salupere	1	flat
+
+3	OTHER	tõlkes	0	root
+
 
 has_ner: True
 
@@ -1091,8 +1279,11 @@ count_of_tree: 2
 Tree:
 
 1	LOC	Tšiili	0	root
+
 2	OTHER	vasekaevandusse	1	nmod
+
 3	OTHER	ajal	1	nmod
+
 
 has_ner: True
 
@@ -1109,8 +1300,11 @@ count_of_tree: 1
 Tree:
 
 1	PER	Erik	0	root
+
 2	PER	Konka	1	flat
+
 3	OTHER	wrote	1	flat
+
 
 has_ner: True
 
@@ -1127,8 +1321,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Mustamäe	2	nmod
+
 2	ORG	haiglas	3	nmod
+
 3	TIMEX	neljapäeval	0	root
+
 
 has_ner: True
 
@@ -1144,11 +1341,16 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Tallinna	2	nmod
-2	OTHER	külmhoone	3	nmod
-3	OTHER	turundusdirektor	0	root
-4	OTHER	Katre	3	appos
-5	OTHER	Kõvask	4	flat
+1	LOC	Vene	2	nmod
+
+2	OTHER	välisluureteenistuse	3	nmod
+
+3	OTHER	pressiesindaja	0	root
+
+4	OTHER	Tatjana	3	appos
+
+5	OTHER	Samolis	4	flat
+
 
 has_ner: True
 
@@ -1165,10 +1367,15 @@ count_of_tree: 10
 Tree:
 
 1	LOC	Eagle'i	2	nmod
+
 2	LOC	maakonna	3	nmod
+
 3	OTHER	prokurör	0	root
+
 4	OTHER	Mike	3	appos
+
 5	OTHER	Goodbee	4	flat
+
 
 has_ner: True
 
@@ -1185,10 +1392,15 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Kaiserslauterni	2	nmod
+
 2	OTHER	rootslasest	3	nmod
+
 3	OTHER	legionäri	0	root
+
 4	OTHER	Jörgen	3	appos
+
 5	OTHER	Pettersoni	4	flat
+
 
 has_ner: True
 
@@ -1204,11 +1416,16 @@ count_of_tree: 2
 
 Tree:
 
-1	ORG	Soome	2	nmod
-2	ORG	siseministeeriumi	3	nmod
-3	OTHER	inspektor	0	root
-4	OTHER	Tarmo	3	appos
-5	OTHER	Kopare	4	flat
+1	ORG	Tallinna	2	nmod
+
+2	ORG	kommunaalameti	3	nmod
+
+3	OTHER	töötaja	0	root
+
+4	OTHER	Lii	3	appos
+
+5	OTHER	Pärna	4	flat
+
 
 has_ner: True
 
@@ -1225,10 +1442,15 @@ count_of_tree: 13
 Tree:
 
 1	PER	Jeltsin	3	nmod
+
 2	OTHER	juuniori	3	nmod
+
 3	OTHER	isa	0	root
+
 4	OTHER	Aleksei	3	appos
+
 5	OTHER	Djatšenko	4	flat
+
 
 has_ner: True
 
@@ -1245,9 +1467,13 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Jaapani	2	amod
+
 2	OTHER	keisri	3	nmod
+
 3	OTHER	sünnipäeva	0	root
+
 4	OTHER	tähistamisega	3	nmod
+
 
 has_ner: True
 
@@ -1264,9 +1490,13 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Pärnu	2	nmod
+
 2	OTHER	linna	3	nmod
+
 3	OTHER	kodulehekülg	0	root
+
 4	OTHER	internetis	3	nmod
+
 
 has_ner: True
 
@@ -1282,10 +1512,14 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Lõuna-Korea	2	nmod
-2	OTHER	loodusõnnetuste	3	nmod
-3	OTHER	ennetamise	4	nmod
-4	OTHER	ametist	0	root
+1	LOC	Valgevene	2	nmod
+
+2	OTHER	julgeolekuteenistuste	3	nmod
+
+3	OTHER	karvast	4	nmod
+
+4	OTHER	kätt	0	root
+
 
 has_ner: True
 
@@ -1302,9 +1536,13 @@ count_of_tree: 3
 Tree:
 
 1	ORG	Eesti	2	nmod
+
 2	ORG	Raudtee	3	nmod
+
 3	OTHER	erastamise	4	nmod
+
 4	OTHER	läbikukkumine	0	root
+
 
 has_ner: True
 
@@ -1321,9 +1559,13 @@ count_of_tree: 9
 Tree:
 
 1	ORG	Euroopa	2	nmod
+
 2	ORG	Ühenduste	3	nmod
+
 3	ORG	Nõukogu	4	nmod
+
 4	OTHER	peasekretärile	0	root
+
 
 has_ner: True
 
@@ -1340,9 +1582,13 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Nõmme	2	nmod
+
 2	LOC	linnaosa	0	root
+
 3	OTHER	valitsusse	4	nmod
+
 4	OTHER	tutvumiseks	2	nmod
+
 
 has_ner: True
 
@@ -1358,9 +1604,12 @@ count_of_tree: 1
 
 Tree:
 
-1	LOC	Eestile	0	root
+1	LOC	Lääne	0	root
+
 2	OTHER	-	3	punct
-3	OTHER	Lätile	1	nmod
+
+3	OTHER	Virumaal	1	nmod
+
 
 has_ner: True
 
@@ -1377,8 +1626,11 @@ count_of_tree: 3
 Tree:
 
 1	LOC	Tallinna	0	root
+
 2	OTHER	-	3	punct
+
 3	OTHER	Narva	1	parataxis
+
 
 has_ner: True
 
@@ -1394,9 +1646,12 @@ count_of_tree: 5
 
 Tree:
 
-1	LOC	Haapsalu	0	root
+1	LOC	Narva	0	root
+
 2	OTHER	-	1	punct
-3	OTHER	Riisipere	1	parataxis
+
+3	OTHER	Jõesuust	1	parataxis
+
 
 has_ner: True
 
@@ -1413,8 +1668,11 @@ count_of_tree: 16
 Tree:
 
 1	ORG	Hansa	0	root
+
 2	OTHER	-	1	punct
+
 3	OTHER	Hoiu	1	parataxis
+
 
 has_ner: True
 
@@ -1431,8 +1689,11 @@ count_of_tree: 2
 Tree:
 
 1	PER	Annie	0	root
+
 2	OTHER	-	1	punct
+
 3	OTHER	Hallie	1	parataxis
+
 
 has_ner: True
 
@@ -1448,9 +1709,12 @@ count_of_tree: 4
 
 Tree:
 
-1	OTHER	Pärast	3	case
-2	TIMEX	viieaastast	3	amod
-3	OTHER	taastamist	0	root
+1	OTHER	kuni	3	case
+
+2	TIMEX	21-aastaste	3	amod
+
+3	OTHER	võistkonnad	0	root
+
 
 has_ner: False
 
@@ -1467,8 +1731,11 @@ count_of_tree: 4
 Tree:
 
 1	OTHER	läbi	3	case
+
 2	OTHER	nelja	3	nummod
+
 3	TIMEX	sajandi	0	root
+
 
 has_ner: False
 
@@ -1485,8 +1752,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	13	3	nummod
+
 2	ORG	Riigikogu	3	nmod
+
 3	OTHER	liiget	0	root
+
 
 has_ner: True
 
@@ -1502,9 +1772,12 @@ count_of_tree: 1
 
 Tree:
 
-1	OTHER	Kaks	2	nummod
-2	OTHER	võitu	0	root
-3	TIMEX	päevas	2	nmod
+1	OTHER	495	2	nummod
+
+2	OTHER	krooni	0	root
+
+3	TIMEX	kuus	2	nmod
+
 
 has_ner: False
 
@@ -1521,8 +1794,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	2000	2	nummod
+
 2	OTHER	lehekülge	3	nmod
+
 3	OTHER	kohtumaterjale	0	root
+
 
 has_ner: False
 
@@ -1538,9 +1814,12 @@ count_of_tree: 1
 
 Tree:
 
-1	TIMEX	1980ndate	2	amod
-2	OTHER	duo	3	nmod
-3	OTHER	hittidest	0	root
+1	TIMEX	2002.	2	amod
+
+2	OTHER	rahandusaasta	3	nmod
+
+3	OTHER	eelarve	0	root
+
 
 has_ner: False
 
@@ -1557,8 +1836,11 @@ count_of_tree: 2
 Tree:
 
 1	OTHER	esimese	2	amod
+
 2	OTHER	päeva	3	nmod
+
 3	TIMEX	õhtul	0	root
+
 
 has_ner: False
 
@@ -1575,8 +1857,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	oma	3	nmod
-2	TIMEX	praegusest	3	amod
-3	OTHER	kursist	0	root
+
+2	TIMEX	21-aastase	3	amod
+
+3	OTHER	sõbra	0	root
+
 
 has_ner: False
 
@@ -1593,9 +1878,13 @@ count_of_tree: 4
 Tree:
 
 1	OTHER	omaenda	2	nmod
+
 2	ORG	Keskerakonna	4	nmod
+
 3	OTHER	tumedate	4	amod
+
 4	OTHER	rahaasjade	0	root
+
 
 has_ner: True
 
@@ -1611,9 +1900,12 @@ count_of_tree: 1
 
 Tree:
 
-1	OTHER	Mitme	2	det
-2	TIMEX	aasta	0	root
-3	OTHER	peale	2	case
+1	OTHER	mõne	2	det
+
+2	TIMEX	nädala	0	root
+
+3	OTHER	jooksul	2	case
+
 
 has_ner: False
 
@@ -1630,8 +1922,11 @@ count_of_tree: 2
 Tree:
 
 1	OTHER	meie	3	nmod
+
 2	TIMEX	tänapäeva	3	nmod
+
 3	OTHER	elutempot	0	root
+
 
 has_ner: False
 
@@ -1648,8 +1943,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	samal	3	det
+
 2	OTHER	kontroll-lüpsi	3	nmod
+
 3	TIMEX	päeval	0	root
+
 
 has_ner: False
 
@@ -1666,8 +1964,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	Sellel	3	det
+
 2	TIMEX	kesknädala	3	nmod
+
 3	TIMEX	pärastlõunal	0	root
+
 
 has_ner: False
 
@@ -1684,8 +1985,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	riigimetsa	3	nmod
+
 2	TIMEX	sellekevadise	3	amod
+
 3	OTHER	raierahu	0	root
+
 
 has_ner: False
 
@@ -1702,8 +2006,11 @@ count_of_tree: 2
 Tree:
 
 1	LOC	Kesklinnas	2	obl
+
 2	OTHER	paiknev	3	acl
+
 3	OTHER	hoone	0	root
+
 
 has_ner: True
 
@@ -1720,8 +2027,11 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	nädalaid	2	obj
+
 2	OTHER	kestvaks	3	acl
+
 3	OTHER	mõnulemiseks	0	root
+
 
 has_ner: False
 
@@ -1737,9 +2047,12 @@ count_of_tree: 1
 
 Tree:
 
-1	TIMEX	aastatega	2	obl
-2	OTHER	sissetöötatud	3	acl
-3	OTHER	lühinumbritel	0	root
+1	TIMEX	kevadel	2	obl
+
+2	OTHER	marutaudivastane	3	acl
+
+3	OTHER	süst	0	root
+
 
 has_ner: False
 
@@ -1756,8 +2069,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	veebruari	3	nmod
+
 2	OTHER	keskmine	3	amod
+
 3	OTHER	õhutemperatuur	0	root
+
 
 has_ner: False
 
@@ -1774,8 +2090,11 @@ count_of_tree: 2
 Tree:
 
 1	OTHER	riigi	3	nmod
+
 2	OTHER	poliitilises	3	amod
+
 3	TIMEX	tulevikus	0	root
+
 
 has_ner: False
 
@@ -1792,9 +2111,13 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	enamus	4	nmod
+
 2	TIMEX	16-aastaseid	4	amod
+
 3	OTHER	jõusaali	4	nmod
+
 4	OTHER	kangirebijaid	0	root
+
 
 has_ner: False
 
@@ -1811,9 +2134,13 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	svastika	2	nmod
+
 2	OTHER	kasutamine	0	root
+
 3	TIMEX	nüüdisaegses	4	amod
+
 4	OTHER	kunstis	2	nmod
+
 
 has_ner: False
 
@@ -1830,9 +2157,13 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	põhjust	0	root
+
 2	TIMEX	nädalaid	3	obj
+
 3	OTHER	kestvaks	4	acl
+
 4	OTHER	mõnulemiseks	1	nmod
+
 
 has_ner: False
 
@@ -1848,10 +2179,14 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	Kaitseliidu	2	nmod
-2	OTHER	ülem	0	root
-3	OTHER	Lui	2	appos
-4	OTHER	Jaanson	3	flat
+1	ORG	Piirivalveameti	2	nmod
+
+2	OTHER	pressiesindaja	0	root
+
+3	OTHER	Sirle	2	appos
+
+4	OTHER	Kaju	3	flat
+
 
 has_ner: True
 
@@ -1868,8 +2203,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	oktoobrikuu	2	nmod
+
 2	OTHER	tulemuste	0	root
+
 3	OTHER	põhjal	2	case
+
 
 has_ner: False
 
@@ -1886,8 +2224,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Keskkriminaalpolitsei	0	root
+
 2	OTHER	majanduskuritegude	1	nmod
+
 3	OTHER	vastu	2	case
+
 
 has_ner: True
 
@@ -1903,9 +2244,12 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	Vabariigi	2	nmod
-2	ORG	Valitsuse	0	root
-3	OTHER	poole	2	case
+1	ORG	Maailma	2	nmod
+
+2	ORG	Malefondi	0	root
+
+3	OTHER	nimel	2	case
+
 
 has_ner: True
 
@@ -1922,8 +2266,11 @@ count_of_tree: 2
 Tree:
 
 1	TIMEX	märtsi	0	root
+
 2	OTHER	lõpul-aprilli	1	nmod
+
 3	OTHER	algul	2	case
+
 
 has_ner: False
 
@@ -1940,8 +2287,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	aktsiaseltsi	0	root
+
 2	ORG	Hansatee	3	nmod
+
 3	OTHER	direktorina	1	nmod
+
 
 has_ner: True
 
@@ -1958,8 +2308,11 @@ count_of_tree: 1
 Tree:
 
 1	OTHER	teose	2	nmod
+
 2	OTHER	tähendus	0	root
+
 3	TIMEX	nüüdisajas	2	nmod
+
 
 has_ner: False
 
@@ -1976,8 +2329,11 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Vanalinnas	2	nmod
+
 2	OTHER	parkimise	3	nmod
+
 3	OTHER	tunnihind	0	root
+
 
 has_ner: True
 
@@ -1994,8 +2350,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Maanteeameti	2	nmod
+
 2	OTHER	esindaja	0	root
+
 3	OTHER	sõnul	2	nmod
+
 
 has_ner: True
 
@@ -2012,8 +2371,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Riigikogu	2	nmod
+
 2	OTHER	liikmete	3	nmod
+
 3	OTHER	palvel	0	root
+
 
 has_ner: True
 
@@ -2030,8 +2392,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Vabariigi	2	nmod
+
 2	ORG	Valitsuse	3	nmod
-3	OTHER	tähelepanu	0	root
+
+3	OTHER	määrusega	0	root
+
 
 has_ner: True
 
@@ -2048,8 +2413,11 @@ count_of_tree: 3
 Tree:
 
 1	OTHER	algatusprogrammi	2	nmod
+
 2	OTHER	rakendamise	3	nmod
+
 3	TIMEX	aasta	0	root
+
 
 has_ner: False
 
@@ -2066,10 +2434,15 @@ count_of_tree: 1
 Tree:
 
 1	LOC	Vanalinna	2	nmod
+
 2	OTHER	maja	3	nmod
+
 3	OTHER	juhi	0	root
+
 4	OTHER	Tiina	3	appos
+
 5	OTHER	Mägi	4	flat
+
 
 has_ner: True
 
@@ -2086,10 +2459,15 @@ count_of_tree: 1
 Tree:
 
 1	ORG	Riigikohtu	2	nmod
+
 2	OTHER	esimehe	3	nmod
+
 3	OTHER	härra	0	root
+
 4	OTHER	Rait	3	appos
+
 5	OTHER	Maruste	4	flat
+
 
 has_ner: True
 
@@ -2106,9 +2484,13 @@ count_of_tree: 4
 Tree:
 
 1	ORG	Maaelu	2	nmod
+
 2	ORG	Arengu	3	nmod
+
 3	ORG	Instituudi	4	nmod
+
 4	OTHER	uuringud	0	root
+
 
 has_ner: True
 
@@ -2125,8 +2507,11 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	õhtust	0	root
+
 2	OTHER	-	3	punct
+
 3	TIMEX	õhtussse	1	nmod
+
 
 has_ner: False
 
@@ -2143,8 +2528,11 @@ count_of_tree: 1
 Tree:
 
 1	TIMEX	kevadeks	0	root
+
 2	OTHER	-	3	punct
+
 3	TIMEX	suveks	1	parataxis
+
 
 has_ner: False
 
@@ -2161,8 +2549,11 @@ count_of_tree: 1
 Tree:
 
 1	ORG	S	3	parataxis
+
 2	OTHER	-	3	punct
+
 3	OTHER	keskusele	0	root
+
 
 has_ner: True
 
@@ -2178,9 +2569,12 @@ count_of_tree: 1
 
 Tree:
 
-1	ORG	K	0	root
+1	ORG	EM	0	root
+
 2	OTHER	-	1	punct
-3	OTHER	Projekt	1	parataxis
+
+3	OTHER	valikmängu	1	parataxis
+
 
 has_ner: True
 
@@ -2197,8 +2591,11 @@ count_of_tree: 4
 Tree:
 
 1	OTHER	(	2	punct
-2	LOC	Guatemala	0	root
+
+2	LOC	Soome	0	root
+
 3	OTHER	)	2	punct
+
 
 has_ner: True
 
@@ -2214,9 +2611,12 @@ count_of_tree: 9
 
 Tree:
 
-1	OTHER	-	2	punct
-2	ORG	TETRAHÜDROKANNABINOOLI	0	root
+1	OTHER	(	2	punct
+
+2	ORG	Can	0	root
+
 3	OTHER	)	2	punct
+
 
 has_ner: True
 
@@ -2233,8 +2633,11 @@ count_of_tree: 3
 Tree:
 
 1	OTHER	"	2	punct
-2	PER	Faehlmann	0	root
+
+2	PER	Dominaator	0	root
+
 3	OTHER	"	2	punct
+
 
 has_ner: True
 
@@ -2251,8 +2654,11 @@ count_of_tree: 7
 Tree:
 
 1	OTHER	-	2	punct
+
 2	PER	Ühendkuningriik	0	root
+
 3	OTHER	,	2	punct
+
 
 has_ner: True
 
