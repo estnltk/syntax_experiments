@@ -1,0 +1,43 @@
+1 PER 0 root H,2 OTHER 1 flat H,3 OTHER 1 flat H
+1 LOC 2 nmod G,2 OTHER 0 root S
+1 LOC 2 nmod H,2 OTHER 0 root D
+1 LOC 2 nmod H,2 OTHER 0 root H
+1 LOC 2 nmod H,2 OTHER 0 root S
+1 ORG 2 nmod S,2 OTHER 0 root S
+1 ORG 2 nmod Y,2 OTHER 0 root S
+1 LOC 2 amod G,2 OTHER 0 root S
+1 LOC 2 amod H,2 OTHER 0 root S
+1 LOC 2 nmod H,2 OTHER 0 root S,3 OTHER 2 appos H,4 OTHER 3 flat H
+1 ORG 2 nmod H,2 OTHER 0 root S,3 OTHER 2 appos H,4 OTHER 3 flat S
+1 LOC 2 nmod H,2 OTHER 0 root S,3 OTHER 2 appos H,4 OTHER 3 flat Y
+1 LOC 2 nmod H,2 OTHER 0 root S,3 OTHER 2 appos S,4 OTHER 3 flat H
+1 ORG 2 nmod S,2 OTHER 0 root S,3 OTHER 2 appos H,4 OTHER 3 flat H
+1 ORG 2 nmod S,2 OTHER 0 root S,3 OTHER 2 appos S,4 OTHER 3 flat H
+1 LOC 2 nmod Y,2 OTHER 0 root S,3 OTHER 2 appos H,4 OTHER 3 flat H
+1 LOC 2 obl H,2 OTHER 3 acl A,3 OTHER 0 root S
+1 PER 2 nmod H,2 OTHER 0 root S,3 OTHER 2 nmod S
+1 LOC 2 obl A,2 OTHER 3 acl A,3 OTHER 0 root S
+1 LOC 2 obl Y,2 OTHER 3 acl A,3 OTHER 0 root S
+1 OTHER 3 advmod D|I,2 PER 3 nmod H,3 OTHER 0 root S
+1 OTHER 3 advmod D,2 LOC 3 nmod H,3 OTHER 0 root S
+1 OTHER 3 advmod S,2 LOC 3 nmod H,3 OTHER 0 root S
+1 LOC 3 amod H,2 OTHER 3 amod A,3 OTHER 0 root S
+1 LOC 3 amod H,2 OTHER 3 amod O,3 OTHER 0 root S
+1 OTHER 3 amod A,2 LOC 3 nmod G,3 OTHER 0 root S
+1 OTHER 3 amod A,2 LOC 3 nmod H,3 OTHER 0 root S
+1 TIMEX 3 amod A,2 LOC 3 nmod Y,3 OTHER 0 root S
+1 OTHER 3 amod O,2 LOC 3 nmod H,3 OTHER 0 root S
+1 OTHER 3 det P|N,2 LOC 3 nmod H,3 OTHER 0 root S
+1 OTHER 3 det A,2 LOC 3 nmod H,3 OTHER 0 root S
+1 OTHER 3 det P,2 LOC 3 nmod H,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 amod A,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 amod C,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 amod O,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 amod U,3 OTHER 0 root S
+1 ORG 3 nmod Y,2 OTHER 3 amod A,3 OTHER 0 root S
+1 LOC 3 nmod Y,2 OTHER 3 amod C,3 OTHER 0 root S
+1 ORG 3 nmod Y,2 OTHER 3 amod U,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 nmod S,3 OTHER 0 root S
+1 LOC 3 nmod H,2 OTHER 3 nmod Y,3 OTHER 0 root S
+1 OTHER 3 nmod P,2 LOC 3 nmod H,3 OTHER 0 root S
+1 TIMEX 3 nmod S,2 LOC 3 nmod H,3 OTHER 0 root S

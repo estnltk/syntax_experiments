@@ -1,0 +1,43 @@
+PER root H,OTHER flat H,OTHER flat H
+LOC nmod G,OTHER root S
+LOC nmod H,OTHER root D
+LOC nmod H,OTHER root H
+LOC nmod H,OTHER root S
+ORG nmod S,OTHER root S
+ORG nmod Y,OTHER root S
+LOC amod G,OTHER root S
+LOC amod H,OTHER root S
+LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H
+ORG nmod H,OTHER root S,OTHER appos H,OTHER flat S
+LOC nmod H,OTHER root S,OTHER appos H,OTHER flat Y
+LOC nmod H,OTHER root S,OTHER appos S,OTHER flat H
+ORG nmod S,OTHER root S,OTHER appos H,OTHER flat H
+ORG nmod S,OTHER root S,OTHER appos S,OTHER flat H
+LOC nmod Y,OTHER root S,OTHER appos H,OTHER flat H
+LOC obl H,OTHER acl A,OTHER root S
+PER nmod H,OTHER root S,OTHER nmod S
+LOC obl A,OTHER acl A,OTHER root S
+LOC obl Y,OTHER acl A,OTHER root S
+OTHER advmod D|I,PER nmod H,OTHER root S
+OTHER advmod D,LOC nmod H,OTHER root S
+OTHER advmod S,LOC nmod H,OTHER root S
+LOC amod H,OTHER amod A,OTHER root S
+LOC amod H,OTHER amod O,OTHER root S
+OTHER amod A,LOC nmod G,OTHER root S
+OTHER amod A,LOC nmod H,OTHER root S
+TIMEX amod A,LOC nmod Y,OTHER root S
+OTHER amod O,LOC nmod H,OTHER root S
+OTHER det P|N,LOC nmod H,OTHER root S
+OTHER det A,LOC nmod H,OTHER root S
+OTHER det P,LOC nmod H,OTHER root S
+LOC nmod H,OTHER amod A,OTHER root S
+LOC nmod H,OTHER amod C,OTHER root S
+LOC nmod H,OTHER amod O,OTHER root S
+LOC nmod H,OTHER amod U,OTHER root S
+ORG nmod Y,OTHER amod A,OTHER root S
+LOC nmod Y,OTHER amod C,OTHER root S
+ORG nmod Y,OTHER amod U,OTHER root S
+LOC nmod H,OTHER nmod S,OTHER root S
+LOC nmod H,OTHER nmod Y,OTHER root S
+OTHER nmod P,LOC nmod H,OTHER root S
+TIMEX nmod S,LOC nmod H,OTHER root S

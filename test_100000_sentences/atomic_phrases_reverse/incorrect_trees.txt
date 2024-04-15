@@ -1,0 +1,244 @@
+## Tree_graph: ((0, 1, root),(1, 2, flat),(1, 3, flat)) (False)
+
+tree:
+1	PER	Hanno	0	root
+
+2	PER	Soansi	1	flat
+
+3	OTHER	i	1	flat
+
+POS-sequence:H-H-Y
+
+%_phrases_with_ner: 50.0
+
+count_of_tree: 4
+
+%_all_trees: 0.03
+
+
+## Tree_graph: ((0, 1, root),(1, 2, flat),(1, 3, flat)) (False)
+
+tree:
+1	PER	Erik	0	root
+
+2	PER	Konka	1	flat
+
+3	OTHER	wrote	1	flat
+
+POS-sequence:H-S-S
+
+%_phrases_with_ner: 100.0
+
+count_of_tree: 1
+
+%_all_trees: 0.01
+
+
+## Tree_graph: ((0, 1, root),(1, 2, nmod)) (False)
+
+tree:
+1	LOC	Iraagi	0	root
+
+2	OTHER	pantvangiv�tjatelt	1	nmod
+
+POS-sequence:H-S
+
+%_phrases_with_ner: 25.806451612903224
+
+count_of_tree: 31
+
+%_all_trees: 0.25
+
+
+## Tree_graph: ((0, 1, root),(1, 2, nmod)) (False)
+
+tree:
+1	ORG	SPD	0	root
+
+2	OTHER	kantslerikandidaadina	1	nmod
+
+POS-sequence:Y-S
+
+%_phrases_with_ner: 25.0
+
+count_of_tree: 8
+
+%_all_trees: 0.06
+
+
+## Tree_graph: ((0, 2, root),(2, 1, nmod)) (False)
+
+tree:
+1	LOC	Eesti	2	nmod
+
+2	OTHER	�he	0	root
+
+POS-sequence:H-(P|N)
+
+%_phrases_with_ner: 100.0
+
+count_of_tree: 1
+
+%_all_trees: 0.01
+
+
+## Tree_graph: ((0, 1, root),(1, 2, punct),(1, 3, nmod)) (False)
+
+tree:
+1	LOC	Kohtla	0	root
+
+2	OTHER	-	1	punct
+
+3	OTHER	J�rvel	1	nmod
+
+POS-sequence:H-Z-S
+
+%_phrases_with_ner: 33.33333333333333
+
+count_of_tree: 6
+
+%_all_trees: 0.05
+
+
+## Tree_graph: ((0, 2, root),(2, 1, nmod),(2, 3, nmod)) (False)
+
+tree:
+1	LOC	Iisraeli	2	nmod
+
+2	OTHER	valitsusjuht	0	root
+
+3	OTHER	Peterburi	2	nmod
+
+POS-sequence:H-S-H
+
+%_phrases_with_ner: 77.77777777777779
+
+count_of_tree: 9
+
+%_all_trees: 0.07
+
+
+## Tree_graph: ((0, 2, root),(2, 1, punct),(2, 3, punct)) (False)
+
+tree:
+1	OTHER	(	2	punct
+
+2	LOC	Rootsi	0	root
+
+3	OTHER	)	2	punct
+
+POS-sequence:Z-H-Z
+
+%_phrases_with_ner: 59.375
+
+count_of_tree: 32
+
+%_all_trees: 0.25
+
+
+## Tree_graph: ((0, 2, root),(2, 1, punct),(2, 3, punct)) (False)
+
+tree:
+1	OTHER	-	2	punct
+
+2	PER	�hendkuningriik	0	root
+
+3	OTHER	,	2	punct
+
+POS-sequence:Z-S-Z
+
+%_phrases_with_ner: 1.5151515151515151
+
+count_of_tree: 66
+
+%_all_trees: 0.52
+
+
+## Tree_graph: ((0, 2, root),(2, 1, punct),(2, 3, punct)) (False)
+
+tree:
+1	OTHER	(	2	punct
+
+2	ORG	EPLO	0	root
+
+3	OTHER	)	2	punct
+
+POS-sequence:Z-Y-Z
+
+%_phrases_with_ner: 84.21052631578947
+
+count_of_tree: 19
+
+%_all_trees: 0.15
+
+
+## Tree_graph: ((0, 3, root),(3, 1, nmod),(3, 2, amod)) (False)
+
+tree:
+1	LOC	Eesti	3	nmod
+
+2	OTHER	teise	3	amod
+
+3	OTHER	autok�tuste	0	root
+
+POS-sequence:H-(P|O)-S
+
+%_phrases_with_ner: 100.0
+
+count_of_tree: 1
+
+%_all_trees: 0.01
+
+
+## Tree_graph: ((0, 3, root),(3, 1, punct),(3, 2, nmod)) (False)
+
+tree:
+1	OTHER	,	3	punct
+
+2	LOC	Arkaadia	3	nmod
+
+3	OTHER	toimetaja	0	root
+
+POS-sequence:Z-H-S
+
+%_phrases_with_ner: 20.0
+
+count_of_tree: 5
+
+%_all_trees: 0.04
+
+
+## Tree_graph: ((0, 3, root),(3, 1, punct),(3, 2, nmod)) (False)
+
+tree:
+1	PER	'	3	punct
+
+2	PER	Teksti	3	nmod
+
+3	OTHER	kontsentratsioon	0	root
+
+POS-sequence:Z-S-S
+
+%_phrases_with_ner: 7.142857142857142
+
+count_of_tree: 14
+
+%_all_trees: 0.11
+
+
+## Tree_graph: ((0, 3, root),(3, 1, punct),(3, 2, nmod)) (False)
+
+tree:
+1	OTHER	/	3	punct
+
+2	ORG	BNS	3	nmod
+
+3	OTHER	kuninganna	0	root
+
+POS-sequence:Z-Y-S
+
+%_phrases_with_ner: 50.0
+
+count_of_tree: 2
+
+%_all_trees: 0.02

@@ -1,0 +1,481 @@
+pattern,phrase
+string,string
+"PER root H,OTHER flat H,OTHER flat H",Luiz Felipe Scolari
+"LOC amod H,OTHER root S",Jaapani välispoliitika
+"LOC amod G,OTHER root S",Saksa presidendiks
+"ORG nmod Y,OTHER root S",ETA andmetel
+"LOC nmod H,OTHER root S",Eesti sõjaväes
+"LOC nmod H,OTHER root S",Eesti infoserverite
+"LOC nmod H,OTHER root S",Eesti metsadest
+"LOC nmod G,OTHER root S",Gruusia valimissohi
+"LOC nmod H,OTHER root S",Eesti meistrivõistluste
+"LOC nmod H,OTHER root S",Vene õigeusu
+"LOC nmod H,OTHER root S",Vene õigeusu
+"ORG nmod Y,OTHER root S",NASA teadlased
+"LOC nmod H,OTHER root S",Eesti kapitalil
+"LOC nmod H,OTHER root S",Eesti meistriks
+"LOC nmod H,OTHER root S",Eesti hülgeuurijad
+"LOC nmod H,OTHER root S",Venemaa dissidentide
+"LOC nmod G,OTHER root S",Prantsuse klubi
+"LOC nmod H,OTHER root S",Itaalia turniir
+"ORG nmod Y,OTHER root S",NATO õhurünnakute
+"LOC nmod H,OTHER root S",Eesti vaatajad
+"LOC nmod G,OTHER root S",Gruusia delegatsiooni
+"LOC nmod H,OTHER root S",Tallinna meeskonda
+"LOC nmod H,OTHER root S",Vene hinnangu
+"LOC nmod H,OTHER root S",Tallinna vanalinnas
+"LOC nmod H,OTHER root S",Tartu valijad
+"ORG nmod Y,OTHER root S",EBRD juristid
+"LOC nmod H,OTHER root S",Pärtli sõnul
+"LOC nmod H,OTHER root S",Briti meedikud
+"LOC nmod H,OTHER root S",Eesti numbrimärkidega
+"LOC nmod H,OTHER root S",Eesti rekorditena
+"LOC nmod H,OTHER root S",Eesti pressi
+"ORG nmod S,OTHER root S",Riigikogu kõnepulti
+"LOC nmod H,OTHER root S",Rapla kandis
+"LOC nmod H,OTHER root S",Peterburi delegatsiooniga
+"LOC nmod H,OTHER root S",Tallinna elamuehituseks
+"LOC nmod H,OTHER root S",Soome operaatorfirmad
+"LOC nmod H,OTHER root S",Soome marka
+"LOC nmod H,OTHER root S",Eesti lippu
+"LOC nmod H,OTHER root S",Euroopa tippklubides
+"ORG nmod Y,OTHER root S",ELi tulevikku
+"LOC nmod H,OTHER root S",Iraagi Rahvuskongressi
+"LOC nmod H,OTHER root S",Iisraeli vägede
+"ORG nmod Y,OTHER root S",ÜRO rahuvägede
+"LOC nmod H,OTHER root S",Haapsalu vedur
+"ORG nmod Y,OTHER root S",AP teatel
+"LOC nmod H,OTHER root S",Eesti urbanistika
+"ORG nmod S,OTHER root S",Riigikogu menetluses
+"ORG nmod S,OTHER root S",Keskkriminaalpolitsei andmetel
+"LOC nmod H,OTHER root S",Soome vetes
+"LOC nmod H,OTHER root S",Läänemere naftavarude
+"ORG nmod Y,OTHER root S",NATO õhurünnakutega
+"LOC nmod H,OTHER root S",Shveitsi pangas
+"ORG nmod Y,OTHER root S",XL-i nimi
+"LOC nmod H,OTHER root S",Eesti noormehest
+"LOC nmod H,OTHER root S",Eesti tippjuhtidest
+"LOC nmod H,OTHER root S",Eesti inimesele
+"LOC nmod H,OTHER root S",Tartu rahulepingut
+"LOC nmod H,OTHER root S",Järve veerezhiim
+"ORG nmod Y,OTHER root S",EPL-is väidetust
+"LOC nmod H,OTHER root D",Eesti liiga
+"LOC nmod H,OTHER root S",Eesti kultuuripäevadelt
+"LOC nmod H,OTHER root S",Eesti medalilootusi
+"LOC nmod H,OTHER root S",Rootsi pool
+"LOC nmod H,OTHER root S",Soome valitsusametniku
+"ORG nmod Y,OTHER root S",ERO esimehe
+"LOC nmod H,OTHER root S",Pirita omaniku
+"LOC nmod H,OTHER root S",Lääne-Virumaa tervisekaitsetalituse
+"ORG nmod S,OTHER root S",Riigikogu esimees
+"LOC nmod H,OTHER root S",Rootsi palliväljakutel
+"LOC nmod H,OTHER root S",Eesti toidu
+"LOC nmod H,OTHER root S",Vene välisluureteenistuse
+"LOC nmod H,OTHER root S",Moskva nõrkust
+"LOC nmod H,OTHER root S",Lääne maavalitsus
+"LOC nmod H,OTHER root S",Schengeni viisaruumiga
+"LOC nmod H,OTHER root S",Eesti töötajaid
+"LOC nmod H,OTHER root S",Eesti luure
+"LOC nmod H,OTHER root S",Austria firma
+"LOC nmod H,OTHER root S",Venemaa mõjusfäärist
+"LOC nmod H,OTHER root S",Hamburgi tenniseturniiri
+"ORG nmod Y,OTHER root S",NATO allikad
+"LOC nmod H,OTHER root S",Eesti tolmu
+"LOC nmod H,OTHER root S",Saksamaa jalgpalli
+"LOC nmod H,OTHER root S",Iisraeli ajaloos
+"LOC nmod H,OTHER root S",Briti majapidamised
+"LOC nmod H,OTHER root S",Soome noorsugu
+"LOC nmod H,OTHER root S",Euroopa lepingutes
+"LOC nmod H,OTHER root S",Iisraeli armee
+"LOC nmod H,OTHER root S",Eesti päästeüksuse
+"LOC nmod H,OTHER root S",Eesti turismifirmad
+"LOC nmod H,OTHER root S",Baltimaade riigipiiride
+"ORG nmod S,OTHER root S",Riigikogu liige
+"LOC nmod H,OTHER root S",Vene sõjavägi
+"LOC nmod H,OTHER root S",Eesti äriringkonnad
+"LOC nmod H,OTHER root S",Torino olümpia
+"LOC nmod H,OTHER root S",Pärnu puhkemajandusse
+"LOC nmod H,OTHER root S",Vene suund
+"LOC nmod H,OTHER root S",Tartu rahulepingule
+"LOC nmod H,OTHER root S",Eesti väiksuse
+"LOC nmod H,OTHER root S",Eesti kaupade
+"ORG nmod Y,OTHER root S",NBA juhtkonda
+"ORG nmod Y,OTHER root S",ELiga liitumist
+"LOC nmod H,OTHER root S",Eesti ekspordist
+"LOC nmod H,OTHER root S",Soome mereväe
+"LOC nmod H,OTHER root S",Eesti kontinuiteedipoliitikast
+"LOC nmod H,OTHER root S",Eesti ratsaspordilooga
+"ORG nmod Y,OTHER root S",NATO-sse astumine
+"LOC nmod H,OTHER root S",Eesti publikuni
+"LOC nmod H,OTHER root S",Tallinna söögikohtades
+"ORG nmod Y,OTHER root S",OSCE missiooni
+"LOC nmod H,OTHER root S",Iisraeli väed
+"LOC nmod H,OTHER root S",Eesti kirjanduses
+"LOC nmod H,OTHER root S",Vene-Ukraina suhetes
+"ORG nmod S,OTHER root S",Maanteeameti esindaja
+"ORG nmod Y,OTHER root S",WTO tõstmist
+"LOC nmod H,OTHER root S",Eesti uurijal
+"ORG nmod S,OTHER root S",Riigikogu väliskomisjoni
+"ORG nmod Y,OTHER root S",BNSi teatel
+"LOC nmod H,OTHER root S",Jyväskylä ümbruse
+"ORG nmod S,OTHER root S",Riigikogu liikmed
+"LOC nmod H,OTHER root S",Eesti tooted
+"LOC nmod H,OTHER root S",Eesti elanikke
+"LOC nmod H,OTHER root S",Eesti rahaasutused
+"LOC nmod H,OTHER root S",Eesti meistrivõistlustest
+"LOC nmod H,OTHER root S",Bonni konventsioon
+"LOC nmod H,OTHER root S",Euraasia-Aafrika rändveelindude
+"LOC nmod H,OTHER root S",Venemaa hokimeistrit
+"LOC nmod H,OTHER root S",Eesti jalgpallikoondise
+"LOC nmod H,OTHER root S",Eesti õhuväel
+"LOC nmod H,OTHER root S",Moskva ettepanekule
+"LOC nmod H,OTHER root S",Eesti lipu
+"LOC nmod H,OTHER root S",Narva lambid
+"LOC nmod H,OTHER root S",Eesti kapitalil
+"ORG nmod S,OTHER root S",Riigikogu põhiseaduskomisjon
+"LOC nmod H,OTHER root S",Tartu bussijaama
+"LOC nmod H,OTHER root S",Valgevene julgeolekuteenistuste
+"LOC nmod H,OTHER root S",Venezuela võimud
+"ORG nmod Y,OTHER root S",EBRD toetus
+"LOC nmod H,OTHER root S",Ameerika poolelt
+"LOC nmod H,OTHER root S",Eesti palgatase
+"LOC nmod H,OTHER root S",Soome reklaamieetika
+"LOC nmod H,OTHER root S",Eesti lennuväe
+"LOC nmod H,OTHER root S",Eesti ajakirjanduse
+"ORG nmod Y,OTHER root S",CBS-i televõrgu
+"LOC nmod H,OTHER root S",Briti mees
+"LOC nmod H,OTHER root S",Eesti maainimest
+"LOC nmod H,OTHER root S",Läti meeskonnalt
+"LOC nmod H,OTHER root S",Tšetšeenia põgenikele
+"LOC nmod H,OTHER root S",Ukraina president
+"LOC nmod H,OTHER root S",Nõmme ilmaga
+"LOC nmod H,OTHER root S",Eesti sumonaisel
+"LOC nmod H,OTHER root S",India keisrinnaks
+"ORG nmod Y,OTHER root S",Tele2 juhatuse
+"ORG nmod S,OTHER root S",Riigikogu väliskomisjoni
+"LOC nmod H,OTHER root S",Leedu elektroonikaala
+"LOC nmod H,OTHER root S",Ulila pumbamaja
+"LOC nmod H,OTHER root S",Eesti lähinaabritest
+"LOC nmod H,OTHER root S",Pärnu noorte
+"LOC nmod H,OTHER root S",Venemaale tagasipöördumiseks
+"LOC nmod H,OTHER root S",Venemaa president
+"ORG nmod Y,OTHER root S",ETV ekraanil
+"LOC nmod H,OTHER root S",Alutaguse metsades
+"LOC nmod H,OTHER root S",Chicago meeskond
+"LOC nmod H,OTHER root S",Austria televaatajaile
+"LOC nmod H,OTHER root S",Eesti jalgpalli
+"LOC nmod H,OTHER root S",Eesti iseseisvuse
+"ORG nmod S,OTHER root S",Statistikaameti andmetel
+"LOC nmod H,OTHER root S",Eesti filmi
+"LOC nmod H,OTHER root S",Tiibeti taasvabastamist
+"ORG nmod S,OTHER root S",Riigikogu põhiseaduskomisjoni
+"LOC nmod H,OTHER root S",Lihula samba
+"LOC nmod H,OTHER root S",Eesti meistrivõistlused
+"LOC nmod H,OTHER root S",Eesti korvpallikoondise
+"LOC nmod H,OTHER root S",Klooga polügoonil
+"ORG nmod Y,OTHER root S",FJB agendid
+"LOC nmod H,OTHER root S",Eesti meistritiitli
+"LOC nmod H,OTHER root S",Riia juudi
+"LOC nmod H,OTHER root S",Eesti päritolu
+"LOC nmod H,OTHER root S",Eesti sunniitide
+"LOC nmod H,OTHER root S",Hispaania meeskondi
+"ORG nmod S,OTHER root S",Riigikogu menetlusse
+"LOC nmod H,OTHER root S",Itaalia olümpiakomitee
+"LOC nmod H,OTHER root S",Euroopa suunal
+"LOC nmod H,OTHER root S",Tartu kohtumaja
+"LOC nmod H,OTHER root S",Valgevene president
+"LOC nmod H,OTHER root S",Saksa meedia
+"LOC nmod H,OTHER root S",Euroopa turgudel
+"LOC nmod H,OTHER root S",Eesti vastuvõtuga
+"LOC nmod H,OTHER root H",Soome Nokiat
+"LOC nmod H,OTHER root S",Eesti liikmemaksu
+"LOC nmod H,OTHER root S",Peterburi tee
+"LOC nmod H,OTHER root S",Eesti keel
+"ORG nmod Y,OTHER root S",BBCi saadet
+"LOC nmod H,OTHER root S",Euroopa energiasüsteemiga
+"LOC nmod H,OTHER root S",Venemaa energiasüsteemist
+"LOC nmod H,OTHER root S",Eesti energiasüsteem
+"LOC nmod H,OTHER root S",Vene eriteenistuse
+"LOC nmod H,OTHER root S",Valga piiripunktis
+"LOC nmod H,OTHER root S",Eestisse saabumisel
+"LOC nmod H,OTHER root S",Eesti levimuusikas
+"LOC nmod H,OTHER root S",Leedu tsemendi
+"ORG nmod Y,OTHER root S",NATO partneritena
+"LOC nmod H,OTHER root S",Puškini teosel
+"LOC nmod H,OTHER root S",Eestile-Lätile appiruttajaid
+"LOC nmod H,OTHER root S",Saksamaa õigusakte
+"LOC nmod H,OTHER root S",Eesti kroon
+"LOC nmod H,OTHER root S",Eesti mainet
+"LOC nmod H,OTHER root S",Läti sisepoliitikas
+"LOC nmod H,OTHER root S",Eesti pere
+"ORG nmod S,OTHER root S",Kaitseliidu mainet
+"LOC nmod H,OTHER root S",Tartu kaugküttetehinguga
+"LOC nmod H,OTHER root S",Eesti meeste
+"LOC nmod H,OTHER root S",Eesti kodanikke
+"LOC nmod H,OTHER root S",Saksamaa hiilguseks
+"LOC nmod H,OTHER root S",Eesti võimud
+"ORG nmod Y,OTHER root S",NATO liikmeks
+"ORG nmod Y,OTHER root S",ETKVLi võimlas
+"LOC nmod H,OTHER root S",Tšernobõli kogemus
+"LOC nmod H,OTHER root S",Eesti-Poola suhetest
+"LOC nmod H,OTHER root S",Euroopa meistrivõistlused
+"ORG nmod Y,OTHER root S",EL idalaiendus
+"ORG nmod S,OTHER root S",Riigikogu liikmete
+"ORG nmod S,OTHER root S",Riigikogu liikmete
+"LOC nmod H,OTHER root S",Briti sektorisse
+"ORG nmod Y,OTHER root S",ÜRO relvainspektorite
+"LOC nmod H,OTHER root S",Poola zlott
+"LOC nmod H,OTHER root S",Venemaa kodanikke
+"LOC nmod H,OTHER root S",Kanama rist
+"LOC nmod H,OTHER root S",Eesti kroonidesse
+"LOC nmod G,OTHER root S",Prantsuse lütseumis
+"ORG nmod Y,OTHER root S",NASA ajaloos
+"LOC nmod H,OTHER root S",Tallinna meepottidest
+"LOC nmod H,OTHER root S",Palestiina farmerite
+"LOC nmod H,OTHER root S",Põhjamaade tipptreenerite
+"LOC nmod H,OTHER root S",Eesti energeetikutele
+"LOC nmod H,OTHER root S",Eesti põllumehe
+"ORG nmod S,OTHER root S",Majandusministeeriumi personaliosakonna
+"LOC nmod H,OTHER root S",Eesti normidele
+"LOC nmod H,OTHER root S",Niguliste ümbrus
+"LOC nmod H,OTHER root S",Vene tüdrukud
+"LOC nmod H,OTHER root S",Eesti geenivaramu
+"LOC nmod H,OTHER root S",Venemaa miljonäridele
+"LOC nmod H,OTHER root S",Vene võimud
+"LOC nmod H,OTHER root S",Pennsylvania meeskonna
+"LOC nmod H,OTHER root S",Eesti välispoliitika
+"LOC nmod H,OTHER root S",Eesti koondise
+"LOC nmod H,OTHER root S",Eesti koondislased
+"LOC nmod H,OTHER root S",Eesti ühiskonna
+"LOC nmod H,OTHER root S",Kohtla kaevanduses
+"LOC nmod H,OTHER root S",Leedu kodanikud
+"LOC nmod H,OTHER root S",Venemaa kultuuriministri
+"LOC nmod H,OTHER root S",Lyoni operatsioonile
+"LOC nmod H,OTHER root S",Abhaasia eestlaste
+"LOC nmod H,OTHER root S",Eesti armee
+"ORG nmod S,OTHER root S",Riigikogu keskfraktsioon
+"LOC nmod H,OTHER root S",Rootsi relvajõududelt
+"LOC nmod H,OTHER root S",Tšiili vasekaevandusse
+"LOC nmod H,OTHER root S",Venemaa liberaaldemokraatide
+"LOC nmod H,OTHER root S",Kaspia staatus
+"LOC nmod H,OTHER root S",Eesti koertest
+"LOC nmod H,OTHER root S",Nõukogude väed
+"LOC nmod H,OTHER root S",Sloveenia klubi
+"LOC nmod H,OTHER root S",Vana-Narva päevad
+"LOC nmod H,OTHER root S",Eesti teeninduses
+"LOC nmod H,OTHER root S",Eesti ajalookirjutuses
+"LOC nmod H,OTHER root S",Vene ülemvõimu
+"LOC nmod H,OTHER root S",Euroopa õiguspraktikat
+"ORG nmod Y,OTHER root S",ETV sporditoimetuse
+"LOC nmod H,OTHER root S",Nõukogu isamaalasest
+"LOC nmod H,OTHER root S",Eesti kroon
+"LOC nmod H,OTHER root S",Eesti institutsioonide
+"ORG nmod S,OTHER root S",Riigikogu liikmeteni
+"LOC nmod H,OTHER root S",Rootsi rannikul
+"LOC nmod H,OTHER root S",Tallinna paneelmajade
+"LOC nmod H,OTHER root S",Valga politseinikud
+"LOC nmod H,OTHER root S",Kosovo jäämist
+"LOC nmod H,OTHER root S",Serbia osaks
+"ORG nmod Y,OTHER root S",STV väitel
+"LOC nmod H,OTHER root S",Vene välisminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Vene välisminister Igor Ivanov
+"LOC nmod H,OTHER root S",Eesti esijalgrattur
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Eesti esijalgrattur Jaan Kirsipuu
+"LOC nmod H,OTHER root S",Liibanoni pealinnast
+"LOC nmod H,OTHER root S",Soome kabareetähe
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Soome kabareetähe Aira Samulini
+"LOC nmod H,OTHER root S",Tallinna prefekti
+"LOC nmod H,OTHER root S",Vene lennukompaniile
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Vene lennukompaniile Pulkovo Airlines
+"LOC nmod Y,OTHER root S,OTHER appos H,OTHER flat H",USA investeerimispanga Merrill Lynch
+"LOC nmod H,OTHER root S",Iraani poksija
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Iraani poksija Anosheravan Nourian
+"LOC nmod H,OTHER root S",Haapsalu ärimees
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Haapsalu ärimees Arne Taal
+"ORG nmod H,OTHER root S,OTHER appos H,OTHER flat S",Ühispanga asepresident Jürgen Lamp
+"LOC nmod H,OTHER root S",Tallinna ekslinnapea
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Tallinna ekslinnapea Jüri Mõis
+"LOC nmod H,OTHER root S",Paldiski linnapea
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Paldiski linnapea Kaupo Kallase
+"LOC nmod H,OTHER root S",Suurbritannia põllumajandusminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Suurbritannia põllumajandusminister Nick Brown
+"LOC nmod H,OTHER root S",Palupera vallavanem
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Palupera vallavanem Terje Korss
+"LOC nmod H,OTHER root S",Eesti suursaadik
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Eesti suursaadik Sven Jürgenson
+"LOC nmod H,OTHER root S",Läti tütarfirma
+"LOC nmod H,OTHER root S,OTHER appos S,OTHER flat H",Läti tütarfirma Pluss Punkts
+"ORG nmod H,OTHER root S,OTHER appos H,OTHER flat S",Riigikogu liige Mart Nutt
+"LOC nmod H,OTHER root S",Pärnu abilinnapea
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Pärnu abilinnapea Margus Tammekivi
+"LOC nmod H,OTHER root S",Soome firmaga
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat Y",Soome firmaga K . Jousmaa KY
+"LOC nmod Y,OTHER root S,OTHER appos H,OTHER flat H",USA presidendile George W. Bushile
+"LOC nmod H,OTHER root S",Briti kuninganna
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat Y",Briti kuninganna Elizabeth I
+"LOC nmod H,OTHER root S",Viljandi kriminaalpolitseiniku
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Viljandi kriminaalpolitseiniku Ahti Oleski
+"LOC nmod H,OTHER root S",Portugali välisminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Portugali välisminister Jaime Gama
+"ORG nmod S,OTHER root S",Kaitseliidu ülem
+"ORG nmod S,OTHER root S,OTHER appos H,OTHER flat H",Kaitseliidu ülem Lui Jaanson
+"LOC nmod H,OTHER root S",Iraagi peaministri
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Iraagi peaministri Iyad Allawi
+"ORG nmod S,OTHER root S",Piirivalveameti pressiesindaja
+"ORG nmod S,OTHER root S,OTHER appos H,OTHER flat H",Piirivalveameti pressiesindaja Sirle Kaju
+"LOC nmod H,OTHER root S",Iirimaa peaminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Iirimaa peaminister Bertie Ahern
+"LOC nmod H,OTHER root S",Pärnu treener
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Pärnu treener Andrei Ojamets
+"LOC nmod H,OTHER root S",Suurbritannia kunstnik
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Suurbritannia kunstnik Francis Baconist
+"LOC nmod H,OTHER root S",Venemaa välisminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Venemaa välisminister Igor Ivanoviga
+"LOC nmod H,OTHER root S",Tšetšeeni ekspresidendi
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Tšetšeeni ekspresidendi Zelimhan Jandarbijevi
+"ORG nmod S,OTHER root S",Keskhaigekassa direktori
+"ORG nmod S,OTHER root S,OTHER appos S,OTHER flat H",Keskhaigekassa direktori Maris Jesse
+"LOC nmod H,OTHER root S",Tartu koolipoiss
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Tartu koolipoiss Kristjan Jasinski
+"LOC nmod H,OTHER root S",Ungari peaminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Ungari peaminister Ferenc Gyurcsany
+"LOC nmod H,OTHER root S",Bahama mees
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Bahama mees Avard Moncur
+"LOC nmod H,OTHER root S",N. Liidu välisministrile
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",N. Liidu välisministrile Andrei Gromõkole
+"LOC nmod H,OTHER root S",Iraagi liidrile
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Iraagi liidrile Sadam Husseinile
+"LOC nmod H,OTHER root S",Türgi peaminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Türgi peaminister Bülent Ecevit
+"LOC nmod H,OTHER root S",Eesti esindaja
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Eesti esindaja Irina Embrich
+"LOC nmod H,OTHER root S",Tšehhimaa peatreener
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Tšehhimaa peatreener Slavomir Lener
+"LOC nmod H,OTHER root S",Briti peaminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Briti peaminister Tony Blair
+"LOC nmod H,OTHER root S",Iraagi asepeaminister
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Iraagi asepeaminister Tareq Aziz
+"LOC nmod H,OTHER root S",Eesti välisministrile
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Eesti välisministrile Kristina Ojulandile
+"ORG nmod Y,OTHER root S",NATO peasekretär
+"ORG nmod Y,OTHER root S",ESEA tegevdirektor
+"LOC nmod H,OTHER root S",Ameerika miljonäri
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Ameerika miljonäri Gregg Bemise
+"LOC nmod H,OTHER root S",Jugoslaavia presidendi
+"LOC nmod H,OTHER root S,OTHER appos H,OTHER flat H",Jugoslaavia presidendi Slobodan Miloseviciga
+"LOC nmod H,OTHER root S",Tallinna abilinnapeade
+"LOC nmod H,OTHER root S",Eesti ettevõtjate
+"LOC nmod H,OTHER root S",Kosovo kriisi
+"LOC nmod H,OTHER root S",Eesti aja
+"LOC nmod H,OTHER root S",Briti ettevõtjate
+"LOC nmod H,OTHER root S",Brasiilia lipu
+"LOC nmod H,OTHER root S",Ukraina piiri
+"LOC nmod H,OTHER root S",Vihterpalu kaupluse
+"LOC nmod H,OTHER root S",Baltimaade kodanike
+"LOC nmod H,OTHER root S",Austria suutlikkuse
+"LOC nmod H,OTHER root S",Eesti sealiha
+"LOC nmod H,OTHER root S",Peterburi tee
+"LOC nmod H,OTHER root S",Uganda ametivõimude
+"ORG nmod Y,OTHER root S",NATO laienemise
+"LOC nmod H,OTHER root S",Eesti ekspordipartnerite
+"LOC nmod H,OTHER root S",Venemaa järeleandmiste
+"LOC nmod H,OTHER root S",Itaalia esineja
+"LOC nmod H,OTHER root S",Venemaa rünnakute
+"LOC nmod H,OTHER root S",Eesti seaduste
+"LOC nmod H,OTHER root S",Inglismaa koondise
+"LOC nmod H,OTHER root S",Eesti aja
+"LOC nmod H,OTHER root S",Ameerika imperialistide
+"ORG nmod Y,OTHER root S",NATO olemasolu
+"LOC nmod H,OTHER root S",Slovakkia visiidi
+"LOC nmod H,OTHER root S",Eesti aja
+"LOC nmod H,OTHER root S",Kosovo põgenikelaagrit
+"LOC nmod H,OTHER root S",Eesti Kirjandusmuuseumile
+"PER nmod H,OTHER root S,OTHER nmod S",Anvelti sõnul Pärnojale
+"LOC nmod H,OTHER root S",Iisraeli valitsusjuht
+"ORG nmod S,OTHER root S",Maanteeameti esindaja
+"LOC nmod H,OTHER root S",Liibanoni arengut
+"LOC nmod H,OTHER root S",Briti saatkonnas
+"LOC nmod H,OTHER root S",Iisraeli pealinnas
+"PER nmod H,OTHER root S,OTHER nmod S",Jürgensoni jätkamist ametis
+"PER nmod H,OTHER root S,OTHER nmod S",Rüütli istumine esireas
+"LOC nmod H,OTHER root S",Klaipeda piirkonda
+"LOC obl H,OTHER acl A,OTHER root S",Euroopas valitsevatele põhimõtetele
+"LOC obl H,OTHER acl A,OTHER root S",Soomes tehtavaid töid
+"LOC obl H,OTHER acl A,OTHER root S",Helsingis resideeriva suursaadiku
+"LOC obl H,OTHER acl A,OTHER root S",Kosovosse täiendavate kaitseväelaste
+"LOC obl H,OTHER acl A,OTHER root S",Freestyle'is võistlevad mehed
+"LOC obl H,OTHER acl A,OTHER root S",Eestis tegutsevate välisinvestorite
+"LOC obl Y,OTHER acl A,OTHER root S",USA juhitavad koalitsiooniväed
+"LOC obl H,OTHER acl A,OTHER root S",Peterburis toimuvatel vehklemise
+"LOC obl H,OTHER acl A,OTHER root S",Eestis tegutsevatest muusikainstitutsioonidest
+"LOC obl H,OTHER acl A,OTHER root S",Eestile antavate toetuste
+"LOC nmod H,OTHER root S",Venezuela finantsinstrumentidega
+"LOC nmod H,OTHER root S",Vene armeebaasides
+"LOC nmod H,OTHER root S",Eesti rahuvalvajaid
+"LOC nmod H,OTHER root S",Hiiumaa majutuskohad
+"LOC amod H,OTHER root S",Jaapani inimestest
+"LOC amod H,OTHER root S",Jaapani käibega
+"LOC nmod H,OTHER root S",Norra meeskond
+"LOC nmod H,OTHER root S",Eesti inimese
+"LOC nmod H,OTHER root S",Eesti raamatukoguna
+"LOC nmod H,OTHER root S",Venemaa riigisaladusi
+"LOC nmod H,OTHER root S",Eesti meister
+"ORG nmod Y,OTHER root S",GMP standarditele
+"LOC nmod H,OTHER root S",Soome elamisluba
+"LOC nmod G,OTHER root S",Prantsuse filmidest
+"LOC nmod H,OTHER root S",Eesti osavõtjad
+"LOC nmod H,OTHER root S",Vene üksus
+"LOC nmod H,OTHER root S",Itaalia jalgpalluriga
+"LOC nmod H,OTHER root S",Pärnu maanteed
+"LOC nmod H,OTHER root S",Helsingit kütus
+"ORG nmod Y,OTHER root S",NATO-ga ühinemisega
+"LOC nmod H,OTHER root S",Ateena olümpiani
+"LOC nmod H,OTHER root S",Euroopa suursaadik
+"LOC nmod H,OTHER root S",Undi kaaslasele
+"LOC nmod H,OTHER root S",Eestimaa nurgast
+"LOC nmod H,OTHER root S",Eesti esindus
+"LOC nmod H,OTHER root S",Eesti klubi
+"LOC nmod H,OTHER root S",Hollywoodi poe
+"LOC nmod H,OTHER root S",Eesti kodanik
+"LOC nmod H,OTHER root S",Eesti otsast
+"LOC nmod H,OTHER root S",Whiskasi tooted
+"LOC nmod H,OTHER root S",Euroopa meeskonda
+"LOC nmod H,OTHER root S",Zeta-Jonesile alguses
+"LOC nmod H,OTHER root S",Krimmi eestlaste
+"LOC nmod H,OTHER root S",Norra perekonna
+"LOC nmod H,OTHER root S",Euroopa odavlennufirmasid
+"LOC nmod H,OTHER root S",Austraalia jõululeitsakus
+"LOC nmod H,OTHER root S",Eesti rattur
+"ORG nmod Y,OTHER root S",ELi bensiinihinnad
+"LOC nmod H,OTHER root S",Eesti erakapitalil
+"LOC nmod H,OTHER root S",Iraagi režiimi
+"LOC nmod H,OTHER root S",Prantsusmaa meistrivõistlustel
+"LOC nmod H,OTHER root S",Eesti vabadusvõitlusest
+"LOC nmod H,OTHER root S",Eesti radarit
+"LOC nmod H,OTHER root S",Austria parlamendivalimistel
+"ORG nmod Y,OTHER root S",NATO laienemine
+"LOC nmod H,OTHER root S",Eesti reketile
+"LOC nmod H,OTHER root S",Põhja-Eesti liivaaladel
+"LOC nmod H,OTHER root S",Marsi tolmutormid
+"LOC nmod H,OTHER root S",Euroopa rokifestivalidel
+"LOC nmod H,OTHER root S",Soome kaitseministrite
+"LOC nmod H,OTHER root S",Eesti suhtekorraldajaid
+"LOC nmod H,OTHER root S",Eesti autokütuste
+"LOC nmod H,OTHER root S",Soome arengut
+"LOC nmod H,OTHER root S",Venemaa ajal
+"LOC nmod H,OTHER root S",Lemsalu esinemine
+"ORG nmod Y,OTHER root S",NATO komitee
+"LOC nmod H,OTHER root S",Tallinna kliendipüüdmiskohad
+"LOC nmod H,OTHER root S",Eesti ekspertiisibüroo
+"ORG nmod Y,OTHER root S",ETAle doonorluse
+"LOC nmod H,OTHER root S",Eesti esindustes
+"LOC nmod H,OTHER root S",Tartu mängijaid
+"LOC nmod H,OTHER root S",Tai inimeste
+"LOC nmod H,OTHER root S",Eesti relvastust
+"LOC nmod H,OTHER root S",Torino teatesõidul
+"LOC nmod H,OTHER root S",Otepää etapil
+"LOC nmod H,OTHER root S",Eesti ajal
+"LOC nmod H,OTHER root S",Tartu korterisse
+"LOC nmod H,OTHER root S",Tartu kodus
+"ORG nmod Y,OTHER root S",BNS kuninganna
+"LOC nmod H,OTHER root S",Arkaadia toimetaja
