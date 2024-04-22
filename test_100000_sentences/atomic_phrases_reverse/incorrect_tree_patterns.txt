@@ -1,0 +1,14 @@
+1 PER 0 root H,2 PER 1 flat H,3 OTHER 1 flat Y
+1 PER 0 root H,2 PER 1 flat S,3 OTHER 1 flat S
+1 LOC 0 root H,2 OTHER 1 nmod S
+1 ORG 0 root Y,2 OTHER 1 nmod S
+1 LOC 2 nmod H,2 OTHER 0 root P|N
+1 LOC 0 root H,2 OTHER 1 punct Z,3 OTHER 1 nmod S
+1 LOC 2 nmod H,2 OTHER 0 root S,3 OTHER 2 nmod H
+1 OTHER 2 punct Z,2 LOC 0 root H,3 OTHER 2 punct Z
+1 OTHER 2 punct Z,2 PER 0 root S,3 OTHER 2 punct Z
+1 OTHER 2 punct Z,2 ORG 0 root Y,3 OTHER 2 punct Z
+1 LOC 3 nmod H,2 OTHER 3 amod P|O,3 OTHER 0 root S
+1 OTHER 3 punct Z,2 LOC 3 nmod H,3 OTHER 0 root S
+1 PER 3 punct Z,2 PER 3 nmod S,3 OTHER 0 root S
+1 OTHER 3 punct Z,2 ORG 3 nmod Y,3 OTHER 0 root S
