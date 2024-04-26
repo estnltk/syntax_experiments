@@ -347,7 +347,7 @@ class V30:
                 return "--"
 
             res_apriory["example"] = res_apriory["itemsets"].apply(find_example)
-        display(res_apriory)
+        # display(res_apriory)
         return res_apriory
 
     def make_all(
@@ -365,7 +365,7 @@ class V30:
             examples=examples,
         )
 
-        self.draw_heatmap(title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered)
+        # self.draw_heatmap(title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered)
         filtered = self.filter_apriori_results(unfiltered, verbose=True)
         self.draw_heatmap(title=f"Filtreeritud {verb} {verb_compound}", df=filtered)
 
@@ -509,27 +509,30 @@ class V30:
             ]
 
             for index2, row2 in sub_df.iterrows():
-
+                # drop a row if both conditions are true
+                # abs_difference < delta
+                # percents_grow < percent
+                abs_difference = abs(row["support"] - row2["support"])
                 percents_grow = (
-                    (row2["support"] - row["support"]) / row2["support"] * 100
+                    (row2["support"] - row["support"]) / row["support"] * 100
                 )
 
-                if row["support"] + delta >= row2["support"]:
-                    df.loc[index2, "drop_reason"] = (
-                        f'(row {index}): {row["support"]:.4f}+{delta}>={row2["support"]:.4f}'
-                    )
-                    df.loc[index2, "drop"] = True
+                reasons = [f"(row {index})"]
+                if abs_difference > delta:
+                    continue
+                reasons.append(
+                    f"delta: abs({row['support']:.4f} - {row2['support']:.4f}) < {delta}"
+                )
 
-                # elif row["support"] + row["support"] * percent / 100 >= row2["support"]:
-                #    df.loc[index2, "drop_reason"] = (
-                #        f'(row {index}) percent: {(row["support"]+ row["support"] * percent / 100):.4f}>={row2["support"]:.4f}'
-                #    )
-                #    df.loc[index2, "drop"] = True
-                elif percents_grow >= percent:
-                    df.loc[index2, "drop_reason"] = (
-                        f"(row {index}) percent_grow: {percents_grow:.4f}>={percent}"
-                    )
-                    df.loc[index2, "drop"] = True
+                if percents_grow > percent:
+                    continue
+                reasons.append(
+                    f"%: ({row2['support']:.4f}-{row['support']:.4f})/{row['support']:.4f}*100<{percent}"
+                )
+
+                df.loc[index2, "drop"] = True
+                df.loc[index2, "drop_reason"] = " ".join(reasons)
+
         df = df.sort_values("support", ascending=False)
         if verbose:
             print(f"delta: {delta}")
