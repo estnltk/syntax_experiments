@@ -9,7 +9,6 @@ from sqlalchemy import (
     text,
     select,
     and_,
-    func,
     create_engine,
     Column,
     Integer,
@@ -30,35 +29,29 @@ Base = declarative_base()
 
 class TransactionHead(Base):
     __tablename__ = "transaction_head"
-
     id = Column(Integer, primary_key=True, autoincrement=True)
-    sentence_id = Column(
-        Integer
-    )  # Assuming sentence_id should be Integer based on `id` type
-    loc = Column(Integer)
-    verb = Column(Text)
-    verb_compound = Column(Text)
-    deprel = Column(Text)
-    feats = Column(Text)
+    sentence_id = Column(Integer)  # ID of the associated sentence
+    loc = Column(Integer)  # Location index within the sentence
+    verb = Column(Text)  # Verb associated with this transaction head
+    verb_compound = Column(Text)  # Additional verb compound information
+    deprel = Column(Text)  # Dependency relation
+    feats = Column(Text)  # Linguistic features
 
-    # Relationship to the Transaction model
     transactions = relationship("Transaction", back_populates="transaction_head")
 
 
 class Transaction(Base):
     __tablename__ = "transaction"
-
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
-    loc = Column(Integer)
-    loc_rel = Column(Integer)
-    deprel = Column(Text)
-    form = Column(Text)
-    lemma = Column(Text)
-    feats = Column(Text)
-    pos = Column(Text)
+    loc = Column(Integer)  # Location index within the sentence
+    loc_rel = Column(Integer)  # Relative location to the head
+    deprel = Column(Text)  # Dependency relation
+    form = Column(Text)  # Word form
+    lemma = Column(Text)  # Lemma of the word
+    feats = Column(Text)  # Linguistic features
+    pos = Column(Text)  # Part of speech
 
-    # Relationship to the TransactionHead model
     transaction_head = relationship("TransactionHead", back_populates="transactions")
 
 
@@ -212,9 +205,9 @@ class V30:
         all_forms = {}
 
         def add_to_all_forms(deprel, form):
-            if not deprel in all_forms:
+            if deprel not in all_forms:
                 all_forms[deprel] = {}
-            if not form in all_forms[deprel]:
+            if form not in all_forms[deprel]:
                 all_forms[deprel][form] = {"count": 0, "percentage": 0}
             all_forms[deprel][form]["count"] += 1
 
@@ -290,17 +283,30 @@ class V30:
 
     def apriori(self, transactions, min_support=None, use_colnames=True, examples=True):
         """
-        Applies the Apriori algorithm on the dataset to find frequent itemsets based on a minimum support threshold.
+        Applies the Apriori algorithm on the dataset to find frequent itemsets based on
+        a minimum support threshold.
+        This method also optionally includes a practical example for each frequent
+        itemset found, if the 'examples' flag is set to True.
 
         Parameters:
-        - min_support (float, optional): The minimum support threshold for itemsets to be considered frequent. Default is 0.5.
-        - use_colnames (bool, optional): Indicates whether to use column names for itemset generation. Default is True.
+        - transactions (dict): A dictionary where keys are transaction IDs and values
+        are lists of transactions.
+        - min_support (float, optional): The minimum support threshold for itemsets to
+        be considered frequent.
+                Default value is specified by the '_apriori_min_support' attribute.
+        - use_colnames (bool, optional): Indicates whether to use column names for
+        itemset generation. Default is True.
+        - examples (bool, optional): Flag to indicate whether to append an example
+        transaction to each frequent itemset. Default is True.
+
+        Returns:
+        - A DataFrame of frequent itemsets sorted by their support values in descending
+        order. If 'examples' is True, each itemset will include a practical example.
 
         Displays:
-        - A DataFrame of frequent itemsets sorted by their support values in descending order.
-        - The transformed dataset DataFrame used for Apriori algorithm.
+        - Optionally, prints the number of rows being analyzed and adjustments made if
+        the predefined row threshold is exceeded.
         """
-
         keys = list(transactions.keys())
         print("Ridu analüüsimiseks:", len(keys))
 
@@ -330,25 +336,23 @@ class V30:
 
         df = pd.DataFrame(te_ary, columns=self._te.columns_)
 
-        res_apriory = apriori(
+        res_apriori = apriori(
             df, min_support=min_support, use_colnames=use_colnames
         ).sort_values("support", ascending=False)
 
-        # add one random example to the table
-
         if examples:
-            # TODO! add timestamps
+
             def find_example(itemsets):
-                # make random
-                for i in np.random.permutation(len(keys)):
+                # Search randomly for a matching example
+                for i in np.random.permutation(len(dataset)):
                     if itemsets.issubset(dataset[i]):
                         return self.get_example_by_head_id(keys[i], itemsets)
 
                 return "--"
 
-            res_apriory["example"] = res_apriory["itemsets"].apply(find_example)
-        # display(res_apriory)
-        return res_apriory
+            res_apriori["example"] = res_apriori["itemsets"].apply(find_example)
+
+        return res_apriori
 
     def make_all(
         self, verb, verb_compound, min_support=None, use_colnames=True, examples=False
@@ -370,70 +374,67 @@ class V30:
         self.draw_heatmap(title=f"Filtreeritud {verb} {verb_compound}", df=filtered)
 
     def draw_heatmap(self, df: DataFrame, title=""):
+        """
+        Generates a heatmap and a side histogram from the provided DataFrame to visualize
+        the support values of itemsets and their examples if available. The heatmap uses clustering
+        to group similar itemsets together, enhancing the interpretability of frequent itemset patterns.
 
+        Parameters:
+        - df (DataFrame): A DataFrame containing 'itemsets' with their respective 'support' values and optionally 'examples'.
+        - title (str, optional): Title for the heatmap. Default is an empty string.
+
+        The function processes the DataFrame to create a binary matrix where rows correspond to itemsets and
+        columns represent unique items within these itemsets. Each cell in the matrix is filled with 1 or 0,
+        indicating the presence or absence of the item in the corresponding itemset.
+
+        A cluster map is then generated to visually group itemsets that share similar patterns of item occurrences.
+        Alongside the heatmap, a histogram is displayed showing the support values of the itemsets, providing a
+        quantitative view of the itemset frequencies.
+        """
         if "example" in df.columns:
             itemsets_examples = df["example"].tolist()
         else:
-            itemsets_examples = ["" for i in range(df.shape)]
-        df = df.sort_values("support", ascending=False)
+            itemsets_examples = ["" for _ in range(len(df))]
 
+        df = df.sort_values("support", ascending=False)
         itemsets_list = [list(itemset) for itemset in df["itemsets"].tolist()]
         itemsets_support = df["support"].tolist()
 
-        # Assuming itemsets_list and itemsets_freq are already defined and available
-        # Create a set of unique items
-        unique_items = set(itemset for sublist in itemsets_list for itemset in sublist)
-
-        # Create binary matrix
+        unique_items = set(item for sublist in itemsets_list for item in sublist)
         binary_matrix_data = []
-        itemset_labels = []  # To store the string representation of itemsets
+        itemset_labels = []
 
         for i, itemset in enumerate(itemsets_list):
-            # Create a string representation for each itemset and add it to the list of labels
-            label = (
-                " + ".join([" ".join(sub_itemset) for sub_itemset in itemset])
-                + f"\n( {itemsets_examples[i]} ) "
-                if len(itemsets_examples[i])
-                else ""
+            label = " + ".join([" ".join(sub_itemset) for sub_itemset in itemset]) + (
+                f"\n({itemsets_examples[i]})" if itemsets_examples[i] else ""
             )
             itemset_labels.append(label)
-
-            row_data = {itemset: 0 for itemset in unique_items}
+            row_data = {item: 0 for item in unique_items}
             for sub_itemset in itemset:
                 if sub_itemset in unique_items:
                     row_data[sub_itemset] = 1
             binary_matrix_data.append(row_data)
 
-        # Convert to DataFrame
         binary_matrix = pd.DataFrame(binary_matrix_data)
-        # Convert tuple keys to string for column labels
         binary_matrix.columns = [
             " ".join(col).strip() if col else "EMPTY" for col in binary_matrix.columns
         ]
 
-        # Generate the clustermap to determine the order of itemsets
         clustergrid = sns.clustermap(
             binary_matrix, cmap="Blues", yticklabels=itemset_labels, figsize=(12, 9)
         )
-        plt.close()  # Close the clustermap figure that we do not need
+        plt.close()
 
-        # Reorder rows based on clustering and labels/frequencies accordingly
         reordered_indices = clustergrid.dendrogram_row.reordered_ind
         binary_matrix = binary_matrix.iloc[reordered_indices]
         itemset_labels = [itemset_labels[i] for i in reordered_indices]
         itemsets_examples = [itemsets_examples[i] for i in reordered_indices]
-        itemsets_support = [
-            itemsets_support[i] for i in reordered_indices
-        ]  # This should be your frequency list
+        itemsets_support = [itemsets_support[i] for i in reordered_indices]
 
-        # Create a DataFrame with frequencies
         freq_df = pd.DataFrame({"Itemset": itemset_labels, "Support": itemsets_support})
-
-        # Set up the matplotlib figure and axes
-        fig = plt.figure(figsize=(15, 10))  # Adjust the size as necessary
+        fig = plt.figure(figsize=(15, 10))
         gs = fig.add_gridspec(1, 2, width_ratios=(3, 2))
 
-        # Heatmap subplot
         ax_heatmap = fig.add_subplot(gs[0])
         sns.heatmap(
             binary_matrix,
@@ -443,38 +444,27 @@ class V30:
             ax=ax_heatmap,
         )
         ax_heatmap.set_title(title)
-        ax_heatmap.set_xlabel("Liikmed")
-        ax_heatmap.set_ylabel("Mallid")
-        ax_heatmap.set_aspect("equal")  # Set aspect ratio to be equal
+        ax_heatmap.set_xlabel("Items")
+        ax_heatmap.set_ylabel("Itemsets")
+        ax_heatmap.set_aspect("equal")
 
         plt.setp(ax_heatmap.yaxis.get_majorticklabels(), rotation=0)
-        # Rotate x-tick labels for better readability
-        plt.setp(
-            ax_heatmap.xaxis.get_majorticklabels(), rotation=90
-        )  # Rotate x-tick labels to vertical
+        plt.setp(ax_heatmap.xaxis.get_majorticklabels(), rotation=90)
 
-        # Histogram subplot
         ax_hist = fig.add_subplot(gs[1])
         barplot = sns.barplot(x="Support", y="Itemset", data=freq_df, ax=ax_hist)
         ax_hist.set_yticklabels([])
         ax_hist.set_ylabel("")
         ax_hist.set_xlabel("Support")
+        ax_hist.set_xlim(0, 1.0)
 
-        # Set the x-axis maximum limit to 1.0
-        ax_hist.set_xlim(0, 1.0)  # This sets the x-axis from 0 to 1.0
-
-        # Turn off the barplot's surrounding borders
         for _, spine in ax_hist.spines.items():
             spine.set_visible(False)
-
-        # Loop over the bars and display the frequency value
         for p in barplot.patches:
             x = p.get_width()
             y = p.get_y() + p.get_height() / 2
-            value = f"{x:.4f}"
-            ax_hist.text(x, y, value, va="center")
+            ax_hist.text(x, y, f"{x:.4f}", va="center")
 
-        # Ensure a tight layout
         plt.tight_layout()
         plt.show()
 
