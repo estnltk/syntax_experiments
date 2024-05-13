@@ -1,0 +1,529 @@
+NER_pattern,pattern,count,%
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2927,0.77
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",407,0.11
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",203,0.05
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",148,0.04
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",80,0.02
+OTHER-ORG,"1 2 nmod,2 0 root,A-S-S",36,0.01
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",12,0.0
+LOC-ORG,"1 2 nmod,2 0 root,A-S-S",4,0.0
+OTHER-LOC,"1 2 nmod,2 0 root,A-S-S",3,0.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2214,0.84
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",197,0.07
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",97,0.04
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",79,0.03
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",41,0.02
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",12,0.0
+PER-PER,"1 2 nmod,2 0 root,A-S-S",2,0.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",147,0.92
+PER-PER,"1 2 nmod,2 0 root,A-S-S",4,0.03
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.02
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.01
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",2,0.01
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",937,0.9
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",63,0.06
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",29,0.03
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",5,0.0
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",46,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",675,0.76
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",136,0.15
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",48,0.05
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",24,0.03
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",316,0.88
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",27,0.08
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",10,0.03
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",3,0.01
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.01
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",544,0.82
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",71,0.11
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",21,0.03
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",15,0.02
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",7,0.01
+OTHER-LOC,"1 2 nmod,2 0 root,A-S-S",3,0.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",411,0.92
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",28,0.06
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",7,0.02
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",402,0.96
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",11,0.03
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.01
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",341,0.85
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",31,0.08
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",24,0.06
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",4,0.01
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",59,0.45
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",43,0.33
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",17,0.13
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",7,0.05
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",3,0.02
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",23,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,0.83
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",11,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",11,0.55
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",5,0.25
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",4,0.2
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",115,0.73
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",22,0.14
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",10,0.06
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",7,0.04
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",3,0.02
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",41,0.59
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",17,0.24
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",11,0.16
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",61,0.97
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.03
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",20,0.59
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",11,0.32
+LOC-LOC,"1 2 nmod,2 0 root,A-S-S",2,0.06
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",77,0.91
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",8,0.09
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",58,0.98
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",31,0.76
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",7,0.17
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",46,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",32,0.97
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",55,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",52,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",33,0.69
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",9,0.19
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",4,0.08
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.04
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",40,0.89
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",4,0.09
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",18,0.6
+OTHER-ORG,"1 2 nmod,2 0 root,A-S-S",6,0.2
+ORG-ORG,"1 2 nmod,2 0 root,A-S-S",3,0.1
+LOC-ORG,"1 2 nmod,2 0 root,A-S-S",2,0.07
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",19,0.63
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",9,0.3
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.07
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",40,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.67
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",37,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",26,0.9
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.07
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",23,0.85
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.11
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",28,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",20,0.71
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",5,0.18
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.11
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",10,0.91
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",13,0.81
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.12
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",21,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",11,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",24,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",22,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",21,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",9,0.69
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.15
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.15
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",16,0.89
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.11
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",13,0.87
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.13
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",14,0.93
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",9,0.9
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",11,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",12,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.5
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.5
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",7,0.7
+PER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.2
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,0.71
+OTHER-ORG,"1 2 nmod,2 0 root,A-S-S",2,0.29
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",8,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,0.75
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,0.86
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,0.86
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,0.71
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.29
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.43
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.29
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.29
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",6,1.0
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",4,0.67
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.33
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.6
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.75
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.67
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+LOC-OTHER,"1 2 nmod,2 0 root,A-S-S",4,0.8
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.4
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.4
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,0.75
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.67
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+ORG-OTHER,"1 2 nmod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,0.67
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 nmod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",1615,0.98
+OTHER-LOC,"1 2 amod,2 0 root,A-S-S",11,0.01
+OTHER-ORG,"1 2 amod,2 0 root,A-S-S",7,0.0
+ORG-ORG,"1 2 amod,2 0 root,A-S-S",7,0.0
+LOC-OTHER,"1 2 amod,2 0 root,A-S-S",3,0.0
+LOC-LOC,"1 2 amod,2 0 root,A-S-S",3,0.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",29,0.85
+ORG-ORG,"1 2 amod,2 0 root,A-S-S",5,0.15
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",1473,1.0
+ORG-ORG,"1 2 amod,2 0 root,A-S-S",2,0.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",9,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",983,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",8,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",397,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",19,0.95
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",254,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",313,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",319,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",266,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",242,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",181,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",6,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",52,0.96
+ORG-OTHER,"1 2 amod,2 0 root,A-S-S",2,0.04
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",59,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",79,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",108,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",76,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",10,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",24,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",19,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",27,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",52,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",14,0.93
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",14,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",38,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",9,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",10,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",7,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",29,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",18,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",13,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",27,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",7,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",15,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",7,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",5,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",14,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",13,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",11,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",12,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",7,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",7,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",10,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",8,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",9,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",5,0.62
+ORG-ORG,"1 2 amod,2 0 root,A-S-S",3,0.38
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,0.75
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",6,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",4,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",3,1.0
+OTHER-ORG,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER,"1 2 amod,2 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",22,0.58
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",14,0.37
+ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.05
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",24,0.71
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",9,0.26
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",30,0.91
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.06
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",26,0.84
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.1
+OTHER-OTHER-ORG,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.06
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",25,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",19,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",13,0.76
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.24
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",16,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",14,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",14,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",8,0.67
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.33
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",10,0.83
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.17
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.33
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.33
+OTHER-OTHER-LOC,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.33
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",11,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",8,0.73
+ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.18
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",11,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",10,1.0
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",9,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",9,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",8,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",7,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",7,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.43
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.29
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.29
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.43
+ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.43
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",6,0.86
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",7,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",7,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.67
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.33
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.5
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",6,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",6,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,0.8
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.4
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.4
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",5,1.0
+OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+OTHER-OTHER-LOC,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,0.75
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.5
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",32,0.82
+OTHER-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,0.08
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",32,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",29,0.97
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",28,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",24,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",16,0.73
+ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.09
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",21,1.0
+ORG-OTHER-ORG,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",15,0.71
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,0.24
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",15,0.75
+ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.1
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.1
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",14,0.78
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,0.17
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",6,0.46
+OTHER-OTHER-PER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,0.38
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",9,0.64
+OTHER-OTHER-ORG,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.14
+OTHER-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.14
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",8,0.8
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.2
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",12,1.0
+LOC-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",12,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",7,0.64
+OTHER-OTHER-ORG,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",4,0.36
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",8,0.89
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",8,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",7,0.88
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",8,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",4,0.5
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.25
+LOC-LOC-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.25
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",7,0.88
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",4,0.67
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.33
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,0.83
+ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",6,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,0.83
+ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",6,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",5,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,0.6
+ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.4
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+LOC-LOC-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod,A-S-S",2,1.0
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",92,0.48
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",32,0.17
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",31,0.16
+ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",29,0.15
+LOC-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",6,0.03
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",21,0.31
+LOC-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",18,0.26
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",13,0.19
+ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",7,0.1
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",6,0.09
+ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.04
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",16,0.46
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",7,0.2
+ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",6,0.17
+ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.09
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.06
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",5,0.42
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.25
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.43
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.29
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",5,0.83
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",6,1.0
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.4
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.75
+ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,0.75
+ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.5
+ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.67
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,1.0
+OTHER-OTHER-ORG-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,1.0
+OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.67
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,0.67
+ORG-OTHER-ORG-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,1.0
+ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",3,1.0
+OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,1.0
+ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,1.0
+LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",36,0.84
+PER-PER-PER,"1 0 root,2 1 flat,3 1 flat,A-S-S",4,0.09
+PER-PER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",6,0.32
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",5,0.26
+OTHER-PER-PER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.16
+ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.16
+PER-PER-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.11
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.5
+OTHER-PER-PER,"1 0 root,2 1 flat,3 1 flat,A-S-S",7,0.47
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",4,0.27
+PER-PER-PER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.2
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",11,0.85
+ORG-OTHER-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",10,0.91
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",5,0.83
+PER-PER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",4,0.57
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.43
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.5
+ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.5
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.4
+ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.4
+ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat,A-S-S",4,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,0.75
+OTHER-OTHER-LOC,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,0.67
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",3,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,1.0
+OTHER-OTHER-LOC,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,1.0
+OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat,A-S-S",2,1.0
