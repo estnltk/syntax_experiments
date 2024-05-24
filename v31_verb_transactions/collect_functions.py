@@ -75,6 +75,7 @@ class DbMethods:
             " `form` text,"
             " `lemma` text,"
             " `feats` text,"
+            " `parent_loc` int,"
             " `pos` text);"
         )
 
@@ -111,6 +112,7 @@ class DbMethods:
                         tr["lemma"],
                         tr["pos"],
                         tr["feats"],
+                        tr["parent_loc"],
                     )
                 )
 
@@ -136,12 +138,14 @@ class DbMethods:
             " form,"
             " lemma,"
             " pos,"
-            " feats"
+            " feats,"
+            " parent_loc"
+            
             ")"
             "VALUES ("
             "(SELECT `id` FROM `transaction_head`  WHERE"
             " `sentence_id` = ? AND `loc` = ?),"
-            "?, ?, ?, ?, ?, ?, ?);",
+            "?, ?, ?, ?, ?, ?, ?, ?);",
             transactions,
         )
 
@@ -153,14 +157,24 @@ class DbMethods:
 
     def index_fields(self):
         indexesQ = []
-        for field in ("sentence_id", "loc", "verb", "verb_compound"):
+        for field in ("verb", "verb_compound", "feats", "deprel"):
             direction = "ASC" if field not in ["count"] else "DESC"
             indexesQ.append(
-                f'CREATE INDEX IF NOT EXISTS "`{field}`"'
+                f'CREATE INDEX IF NOT EXISTS "`transaction_head_{field}`"'
                 f' ON transaction_head("`{field}`" {direction});'
             )
         for q in indexesQ:
             self._cursor.execute(q)
+        
+        for field in ("head_id", "deprel"):
+            direction = "ASC" if field not in ["count"] else "DESC"
+            indexesQ.append(
+                f'CREATE INDEX IF NOT EXISTS "`transaction_{field}`"'
+                f' ON `transaction`("`{field}`" {direction});'
+            )
+        for q in indexesQ:
+            self._cursor.execute(q)
+            
         self._connection.commit()
 
 
@@ -247,14 +261,15 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
         kids = [m for m in kids if graph.nodes[m]["deprel"] not in deprels_to_ignore]
         # verb -> obl -> case
         # add obl kids case
+        grandkids = {}
         for obl in [m for m in kids if graph.nodes[m]["deprel"] == "obl"]:
             for case in [
                 k
                 for k in dpath[obl]
                 if dpath[obl][k] == 1 and graph.nodes[k]["deprel"] == "case"
             ]:
-                graph.nodes[case]["deprel"] = "obl:case"
                 kids.append(case)
+                grandkids[case] = obl
 
         child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
 
@@ -268,6 +283,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
                 "lemma": graph.nodes[m]["lemma"],
                 "pos": graph.nodes[m]["pos"],
                 "feats": ",".join(sorted(graph.nodes[m]["feats"])),
+                "parent_loc": grandkids[m] if m in grandkids else None,  
             }
             transaction_head["members"].append(member)
 
