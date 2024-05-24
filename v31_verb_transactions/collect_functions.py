@@ -258,7 +258,6 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
 
         child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
 
-
         for m in sorted(kids):
             member = {
                 "loc": m,

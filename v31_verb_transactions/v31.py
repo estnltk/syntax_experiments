@@ -15,7 +15,7 @@ TYPE = "verb_pattern_obl"
 TABLENAME = f"{TYPE}"
 
 date_time = datetime.now().strftime("%Y%m%d-%H%M%S")
-db_file_name = f"v30_{collection_name}_{TYPE}_{date_time}.db"
+db_file_name = f"v31_{collection_name}_{TYPE}_{date_time}.db"
 my_sqlite_db = DbMethods(
     db_file_name=db_file_name, table1_name=TYPE, table2_name=TYPE + "_examples"
 )
