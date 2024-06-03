@@ -80,6 +80,21 @@ class V30:
     # treshold percent for filtering apriori results
     _apriori_treshold_percent = 50
 
+    # 
+    deprels_to_ignore = [
+        "punct",
+        "conj",
+        "mark",
+        "cc",
+        "parataxis",
+        "discourse",
+        "vocative",
+        "cop",
+        "cc:preconj",
+        "goeswith",
+        "list",
+        "dep",
+    ]
     def __init__(
         self,
         file_path,
@@ -169,7 +184,7 @@ class V30:
         self,
         verb,
         verb_compound="",
-        skip_deprels=["cc", "conj", "punct", "mark", "aux"],
+        skip_deprels=None,
         include_deprels=[],
     ):
         """
@@ -190,7 +205,9 @@ class V30:
         structured according to the specified 'columns', or all transaction data
         if 'columns' is empty or not provided. Transactions are grouped by 'head_id'.
         """
-
+        if skip_deprels is None:
+            skip_deprels = self.deprels_to_ignore
+            
         where_filters = [TransactionHead.verb == verb]
         if verb_compound is not None:
             where_filters.append(TransactionHead.verb_compound == verb_compound)
@@ -421,7 +438,7 @@ class V30:
         ]
 
         clustergrid = sns.clustermap(
-            binary_matrix, cmap="Blues", yticklabels=itemset_labels, figsize=(12, 9)
+            binary_matrix, cmap="Blues", yticklabels=itemset_labels, figsize=(15, 9)
         )
         plt.close()
 
