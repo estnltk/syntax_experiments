@@ -459,6 +459,8 @@ class V30:
             cbar=False,
             yticklabels=itemset_labels,
             ax=ax_heatmap,
+            linewidths=0.5, 
+            linecolor='black',
         )
         ax_heatmap.set_title(title)
         ax_heatmap.set_xlabel("Items")
