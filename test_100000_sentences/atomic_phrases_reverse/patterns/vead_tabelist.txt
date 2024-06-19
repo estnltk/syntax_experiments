@@ -1,0 +1,7 @@
+1 2 nmod,2 0 root,Y-Y	m 3
+1 2 nmod,2 0 root,Y-N	nr 917
+1 2 nmod,2 0 root,Y-H	If Kindlustus
+1 2 nmod,2 0 root,3 2 nmod,H-S-P	Sokrates korras sellega
+1 2 amod,2 0 root,O-Y	1934. a.
+1 2 amod,2 0 root,O-S	2005. aasta
+1 2 amod,2 0 root,H-H	KUID PROBLEEM

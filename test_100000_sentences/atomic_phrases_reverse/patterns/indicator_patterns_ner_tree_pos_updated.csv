@@ -199,7 +199,7 @@ int64,string,string,string,int64,float64,string,string,string,callable
 197,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",Y-H-H,5,1.0,F,ner,0-1-1,-
 198,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-J-H,2,0.4,F,ner,1-0-1,-
 199,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",H-J-H,2,0.4,T,-,0-0-0,-
-200,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-Y-S,3,1.0,F,POS,0-1-0,-
+200,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-Y-S,3,1.0,F,pos,0-1-0,-
 201,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",Y-H-S,2,0.67,T,-,0-0-0,-
 202,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-H-H,2,1.0,F,ner,0-1-1,-
 203,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",Y-Y-S,2,1.0,F,pos,1-1-0,-
