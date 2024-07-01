@@ -1,0 +1,206 @@
+ID,NER_pattern,tree,POS_pattern,count,%,is_correct,mistake_type,error_mask,correction
+int64,string,string,string,int64,float64,string,string,string,callable
+1,OTHER-OTHER,"1 2 nmod,2 0 root",S-S,6748,0.96,T,-,0-0,-
+2,ORG-OTHER,"1 2 nmod,2 0 root",S-S,196,0.03,-,-,-,-
+3,ORG-ORG,"1 2 nmod,2 0 root",S-S,50,0.01,-,-,-,-
+4,LOC-OTHER,"1 2 nmod,2 0 root",S-S,49,0.01,-,-,-,-
+5,LOC-LOC,"1 2 nmod,2 0 root",S-S,5,0.0,-,-,-,-
+6,PER-OTHER,"1 2 nmod,2 0 root",S-S,2,0.0,-,-,-,-
+7,OTHER-ORG,"1 2 nmod,2 0 root",S-S,2,0.0,-,-,-,-
+8,OTHER-OTHER,"1 2 nmod,2 0 root",A-S,10,0.71,F,pos,1-0,-
+9,ORG-ORG,"1 2 nmod,2 0 root",A-S,4,0.29,F,pos,1-0,-
+10,OTHER-OTHER,"1 2 nmod,2 0 root",H-S,1169,0.43,F,ner,1-0,-
+11,LOC-OTHER,"1 2 nmod,2 0 root",H-S,980,0.36,T,-,0-0,-
+12,ORG-ORG,"1 2 nmod,2 0 root",H-S,172,0.06,-,-,-,-
+13,LOC-LOC,"1 2 nmod,2 0 root",H-S,172,0.06,-,-,-,-
+14,ORG-OTHER,"1 2 nmod,2 0 root",H-S,149,0.05,-,-,-,-
+15,PER-OTHER,"1 2 nmod,2 0 root",H-S,85,0.03,-,-,-,-
+16,OTHER-OTHER,"1 2 nmod,2 0 root",P-S,1885,0.99,T,-,0-0,-
+17,ORG-ORG,"1 2 nmod,2 0 root",P-S,16,0.01,-,-,-,-
+18,OTHER-ORG,"1 2 nmod,2 0 root",P-S,6,0.0,-,-,-,-
+19,OTHER-OTHER,"1 2 nmod,2 0 root",Y-S,185,0.52,?,-,?-?,-
+20,ORG-OTHER,"1 2 nmod,2 0 root",Y-S,123,0.34,T,-,0-0,-
+21,ORG-ORG,"1 2 nmod,2 0 root",Y-S,7,0.02,-,-,-,-
+22,OTHER-OTHER,"1 2 nmod,2 0 root",H-H,157,0.58,F,ner,1-1,-
+23,ORG-ORG,"1 2 nmod,2 0 root",H-H,45,0.17,T,-,0-0,-
+24,OTHER-ORG,"1 2 nmod,2 0 root",H-H,28,0.1,F,ner,1-0,-
+25,LOC-LOC,"1 2 nmod,2 0 root",H-H,23,0.09,-,-,-,-
+26,LOC-OTHER,"1 2 nmod,2 0 root",H-H,6,0.02,-,-,-,-
+27,PER-PER,"1 2 nmod,2 0 root",H-H,5,0.02,-,-,-,-
+28,LOC-ORG,"1 2 nmod,2 0 root",H-H,4,0.01,-,-,-,-
+29,OTHER-OTHER,"1 2 nmod,2 0 root",G-S,25,0.57,F,ner,1-0,-
+30,LOC-OTHER,"1 2 nmod,2 0 root",G-S,16,0.36,T,-,0-0,-
+31,LOC-LOC,"1 2 nmod,2 0 root",G-S,2,0.05,-,-,-,-
+32,OTHER-OTHER,"1 2 nmod,2 0 root",Y-N,40,1.0,T,-,0-0,-
+33,OTHER-OTHER,"1 2 nmod,2 0 root",P-N,30,1.0,T,-,0-0,-
+34,OTHER-OTHER,"1 2 nmod,2 0 root",S-Y,20,0.69,F,ner,?-1,-
+35,OTHER-ORG,"1 2 nmod,2 0 root",S-Y,8,0.28,T,-,0-0,-
+36,OTHER-OTHER,"1 2 nmod,2 0 root",H-Y,18,0.67,F,ner,1-1,-
+37,ORG-ORG,"1 2 nmod,2 0 root",H-Y,5,0.19,T,-,0-0,-
+38,OTHER-ORG,"1 2 nmod,2 0 root",H-Y,2,0.07,-,-,-,-
+39,LOC-ORG,"1 2 nmod,2 0 root",H-Y,2,0.07,-,-,-,-
+40,OTHER-OTHER,"1 2 nmod,2 0 root",S-H,9,0.6,F,ner,0-1,-
+41,OTHER-LOC,"1 2 nmod,2 0 root",S-H,3,0.2,F,ner,0-1,-
+42,PER-PER,"1 2 nmod,2 0 root",S-H,2,0.13,F,pos,1-0,-
+43,OTHER-OTHER,"1 2 nmod,2 0 root",Y-H,6,0.5,F,ner,1-1,-
+44,LOC-LOC,"1 2 nmod,2 0 root",Y-H,3,0.25,T,-,0-0,-
+45,ORG-OTHER,"1 2 nmod,2 0 root",Y-H,2,0.17,F,pos,0-1,-
+46,OTHER-OTHER,"1 2 nmod,2 0 root",S-N,11,1.0,-,-,-,-
+47,OTHER-OTHER,"1 2 nmod,2 0 root",S-P,10,1.0,T,-,0-0,-
+48,OTHER-OTHER,"1 2 nmod,2 0 root",P-H,4,0.5,F,ner,0-1,-
+49,OTHER-LOC,"1 2 nmod,2 0 root",P-H,3,0.38,T,-,0-0,-
+50,OTHER-OTHER,"1 2 nmod,2 0 root",P-P,7,1.0,T,-,0-0,-
+51,OTHER-OTHER,"1 2 nmod,2 0 root",Y-Y,6,1.0,F,syntax,1-1,-
+52,OTHER-OTHER,"1 2 nmod,2 0 root",S-V_inf|A,4,1.0,T,-,0-0,-
+53,OTHER-OTHER,"1 2 nmod,2 0 root",P-A,4,1.0,T,-,0-0,-
+54,OTHER-OTHER,"1 2 nmod,2 0 root",H-N,2,0.5,F,ner,1-0,-
+55,LOC-OTHER,"1 2 nmod,2 0 root",H-N,2,0.5,-,-,-,-
+56,OTHER-OTHER,"1 2 nmod,2 0 root",S-O,3,1.0,-,-,-,-
+57,OTHER-OTHER,"1 2 nmod,2 0 root",P-V_fin,2,1.0,-,-,-,-
+58,OTHER-OTHER,"1 2 nmod,2 0 root",S-V_fin,2,1.0,-,-,-,-
+59,OTHER-OTHER,"1 2 nmod,2 0 root",S-K,2,1.0,-,-,-,-
+60,OTHER-OTHER,"1 2 nmod,2 0 root",S-A,2,1.0,-,-,-,-
+61,OTHER-OTHER,"1 2 nmod,2 0 root",P-P|O,2,1.0,-,-,-,-
+62,OTHER-OTHER,"1 2 nmod,2 0 root",G-D,2,1.0,-,-,-,-
+63,OTHER-OTHER,"1 2 amod,2 0 root",S-S,27,1.0,T,-,0-0,-
+64,OTHER-OTHER,"1 2 amod,2 0 root",A-S,5043,1.0,T,-,0-0,-
+65,ORG-ORG,"1 2 amod,2 0 root",A-S,12,0.0,-,-,-,-
+66,OTHER-LOC,"1 2 amod,2 0 root",A-S,4,0.0,-,-,-,-
+67,LOC-LOC,"1 2 amod,2 0 root",A-S,3,0.0,-,-,-,-
+68,OTHER-OTHER,"1 2 amod,2 0 root",H-S,20,0.67,F,ner+syntax,1-0,-
+69,ORG-ORG,"1 2 amod,2 0 root",H-S,5,0.17,T,-,0-0,-
+70,LOC-OTHER,"1 2 amod,2 0 root",H-S,5,0.17,T,-,0-0,-
+71,OTHER-OTHER,"1 2 amod,2 0 root",P-S,123,1.0,T,-,0-0,-
+72,OTHER-OTHER,"1 2 amod,2 0 root",O-S,833,1.0,T,-,0-0,-
+73,OTHER-OTHER,"1 2 amod,2 0 root",C-S,422,1.0,T,-,0-0,-
+74,OTHER-OTHER,"1 2 amod,2 0 root",Y-S,4,0.67,T,-,0-0,-
+75,ORG-OTHER,"1 2 amod,2 0 root",Y-S,2,0.33,T,-,0-0,-
+76,OTHER-OTHER,"1 2 amod,2 0 root",H-H,5,1.0,F,ner,1-1,-
+77,OTHER-OTHER,"1 2 amod,2 0 root",G-S,159,0.99,F,ner,1-0,-
+78,OTHER-OTHER,"1 2 amod,2 0 root",P|O-S,119,1.0,T,-,0-0,-
+79,OTHER-OTHER,"1 2 amod,2 0 root",U-S,105,1.0,T,-,0-0,-
+80,OTHER-OTHER,"1 2 amod,2 0 root",A-H,46,0.79,F,ner,0-1,-
+81,OTHER-LOC,"1 2 amod,2 0 root",A-H,7,0.12,T,-,0-0,-
+82,OTHER-ORG,"1 2 amod,2 0 root",A-H,4,0.07,-,-,-,-
+83,OTHER-OTHER,"1 2 amod,2 0 root",A-N,31,1.0,?,-,?-?,-
+84,OTHER-OTHER,"1 2 amod,2 0 root",O-Y,19,1.0,T,-,0-0,-
+85,OTHER-OTHER,"1 2 amod,2 0 root",A-P,16,1.0,?,-,?-?,-
+86,OTHER-OTHER,"1 2 amod,2 0 root",O|P-S,14,1.0,T,-,0-0,-
+87,OTHER-ORG,"1 2 amod,2 0 root",A-Y,6,0.55,T,-,0-0,-
+88,OTHER-OTHER,"1 2 amod,2 0 root",A-Y,5,0.45,F,ner,0-1,-
+89,OTHER-OTHER,"1 2 amod,2 0 root",D-S,6,1.0,F,syntax,1-0,-
+90,OTHER-OTHER,"1 2 amod,2 0 root",O-N,4,1.0,-,-,-,-
+91,OTHER-OTHER,"1 2 amod,2 0 root",A-V_fin,4,1.0,-,-,-,-
+92,OTHER-OTHER,"1 2 amod,2 0 root",A-A,4,1.0,-,-,-,-
+93,OTHER-OTHER,"1 2 amod,2 0 root",S-Z,2,1.0,-,-,-,-
+94,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A-S,278,0.98,T,-,0-0-0,-
+95,OTHER-OTHER-LOC,"1 2 obl,2 3 acl,3 0 root",S-A-S,3,0.01,-,-,-,-
+96,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A-S,2,0.01,-,-,-,-
+97,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A|V_inf-S,109,0.98,T,-,0-0-0,-
+98,ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A|V_inf-S,2,0.02,-,-,-,-
+99,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-V_inf|A-S,94,0.94,T,-,0-0-0,-
+100,OTHER-OTHER-LOC,"1 2 obl,2 3 acl,3 0 root",S-V_inf|A-S,4,0.04,-,-,-,-
+101,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A-S,49,0.91,T,-,0-0-0,-
+102,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A-S,3,0.06,-,-,-,-
+103,ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A-S,2,0.04,-,-,-,-
+104,OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root",S-V_inf|A-H,17,0.81,T,-,0-0-0,-
+105,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-V_inf|A-H,4,0.19,F,ner,0-0-1,-
+106,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",P-A-S,15,1.0,T,-,0-0-0,-
+107,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A-H,11,0.79,F,ner,0-0-1,-
+108,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A-H,2,0.14,F,ner,0-0-1,-
+109,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-V_fin-S,11,1.0,T,-,0-0-0,-
+110,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-V_inf|A-S,7,0.64,T,-,0-0-0,-
+111,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-V_inf|A-S,2,0.18,F,ner,1-0-0,-
+112,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-V_fin-S,9,1.0,T,-,0-0-0,-
+113,ORG-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",Y-A-S,4,0.57,T,-,0-0-0,-
+114,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",Y-A-S,2,0.29,?,-,?-?-?,-
+115,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A|V_inf-S,4,0.57,T,-,0-0-0,-
+116,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A|V_inf-S,2,0.29,F,ner,1-0-0,-
+117,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",Y-A|V_inf-S,4,0.8,?,-,?-?-?,-
+118,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",P-A|V_inf-S,5,1.0,T,-,0-0-0,-
+119,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A|V_inf-Y,4,1.0,?,-,?-?-?,-
+120,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A|V_inf-A,4,1.0,?,-,?-?-?,-
+121,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",P-V_inf|A-S,4,1.0,T,-,0-0-0,-
+122,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",P-V_fin-S,4,1.0,?,-,?-?-?,-
+123,OTHER-OTHER-PER,"1 2 obl,2 3 acl,3 0 root",H-V_inf|A-H,2,0.5,F,ner,1-0-0,-
+124,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",S-A|V_inf|V_fin-S,3,1.0,?,-,?-?-?,-
+125,OTHER-OTHER-ORG,"1 2 obl,2 3 acl,3 0 root",S-A-Y,2,0.67,T,-,0-0-0,-
+126,LOC-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",H-A|V_inf|V_fin-S,3,1.0,?,-,?-?-?,-
+127,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",A-A-S,3,1.0,?,-,?-?-?,-
+128,OTHER-OTHER-OTHER,"1 2 obl,2 3 acl,3 0 root",O-V_inf|A-S,2,1.0,T,-,0-0-0,-
+129,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",S-S-S,285,0.93,T,-,0-0-0,-
+130,ORG-OTHER-ORG,"1 2 nmod,2 0 root,3 2 nmod",S-S-S,15,0.05,-,-,-,-
+131,ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",S-S-S,6,0.02,-,-,-,-
+132,LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-S,50,0.67,?,-,?-?-?,-
+133,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-S,10,0.13,F,ner,1-0-0,-
+134,ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-S,8,0.11,T,-,0-0-0,-
+135,PER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-S,4,0.05,-,-,-,-
+136,LOC-LOC-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-S,2,0.03,-,-,-,-
+137,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",S-S-H,22,0.65,F,ner,0-0-1,-
+138,OTHER-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod",S-S-H,6,0.18,T,-,0-0-0,-
+139,OTHER-OTHER-PER,"1 2 nmod,2 0 root,3 2 nmod",S-S-H,5,0.15,?,-,?-?-?,-
+140,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",P-S-S,33,0.94,T,-,0-0-0,-
+141,OTHER-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod",P-S-S,2,0.06,-,-,-,-
+142,LOC-OTHER-LOC,"1 2 nmod,2 0 root,3 2 nmod",H-S-H,13,0.5,T,-,0-0-0,-
+143,LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-H,9,0.35,F,ner,0-0-1,-
+144,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-H,2,0.08,F,ner,1-0-1,-
+145,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",S-S-Y,13,0.76,?,-,?-?-?,-
+146,OTHER-OTHER-ORG,"1 2 nmod,2 0 root,3 2 nmod",S-S-Y,4,0.24,T,-,0-0-0,-
+147,ORG-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",Y-S-S,9,0.75,T,-,0-0-0,-
+148,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",P-S-H,6,0.67,F,ner,0-0-1,-
+149,OTHER-OTHER-PER,"1 2 nmod,2 0 root,3 2 nmod",P-S-H,2,0.22,?,-,?-?-?,-
+150,LOC-LOC-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-H-S,2,0.67,T,-,0-0-0,-
+151,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",P-S-Y,4,1.0,?,-,?-?-?,-
+152,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",P-S-P,4,1.0,?,-,?-?-?,-
+153,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",S-S-P,2,1.0,?,-,?-?-?,-
+154,LOC-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-Y,2,1.0,?,-,?-?-?,-
+155,OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 nmod",H-S-P,2,1.0,F,ner,1-0-0,-
+156,OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-H,122,0.56,F,ner,0-0-1-1,-
+157,OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-H,65,0.3,T,-,0-0-0-0,-
+158,ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-H,23,0.11,F,ner,0-0-1-1,-
+159,ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-H,6,0.03,-,-,-,-
+160,LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,54,0.44,F,ner,0-0-1-1,-
+161,LOC-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,25,0.2,T,-,0-0-0-0,-
+162,OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,18,0.15,F,ner,1-0-1-1,-
+163,ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,11,0.09,F,ner,0-0-1-1,-
+164,ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,7,0.06,-,-,-,-
+165,OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,4,0.03,F,ner,1-0-0-0,-
+166,PER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-H,2,0.02,F,ner,0-0-1-1,-
+167,ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",Y-S-H-H,9,0.47,F,ner,0-0-1-1,-
+168,ORG-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",Y-S-H-H,5,0.26,T,-,0-0-0-0,-
+169,LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",Y-S-H-H,4,0.21,F,ner,0-0-1-1,-
+170,OTHER-OTHER-ORG-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-N,3,0.5,?,-,?-?-?-?,-
+171,ORG-OTHER-ORG-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-N,3,0.5,?,-,?-?-?-?,-
+172,OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",P-S-H-H,4,0.67,F,ner,0-0-1-1,-
+173,OTHER-OTHER-PER-PER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",P-S-H-H,2,0.33,T,-,0-0-0-0,-
+174,OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-S,5,1.0,F,ner,0-0-1-0,-
+175,OTHER-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-H-Y,3,0.75,F,ner,0-0-1-?,-
+176,LOC-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-Y,2,0.5,F,ner,0-0-1-?,-
+177,ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",H-S-H-S,3,0.75,F,ner,0-0-1-0,-
+178,ORG-OTHER-OTHER-OTHER,"1 2 nmod,2 0 root,3 2 appos,4 3 flat",S-S-S-H,2,0.67,F,ner,0-0-0-1,-
+179,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-S-S,3,1.0,?,-,?-?-?,-
+180,PER-PER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-S-S,3,0.75,?,-,?-?-?,-
+181,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-H-H,49,0.62,F,ner,1-1-1,-
+182,PER-PER-PER,"1 0 root,2 1 flat,3 1 flat",H-H-H,8,0.1,T,-,0-0-0,-
+183,OTHER-PER-PER,"1 0 root,2 1 flat,3 1 flat",H-H-H,8,0.1,F,ner,1-0-0,-
+184,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",H-H-H,7,0.09,T,-,0-0-0,-
+185,PER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-H-H,2,0.03,F,ner,0-1-1,-
+186,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-S-H,4,1.0,F,ner,1-0-1,-
+187,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-S-Y,3,1.0,F,pos,0-0-1,-
+188,PER-PER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-H-Y,5,0.26,F,syntax,0-0-1,-
+189,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-H-Y,4,0.21,F,ner,1-1-0,-
+190,OTHER-PER-PER,"1 0 root,2 1 flat,3 1 flat",H-H-Y,3,0.16,F,ner,1-0-0,-
+191,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",H-H-Y,3,0.16,T,-,0-0-0,-
+192,PER-PER-ORG,"1 0 root,2 1 flat,3 1 flat",H-H-Y,2,0.11,T,-,0-0-0,-
+193,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-Y-H,12,0.8,F,ner,1-0-1,-
+194,OTHER-OTHER-LOC,"1 0 root,2 1 flat,3 1 flat",H-Y-H,2,0.13,F,ner,1-0-0,-
+195,ORG-OTHER-ORG,"1 0 root,2 1 flat,3 1 flat",Y-J-Y,10,0.91,T,-,0-0-0,-
+196,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-H-S,2,0.67,F,ner,1-1-0,-
+197,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",Y-H-H,5,1.0,F,ner,0-1-1,-
+198,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",H-J-H,2,0.4,F,ner,1-0-1,-
+199,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",H-J-H,2,0.4,T,-,0-0-0,-
+200,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-Y-S,3,1.0,F,pos,0-1-0,-
+201,ORG-ORG-ORG,"1 0 root,2 1 flat,3 1 flat",Y-H-S,2,0.67,T,-,0-0-0,-
+202,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",S-H-H,2,1.0,F,ner,0-1-1,-
+203,OTHER-OTHER-OTHER,"1 0 root,2 1 flat,3 1 flat",Y-Y-S,2,1.0,F,pos,1-1-0,-
+204,OTHER-OTHER-LOC,"1 0 root,2 1 flat,3 1 flat",S-J-H,2,1.0,T,-,0-0-0,-
