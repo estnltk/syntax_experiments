@@ -297,6 +297,7 @@ class V31:
 
             r_dict["deprel"] = res["deprel"].upper()
             r_dict["case"] = self.get_case(res["feats"])
+            r_dict["feats"] = res["feats"]
             r_dict["frequent_form"] = res["form"].lower()
             r_dict["obl_case"] = ""
             r_dict["loc"] = res["loc"]
@@ -334,7 +335,7 @@ class V31:
                         # print(key)
                         for child in grandchildren[key]:
                             item["obl_case"] += " " + child["form"].lower()
-                        self._raw_transactions[head_id][j]["obl_case"]= item["obl_case"]
+                        self._raw_transactions[head_id][j]["obl_case"] = item["obl_case"]
                 del item["loc"]
 
         # return list(transactions.values())
