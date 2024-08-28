@@ -175,36 +175,43 @@ class V31:
         return " ".join(text)
 
     def get_example_by_head_id(self, head_id, itemslist=[], full=False):
-        # print(head_id, itemsets)
-        
-        # print('transaction', self._raw_transactions[head_id])
-        
         text = []
-        for (item_obl, item_case, item_form, item_obl_case,) in itemslist:
-            
-            
+        for (
+            item_obl,
+            item_case,
+            item_feats,
+            item_form,
+            item_obl_case,
+        ) in itemslist:
             for child in self._raw_transactions[head_id]:
                 deprel = child["deprel"].upper()
                 case = child["case"]
-                form = '' if item_form == '' else child["frequent_form"]
+                form = "" if item_form == "" else child["frequent_form"]
                 obl_case = child["obl_case"]
                 # print()
                 # print("item\t", (item_obl, item_case, item_form, item_obl_case,))
                 # print("child\t",  (deprel, case, form, obl_case,) )
-                
-                if (deprel, case, form, obl_case,) == (item_obl, item_case, item_form, item_obl_case,):
+                if (
+                    deprel,
+                    case,
+                    form,
+                    obl_case,
+                ) == (
+                    item_obl,
+                    item_case,
+                    item_form,
+                    item_obl_case,
+                ):
                     # print('MATCH')
                     res = child["frequent_form"]
                     if child["obl_case"]:
-                        res += ' '+child["obl_case"]
+                        res += " " + child["obl_case"]
                     text.append(res)
                     break
-                    
                 # print()
 
         return " ".join(text)
 
- 
     def get_transactions(
         self,
         verb,
@@ -335,43 +342,44 @@ class V31:
                         # print(key)
                         for child in grandchildren[key]:
                             item["obl_case"] += " " + child["form"].lower()
-                        self._raw_transactions[head_id][j]["obl_case"] = item["obl_case"]
+                        self._raw_transactions[head_id][j]["obl_case"] = item[
+                            "obl_case"
+                        ]
                 del item["loc"]
 
         # return list(transactions.values())
         return transactions
 
-    def order_itemsets(self, itemsets:frozenset) -> list:
+    def order_itemsets(self, itemsets: frozenset) -> list:
         priority_list = ["nsubj", "obj", "xcomp", "ccomp", "obl", "advmod"]
-        
-        flattened_deprels = [
-            itemset[0].lower() for itemset in itemsets
-        ]
-        
+
+        flattened_deprels = [itemset[0].lower() for itemset in itemsets]
+
         unknown_itemsets = list(
             set(deprel for deprel in flattened_deprels if deprel not in priority_list)
         )
-        
+
         priority_list = priority_list + sorted(unknown_itemsets)
-       
+
         # Convert priority list to a dictionary for fast look-up
         priority_dict = {
             deprel.lower(): index for index, deprel in enumerate(priority_list)
         }
-        
-        itemset_priority = [priority_dict[deprel] for deprel in flattened_deprels]
+
         # Create a list from the frozenset
         item_list = list(itemsets)
-        
+
         # Assign a priority to each tuple based on the first element
-        item_list_with_priority = [(item, priority_dict[item[0].lower()]) for item in item_list]
-        
+        item_list_with_priority = [
+            (item, priority_dict[item[0].lower()]) for item in item_list
+        ]
+
         # Sort the list of tuples based on the priority values
         sorted_item_list = sorted(item_list_with_priority, key=lambda x: x[1])
-        
+
         # Extract just the tuples without the priority for the return value
         sorted_tuples_only = [item[0] for item in sorted_item_list]
-        
+
         # print("sorted itemsets", sorted_tuples_only)
         return sorted_tuples_only
 
@@ -448,25 +456,24 @@ class V31:
         res_apriori = apriori(
             df, min_support=min_support, use_colnames=use_colnames
         ).sort_values("support", ascending=False)
-        
+
         res_apriori["itemlists"] = res_apriori["itemsets"].apply(self.order_itemsets)
 
         if examples:
+
             def find_example(row):
-                itemsets = row['itemsets']
+                itemsets = row["itemsets"]
                 # Search randomly for a matching example
                 # TODO! optimize logic
                 for i in np.random.permutation(len(dataset)):
                     if itemsets.issubset(dataset[i]):
-                        return self.get_example_by_head_id(keys[i], row['itemlists'])
+                        return self.get_example_by_head_id(keys[i], row["itemlists"])
 
                 return "--"
 
             res_apriori["example1"] = res_apriori.apply(find_example, axis=1)
             res_apriori["example2"] = res_apriori.apply(find_example, axis=1)
             res_apriori["example3"] = res_apriori.apply(find_example, axis=1)
-            
-            
 
         return res_apriori
 
@@ -551,7 +558,6 @@ class V31:
         freq_df = pd.DataFrame({"Itemset": itemset_labels, "Support": itemsets_support})
         fig = plt.figure(figsize=(15, 10))
         gs = fig.add_gridspec(1, 2, width_ratios=(3, 2))
-      
 
         ax_heatmap = fig.add_subplot(gs[0])
         sns.heatmap(
@@ -560,9 +566,8 @@ class V31:
             cbar=False,
             yticklabels=itemset_labels,
             ax=ax_heatmap,
-            linewidths=0.5, 
-            linecolor='black'  
-            
+            linewidths=0.5,
+            linecolor="black",
         )
         ax_heatmap.set_title(title)
         ax_heatmap.set_xlabel("Items")
@@ -581,15 +586,17 @@ class V31:
 
         for _, spine in ax_hist.spines.items():
             spine.set_visible(False)
-        for index, p in  enumerate(barplot.patches):
+        for index, p in enumerate(barplot.patches):
             x = p.get_width()
             y = p.get_y() + p.get_height() / 2
-            example_text = itemsets_examples[index]  # Retrieve the example text for the current bar
+            example_text = itemsets_examples[
+                index
+            ]  # Retrieve the example text for the current bar
             if 0 and example_text:  # Only add the example if it is not empty
                 display_text = f"{x:.4f} ({example_text})"
             else:
                 display_text = f"{x:.4f}"
-            ax_hist.text(x+ 0.01, y, display_text, va="center")
+            ax_hist.text(x + 0.01, y, display_text, va="center")
 
         plt.tight_layout()
         # plt.subplots_adjust(left=0.2, right=0.3, wspace=0.1)
