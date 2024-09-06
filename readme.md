@@ -37,6 +37,10 @@ Most important settings of data pre-processing, training and evaluation are defi
 
 	* `python  02b_make_gaps.py  confs/conf_edt_v26_Stanza_ME_gap_experiments.ini`
 
+* `03_predict_stanza_morph.py` -- Uses stanza's POS/morphological features tagger and lemmatizer models for predicting morphological annotations. Executes all sections starting with `predict_morph_feats_stanza_` in input configuration file. Example:
+
+	* `python  03_predict_stanza_morph.py  confs/conf_edt_v26_Stanza_UD_morph_Stanza_UD_syntax.ini`
+
 * `03_train_stanza.py` -- Trains stanza parser models. Executes all sections starting with `train_stanza_` in input configuration file. Example:
 
 	* `python  03_train_stanza.py  confs/conf_edt_v26_Stanza_ME_full.ini`

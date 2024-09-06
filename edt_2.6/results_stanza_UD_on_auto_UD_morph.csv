@@ -1,0 +1,2 @@
+experiment,LAS_test,LAS_train,UAS_test,UAS_train,LAS_gap
+eval_stanza_ud_on_stanza_auto_morph_full_data,0.8519,0.9291,0.8801,0.9467,0.0772
