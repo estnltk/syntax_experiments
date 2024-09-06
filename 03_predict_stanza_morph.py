@@ -25,7 +25,7 @@ from stanza.utils.conll import CoNLL
 import configparser
 
 # ===============================================================
-#  Train Stanza for tagging morphological features (MAIN)
+#  Use Stanza for tagging morphological features (MAIN)
 # ===============================================================
 
 def predict_stanza_morph_main( conf_file, dry_run=False ):
@@ -45,9 +45,9 @@ def predict_stanza_morph_main( conf_file, dry_run=False ):
         raise ValueError("File {} is not accessible or is not in valid INI format".format(conf_file))
     section_found = False
     for section in config.sections():
-        # -----------------------------------------------------
-        #  precit  stanza  lemmatizer & morphological  tagger
-        # -----------------------------------------------------
+        # ------------------------------------------------------------
+        #  predict using stanza  lemmatizer & morphological  tagger
+        # ------------------------------------------------------------
         if section.startswith('predict_morph_feats_stanza_'):
             section_found = True
             print(f'Running {section} ...')
