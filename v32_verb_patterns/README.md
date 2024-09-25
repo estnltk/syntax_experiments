@@ -1,4 +1,4 @@
-# Koondkorpuse verbid ja nende alluvad
+# Verbimustrite tabelite kirjeldused
 
 
 Andmete kirjeldus ja kogumise kood: [v32_verb_patterns/Verbimustrite_tabelite_kirjeldused.ipynb](./v32_verb_patterns/Verbimustrite_tabelite_kirjeldused.ipynb)
