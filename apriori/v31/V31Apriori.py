@@ -179,7 +179,6 @@ class V31:
         for (
             item_obl,
             item_case,
-            item_feats,
             item_form,
             item_obl_case,
         ) in itemslist:
@@ -346,6 +345,7 @@ class V31:
                             "obl_case"
                         ]
                 del item["loc"]
+                del item["feats"]
 
         # return list(transactions.values())
         return transactions
