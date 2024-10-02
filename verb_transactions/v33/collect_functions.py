@@ -60,8 +60,7 @@ class DbMethods:
             " `form` text,"
             " `deprel` text,"
             " `feats` text,"
-            " `phrase_clear` text,"
-            " `phrase_full` text);"
+            " `phrase` text);"
         )
         self._cursor.execute(
             "CREATE UNIQUE INDEX IF NOT EXISTS transaction_head_uniq"
@@ -102,8 +101,7 @@ class DbMethods:
                     head["form"],
                     head["deprel"],
                     head["feats"],
-                    head["phrase_clear"],
-                    head["phrase_full"],
+                    head["phrase"],
                 )
             )
             for tr in head["members"]:
@@ -131,10 +129,9 @@ class DbMethods:
             " form,"
             " deprel,"
             " feats,"
-            " phrase_clear,"
-            " phrase_full"
+            " phrase"
             ")"
-            " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);",
+            " VALUES (?, ?, ?, ?, ?, ?, ?, ?);",
             transaction_heads,
         )
 
@@ -261,8 +258,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
             "verb": verb_lemma,
             "verb_compound": verb_compound,
             "feats": ",".join(sorted(graph.nodes[verb]["feats"])),
-            "phrase_clear": "",  # will be filled later in code
-            "phrase_full": "",  # will be filled later in code
+            "phrase": "",  # will be filled later in code
             "form": graph.nodes[verb]["form"],
             "deprel": graph.nodes[verb]["deprel"],
             "members": [],
@@ -285,11 +281,8 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
                 grandkids[case] = obl
 
         # make phrase with grandkids
-        transaction_head["phrase_clear"] = " ".join([
+        transaction_head["phrase"] = " ".join([
             graph.nodes[n]["form"] for n in sorted(kids + list(grandkids.keys()) + [verb])
-            ])
-        transaction_head["phrase_full"] = " ".join([
-            graph.nodes[n]["form"] for n in sorted(kids_unfiltered + list(grandkids.keys()) + [verb])
             ])
 
         child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
