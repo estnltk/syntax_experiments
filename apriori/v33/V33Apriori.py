@@ -20,7 +20,7 @@ from sqlalchemy.orm import declarative_base, relationship
 from pandas import DataFrame
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori
-
+from typing import List
 
 # Define db models
 
@@ -220,7 +220,7 @@ class V33:
             where_filters.append(Transaction.deprel.notin_(skip_deprels))
 
         if (
-            "parent_ids" in options
+            "head_ids" in options
             and isinstance(options["head_ids"], list)
             and len(options["head_ids"])
         ):
@@ -286,7 +286,7 @@ class V33:
 
     def get_transactions_by_head_ids(
         self,
-        head_ids=[],
+        head_ids: List[int],
     ):
         """
         Fetches transactions from the database and returns them as an array of
