@@ -5,16 +5,22 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import copy
 
+from contextlib import AbstractContextManager
+from contextlib import contextmanager
+
 from sqlalchemy import (
     text,
     select,
     and_,
     create_engine,
     Column,
+    MetaData,
+    Table,
     Integer,
     ForeignKey,
     Text,
 )
+
 from sqlalchemy.orm import declarative_base, relationship
 
 from pandas import DataFrame
@@ -85,6 +91,8 @@ class V33:
 
     # save to memory, it's faster than requesting examples from database
     _raw_transactions = {}
+    
+    _max_sql_vars = 999  # sqlite limitations
 
     def __init__(
         self,
@@ -112,6 +120,36 @@ class V33:
             self._apriori_treshold_delta = apriori_treshold_delta
         if apriori_treshold_percent is not None:
             self._apriori_treshold_percent = apriori_treshold_percent
+
+    @contextmanager
+    def _temp_head_ids_table(self, head_ids) -> Table:
+        """
+        Context manager to create and drop a temporary table for head_ids.
+        Needed because of limitations in SQLite
+        """
+        temp_table_name = "temp_head_ids"
+        metadata = MetaData()
+
+        # Define the temporary table
+        temp_table = Table(
+            temp_table_name,
+            metadata,
+            Column("id", Integer, primary_key=True),
+            prefixes=["TEMPORARY"],
+        )
+
+        try:
+            # Create the temporary table
+            temp_table.create(self._conn)
+
+            # Insert head_ids into the temporary table
+            insert_stmt = temp_table.insert().values([{"id": hid} for hid in head_ids])
+            self._conn.execute(insert_stmt)
+            yield temp_table  # Provide the temp_table to the calling context
+
+        finally:
+            # Drop the temporary table
+            temp_table.drop(self._conn)
 
     def execute_text(self, q):
         # print(text(q))
@@ -152,7 +190,6 @@ class V33:
         for (
             item_obl,
             item_case,
-            item_feats,
             item_form,
             item_obl_case,
         ) in itemslist:
@@ -186,6 +223,7 @@ class V33:
         return " ".join(text)
 
     def _get_transactions_stmt(self, options):
+        where_filters = []
 
         if (
             "skip_deprels" in options
@@ -196,12 +234,8 @@ class V33:
         else:
             skip_deprels = []
 
-        where_filters = []
-
-        skip_deprels = []
-
         if "verb" in options and options["verb"]:
-            where_filters = [TransactionHead.verb == options["verb"]]
+            where_filters.append(TransactionHead.verb == options["verb"])
 
         if "verb_compound" in options and options["verb_compound"] is not None:
             where_filters.append(
@@ -216,19 +250,28 @@ class V33:
         ):
             where_filters.append(Transaction.deprel.in_(options["include_deprels"]))
 
-        if len(skip_deprels):
-            where_filters.append(Transaction.deprel.notin_(skip_deprels))
+        use_temp_table = False
 
         if (
             "head_ids" in options
             and isinstance(options["head_ids"], list)
             and len(options["head_ids"])
         ):
-            where_filters.append(Transaction.head_id.in_(options["head_ids"]))
+            head_ids = options["head_ids"]
+            skip_deprels.append("compound:prt")
+            # Decide whether to use temp table based on length of head_ids
+            if len(head_ids) > (self._max_sql_vars - 10):
+                use_temp_table = True
+            else:
+                where_filters.append(Transaction.head_id.in_(head_ids))
 
-        if not len(where_filters):
+        if len(skip_deprels):
+            where_filters.append(Transaction.deprel.notin_(skip_deprels))
+
+        if not use_temp_table and not len(where_filters):
             raise Exception("You must specify filters")
-        # TransactionHead.deprel
+
+        # Build the base query
         stmt = (
             select(
                 Transaction.feats,
@@ -243,7 +286,24 @@ class V33:
             .where(and_(*where_filters))
             .order_by(Transaction.head_id, Transaction.loc)
         )
-        return stmt
+
+        # If using temp table, modify the query to join with it
+        if use_temp_table:
+            # Create the temp table context manager
+            @contextmanager
+            def temp_table_context():
+                with self._temp_head_ids_table(head_ids) as temp_table:
+                    # Adjust the query to join with the temp table
+                    stmt_with_temp = stmt.join(
+                        temp_table, TransactionHead.id == temp_table.c.id
+                    )
+                    yield stmt_with_temp
+
+            # Return the context manager
+            return temp_table_context()
+        else:
+            # Return the statement directly
+            return stmt
 
     def get_transactions(
         self,
@@ -284,34 +344,23 @@ class V33:
 
         return transactions
 
-    def get_transactions_by_head_ids(
-        self,
-        head_ids: List[int],
-    ):
-        """
-        Fetches transactions from the database and returns them as an array of
-        dictionaries, each representing a transaction.
-
-        Parameters:
-        - head_ids (list of transaction_head_ids)
-
-        Returns:
-        - list of list of dicts: A list where each dictionary represents a transaction,
-        structured according to the specified 'columns', or all transaction data
-        if 'columns' is empty or not provided. Transactions are grouped by 'head_id'.
-        """
-
+    def get_transactions_by_head_ids(self, head_ids: List[int]):
         if not head_ids:
             raise Exception("head_ids is not set")
 
-        transactions_stmt = self._get_transactions_stmt(
-            {
-                "head_ids": head_ids,
-            }
-        )
-        transactions = self._process_transactions(transactions_stmt)
+        options = {"head_ids": head_ids}
 
-        # return list(transactions.values())
+        # Get the statement or context manager
+        stmt_or_context = self._get_transactions_stmt(options)
+
+        if hasattr(stmt_or_context, "__enter__"):
+            # It's a context manager
+            with stmt_or_context as stmt:
+                transactions = self._process_transactions(stmt)
+        else:
+            # It's a regular statement
+            transactions = self._process_transactions(stmt_or_context)
+
         return transactions
 
     def _process_transactions(self, stmt):
@@ -392,6 +441,7 @@ class V33:
                             "obl_case"
                         ]
                 del item["loc"]
+                del item["feats"]
         return transactions
 
     def order_itemsets(self, itemsets: frozenset) -> list:
