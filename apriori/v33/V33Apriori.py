@@ -91,7 +91,8 @@ class V33:
 
     # save to memory, it's faster than requesting examples from database
     _raw_transactions = {}
-    
+
+    # SQLite default limit for variables in a query
     _max_sql_vars = 999  # sqlite limitations
 
     def __init__(
@@ -122,7 +123,7 @@ class V33:
             self._apriori_treshold_percent = apriori_treshold_percent
 
     @contextmanager
-    def _temp_head_ids_table(self, head_ids) -> Table:
+    def _temp_head_ids_table(self, head_ids):
         """
         Context manager to create and drop a temporary table for head_ids.
         Needed because of limitations in SQLite
@@ -139,17 +140,26 @@ class V33:
         )
 
         try:
-            # Create the temporary table
             temp_table.create(self._conn)
+            # print("Temporary table created.")
+            # Calculate the maximum number of rows per batch
+            max_rows_per_batch = self._max_sql_vars // 1
 
-            # Insert head_ids into the temporary table
-            insert_stmt = temp_table.insert().values([{"id": hid} for hid in head_ids])
-            self._conn.execute(insert_stmt)
-            yield temp_table  # Provide the temp_table to the calling context
+            # Insert head_ids into the temporary table in batches
+            # print(
+            #    f"Inserting {len(head_ids)} head_ids into temporary table in batches."
+            # )
+            for i in range(0, len(head_ids), max_rows_per_batch):
+                batch = head_ids[i : i + max_rows_per_batch]
+                insert_stmt = temp_table.insert().values([{"id": hid} for hid in batch])
+                self._conn.execute(insert_stmt)
+
+            # print("Head IDs inserted into temporary table.")
+            yield temp_table
 
         finally:
-            # Drop the temporary table
             temp_table.drop(self._conn)
+            # print("Temporary table dropped.")
 
     def execute_text(self, q):
         # print(text(q))
