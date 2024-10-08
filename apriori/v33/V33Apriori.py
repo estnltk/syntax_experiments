@@ -36,13 +36,14 @@ Base = declarative_base()
 class TransactionHead(Base):
     __tablename__ = "transaction_head"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    sentence_id = Column(Integer)  # ID of the associated sentence
-    loc = Column(Integer)  # Location index within the sentence
-    verb = Column(Text)  # Verb associated with this transaction head
-    verb_compound = Column(Text)  # Additional verb compound information
-    deprel = Column(Text)  # Dependency relation
-    feats = Column(Text)  # Linguistic features
-
+    sentence_id = Column(Integer) 
+    loc = Column(Integer)
+    verb = Column(Text) 
+    verb_compound = Column(Text) 
+    deprel = Column(Text)  
+    feats = Column(Text)  
+    form = Column(Text)
+    phrase = Column(Text) 
     transactions = relationship("Transaction", back_populates="transaction_head")
 
 
@@ -50,17 +51,16 @@ class Transaction(Base):
     __tablename__ = "transaction"
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
-    loc = Column(Integer)  # Location index within the sentence
-    loc_rel = Column(Integer)  # Relative location to the head
-    deprel = Column(Text)  # Dependency relation
-    form = Column(Text)  # Word form
-    lemma = Column(Text)  # Lemma of the word
-    feats = Column(Text)  # Linguistic features
-    pos = Column(Text)  # Part of speech
+    loc = Column(Integer)
+    loc_rel = Column(Integer)
+    deprel = Column(Text)
+    form = Column(Text)
+    lemma = Column(Text)
+    feats = Column(Text)
+    pos = Column(Text)
     parent_loc = Column(
         Integer
-    )  # Filled if item is actually grandkid of transaction_head
-    phrase = Column(Text)  # clean verbphrase verb+kids in correct order
+    )  # Filled if item grandkid (not direct kid) of transaction_head
     transaction_head = relationship("TransactionHead", back_populates="transactions")
 
 
