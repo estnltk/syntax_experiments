@@ -1,5 +1,7 @@
 ## Syntax ablation experiments
 
+This repository contains codebase and results of the experiments reported in the article ["Automatic dependency parsing of Estonian: what linguistic features to include?"](https://doi.org/10.1007/s10579-024-09779-z).
+
 ### Pre-requisites
 
 * Install [estnltk](https://github.com/estnltk/estnltk) (version 1.7.2+ is required);
@@ -79,3 +81,17 @@ Note: configurations also contain overlapping parts, e.g. once you've run UD pre
 ### Extras
 
 * [X1_previously_reported_performances.ipynb](X1_previously_reported_performances.ipynb) -- a small recap of previously reported dependency parsing performances for Estonian and English;
+
+### Citation
+
+In case you use this codebase or results in your work, please cite us as follows:
+
+	@article{laur2024automatic,
+	  title={Automatic dependency parsing of Estonian: what linguistic features to include?},
+	  author={Laur, Sven and Orasmaa, Siim and Eiche, Sandra and Särg, Dage},
+	  journal={Language Resources and Evaluation},
+	  year={2024},
+	  publisher={Springer},
+	  url={https://doi.org/10.1007/s10579-024-09779-z},
+	  doi={10.1007/s10579-024-09779-z},
+	}
