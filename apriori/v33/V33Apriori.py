@@ -5,7 +5,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import copy
 
-from contextlib import AbstractContextManager
 from contextlib import contextmanager
 
 from sqlalchemy import (
@@ -36,14 +35,14 @@ Base = declarative_base()
 class TransactionHead(Base):
     __tablename__ = "transaction_head"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    sentence_id = Column(Integer) 
+    sentence_id = Column(Integer)
     loc = Column(Integer)
-    verb = Column(Text) 
-    verb_compound = Column(Text) 
-    deprel = Column(Text)  
-    feats = Column(Text)  
+    verb = Column(Text)
+    verb_compound = Column(Text)
+    deprel = Column(Text)
+    feats = Column(Text)
     form = Column(Text)
-    phrase = Column(Text) 
+    phrase = Column(Text)
     transactions = relationship("Transaction", back_populates="transaction_head")
 
 
@@ -141,20 +140,15 @@ class V33:
 
         try:
             temp_table.create(self._conn)
-            # print("Temporary table created.")
-            # Calculate the maximum number of rows per batch
+            # maximum number of rows per batch
             max_rows_per_batch = self._max_sql_vars // 1
 
-            # Insert head_ids into the temporary table in batches
-            # print(
-            #    f"Inserting {len(head_ids)} head_ids into temporary table in batches."
-            # )
+            # head_ids into the temporary table in batches
             for i in range(0, len(head_ids), max_rows_per_batch):
-                batch = head_ids[i : i + max_rows_per_batch]
+                batch = head_ids[i: i + max_rows_per_batch]
                 insert_stmt = temp_table.insert().values([{"id": hid} for hid in batch])
                 self._conn.execute(insert_stmt)
 
-            # print("Head IDs inserted into temporary table.")
             yield temp_table
 
         finally:
@@ -315,6 +309,64 @@ class V33:
             # Return the statement directly
             return stmt
 
+    def _get_phrases_stmt(self, options):
+        where_filters = []
+
+        if "verb" in options and options["verb"]:
+            where_filters.append(TransactionHead.verb == options["verb"])
+
+        if "verb_compound" in options and options["verb_compound"] is not None:
+            where_filters.append(
+                TransactionHead.verb_compound == options["verb_compound"]
+            )
+
+        use_temp_table = False
+
+        if (
+            "head_ids" in options
+            and isinstance(options["head_ids"], list)
+            and len(options["head_ids"])
+        ):
+            head_ids = options["head_ids"]
+            # Decide whether to use temp table based on length of head_ids
+            if len(head_ids) > (self._max_sql_vars - 10):
+                use_temp_table = True
+            else:
+                where_filters.append(TransactionHead.id.in_(head_ids))
+
+        if not use_temp_table and not len(where_filters):
+            raise Exception("You must specify filters")
+
+        # Build the base query
+        stmt = (
+            select(
+                TransactionHead.id.label('head_id'),
+                TransactionHead.sentence_id,
+                TransactionHead.loc,
+                TransactionHead.phrase
+            )
+            .where(and_(*where_filters))
+            .order_by(TransactionHead.sentence_id)
+        )
+
+        # If using temp table, modify the query to join with it
+        if use_temp_table:
+            # Create the temp table context manager
+            @contextmanager
+            def temp_table_context():
+                with self._temp_head_ids_table(head_ids) as temp_table:
+                    # Adjust the query to join with the temp table
+                    stmt_with_temp = stmt.join(
+                        temp_table, TransactionHead.id == temp_table.c.id
+                    )
+                    yield stmt_with_temp
+
+            # Return the context manager
+            return temp_table_context()
+        else:
+            # Return the statement directly
+            return stmt
+
     def get_transactions(
         self,
         verb,
@@ -372,6 +424,38 @@ class V33:
             transactions = self._process_transactions(stmt_or_context)
 
         return transactions
+
+    def get_phrases_by_head_ids(self, head_ids: List[int]):
+        if not head_ids:
+            raise Exception("head_ids is not set")
+
+        options = {"head_ids": head_ids}
+
+        # Get the statement or context manager
+        stmt_or_context = self._get_phrases_stmt(options)
+
+        if hasattr(stmt_or_context, "__enter__"):
+            # It's a context manager
+            with stmt_or_context as stmt:
+                stmt = stmt
+        else:
+            # It's a regular statement
+            stmt = stmt_or_context
+
+        return self.execute(stmt).mappings().all()
+
+    def get_phrases(
+        self,
+        verb,
+        verb_compound,
+    ):
+        stmt = self._get_phrases_stmt(
+            {
+                "verb": verb,
+                "verb_compound": verb_compound,
+            }
+        )
+        return self.execute(stmt).mappings().all()
 
     def _process_transactions(self, stmt):
         all_forms = {}
