@@ -43,11 +43,11 @@ class TransactionHead(Base):
     feats = Column(Text)
     form = Column(Text)
     phrase = Column(Text)
-    transactions = relationship("Transaction", back_populates="transaction_head")
+    transactions = relationship("TransactionRow", back_populates="transaction_head")
 
 
-class Transaction(Base):
-    __tablename__ = "transaction"
+class TransactionRow(Base):
+    __tablename__ = "transaction_row"
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
     loc = Column(Integer)
@@ -252,7 +252,7 @@ class V33:
             and isinstance(options["include_deprels"], list)
             and len(options["include_deprels"])
         ):
-            where_filters.append(Transaction.deprel.in_(options["include_deprels"]))
+            where_filters.append(TransactionRow.deprel.in_(options["include_deprels"]))
 
         use_temp_table = False
 
@@ -267,10 +267,10 @@ class V33:
             if len(head_ids) > (self._max_sql_vars - 10):
                 use_temp_table = True
             else:
-                where_filters.append(Transaction.head_id.in_(head_ids))
+                where_filters.append(TransactionRow.head_id.in_(head_ids))
 
         if len(skip_deprels):
-            where_filters.append(Transaction.deprel.notin_(skip_deprels))
+            where_filters.append(TransactionRow.deprel.notin_(skip_deprels))
 
         if not use_temp_table and not len(where_filters):
             raise Exception("You must specify filters")
@@ -278,17 +278,17 @@ class V33:
         # Build the base query
         stmt = (
             select(
-                Transaction.feats,
-                Transaction.form,
-                Transaction.deprel,
-                Transaction.pos,
-                Transaction.loc,
-                Transaction.parent_loc,
-                Transaction.head_id,
+                TransactionRow.feats,
+                TransactionRow.form,
+                TransactionRow.deprel,
+                TransactionRow.pos,
+                TransactionRow.loc,
+                TransactionRow.parent_loc,
+                TransactionRow.head_id,
             )
-            .join(TransactionHead, TransactionHead.id == Transaction.head_id)
+            .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
             .where(and_(*where_filters))
-            .order_by(Transaction.head_id, Transaction.loc)
+            .order_by(TransactionRow.head_id, TransactionRow.loc)
         )
 
         # If using temp table, modify the query to join with it

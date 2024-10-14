@@ -37,11 +37,11 @@ class TransactionHead(Base):
     deprel = Column(Text)  # Dependency relation
     feats = Column(Text)  # Linguistic features
 
-    transactions = relationship("Transaction", back_populates="transaction_head")
+    transactions = relationship("TransactionRow", back_populates="transaction_head")
 
 
-class Transaction(Base):
-    __tablename__ = "transaction"
+class TransactionRow(Base):
+    __tablename__ = "transaction_row"
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
     loc = Column(Integer)  # Location index within the sentence
@@ -157,10 +157,10 @@ class V30:
     def get_example_by_head_id(self, head_id, itemsets={}, full=False):
         # print(head_id, itemsets)
         stmt = (
-            select(TransactionHead.verb, Transaction)
-            .outerjoin(Transaction, TransactionHead.id == Transaction.head_id)
+            select(TransactionHead.verb, TransactionRow)
+            .outerjoin(TransactionRow, TransactionHead.id == TransactionRow.head_id)
             .where(TransactionHead.id == head_id)
-            .order_by(Transaction.loc_rel)
+            .order_by(TransactionRow.loc_rel)
         )
         # text = {0: "VERB"}
         text = []
@@ -214,10 +214,10 @@ class V30:
             skip_deprels.append("compound:prt")
 
         if isinstance(skip_deprels, list) and len(skip_deprels):
-            where_filters.append(Transaction.deprel.notin_(skip_deprels))
+            where_filters.append(TransactionRow.deprel.notin_(skip_deprels))
 
         if isinstance(include_deprels, list) and len(include_deprels):
-            where_filters.append(Transaction.deprel.in_(include_deprels))
+            where_filters.append(TransactionRow.deprel.in_(include_deprels))
 
         all_forms = {}
 
@@ -232,15 +232,15 @@ class V30:
         # TransactionHead.deprel
         stmt = (
             select(
-                Transaction.feats,
-                Transaction.form,
-                Transaction.deprel,
-                Transaction.pos,
-                Transaction.head_id,
+                TransactionRow.feats,
+                TransactionRow.form,
+                TransactionRow.deprel,
+                TransactionRow.pos,
+                TransactionRow.head_id,
             )
-            .join(TransactionHead, TransactionHead.id == Transaction.head_id)
+            .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
             .where(and_(*where_filters))
-            .order_by(Transaction.head_id, Transaction.loc)
+            .order_by(TransactionRow.head_id, TransactionRow.loc)
         )
 
         transactions = {}

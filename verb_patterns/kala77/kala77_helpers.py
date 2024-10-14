@@ -43,9 +43,9 @@ transaction_head_table = Table(
     Index("th_feats", "form"),
 )
 
-# Define the transaction table
+# Define the transaction_row table
 transaction_table = Table(
-    "transaction",
+    "transaction_row",
     metadata,
     Column("id", Integer, primary_key=True, autoincrement=True),
     Column("head_id", Integer, ForeignKey("transaction_head.id")),
@@ -92,10 +92,7 @@ def fill_table_verbs(conn):
         select_stmt,
     )
 
-    # Execute the insert statement
     conn.execute(insert_stmt)
-
-    # Commit the transaction to save the changes
     conn.commit()
 
 
@@ -145,14 +142,14 @@ def fill_table_transaction_head(
     conn.commit()
 
 
-def fill_table_transaction(conn):
+def fill_table_transaction_row(conn):
     column_names = [column.name for column in transaction_table.columns]
     columns_str1 = " ,".join([f"`{c}`" for c in column_names])
     columns_str2 = " ,".join([f"tr.`{c}`" for c in column_names])
 
     sql = f"""
-    INSERT INTO `transaction` ({columns_str1})
-        SELECT {columns_str2} FROM db_tr.`transaction` tr
+    INSERT INTO `transaction_row` ({columns_str1})
+        SELECT {columns_str2} FROM db_tr.`transaction_row` tr
         INNER JOIN transaction_head th ON th.id = tr.head_id
     ON CONFLICT(id) DO NOTHING;
     """

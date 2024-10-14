@@ -66,7 +66,7 @@ class DbMethods:
         )
 
         self._cursor.execute(
-            "CREATE TABLE IF NOT EXISTS `transaction`"
+            "CREATE TABLE IF NOT EXISTS `transaction_row`"
             " (`id` INTEGER PRIMARY KEY AUTOINCREMENT,"
             " `head_id` int,"
             " `loc` int,"
@@ -80,7 +80,7 @@ class DbMethods:
 
         if do_truncate:
             self._cursor.execute("DELETE FROM `transaction_head` WHERE 1;")
-            self._cursor.execute("DELETE FROM `transaction` WHERE 1;")
+            self._cursor.execute("DELETE FROM `transaction_row` WHERE 1;")
 
         self._connection.commit()
 
@@ -128,7 +128,7 @@ class DbMethods:
         )
 
         self._cursor.executemany(
-            "INSERT INTO `transaction` ("
+            "INSERT INTO `transaction_row` ("
             " head_id,"
             " loc,"
             " loc_rel,"
