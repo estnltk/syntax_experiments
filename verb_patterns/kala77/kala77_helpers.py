@@ -72,6 +72,12 @@ def reset_tables(engine):
     metadata.create_all(engine)
 
 
+def copy_patterns_table(conn):
+    sql = "CREATE TABLE `patterns` AS SELECT * FROM db_pat.`patterns`"
+    conn.execute(text(sql))
+    conn.commit()
+
+
 def fill_table_verbs(conn):
     select_stmt = (
         select(
