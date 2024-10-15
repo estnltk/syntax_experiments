@@ -437,12 +437,15 @@ class V33:
         if hasattr(stmt_or_context, "__enter__"):
             # It's a context manager
             with stmt_or_context as stmt:
-                stmt = stmt
+                # Execute and fetch results within the context
+                results = self.execute(stmt).mappings().all()
         else:
             # It's a regular statement
             stmt = stmt_or_context
+            results = self.execute(stmt).mappings().all()
 
-        return self.execute(stmt).mappings().all()
+        # Return the results after the context manager has exited
+        return results
 
     def get_phrases(
         self,
