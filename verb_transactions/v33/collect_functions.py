@@ -265,7 +265,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
         }
 
         # remove irrelevant nodes
-        kids_unfiltered = kids
+        # kids_unfiltered = kids
         kids = [m for m in kids if graph.nodes[m]["deprel"] not in deprels_to_ignore]
 
         # verb -> obl -> case
@@ -282,7 +282,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
 
         # make phrase with grandkids
         transaction_head["phrase"] = " ".join([
-            graph.nodes[n]["form"] for n in sorted(kids + list(grandkids.keys()) + [verb])
+            graph.nodes[n]["form"] for n in sorted(list(set(kids + list(grandkids.keys()) + [verb])))
             ])
 
         child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
