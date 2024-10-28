@@ -1,4 +1,4 @@
-** Märgendusjuhis kohakäändes sõnade märgendamiseks **
+**Märgendusjuhis kohakäändes sõnade märgendamiseks**
 
 * time: ajasõnad
 * loc_c: konkreetsed füüsilised kohad millel on võimalik määrata geograafiline asukoht
