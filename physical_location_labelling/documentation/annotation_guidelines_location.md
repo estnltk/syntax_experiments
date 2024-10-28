@@ -15,6 +15,6 @@
 * owner: valdajamäärus (rüselejal käisid sussid, jooksid Markole amokki, käisid Kelamitel abiks)
 * manner: viisimäärus (jookseb välja naerul poiss)
 * other: igasugused kahtlased asjad
-	*stampväljendid: üldjuhul, tulemusel, kohustuslikus korras, vastavalt vajadusele, tagajärjel
+	* stampväljendid: üldjuhul, tulemusel, kohustuslikus korras, vastavalt vajadusele, tagajärjel
 	* konstruktsioon: vaatamata hoiakule, liigub kesklinlastest rohkem, käib jutt kehtivusest, paberi dokumente liigub rohkem, astub loomale ligi
 * error: lemmatiseerimisviga (enne jõule -> jõud)
