@@ -1,4 +1,4 @@
-estnltk==1.7.2
+estnltk==1.7.3
 psycopg2-binary>=2.9.9,<3.0.0
 pygraphviz>=1.12,<1.13
 matplotlib>=3.8.2
