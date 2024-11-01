@@ -281,6 +281,7 @@ class V33:
                 TransactionRow.feats,
                 TransactionRow.form,
                 TransactionRow.deprel,
+                TransactionRow.lemma,
                 TransactionRow.pos,
                 TransactionRow.loc,
                 TransactionRow.parent_loc,
@@ -337,6 +338,7 @@ class V33:
         if not use_temp_table and not len(where_filters):
             raise Exception("You must specify filters")
 
+        where_filters.append(True)
         # Build the base query
         stmt = (
             select(
@@ -497,6 +499,7 @@ class V33:
             r_dict["deprel"] = res["deprel"].upper()
             r_dict["case"] = self.get_case(res["feats"])
             r_dict["feats"] = res["feats"]
+            r_dict["lemma"] = res["lemma"]
             r_dict["frequent_form"] = res["form"].lower()
             r_dict["obl_case"] = ""
             r_dict["loc"] = res["loc"]
@@ -539,6 +542,7 @@ class V33:
                         ]
                 del item["loc"]
                 del item["feats"]
+                del item["lemma"]
         return transactions
 
     def order_itemsets(self, itemsets: frozenset) -> list:
