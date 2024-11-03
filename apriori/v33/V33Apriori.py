@@ -226,7 +226,7 @@ class V33:
 
         return " ".join(text)
 
-    def _get_transactions_stmt(self, options):
+    def _get_transactions_stmt(self, options, force_keep_compound: bool = False):
         where_filters = []
 
         if (
@@ -245,7 +245,8 @@ class V33:
             where_filters.append(
                 TransactionHead.verb_compound == options["verb_compound"]
             )
-            skip_deprels.append("compound:prt")
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
 
         if (
             "include_deprels" in options
@@ -262,7 +263,8 @@ class V33:
             and len(options["head_ids"])
         ):
             head_ids = options["head_ids"]
-            skip_deprels.append("compound:prt")
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
             # Decide whether to use temp table based on length of head_ids
             if len(head_ids) > (self._max_sql_vars - 10):
                 use_temp_table = True
@@ -375,6 +377,7 @@ class V33:
         verb_compound="",
         skip_deprels=[],
         include_deprels=[],
+        force_keep_compound: bool = False,
     ):
         """
         Fetches transactions from the database and returns them as an array of
@@ -401,21 +404,21 @@ class V33:
                 "verb_compound": verb_compound,
                 "skip_deprels": skip_deprels,
                 "include_deprels": include_deprels,
-            }
+            }, force_keep_compound=force_keep_compound
         )
 
         transactions = self._process_transactions(transactions_stmt)
 
         return transactions
 
-    def get_transactions_by_head_ids(self, head_ids: List[int]):
+    def get_transactions_by_head_ids(self, head_ids: List[int], force_keep_compound: bool = False):
         if not head_ids:
             raise Exception("head_ids is not set")
 
         options = {"head_ids": head_ids}
 
         # Get the statement or context manager
-        stmt_or_context = self._get_transactions_stmt(options)
+        stmt_or_context = self._get_transactions_stmt(options, force_keep_compound=force_keep_compound)
 
         if hasattr(stmt_or_context, "__enter__"):
             # It's a context manager
