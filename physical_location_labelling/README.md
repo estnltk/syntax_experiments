@@ -12,9 +12,14 @@ The aim of this work is to develop a tagger for obliques that tags physical loca
 * *timetest_v01.ipynb* for finding possible timewords using files in base_data
 * *v01_examples_by_location.ipynb* to search for forms and examples by an oblique's lemma
 
+**Documentation**
+* *annotation_guidelines_location.md*: annotation guidelines for annotationg *kohasonad_margendus.xlsx*
+
 **Results**: results obtained from running the code. 
 * *kohasonad_test.csv*: possible physical locations by each verb with their frequency in the corpus and a concreteness rating
 * *kohasonad_test_aegadeta-csv*: the same but where possible time denoting words haven't been filtered out
 * *kohasonad_hea_vaadata.xlsx*: an excel file with the csv-s for better viewing
+***Semantic labelling***
 * *kohasonad_naited.csv*: random 1000 lemmas from kohasonad_test with added wordforms and example phrases for annotation. Made with *v01_examples_by_location.ipynb*
-* *kohsonad_margendus.xlsx*: annotation file for 1000 obliques in locative cases with their forms and example phrases. Work in progress. Annotation guidelines found in documentation folder in file *annotation_guidelines_location.md*
+* *kohasonad_margendus.xlsx*: annotation file for 1000 obliques in locative cases with their forms and example phrases. Work in progress. Annotation guidelines found in documentation folder in file *annotation_guidelines_location.md*
+* *kohasonad_naited.csv*: random 1000 lemmas from kohasonad_test with added wordforms and example phrases for annotation
