@@ -43,11 +43,11 @@ class TransactionHead(Base):
     feats = Column(Text)
     form = Column(Text)
     phrase = Column(Text)
-    transactions = relationship("Transaction", back_populates="transaction_head")
+    transactions = relationship("TransactionRow", back_populates="transaction_head")
 
 
-class Transaction(Base):
-    __tablename__ = "transaction"
+class TransactionRow(Base):
+    __tablename__ = "transaction_row"
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
     loc = Column(Integer)
@@ -226,7 +226,7 @@ class V33:
 
         return " ".join(text)
 
-    def _get_transactions_stmt(self, options):
+    def _get_transactions_stmt(self, options, force_keep_compound: bool = False):
         where_filters = []
 
         if (
@@ -245,14 +245,15 @@ class V33:
             where_filters.append(
                 TransactionHead.verb_compound == options["verb_compound"]
             )
-            skip_deprels.append("compound:prt")
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
 
         if (
             "include_deprels" in options
             and isinstance(options["include_deprels"], list)
             and len(options["include_deprels"])
         ):
-            where_filters.append(Transaction.deprel.in_(options["include_deprels"]))
+            where_filters.append(TransactionRow.deprel.in_(options["include_deprels"]))
 
         use_temp_table = False
 
@@ -262,15 +263,16 @@ class V33:
             and len(options["head_ids"])
         ):
             head_ids = options["head_ids"]
-            skip_deprels.append("compound:prt")
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
             # Decide whether to use temp table based on length of head_ids
             if len(head_ids) > (self._max_sql_vars - 10):
                 use_temp_table = True
             else:
-                where_filters.append(Transaction.head_id.in_(head_ids))
+                where_filters.append(TransactionRow.head_id.in_(head_ids))
 
         if len(skip_deprels):
-            where_filters.append(Transaction.deprel.notin_(skip_deprels))
+            where_filters.append(TransactionRow.deprel.notin_(skip_deprels))
 
         if not use_temp_table and not len(where_filters):
             raise Exception("You must specify filters")
@@ -278,17 +280,18 @@ class V33:
         # Build the base query
         stmt = (
             select(
-                Transaction.feats,
-                Transaction.form,
-                Transaction.deprel,
-                Transaction.pos,
-                Transaction.loc,
-                Transaction.parent_loc,
-                Transaction.head_id,
+                TransactionRow.feats,
+                TransactionRow.form,
+                TransactionRow.deprel,
+                TransactionRow.lemma,
+                TransactionRow.pos,
+                TransactionRow.loc,
+                TransactionRow.parent_loc,
+                TransactionRow.head_id,
             )
-            .join(TransactionHead, TransactionHead.id == Transaction.head_id)
+            .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
             .where(and_(*where_filters))
-            .order_by(Transaction.head_id, Transaction.loc)
+            .order_by(TransactionRow.head_id, TransactionRow.loc)
         )
 
         # If using temp table, modify the query to join with it
@@ -337,6 +340,7 @@ class V33:
         if not use_temp_table and not len(where_filters):
             raise Exception("You must specify filters")
 
+        where_filters.append(True)
         # Build the base query
         stmt = (
             select(
@@ -373,6 +377,7 @@ class V33:
         verb_compound="",
         skip_deprels=[],
         include_deprels=[],
+        force_keep_compound: bool = False,
     ):
         """
         Fetches transactions from the database and returns them as an array of
@@ -399,21 +404,21 @@ class V33:
                 "verb_compound": verb_compound,
                 "skip_deprels": skip_deprels,
                 "include_deprels": include_deprels,
-            }
+            }, force_keep_compound=force_keep_compound
         )
 
         transactions = self._process_transactions(transactions_stmt)
 
         return transactions
 
-    def get_transactions_by_head_ids(self, head_ids: List[int]):
+    def get_transactions_by_head_ids(self, head_ids: List[int], force_keep_compound: bool = False):
         if not head_ids:
             raise Exception("head_ids is not set")
 
         options = {"head_ids": head_ids}
 
         # Get the statement or context manager
-        stmt_or_context = self._get_transactions_stmt(options)
+        stmt_or_context = self._get_transactions_stmt(options, force_keep_compound=force_keep_compound)
 
         if hasattr(stmt_or_context, "__enter__"):
             # It's a context manager
@@ -437,12 +442,15 @@ class V33:
         if hasattr(stmt_or_context, "__enter__"):
             # It's a context manager
             with stmt_or_context as stmt:
-                stmt = stmt
+                # Execute and fetch results within the context
+                results = self.execute(stmt).mappings().all()
         else:
             # It's a regular statement
             stmt = stmt_or_context
+            results = self.execute(stmt).mappings().all()
 
-        return self.execute(stmt).mappings().all()
+        # Return the results after the context manager has exited
+        return results
 
     def get_phrases(
         self,
@@ -494,6 +502,7 @@ class V33:
             r_dict["deprel"] = res["deprel"].upper()
             r_dict["case"] = self.get_case(res["feats"])
             r_dict["feats"] = res["feats"]
+            r_dict["lemma"] = res["lemma"]
             r_dict["frequent_form"] = res["form"].lower()
             r_dict["obl_case"] = ""
             r_dict["loc"] = res["loc"]
@@ -536,6 +545,7 @@ class V33:
                         ]
                 del item["loc"]
                 del item["feats"]
+                del item["lemma"]
         return transactions
 
     def order_itemsets(self, itemsets: frozenset) -> list:

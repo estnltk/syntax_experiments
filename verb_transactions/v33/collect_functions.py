@@ -68,7 +68,7 @@ class DbMethods:
         )
 
         self._cursor.execute(
-            "CREATE TABLE IF NOT EXISTS `transaction`"
+            "CREATE TABLE IF NOT EXISTS `transaction_row`"
             " (`id` INTEGER PRIMARY KEY AUTOINCREMENT,"
             " `head_id` int,"
             " `loc` int,"
@@ -83,7 +83,7 @@ class DbMethods:
 
         if do_truncate:
             self._cursor.execute("DELETE FROM `transaction_head` WHERE 1;")
-            self._cursor.execute("DELETE FROM `transaction` WHERE 1;")
+            self._cursor.execute("DELETE FROM `transaction_row` WHERE 1;")
 
         self._connection.commit()
 
@@ -136,7 +136,7 @@ class DbMethods:
         )
 
         self._cursor.executemany(
-            "INSERT INTO `transaction` ("
+            "INSERT INTO `transaction_row` ("
             " head_id,"
             " loc,"
             " loc_rel,"
@@ -175,7 +175,7 @@ class DbMethods:
             direction = "ASC" if field not in ["count"] else "DESC"
             indexesQ.append(
                 f'CREATE INDEX IF NOT EXISTS "`transaction_{field}`"'
-                f' ON `transaction`("`{field}`" {direction});'
+                f' ON `transaction_row`("`{field}`" {direction});'
             )
         for q in indexesQ:
             self._cursor.execute(q)
@@ -265,7 +265,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
         }
 
         # remove irrelevant nodes
-        kids_unfiltered = kids
+        # kids_unfiltered = kids
         kids = [m for m in kids if graph.nodes[m]["deprel"] not in deprels_to_ignore]
 
         # verb -> obl -> case
@@ -282,7 +282,7 @@ def extract_something(text, collection_id, data, draw_tree=False, display_trees=
 
         # make phrase with grandkids
         transaction_head["phrase"] = " ".join([
-            graph.nodes[n]["form"] for n in sorted(kids + list(grandkids.keys()) + [verb])
+            graph.nodes[n]["form"] for n in sorted(list(set(kids + list(grandkids.keys()) + [verb])))
             ])
 
         child_pos = {node: num for num, node in enumerate(sorted(kids + [verb]))}
