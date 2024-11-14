@@ -1,6 +1,6 @@
 # imports
 import sqlite3
-from .db_checks import is_valid_table_name, is_db_table, check_all_col_names
+#from .db_checks import is_valid_table_name, is_db_table, check_all_col_names
 
 
 def extract_negations(cur, transaction_head: str, transaction_row: str, patterns: str, output_table: str, overwrite=False):
@@ -53,7 +53,7 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
         raise ValueError("Not all required transaction head table column names exist")
     if not check_all_col_names(cur, transaction_row, ['head_id', 'form', 'deprel', 'feats']):
         raise ValueError("Not all required transaction row table column names exist")
-    if not check_all_col_names(cur, patterns, ['pat_id', 'form', 'deprel', 'feats']):
+    if not check_all_col_names(cur, patterns, ['pat_id', 'form', 'deprel']):
         raise ValueError("Not all required patterns table column names exist")
         
     # check if output table already exists and if it can be overwritten
@@ -80,7 +80,7 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
        AND
            pat.deprel = phrases.deprel
        AND
-           pat.feats = phrases.feats
+           instr(phrases.feats, 'neg') > 0
        """.format(output_table=output_table, patterns=patterns, transaction_row=transaction_row))
 
     cur.execute("""
@@ -97,7 +97,7 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
        AND
            pat.deprel = verbs.deprel
        AND
-           pat.feats = verbs.feats
+           instr(verbs.feats, 'neg') > 0
        """.format(output_table=output_table, patterns=patterns, transaction_head=transaction_head))
     
     cur.connection.commit()
