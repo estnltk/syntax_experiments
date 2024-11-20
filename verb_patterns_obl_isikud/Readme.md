@@ -13,4 +13,10 @@ v2 failis on graafikud verb+comp põhjal
 - 002 tabelid on verb+comp+kääne-> count distinct root elus, kohad, distinct root count
 
 
+Graafikute failid:
+
+- 001_verb_analysis_kohakaanded_pildid_v2_eluskoht_powerlaw - verbobl+kääne+distinct root count iga kohakäände jaoks
+- 001_verb_analysis_kohakaanded_pildid_v2_eluskoht_graph_a - esialgne elus vs koht scatterplot
+- 001_verb_analysis_kohakaanded_pildid_v2_eluskoht_graph_b1 - graph_a edasiarendus: colorcoded scatter ja limiidid
+
 
