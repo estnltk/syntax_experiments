@@ -1,4 +1,3 @@
 __pycache__/
 .DS_Store
 venv/
-v*_verb_transactions/v*.db
