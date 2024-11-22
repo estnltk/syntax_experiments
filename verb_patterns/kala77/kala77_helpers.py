@@ -1,6 +1,6 @@
-from sqlalchemy import Column, Integer, Text, Table, MetaData, text, select, insert
+from sqlalchemy import Column, Integer, Text, Table, MetaData
 
-from sqlalchemy.schema import ForeignKey, UniqueConstraint, Index
+from sqlalchemy.schema import UniqueConstraint, Index
 
 # tables defined for quick creation
 
