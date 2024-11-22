@@ -3,7 +3,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import copy
 
+from contextlib import contextmanager
 
 from sqlalchemy import (
     text,
@@ -11,16 +13,19 @@ from sqlalchemy import (
     and_,
     create_engine,
     Column,
+    MetaData,
+    Table,
     Integer,
     ForeignKey,
     Text,
 )
+
 from sqlalchemy.orm import declarative_base, relationship
 
 from pandas import DataFrame
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori
-
+from typing import List
 
 # Define db models
 
@@ -30,13 +35,14 @@ Base = declarative_base()
 class TransactionHead(Base):
     __tablename__ = "transaction_head"
     id = Column(Integer, primary_key=True, autoincrement=True)
-    sentence_id = Column(Integer)  # ID of the associated sentence
-    loc = Column(Integer)  # Location index within the sentence
-    verb = Column(Text)  # Verb associated with this transaction head
-    verb_compound = Column(Text)  # Additional verb compound information
-    deprel = Column(Text)  # Dependency relation
-    feats = Column(Text)  # Linguistic features
-
+    sentence_id = Column(Integer)
+    loc = Column(Integer)
+    verb = Column(Text)
+    verb_compound = Column(Text)
+    deprel = Column(Text)
+    feats = Column(Text)
+    form = Column(Text)
+    phrase = Column(Text)
     transactions = relationship("TransactionRow", back_populates="transaction_head")
 
 
@@ -44,19 +50,21 @@ class TransactionRow(Base):
     __tablename__ = "transaction_row"
     id = Column(Integer, primary_key=True, autoincrement=True)
     head_id = Column(Integer, ForeignKey("transaction_head.id"))
-    loc = Column(Integer)  # Location index within the sentence
-    loc_rel = Column(Integer)  # Relative location to the head
-    deprel = Column(Text)  # Dependency relation
-    form = Column(Text)  # Word form
-    lemma = Column(Text)  # Lemma of the word
-    feats = Column(Text)  # Linguistic features
-    pos = Column(Text)  # Part of speech
-
+    loc = Column(Integer)
+    loc_rel = Column(Integer)
+    deprel = Column(Text)
+    form = Column(Text)
+    lemma = Column(Text)
+    feats = Column(Text)
+    pos = Column(Text)
+    parent_loc = Column(
+        Integer
+    )  # Filled if item grandkid (not direct kid) of transaction_head
     transaction_head = relationship("TransactionHead", back_populates="transactions")
 
 
 ################################################################
-class V30:
+class AprioriTransactionAnalyzer:
     _engine = None
     _conn = None
     _matadata = None
@@ -80,21 +88,12 @@ class V30:
     # treshold percent for filtering apriori results
     _apriori_treshold_percent = 50
 
-    # 
-    deprels_to_ignore = [
-        "punct",
-        "conj",
-        "mark",
-        "cc",
-        "parataxis",
-        "discourse",
-        "vocative",
-        "cop",
-        "cc:preconj",
-        "goeswith",
-        "list",
-        "dep",
-    ]
+    # save to memory, it's faster than requesting examples from database
+    _raw_transactions = {}
+
+    # SQLite default limit for variables in a query
+    _max_sql_vars = 999  # sqlite limitations
+
     def __init__(
         self,
         file_path,
@@ -122,10 +121,46 @@ class V30:
         if apriori_treshold_percent is not None:
             self._apriori_treshold_percent = apriori_treshold_percent
 
+    @contextmanager
+    def _temp_head_ids_table(self, head_ids):
+        """
+        Context manager to create and drop a temporary table for head_ids.
+        Needed because of limitations in SQLite
+        """
+        temp_table_name = "temp_head_ids"
+        metadata = MetaData()
+
+        # Define the temporary table
+        temp_table = Table(
+            temp_table_name,
+            metadata,
+            Column("id", Integer, primary_key=True),
+            prefixes=["TEMPORARY"],
+        )
+
+        try:
+            temp_table.create(self._conn)
+            # maximum number of rows per batch
+            max_rows_per_batch = self._max_sql_vars // 1
+
+            # head_ids into the temporary table in batches
+            for i in range(0, len(head_ids), max_rows_per_batch):
+                batch = head_ids[i: i + max_rows_per_batch]
+                insert_stmt = temp_table.insert().values([{"id": hid} for hid in batch])
+                self._conn.execute(insert_stmt)
+
+            yield temp_table
+
+        finally:
+            temp_table.drop(self._conn)
+            # print("Temporary table dropped.")
+
     def execute_text(self, q):
+        # print(text(q))
         return self._conn.execute(text(q))
 
     def execute(self, stmt):
+        # print(stmt)
         return self._conn.execute(stmt)
 
     def get_case(self, feats_string: str) -> str:
@@ -154,38 +189,195 @@ class V30:
                 return attr
         return ""
 
-    def get_example_by_head_id(self, head_id, itemsets={}, full=False):
-        # print(head_id, itemsets)
-        stmt = (
-            select(TransactionHead.verb, TransactionRow)
-            .outerjoin(TransactionRow, TransactionHead.id == TransactionRow.head_id)
-            .where(TransactionHead.id == head_id)
-            .order_by(TransactionRow.loc_rel)
-        )
-        # text = {0: "VERB"}
+    def get_example_by_head_id(self, head_id, itemslist=[], full=False):
         text = []
-        for row in self.execute(stmt).mappings():
-
-            # has no kids
-            if not row["head_id"]:
-                continue
-
-            if len(itemsets) and not full:
-                # TODO! add itemsets filter
-                deprel = row["deprel"].upper()
-                case = self.get_case(row["feats"])
-                form = row["form"].lower()
-                if (deprel, case, form) in itemsets or (deprel, case, "") in itemsets:
-                    text.append(form)
+        for (
+            item_obl,
+            item_case,
+            item_form,
+            item_obl_case,
+        ) in itemslist:
+            for child in self._raw_transactions[head_id]:
+                deprel = child["deprel"].upper()
+                case = child["case"]
+                form = "" if item_form == "" else child["frequent_form"]
+                obl_case = child["obl_case"]
+                # print()
+                # print("item\t", (item_obl, item_case, item_form, item_obl_case,))
+                # print("child\t",  (deprel, case, form, obl_case,) )
+                if (
+                    deprel,
+                    case,
+                    form,
+                    obl_case,
+                ) == (
+                    item_obl,
+                    item_case,
+                    item_form,
+                    item_obl_case,
+                ):
+                    # print('MATCH')
+                    res = child["frequent_form"]
+                    if child["obl_case"]:
+                        res += " " + child["obl_case"]
+                    text.append(res)
+                    break
+                # print()
 
         return " ".join(text)
+
+    def _get_transactions_stmt(self, options, force_keep_compound: bool = False):
+        where_filters = []
+
+        if (
+            "skip_deprels" in options
+            and isinstance(options["skip_deprels"], list)
+            and len(options["skip_deprels"])
+        ):
+            skip_deprels = options["skip_deprels"]
+        else:
+            skip_deprels = []
+
+        if "verb" in options and options["verb"]:
+            where_filters.append(TransactionHead.verb == options["verb"])
+
+        if "verb_compound" in options and options["verb_compound"] is not None:
+            where_filters.append(
+                TransactionHead.verb_compound == options["verb_compound"]
+            )
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
+
+        if (
+            "include_deprels" in options
+            and isinstance(options["include_deprels"], list)
+            and len(options["include_deprels"])
+        ):
+            where_filters.append(TransactionRow.deprel.in_(options["include_deprels"]))
+
+        use_temp_table = False
+
+        if (
+            "head_ids" in options
+            and isinstance(options["head_ids"], list)
+            and len(options["head_ids"])
+        ):
+            head_ids = options["head_ids"]
+            if not force_keep_compound:
+                skip_deprels.append("compound:prt")
+            # Decide whether to use temp table based on length of head_ids
+            if len(head_ids) > (self._max_sql_vars - 10):
+                use_temp_table = True
+            else:
+                where_filters.append(TransactionRow.head_id.in_(head_ids))
+
+        if len(skip_deprels):
+            where_filters.append(TransactionRow.deprel.notin_(skip_deprels))
+
+        if not use_temp_table and not len(where_filters):
+            raise Exception("You must specify filters")
+
+        # Build the base query
+        stmt = (
+            select(
+                TransactionRow.feats,
+                TransactionRow.form,
+                TransactionRow.deprel,
+                TransactionRow.lemma,
+                TransactionRow.pos,
+                TransactionRow.loc,
+                TransactionRow.parent_loc,
+                TransactionRow.head_id,
+            )
+            .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
+            .where(and_(*where_filters))
+            .order_by(TransactionRow.head_id, TransactionRow.loc)
+        )
+
+        # If using temp table, modify the query to join with it
+        if use_temp_table:
+            # Create the temp table context manager
+            @contextmanager
+            def temp_table_context():
+                with self._temp_head_ids_table(head_ids) as temp_table:
+                    # Adjust the query to join with the temp table
+                    stmt_with_temp = stmt.join(
+                        temp_table, TransactionHead.id == temp_table.c.id
+                    )
+                    yield stmt_with_temp
+
+            # Return the context manager
+            return temp_table_context()
+        else:
+            # Return the statement directly
+            return stmt
+
+    def _get_phrases_stmt(self, options):
+        where_filters = []
+
+        if "verb" in options and options["verb"]:
+            where_filters.append(TransactionHead.verb == options["verb"])
+
+        if "verb_compound" in options and options["verb_compound"] is not None:
+            where_filters.append(
+                TransactionHead.verb_compound == options["verb_compound"]
+            )
+
+        use_temp_table = False
+
+        if (
+            "head_ids" in options
+            and isinstance(options["head_ids"], list)
+            and len(options["head_ids"])
+        ):
+            head_ids = options["head_ids"]
+            # Decide whether to use temp table based on length of head_ids
+            if len(head_ids) > (self._max_sql_vars - 10):
+                use_temp_table = True
+            else:
+                where_filters.append(TransactionHead.id.in_(head_ids))
+
+        if not use_temp_table and not len(where_filters):
+            raise Exception("You must specify filters")
+
+        where_filters.append(True)
+        # Build the base query
+        stmt = (
+            select(
+                TransactionHead.id.label('head_id'),
+                TransactionHead.sentence_id,
+                TransactionHead.loc,
+                TransactionHead.phrase
+            )
+            .where(and_(*where_filters))
+            .order_by(TransactionHead.sentence_id)
+        )
+
+        # If using temp table, modify the query to join with it
+        if use_temp_table:
+            # Create the temp table context manager
+            @contextmanager
+            def temp_table_context():
+                with self._temp_head_ids_table(head_ids) as temp_table:
+                    # Adjust the query to join with the temp table
+                    stmt_with_temp = stmt.join(
+                        temp_table, TransactionHead.id == temp_table.c.id
+                    )
+                    yield stmt_with_temp
+
+            # Return the context manager
+            return temp_table_context()
+        else:
+            # Return the statement directly
+            return stmt
 
     def get_transactions(
         self,
         verb,
         verb_compound="",
-        skip_deprels=None,
+        skip_deprels=[],
         include_deprels=[],
+        force_keep_compound: bool = False,
     ):
         """
         Fetches transactions from the database and returns them as an array of
@@ -205,21 +397,78 @@ class V30:
         structured according to the specified 'columns', or all transaction data
         if 'columns' is empty or not provided. Transactions are grouped by 'head_id'.
         """
-        if skip_deprels is None:
-            skip_deprels = self.deprels_to_ignore
-            
-        where_filters = [TransactionHead.verb == verb]
-        if verb_compound is not None:
-            where_filters.append(TransactionHead.verb_compound == verb_compound)
-            skip_deprels.append("compound:prt")
 
-        if isinstance(skip_deprels, list) and len(skip_deprels):
-            where_filters.append(TransactionRow.deprel.notin_(skip_deprels))
+        transactions_stmt = self._get_transactions_stmt(
+            {
+                "verb": verb,
+                "verb_compound": verb_compound,
+                "skip_deprels": skip_deprels,
+                "include_deprels": include_deprels,
+            }, force_keep_compound=force_keep_compound
+        )
 
-        if isinstance(include_deprels, list) and len(include_deprels):
-            where_filters.append(TransactionRow.deprel.in_(include_deprels))
+        transactions = self._process_transactions(transactions_stmt)
 
+        return transactions
+
+    def get_transactions_by_head_ids(self, head_ids: List[int], force_keep_compound: bool = False):
+        if not head_ids:
+            raise Exception("head_ids is not set")
+
+        options = {"head_ids": head_ids}
+
+        # Get the statement or context manager
+        stmt_or_context = self._get_transactions_stmt(options, force_keep_compound=force_keep_compound)
+
+        if hasattr(stmt_or_context, "__enter__"):
+            # It's a context manager
+            with stmt_or_context as stmt:
+                transactions = self._process_transactions(stmt)
+        else:
+            # It's a regular statement
+            transactions = self._process_transactions(stmt_or_context)
+
+        return transactions
+
+    def get_phrases_by_head_ids(self, head_ids: List[int]):
+        if not head_ids:
+            raise Exception("head_ids is not set")
+
+        options = {"head_ids": head_ids}
+
+        # Get the statement or context manager
+        stmt_or_context = self._get_phrases_stmt(options)
+
+        if hasattr(stmt_or_context, "__enter__"):
+            # It's a context manager
+            with stmt_or_context as stmt:
+                # Execute and fetch results within the context
+                results = self.execute(stmt).mappings().all()
+        else:
+            # It's a regular statement
+            stmt = stmt_or_context
+            results = self.execute(stmt).mappings().all()
+
+        # Return the results after the context manager has exited
+        return results
+
+    def get_phrases(
+        self,
+        verb,
+        verb_compound,
+    ):
+        stmt = self._get_phrases_stmt(
+            {
+                "verb": verb,
+                "verb_compound": verb_compound,
+            }
+        )
+        return self.execute(stmt).mappings().all()
+
+    def _process_transactions(self, stmt):
         all_forms = {}
+        transactions = {}
+        grandchildren = {}
 
         def add_to_all_forms(deprel, form):
             if deprel not in all_forms:
@@ -227,23 +476,6 @@ class V30:
             if form not in all_forms[deprel]:
                 all_forms[deprel][form] = {"count": 0, "percentage": 0}
             all_forms[deprel][form]["count"] += 1
-
-        # maybe some transaction_head field should be also includes in results eg
-        # TransactionHead.deprel
-        stmt = (
-            select(
-                TransactionRow.feats,
-                TransactionRow.form,
-                TransactionRow.deprel,
-                TransactionRow.pos,
-                TransactionRow.head_id,
-            )
-            .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
-            .where(and_(*where_filters))
-            .order_by(TransactionRow.head_id, TransactionRow.loc)
-        )
-
-        transactions = {}
 
         for res in self.execute(stmt).mappings():
             res = dict(res)
@@ -253,25 +485,42 @@ class V30:
             if res["head_id"] not in transactions:
                 transactions[res["head_id"]] = []
 
+            # is grandkid
+            if res["parent_loc"]:
+                key = (
+                    res["head_id"],
+                    res["parent_loc"],
+                )
+                if key not in grandchildren:
+                    grandchildren[key] = []
+                grandchildren[key].append(res)
+                continue
+
+            # is not grandkid
             r_dict = {}
 
             r_dict["deprel"] = res["deprel"].upper()
             r_dict["case"] = self.get_case(res["feats"])
+            r_dict["feats"] = res["feats"]
+            r_dict["lemma"] = res["lemma"]
             r_dict["frequent_form"] = res["form"].lower()
+            r_dict["obl_case"] = ""
+            r_dict["loc"] = res["loc"]
 
             transactions[res["head_id"]].append(r_dict)
-
-        # add forms frequency percentage
+        self._raw_transactions = copy.deepcopy(transactions)
+        # count forms frequency percentage
         for deprel, forms in all_forms.items():
             total = sum([f["count"] for f in forms.values()])
             for form in forms:
                 all_forms[deprel][form]["percentage"] = (
                     all_forms[deprel][form]["count"] / total
                 ) * 100
-
+        # add forms frequency percentage
+        # add obl->case info
         for head_id in transactions:
-            for item in transactions[head_id]:
-
+            for j, item in enumerate(transactions[head_id]):
+                # freq form
                 if (
                     all_forms[item["deprel"]][item["frequent_form"]]["count"]
                     < self._form_treshold_count
@@ -280,8 +529,57 @@ class V30:
                 ):
                     item["frequent_form"] = ""
 
-        # return list(transactions.values())
+                # obl->case
+                if item["deprel"] == "OBL":
+
+                    key = (
+                        head_id,
+                        item["loc"],
+                    )
+                    if key in grandchildren.keys():
+                        # print(key)
+                        for child in grandchildren[key]:
+                            item["obl_case"] += " " + child["form"].lower()
+                        self._raw_transactions[head_id][j]["obl_case"] = item[
+                            "obl_case"
+                        ]
+                del item["loc"]
+                del item["feats"]
+                del item["lemma"]
         return transactions
+
+    def order_itemsets(self, itemsets: frozenset) -> list:
+        priority_list = ["nsubj", "obj", "xcomp", "ccomp", "obl", "advmod"]
+
+        flattened_deprels = [itemset[0].lower() for itemset in itemsets]
+
+        unknown_itemsets = list(
+            set(deprel for deprel in flattened_deprels if deprel not in priority_list)
+        )
+
+        priority_list = priority_list + sorted(unknown_itemsets)
+
+        # Convert priority list to a dictionary for fast look-up
+        priority_dict = {
+            deprel.lower(): index for index, deprel in enumerate(priority_list)
+        }
+
+        # Create a list from the frozenset
+        item_list = list(itemsets)
+
+        # Assign a priority to each tuple based on the first element
+        item_list_with_priority = [
+            (item, priority_dict[item[0].lower()]) for item in item_list
+        ]
+
+        # Sort the list of tuples based on the priority values
+        sorted_item_list = sorted(item_list_with_priority, key=lambda x: x[1])
+
+        # Extract just the tuples without the priority for the return value
+        sorted_tuples_only = [item[0] for item in sorted_item_list]
+
+        # print("sorted itemsets", sorted_tuples_only)
+        return sorted_tuples_only
 
     def dict_to_apriori(self, transactions: list):
         """
@@ -357,27 +655,32 @@ class V30:
             df, min_support=min_support, use_colnames=use_colnames
         ).sort_values("support", ascending=False)
 
+        res_apriori["itemlists"] = res_apriori["itemsets"].apply(self.order_itemsets)
+
         if examples:
 
-            def find_example(itemsets):
+            def find_example(row):
+                itemsets = row["itemsets"]
                 # Search randomly for a matching example
+                # TODO! optimize logic
                 for i in np.random.permutation(len(dataset)):
                     if itemsets.issubset(dataset[i]):
-                        return self.get_example_by_head_id(keys[i], itemsets)
+                        return self.get_example_by_head_id(keys[i], row["itemlists"])
 
                 return "--"
 
-            res_apriori["example"] = res_apriori["itemsets"].apply(find_example)
+            res_apriori["example1"] = res_apriori.apply(find_example, axis=1)
+            res_apriori["example2"] = res_apriori.apply(find_example, axis=1)
+            res_apriori["example3"] = res_apriori.apply(find_example, axis=1)
 
         return res_apriori
 
     def make_all(
         self, verb, verb_compound, min_support=None, use_colnames=True, examples=False
     ):
-        print(
-            f"""************************************************ {verb}  {verb_compound} ************************************************"""
-        )
+        print(f"""{'*' * 48} {verb}  {verb_compound} {'*' * 48}""")
         transactions = self.get_transactions(verb=verb, verb_compound=verb_compound)
+        # print(transactions)
         # rakendatakse aprioi algoritm, tulemus prinditakse välja ekraanile
         unfiltered = self.apriori(
             transactions,
@@ -386,7 +689,9 @@ class V30:
             examples=examples,
         )
 
-        # self.draw_heatmap(title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered)
+        # self.draw_heatmap(
+        # title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered
+        # )
         filtered = self.filter_apriori_results(unfiltered, verbose=True)
         self.draw_heatmap(title=f"Filtreeritud {verb} {verb_compound}", df=filtered)
 
@@ -408,13 +713,13 @@ class V30:
         Alongside the heatmap, a histogram is displayed showing the support values of the itemsets, providing a
         quantitative view of the itemset frequencies.
         """
-        if "example" in df.columns:
-            itemsets_examples = df["example"].tolist()
+        if "example1" in df.columns:
+            itemsets_examples = df["example1"].tolist()
         else:
             itemsets_examples = ["" for _ in range(len(df))]
 
         df = df.sort_values("support", ascending=False)
-        itemsets_list = [list(itemset) for itemset in df["itemsets"].tolist()]
+        itemsets_list = [list(itemset) for itemset in df["itemlists"].tolist()]
         itemsets_support = df["support"].tolist()
 
         unique_items = set(item for sublist in itemsets_list for item in sublist)
@@ -459,8 +764,8 @@ class V30:
             cbar=False,
             yticklabels=itemset_labels,
             ax=ax_heatmap,
-            linewidths=0.5, 
-            linecolor='black',
+            linewidths=0.5,
+            linecolor="black",
         )
         ax_heatmap.set_title(title)
         ax_heatmap.set_xlabel("Items")
@@ -479,12 +784,20 @@ class V30:
 
         for _, spine in ax_hist.spines.items():
             spine.set_visible(False)
-        for p in barplot.patches:
+        for index, p in enumerate(barplot.patches):
             x = p.get_width()
             y = p.get_y() + p.get_height() / 2
-            ax_hist.text(x, y, f"{x:.4f}", va="center")
+            example_text = itemsets_examples[
+                index
+            ]  # Retrieve the example text for the current bar
+            if 0 and example_text:  # Only add the example if it is not empty
+                display_text = f"{x:.4f} ({example_text})"
+            else:
+                display_text = f"{x:.4f}"
+            ax_hist.text(x + 0.01, y, display_text, va="center")
 
         plt.tight_layout()
+        # plt.subplots_adjust(left=0.2, right=0.3, wspace=0.1)
         plt.show()
 
     def filter_apriori_results(
@@ -546,5 +859,7 @@ class V30:
         if verbose:
             print(f"delta: {delta}")
             print(f"percent: {percent}")
-            display(df)
+            columns_to_show = list(df.columns)
+            columns_to_show.remove("itemsets")
+            display(df[columns_to_show])
         return df[df["drop"] == False]

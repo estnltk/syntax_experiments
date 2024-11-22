@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import copy
+
 
 from sqlalchemy import (
     text,
@@ -51,15 +51,12 @@ class TransactionRow(Base):
     lemma = Column(Text)  # Lemma of the word
     feats = Column(Text)  # Linguistic features
     pos = Column(Text)  # Part of speech
-    parent_loc = Column(
-        Integer
-    )  # Filled if item is actually grandkid of transaction_head
 
     transaction_head = relationship("TransactionHead", back_populates="transactions")
 
 
 ################################################################
-class V31:
+class AprioriTransactionAnalyzer:
     _engine = None
     _conn = None
     _matadata = None
@@ -83,9 +80,21 @@ class V31:
     # treshold percent for filtering apriori results
     _apriori_treshold_percent = 50
 
-    # save to memory, it's faster than requesting examples from database
-    _raw_transactions = {}
-
+    # 
+    deprels_to_ignore = [
+        "punct",
+        "conj",
+        "mark",
+        "cc",
+        "parataxis",
+        "discourse",
+        "vocative",
+        "cop",
+        "cc:preconj",
+        "goeswith",
+        "list",
+        "dep",
+    ]
     def __init__(
         self,
         file_path,
@@ -114,11 +123,9 @@ class V31:
             self._apriori_treshold_percent = apriori_treshold_percent
 
     def execute_text(self, q):
-        # print(text(q))
         return self._conn.execute(text(q))
 
     def execute(self, stmt):
-        # print(stmt)
         return self._conn.execute(stmt)
 
     def get_case(self, feats_string: str) -> str:
@@ -147,22 +154,21 @@ class V31:
                 return attr
         return ""
 
-    def get_example_by_head_id_old(self, head_id, itemsets={}, full=False):
+    def get_example_by_head_id(self, head_id, itemsets={}, full=False):
         # print(head_id, itemsets)
         stmt = (
-            select(TransactionRow).where(TransactionRow.head_id == head_id)
-            # .order_by(TransactionRow.loc_rel)
+            select(TransactionHead.verb, TransactionRow)
+            .outerjoin(TransactionRow, TransactionHead.id == TransactionRow.head_id)
+            .where(TransactionHead.id == head_id)
+            .order_by(TransactionRow.loc_rel)
         )
         # text = {0: "VERB"}
         text = []
-        rows = self.execute(stmt).mappings()
+        for row in self.execute(stmt).mappings():
 
-        # if has no kids
-        # if not len(rows):
-        #    continue
-
-        # TODO add OBL kids as case
-        for row in rows:
+            # has no kids
+            if not row["head_id"]:
+                continue
 
             if len(itemsets) and not full:
                 # TODO! add itemsets filter
@@ -174,48 +180,11 @@ class V31:
 
         return " ".join(text)
 
-    def get_example_by_head_id(self, head_id, itemslist=[], full=False):
-        text = []
-        for (
-            item_obl,
-            item_case,
-            item_form,
-            item_obl_case,
-        ) in itemslist:
-            for child in self._raw_transactions[head_id]:
-                deprel = child["deprel"].upper()
-                case = child["case"]
-                form = "" if item_form == "" else child["frequent_form"]
-                obl_case = child["obl_case"]
-                # print()
-                # print("item\t", (item_obl, item_case, item_form, item_obl_case,))
-                # print("child\t",  (deprel, case, form, obl_case,) )
-                if (
-                    deprel,
-                    case,
-                    form,
-                    obl_case,
-                ) == (
-                    item_obl,
-                    item_case,
-                    item_form,
-                    item_obl_case,
-                ):
-                    # print('MATCH')
-                    res = child["frequent_form"]
-                    if child["obl_case"]:
-                        res += " " + child["obl_case"]
-                    text.append(res)
-                    break
-                # print()
-
-        return " ".join(text)
-
     def get_transactions(
         self,
         verb,
         verb_compound="",
-        skip_deprels=[],
+        skip_deprels=None,
         include_deprels=[],
     ):
         """
@@ -236,7 +205,9 @@ class V31:
         structured according to the specified 'columns', or all transaction data
         if 'columns' is empty or not provided. Transactions are grouped by 'head_id'.
         """
-
+        if skip_deprels is None:
+            skip_deprels = self.deprels_to_ignore
+            
         where_filters = [TransactionHead.verb == verb]
         if verb_compound is not None:
             where_filters.append(TransactionHead.verb_compound == verb_compound)
@@ -265,8 +236,6 @@ class V31:
                 TransactionRow.form,
                 TransactionRow.deprel,
                 TransactionRow.pos,
-                TransactionRow.loc,
-                TransactionRow.parent_loc,
                 TransactionRow.head_id,
             )
             .join(TransactionHead, TransactionHead.id == TransactionRow.head_id)
@@ -276,9 +245,6 @@ class V31:
 
         transactions = {}
 
-        grandchildren = {}
-        # obl_cases[ (transaction_head, loc)] = [case1, case2, ...]
-
         for res in self.execute(stmt).mappings():
             res = dict(res)
             add_to_all_forms(res["deprel"].upper(), res["form"].lower())
@@ -287,41 +253,25 @@ class V31:
             if res["head_id"] not in transactions:
                 transactions[res["head_id"]] = []
 
-            # is grandkid
-            if res["parent_loc"]:
-                key = (
-                    res["head_id"],
-                    res["parent_loc"],
-                )
-                if not key in grandchildren:
-                    grandchildren[key] = []
-                grandchildren[key].append(res)
-                continue
-
-            # is not grandkid
             r_dict = {}
 
             r_dict["deprel"] = res["deprel"].upper()
             r_dict["case"] = self.get_case(res["feats"])
-            r_dict["feats"] = res["feats"]
             r_dict["frequent_form"] = res["form"].lower()
-            r_dict["obl_case"] = ""
-            r_dict["loc"] = res["loc"]
 
             transactions[res["head_id"]].append(r_dict)
-        self._raw_transactions = copy.deepcopy(transactions)
-        # count forms frequency percentage
+
+        # add forms frequency percentage
         for deprel, forms in all_forms.items():
             total = sum([f["count"] for f in forms.values()])
             for form in forms:
                 all_forms[deprel][form]["percentage"] = (
                     all_forms[deprel][form]["count"] / total
                 ) * 100
-        # add forms frequency percentage
-        # add obl->case info
+
         for head_id in transactions:
-            for j, item in enumerate(transactions[head_id]):
-                # freq form
+            for item in transactions[head_id]:
+
                 if (
                     all_forms[item["deprel"]][item["frequent_form"]]["count"]
                     < self._form_treshold_count
@@ -330,58 +280,8 @@ class V31:
                 ):
                     item["frequent_form"] = ""
 
-                # obl->case
-                if item["deprel"] == "OBL":
-
-                    key = (
-                        head_id,
-                        item["loc"],
-                    )
-                    if key in grandchildren.keys():
-                        # print(key)
-                        for child in grandchildren[key]:
-                            item["obl_case"] += " " + child["form"].lower()
-                        self._raw_transactions[head_id][j]["obl_case"] = item[
-                            "obl_case"
-                        ]
-                del item["loc"]
-                del item["feats"]
-
         # return list(transactions.values())
         return transactions
-
-    def order_itemsets(self, itemsets: frozenset) -> list:
-        priority_list = ["nsubj", "obj", "xcomp", "ccomp", "obl", "advmod"]
-
-        flattened_deprels = [itemset[0].lower() for itemset in itemsets]
-
-        unknown_itemsets = list(
-            set(deprel for deprel in flattened_deprels if deprel not in priority_list)
-        )
-
-        priority_list = priority_list + sorted(unknown_itemsets)
-
-        # Convert priority list to a dictionary for fast look-up
-        priority_dict = {
-            deprel.lower(): index for index, deprel in enumerate(priority_list)
-        }
-
-        # Create a list from the frozenset
-        item_list = list(itemsets)
-
-        # Assign a priority to each tuple based on the first element
-        item_list_with_priority = [
-            (item, priority_dict[item[0].lower()]) for item in item_list
-        ]
-
-        # Sort the list of tuples based on the priority values
-        sorted_item_list = sorted(item_list_with_priority, key=lambda x: x[1])
-
-        # Extract just the tuples without the priority for the return value
-        sorted_tuples_only = [item[0] for item in sorted_item_list]
-
-        # print("sorted itemsets", sorted_tuples_only)
-        return sorted_tuples_only
 
     def dict_to_apriori(self, transactions: list):
         """
@@ -457,32 +357,27 @@ class V31:
             df, min_support=min_support, use_colnames=use_colnames
         ).sort_values("support", ascending=False)
 
-        res_apriori["itemlists"] = res_apriori["itemsets"].apply(self.order_itemsets)
-
         if examples:
 
-            def find_example(row):
-                itemsets = row["itemsets"]
+            def find_example(itemsets):
                 # Search randomly for a matching example
-                # TODO! optimize logic
                 for i in np.random.permutation(len(dataset)):
                     if itemsets.issubset(dataset[i]):
-                        return self.get_example_by_head_id(keys[i], row["itemlists"])
+                        return self.get_example_by_head_id(keys[i], itemsets)
 
                 return "--"
 
-            res_apriori["example1"] = res_apriori.apply(find_example, axis=1)
-            res_apriori["example2"] = res_apriori.apply(find_example, axis=1)
-            res_apriori["example3"] = res_apriori.apply(find_example, axis=1)
+            res_apriori["example"] = res_apriori["itemsets"].apply(find_example)
 
         return res_apriori
 
     def make_all(
         self, verb, verb_compound, min_support=None, use_colnames=True, examples=False
     ):
-        print(f"""{'*' * 48} {verb}  {verb_compound} {'*' * 48}""")
+        print(
+            f"""************************************************ {verb}  {verb_compound} ************************************************"""
+        )
         transactions = self.get_transactions(verb=verb, verb_compound=verb_compound)
-        # print(transactions)
         # rakendatakse aprioi algoritm, tulemus prinditakse välja ekraanile
         unfiltered = self.apriori(
             transactions,
@@ -491,9 +386,7 @@ class V31:
             examples=examples,
         )
 
-        # self.draw_heatmap(
-        # title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered
-        # )
+        # self.draw_heatmap(title=f"Filtreerimata {verb} {verb_compound}", df=unfiltered)
         filtered = self.filter_apriori_results(unfiltered, verbose=True)
         self.draw_heatmap(title=f"Filtreeritud {verb} {verb_compound}", df=filtered)
 
@@ -515,13 +408,13 @@ class V31:
         Alongside the heatmap, a histogram is displayed showing the support values of the itemsets, providing a
         quantitative view of the itemset frequencies.
         """
-        if "example1" in df.columns:
-            itemsets_examples = df["example1"].tolist()
+        if "example" in df.columns:
+            itemsets_examples = df["example"].tolist()
         else:
             itemsets_examples = ["" for _ in range(len(df))]
 
         df = df.sort_values("support", ascending=False)
-        itemsets_list = [list(itemset) for itemset in df["itemlists"].tolist()]
+        itemsets_list = [list(itemset) for itemset in df["itemsets"].tolist()]
         itemsets_support = df["support"].tolist()
 
         unique_items = set(item for sublist in itemsets_list for item in sublist)
@@ -566,8 +459,8 @@ class V31:
             cbar=False,
             yticklabels=itemset_labels,
             ax=ax_heatmap,
-            linewidths=0.5,
-            linecolor="black",
+            linewidths=0.5, 
+            linecolor='black',
         )
         ax_heatmap.set_title(title)
         ax_heatmap.set_xlabel("Items")
@@ -586,20 +479,12 @@ class V31:
 
         for _, spine in ax_hist.spines.items():
             spine.set_visible(False)
-        for index, p in enumerate(barplot.patches):
+        for p in barplot.patches:
             x = p.get_width()
             y = p.get_y() + p.get_height() / 2
-            example_text = itemsets_examples[
-                index
-            ]  # Retrieve the example text for the current bar
-            if 0 and example_text:  # Only add the example if it is not empty
-                display_text = f"{x:.4f} ({example_text})"
-            else:
-                display_text = f"{x:.4f}"
-            ax_hist.text(x + 0.01, y, display_text, va="center")
+            ax_hist.text(x, y, f"{x:.4f}", va="center")
 
         plt.tight_layout()
-        # plt.subplots_adjust(left=0.2, right=0.3, wspace=0.1)
         plt.show()
 
     def filter_apriori_results(
@@ -661,7 +546,5 @@ class V31:
         if verbose:
             print(f"delta: {delta}")
             print(f"percent: {percent}")
-            columns_to_show = list(df.columns)
-            columns_to_show.remove("itemsets")
-            display(df[columns_to_show])
+            display(df)
         return df[df["drop"] == False]

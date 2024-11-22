@@ -1,0 +1,3 @@
+from .v30.apriori_transaction_analyzer import AprioriTransactionAnalyzer as V30
+from .v31.apriori_transaction_analyzer import AprioriTransactionAnalyzer as V31
+from .v33.apriori_transaction_analyzer import AprioriTransactionAnalyzer as V33
