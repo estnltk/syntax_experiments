@@ -30,8 +30,8 @@
 
 * dependent: sõltuvusmäärus (Lebedi ja Tshernomõrdini vahel käib Tshetsheenia konflikti **lahendamisel** võistlus, töökorralduses, väljaütlemises)
 
-* other: igasugused kahtlased asjad
-	* stampväljendid: üldjuhul
+* other: rektsioonid ja stampväljendid
+	* stampväljendid: üldjuhul, tulemusel, mõnes mõttes
 	* konstruktsioon: vaatamata hoiakule, liigub kesklinlastest rohkem, käib jutt kehtivusest, linnapeadest käisid platsil Kõlvart ja Klaas, alates imikutest, üks haavlitest, astub loomale ligi, astub türklastest mööda, kohustuslikus/ettenähtud/ühiskondlikus korras, vastavalt vajadusele/seadusele/elukohale
 
 * error: 
@@ -40,3 +40,4 @@
 	* kirjaviga (kultuurikolledõisse)
 	* süntaksiviga (sinisesse fordi - sinine pole amod vaid obl)
 	
+
