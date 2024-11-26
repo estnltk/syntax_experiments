@@ -25,7 +25,7 @@ Konstruktsioonid
 11. millest mööda
 12. millest välja
 13. mitmest kellest (kümnest kinnipeetavast)
-14. kui suur osa millest (kolmandik/pool/üks/hulk majaelanikest)
+14. kui suur osa millest (kolmandik/pool/üks/hulk majaelanikest) - vale märgendus, 'millest' on nmod
 15. millest kiiremini
 16. millest tegemine/ehitamine jne - materjal
 17. millest üle
