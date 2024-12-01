@@ -11,7 +11,9 @@ import sqlite3
 import re
 from typing import List
 
+
 from .utils import split_schema_and_table, is_table_name_formally_correct
+
 from .db_metadata import get_schemas_list, get_tables_list, get_columns_list
 
 
@@ -84,14 +86,10 @@ def is_db_schema(cur: sqlite3.Cursor, schema: str) -> bool:
     Returns:
         bool: True if the schema exists, False otherwise.
     """
-    cur.execute(
-        """SELECT * FROM pragma_table_list() WHERE schema={schema}""".format(
-            schema=schema
-        )
-    )
-    if cur.fetchone():
-        return True
-    return False
+    conn = cur.connection
+    if schema not in get_schemas_list(conn=conn):
+        return False
+    return True
 
 
 def is_db_table(cur: sqlite3.Cursor, table_name: str) -> bool:
@@ -109,20 +107,9 @@ def is_db_table(cur: sqlite3.Cursor, table_name: str) -> bool:
         ValueError: If the schema in the table name does not exist.
     """
     schema, tbl = split_schema_and_table(table_name)
-    if schema:
-        if not is_db_schema(cur, schema):
-            raise ValueError("Given database schema does not exist")
-        else:
-            cur.execute(
-                """PRAGMA {schema}.table_info({table_name})""".format(
-                    schema=schema, table_name=tbl
-                )
-            )
-    else:
-        cur.execute("""PRAGMA table_info({table_name})""".format(table_name=tbl))
-    if cur.fetchone() is None:
-        return False
-    return True
+    if len(get_tables_list(schema=schema, table_name=tbl)):
+        return True
+    return False
 
 
 def is_col_name(cur: sqlite3.Cursor, table_name: str, col_name: str) -> bool:
@@ -140,24 +127,18 @@ def is_col_name(cur: sqlite3.Cursor, table_name: str, col_name: str) -> bool:
     Raises:
         ValueError: If the schema in the table name does not exist.
     """
+    conn = cur.connection
     schema, tbl = split_schema_and_table(table_name)
-    if schema:
-        if not is_db_schema(cur, schema):
-            raise ValueError(
-                "Database schema included in given table name does not exist, cannot check column name"
-            )
-        else:
-            cur.execute(
-                """PRAGMA {schema}.table_info({table_name})""".format(
-                    schema=schema, table_name=tbl
-                )
-            )
-    else:
-        cur.execute("""PRAGMA table_info({table_name})""".format(table_name=table_name))
-    columns = cur.fetchall()
-    for column in columns:
-        if column[1] == col_name:
-            return True
+    if schema not in get_schemas_list(conn=conn):
+        raise ValueError(
+            f"Database schema {schema} included in given table name does not exist, cannot check column name."
+        )
+    if not is_db_table(schema=schema, table_name=tbl):
+        raise ValueError(
+            "Database table {schema}.{tbl} included in given table name does not exist, cannot check column name."
+        )
+    if col_name in get_columns_list(schema=schema, table_name=tbl):
+        return True
     return False
 
 

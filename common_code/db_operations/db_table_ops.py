@@ -8,6 +8,7 @@ import sqlite3
 import uuid
 from typing import Optional
 
+from .constants import SQL_ESCAPE_CHAR, SQL_ESCAPE_CHARS_END, SQL_ESCAPE_CHARS_START
 from .utils import resolve_schema_and_table, is_table_name_formally_correct
 from .db_metadata import get_tables_list, get_schemas_list
 
@@ -56,7 +57,7 @@ def __copy_indexes(
             f"Copying indexes from '{source_schema}.{source_table}' to '{target_schema}.{target_table}'"
         )
 
-    index_query = f"PRAGMA `{source_schema}`.index_list(`{source_table}`)"
+    index_query = f"PRAGMA {SQL_ESCAPE_CHAR}{source_schema}{SQL_ESCAPE_CHAR}.index_list({SQL_ESCAPE_CHAR}{source_table}{SQL_ESCAPE_CHAR})"
     indexes = conn.execute(index_query).fetchall()
 
     unique_prefix = uuid.uuid4().hex[:8]
@@ -66,7 +67,7 @@ def __copy_indexes(
 
         create_index_sql_result = conn.execute(
             f"""
-            SELECT sql FROM `{source_schema}`.sqlite_master
+            SELECT sql FROM {SQL_ESCAPE_CHAR}{source_schema}{SQL_ESCAPE_CHAR}.sqlite_master
             WHERE type = 'index' AND name = :index_name
             """,
             {"index_name": original_index_name},
@@ -80,15 +81,21 @@ def __copy_indexes(
         create_index_sql = create_index_sql_result[0]
         new_index_name = f"{unique_prefix}_{original_index_name}"
 
+        esc_chars_start = re.escape(SQL_ESCAPE_CHARS_START)
+        esc_chars_end = re.escape(SQL_ESCAPE_CHARS_END)
+
+        esc_source_table = re.escape(source_table)
         updated_index_sql = re.sub(
-            rf"ON\s+[`\"]?{source_table}[`\"]?",
-            f"ON `{target_table}`",
+            rf"ON [{esc_chars_start}]?{esc_source_table}[{esc_chars_end}]?",
+            f"ON {SQL_ESCAPE_CHAR}{target_table}{SQL_ESCAPE_CHAR}",
             create_index_sql,
         )
 
+        esc_orig_index_name = re.escape(original_index_name)
+        esc_full_new_name = f"{SQL_ESCAPE_CHAR}{target_schema}{SQL_ESCAPE_CHAR}.{SQL_ESCAPE_CHAR}{new_index_name}{SQL_ESCAPE_CHAR}"
         updated_index_sql = re.sub(
-            rf" INDEX\s+[`\"]?{original_index_name}[`\"]?",
-            f" INDEX `{target_schema}`.`{new_index_name}`",
+            rf" INDEX\s+[{re.escape(esc_chars_start)}]?{esc_orig_index_name}[{re.escape(esc_chars_end)}]?",
+            f" INDEX {esc_full_new_name}",
             updated_index_sql,
         )
         if verbose:
@@ -166,12 +173,12 @@ def copy_table_structure(
     try:
         conn.execute("BEGIN")
         if (schema_target, target_table) in tables and delete_if_exists:
-            conn.execute(f"DROP TABLE IF EXISTS `{schema_target}`.`{target_table}`")
+            conn.execute(f'DROP TABLE IF EXISTS "{schema_target}"."{target_table}"')
             if verbose:
                 print(f"Deleted existing table '{schema_target}.{target_table}'.")
 
         schema_query = f"""
-        SELECT sql FROM `{schema_source}`.sqlite_master
+        SELECT sql FROM "{schema_source}".sqlite_master
         WHERE type='table' AND name=:table_name
         """
         schema_result = conn.execute(
@@ -183,11 +190,15 @@ def copy_table_structure(
                 f"Source table '{schema_source}.{source_table}' does not exist."
             )
 
+        esc_chars_start = re.escape(SQL_ESCAPE_CHARS_START)
+        esc_chars_end = re.escape(SQL_ESCAPE_CHARS_END)
+        esc_source_table = re.escape(source_table)
+
         create_table_sql = schema_result[0]
         create_table_sql = re.sub(r"FOREIGN KEY.*?,", "", create_table_sql)
         create_table_sql = re.sub(
-            r"CREATE TABLE\s+[`\"]?{}[`\"]?".format(re.escape(source_table)),
-            f"CREATE TABLE `{schema_target}`.`{target_table}`",
+            rf"CREATE TABLE\s+[{esc_chars_start}]?{esc_source_table}[{esc_chars_end}]? ",
+            f"CREATE TABLE {SQL_ESCAPE_CHAR}{schema_target}{SQL_ESCAPE_CHAR}.{SQL_ESCAPE_CHAR}{target_table}{SQL_ESCAPE_CHAR} ",
             create_table_sql,
             count=1,
         )
@@ -203,8 +214,8 @@ def copy_table_structure(
 
         if copy_data:
             copy_data_query = f"""
-            INSERT INTO `{schema_target}`.`{target_table}`
-            SELECT * FROM `{schema_source}`.`{source_table}`
+            INSERT INTO {SQL_ESCAPE_CHAR}{schema_target}{SQL_ESCAPE_CHAR}.{SQL_ESCAPE_CHAR}{target_table}{SQL_ESCAPE_CHAR}
+            SELECT * FROM {SQL_ESCAPE_CHAR}{schema_source}{SQL_ESCAPE_CHAR}.{SQL_ESCAPE_CHAR}{source_table}{SQL_ESCAPE_CHAR}
             """
             conn.execute(copy_data_query)
             if verbose:

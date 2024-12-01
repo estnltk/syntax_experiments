@@ -6,7 +6,7 @@ tables, and columns, and validating schema and table names.
 
 import sqlite3
 from typing import List, Tuple, Optional
-
+from .constants import SQL_ESCAPE_CHAR
 from .utils import is_table_name_formally_correct, is_schema_name_formally_correct
 
 
@@ -97,6 +97,6 @@ def get_columns_list(
     return [
         row[1]
         for row in conn.execute(
-            f"PRAGMA `{schema}`.table_info(`{table_name}`)"
+            f"PRAGMA {SQL_ESCAPE_CHAR}{schema}{SQL_ESCAPE_CHAR}.table_info({SQL_ESCAPE_CHAR}{table_name}{SQL_ESCAPE_CHAR})"
         ).fetchall()
     ]

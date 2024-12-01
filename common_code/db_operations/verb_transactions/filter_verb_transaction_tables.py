@@ -81,12 +81,14 @@ def filter_verb_transaction_tables(
         table_target_head,
     ):
         raise ValueError(
-            f"Source and target transaction tables are the same {schema_source_head}.{table_source_head} {schema_target_head}.{table_target_head}."
+            "Source and target transaction tables are the same "
+            f" {schema_source_head}.{table_source_head} {schema_target_head}.{table_target_head}."
         )
 
     if (schema_source_row, table_source_row) == (schema_target_row, table_target_row):
         raise ValueError(
-            f"Source and target transaction tables are the same {schema_source_row}.{table_source_row} {schema_target_row}.{table_target_row}."
+            f"Source and target transaction tables are the same {schema_source_row}."
+            f" {table_source_row} {schema_target_row}.{table_target_row}."
         )
 
     schema_ids = None
@@ -135,11 +137,11 @@ def filter_verb_transaction_tables(
 
     # Populate data in new transaction head table
     sql_head = f"""
-    INSERT INTO `{schema_target_head}`.`{table_target_head}`
+    INSERT INTO "{schema_target_head}"."{table_target_head}"
     SELECT th_source.*
-    FROM `{schema_source_head}`.`{table_target_head}` AS th_source
-    INNER JOIN `{schema_ids}`.`{table_ids}` AS heads_table
-    ON th_source.id = heads_table.`{column_ids}`
+    FROM "{schema_source_head}"."{table_target_head}" AS th_source
+    INNER JOIN "{schema_ids}"."{table_ids}" AS heads_table
+    ON th_source.id = heads_table."{column_ids}"
     ON CONFLICT(id) DO NOTHING;
     """
     if verbose:
@@ -148,11 +150,11 @@ def filter_verb_transaction_tables(
 
     # Populate data in new transaction row table
     sql_row = f"""
-    INSERT INTO `{schema_target_row}`.`{table_target_row}`
+    INSERT INTO "{schema_target_row}"."{table_target_row}"
     SELECT tr_source.*
-    FROM `{schema_source_row}`.`{table_source_row}` AS tr_source
-    INNER JOIN `{schema_ids}`.`{table_ids}` AS heads_table
-    ON tr_source.head_id = heads_table.`{column_ids}`
+    FROM "{schema_source_row}"."{table_source_row}" AS tr_source
+    INNER JOIN "{schema_ids}"."{table_ids}" AS heads_table
+    ON tr_source.head_id = heads_table."{column_ids}"
     ON CONFLICT(id) DO NOTHING;
     """
     if verbose:
