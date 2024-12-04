@@ -12,9 +12,4 @@ Notebookid, mis loovad järgnevad tabelid:
 
 3 - pattern support
 
-4 - baastabel analüüsiks: patterns join transactions join transaction_head
-
-	(pat_id, head_id, transaction_id, phrase_nr, verb, deprel, kääne, sõna, koht, elus)
-
-
 
