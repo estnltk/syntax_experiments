@@ -1,37 +1,40 @@
 # 
 
-001 - esialgsete tabelite loomine
+001 - esialgsete mustrite tabelite loomine
 
-	- patterns tabelid
+- patterns tabelid
 
-	- transactions
+- transactions
 
-	- transaction_head
+- transaction_head
 
-	- transactions_v2 (lisaks nimekirjapõhine koht ja elus märgendus)
+- transactions_v2 (lisaks nimekirjapõhine koht ja elus märgendus)
 
-002 - analüüsi baastabelid
+002 - transactions filtreerimine mustrite alusel
 
-	- baastabelid, mille alusel saab edasist analüüsi teha
 
-003 - analüüs
+003 - analüüsi baastabelid
 
-	- konkreetsemad näited, mida vaadelda
+baastabelid, mille alusel saab edasist analüüsi teha
 
 004 - analüüs
 
-	- histogrammid ja graafid
+histogrammid ja graafid
 
-005 - relabeling
+
+005 - analüüs
+
+konkreetsemad näited, mida vaadelda
+
+006 - relabeling
 
 	- uued potensiaalsed isikumäärused
 
-data files - andmefailid
+source_data - andmefailid
 
 	- annoteeritud verbid
 
 	- manuaalselt üle vaadatud isikutele ja kohtadele viitavate sõnade nimekirjad
 
-	- väiksemad andmefailid konkreetsemate graafide jaoks
-
+example_data - väike hulk andmeid näidistabelites
 
