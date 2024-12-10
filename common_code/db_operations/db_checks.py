@@ -68,7 +68,7 @@ def is_valid_table_name(
             raise ValueError(f"Schema '{schema}' does not exist.")
 
     if check_exists:
-        tables = get_tables_list(conn, schema=schema, table=tbl)
+        tables = get_tables_list(conn, schema=schema, table_name=tbl)
         if tables:
             raise ValueError(f"Table '{schema}.{tbl}' already exists in the database.")
 
@@ -106,8 +106,9 @@ def is_db_table(cur: sqlite3.Cursor, table_name: str) -> bool:
     Raises:
         ValueError: If the schema in the table name does not exist.
     """
+    conn = cur.connection
     schema, tbl = split_schema_and_table(table_name)
-    if len(get_tables_list(schema=schema, table_name=tbl)):
+    if len(get_tables_list(conn, schema=schema, table_name=tbl)):
         return True
     return False
 
@@ -133,11 +134,11 @@ def is_col_name(cur: sqlite3.Cursor, table_name: str, col_name: str) -> bool:
         raise ValueError(
             f"Database schema {schema} included in given table name does not exist, cannot check column name."
         )
-    if not is_db_table(schema=schema, table_name=tbl):
+    if not is_db_table(cur, table_name=table_name):
         raise ValueError(
-            "Database table {schema}.{tbl} included in given table name does not exist, cannot check column name."
+            f"Database table {schema}.{tbl} included in given table name does not exist, cannot check column name."
         )
-    if col_name in get_columns_list(schema=schema, table_name=tbl):
+    if col_name in get_columns_list(conn, schema=schema, table_name=tbl):
         return True
     return False
 
