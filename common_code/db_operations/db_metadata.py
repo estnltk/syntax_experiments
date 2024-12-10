@@ -47,16 +47,16 @@ def get_tables_list(
 
     if table_name:
         if schema:
-            query = "PRAGMA table_list WHERE schema = ? AND name = ?"
+            query = "SELECT * FROM pragma_table_list() WHERE schema = ? AND name = ?"
             rows = conn.execute(query, (schema, table_name)).fetchall()
         else:
-            query = "PRAGMA table_list WHERE name = ?"
+            query = "SELECT * FROM pragma_table_list() WHERE name = ?"
             rows = conn.execute(query, (table_name,)).fetchall()
     elif schema:
-        query = "PRAGMA table_list WHERE schema = ?"
+        query = "SELECT * FROM pragma_table_list() WHERE schema = ?"
         rows = conn.execute(query, (schema,)).fetchall()
     else:
-        query = "PRAGMA table_list"
+        query = "SELECT * FROM pragma_table_list()"
         rows = conn.execute(query).fetchall()
 
     return [(row[0], row[1]) for row in rows]  # (schema, table_name)
