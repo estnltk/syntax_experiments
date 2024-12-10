@@ -63,8 +63,8 @@ def filter_verb_transaction_tables(
         schema_source_row, table_source_row = resolve_schema_and_table(transaction_row)
 
     if target_schema:
-        schema_target_head = source_schema
-        schema_target_row = source_schema
+        schema_target_head = target_schema
+        schema_target_row = target_schema
         table_target_head = new_transaction_head
         table_target_row = new_transaction_row
     else:
