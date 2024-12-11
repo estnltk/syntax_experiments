@@ -6,5 +6,5 @@ elusolendid_srt_biol_elus - väike hulk sõnu (u 2300), mis võiks olla bioloogi
 
 loc_lemmas_edited - väike hulk sõnu (u 1000), mis võiks olla kohad.
 
-
+verb_patterns - käsitsi annoteeritud verbide vahetabel patterns tabeli loomiseks.
 

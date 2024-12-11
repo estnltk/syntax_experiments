@@ -1,11 +1,11 @@
-# Andmefailid
+# Database files
 
-db_pre_loc - isikute ja kohtade nimekirjad
+enriched_transactions - contained transactions table with additional columns
 
-v33_subset - v33 verbide transaktsioonide tabeli subset esimesed 500 transactionit
+pattern_matches - contains summary tables and filtered tables
 
-verb_patterns_actors - db käsitsi märgendatud verbimustrite jaoks
+phrase_patterns - tables with lists of manually selected words that could be actors or locations
 
-vp_data_actors (verb patterns data: actors) - põhiandmebaas, kuhu salvestuvad tabelid 
+transactions - transactions subset (500 rows) and transaction_head for the subset 
 
-
+verb_patterns - manually annotated verb patterns and support tables (currently holds all annotated verb patterns)

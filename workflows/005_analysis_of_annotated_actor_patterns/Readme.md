@@ -1,40 +1,24 @@
 # 
 
-001 - esialgsete mustrite tabelite loomine
+01 - Patterns table and support tables.
 
-- patterns tabelid
+02 - Tables from manually annotated lists for actors and locations.
 
-- transactions
+03 - Enriched transaction table. Uses tables from phrase_patterns.
 
-- transaction_head
+04 - Filters verb transactions based on deprel.
 
-- transactions_v2 (lisaks nimekirjapõhine koht ja elus märgendus)
+05 - Creates general sount tables for locative cases and elus/koht root counts.
 
-002 - transactions filtreerimine mustrite alusel
+06 - Ilustrations.
 
+07 - Analysis and examples of illustrations.
 
-003 - analüüsi baastabelid
+08 - Relabeling. New potential actors etc.
 
-- baastabelid, mille alusel saab edasist analüüsi teha
+source_data - Data files for annotated verbs, elus/koht lists, temporary files for patterns table creation.
 
-004 - analüüs
+example_data - Databases with sample data for runnin workflow.
 
-- histogrammid ja graafid
-
-
-005 - analüüs
-
-- konkreetsemad näited, mida vaadelda
-
-006 - relabeling
-
-- uued potensiaalsed isikumäärused
-
-source_data - andmefailid
-
-- annoteeritud verbid
-
-- manuaalselt üle vaadatud isikutele ja kohtadele viitavate sõnade nimekirjad
-
-example_data - väike hulk andmeid näidistabelites
+table_descriptions - More detailed descriptions for tables.
 
