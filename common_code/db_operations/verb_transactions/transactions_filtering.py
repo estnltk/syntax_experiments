@@ -2,46 +2,20 @@
 import sqlite3
 
 
-def remove_deprel_from_transaction_row(cur, transaction_row: str, deprel: str):
+def index_difference(cur, index_tbl_1: str, id_col_1: str, index_tbl_2: str, id_col_2: str, output_tbl: str):
     """
-    Removes rows from transaction_row table that contain given deprel. Result is transaction_row table without given deprel values.
-    
-    Parameters:
-                cur - SQLite Cursor-object
-                transaction_row - transaction_row table name
-                deprel - deprel value to be removed
-    """
-    cur.execute("""
-    DELETE FROM {transaction_row} WHERE deprel='{deprel}'
-    """.format(transaction_row=transaction_row, deprel=deprel))
-    cur.connection.commit()
-
-def remove_aux_verbs(cur, transaction_row: str):
-    """
-    Removes rows from transaction_row table that contain an auxiliary verb. Result is transaction_row table without auxiliary verbs.
+    Computes set difference between indexes, that are all rows in index_tbl_1 that are not present in index_tbl_2
+    Creates a new table of resulting indexes. This table can be later used to filter transactions.
     
     Parameters:
             cur - SQLite Cursor-object
-            transaction_row - transaction_row_table name
-    """
-    cur.execute("""
-    DELETE FROM {transaction_row} WHERE deprel='aux' AND lemma!='ei'
-    """.format(transaction_row=transaction_row))
-    cur.connection.commit()
-
-def create_filtered_head_id_tbl(cur, all_ids_tbl: str, head_id_col1: str, ids_to_filter_tbl: str, head_id_col2: str, output_tbl: str):
-    """
-    Creates a new table that contains head ID-s of transactions that should be kept after filtering. Result is a table of selected head ID-s.
-    
-    Parameters:
-            cur - SQLite Cursor-object
-            all_ids_tbl - name of the table containing all head ID-s
-            head_id_col1 - head ID column name in all_ids_tbl
-            ids_to_filter_tbl - name of the table containing head ID-s that are to be filtered out
-            head_id_col2  - head ID column name in ids_to_filter_tbl
+            index_tbl_1 - name of the table containing all indexes
+            id_col_1 - ID column name in index_tbl_1
+            index_tbl_2 - name of the table containing head indexes that are to be filtered out
+            id_col_2  - ID column name in index_tbl_2
             output_tbl - output table name
     
-    Table all_ids_tbl should be longer than table ids_to_filter_tbl.
+    Table index_tbl_1 should be longer than table index_tbl_2.
     """
     cur.execute("""
     DROP TABLE IF EXISTS {output_tbl}
@@ -51,26 +25,26 @@ def create_filtered_head_id_tbl(cur, all_ids_tbl: str, head_id_col1: str, ids_to
     CREATE TABLE {output_tbl}
     AS
     SELECT
-        all_ids.{head_id_col1} AS head_id
+        tbl1.{id_col_1} AS head_id
     FROM
-        {all_ids_tbl} AS all_ids
+        {index_tbl_1} AS tbl1
     LEFT JOIN
-        {ids_to_filter_tbl} AS ids_to_filter
+        {index_tbl_2} AS tbl2
     ON
-        all_ids.{head_id_col1}=ids_to_filter.{head_id_col2}
+        tbl1.{id_col_1}=tbl2.{id_col_2}
     WHERE
-        ids_to_filter.{head_id_col2} isnull
-    """.format(output_tbl=output_tbl, head_id_col1=head_id_col1, all_ids_tbl=all_ids_tbl, ids_to_filter_tbl=ids_to_filter_tbl, head_id_col2=head_id_col2))
+        tbl2.{id_col_2} isnull
+    """.format(output_tbl=output_tbl, id_col_1=id_col_1, index_tbl_1=index_tbl_1, index_tbl_2=index_tbl_2, id_col_2=id_col_2))
     cur.connection.commit()
 
-def create_filtered_transaction_row(cur, head_ids: str, head_id_col: str, transaction_row: str, output_tr_row: str):
+def create_filtered_transaction_row(cur, index_tbl: str, id_col: str, transaction_row: str, output_tr_row: str):
     """
     Creates a copy of transaction_row table where only transactions with selected head ID-s are kept. Result is filtered transaction_row table.
     
     Parameters:
             cur - SQLite Cursor-object
-            head_ids - name of head ID table containing head ID-s of transactions that are to be kept. 
-            head_id_col - head ID column name in head_ids table.
+            index_tbl - name of index table containing ID-s of transactions that are to be kept. 
+            id_col - ID column name in index_tbl.
             transaction_row - transaction_row table name
             output_tr_row - output transaction_row table name
     """
@@ -93,22 +67,22 @@ def create_filtered_transaction_row(cur, head_ids: str, head_id_col: str, transa
         tr.parent_loc,
         tr.pos
     FROM
-        {head_ids} AS ids
+        {index_tbl} AS ids
     INNER JOIN
         {transaction_row} AS tr
     ON
-       tr.head_id=ids.{head_id_col}
-    """.format(output_tr_row=output_tr_row, head_ids=head_ids, transaction_row=transaction_row, head_id_col=head_id_col))
+       ids.{id_col}=tr.head_id
+    """.format(output_tr_row=output_tr_row, index_tbl=index_tbl, transaction_row=transaction_row, id_col=id_col))
     cur.connection.commit()
     
-def create_filtered_transaction_head(cur, head_ids: str, head_id_col: str, transaction_head: str, output_tr_head: str):
+def create_filtered_transaction_head(cur, index_tbl: str, id_col: str, transaction_head: str, output_tr_head: str):
     """
     Creates a copy of transaction_head table where only transactions with selected head ID-s are kept. Result is filtered transaction_head table.
     
     Parameters:
             cur - SQLite Cursor-object
-            head_ids - name of head ID table containing head ID-s of transactions that are to be kept. 
-            head_id_col - head ID column name in head_ids table.
+            index_tbl - name of index table containing ID-s of transactions that are to be kept. 
+            id_col - ID column name in index_tbl.
             transaction_head - transaction_head table name
             output_tr_head - output transaction_head table name
     """
@@ -129,10 +103,10 @@ def create_filtered_transaction_head(cur, head_ids: str, head_id_col: str, trans
         tr_head.deprel,
         tr_head.feats
     FROM
-        {head_ids} AS ids
+        {index_tbl} AS ids
     INNER JOIN
         {transaction_head} AS tr_head
     ON
-        ids.{head_id_col}=tr_head.id
-    """.format(output_tr_head=output_tr_head, head_ids=head_ids, transaction_head=transaction_head, head_id_col=head_id_col))
+        ids.{id_col}=tr_head.id
+    """.format(output_tr_head=output_tr_head, index_tbl=index_tbl, transaction_head=transaction_head, id_col=id_col))
     cur.connection.commit()

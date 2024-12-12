@@ -1,8 +1,17 @@
 # imports
 import sqlite3
-#from .db_checks import is_valid_table_name, is_db_table, check_all_col_names
 
 def create_verb_neg_table(cur, verb_matches: str, transaction_head: str, output_table: str):
+    """
+    Finds negated verbs from transaction_head table and creates a new table containing necessary attributes from detected transaction_head rows.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_matches - name of table containing ID-s of verbs that occur in existing verb patterns (vp_data3)
+            transaction_head - transaction head table name
+            output_table - output table name
+            
+    """
     cur.execute("""
     DROP TABLE IF EXISTS {output_table}
     """.format(output_table=output_table))
@@ -37,6 +46,16 @@ def create_verb_neg_table(cur, verb_matches: str, transaction_head: str, output_
 
 
 def create_verb_neg_phrase_table(cur, verb_neg: str, transaction_row: str, output_table: str):
+    """
+    Finds transactions from transaction_row table that match an ID in verb_neg table and creates a new table containing necessary attributes from detected transaction_row rows.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_neg - name of table containing negated verbs found from transactions
+            transaction_row - transaction row table name
+            output_table - output table name
+            
+    """
     cur.execute("""
     DROP TABLE IF EXISTS {output_table}
     """.format(output_table=output_table))
@@ -63,6 +82,17 @@ def create_verb_neg_phrase_table(cur, verb_neg: str, transaction_row: str, outpu
 
 
 def create_verb_neg_support_table(cur, verb_matches: str, transaction_head: str, verb_neg: str, output_table: str):
+    """
+    Finds total and negated form frequecies of verb (compounds) that exist among known verb patterns and calculates relative negation support for each verb (compound). Creates a new table containing this information.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_matches - name of table containing ID-s of verbs that occur in existing verb patetrns (vp_data3)
+            transaction_head - transaction head table name
+            verb_neg - name of table containing negated verbs found from transactions
+            output_table - output table name
+            
+    """
     cur.execute("""
     DROP TABLE IF EXISTS {output_table}
     """.format(output_table=output_table))
@@ -114,6 +144,16 @@ def create_verb_neg_support_table(cur, verb_matches: str, transaction_head: str,
 
 
 def create_neg_patterns_table(cur, verb_neg: str, verb_neg_phrases: str, output_table: str):
+    """
+    Finds negation patterns from tables containing negated verb forms ('olema') and transactions containing a negation word ('ei', 'ära'). Creates a new table of negation patterns
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_neg - name of table containing negated verbs found from transactions
+            verb_neg_phrases - name of table containing transactions that contain a negated verb form
+            output_table - output table name
+            
+    """
     cur.execute("""
     DROP TABLE IF EXISTS {output_table}
     """.format(output_table=output_table))
@@ -183,6 +223,16 @@ def create_neg_patterns_table(cur, verb_neg: str, verb_neg_phrases: str, output_
 
 
 def create_neg_feats_table(cur, neg_patterns: str, verb_neg: str, verb_neg_phrases: str, output_table: str):
+    """
+    Finds and creates a new table for 'feats' column values of negation (pattern) occurrences among transactions.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            neg_patterns - name of negation patterns table
+            verb_neg - name of table containing negated verbs found from transactions
+            verb_neg_phrases - name of table containing transactions that contain a negated verb form
+            output_table - output table name
+    """
     cur.execute("""
     DROP TABLE IF EXISTS {output_table}
     """.format(output_table=output_table))
@@ -283,6 +333,23 @@ def create_neg_feats_table(cur, neg_patterns: str, verb_neg: str, verb_neg_phras
     cur.connection.commit()
 
 def create_neg_tables(cur, verb_matches: str, transaction_head: str, transaction_row: str):
+    """
+    Creates all five negation tables.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_matches - name of table containing ID-s of verbs that occur in existing verb patterns (vp_data3)
+            transaction_head - transaction head table name
+            transaction_row - transaction row table name
+            
+    Result:
+            verb_neg - transaction heads from transaction_head that contain a negated verb and match a verb pattern from vp_data3
+            verb_neg_phrases - transactions from transaction_row that also match a transaction head from verb_neg table
+            verb_neg_support - informative table of negation support among verbs, in descending order
+            neg_patterns - negation patterns
+            neg_feats - 'feats' column values that occur together with a negation pattern
+            
+    """
     create_verb_neg_table(cur, verb_matches, transaction_head, 'verb_neg')
     create_verb_neg_phrase_table(cur, 'verb_neg', transaction_row, 'verb_neg_phrases')
     create_verb_neg_support_table(cur, verb_matches, transaction_head, 'verb_neg', 'verb_neg_support')

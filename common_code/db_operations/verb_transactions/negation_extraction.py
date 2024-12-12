@@ -16,11 +16,11 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
     cur:
         database Cursor object
     transaction_head: str
-        transaction head table name
+        transaction head table name (required to have columns 'id', 'form', 'deprel', 'feats')
     transaction_row: str
-        transaction row table name
+        transaction row table name (required to have columns 'head_id', 'form', 'deprel' and 'feats')
     patterns: str
-        negation patterns table name
+        negation patterns table name (required to have columns 'pat_id', 'form', 'deprel')
     output_table: str
         name of output table being created
     overwrite: bool
