@@ -1,24 +1,22 @@
 # Notebooks
 
-Notebookid, mis loovad järgnevad tabelid:
+01 - tabelid 
 
-00 - baastabel analüüsiks: patterns join transaction join transaction_head
+- iga kohakäände jaoks count distinct root
 
-	(pat_id, head_id, transaction_id, phrase_nr, verb, deprel, kääne, sõna, koht, elus)
+- iga verb+kääne jaoks elus ja koht count
 
-	eraldi "alati" ja "mitte kunagi" isikumäärus verbide jaoks 
+02 - tabelid
 
-01 - obl transaktsioonid, mis on kohakäändes (abl, adit, all, ad, el, ill, in)
-	 - distinct sõna count iga verbobl+kääne jaoks 
-	 - verbobl koos käände ja distinct sõna count, mis on elus ja koht
+- obl transactions tabelile juurde actor (alati/mitte kunagi/ '') ja käände
 
-02 - obl transaktsioonid
-	 - "alati" ja "mitte kunagi" verbidega seotud sõnad
-	 - tabelid illustratsioonide jaoks, kus on count sõna koht ja elus jaoks 
+- root sõna jaoks lemma count, 'alati' ehk 'elus' count, 'mitte kunagi' ehk 'mitte elus' count (eelneva tabeli põhjal)
 
-03 - obl transaktsioonid grupeeritud sõna lemma alusel ja elus/koht loendus (lemma, lemma_cnt, elus_cnt, koht_cnt)
+03 - tabelid
 
-04 - sõna esinemised mustrites (NB! verb ilma compound)
+- millised obl verbid on juba annoteeritud
+
+- verb ja kääne jaoks dictinct root count ja kas on juba annoteeritud 
 
 
 

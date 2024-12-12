@@ -8,7 +8,7 @@ Derived from trans_obl_loc table.
 |---|---|---|
 |verb |	main verb | aitama 
 |verb_compound| verb compound| - 
-|loc_case| case of  | 0
+|loc_case| case of word tied to verb | 0
 |elus_cnt| distinct root count based on verb and loc_case that are marked as elus| 0
 |koht_cnt| distinct root count based on verb and loc_case  that are marked as koht | 1
 |root_cnt| distinct root count based on verb and loc_case | 2

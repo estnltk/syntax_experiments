@@ -8,8 +8,6 @@ The table contains verb patterns and root words with semantic role and elus/koht
 |---|---|---|
 |pat_id| pattern ID in table patterns_actors_len1_alati | 179
 |head_id| ID in transaction_head table  | 2
-|transaction_id| ID in transaction table  | 258
-|phrase_nr| phrase number | 1
 |verb_word |	main verb | nõudma 
 |verb_compound| verb compound| - 
 |root_word | lemma of word in transaction table | mina
