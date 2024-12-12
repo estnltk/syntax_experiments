@@ -1,0 +1,3325 @@
+wordid,lexeme_id,word,homonym_nr,is_public,pos,government
+154548,1141002,aasima,1,True,v,keda*
+154548,1141002,aasima,1,True,v,kelle kallal
+154678,1141297,abielluma,1,True,v,kellega
+154740,1141437,abikätt ulatama,1,True,v,kellele
+154772,1141513,abistama,1,True,v,keda/mida* + milles
+154874,1141754,abstraheeruma,1,True,v,millest/kellest
+154977,1141970,adresseerima,1,True,v,kellele
+154977,1141970,adresseerima,1,True,v,mida
+154977,2263987,adresseerima,1,True,v,kellele
+154977,2263987,adresseerima,1,True,v,mida
+154977,2026796,adresseerima,1,True,v,mida*
+155138,1142360,aevastama,1,True,v,mille peale
+155207,1142501,agiteerima,1,True,v,keda*
+155309,1142733,ahistama,1,True,v,keda*
+155400,1142938,ahvima,1,True,v,keda*
+155503,1143138,aimu saama,1,True,v,millest
+155602,1143381,aitama,1,True,v,kellel + mida teha
+155602,1143381,aitama,1,True,v,keda/mida*
+155602,1143383,aitama,1,True,v,millest
+155602,1143384,aitama,1,True,v,mida teha
+155699,1143611,ajama,1,True,v,kuhu
+155778,1143812,ajendama,1,True,v,mida tegema
+1378086,2492455,ajenduma,1,True,v,millest
+1354943,2454923,ajudele käima,1,True,v,kellele
+155933,1144114,akrediteerima,1,True,v,keda
+155933,1144116,akrediteerima,1,True,v,keda/mida
+156110,1144517,alahindama,1,True,v,keda/mida*
+156190,1144682,alandama,1,True,v,mida*
+156190,2226386,alandama,1,True,v,mida*
+156190,1144683,alandama,1,True,v,mida*
+156190,1144685,alandama,1,True,v,keda*
+156193,1144698,alanduma,1,True,v,kelle ees
+156193,1144698,alanduma,1,True,v,mida tegema
+156324,1144980,algama,1,True,v,millega
+156324,1144980,algama,1,True,v,millest
+156437,1145235,algust tegema,1,True,v,millega
+156519,1145467,alla hüppama,1,True,v,millest
+156523,1145476,alla jääma,1,True,v,kellele/millele
+156526,1145485,alla kirjutama,1,True,v,millele
+156526,1145485,alla kirjutama,1,True,v,mille/mida
+156549,1145550,alla minema,1,True,v,kellel
+156551,1145557,alla neelama,1,True,v,mida
+156551,1145558,alla neelama,1,True,v,mida
+156551,1145559,alla neelama,1,True,v,mida
+156551,1145560,alla neelama,1,True,v,mida
+156576,1145637,alla vaatama,1,True,v,kelle peale
+156579,1145642,alla vajutama,1,True,v,mida
+156582,1145649,alla vanduma,1,True,v,kellele/millele
+156688,1145897,alluma,1,True,v,kellele/millele
+156688,1145898,alluma,1,True,v,kellele/millele
+156688,1145899,alluma,1,True,v,millele
+156756,1146043,alt,1,True,"adv,postp",mille
+156756,1146045,alt,1,True,postp,mille
+156756,1146046,alt,1,True,postp,mille
+156756,1146047,alt,1,True,postp,kelle/mille
+156756,1146048,alt,1,True,postp,mille
+156765,1146076,altari ette viima,1,True,v,keda
+156796,1146138,alt lendama,1,True,v,millega
+156798,1146142,alt minema,1,True,v,millega
+156812,1146173,alt üles vaatama,1,True,v,kellele
+156832,1146243,alusel,1,True,postp,mille
+156875,1146338,alustama,1,True,v,mida*
+156875,1146338,alustama,1,True,v,millega
+156875,1146338,alustama,1,True,v,millest
+156878,1146349,alust panema,1,True,v,millele
+156949,1146501,amelema,1,True,v,kellega
+1278777,2364387,ametlikku käiku andma,1,True,,millele
+157199,1147058,analüüsima,1,True,v,mida*
+157233,1147144,andeks andma,1,True,v,kellele
+157236,1147149,andeks paluma,1,True,v,kellelt / kelle käest
+157242,1147160,andestama,1,True,v,kellele
+157251,1147185,andma,1,True,v,milleks / mida teha
+157300,1147294,anduma,1,True,v,millele
+157300,1147295,anduma,1,True,v,kellele
+157422,1147573,annekteerima,1,True,v,mida
+1379019,2493975,antitsipeerima,1,True,v,mida
+157654,1148057,apelleerima,1,True,v,mida
+157654,1148058,apelleerima,1,True,v,millele
+157825,1148411,arendama,1,True,v,mida*
+157825,1148412,arendama,1,True,v,mida*
+157825,1148413,arendama,1,True,v,mida*
+157825,1148414,arendama,1,True,v,mida*
+158021,1148871,armastama,1,True,v,keda/mida*
+158021,1148872,armastama,1,True,v,keda/mida*
+158021,1148873,armastama,1,True,v,mida*
+158021,1148873,armastama,1,True,v,mida teha
+158083,1149021,armu andma,1,True,v,kellele
+158092,1149040,armu heitma,1,True,v,kellele/millele
+158118,1149107,armuma,1,True,v,kellesse/millesse
+158160,1149194,arranžeerima,1,True,v,millele
+158238,1149371,aru andma,1,True,v,millest / mille kohta
+158258,1149417,aru peast võtma,1,True,v,kellel
+158261,1149425,aru pähe panema,1,True,v,kellele
+158263,1149429,aru pärima,1,True,,kellelt
+158271,1149457,aru saama,1,True,v,kellest/millest
+158278,1149481,arutama,1,True,v,kellega
+158278,1149481,arutama,1,True,v,mida*
+158281,1149492,arutlema,1,True,v,mida*
+158281,1149492,arutlema,1,True,v,mille üle
+158296,1149532,arvama,1,True,v,et
+158296,1149534,arvama,1,True,v,kellest/millest
+158296,1149534,arvama,1,True,v,et
+158320,1149601,arveid klaarima,1,True,v,kellega
+158321,1149602,arveid õiendama,1,True,v,kellega
+158338,1149636,arvestama,1,True,v,millega
+158338,1149636,arvestama,1,True,v,mida*
+158338,1149638,arvestama,1,True,v,mida*
+158338,1149637,arvestama,1,True,v,mida
+158338,2025371,arvestama,1,True,v,kellega
+158362,1149710,arvustama,1,True,v,keda/mida*
+158362,1149711,arvustama,1,True,v,mida*
+158460,1149952,asendama,1,True,v,millega
+158460,1149953,asendama,1,True,v,keda/mida*
+158466,1149966,asenduma,1,True,v,millega
+158495,1150025,asetama,1,True,v,kuhu
+158496,1150036,aset andma,1,True,v,millele
+158499,1150044,aset täitma,1,True,v,mille/kelle
+158502,1150055,aset võtma,1,True,v,kus
+158568,1150225,asja tegema,1,True,v,kuhu
+158650,1150419,assotsieeruma,1,True,v,millega/kellega
+158726,1150615,astuma,1,True,v,kuhu
+158726,1150616,astuma,1,True,v,kuhu
+158726,1150617,astuma,1,True,v,kuhu
+158726,1150618,astuma,1,True,v,kuhu
+158726,1150619,astuma,1,True,v,kuhu
+158740,1150661,asuma,1,True,v,kus
+158740,1150663,asuma,1,True,v,mida tegema
+158740,1150663,asuma,1,True,v,mille juurde / mille kallale
+158892,1151039,au andma,1,True,v,kellele
+158892,1151040,au andma,1,True,v,kellele
+158936,1151141,au haavama,1,True,v,kelle
+158964,1151217,auku ajama,1,True,v,keda
+158965,1151219,auku kaevama,1,True,v,kellele
+158966,1151222,auku pähe rääkima,1,True,v,kellele
+159058,1151429,austama,1,True,v,keda*
+159058,1151430,austama,1,True,v,mida*
+159058,1151431,austama,1,True,v,keda*
+159058,1151433,austama,1,True,v,keda/mida*
+159090,1151510,autasustama,1,True,v,millega
+159093,1151518,au tegema,1,True,v,kellele
+159242,1151843,autoriseerima,1,True,v,mida
+159337,1152060,avaldama,1,True,v,mida*
+159337,1152061,avaldama,1,True,v,mida
+159337,1152062,avaldama,1,True,v,mida
+159337,1152063,avaldama,1,True,v,mida
+159343,1152086,avalduma,1,True,v,milles
+159763,1153025,baseeruma,1,True,v,millele
+159763,1153025,baseeruma,1,True,v,millel
+159763,1153026,baseeruma,1,True,v,kus
+160400,1154249,briifima,1,True,v,keda*
+160400,1154249,briifima,1,True,v,millest
+160829,1155041,dateerima,1,True,v,millega
+160829,1155041,dateerima,1,True,v,mida
+160829,1155042,dateerima,1,True,v,millega
+160829,1155042,dateerima,1,True,v,kuhu
+160829,1155042,dateerima,1,True,v,mida
+160842,1155065,debateerima,1,True,v,mille üle
+160842,1155065,debateerima,1,True,v,kellega
+1381604,2497727,debattima,1,True,v,mille üle
+1381604,2497727,debattima,1,True,v,kellega
+160952,1155313,deklareerima,1,True,v,et
+160980,1155372,dekoreerima,1,True,v,millega
+161055,1155554,demonstreerima,1,True,v,et
+1381875,2498127,denuntseerima,1,True,v,keda/mida
+161511,1156540,diplomeerima,1,True,v,keda
+161577,1156706,diskuteerima,1,True,v,mille üle
+748505,2480429,dislotseerima,1,True,v,kuhu
+748505,2480412,dislotseerima,1,True,v,kus
+161581,1156718,dislotseeruma,1,True,v,kus
+161581,2480422,dislotseeruma,1,True,v,kuhu
+161614,2084234,distantseerima,1,True,v,millest
+161615,2084233,distantseeruma,1,True,v,millest
+1406932,2530437,eastama,1,True,v,keda
+162213,1158177,ebaõnnestuma,1,True,v,kellel
+162238,1158240,edasi jõudma,1,True,v,milles
+162245,1158257,edasi kanduma,1,True,v,kellele/millele
+162245,1158257,edasi kanduma,1,True,v,millest
+162245,1158257,edasi kanduma,1,True,v,millesse
+162258,1158278,edasi lükkama,1,True,v,mida
+162270,1158312,edasi otsima,1,True,v,keda/mida*
+162309,1158403,edendama,1,True,v,mida*
+162311,1158415,edestama,1,True,v,keda/mida*
+162375,1158570,eeldama,1,True,v,mida*
+162375,1158570,eeldama,1,True,v,et
+162375,1158571,eeldama,1,True,v,et
+162398,1158626,eelistama,1,True,v,mida teha
+162398,1158626,eelistama,1,True,v,kellele/millele
+162398,1158626,eelistama,1,True,v,keda/mida*
+162435,1158718,eelnema,1,True,v,millele
+162498,1158861,eemaldama,1,True,v,millelt
+162498,1158863,eemaldama,1,True,v,kust
+162505,1158884,eemale hoidma,1,True,v,kellest/millest
+162506,1158885,eemale jääma,1,True,v,millest
+162511,1158896,eemale tõukama,1,True,v,kellest/millest
+162640,1159225,eest leidma,1,True,v,keda/mida
+162765,1159499,ehitama,1,True,v,millest
+162836,1159657,ehmatama,1,True,v,keda*
+162840,1159673,ehmuma,1,True,v,millest
+162853,1159703,ehtima,1,True,v,millega
+162853,1159705,ehtima,1,True,v,mida tegema
+162853,1159705,ehtima,1,True,v,kuhu
+162853,1159705,ehtima,1,True,v,milleks
+162934,1159844,eirama,1,True,v,keda/mida*
+162946,1159865,eitama,1,True,v,mida*
+163050,1160076,eksima,1,True,v,millega
+163050,1160076,eksima,1,True,v,mille vastu
+163251,1160580,elama,1,True,v,millest
+163301,1160718,elatuma,1,True,v,millest
+163724,1161700,elu põrguks tegema,1,True,v,kelle
+163748,1161756,elu sisse puhuma,1,True,v,millesse
+163748,1161756,elu sisse puhuma,1,True,v,millele
+163801,1161880,elu täis ajama,1,True,v,mis
+164043,1162442,endale kaela tõmbama,1,True,v,mida
+164059,1162467,endast välja ajama,1,True,v,keda
+164062,1162470,endast välja viima,1,True,v,keda
+164081,1162512,end kaela riputama,1,True,v,kellele
+164127,1162580,end sisse sööma,1,True,v,kus
+164127,1162580,end sisse sööma,1,True,v,kuhu
+164142,1162597,end välja lülitama,1,True,v,millest
+164235,1162806,enesele kaela tõmbama,1,True,v,mida
+164318,1162968,ennast kaela riputama,1,True,v,kellele
+164343,1163002,ennast sisse sööma,1,True,v,kus
+164343,1163002,ennast sisse sööma,1,True,v,kuhu
+164361,1163024,ennast välja lülitama,1,True,v,millest
+164387,1163104,ennetama,1,True,v,mida*
+164387,2172020,ennetama,1,True,v,keda/mida*
+164395,1163129,ennistama,1,True,v,keda/mida
+164395,1163129,ennistama,1,True,v,kuhu
+164395,1163130,ennistama,1,True,v,mida
+164399,1163146,ennustama,1,True,v,mida*
+164399,1163147,ennustama,1,True,v,mida*
+164399,1163148,ennustama,1,True,v,mida*
+164444,1163255,eos olema,1,True,v,mis
+164506,1163398,epistlit lugema,1,True,v,kellele
+164589,1163605,eraldama,1,True,v,kellele/millele
+164589,1163607,eraldama,1,True,v,kellest/millest
+164589,1163608,eraldama,1,True,v,keda/mida*
+164589,1163608,eraldama,1,True,v,kellest/millest
+164680,1163869,ergutama,1,True,v,mida tegema
+164680,1163869,ergutama,1,True,v,keda*
+164680,1163868,ergutama,1,True,v,mida*
+164680,1163870,ergutama,1,True,v,mida*
+164752,1164038,erinema,1,True,v,kellest/millest
+164752,1164038,erinema,1,True,v,mille poolest
+164792,1164129,eristama,1,True,v,keda/mida*
+164792,1164129,eristama,1,True,v,kellest/millest
+164792,1164130,eristama,1,True,v,keda/mida
+164792,1164130,eristama,1,True,v,kellest/millest
+164947,1164510,esile kutsuma,1,True,v,mida
+164987,1164601,esindama,1,True,v,keda/mida*
+164987,1164602,esindama,1,True,v,mida*
+165011,1164665,esinema,1,True,v,millega
+165011,1164665,esinema,1,True,v,kelle ees
+165011,1164668,esinema,1,True,v,kellena
+165049,2453398,esitama,1,True,v,kellele
+165049,2453398,esitama,1,True,v,keda*
+165060,1164800,esitlema,1,True,v,keda/mida*
+165060,1164800,esitlema,1,True,v,kellele
+165060,1164801,esitlema,1,True,v,keda*
+165060,1164801,esitlema,1,True,v,kellele
+165284,1165333,ette heitma,1,True,v,kellele/millele + mida*
+165286,1165338,ette hoiatama,1,True,v,keda*
+165286,1165338,ette hoiatama,1,True,v,kelle/mille eest
+165291,1165353,ette jõudma,1,True,,kellest/millest
+165297,1165377,ette kandma,1,True,v,millest
+165305,1165414,ette kujutama,1,True,v,kuidas
+165305,1165414,ette kujutama,1,True,v,et
+165315,1165443,ette lugema,1,True,v,kellele
+951324,1829596,ette luiskama,1,True,v,kellele
+165327,1165483,ette nägema,1,True,v,mida
+165327,1165484,ette nägema,1,True,v,mida*
+165343,1165542,ette pääsema,1,True,v,kellest
+165353,1165572,ette teatama,1,True,v,millest
+165354,1165576,ette teavitama,1,True,v,keda*
+165354,1165576,ette teavitama,1,True,v,millest
+165380,1165665,ette valmistuma,1,True,v,milleks
+165387,1165682,ette viskama,1,True,v,kellele
+165398,1165717,ette võtma,1,True,v,mida
+165398,1165718,ette võtma,1,True,v,mida
+165398,1165719,ette võtma,1,True,v,keda
+165603,1166179,fakti ette seadma,1,True,v,keda
+165854,2471351,fikseerima,1,True,v,mida
+165854,1166736,fikseerima,1,True,v,mida
+165854,1166737,fikseerima,1,True,v,mida
+165854,2465949,fikseerima,1,True,v,mida
+165932,1166893,filmima,1,True,v,keda/mida*
+166173,2372091,fokuseerima,1,True,v,millele
+1239596,2372093,fokusseerima,1,True,v,millele
+166222,2372092,fookustama,1,True,v,millele
+166838,1168841,garanteerima,1,True,v,mida
+167366,1169911,grillima,1,True,v,mida*
+167366,1169912,grillima,1,True,,keda*
+167526,1170269,haakuma,1,True,v,millega
+167557,1170354,haarduma,1,True,v,millega
+167557,1170354,haarduma,1,True,v,millesse
+167570,1170396,haavama,1,True,v,keda*
+167570,1170397,haavama,1,True,v,keda*
+167621,1170500,habemesse kargama,1,True,v,kellele
+167644,1170551,hagema,1,True,v,keda/mida*
+167652,2455009,hagu alla andma,1,True,v,millele
+167653,2455010,hagu andma,1,True,v,millele
+167685,1170646,haiget tegema,1,True,v,kellele/millele
+167685,1170647,haiget tegema,1,True,v,kellele
+167685,1170647,haiget tegema,1,True,v,millega
+167737,1170766,haisema,1,True,v,mille järele
+167737,1170766,haisema,1,True,v,mille järgi
+167737,1170767,haisema,1,True,,mille järele
+167737,1170767,haisema,1,True,,mille järgi
+167794,1170904,hakkama,1,True,v,mida tegema
+167794,1170905,hakkama,1,True,v,kelleks
+167794,1170906,hakkama,1,True,v,millal
+167794,1170907,hakkama,1,True,v,kellel
+167794,1170908,hakkama,1,True,,millesse
+167794,1170909,hakkama,1,True,v,millesse
+167794,1170909,hakkama,1,True,v,millele
+167794,1170911,hakkama,1,True,,kellele
+167796,1170928,hakkama saama,1,True,v,millega
+167796,1170928,hakkama saama,1,True,v,millega/kellega
+167796,2032506,hakkama saama,1,True,v,millega
+167798,1170932,hakkama seadma,1,True,v,mida
+211280,1279605,hakkamist olema,1,True,v,kellel
+167820,1170988,halastama,1,True,v,kellele
+949273,1827242,halba varju heitma,1,True,v,kellele/millele
+167877,1171132,haletsema,1,True,v,keda*
+167996,1171408,halvas kirjas olema,1,True,v,kus
+168007,1171436,halvustama,1,True,v,keda/mida*
+168030,1171484,hambaid proovima,1,True,v,kelle/mille kallal
+168032,1171486,hambaid teritama,1,True,v,kelle/mille kallal
+168071,1171567,hambasse puhuma,1,True,v,kellele
+168099,1171625,hambus olema,1,True,v,kellel
+168100,1171626,hambusse jääma,1,True,v,kellele
+168121,1171670,hammaste vahel olema,1,True,v,kelle
+168122,1171671,hammast ihuma,1,True,v,mille/kelle peale
+168122,1171671,hammast ihuma,1,True,v,millele/kellele
+168122,1171672,hammast ihuma,1,True,v,kelle peale
+168124,1171678,hammast proovima,1,True,v,kelle/mille kallal
+168129,1171688,hammustama,1,True,v,keda*
+168162,1171764,hangeldama,1,True,v,millega
+168356,1172233,harjuma,1,True,v,mida tegema
+168356,1172233,harjuma,1,True,v,kellega/millega
+168367,1172266,harjutama,1,True,v,mida*
+168393,1172339,harmoneerima,1,True,v,millega
+168393,1830281,harmoneerima,1,True,v,millega
+168395,1172342,harmoneeruma,1,True,v,millega
+951425,1830346,harmoniseeruma,1,True,v,millega
+168408,1172380,harrastama,1,True,v,mida*
+168519,1172677,hauda kaevama,1,True,v,kellele/millele
+168519,1172677,hauda kaevama,1,True,v,kellele
+168521,1172681,hauda viima,1,True,v,keda
+168555,1172763,haukuma,1,True,v,kelle peale
+168555,1172765,haukuma,1,True,v,kelle kallal
+168603,1172880,heaks kiitma,1,True,v,mida
+168609,1172900,heal jalal olema,1,True,v,kellega/millega
+168624,1172935,hea pilguga vaatama,1,True,,keda/mida*
+168624,1172935,hea pilguga vaatama,1,True,,kellele/millele
+168624,1172935,hea pilguga vaatama,1,True,,kelle/mille peale
+168625,1172936,hea seisma,1,True,v,mille eest
+168628,1172942,heasse kohta saatma,1,True,v,keda
+168760,1173233,heitlema,1,True,v,millega
+168760,1173234,heitlema,1,True,v,mille pärast
+168760,1173234,heitlema,1,True,v,mille eest
+168911,1173632,helistama,1,True,v,kuhu
+168911,1173632,helistama,1,True,v,kellele
+169166,1174192,higistama,1,True,,mille kallal
+169310,1174513,hilinema,1,True,v,kuhu
+169310,1174513,hilinema,1,True,v,mille tõttu
+169331,1174560,hiljaks jääma,1,True,v,kuhu
+169353,1174624,himustama,1,True,v,mida*
+169353,1174625,himustama,1,True,v,keda*
+169357,1174637,hindama,1,True,v,mida*
+169357,1174637,hindama,1,True,v,mille järgi
+169357,1174638,hindama,1,True,v,mida*
+169357,1174639,hindama,1,True,v,mida*
+169357,1174640,hindama,1,True,v,keda/mida*
+1377533,2491524,hingekella lööma,1,True,v,kellele/millele
+1617602,2776669,hinge minema,1,True,v,kellele
+169463,1174876,hinge puistama,1,True,v,kellele
+169474,1174894,hinge sisse puhuma,1,True,v,millele
+169503,1174964,hinge täis ajama,1,True,v,kellel
+169504,1174965,hinge täis tegema,1,True,v,kellel
+169602,1175187,hirmutama,1,True,v,millega
+169602,1175187,hirmutama,1,True,v,keda*
+169753,1175493,hoiatama,1,True,v,keda*
+169753,1175493,hoiatama,1,True,v,kelle/mille eest
+169776,2352700,hoidma,1,True,v,keda/mida*
+169776,1175561,hoidma,1,True,,mida*
+169776,1175562,hoidma,1,True,v,mida*
+169776,1175563,hoidma,1,True,v,keda/mida*
+169776,1175565,hoidma,1,True,v,keda*
+169776,1175566,hoidma,1,True,v,keda/mida*
+169776,1175564,hoidma,1,True,v,mida*
+169777,1175584,hoiduma,1,True,v,mida tegemast
+169777,1175584,hoiduma,1,True,v,millest
+169777,1175585,hoiduma,1,True,,kuhu
+169948,1176003,hooldama,1,True,v,keda/mida*
+169988,1176101,hoolima,1,True,v,millest/kellest
+169988,1176102,hoolima,1,True,v,kellest/millest
+169992,1176121,hoolitsema,1,True,v,kelle/mille eest
+169992,1176122,hoolitsema,1,True,,mille eest
+169992,1176123,hoolitsema,1,True,v,mille eest
+169992,1176123,hoolitsema,1,True,v,et
+170003,1176148,hoolt kandma,1,True,v,kelle/mille eest
+170003,1176149,hoolt kandma,1,True,v,mille eest
+170003,1176150,hoolt kandma,1,True,v,et
+170003,1176150,hoolt kandma,1,True,v,mille eest
+170021,1176217,hooplema,1,True,v,kelle ees
+170021,1176217,hooplema,1,True,v,millega
+170043,1176266,hoovi tõmbama,1,True,v,keda
+170222,1176743,hullutama,1,True,v,keda*
+170317,1176945,hurjutama,1,True,v,keda*
+741937,2575571,hurmuma,1,True,v,millest
+170396,1177129,huvi pakkuma,1,True,v,kellele
+170406,1177155,huvitama,1,True,v,keda*
+1072997,2016118,huvitatud olema,1,True,v,kellest/millest
+170414,1177175,huvituma,1,True,v,millest
+170511,1177391,hõivama,1,True,v,millega
+170534,1177464,hõlma alla pugema,1,True,v,kellele
+170539,1177474,hõlmama,1,True,v,keda/mida
+170577,1177581,hõõgama,1,True,v,mida*
+170612,1177690,häbenema,1,True,v,keda/mida*
+170612,1177690,häbenema,1,True,v,mida teha
+170660,1177810,hädaldama,1,True,v,mille pärast
+170660,1177810,hädaldama,1,True,v,mille üle
+170724,1177990,häirima,1,True,v,keda/mida*
+170769,1178109,hämmastuma,1,True,v,mille/kelle üle
+170769,1178109,hämmastuma,1,True,v,millest/kellest
+170845,1178291,hävima,1,True,v,mille tõttu / mille tagajärjel
+170845,1178291,hävima,1,True,v,milles
+170910,1178448,hääletama,1,True,v,kelle/mille vastu
+170910,1178448,hääletama,1,True,v,kelle/mille poolt
+170951,1178543,häält andma,1,True,v,kellele/millele
+170965,1178578,hööritama,1,True,v,mida*
+171175,1179028,hüppama,1,True,,millega
+171217,1179118,hüvasti jätma,1,True,v,millega
+171225,1179138,hüvitama,1,True,v,millega
+171225,1179138,hüvitama,1,True,v,kellele
+171225,1179138,hüvitama,1,True,v,mida
+171225,1179139,hüvitama,1,True,v,mida
+171239,1179185,hüüdma,1,True,v,keda/mida*
+171239,1179187,hüüdma,1,True,v,kelleks/milleks
+171239,1179187,hüüdma,1,True,v,keda*
+171334,1179385,identifitseerima,1,True,v,keda
+171334,1179386,identifitseerima,1,True,v,keda*
+171334,1179386,identifitseerima,1,True,v,kellega
+1181099,2233544,identima,1,True,v,keda
+1181099,2233558,identima,1,True,v,kellega
+1181099,2233558,identima,1,True,v,keda*
+1370103,2480594,idülleerima,1,True,v,keda/mida
+171437,1179642,igatsema,1,True,v,keda/mida*
+171437,1179642,igatsema,1,True,v,kelle/mille järele
+171437,2029573,igatsema,1,True,v,keda/mida*
+171437,2029573,igatsema,1,True,v,mida teha
+171506,1179832,ihaldama,1,True,v,mida/keda*
+171506,1179833,ihaldama,1,True,v,keda*
+171518,1179860,ihkama,1,True,v,mida/keda*
+171518,1179860,ihkama,1,True,v,mida teha
+171608,1180087,iiveldama,1,True,v,kellel
+171643,2371912,ilastama,1,True,v,kellega
+354956,1571821,iletama,1,True,v,keda
+171649,1180214,ilkuma,1,True,v,kelle/mille kallal
+171649,1180214,ilkuma,1,True,v,kelle/mille üle
+171690,1180319,ilma jätma,1,True,v,millest
+171691,1180320,ilma jääma,1,True,v,kellest/millest
+171795,1180570,ilmutama,1,True,v,mida*
+171795,1180572,ilmutama,1,True,v,mida
+171795,1180573,ilmutama,1,True,v,mida
+171860,1180754,ilustama,1,True,v,millega
+171961,1181019,imestama,1,True,v,mille üle
+171984,1181070,imetlema,1,True,v,keda/mida*
+172024,1181162,imiteerima,1,True,v,keda/mida*
+172037,1181191,immigreeruma,1,True,v,kust
+172037,1181191,immigreeruma,1,True,v,kuhu
+172048,1181223,immutama,1,True,v,millega
+172082,1181303,imponeerima,1,True,v,kellele
+172082,1181303,imponeerima,1,True,v,millega
+172160,1181478,indikeerima,1,True,v,mida
+172162,1181482,inditseerima,1,True,v,mida*
+172291,1181766,informeerima,1,True,v,keda* + millest
+172582,1182401,innustama,1,True,v,keda*
+172582,1182401,innustama,1,True,v,mida tegema
+172583,1182409,innustuma,1,True,v,millest
+1183545,2236958,interakteeruma,1,True,v,millega
+172856,1183077,investeerima,1,True,v,millesse
+172905,1183185,ironiseerima,1,True,v,mille üle
+172929,1183246,irvitama,1,True,v,kelle/mille üle
+173036,1183535,iseloomustama,1,True,v,keda/mida*
+173036,1183533,iseloomustama,1,True,v,keda/mida*
+173256,2496215,istuma,1,True,v,kus
+173256,2496215,istuma,1,True,v,kuhu
+173265,1184110,istutama,1,True,v,kuhu
+173286,1184166,isutama,1,True,v,mille järgi
+173286,1184166,isutama,1,True,v,mille järele
+173395,1184392,jaatama,1,True,v,mida*
+173425,1184480,jagama,1,True,v,milleks
+173425,1184480,jagama,1,True,v,millesse
+173425,1184482,jagama,1,True,v,kelle vahel
+173425,1184482,jagama,1,True,v,kellele
+173425,1184483,jagama,1,True,v,millega
+173425,1184484,jagama,1,True,v,mida* + kellega
+173425,1184485,jagama,1,True,v,mida*
+173441,1184567,jagunema,1,True,v,milleks
+173441,1184567,jagunema,1,True,v,kelleks/milleks
+173441,1184567,jagunema,1,True,v,kelle/mille vahel
+173441,1184567,jagunema,1,True,v,millesse
+173441,1184568,jagunema,1,True,v,millesse
+173441,1184568,jagunema,1,True,v,milleks
+173445,1184581,jagu saama,1,True,v,kellest/millest
+173519,1184755,jahmerdama,1,True,v,millega/kellega
+173575,1184908,jaksama,1,True,v,mida teha
+173653,1185113,jalga ette panema,1,True,v,kellele
+173658,1185124,jalga taha panema,1,True,v,kellele
+173661,1185127,jalge alla tallama,1,True,v,keda/mida
+173710,1185243,jalgu alt lööma,1,True,v,kellel/millel
+173728,1185283,jalule ajama,1,True,v,keda/mida
+173740,1185319,jalust niitma,1,True,v,keda
+173742,1185323,jalust rabama,1,True,v,millega
+173742,1185323,jalust rabama,1,True,v,keda
+173744,1185328,jalutama,1,True,v,kellega
+173744,1185329,jalutama,1,True,v,keda*
+173779,1185452,janunema,1,True,v,mida*
+173779,1185452,janunema,1,True,v,mille järele
+173793,1185496,jaotama,1,True,v,milleks
+173793,1185496,jaotama,1,True,v,millesse
+173793,1185497,jaotama,1,True,v,kelle vahel
+173896,1185718,johtuma,1,True,v,millest
+173936,1185821,joobuma,1,True,v,millest
+173936,1185822,joobuma,1,True,v,millest
+174053,1186184,joonduma,1,True,v,kelle/mille järgi
+174053,1186184,joonduma,1,True,v,kellega/millega
+174117,1186350,joont alla tõmbama,1,True,v,millele
+174135,1186398,joovastuma,1,True,v,millest
+174144,1186425,joppama,1,True,v,millega
+174207,1186615,juhatama,1,True,v,keda*
+174207,1186616,juhatama,1,True,v,mida*
+174213,1186662,juhendama,1,True,v,keda/mida*
+174224,1186690,juhinduma,1,True,v,millest
+174248,1186776,juhtima,1,True,v,mida*
+174248,1186775,juhtima,1,True,v,mida*
+174248,1186777,juhtima,1,True,v,keda/mida*
+174248,1186778,juhtima,1,True,v,mida*
+174248,1186779,juhtima,1,True,v,mida*
+174248,1186780,juhtima,1,True,v,mida*
+174305,1186936,juhtuma,1,True,v,kellega/millega
+174305,1186937,juhtuma,1,True,v,mida tegema
+174349,1187066,julgema,1,True,v,mida teha
+174359,1187093,julgestama,1,True,v,keda/mida*
+174359,1187093,julgestama,1,True,v,millega
+174370,1187134,julgustama,1,True,v,keda*
+174370,1187134,julgustama,1,True,v,mida tegema
+174393,1187217,jumalaga jätma,1,True,v,kellega
+174426,1187310,jumaldama,1,True,v,keda/mida*
+211281,1279606,jumet olema,1,True,v,millel
+174511,1187581,jutlustama,1,True,v,mida*
+174511,1187581,jutlustama,1,True,v,millest
+174521,1187625,juttu tegema,1,True,v,millest
+174565,1187723,jutustama,1,True,v,kellest/millest
+174565,1187724,jutustama,1,True,v,millest
+174565,1187728,jutustama,1,True,v,kellega
+174758,1188169,juurdlema,1,True,v,mille kallal
+174758,1188169,juurdlema,1,True,v,mille üle
+174965,1188697,jõudma,1,True,v,mida teha
+174965,1188698,jõudma,1,True,v,kuhu
+174976,1188739,jõuga üle sõitma,1,True,v,kellest
+175110,1189068,jälestama,1,True,v,keda/mida*
+175115,1189082,jälgedes käima,1,True,v,kelle
+175118,1189088,jälgima,1,True,v,keda/mida*
+175118,1189089,jälgima,1,True,v,keda/mida*
+175118,1189090,jälgima,1,True,v,mida*
+175118,1189091,jälgima,1,True,v,mida*
+175118,1189092,jälgima,1,True,v,mida*
+175118,2170990,jälgima,1,True,v,keda/mida*
+175122,1189112,jälile jõudma,1,True,v,kellele/millele
+175136,2362981,jäljendama,1,True,v,keda/mida*
+1334029,2424844,jänni jääma,1,True,v,millega/kellega
+1334035,2424852,jännis olema,1,True,v,millega/kellega
+175208,1189368,järele aitama,1,True,v,keda
+175212,1189391,järele andma,1,True,v,kellele/millele
+175218,1189420,järele jooksma,1,True,v,kellele
+175218,1189421,järele jooksma,1,True,v,kellele/millele
+175219,1189425,järele jõudma,1,True,v,kellele/millele
+175219,1189426,järele jõudma,1,True,v,kellele
+175219,1189426,järele jõudma,1,True,v,kellele/millele
+175225,1189451,järele kiitma,1,True,v,kellele/millele
+175230,1189462,järele minema,1,True,v,kellele/millele
+175230,1189461,järele minema,1,True,v,kellele/millele
+175231,1189466,järele mõtlema,1,True,v,mille üle
+175243,1189501,järele tulema,1,True,v,kellele/millele
+175246,1189514,järele vaatama,1,True,v,kellele/millele
+363266,1591833,järele vahtima,1,True,v,kellele/millele
+1194908,2265852,järgi jõudma,1,True,v,kellele/millele
+1194908,2265853,järgi jõudma,1,True,v,kellele/millele
+175323,1189717,järgima,1,True,v,mida*
+1194912,2265857,järgi minema,1,True,v,kellele/millele
+1194897,2265838,järgi tulema,1,True,v,kellele/millele
+175329,1189741,järgnema,1,True,v,millele
+175329,1189742,järgnema,1,True,v,kellele
+175329,1189743,järgnema,1,True,,millele
+175419,1189982,jätkama,1,True,v,mida*
+175419,1189983,jätkama,1,True,v,mida*
+175437,1190029,jätma,1,True,v,kuhu
+175437,1190031,jätma,1,True,v,mida tegema
+175437,1190031,jätma,1,True,v,mida tegemata
+175511,1190205,jääma,1,True,v,kelle juurde
+175511,1190205,jääma,1,True,v,kuhu
+175511,1190208,jääma,1,True,v,kelleks
+175511,1190208,jääma,1,True,v,mida tegema
+175511,1190208,jääma,1,True,v,mida tegemata
+175511,1190208,jääma,1,True,v,milliseks
+175511,1190209,jääma,1,True,,kelleks/milleks
+175740,1190772,kaalule panema,1,True,v,mida
+175743,1190778,kaaluma,1,True,v,keda/mida*
+175743,1190779,kaaluma,1,True,v,mida*
+175743,1190790,kaaluma,1,True,v,mida*
+175890,1191157,kaasa aitama,1,True,v,millele
+175900,1191191,kaasa elama,1,True,v,kellele/millele
+175908,1191206,kaasa kiitma,1,True,v,kellele/millele
+175918,1191226,kaasa lööma,1,True,v,milles/kus
+175919,1191230,kaasama,1,True,v,millesse
+175919,1191230,kaasama,1,True,v,keda
+175921,1191237,kaasa minema,1,True,,kellega/millega
+175925,1191250,kaasa määgima,1,True,v,kellele
+175925,1191250,kaasa määgima,1,True,v,kellega
+175937,1191276,kaasas kandma,1,True,v,mida*
+175939,1191280,kaasas käima,1,True,v,millega
+175943,1191287,kaasa sõitma,1,True,v,kellega
+175949,1191295,kaasa tegema,1,True,v,milles/kus
+175955,1191315,kaasa tundma,1,True,v,kellele
+175996,1191395,kaaslema,1,True,v,kellega/millega
+176004,1191410,kaasnema,1,True,v,millega
+176041,1191495,kaasuma,1,True,v,millele
+176041,1191495,kaasuma,1,True,v,millega
+176162,1191781,kadestama,1,True,v,keda/mida*
+176168,1191794,kadetsema,1,True,v,keda/mida*
+176203,1191894,kaebama,1,True,v,et
+176203,1191894,kaebama,1,True,v,mida*
+176203,1191894,kaebama,1,True,v,mille üle
+176203,1191895,kaebama,1,True,v,kuhu
+176203,1191895,kaebama,1,True,v,kelle
+176203,1191896,kaebama,1,True,v,kelle peale
+176203,1191896,kaebama,1,True,v,kellele
+176209,1191913,kaeblema,1,True,v,mille üle
+176228,1191972,kaelakiike tegema,1,True,v,kellele
+176233,1191985,kaela langema,1,True,v,kellele
+176233,1191986,kaela langema,1,True,v,kellele
+176233,1191987,kaela langema,1,True,v,kellele
+176239,1192002,kaela määrima,1,True,v,kellele
+176262,1192044,kaelast ära saama,1,True,v,keda/mida
+176344,1192263,kaevuma,1,True,v,millesse
+176344,1192260,kaevuma,1,True,v,kuhu
+176344,1192260,kaevuma,1,True,v,millesse
+176376,1192328,kahandama,1,True,v,mida*
+176376,1192329,kahandama,1,True,v,mida*
+176376,1192330,kahandama,1,True,v,mida*
+176525,1192738,kahetsema,1,True,v,mida*
+176525,1192738,kahetsema,1,True,v,et
+176525,1192739,kahetsema,1,True,v,keda*
+176587,1192895,kahjustama,1,True,v,keda/mida*
+176592,1192912,kahju tekitama,1,True,v,millele/kellele
+176616,1192968,kahtlema,1,True,v,milles
+176616,1192968,kahtlema,1,True,v,kas
+176616,1192969,kahtlema,1,True,v,kas
+176626,1193000,kahtlustama,1,True,v,et
+176626,1193000,kahtlustama,1,True,v,keda/mida*
+176710,1193226,kaitse,1,True,s,mille eest
+176710,1193226,kaitse,1,True,s,mille vastu
+176766,1193359,kaitsepookima,1,True,v,mille vastu
+176787,1193397,kaitsesüstima,1,True,v,mille vastu
+176822,1193479,kaitsma,1,True,v,keda/mida*
+176822,1193479,kaitsma,1,True,v,kelle/mille eest
+176822,1193480,kaitsma,1,True,v,mille eest
+176822,1193480,kaitsma,1,True,v,keda/mida*
+176822,1193481,kaitsma,1,True,v,keda/mida*
+176822,1193482,kaitsma,1,True,v,mida
+176822,1193483,kaitsma,1,True,,mida*
+176835,1193516,kajastama,1,True,v,mida*
+176861,1193577,kaklema,1,True,v,mille pärast
+176861,1193577,kaklema,1,True,v,kellega
+176861,1193577,kaklema,1,True,v,kelle/mille pärast
+177110,1194119,kalduma,1,True,v,kuhu
+177110,1194121,kalduma,1,True,v,mida tegema
+177110,1194121,kalduma,1,True,v,millele
+177232,1194424,kallale tungima,1,True,v,kellele
+177252,1194486,kalliks maksma minema,1,True,v,kellele
+177260,1194523,kallistama,1,True,v,keda*
+177366,1194756,kamandama,1,True,v,keda*
+177438,1194929,kammitsema,1,True,v,keda/mida*
+177501,1195062,kana kitkuma,1,True,v,kellega
+177516,1195102,kanaliseerima,1,True,v,millesse
+177541,1195173,kandadele astuma,1,True,v,kellele
+177541,1195174,kandadele astuma,1,True,v,kellele
+177542,1195175,kanda kinnitama,1,True,v,kus
+177592,1195298,kandideerima,1,True,v,kelleks
+177610,1195384,kanduma,1,True,v,kuhu
+177610,1195384,kanduma,1,True,v,kellele/millele
+177611,1195393,kandu näitama,1,True,v,kellele
+177679,1195584,kangestuma,1,True,v,millest
+177679,1195585,kangestuma,1,True,,millest
+177710,1195660,kanna peale astuma,1,True,v,kellele
+177710,1195661,kanna peale astuma,1,True,v,kellele
+177717,1195677,kannatama,1,True,v,mille all
+177717,1195677,kannatama,1,True,v,kelle/mille pärast / kelle/mille tõttu
+177717,1195677,kannatama,1,True,v,mida*
+177717,1195677,kannatama,1,True,v,mille käes
+177717,1195678,kannatama,1,True,v,mille käes
+177717,1195678,kannatama,1,True,v,mille tõttu
+177751,1195801,kannuseid teenima,1,True,v,kelle ees
+177753,1195804,kannustama,1,True,v,keda*
+299801,1464109,kardama,1,True,v,millega
+178149,1196835,karistama,1,True,v,keda*
+178149,1196835,karistama,1,True,v,mille eest
+178149,1196835,karistama,1,True,v,millega
+178250,1197048,karjuma,1,True,v,kelle peale
+178361,1197319,kartma,1,True,v,keda/mida*
+178361,1197319,kartma,1,True,v,mida teha
+178361,1197320,kartma,1,True,v,et
+178361,1197320,kartma,1,True,v,mida*
+178361,1197321,kartma,1,True,v,mida*
+178668,1198038,kassi ja hiirt mängima,1,True,v,kellega/millega
+178707,1198138,kastaneid tulest välja tooma,1,True,v,kelle jaoks
+178707,1198138,kastaneid tulest välja tooma,1,True,v,kellele
+178800,1198369,kasutama,1,True,v,mida*
+178800,1198371,kasutama,1,True,v,mida*
+178842,1198492,kasvama,1,True,v,millesse
+178847,1198524,kasvatama,1,True,v,keda*
+178847,1198526,kasvatama,1,True,v,keda/mida*
+178847,1198527,kasvatama,1,True,v,mida
+178847,1198528,kasvatama,1,True,v,mida*
+178982,1198877,katkema,1,True,v,mille tõttu
+178988,1198906,katkestama,1,True,v,mille tõttu
+178988,1198909,katkestama,1,True,,millega
+179017,1199008,katma,1,True,v,millega
+179077,1199152,katsetama,1,True,v,mida*
+179077,1199153,katsetama,1,True,v,mida*
+179087,1199177,katsuma,1,True,v,mida*
+179087,1199178,katsuma,1,True,v,mida teha
+179087,1199179,katsuma,1,True,v,mida*
+179087,1199180,katsuma,1,True,v,mida*
+179087,1199181,katsuma,1,True,v,mida*
+179374,1199859,kaunistama,1,True,v,millega
+179387,1199901,kauplema,1,True,v,millega
+211283,1279608,kavas olema,1,True,v,mida teha
+179441,1200065,kavatsema,1,True,v,mida teha
+179501,1200243,keelama,1,True,v,kellel + mida teha
+179509,1200266,keelduma,1,True,v,millest
+179509,1200266,keelduma,1,True,v,mida tegemast
+179645,1200532,keelitama,1,True,v,keda*
+179645,1200532,keelitama,1,True,v,mida tegema
+179669,1200579,keelt kandma,1,True,v,kelle peale
+179671,1200585,keelt limpsama,1,True,v,mille järele
+179671,1200586,keelt limpsama,1,True,v,kelle/mille järele
+179676,1200592,keelt teritama,1,True,v,kelle/mille kallal
+179757,1200815,keerises,1,True,postp,mille
+179766,1200832,keerlema,1,True,v,kelle/mille ümber
+179870,1201131,kehtestama,1,True,v,mida
+179870,1201131,kehtestama,1,True,v,millal
+179873,1201142,kehtima,1,True,v,mis ajast
+179873,1201142,kehtima,1,True,v,kelle/mille kohta
+906635,2244771,kehtima panema,1,True,v,mida
+179945,1201327,kelkima,1,True,v,kelle ees
+179945,1201327,kelkima,1,True,v,millega
+180043,2363951,keppima,1,True,v,keda*
+180082,1201714,kere peale andma,1,True,v,kellele
+180085,1201720,keret kuumaks kütma,1,True,v,kellel
+180086,1201722,keret täis sõimama,1,True,v,kellel
+180212,1202106,keskendama,1,True,v,millele
+180215,1202113,keskenduma,1,True,v,millele
+180399,1202553,kestma,1,True,v,kui kaua
+180538,1202907,kibe käsi olema,1,True,v,milles
+180623,1203159,kihla vedama,1,True,v,kellega
+180623,1203159,kihla vedama,1,True,v,mille peale
+180624,1203161,kihluma,1,True,v,kellega
+180657,2306829,kihva keerama,1,True,v,mida
+180731,1203456,kiilu lööma,1,True,v,millesse
+180731,1203456,kiilu lööma,1,True,v,kelle vahele
+180747,1203495,kiinduma,1,True,v,kellesse/millesse
+180747,1203496,kiinduma,1,True,v,kellesse/millesse
+180779,1203596,kiirendama,1,True,v,mida*
+180795,1203651,kiirguma,1,True,v,millesse
+180907,1203879,kiirustama,1,True,v,kuhu
+180924,1203916,kiitlema,1,True,v,kelle ees
+180924,1203916,kiitlema,1,True,v,millega
+180925,1203920,kiitma,1,True,v,keda/mida*
+180925,1203920,kiitma,1,True,v,mille eest
+180988,1204076,kilbile tõstma,1,True,v,keda/mida
+181038,1204179,kilistama,1,True,v,mida*
+181038,1204179,kilistama,1,True,v,millega
+181147,1204448,kimbutama,1,True,v,keda*
+181174,1204539,kindlaks tegema,1,True,v,keda/mida
+181196,1204608,kindlustama,1,True,v,mille vastu
+181196,1204608,kindlustama,1,True,v,mille peale / mille eest
+181256,1204746,kinga andma,1,True,v,kellele
+181257,1204747,kingadesse astuma,1,True,v,kelle
+181257,1204748,kingadesse astuma,1,True,v,kelle
+181273,1204778,kinga saama,1,True,v,kellelt/millelt
+181308,1204854,kinkima,1,True,v,kellele
+181308,1204854,kinkima,1,True,v,mida
+181311,1204868,kinnast heitma,1,True,v,kellele/millele
+181312,1204869,kinnast viskama,1,True,v,kellele/millele
+181316,1204904,kinni haarama,1,True,v,kellest/millest
+181316,1204905,kinni haarama,1,True,v,millest
+181317,1204908,kinni hakkama,1,True,v,millest
+181317,1204909,kinni hakkama,1,True,v,millest
+181317,1204910,kinni hakkama,1,True,v,millest
+181318,1204916,kinni hoidma,1,True,v,millest/kellest
+181318,1204916,kinni hoidma,1,True,v,mida/keda*
+181318,1204917,kinni hoidma,1,True,v,keda*
+181318,2352721,kinni hoidma,1,True,v,mida*
+181318,1204918,kinni hoidma,1,True,v,mida
+181318,1204915,kinni hoidma,1,True,v,keda/mida*
+181329,1204963,kinni katma,1,True,v,mida/keda
+181358,1205044,kinni olema,1,True,v,milles
+181358,3296656,kinni olema,1,True,,milles
+181366,1205075,kinni pidama,1,True,v,millest
+376638,1619502,kinni saama,1,True,v,kellest/millest
+181414,1205231,kinnitama,1,True,v,kuhu
+181414,1205234,kinnitama,1,True,v,et
+181470,1205386,kintsu kaapima,1,True,v,kelle ees
+181470,1205386,kintsu kaapima,1,True,v,kelle
+181486,1205419,kippuma,1,True,v,kuhu
+181486,1205419,kippuma,1,True,v,mida tegema
+181486,1205420,kippuma,1,True,v,mida tegema
+181747,1435273,kirja panema,1,True,v,kuhu
+181747,1206045,kirja panema,1,True,v,kuhu
+181765,1206081,kirjas olema,1,True,v,kus
+181765,1206082,kirjas olema,1,True,,kus
+181801,1206181,kirjeldama,1,True,v,keda/mida*
+181923,1206528,kisklema,1,True,v,mille pärast
+181946,1206621,kitli peale andma,1,True,v,kellele
+182037,1206880,kiusama,1,True,v,keda*
+182037,1206881,kiusama,1,True,v,keda*
+182037,1206882,kiusama,1,True,v,keda*
+182057,1206948,kividega loopima,1,True,v,keda*
+182177,1207175,kivi viskama,1,True,v,kelle pihta
+182290,1207448,klammerduma,1,True,v,kelle/mille külge
+182304,1207492,klapitama,1,True,v,millega
+182304,1207492,klapitama,1,True,v,mida
+182309,1207507,klappima,1,True,v,millega
+182389,1207724,klatšima,1,True,"s,v",keda*
+182436,1207830,kleepima,1,True,v,millele + mille peale
+182561,1208139,klobistama,1,True,v,mida*
+182561,1208139,klobistama,1,True,v,millega
+182664,1208392,klõbistama,1,True,v,mida*
+182664,1208392,klõbistama,1,True,v,millega
+182687,1208446,klõpsima,1,True,v,mida*
+182687,1208446,klõpsima,1,True,v,millega
+182689,1208451,klõpsutama,1,True,v,millega
+182689,1208451,klõpsutama,1,True,v,mida*
+182718,1208505,koaleeruma,1,True,v,kellega
+182953,1209100,kodus olema,1,True,v,milles
+183084,1209386,kogema,1,True,v,et
+183084,1209386,kogema,1,True,v,mida*
+183130,1209529,koguma,1,True,v,mida*
+183130,1209530,koguma,1,True,v,mida*
+183130,1209531,koguma,1,True,v,mida*
+183145,1209573,kogunema,1,True,v,kuhu
+183145,1209574,kogunema,1,True,v,kuhu
+183187,1209676,kohaldama,1,True,v,mida
+183187,1209676,kohaldama,1,True,v,kelle/mille suhtes
+183187,1209676,kohaldama,1,True,v,kellele/millele
+183187,1209678,kohaldama,1,True,v,mida
+183188,1209682,kohalduma,1,True,v,millele/kellele
+183213,1209747,kohandama,1,True,v,millele
+183213,1209747,kohandama,1,True,v,milleks
+183213,1209747,kohandama,1,True,v,millega
+183213,1209747,kohandama,1,True,v,mida
+183214,1209752,kohanduma,1,True,v,millega
+183214,1209752,kohanduma,1,True,v,kus
+183214,1209752,kohanduma,1,True,v,millele
+183216,1209761,kohanema,1,True,v,millega
+183216,1209761,kohanema,1,True,v,kus
+183274,1209935,kohkuma,1,True,v,millest
+183297,1210043,kohta kätte näitama,1,True,v,kellele
+183298,1210045,kohtama,1,True,v,keda*
+183298,1210046,kohtama,1,True,v,mida*
+183305,1210062,kohtlema,1,True,v,keda/mida* + kuidas
+183338,1210138,kohtuma,1,True,v,kellega
+183338,1210139,kohtuma,1,True,,kellega
+183338,1210137,kohtuma,1,True,,millega
+183408,1210327,kohustama,1,True,v,keda*
+183408,1210327,kohustama,1,True,v,mida tegema
+183408,1210328,kohustama,1,True,v,mida tegema
+183408,1210328,kohustama,1,True,v,keda*
+183411,1210334,kohustuma,1,True,v,mida tegema
+183416,1210354,kohutama,1,True,v,keda*
+183418,1210364,kohut käima,1,True,v,kellega
+183419,1210366,kohut mõistma,1,True,v,kelle üle
+183505,1210557,koinima,1,True,v,keda*
+183512,1210578,koitma,1,True,v,kellele
+183562,1210706,kokku ajama,1,True,v,mida
+183562,1210707,kokku ajama,1,True,v,keda
+183562,2352677,kokku ajama,1,True,v,mida
+183562,1210711,kokku ajama,1,True,v,mida*
+183569,1210722,kokku elama,1,True,v,kellega
+183580,1210757,kokku juhtuma,1,True,v,kellega
+381095,1828742,kokku klappima,1,True,v,millega
+183591,1210792,kokku kolima,1,True,v,kellega
+183602,1210823,kokku käima,1,True,v,millega
+183611,1210844,kokku langema,1,True,v,millega
+183626,1210881,kokku leppima,1,True,v,et
+183626,1210881,kokku leppima,1,True,v,kellega + milles
+183638,1210917,kokku minema,1,True,v,millega
+183638,1210918,kokku minema,1,True,v,kellega
+183641,1210935,kokku mäkerdama,1,True,v,millega
+183643,1210940,kokku mängima,1,True,v,kellega
+183643,1210941,kokku mängima,1,True,v,kellega
+183644,1210948,kokku mätsima,1,True,v,millega
+183645,1210949,kokku määrima,1,True,v,millega
+183665,1211003,kokku puutuma,1,True,v,kellega/millega
+183665,1211004,kokku puutuma,1,True,v,kellega/millega
+183667,1211018,kokku põrkama,1,True,v,kellega/millega
+183667,1211019,kokku põrkama,1,True,v,kellega
+183672,1211032,kokku saama,1,True,v,kellega
+183674,1211044,kokku sattuma,1,True,v,kellega
+183674,1211045,kokku sattuma,1,True,v,millega
+183682,1211069,kokku sobitama,1,True,v,mida
+183682,1211069,kokku sobitama,1,True,v,millega
+183700,1211119,kokku trehvama,1,True,v,kellega
+183702,1211125,kokku tulema,1,True,v,kuhu
+183717,1211183,kokku viima,1,True,v,kellega
+183724,1211205,kokku võtma,1,True,v,mida
+183724,1211206,kokku võtma,1,True,v,keda
+183821,1211453,kolima,1,True,v,kuhu
+183821,1211454,kolima,1,True,,kuhu
+183934,1211741,kolli tegema,1,True,v,kellele
+184155,1212289,kombeks olema,1,True,v,kellel/millel
+184155,1212289,kombeks olema,1,True,v,mida teha
+184219,1212439,komistama,1,True,v,mille otsa
+184219,1212440,komistama,1,True,v,kelle/mille otsa
+184236,1212506,kommenteerima,1,True,v,mida*
+184287,1212608,kommunikeerima,1,True,v,kellega
+184287,2330314,kommunikeerima,1,True,v,mida*
+1181571,2234122,kommunitseerima,1,True,v,kellega
+1181571,2330315,kommunitseerima,1,True,v,mida*
+184332,1212723,kompenseerima,1,True,v,mida
+184332,1212723,kompenseerima,1,True,v,kellele
+184332,1212723,kompenseerima,1,True,v,millega
+184332,1212724,kompenseerima,1,True,,kellele
+184332,1212724,kompenseerima,1,True,,millega
+184332,1212724,kompenseerima,1,True,,mida
+184371,1212829,komplimenteerima,1,True,v,keda*
+184551,1213264,kongrueeruma,1,True,v,millega
+184630,1213456,konnasilmale astuma,1,True,v,kelle
+184630,1213456,konnasilmale astuma,1,True,v,kellele
+184739,1213734,konsulteerima,1,True,v,kellega
+184739,1213735,konsulteerima,1,True,,keda*
+1106681,2075314,kontempleerima,1,True,v,mida*
+184911,1214145,kontsentreerima,1,True,v,millele
+184912,1214152,kontsentreeruma,1,True,v,millele
+184912,1214153,kontsentreeruma,1,True,,kuhu
+184998,1214350,konverteerima,1,True,v,millesse
+184998,1214350,konverteerima,1,True,v,milleks
+185274,1215059,koonduma,1,True,,kelle/mille ümber
+185274,1215059,koonduma,1,True,,kuhu
+185282,1215088,koonerdama,1,True,v,millega
+185327,1215214,koordineerima,1,True,v,mida*
+185387,1215383,koormama,1,True,v,millega
+185408,1215443,koort riisuma,1,True,v,millelt
+185429,1215514,kooskõlastama,1,True,v,mida
+185429,1215514,kooskõlastama,1,True,v,kellega
+185442,1215542,koosnema,1,True,v,millest/kellest
+185447,1215565,koos seisma,1,True,v,millest
+185577,1215867,kopsu üle maksa ajama,1,True,v,kellel
+185589,1215890,koputama,1,True,v,millele
+185589,1215892,koputama,1,True,v,kelle peale
+185619,1215994,kordama,1,True,v,et
+185623,1216008,korda minema,1,True,v,mida teha
+185623,1216008,korda minema,1,True,v,kellel
+185623,1216009,korda minema,1,True,v,kellele
+185630,1216028,korda saatma,1,True,v,mida
+185803,1216501,korrale kutsuma,1,True,v,keda
+185818,1216564,korras,2,True,"adv,postp",millises
+185818,1216564,korras,2,True,"adv,postp",mille
+185824,1216581,korrastama,1,True,v,mida
+185850,1216663,korreleeruma,1,True,v,millega
+185876,1216732,korrutama,1,True,v,millega
+185960,1216948,korvi andma,1,True,v,kellele
+186078,1217208,kostitama,1,True,v,millega
+186078,1217209,kostitama,1,True,v,millega
+186143,1217397,kotti pähe tõmbama,1,True,v,kellele
+186240,1217683,kraesse määrima,1,True,v,kellele
+186442,1218238,kriipsu alla tõmbama,1,True,v,millele
+186445,1218245,kriipsu peale tõmbama,1,True,v,millele
+186601,1218629,kritiseerima,1,True,v,keda/mida*
+1364089,2470938,krooksutama,1,True,v,keda
+186718,1218936,krooni panema,1,True,v,millele
+186719,1218937,krooni pähe panema,1,True,v,millele
+186853,1219267,krõmpsutama,1,True,v,mida*
+186975,1219527,kubisema,1,True,v,millest
+187169,1220116,kujundama,1,True,v,mida
+187169,1220117,kujundama,1,True,v,keda/mida
+187182,1220148,kujunema,1,True,v,milliseks
+187189,1220164,kujutama,1,True,v,keda/mida*
+187189,1220165,kujutama,1,True,v,mida*
+187224,1220262,kukele saatma,1,True,v,keda/mida
+187255,1220343,kukkuma,1,True,v,kust
+187255,1220343,kukkuma,1,True,v,kuhu
+187255,1220348,kukkuma,1,True,v,kuhu
+187255,1220350,kukkuma,1,True,v,mida tegema
+187396,1220674,kulgema,1,True,v,kuidas
+187396,1220676,kulgema,1,True,,kuidas
+187482,1220924,kulmineerima,1,True,v,millega
+187483,1220925,kulmineeruma,1,True,v,millega
+187637,1221255,kuluma,1,True,v,mille peale
+187637,1221255,kuluma,1,True,v,milleks
+187647,1221296,kulutama,1,True,v,millele / mille peale
+187683,1221424,kummardama,1,True,v,keda/mida*
+187987,1222151,kuradile saatma,1,True,v,keda/mida
+188117,1222449,kuritarvitama,1,True,v,mida*
+188117,2366864,kuritarvitama,1,True,v,keda*
+188150,1222537,kurjustama,1,True,v,kellega
+188150,1222537,kurjustama,1,True,v,mille pärast
+274900,1430445,kursis olema,1,True,v,millega
+274901,1430446,kurssi viima,1,True,v,millega
+188214,1222705,kurtma,1,True,v,et
+188214,1222705,kurtma,1,True,v,mida*
+188214,1222705,kurtma,1,True,v,mille üle
+188229,1222754,kurvastama,1,True,v,keda*
+188229,1222755,kurvastama,1,True,v,kelle/mille pärast
+188254,1222839,kusema,1,True,,mille peale
+188388,1223189,kutsuma,1,True,v,mida tegema
+188388,1223189,kutsuma,1,True,v,mille pärast
+188388,1223189,kutsuma,1,True,v,kuhu
+188388,2503247,kutsuma,1,True,v,millele
+188388,2503247,kutsuma,1,True,v,mida tegema
+188388,1223190,kutsuma,1,True,,mida tegema
+188388,1223192,kutsuma,1,True,,kuhu
+188388,1223193,kutsuma,1,True,v,mille pärast
+188388,1223193,kutsuma,1,True,v,kelleks/milleks
+188388,1223193,kutsuma,1,True,v,mille tõttu
+188463,1223403,kuulama,1,True,v,keda/mida*
+188463,1223405,kuulama,1,True,v,keda/mida*
+188463,1223406,kuulama,1,True,v,mida*
+188497,1223503,kuuletuma,1,True,v,kellele
+188519,1223557,kuulma,1,True,v,keda/mida*
+188519,1223558,kuulma,1,True,v,kellest/millest
+188519,1223558,kuulma,1,True,v,et
+188519,1223558,kuulma,1,True,v,mida*
+188519,1223556,kuulma,1,True,,mida*
+188561,1223666,kuuluma,1,True,v,kellele
+188561,1223667,kuuluma,1,True,v,millesse
+188561,1223667,kuuluma,1,True,v,kelle/mille hulka
+188561,1223667,kuuluma,1,True,v,kuhu
+188561,1223668,kuuluma,1,True,,kuhu
+188563,1223683,kuulutama,1,True,v,milliseks
+188563,1223683,kuulutama,1,True,v,kelleks
+188563,1223684,kuulutama,1,True,v,mida*
+188563,1223684,kuulutama,1,True,v,kellele
+188563,1223685,kuulutama,1,True,v,mida*
+188563,1223686,kuulutama,1,True,v,mida*
+188563,1223687,kuulutama,1,True,v,mida*
+188617,1223842,kuu peale saatma,1,True,v,keda/mida
+188818,1224298,kviteerima,1,True,v,millega
+188818,1224298,kviteerima,1,True,v,mida*
+189031,1224848,kõlbama,1,True,v,kelleks/milleks
+189031,1224848,kõlbama,1,True,v,mida teha
+189031,1224848,kõlbama,1,True,v,kellele
+189031,1224849,kõlbama,1,True,,mida teha
+189052,1224910,kõlistama,1,True,v,mida*
+189052,1224910,kõlistama,1,True,v,millega
+189150,1225173,kõnelema,1,True,,kellest/millest
+189150,1225175,kõnelema,1,True,v,kus
+189150,1225176,kõnelema,1,True,v,millest
+189216,1225322,kõnnitama,1,True,v,keda*
+189254,1225431,kõrbema,1,True,v,milles
+189254,1225431,kõrbema,1,True,v,millega
+949945,1828045,kõrges kaares sülitama,1,True,v,millele
+949945,1828045,kõrges kaares sülitama,1,True,v,mille peale
+1272769,2356658,kõriauguni olema,1,True,v,millest
+1272769,2356658,kõriauguni olema,1,True,v,kellel
+189409,1225827,kõri kinni pigistama,1,True,v,kellel
+211299,1279640,kõrini olema,1,True,v,millest
+211299,1279640,kõrini olema,1,True,v,kellel
+1272773,2356663,kõrini saama,1,True,v,kellel
+1272773,2356663,kõrini saama,1,True,v,millest
+189422,1225854,kõri pihku võtma,1,True,v,kellel
+189425,1225861,kõris kinni olema,1,True,v,kellel
+189426,1225862,kõrist alla laskma,1,True,v,mida
+189429,1225866,kõristama,1,True,v,millega
+189429,1225866,kõristama,1,True,v,mida*
+189502,1226034,kõrvaldama,1,True,v,kust
+189502,1226035,kõrvaldama,1,True,v,kust
+189502,1226037,kõrvaldama,1,True,v,kust
+189509,1226063,kõrvale hiilima,1,True,v,millest
+189511,1226068,kõrvale hoidma,1,True,v,millest
+189511,1226068,kõrvale hoidma,1,True,v,kellest / kelle eest
+189513,1226074,kõrvale hoiduma,1,True,v,mida tegemast
+189513,1226074,kõrvale hoiduma,1,True,v,millest
+189516,1226081,kõrvale juhtima,1,True,v,millest
+189516,1226081,kõrvale juhtima,1,True,v,mida
+189516,1226081,kõrvale juhtima,1,True,v,millelt
+189519,1226089,kõrvale jääma,1,True,v,millest/kust
+1010875,1949937,kõrvale puiklema,1,True,v,millest
+189526,1226122,kõrvale põikama,1,True,,kelle/mille eest
+189527,1226124,kõrvale põiklema,1,True,v,millest
+189532,1226135,kõrvale tõmbuma,1,True,v,millest
+189535,1226141,kõrvale viilima,1,True,v,millest
+189596,1226281,kõrva puhuma,1,True,v,kellele
+189649,1226411,kõrvu pihku võtma,1,True,v,kellel
+189650,1226413,kõrvu puutuma,1,True,v,kellele
+189651,1226414,kõrvust mööda laskma,1,True,v,mida
+189654,1226418,kõrvutama,1,True,v,keda/mida*
+189654,1226418,kõrvutama,1,True,v,kellega/millega
+189689,1226533,kõvaks minema,1,True,v,kellel
+189738,1226677,kõõks olema,1,True,v,millega
+189760,1226730,kõõrdi vaatama,1,True,v,kelle peale
+189760,1226730,kõõrdi vaatama,1,True,v,kellele
+1363701,2470276,kõõriti vaatama,1,True,v,kellele
+189803,1226838,käega lööma,1,True,v,millele
+189805,1226841,käega viskama,1,True,v,millele
+189834,1226915,käendama,1,True,v,keda*
+189923,1227168,käiama,1,True,v,mida*
+189923,1227169,käiama,1,True,v,mida*
+189962,1227282,käiku andma,1,True,v,mida
+189962,1227283,käiku andma,1,True,v,mida
+189972,1227311,käima,1,True,v,mida tegemas
+189972,1227311,käima,1,True,v,kelle juures
+189972,1227311,käima,1,True,v,kus
+189972,1227311,käima,1,True,v,millega
+189972,1227321,käima,1,True,v,millega
+189972,1227322,käima,1,True,v,kelle/mille kohta
+189972,1227322,käima,1,True,v,mille juurde
+189972,1227323,käima,1,True,v,kellega
+189998,1227413,käitlema,1,True,v,mida
+190000,1227416,käituma,1,True,v,kuidas
+190000,1227416,käituma,1,True,v,kellega
+190036,1227522,käkki keerama,1,True,v,kellele
+190128,1227737,käppa peale panema,1,True,v,millele
+190167,1227844,kärbseid pähe ajama,1,True,v,kellele
+190270,1228149,käru keerama,1,True,v,kellele
+190318,1228255,käsile võtma,1,True,v,mida
+190318,1228256,käsile võtma,1,True,v,keda
+190364,1228351,käsitama,1,True,v,millena/kellena
+190364,1228351,käsitama,1,True,v,mida/keda*
+190364,1228352,käsitama,1,True,v,mida*
+190372,1228369,käsitlema,1,True,v,mida*
+190372,1228370,käsitlema,1,True,v,mida*
+190372,1228371,käsitlema,1,True,v,mida*
+190377,1228389,käsitsema,1,True,v,mida*
+190417,1228478,käsi väänama,1,True,v,kelle
+190417,1228478,käsi väänama,1,True,v,kellel
+190423,1228498,käskima,1,True,v,kellel + mida teha
+190423,1228498,käskima,1,True,v,keda*
+190456,1228576,käsutama,1,True,v,keda*
+190456,1228577,käsutama,1,True,v,mida*
+190467,1228608,kätel kandma,1,True,v,keda*
+190494,1228673,kätlema,1,True,v,keda*
+190494,1228673,kätlema,1,True,v,kellega
+190498,1228682,kätt alla panema,1,True,,millele
+190499,1228683,kätt andma,1,True,v,kellele
+190507,1228719,kätte maksma,1,True,v,kellele
+190507,1228719,kätte maksma,1,True,v,mille eest
+190507,1228720,kätte maksma,1,True,v,kellele
+190513,1228734,kätte mängima,1,True,,kellele
+190520,1228748,kätte tasuma,1,True,v,kellele
+190520,1228749,kätte tasuma,1,True,v,kellele
+190527,1228766,kätt harjutama,1,True,v,millega
+190528,1228767,kätt ja südant pakkuma,1,True,v,kellele
+190531,1228773,kätt paluma,1,True,v,kelle
+190532,1228774,kätt peale panema,1,True,v,millele
+190536,1228784,kätt pulsil hoidma,1,True,v,millel
+190537,1228785,kätt sirutama,1,True,v,mille järele
+190537,2454204,kätt sirutama,1,True,v,kellele
+190540,1228789,kätt tõstma,1,True,v,kelle vastu
+190541,1228792,kätt ulatama,1,True,v,kellele
+190541,2454397,kätt ulatama,1,True,v,kellele
+289307,1445069,külas käima,1,True,v,kellel
+289307,1445069,külas käima,1,True,v,kus
+190948,1229736,külastama,1,True,v,keda/mida*
+949586,1827631,külge harjutama,1,True,v,kellele
+190982,1229827,külge jääma,1,True,,millele
+190983,1229833,külge kleepima,1,True,v,kellele/millele
+190983,2489639,külge kleepima,1,True,v,millele
+394074,1828882,külge kleepuma,1,True,v,kellele/millele
+394074,1652842,külge kleepuma,1,True,v,kellele
+190985,1229837,külge lööma,1,True,v,kellele
+190989,1229850,külge pookima,1,True,v,kellele/millele
+190990,1229853,külge riputama,1,True,v,kellele/millele
+191019,1229917,külgnema,1,True,v,millega
+191048,1229981,külje alla pugema,1,True,v,kelle
+191048,1229981,külje alla pugema,1,True,v,kellele
+1160782,2197859,küllalt olema,1,True,v,kellel
+1160782,2197859,küllalt olema,1,True,v,millest
+1160782,2489638,küllalt olema,1,True,v,millest
+191092,1230094,küllalt saama,1,True,v,kellel
+191092,1230094,küllalt saama,1,True,v,millest
+286273,1442035,külla minema,1,True,v,kellele
+286273,1442035,külla minema,1,True,v,kuhu
+191097,1230108,küllastuma,1,True,v,millest
+191372,1230817,küsima,1,True,v,kust
+191372,1230817,küsima,1,True,v,kellelt
+191372,1230817,küsima,1,True,v,kelle käest
+191372,1230817,küsima,1,True,v,kas
+191372,1230817,küsima,1,True,v,kelle/mille kohta
+191372,1230819,küsima,1,True,v,keda*
+191372,1230820,küsima,1,True,v,kelle käest + mida*
+191372,1230820,küsima,1,True,v,kellelt + mida*
+191372,1230821,küsima,1,True,v,keda*
+191372,1230821,küsima,1,True,v,kelle järele
+191372,1230823,küsima,1,True,v,millest
+191375,1230839,küsimuse alla seadma,1,True,v,mida
+279145,1434907,kütke,2,True,postp,mille
+191495,1231131,küündima,1,True,v,milleni
+191570,1231319,küürutama,1,True,v,kelle ees
+191578,1231351,küüsi taha ajama,1,True,v,millele
+191726,1231731,labidaga kokku ajama,1,True,v,mida
+191727,1231733,labidaga kokku kühveldama,1,True,v,mida
+191814,1231970,laekuma,1,True,v,kuhu
+191822,1231998,laenama,1,True,v,kellelt
+191822,1231998,laenama,1,True,v,milleks
+191822,2032475,laenama,1,True,v,milleks
+191822,2032475,laenama,1,True,v,kellele
+191851,1232062,laenutama,1,True,v,mida
+191851,1232062,laenutama,1,True,v,kellele
+191954,1232315,lagistama,1,True,v,mida teha
+192064,1232627,lahkuma,1,True,v,kust
+192064,1232628,lahkuma,1,True,v,kust / millest
+192066,1232642,lahku minema,1,True,v,kellest
+192089,1232707,lahmima,1,True,v,mida teha
+192096,1232757,lahti haakima,1,True,v,millest
+192105,1232793,lahti kiskuma,1,True,v,millest
+192112,1232806,lahti laskma,1,True,v,mille pärast
+192141,1232907,lahti raputama,1,True,v,millest/kellest
+192150,1232926,lahti saama,1,True,v,millest/kellest
+192150,1232926,lahti saama,1,True,v,kellest/millest
+192159,1232948,lahti siduma,1,True,v,millest
+192183,1233023,lahti ütlema,1,True,v,millest/kellest
+192205,1233074,lahutama,1,True,v,kellest/millest
+192205,1233078,lahutama,1,True,v,millest
+192229,1233165,laiaks lööma,1,True,v,mida
+949943,1828043,laias kaares sülitama,1,True,v,millele
+949943,1828043,laias kaares sülitama,1,True,v,mille peale
+192299,1233329,laiendama,1,True,v,mida*
+192299,1233330,laiendama,1,True,v,mida*
+192299,1233331,laiendama,1,True,v,mida*
+192299,1233332,laiendama,1,True,v,mida*
+192318,1233389,laimama,1,True,v,keda*
+192336,1233436,lainel olema,1,True,v,millisel
+192336,1233436,lainel olema,1,True,v,mille
+192412,1233662,lakkama,1,True,v,mida tegemast
+192636,1234181,langema,1,True,v,millele/kellele
+192928,1234895,laskma,1,True,v,kellel + mida teha
+192928,1234896,laskma,1,True,v,kellel + mida teha
+192931,1234925,laskuma,1,True,v,kuhu
+192931,1234929,laskuma,1,True,v,millesse
+192931,1234930,laskuma,1,True,v,milleni
+193056,1235195,lasuma,1,True,v,kellel/millel
+193056,1235196,lasuma,1,True,v,kus
+193056,1235196,lasuma,1,True,v,millel
+193128,1235369,laua alla jooma,1,True,v,keda
+193154,1235424,lauale laduma,1,True,v,mida
+193154,1235425,lauale laduma,1,True,v,mida
+193290,1235731,laulma,1,True,v,kellele
+193290,1235731,laulma,1,True,v,millest
+193509,1236241,laveerima,1,True,s,mille vahel
+193633,1236532,leevendama,1,True,v,mida
+193833,1237005,leidma,1,True,v,kust
+193833,1237011,leidma,1,True,v,et
+193835,1237016,leiduma,1,True,v,kus
+193838,1237027,leierdama,1,True,v,mida*
+194262,1238024,leppima,1,True,v,millega
+194262,1238024,leppima,1,True,v,millega/kellega
+194262,1238026,leppima,1,True,v,kellega
+194478,1238562,ligi ajama,1,True,v,kellele
+194490,1238606,ligi litsuma,1,True,v,kellele
+194505,1238641,ligi pressima,1,True,v,kellele
+194507,1238652,ligi pääsema,1,True,v,millele/kellele
+194507,1238653,ligi pääsema,1,True,v,millele
+194507,1238654,ligi pääsema,1,True,v,kellele
+194511,1238664,ligi saama,1,True,v,kellele/millele
+194514,1238675,ligi tikkuma,1,True,v,kellele
+194518,1238689,ligi tükkima,1,True,v,kellele
+194556,1238778,lihaks tegema,1,True,v,keda
+194741,1239183,liialdama,1,True,v,millega
+194747,1239208,liiale minema,1,True,v,millega
+194768,1239263,liidendama,1,True,v,mida
+194768,1239263,liidendama,1,True,v,millega
+194774,1239278,liidestama,1,True,v,millega
+194799,1239330,liiga tegema,1,True,v,kellele
+194799,1239331,liiga tegema,1,True,v,millele
+194973,1239715,liikuma,1,True,v,kuhu
+195081,1239978,liistule tõmbama,1,True,v,keda
+195108,1240041,liitma,1,True,v,mida
+195108,1240041,liitma,1,True,v,milleks
+195108,1240041,liitma,1,True,v,millega
+195108,1240042,liitma,1,True,v,keda/mida
+195108,1240043,liitma,1,True,v,mida
+195108,1240043,liitma,1,True,v,millele
+195133,1240099,liituma,1,True,v,kellega/millega
+195696,1241371,lippu kõrgel hoidma,1,True,v,kelle/mille
+195765,1241554,lisama,1,True,v,kuhu
+195765,1241554,lisama,1,True,v,millele
+195765,1241556,lisama,1,True,v,millele
+195765,1241556,lisama,1,True,v,kuhu
+195772,1241578,lisanduma,1,True,v,millele
+195876,1241826,liugu laskma,1,True,v,mille peal
+195876,1241826,liugu laskma,1,True,v,millel
+196060,1242296,lohutama,1,True,v,keda*
+196216,1242753,loobuma,1,True,v,kellest/millest
+196216,1242753,loobuma,1,True,v,mida tegemast
+196216,1242754,loobuma,1,True,,millest
+196216,1242755,loobuma,1,True,,millest
+196578,1243621,loori kergitama,1,True,v,millelt
+196606,1243687,lootma,1,True,v,et
+196606,1243687,lootma,1,True,v,mida teha
+196606,1243688,lootma,1,True,v,kellele/millele / kelle/mille peale
+196635,2210151,loovima,1,True,v,mille vahel
+196644,1243786,loovutama,1,True,v,kellele/millele
+196728,1244006,lubama,1,True,v,kellel + mida teha
+196728,1244009,lubama,1,True,v,kellele
+196728,1244009,lubama,1,True,v,mida teha
+196789,1244154,lugema,1,True,v,kust
+196789,1244154,lugema,1,True,v,kellele
+196789,1244154,lugema,1,True,v,mida
+196825,1244286,lugu pidama,1,True,v,kellest/millest
+197197,1245117,luttima,1,True,v,keda*
+197387,1245548,lõbu pakkuma,1,True,v,kellele
+197465,1245787,lõhkuma,1,True,v,mida teha
+197465,1245787,lõhkuma,1,True,v,kus
+197465,1245787,lõhkuma,1,True,v,millega
+197475,1245829,lõhnama,1,True,v,mille järele
+197475,2161528,lõhnama,1,True,v,mille järele
+197504,1245928,lõikama,1,True,v,milleks
+197562,1246120,lõivu maksma,1,True,v,millele
+197618,1246243,lõpetama,1,True,,millega
+197647,1246339,lõpparvet tegema,1,True,v,kellega/millega
+197647,1246339,lõpparvet tegema,1,True,v,millega
+197652,1246350,lõppema,1,True,v,millega
+197696,1246452,lõppu peale tegema,1,True,v,kellele
+197931,1247058,läbi ajama,1,True,v,millega
+197934,1247070,läbi astuma,1,True,v,kust
+197934,1247071,läbi astuma,1,True,v,millest
+197941,1247087,läbi helistama,1,True,v,keda/mida
+197945,1247092,läbi hüppama,1,True,v,kust
+197945,1247092,läbi hüppama,1,True,v,millest
+197945,1247093,läbi hüppama,1,True,v,millest
+197947,1247099,läbi jalutama,1,True,v,millest
+197947,1247099,läbi jalutama,1,True,v,mida
+197950,1247105,läbi jooksma,1,True,v,millest
+197950,1247106,läbi jooksma,1,True,v,millest
+197950,1247107,läbi jooksma,1,True,v,kust
+197967,1247150,läbi kukkuma,1,True,v,kus
+197975,1247179,läbi käima,1,True,v,kust
+197975,1247182,läbi käima,1,True,v,kellega
+197983,1247208,läbi laskma,1,True,v,keda/mida
+197983,1247209,läbi laskma,1,True,v,mida*
+197983,1247211,läbi laskma,1,True,v,mida
+197983,1247212,läbi laskma,1,True,v,keda
+197983,1247213,läbi laskma,1,True,v,mida
+197983,1247214,läbi laskma,1,True,v,mida
+197983,1247215,läbi laskma,1,True,v,mida
+197989,1247236,läbi libisema,1,True,v,millest
+197989,1247237,läbi libisema,1,True,v,millest
+197992,1247242,läbi lippama,1,True,v,kust
+198003,1247282,läbi lööma,1,True,v,kus
+198003,1247283,läbi lööma,1,True,v,mida
+198003,1247287,läbi lööma,1,True,v,mida
+198004,1247291,läbima,1,True,v,mida
+198004,1247292,läbima,1,True,v,mida*
+198004,1247293,läbima,1,True,v,mida
+198008,1247311,läbi minema,1,True,v,kust
+198015,1247343,läbi mõtlema,1,True,v,mida
+198038,1247396,läbi nämmutama,1,True,v,mida
+198073,1247502,läbi rääkima,1,True,v,kellega + mille suhtes
+198077,1247516,läbi saama,1,True,v,kellega
+198077,1247517,läbi saama,1,True,v,kus
+198095,1247582,läbi sõrmede vaatama,1,True,v,millele
+198166,1247797,lähenema,1,True,v,kellele/millele
+198166,1247798,lähenema,1,True,v,millele
+198166,1247799,lähenema,1,True,v,kellele
+198166,1247800,lähenema,1,True,,millele
+198252,1248007,lähtuma,1,True,v,millest
+198252,1248008,lähtuma,1,True,,kust
+198252,1248009,lähtuma,1,True,,kust
+198361,1248313,lävima,1,True,v,kellega
+198415,1248424,läänistama,1,True,v,mida
+198415,1248424,läänistama,1,True,v,kellele
+198425,1248462,läätseleeme eest maha müüma,1,True,v,keda/mida
+198441,1248505,lömitama,1,True,v,kelle/mille ees
+198519,1248725,lööma,1,True,v,kuhu
+198624,1249000,lükkama,1,True,v,keda/mida*
+198624,1249000,lükkama,1,True,v,kuhu
+198643,1249074,lülitama,1,True,v,mida tegema
+198755,1249375,maad andma,1,True,v,millele
+199379,1250901,magama,1,True,,kellega
+199398,1250958,magatama,1,True,v,keda*
+199524,1251318,maha hüppama,1,True,v,millelt
+199524,1251318,maha hüppama,1,True,v,millest
+199531,1251337,maha jooksma,1,True,v,millelt
+199531,1251337,maha jooksma,1,True,v,millest
+199531,1251338,maha jooksma,1,True,v,mida
+199531,1251339,maha jooksma,1,True,v,keda/mida
+199533,1251352,maha joonistama,1,True,v,millelt
+199533,1251352,maha joonistama,1,True,v,keda/mida
+199533,1251353,maha joonistama,1,True,v,mida
+199538,1251369,maha jääma,1,True,v,kellest
+199538,1251369,maha jääma,1,True,v,millest
+199538,1251370,maha jääma,1,True,v,millest
+199538,1251372,maha jääma,1,True,v,kellest
+199538,1251373,maha jääma,1,True,v,kellest
+199538,1251373,maha jääma,1,True,v,millest
+199543,2265831,maha kirjutama,1,True,v,kelle pealt
+199595,1251543,maha niitma,1,True,v,keda
+199620,1251617,maha rääkima,1,True,v,mida
+199620,1251618,maha rääkima,1,True,v,mida
+199622,1251624,maha saama,1,True,v,millega
+199622,1251625,maha saama,1,True,v,kellega
+199636,2265830,maha tegema,1,True,v,kelle pealt
+199645,1251727,maha vaatama,1,True,v,kelle pealt
+199707,1251900,mahla laskma,1,True,v,millelt
+199707,1251900,mahla laskma,1,True,v,millest
+199730,1251946,mahtuma,1,True,v,kuhu
+199764,1252037,maiku suhu saama,1,True,v,millest
+199864,1252270,maitsma,1,True,v,kellele
+199877,1252311,maiustama,1,True,v,millega
+199877,1252311,maiustama,1,True,v,mille kallal
+200188,1253023,maksma,1,True,v,mille eest
+200188,1253023,maksma,1,True,v,kellele
+200188,1253026,maksma,1,True,v,mida teha
+200280,1253212,maldama,1,True,v,mida teha
+200473,1253615,manitsema,1,True,v,keda*
+200890,1254571,maskeeruma,1,True,v,kelleks
+201065,1255005,matkima,1,True,v,keda/mida*
+201114,1255151,mattuma,1,True,v,millesse
+201114,1255151,mattuma,1,True,v,mille alla
+201114,1255152,mattuma,1,True,,millesse
+201114,1255153,mattuma,1,True,,millesse
+201262,1255499,meelde tuletama,1,True,v,kellele
+201262,1255499,meelde tuletama,1,True,v,keda/mida
+201264,1255506,meeldima,1,True,v,kellele
+201264,1255506,meeldima,1,True,v,mida teha
+411952,1683139,meelduma,1,True,v,kellesse/millesse
+201351,1255749,meelitama,1,True,v,millega
+201384,1255835,meenutama,1,True,v,kellele
+201384,1255835,meenutama,1,True,v,keda/mida*
+201384,1255837,meenutama,1,True,v,keda/mida*
+201554,1256222,mehele panema,1,True,v,keda
+201554,1256221,mehele panema,1,True,v,mida
+201602,1256349,mehkeldama,1,True,v,kellega
+201602,1256350,mehkeldama,1,True,v,kellega
+202024,1257294,meri,1,True,s,mille
+202944,1259254,minema,1,True,v,mida tegema
+202944,1259254,minema,1,True,v,millega
+202944,1259254,minema,1,True,v,kuhu
+202944,1259262,minema,1,True,v,mille peale
+202944,1259263,minema,1,True,v,milliseks
+202944,1259265,minema,1,True,,kellesse
+202944,1259266,minema,1,True,v,mida tegema
+202944,1259266,minema,1,True,v,milleks
+202994,1259424,minevikuvormis rääkima,1,True,v,kellest/millest
+203954,1261681,mossitama,1,True,v,mida*
+203971,1261729,motiveerima,1,True,v,keda*
+203971,1261729,motiveerima,1,True,v,mida tegema
+203971,1261730,motiveerima,1,True,v,mida*
+203971,1261730,motiveerima,1,True,v,millega
+204027,1261847,mudaga loopima,1,True,v,keda*
+204083,1261972,mugandama,1,True,v,mida
+204083,1261972,mugandama,1,True,v,milleks
+204083,1261972,mugandama,1,True,v,millele/millega
+204084,1261975,muganduma,1,True,v,milleks
+204084,1261975,muganduma,1,True,v,kus
+204084,1261975,muganduma,1,True,v,millega
+204086,1261981,muganema,1,True,v,millega
+204086,1261981,muganema,1,True,v,milleks
+204086,1261981,muganema,1,True,v,kus
+204276,1262482,muljet avaldama,1,True,v,kellele
+204333,1262605,mullatoidule saatma,1,True,v,keda
+204576,1263163,murdma,1,True,v,mida
+204576,1263166,murdma,1,True,v,mida
+204576,1263162,murdma,1,True,v,keda
+204593,1263246,mure,1,True,s,kelle/mille pärast
+204593,1263247,mure,1,True,s,mida teha
+204620,1263318,muretsema,1,True,v,kelle/mille pärast
+204620,1263320,muretsema,1,True,v,kellele
+275163,1430842,muretsema panema,1,True,v,keda
+1409450,2533546,muret tegema,1,True,v,kellele
+204749,1263672,mustama,1,True,,kellest/millest
+204772,1263729,mustendama,1,True,v,kellest/millest
+205070,1264390,muutuma,1,True,v,milleks
+205070,1264390,muutuma,1,True,v,milliseks
+205153,1264586,mõistes,1,True,vrm,kelle/mille
+205153,1264586,mõistes,1,True,vrm,millises
+205168,1264628,mõistma,1,True,v,keda/mida*
+205194,1264703,mõistust pähe panema,1,True,v,kellele
+205210,1264737,mõjuma,1,True,v,millele/kellele
+205210,1264738,mõjuma,1,True,v,millisena
+205217,1264764,mõjutama,1,True,v,keda/mida*
+205241,1264831,mõlgutama,1,True,v,mida*
+205352,1265174,mõtlema,1,True,v,kelle/mille peale
+205352,1265174,mõtlema,1,True,v,kellest/millest
+205352,1265174,mõtlema,1,True,v,kellele/millele
+275164,1430843,mõtlema panema,1,True,v,millele
+275164,1430843,mõtlema panema,1,True,v,mille üle
+275164,2436917,mõtlema panema,1,True,v,millele
+205525,1265581,mõõku ristama,1,True,v,kellega
+205572,1265705,mõõtu võtma,1,True,v,kellest/millest
+205573,1265709,mõõtu välja andma,1,True,v,kelle/mille
+205630,1265863,mäele saama,1,True,v,millega
+205756,1266147,mäkra mängima,1,True,v,kellele
+205788,1266225,mäletama,1,True,v,keda/mida*
+205788,1266226,mäletama,1,True,v,keda/mida*
+205835,1266362,mängima,1,True,v,mida*
+205835,1266362,mängima,1,True,v,millega
+205835,1266365,mängima,1,True,v,keda/mida*
+205835,1266366,mängima,1,True,v,keda/mida*
+205835,1266367,mängima,1,True,v,mida*
+205835,1266370,mängima,1,True,v,mida*
+205904,1266570,mängu panema,1,True,v,mida
+205904,1266571,mängu panema,1,True,v,mida
+205928,1266626,mängust välja jätma,1,True,v,keda
+206067,1266937,märkama,1,True,v,keda/mida*
+206067,1266937,märkama,1,True,v,et
+206067,1266938,märkama,1,True,v,keda*
+206067,1266939,märkama,1,True,v,mida teha
+206074,1266967,märkima,1,True,v,kuhu
+206074,1266967,märkima,1,True,v,millega
+206074,1266972,märkima,1,True,v,et
+206168,1267266,määrama,1,True,v,kelleks
+206168,1267268,määrama,1,True,v,kellele
+206278,1267607,mööda hiilima,1,True,v,millest
+206279,1267612,mööda jalutama,1,True,,millest
+206282,1267618,mööda kõndima,1,True,v,kellest/millest
+206290,1267641,mööda lendama,1,True,v,millest
+206290,1267641,mööda lendama,1,True,v,kellest
+206290,1267642,mööda lendama,1,True,v,millest
+206294,1267651,mööda manööverdama,1,True,v,millest
+206297,1267657,mööda minema,1,True,v,kellest/millest
+206297,1267659,mööda minema,1,True,v,kellest/millest
+206306,1267690,mööda rääkima,1,True,v,millest
+206313,1267711,mööda sõitma,1,True,v,millest/kellest
+206318,1267720,mööda vaatama,1,True,v,millest/kellest
+206328,1267741,mööduma,1,True,v,kellest/millest
+206453,1268089,mürgitama,1,True,v,keda/mida
+206453,1268090,mürgitama,1,True,v,mida
+206453,1268091,mürgitama,1,True,v,keda/mida
+206541,1268326,mütsi maha võtma,1,True,v,kelle/mille ees
+206545,1268334,mütsi pähe tõmbama,1,True,v,kellele
+206608,1268483,müüma,1,True,v,mille eest / millega
+206608,1268483,müüma,1,True,v,kellele
+206688,1268693,naasma,1,True,v,kuhu
+206688,1268693,naasma,1,True,v,kust
+206765,1268902,naerma,1,True,v,kelle/mille üle
+206765,1268902,naerma,1,True,v,mille peale
+207012,1269337,naha peale andma,1,True,v,kellele
+207022,1269354,nahas olema,1,True,v,kelle
+207022,2422265,nahas olema,1,True,v,kelle
+207053,1269438,nahka minema,1,True,v,mille/kelle
+243447,1359428,nahka pugema,1,True,v,kelle
+207061,1269450,nahka täis sõimama,1,True,v,kellel
+207063,1269452,nahka viluks lööma,1,True,v,kellel
+207064,1269454,nahka üle kõrvade tõmbama,1,True,v,kellel
+207264,1269879,nakatuma,1,True,v,millest
+207264,1269879,nakatuma,1,True,v,millega
+207312,1269994,nalja heitma,1,True,v,kelle/mille üle
+275174,1430853,nalja tegema,1,True,,kelle/mille üle
+207349,1270076,naljatlema,1,True,v,kellega
+207359,1270094,nalja viskama,1,True,,kelle/mille üle
+207404,1270190,nappima,1,True,v,kellel + milleks
+207617,1270676,nautima,1,True,v,mida*
+207617,1270677,nautima,1,True,v,mida*
+207662,1270785,neelduma,1,True,v,milles
+207662,1270786,neelduma,1,True,v,milles
+207662,1270787,neelduma,1,True,v,millesse
+207662,1270788,neelduma,1,True,v,millesse
+207755,1270990,neimama,1,True,v,keda*
+208322,1272334,nimetama,1,True,v,keda/mida kelleks/milleks
+208322,1272334,nimetama,1,True,v,keda/mida*
+208322,1272335,nimetama,1,True,v,keda
+208322,1272336,nimetama,1,True,,keda/mida
+208373,1272482,nina alla hõõruma,1,True,v,mida*
+208373,1272482,nina alla hõõruma,1,True,v,kellele
+208391,1272519,nina kirtsutama,1,True,v,mille peale
+1470563,2609797,nina krimpsutama,1,True,v,mille peale
+208418,1272568,nina peale kirjutama,1,True,v,kellele
+208419,1272570,nina peale viskama,1,True,v,mida*
+208419,1272570,nina peale viskama,1,True,v,kellele
+208423,1272582,ninapidi vedama,1,True,v,keda*
+208656,1273077,nohistama,1,True,,mida teha
+208733,1273283,nomineerima,1,True,v,millele
+208825,1273472,noomima,1,True,v,keda*
+208979,1273855,normaliseerima,1,True,v,mida
+208979,2251673,normaliseerima,1,True,v,mida
+209106,1274148,nuga selga lööma,1,True,v,kellele
+209392,2363957,nussima,1,True,v,keda*
+209392,2363761,nussima,1,True,v,keda*
+209423,1274918,nutma,1,True,v,mille pärast
+209494,1275129,nuusutama,1,True,v,mida/keda*
+209494,1275131,nuusutama,1,True,v,mida*
+209670,1275580,nõretama,1,True,v,millest
+209670,1275581,nõretama,1,True,v,millest
+209687,1275629,nõrgenema,1,True,,mille suhtes
+209730,1275770,nõu andma,1,True,v,milles
+209730,1275770,nõu andma,1,True,v,kellele
+209746,1275803,nõudlema,1,True,v,mida*
+209749,1275815,nõudma,1,True,v,kellelt
+209749,1275815,nõudma,1,True,v,mida*
+209749,1275816,nõudma,1,True,v,mida*
+209749,1275817,nõudma,1,True,v,mida*
+209749,1275818,nõudma,1,True,v,mida*
+209749,1275819,nõudma,1,True,v,mida*
+209749,1275820,nõudma,1,True,v,mida*
+209749,1275821,nõudma,1,True,v,mida*
+209773,1275889,nõu pidama,1,True,v,kellega
+209773,1275889,nõu pidama,1,True,v,mille üle
+209779,1275902,nõus olema,1,True,v,kellega/millega
+209779,1275902,nõus olema,1,True,v,mida tegema
+209780,1275903,nõusse jääma,1,True,v,millega/kellega
+209784,1275911,nõustama,1,True,v,milles
+209784,1275911,nõustama,1,True,v,keda/mida*
+209785,1275916,nõustuma,1,True,v,kellega/millega
+209785,1275916,nõustuma,1,True,v,mida tegema
+209827,1276012,nägema,1,True,v,keda/mida*
+209827,1276014,nägema,1,True,v,keda/mida*
+209827,1276016,nägema,1,True,v,keda*
+209827,1276017,nägema,1,True,v,mida*
+209827,2234017,nägema,1,True,v,keda/mida*
+209827,1276020,nägema,1,True,v,mida*
+209865,1276130,nägu olema,1,True,v,kelle
+209875,1276150,nägu täis sõimama,1,True,v,kellel
+209922,1276285,näima,1,True,v,et
+209922,1276285,näima,1,True,v,milline/millisena
+209922,1276285,näima,1,True,v,mida tegevat
+209926,1276307,näitama,1,True,v,mida/keda*
+209926,1276307,näitama,1,True,v,kellele
+209926,1276308,näitama,1,True,,mida*
+209926,1276305,näitama,1,True,v,mida*
+209926,1276311,näitama,1,True,v,mida*
+209926,1276312,näitama,1,True,v,et
+209926,1276313,näitama,1,True,v,mida*
+209986,1276464,näkku vaatama,1,True,v,millele
+210042,1276591,näo järgi olema,1,True,v,kellele
+210107,1276744,näppudele vaatama,1,True,v,kelle
+1376272,2489616,näppu peale panema,1,True,v,millele
+210160,1276855,närima,1,True,v,kelle kallal
+210180,1276938,närveerima,1,True,v,mille pärast
+210181,1276943,närve krussi ajama,1,True,v,kellel
+210185,1276949,närve püsti ajama,1,True,v,kellel
+210191,1276958,närvi ajama,1,True,v,keda
+210193,1276964,närvidele käima,1,True,v,kellele
+210194,1276965,närvidel mängima,1,True,v,kelle
+210219,1277011,närvi mustaks ajama,1,True,v,kellel
+210230,1277030,närvi püsti ajama,1,True,v,kellel
+210290,1277161,näägutama,1,True,v,kelle kallal
+210294,1277174,nääkuma,1,True,v,kelle kallal
+210351,1277290,nööbist kinni võtma,1,True,v,kellel
+210614,1277955,ohjeldama,1,True,v,keda/mida*
+210620,1277968,ohkama,1,True,v,mille pärast
+210650,1278054,ohustama,1,True,v,keda/mida*
+210693,1278149,ohvriks langema,1,True,v,mille/kelle
+210717,1278204,oigama,1,True,v,mille üle
+210821,1278430,oksele ajama,1,True,v,mis
+210911,1278679,olenema,1,True,v,kellest/millest
+210919,1278705,oletama,1,True,v,mida*
+210919,1278705,oletama,1,True,v,et
+211076,1279110,oma jalga tõstma,1,True,v,kuhu
+211103,1279174,omaks saama,1,True,v,kelle
+211109,1279190,oma käsi määrima,1,True,v,millega
+211110,1279192,oma kätt andma,1,True,v,millele
+211110,1279193,oma kätt andma,1,True,v,kellele
+211132,1279230,omama,1,True,v,mida*
+211202,1279416,omastama,1,True,v,mida*
+211202,1279417,omastama,1,True,v,mida
+211223,1279464,oma südant avama,1,True,v,kellele
+211229,1279480,oma tiiva alla võtma,1,True,v,keda
+211261,1279564,omistama,1,True,v,kellele/millele
+211261,1279565,omistama,1,True,,kellele
+211410,1279860,ootama,1,True,v,keda/mida*
+211410,1279861,ootama,1,True,v,mida*
+211410,1279861,ootama,1,True,v,kellelt
+211410,1279861,ootama,1,True,v,millest
+211410,1279863,ootama,1,True,v,keda*
+211410,1279864,ootama,1,True,v,mida*
+211410,1279865,ootama,1,True,v,millega
+211476,1280030,opereerima,1,True,v,millega
+211490,1280063,oponeerima,1,True,v,millele/kellele
+211490,1280064,oponeerima,1,True,v,mida*
+211664,1280519,orienteeruma,1,True,v,millele/kellele
+211702,1280607,orjama,1,True,v,keda/mida*
+211740,1280705,orki lendama,1,True,v,kellega/millega
+211806,1280855,osa etendama,1,True,v,kus
+211806,1280855,osa etendama,1,True,v,milles
+211818,1280887,osaks saama,1,True,v,kellele
+211818,1280888,osaks saama,1,True,v,kelle
+211820,1280891,osalema,1,True,v,kus / milles
+211824,1280904,osaliseks saama,1,True,v,mille
+211841,1280948,osa mängima,1,True,v,milles
+211841,1280948,osa mängima,1,True,v,kus
+211854,1280977,osa saama,1,True,v,millest
+211879,1281041,osa võtma,1,True,v,millest
+211879,1281042,osa võtma,1,True,,millest
+211895,1281093,oskama,1,True,v,mida teha
+211895,1281093,oskama,1,True,v,mida*
+211966,1281264,ostma,1,True,v,mille eest / millega
+211966,1281264,ostma,1,True,v,mille/mida
+211966,1281264,ostma,1,True,v,kellelt / kelle käest
+211966,1281264,ostma,1,True,v,kust
+212014,1281359,osundama,1,True,v,keda/mida*
+212014,2019292,osundama,1,True,v,kellele/millele
+212015,1281361,osutama,1,True,v,mida*
+212015,1281362,osutama,1,True,v,mida*
+212015,1281363,osutama,1,True,v,kellele/millele
+212015,1281363,osutama,1,True,v,mida*
+212015,1281364,osutama,1,True,v,millele
+212017,1281371,osutuma,1,True,v,milliseks
+212017,1281371,osutuma,1,True,v,kelleks/milleks
+212044,1281457,otsa jõllitama,1,True,v,kellele
+212071,1281528,otsa sõitma,1,True,v,kellele/millele
+212079,1281546,otsa vaatama,1,True,v,kellele
+212079,1281547,otsa vaatama,1,True,,millele
+212080,1281549,otsa vahtima,1,True,v,kellele
+212168,1281788,otsima,1,True,v,keda/mida*
+212168,1281789,otsima,1,True,v,mida
+212168,1281791,otsima,1,True,v,mida*
+212209,1281892,otsustama,1,True,v,et
+212209,1281892,otsustama,1,True,v,mida teha
+212529,1282609,pabistama,1,True,v,mille pärast
+212715,1283075,pahandama,1,True,v,kellega
+212715,1283075,pahandama,1,True,v,et
+212715,1283075,pahandama,1,True,v,mille pärast
+212715,1283076,pahandama,1,True,v,keda*
+212832,1283446,paigutama,1,True,v,millesse
+212844,1283505,paika panema,1,True,v,keda/mida
+212844,1283504,paika panema,1,True,v,keda
+212858,1283541,paiknema,1,True,v,kus
+212908,1283755,paistma,1,True,v,mida tegevat
+212908,1283755,paistma,1,True,v,et
+212970,1283941,pakatama,1,True,v,millest
+213022,1284097,pakku jooksma,1,True,v,kelle/mille eest
+213022,1284097,pakku jooksma,1,True,v,kuhu
+213023,1284098,pakkuma,1,True,v,mida*
+213023,1284100,pakkuma,1,True,v,mida*
+213023,1284101,pakkuma,1,True,v,mida*
+213023,1284103,pakkuma,1,True,v,mida*
+213283,1284739,paljuks pidama,1,True,v,mida teha
+213272,1284720,palju,1,True,adv,keda/mida
+213391,1284997,paluma,1,True,v,kellel + mida teha
+213391,1284997,paluma,1,True,v,kellelt
+213391,1284997,paluma,1,True,v,kelle käest
+213421,1285079,palvetama,1,True,v,kelle/mille eest
+213499,1285256,panema,1,True,v,kuhu
+213499,1285256,panema,1,True,v,mida
+213499,1285257,panema,1,True,v,mida
+213499,1285258,panema,1,True,v,mida*
+213499,1285259,panema,1,True,v,mida
+213499,1285260,panema,1,True,v,keda
+213499,1285261,panema,1,True,v,mida tegema
+213499,1285262,panema,1,True,v,mida tegema
+213499,1285263,panema,1,True,v,keda/mida
+213499,1285265,panema,1,True,v,mida
+213499,1285268,panema,1,True,v,mida*
+213499,1285269,panema,1,True,v,keda*
+213499,1285270,panema,1,True,v,mida tegema
+213638,1285627,panustama,1,True,v,millesse/kellesse
+213638,1285627,panustama,1,True,v,mille/kelle heaks
+213638,1285627,panustama,1,True,v,millele/kellele
+213638,1285628,panustama,1,True,v,millele/kellele
+213640,1285630,panust tegema,1,True,v,millele/kellele
+213753,1285895,parajasse paika saatma,1,True,v,keda/mida
+213793,1285995,parandama,1,True,v,mida
+213793,1285996,parandama,1,True,v,mida
+213793,1285997,parandama,1,True,v,mida
+213793,1285998,parandama,1,True,v,mida
+213793,1285999,parandama,1,True,v,mida
+213920,1286319,paremklõpsama,1,True,v,mida*
+213920,1286319,paremklõpsama,1,True,v,millel
+214192,1286948,pasaga loopima,1,True,v,keda/mida*
+214396,1287461,patroneerima,1,True,,keda/mida*
+214396,1287463,patroneerima,1,True,v,keda*
+214445,1287591,patuks panema,1,True,v,kellele
+214455,1287617,patustama,1,True,v,millega
+214455,1287617,patustama,1,True,v,mille vastu
+214455,1287618,patustama,1,True,v,millega
+214455,1287619,patustama,1,True,v,kellega
+214541,1287874,pead murdma,1,True,v,mille üle
+214555,1287901,pead vaevama,1,True,v,millega
+214637,1288126,peale hakkama,1,True,v,millega
+214637,2211464,peale hakkama,1,True,v,millal
+214637,1288125,peale hakkama,1,True,v,millega
+214641,1288143,peale hüppama,1,True,v,kellele
+214643,1288150,peale juhtuma,1,True,v,kellele/millele
+214648,1288170,peale kallama,1,True,,millele
+214648,1288170,peale kallama,1,True,,mida
+434647,1716965,peale kargama,1,True,v,kellele
+214682,1288270,peale sattuma,1,True,v,kellele/millele
+214704,1288348,peale vaatama,1,True,v,kellele/millele
+214707,1288361,peale valama,1,True,v,mida
+214707,1288361,peale valama,1,True,v,millele
+214765,1288533,pealt nägema,1,True,v,mida*
+214833,1288688,pea peale keerama,1,True,v,mida
+214833,1288689,pea peale keerama,1,True,v,mida
+214835,1288692,pea peale pöörama,1,True,v,mida
+214835,1288693,pea peale pöörama,1,True,v,mida
+214913,1288880,peatuma,1,True,v,kus
+214913,1288882,peatuma,1,True,v,kus
+214939,1288959,peavalu valmistama,1,True,v,kellele
+215009,1289119,peegeldama,1,True,v,mida*
+215009,1289120,peegeldama,1,True,v,mida*
+215009,1289121,peegeldama,1,True,v,mida*
+215107,1289418,peenrahaks vahetama,1,True,v,mida
+215108,1289419,peenraha vastu vahetama,1,True,v,mida
+215125,1289457,peenutsema,1,True,v,millega
+215276,1289813,peitma,1,True,v,kuhu
+215286,1289845,peituma,1,True,v,milles
+215286,1289846,peituma,1,True,v,kuhu
+215325,1289943,peksma,1,True,v,keda/mida*
+215325,1289946,peksma,1,True,v,keda*
+215325,1289947,peksma,1,True,v,mida*
+215325,1289949,peksma,1,True,v,keda/mida*
+215325,1289950,peksma,1,True,v,mida*
+215754,1290927,perse pugema,1,True,v,kellele
+215755,1290928,perse saatma,1,True,v,keda/mida
+215758,1290931,perset lakkuma,1,True,v,kelle
+215759,1290932,perset lohku tõmbama,1,True,v,kellel
+215809,1291039,persse pugema,1,True,v,kellele
+215810,1291040,persse saatma,1,True,v,keda/mida
+215996,1291493,petma,1,True,v,keda*
+215996,1291494,petma,1,True,v,keda/mida*
+215996,1291495,petma,1,True,v,mida*
+215996,1291496,petma,1,True,v,keda*
+215996,1291497,petma,1,True,v,keda*
+216032,1291580,pettuma,1,True,v,kelles/milles
+216077,1291672,pidama,1,True,v,keda*
+216077,1291673,pidama,1,True,v,mida
+216077,1291682,pidama,1,True,v,keda* + kelleks
+216077,1291682,pidama,1,True,v,mida* + milliseks
+216077,1291682,pidama,1,True,v,kelleks/milleks
+216077,1291683,pidama,1,True,,millest/kellest
+216077,1291684,pidama,1,True,v,mida
+216079,1291708,pidama,2,True,v,mida tegema
+216079,1291710,pidama,2,True,,mida tegema
+216079,1291711,pidama,2,True,v,mida tegema
+216079,1291713,pidama,2,True,v,mida tegema
+216079,1291717,pidama,2,True,,mida tegema
+216129,1291876,pidurdama,1,True,v,mida*
+216129,1291877,pidurdama,1,True,v,keda/mida*
+216155,1291937,pidurit peale panema,1,True,v,millele
+216156,1291938,pidurit peale tõmbama,1,True,v,millele
+216158,1291941,pidurit tõmbama,1,True,v,millele
+216271,1292207,pihta hakkama,1,True,v,millega
+216271,1292208,pihta hakkama,1,True,v,millega
+216274,1292214,pihta saama,1,True,v,millele
+216508,1292769,piinadest vabastama,1,True,v,keda
+216526,1292824,piinu lõpetama,1,True,v,kelle
+216538,1292866,piirama,1,True,v,millega
+216563,1292943,piirduma,1,True,v,millega
+216667,1293189,piirnema,1,True,v,millega
+216679,2374379,piisama,1,True,v,mida*
+216679,2374379,piisama,1,True,v,kellele + millest
+216749,1293403,pikale lainele saatma,1,True,v,keda/mida
+216755,1293428,pikalt saatma,1,True,v,keda/mida
+216776,1293478,pika puuga panema,1,True,v,kellele/millele
+216777,1293479,pika puuga ära panema,1,True,v,kellele/millele
+216778,1293480,pika puuga ära tegema,1,True,v,kellele/millele
+216936,1293871,pilama,1,True,v,keda/mida*
+216981,1293965,pildistama,1,True,v,keda/mida*
+217029,1294118,pilkama,1,True,v,keda/mida*
+217049,1294165,pilku heitma,1,True,v,millele
+217049,1294165,pilku heitma,1,True,v,millesse
+949289,1827259,pilku peale viskama,1,True,v,millele
+949289,1827259,pilku peale viskama,1,True,v,millele/kellele
+217052,1294175,pilku peal hoidma,1,True,v,millel/kellel
+217053,1294177,pilku pöörama,1,True,v,millele
+217053,1294178,pilku pöörama,1,True,v,kellele
+217067,1294235,pilli järgi tantsima,1,True,v,kelle
+217278,1294804,pinda käima,1,True,v,kellele
+217666,1295833,pistma,1,True,v,kuhu
+217666,1295839,pistma,1,True,v,mida tegema
+211310,1279663,pistmist olema,1,True,v,millega/kellega
+217784,1296163,plaanima,1,True,v,mida teha
+217830,1296303,plahvatama,1,True,v,mida tegema
+217851,1296362,plakeerima,1,True,v,millega
+218320,1297508,poetiseerima,1,True,v,mida/keda*
+211311,1279664,pohlad olema,1,True,v,kellest/millest
+211311,1279664,pohlad olema,1,True,v,kellel
+218477,1297864,polemiseerima,1,True,v,millega
+218477,1297864,polemiseerima,1,True,v,mille üle
+218716,1298384,pommitama,1,True,v,millega
+211312,1279665,poogen olema,1,True,v,kellel
+211312,1279665,poogen olema,1,True,v,kellest/millest
+218802,1298625,pooldama,1,True,v,keda/mida*
+219146,1299451,poputama,1,True,v,keda/mida*
+219245,1299685,portreteerima,1,True,v,keda*
+219245,1299684,portreteerima,1,True,v,keda/mida*
+219284,1299768,poseerima,1,True,v,kellele/millele
+219284,1299768,poseerima,1,True,v,kelle/mille ees
+219472,1300220,praadima,1,True,v,mida*
+219484,1300259,praalima,1,True,v,millega
+219484,1300259,praalima,1,True,v,kelle ees
+219551,1300455,prahvama,1,True,v,mida tegema
+219552,1300458,prahvatama,1,True,,mida tegema
+219709,1300810,presenteerima,1,True,v,kellele
+219709,1300810,presenteerima,1,True,v,mida/keda*
+219775,1300984,pretendeerima,1,True,v,millele
+220185,1301989,proovima,1,True,v,mida*
+220185,1301990,proovima,1,True,v,mida*
+220185,1301991,proovima,1,True,v,keda/mida*
+220185,1301992,proovima,1,True,v,mida teha
+220185,1301992,proovima,1,True,v,keda/mida*
+220439,1302560,pruukima,1,True,v,mida teha
+220439,1302561,pruukima,1,True,,mida teha
+220516,1302769,prügi silma ajama,1,True,v,kellele
+220773,1303436,puhastama,1,True,v,millest
+220822,1303563,puhkama,1,True,v,kellest/millest
+220840,1303607,puhkema,1,True,,mida tegema
+220896,1303751,puhta nahaga pääsema,1,True,v,millest
+1172415,2214235,puid alla panema,1,True,v,kellele/millele
+1355000,2455014,puid alla viskama,1,True,,kellele/millele
+221086,1304204,pulbriks tegema,1,True,v,keda/mida
+221355,1304795,punase joonena läbima,1,True,v,mida*
+221361,1304804,punase niidina läbima,1,True,v,mida*
+221444,1305048,punkti panema,1,True,v,millele
+221502,1305190,puntras olema,1,True,v,millega
+221631,1305509,purskama,1,True,v,mida tegema
+221642,1305541,purtsatama,1,True,,mida tegema
+221670,1305621,puru silma ajama,1,True,v,kellele
+1271029,2354539,puskut tegema,1,True,v,millega
+274985,1430582,puudu jääma,1,True,v,millest
+221830,1306044,puuduma,1,True,v,kust
+221837,1306070,puudust tundma,1,True,v,kellest/millest
+221838,1306071,puudutama,1,True,v,keda/mida*
+221838,1306072,puudutama,1,True,v,keda/mida*
+221838,1306073,puudutama,1,True,v,mida*
+221838,1306074,puudutama,1,True,v,keda/mida*
+221838,1306075,puudutama,1,True,v,keda/mida*
+221838,1306076,puudutama,1,True,v,keda*
+221838,1306078,puudutama,1,True,v,mida*
+222095,1306633,puutuma,1,True,v,keda/mida*
+222095,1306635,puutuma,1,True,v,kellesse/millesse
+222095,1306636,puutuma,1,True,v,kellesse
+222095,1306636,puutuma,1,True,v,kuhu
+222095,1306637,puutuma,1,True,v,keda/mida*
+222095,1306638,puutuma,1,True,v,mida*
+222095,1306632,puutuma,1,True,v,mida*
+222158,1306778,põdema,1,True,v,mida*
+222189,1306855,põgenema,1,True,v,kust
+222189,1306855,põgenema,1,True,v,kelle/mille eest
+222189,1306856,põgenema,1,True,,mille eest
+222287,1307095,põhinema,1,True,v,millele
+222287,1307095,põhinema,1,True,v,millel
+222508,1307517,põhja vajutama,1,True,v,mida
+222517,1307535,põhjendama,1,True,v,mida*
+222517,1307535,põhjendama,1,True,v,millega
+222697,1307998,põletama,1,True,v,mida/keda
+222697,1307999,põletama,1,True,v,mida*
+222697,1308000,põletama,1,True,v,mida
+222697,1308004,põletama,1,True,v,mida
+222697,1308005,põletama,1,True,v,mida
+222697,1307996,põletama,1,True,v,mida
+222697,1308006,põletama,1,True,v,mida*
+222938,1308540,põlvi nõtkutama,1,True,v,kelle ees
+222951,1308571,põlvnema,1,True,v,kellest/millest
+222951,1308572,põlvnema,1,True,v,kellest
+222951,1308573,põlvnema,1,True,v,kust
+222951,1308574,põlvnema,1,True,v,millest
+223068,1308875,põrgu saatma,1,True,v,keda/mida
+223071,1308879,põrgusse saatma,1,True,v,keda/mida
+223078,1308887,põrgut tegema,1,True,v,kellele
+223092,1308937,põrkama,1,True,v,mille vastu
+223092,1308937,põrkama,1,True,v,kuhu
+223092,1308938,põrkama,1,True,v,millele
+223092,1308939,põrkama,1,True,,kuhu
+223092,1308940,põrkama,1,True,,kuhu
+223105,1308967,põrkuma,1,True,v,millega
+223105,1308969,põrkuma,1,True,,kuhu
+223113,1308993,põrmu tallama,1,True,v,keda/mida
+223142,1309062,põrutama,1,True,,keda
+223200,1309221,põõna panema,1,True,v,millele/kellele
+223366,1309617,pähe andma,1,True,v,kellele
+223371,1309630,pähe määrima,1,True,v,kellele
+223372,1309631,pähe panema,1,True,v,mida
+223372,1309631,pähe panema,1,True,v,kellele
+1254152,2333494,pähe tampima,1,True,v,kellele
+223567,1310044,päkka hoidma,1,True,v,kellele/millele
+223569,1310048,päkka peale panema,1,True,v,millele
+223571,1310051,päkki silma ajama,1,True,v,millele
+223572,1310053,päkki silma panema,1,True,v,millele
+223680,1310336,pärima,1,True,v,kellelt
+223680,1310336,pärima,1,True,v,mille
+223680,2034937,pärima,1,True,v,kellelt
+223680,2034937,pärima,1,True,v,kelle/mille kohta
+223698,1310378,pärinema,1,True,v,mis ajast
+223698,1310378,pärinema,1,True,v,kust
+223698,1310379,pärinema,1,True,v,kust
+223754,1310520,pärit olema,1,True,v,kust
+223754,1310519,pärit olema,1,True,v,kust
+223754,1310519,pärit olema,1,True,v,mis ajast
+1240642,2314412,pätti tegema,1,True,v,kellele
+223896,1310828,pääsema,1,True,v,millest
+223896,1310828,pääsema,1,True,v,kelle käest
+223896,1310829,pääsema,1,True,v,millest
+223896,1310830,pääsema,1,True,v,mida tegema
+223896,1310830,pääsema,1,True,v,kuhu
+223896,1310831,pääsema,1,True,,kuhu
+223896,1310832,pääsema,1,True,v,kust
+223896,1310833,pääsema,1,True,,kust
+223950,1310964,päästma,1,True,v,kust
+223950,1310964,päästma,1,True,v,kelle käest
+223950,1310964,päästma,1,True,v,millest
+223993,1311063,pöitama,1,True,v,mida
+224084,1311305,pöörduma,1,True,v,kuhu
+224084,1311310,pöörduma,1,True,v,mille juurde
+224084,1311310,pöörduma,1,True,v,mille poole
+224084,1311311,pöörduma,1,True,v,kuhu
+224084,1311311,pöörduma,1,True,v,kelle/mille poole
+224084,1311311,pöörduma,1,True,v,millega
+224215,1311687,pühendama,1,True,v,kellele/millele
+224215,1311688,pühendama,1,True,v,kellele/millele
+224215,1311689,pühendama,1,True,,millesse
+224230,1311743,pühkima,1,True,v,mida
+224230,1311743,pühkima,1,True,v,millega
+224230,1311744,pühkima,1,True,v,mida*
+224230,1311746,pühkima,1,True,v,mida
+224458,1312310,püsti panema,1,True,v,mida
+224458,1312311,püsti panema,1,True,v,mida
+224545,1312487,püüdlema,1,True,v,mille poole
+224545,1312487,püüdlema,1,True,v,kuhu
+224545,1312487,püüdlema,1,True,v,mida*
+224548,1312502,püüdma,1,True,v,mida
+224548,1312505,püüdma,1,True,v,mida teha
+224548,1312506,püüdma,1,True,v,keda/mida*
+224548,1312507,püüdma,1,True,v,keda*
+224787,1313068,raatsima,1,True,v,mida teha
+224846,1313270,radaril olema,1,True,v,kelle/mille
+224918,1313420,raevuma,1,True,v,mille peale
+225051,1313741,rahastama,1,True,v,mida*
+225122,1313925,rahuldama,1,True,v,keda
+225127,1313947,rahulduma,1,True,v,millega
+225129,1313956,rahule jätma,1,True,v,keda
+225129,1313957,rahule jätma,1,True,v,mida
+225130,1313959,rahule jääma,1,True,v,millega
+1174096,2217531,rahule sundima,1,True,v,keda
+274993,1430594,rahul olema,1,True,v,millega/kellega
+225168,1314075,rahustama,1,True,v,keda
+1376533,2490003,rahu tegema,1,True,v,kellega/millega
+225492,1314853,rajama,1,True,v,millele/kellele
+225496,1314874,rajanema,1,True,v,millel
+225496,1314874,rajanema,1,True,v,millele
+225832,1315672,raporteerima,1,True,v,millest
+226318,2530625,ravima,1,True,v,keda/mida*
+226318,1316920,ravima,1,True,v,mida*
+226402,1317089,reageerima,1,True,v,millega
+226402,1317089,reageerima,1,True,v,millele
+226402,1317089,reageerima,1,True,v,mille peale
+226402,1317090,reageerima,1,True,v,millega
+1236470,2309135,rebaseks lööma,1,True,v,keda
+226693,1317884,reguleerima,1,True,v,mida*
+226693,1317885,reguleerima,1,True,v,mida*
+226872,1318285,reklaamima,1,True,v,mida*
+227011,1318602,relvastuma,1,True,v,millega
+227043,1318668,remontima,1,True,v,mida
+227186,1319017,resoneerima,1,True,v,kellega/millega
+227188,1319021,resoneeruma,1,True,v,kellega/millega
+227510,1319826,riidlema,1,True,v,kellega
+227510,1319826,riidlema,1,True,v,mille pärast
+227510,1319827,riidlema,1,True,,mille pärast
+227511,1319834,riidu minema,1,True,v,kellega
+227511,1319834,riidu minema,1,True,v,mille pärast
+227773,1320529,rikkuma,1,True,v,mida
+227773,1320530,rikkuma,1,True,v,keda
+227773,1320531,rikkuma,1,True,v,mida*
+227796,1320611,rinda pistma,1,True,v,kellega/millega
+227842,1320731,ringi jooksma,1,True,v,kus
+227854,1320760,ringi käima,1,True,v,kellega/millega
+227907,1320861,ringi vaatama,1,True,v,kelle/mille järele
+227911,1320872,ringi vedama,1,True,v,keda/mida*
+227911,1320873,ringi vedama,1,True,v,mida*
+228114,1321411,riputama,1,True,v,kuhu
+228139,1321470,riskima,1,True,,mida teha
+228203,1321638,risti lööma,1,True,v,keda
+228169,1321550,risti,1,True,"adv,prep",mida
+228169,1321556,risti,1,True,prep,keda/mida
+228472,1322317,rohelist tuld näitama,1,True,v,millele/kellele
+228615,1322685,rolli etendama,1,True,v,milles
+228619,1322693,rolli mängima,1,True,v,milles
+228619,1322693,rolli mängima,1,True,v,kus
+228689,1322857,ronima,1,True,v,kuhu
+228766,1323076,roomama,1,True,v,kelle ees
+229166,1324106,ruttama,1,True,v,kuhu
+229261,1324338,rõhku panema,1,True,v,millele
+229288,1324389,rõhuma,1,True,v,millele
+229291,1324406,rõhutama,1,True,v,et
+229291,1324406,rõhutama,1,True,v,mida*
+229291,1324407,rõhutama,1,True,v,mida*
+229392,1324650,rõõmustama,1,True,v,keda
+229392,1324651,rõõmustama,1,True,v,kelle/mille üle
+229392,1324651,rõõmustama,1,True,v,mille üle
+229402,1324672,rõõnama,1,True,v,keda
+229649,1325289,rääkima,1,True,v,kellega
+229649,1325289,rääkima,1,True,v,et
+229649,1325291,rääkima,1,True,v,kellest/millest
+229649,1325294,rääkima,1,True,,millest
+229787,1325620,röövima,1,True,v,kellelt
+229873,1325829,ründama,1,True,v,keda/mida*
+229997,1326150,saabuma,1,True,v,kuhu
+230083,1326377,saama,1,True,v,kellelt / kust
+230083,1326383,saama,1,True,v,mida teha
+230083,1326384,saama,1,True,v,milliseks
+230083,1326384,saama,1,True,v,kelleks/milleks
+230083,1326384,saama,1,True,v,milleks/kelleks
+230083,1326393,saama,1,True,v,mida tegema
+230206,1326711,saatma,1,True,v,mida tegema
+230265,1326869,sabast kinni saama,1,True,v,kellel/millel
+230449,1327321,sahkerdama,1,True,v,kellega
+230633,1327733,saladuskatet kergitama,1,True,v,millelt
+230636,1327740,saladust tegema,1,True,v,millest
+230793,1328126,sallima,1,True,v,keda/mida*
+230917,1328443,samastama,1,True,v,kellega/millega
+230917,1328443,samastama,1,True,v,keda/mida
+230918,1328447,samastuma,1,True,v,kellega/millega
+231027,1328708,sammu pidama,1,True,v,kellega/millega
+231130,2367442,sanktsioneerima,1,True,v,keda/mida*
+231264,1329237,sarnanema,1,True,v,millelt
+231264,1329237,sarnanema,1,True,v,kellega/millega
+231264,1329237,sarnanema,1,True,v,kellele/millele
+231264,1329237,sarnanema,1,True,v,mille poolest
+231267,1329245,sarnastama,1,True,v,keda/mida
+231267,1329245,sarnastama,1,True,v,kellega/millega
+231269,1329249,sarnastuma,1,True,v,kellega/millega
+231271,1329255,sarnlema,1,True,v,millele
+231271,1329255,sarnlema,1,True,v,millega
+231302,1329338,sarvist haarama,1,True,v,millel
+231303,1329339,sarvi tegema,1,True,v,kellele
+231371,1329506,sattuma,1,True,v,mida tegema
+231371,1329506,sattuma,1,True,v,kuhu
+231371,1329507,sattuma,1,True,v,mille alla
+231422,1329619,saunatama,1,True,v,keda*
+211316,1279671,savi olema,1,True,v,kellest/millest
+211316,1279671,savi olema,1,True,v,kellel
+231704,1330308,seebiks keetma,1,True,v,keda
+231853,1330664,seenele saatma,1,True,v,keda/mida
+231980,1330988,segama,1,True,v,keda
+231980,1330988,segama,1,True,v,millega
+231980,1330988,segama,1,True,v,keda/mida*
+231980,1330989,segama,1,True,v,millesse
+231980,1330993,segama,1,True,v,mida
+231980,1330996,segama,1,True,,kellega/millega
+231986,1331038,segamini ajama,1,True,v,kellega/millega
+231986,1331038,segamini ajama,1,True,v,keda/mida
+231986,1331039,segamini ajama,1,True,v,mida*
+232049,1331213,segunema,1,True,v,millega
+232049,1331214,segunema,1,True,v,millega
+232121,1331399,seina äärde panema,1,True,v,keda
+232127,1331407,seirama,1,True,v,keda/mida*
+232127,1331409,seirama,1,True,v,keda/mida*
+232127,1331410,seirama,1,True,v,keda/mida*
+232127,1331408,seirama,1,True,v,mida*
+232145,1331480,seisma,1,True,v,kelle/mille eest
+232145,1331481,seisma,1,True,v,milles
+232158,1331522,seisnema,1,True,v,milles
+232229,1331720,sekkuma,1,True,v,millesse
+232229,1331721,sekkuma,1,True,,millesse
+232253,1331782,seksima,1,True,v,kellega
+232333,1331964,sekundeerima,1,True,v,keda
+232333,1331966,sekundeerima,1,True,v,kellele
+232365,1332039,seletama,1,True,v,kellele
+232365,1332039,seletama,1,True,v,mida*
+232365,1332040,seletama,1,True,v,mida*
+232368,1332063,seletuma,1,True,v,millega
+232380,1332102,selga prügiseks tegema,1,True,v,kellel
+232381,1332104,selga pöörama,1,True,v,kellele/millele
+232377,1332095,selga,1,True,postp,kelle/mille
+232405,1332208,selgitama,1,True,v,kellele
+1376091,2489337,selgust saama,1,True,v,kelle/mille kohta
+1376091,2489337,selgust saama,1,True,v,kelle/mille suhtes
+1376091,2489337,selgust saama,1,True,v,kelles/milles
+1376091,2489337,selgust saama,1,True,v,mille osas
+1376091,2489337,selgust saama,1,True,v,millesse
+278134,1433896,selgust tooma,1,True,v,millesse
+278134,1433896,selgust tooma,1,True,v,mille kohta
+232469,1332392,seljasauna andma,1,True,v,kellele
+232470,2337055,seljas elama,1,True,v,kelle
+232470,2337055,seljas elama,1,True,v,kellel
+232470,1332393,seljas elama,1,True,v,kelle
+232470,1332393,seljas elama,1,True,v,kellel
+232470,1332394,seljas elama,1,True,v,kellel
+232470,1332394,seljas elama,1,True,v,kelle
+232472,1332400,seljas liugu laskma,1,True,v,kelle
+232468,1332390,seljas,1,True,postp,kelle/mille
+232474,1332403,seljast,1,True,postp,kelle/mille
+232539,1332594,seltsima,1,True,v,kellega
+232539,1332595,seltsima,1,True,v,kellega/millega
+232692,1332971,seondama,1,True,v,millega
+232693,1332972,seonduma,1,True,v,millega/kellega
+232699,1332999,seostama,1,True,v,kellega/millega
+232699,1332999,seostama,1,True,v,keda/mida
+232701,1333006,seostuma,1,True,v,millega
+233056,1333840,siduma,1,True,v,mida
+233056,1333841,siduma,1,True,v,mida
+233056,1333839,siduma,1,True,,mida
+233056,1333842,siduma,1,True,v,mida
+233056,1333843,siduma,1,True,v,kellega/millega
+233056,1333843,siduma,1,True,v,mida
+233056,1333844,siduma,1,True,,mida
+233056,1333845,siduma,1,True,v,mida
+233056,1333846,siduma,1,True,,mida
+233056,1333847,siduma,1,True,v,mida
+233077,2457002,sidustama,1,True,v,keda/mida
+233099,1333957,siga mängima,1,True,,kellele
+233258,2247316,siiber olema,1,True,v,kellel
+233258,2247316,siiber olema,1,True,v,millest/kellest
+233296,1334480,siidkinnastes kohtlema,1,True,v,keda/mida*
+233405,1334734,siirma,1,True,v,kellele
+233405,1334734,siirma,1,True,v,kuhu
+233448,1334871,sikku tegema,1,True,v,kellele
+233482,1334954,silditama,1,True,v,keda
+233569,1335138,sillas olema,1,True,v,millest
+233596,1335239,silmadega sööma,1,True,v,keda/mida*
+233597,1335240,silmadega õgima,1,True,v,keda/mida*
+233613,1335259,silma heitma,1,True,v,kellele
+233661,1335383,silma paistma,1,True,v,millega
+233663,1335392,silma peale viskama,1,True,v,millele
+233663,1335392,silma peale viskama,1,True,v,millele/kellele
+233664,1335393,silma peal hoidma,1,True,v,kellel/millel
+233665,1335394,silma peal pidama,1,True,v,kellel/millel
+233694,1335463,silmas pidama,1,True,v,keda/mida*
+233694,1335464,silmas pidama,1,True,v,keda/mida*
+233700,1335475,silma tegema,1,True,v,kellele
+233700,1335476,silma tegema,1,True,v,kellele
+233704,1335488,silma torkama,1,True,v,millega
+1327993,2417004,silma viskama,1,True,v,kellele
+233723,1335529,silmi avama,1,True,,kelle
+233724,1335531,silmi ette andma,1,True,v,millele/kellele
+233724,1335531,silmi ette andma,1,True,v,mis/kes
+233725,1335532,silmi ette tegema,1,True,v,mis/kes
+233725,1335532,silmi ette tegema,1,True,v,millele/kellele
+233740,1335556,silmi peast sööma,1,True,v,kellel
+233744,1335566,silmist laskma,1,True,v,keda
+233744,1335567,silmist laskma,1,True,v,mida
+233747,1335570,silmi tegema,1,True,v,kellele
+233797,1335683,silti külge kleepima,1,True,v,kellele/millele
+233827,2362987,simuleerima,1,True,v,keda/mida*
+233827,1335765,simuleerima,1,True,v,mida
+233842,1335804,sina peal olema,1,True,v,kellega
+233842,1335805,sina peal olema,1,True,v,millega
+234233,1336778,sisendama,1,True,v,kellele
+234233,1336778,sisendama,1,True,v,mida
+234233,1336779,sisendama,1,True,v,mida
+234242,1336800,sisenema,1,True,v,kuhu
+234279,1336877,sisestama,1,True,v,kuhu
+234343,1337043,sisse hõõruma,1,True,v,mida
+234343,1337043,sisse hõõruma,1,True,v,millega
+234344,1337044,sisse häkkima,1,True,v,millele
+234344,1337044,sisse häkkima,1,True,v,millesse
+234345,1337045,sisse hääletama,1,True,v,millest
+234346,1337047,sisse hüppama,1,True,v,millesse
+234346,1337047,sisse hüppama,1,True,v,kuhu
+234346,1337046,sisse hüppama,1,True,v,kuhu
+234346,1337046,sisse hüppama,1,True,v,millesse
+234350,1337053,sisse jootma,1,True,v,mida
+234350,1337053,sisse jootma,1,True,v,kellele
+234358,1337078,sisse kandma,1,True,v,millesse
+234366,1337108,sisse kukkuma,1,True,v,millega
+234366,1337107,sisse kukkuma,1,True,v,millega
+234396,2531635,sisse minema,1,True,v,kellele
+234398,1337214,sisse murdma,1,True,v,kuhu
+234404,1337229,sisse määrima,1,True,v,millega
+234434,1337307,sisse rändama,1,True,v,kuhu
+234434,1337307,sisse rändama,1,True,v,kust
+234438,1337319,sisse saama,1,True,v,kuhu
+234438,2194922,sisse saama,1,True,v,kuhu
+234438,1337320,sisse saama,1,True,v,millega
+234453,1337380,sisse sõitma,1,True,v,millele
+234453,1337381,sisse sõitma,1,True,v,mida
+234453,1337382,sisse sõitma,1,True,v,kuhu
+234453,1337383,sisse sõitma,1,True,v,kellele
+234481,1337498,sisse valama,1,True,v,kellele
+234498,1337558,sisse võetud olema,1,True,v,kellest/millest
+234582,1337776,sitta keerama,1,True,v,kellele
+234583,1337777,sitta kokku keerama,1,True,v,kellele
+234867,1338382,sobima,1,True,v,kellele/millele
+234867,1338382,sobima,1,True,v,kelleks/milleks
+234867,1338383,sobima,1,True,v,mida teha
+234867,1338381,sobima,1,True,v,kellega/millega
+234867,1338384,sobima,1,True,v,kuhu
+234867,1338384,sobima,1,True,v,kellele
+234867,1338384,sobima,1,True,v,kellele/millele
+234867,1338384,sobima,1,True,v,millega
+234871,1338406,sobitama,1,True,v,mida
+234871,1338406,sobitama,1,True,v,millega
+234871,1338407,sobitama,1,True,v,mida
+234871,1338408,sobitama,1,True,v,mida
+234871,1338409,sobitama,1,True,v,keda
+234901,1338511,soetama,1,True,v,kellele
+235002,1338763,solgutama,1,True,v,mida*
+235002,1338764,solgutama,1,True,v,keda*
+235040,1338854,solvama,1,True,v,millega
+235040,1338854,solvama,1,True,v,keda*
+235048,1338874,solvuma,1,True,v,kelle/mille peale
+235152,1339118,soodustama,1,True,v,mida*
+235167,1339151,sooja kohta saatma,1,True,v,keda
+235195,1339207,soojendama,1,True,v,keda/mida
+235195,1339210,soojendama,1,True,v,keda*
+235501,1339907,soont olema,1,True,v,kellel
+235501,1339907,soont olema,1,True,v,mille peale
+235538,1339985,soosima,1,True,v,keda/mida*
+235543,1340000,soostuma,1,True,v,mida tegema
+235580,1340087,soovima,1,True,v,mida*
+235580,1340087,soovima,1,True,v,mida teha
+235580,1340088,soovima,1,True,v,kellele + mida*
+235585,1340103,soovitama,1,True,v,mida*
+235585,1340103,soovitama,1,True,v,kellel + mida teha
+235585,1340104,soovitama,1,True,,keda*
+235669,1340337,sorima,1,True,v,kus
+235669,1340338,sorima,1,True,v,milles
+235669,1340339,sorima,1,True,v,milles
+235676,1340371,sorkima,1,True,v,milles
+235676,1340371,sorkima,1,True,v,millega
+235676,1340370,sorkima,1,True,v,milles
+235871,1340803,spekuleerima,1,True,v,mille üle
+235871,1340804,spekuleerima,1,True,v,millega
+235895,1340862,spetsialiseeruma,1,True,v,millele
+236674,1342600,sugereerima,1,True,v,kellele
+236674,1342600,sugereerima,1,True,v,mida*
+236776,1342842,suhestama,1,True,v,keda/mida*
+236776,1342842,suhestama,1,True,v,kellega/millega
+236777,1342844,suhestuma,1,True,v,millega
+236863,1343040,suhtlema,1,True,v,kellega
+236890,1343090,suhtuma,1,True,v,kellesse/millesse
+236890,1343091,suhtuma,1,True,v,millesse
+237106,1343591,sulanema,1,True,v,kellega/millega
+237352,1344230,sundima,1,True,v,keda + mida tegema
+237578,1344724,surkima,1,True,v,millega
+237578,1344724,surkima,1,True,v,milles
+237578,1344723,surkima,1,True,v,milles
+1441625,2573395,surmakella lööma,1,True,v,kellele/millele
+237699,1345002,surnuks rääkima,1,True,v,keda
+237832,1345359,suud andma,1,True,v,kellele/millele
+237836,1345365,suud kinni toppima,1,True,v,kellel
+237839,1345369,suudlema,1,True,v,keda/mida*
+237899,1345503,suunama,1,True,v,kuhu
+237899,1345504,suunama,1,True,,kuhu
+237899,1345505,suunama,1,True,v,kuhu
+237899,1345506,suunama,1,True,,kellele
+237917,1345568,suunduma,1,True,v,kuhu
+237917,1345568,suunduma,1,True,v,mille poole
+237917,1345566,suunduma,1,True,,kuhu
+237917,1345567,suunduma,1,True,,kuhu
+237922,1345591,suunitlema,1,True,v,kellele/millele
+237961,1345730,suureks puhuma,1,True,v,mida
+238270,1346375,suu sisse valetama,1,True,v,kellele
+238286,1346410,suutma,1,True,v,mida teha
+238286,1346411,suutma,1,True,v,mida teha
+238302,1346458,suvatsema,1,True,v,mida teha
+238302,1346459,suvatsema,1,True,,mida teha
+238461,1346837,sõbrustama,1,True,v,kellega
+238461,1346838,sõbrustama,1,True,v,millega
+238462,1346843,sõbrutsema,1,True,v,kellega
+238462,1346844,sõbrutsema,1,True,,millega
+238465,1346857,sõdima,1,True,v,kellega
+238465,1346857,sõdima,1,True,v,kelle vastu
+238465,1346858,sõdima,1,True,v,millega
+238465,1346858,sõdima,1,True,v,mille vastu
+238562,1347098,sõidutama,1,True,v,millega
+238562,1347098,sõidutama,1,True,v,kuhu
+238581,2489875,sõimama,1,True,v,kelleks
+238601,1347222,sõitlema,1,True,v,keda*
+238602,1347229,sõitma,1,True,v,kuhu
+238602,1347229,sõitma,1,True,v,millega
+238603,1347246,sõitu sisse tegema,1,True,v,kellele
+238827,1347773,sõltuma,1,True,v,kellest/millest
+238827,1347774,sõltuma,1,True,v,kellest
+238979,1348148,sõnelema,1,True,v,kellega
+239007,1348221,sõnu peale lugema,1,True,v,kellele
+239008,1348225,sõnu suhu panema,1,True,v,kellele
+239009,1348227,sõnu suust võtma,1,True,v,kellel
+239009,1348228,sõnu suust võtma,1,True,v,kellel
+239010,1348229,sõnu tangidega välja kiskuma,1,True,v,kellelt
+239051,1348325,sõrgu vastu ajama,1,True,v,millele
+239058,1348341,sõrmedele vaatama,1,True,v,kelle
+1376280,2489626,sõrme peale panema,1,True,v,millele
+239312,1349036,särisema,1,True,v,millest
+239338,1349103,säru tegema,1,True,v,kellele
+239338,2358933,säru tegema,1,True,v,millele
+239425,1349323,söandama,1,True,v,mida teha
+239647,1349893,südamele hakkama,1,True,v,mis
+239647,1349893,südamele hakkama,1,True,v,kellele
+239648,1349894,südamele koputama,1,True,v,kelle
+239649,1349895,südamele panema,1,True,v,kellele
+239649,1349895,südamele panema,1,True,v,mida*
+239688,1349972,südamesse minema,1,True,v,kellele
+239689,1349973,südamesse võtma,1,True,v,mida*
+239703,1350005,südametunnistusele koputama,1,True,v,kelle
+239728,1350065,südant puistama,1,True,v,kellele
+239732,1350071,südant valutama,1,True,v,kelle/mille pärast
+239735,1350074,südant võitma,1,True,v,kelle
+239756,1350115,sügama,1,True,v,mida*
+239794,1350257,sügelema,1,True,v,kellel
+239891,1350476,sülgama,1,True,v,mille peale
+239895,1350494,sülitama,1,True,v,millele
+239895,1350494,sülitama,1,True,v,mille peale
+239958,1350650,sümpatiseerima,1,True,v,kellele
+239958,1827539,sümpatiseerima,1,True,v,keda/mida*
+240016,1350814,sünkima,1,True,v,millega
+240031,1350846,sünkroniseerima,1,True,v,millega
+240032,1350850,sünkroniseeruma,1,True,v,millega
+240039,1350864,sünkroonima,1,True,v,millega
+240243,1351330,süttima,1,True,v,millest
+240243,1351329,süttima,1,True,,millest
+240295,1351449,süvenema,1,True,v,millesse
+240313,1351500,süübima,1,True,v,millesse
+240325,1351547,süüdistama,1,True,v,et
+240325,1351547,süüdistama,1,True,v,milles
+240325,1351547,süüdistama,1,True,v,keda*
+240325,1351546,süüdistama,1,True,v,milles
+240325,1351546,süüdistama,1,True,v,keda*
+240347,1351605,süüks panema,1,True,v,mida
+240347,1351605,süüks panema,1,True,v,kellele
+240363,1351633,süüstama,1,True,v,keda*
+240397,1351732,süüvima,1,True,v,kellesse/millesse
+240706,1352408,žongleerima,1,True,v,millega
+240706,1352406,žongleerima,1,True,v,millega
+240738,1352484,taandama,1,True,v,mida
+240738,1352485,taandama,1,True,v,mida
+240738,1352486,taandama,1,True,v,kust
+240738,1352486,taandama,1,True,v,keda
+240738,1352488,taandama,1,True,v,mida
+240738,1352489,taandama,1,True,v,mida
+240833,1352732,tabama,1,True,v,millega
+240833,1352732,tabama,1,True,v,keda/mida*
+240833,1352733,tabama,1,True,v,millelt
+240833,1352733,tabama,1,True,v,keda/mida
+240833,1352734,tabama,1,True,v,mida
+240833,1352735,tabama,1,True,v,mida
+240973,1353086,taga ajama,1,True,v,keda/mida*
+240973,1353087,taga ajama,1,True,v,keda*
+240973,1353089,taga ajama,1,True,v,mida*
+240973,1353090,taga ajama,1,True,v,keda/mida*
+240973,1353091,taga ajama,1,True,v,keda*
+240999,1353159,taga kiruma,1,True,v,keda/mida*
+241025,1353217,tagama,1,True,v,mida
+241036,1353274,tagant innustama,1,True,v,mida tegema
+241036,1353274,tagant innustama,1,True,v,keda*
+241050,1353298,tagant lükkama,1,True,v,mida*
+241050,1353299,tagant lükkama,1,True,v,keda*
+241050,1353300,tagant lükkama,1,True,v,keda/mida*
+241059,1353324,tagant tõukama,1,True,v,mida*
+241059,1353325,tagant tõukama,1,True,v,keda*
+241059,1353326,tagant tõukama,1,True,v,keda/mida*
+241071,1353360,taga otsima,1,True,v,keda/mida*
+241089,1353407,taga rääkima,1,True,v,keda*
+241111,1353482,tagasi jõudma,1,True,v,kuhu
+241113,1353486,tagasi kohkuma,1,True,v,millest
+241137,1353561,tagasi mõtlema,1,True,v,millele
+241139,1353564,tagasi müüma,1,True,v,kellele
+241216,1353752,tagastama,1,True,v,kellele
+241257,1353845,taga õhkama,1,True,v,mida/keda*
+241294,1353969,taha keerama,1,True,v,kellele
+241296,1353971,taha panema,1,True,v,kellele
+241370,1354175,tahtma,1,True,v,mida/keda*
+241370,1354175,tahtma,1,True,v,kuhu
+241370,1354175,tahtma,1,True,v,mida teha
+241370,1354176,tahtma,1,True,v,keda*
+241370,1354177,tahtma,1,True,v,mida teha
+241370,1354178,tahtma,1,True,v,mida teha
+241370,1354179,tahtma,1,True,v,mida teha
+241370,1354180,tahtma,1,True,v,mida teha
+241531,1354568,taipama,1,True,,mida teha
+241543,1354598,tajuma,1,True,v,et
+241543,1354598,tajuma,1,True,v,mida*
+241556,1354634,takistama,1,True,v,keda/mida*
+241556,1354634,takistama,1,True,v,kellel + mida teha
+241556,1354634,takistama,1,True,v,mida tegemast
+241580,1354703,takka kiitma,1,True,v,kellele/millele
+241720,1355036,talitama,1,True,,kellega/millega
+241728,1355064,talitsema,1,True,v,keda/mida*
+241784,1355233,talluma,1,True,v,millel
+241797,1355272,taltsutama,1,True,v,keda
+241797,1355271,taltsutama,1,True,v,keda/mida
+241807,1355302,taluma,1,True,v,mida*
+241807,1355303,taluma,1,True,,mida*
+241807,1355304,taluma,1,True,,keda/mida*
+242031,1355866,tankiga üle sõitma,1,True,v,kellest/millest
+242153,1356141,taotlema,1,True,v,kust/kellelt
+242153,1356141,taotlema,1,True,v,mida*
+242153,1356141,taotlema,1,True,v,mida teha
+242215,1356324,tappa andma,1,True,v,kellele
+242330,1356591,tarima,1,True,v,keda/mida
+242330,1356592,tarima,1,True,v,keda/mida
+242330,1356593,tarima,1,True,v,keda/mida
+242375,1356699,tarnima,1,True,v,mida
+242375,1356699,tarnima,1,True,v,kellele
+242419,1356826,tarvitsema,1,True,v,mida teha
+242419,1356827,tarvitsema,1,True,,mida teha
+242532,1357146,tassima,1,True,v,keda/mida
+242532,1357147,tassima,1,True,,keda/mida
+242538,1357173,tasuma,1,True,v,mille eest
+242538,1357173,tasuma,1,True,v,kellele
+242538,1357174,tasuma,1,True,v,mida
+242538,1357175,tasuma,1,True,v,kellele
+242538,1357176,tasuma,1,True,v,mida teha
+242538,1357177,tasuma,1,True,,mida teha
+242538,1357178,tasuma,1,True,,mida*
+242543,1357187,tasustama,1,True,v,keda/mida
+242535,1357157,tasu,1,True,s,mille eest
+1259581,2341345,tatti panema,1,True,v,kellega
+242649,1357447,tavatsema,1,True,v,mida teha
+242690,1357525,teada andma,1,True,v,millest
+242696,1357543,teada saama,1,True,v,millest/mille kohta
+242713,1357608,teadma,1,True,v,kellest/millest
+242713,1357608,teadma,1,True,v,mida*
+242713,1357610,teadma,1,True,v,keda/mida*
+242713,1357611,teadma,1,True,v,mida*
+242822,1357871,teadvustama,1,True,v,mida*
+242825,1357879,teatama,1,True,v,et
+242825,1357879,teatama,1,True,v,kellele
+242825,1357879,teatama,1,True,v,millest
+242919,1358088,teavitama,1,True,v,keda + millest
+242952,1358183,teed sillutama,1,True,v,kellele/millele
+242953,1358184,teed tasandama,1,True,v,kellele/millele
+243056,2313028,teenindama,1,True,v,keda/mida*
+243056,1358460,teenindama,1,True,,mida*
+243138,1358644,teerulliga üle sõitma,1,True,v,kellest/millest
+243152,1358670,teesklema,1,True,v,et
+243152,1358670,teesklema,1,True,v,keda/mida*
+243191,1358764,tegelema,1,True,v,millega
+243191,1358765,tegelema,1,True,v,kellega
+211320,1279675,tegemist olema,1,True,v,millega/kellega
+1170696,2210585,tegemist tegema,1,True,v,kellega
+1170696,2210599,tegemist tegema,1,True,v,millega
+211321,1279676,tegu olema,1,True,v,millega/kellega
+243275,1359043,tegutsema,1,True,v,kellena
+243446,1359427,teise ilma saatma,1,True,v,keda
+243828,1360337,tellima,1,True,v,kellelt
+244049,1360882,teotama,1,True,v,keda/mida*
+244049,1360883,teotama,1,True,v,keda*
+244193,1361250,teretama,1,True,v,keda*
+244356,1361621,terve nahaga pääsema,1,True,v,millest
+244448,1361816,tervitama,1,True,v,keda*
+244448,1361817,tervitama,1,True,v,keda*
+244448,1361818,tervitama,1,True,v,mida*
+244448,1361819,tervitama,1,True,v,keda*
+244578,1362175,tihkama,1,True,v,mida teha
+244603,1362259,tiiba ripsutama,1,True,v,kellega
+244625,1362298,tiibu kärpima,1,True,v,kellel
+244625,1362298,tiibu kärpima,1,True,v,kelle
+244677,1362424,tiirlema,1,True,v,kelle ümber
+244680,1362438,tiirutama,1,True,v,kelle ümber
+244702,1362498,tiivad andma,1,True,,mis/kes
+244702,1362498,tiivad andma,1,True,,kellele
+244759,1362627,tikkuma,1,True,v,mida tegema
+244759,1362627,tikkuma,1,True,v,kuhu
+244759,1362628,tikkuma,1,True,v,mida tegema
+244776,1362673,tikutulega otsima,1,True,v,keda/mida*
+244777,1362674,tikutulega taga otsima,1,True,v,keda/mida*
+482791,1779864,tilgendama,1,True,v,millest
+244958,1363146,tipnema,1,True,v,millega
+245168,1363628,toestama,1,True,v,mida
+245168,1363628,toestama,1,True,v,millega
+245174,1363649,toetama,1,True,v,keda/mida*
+245174,1363653,toetama,1,True,v,keda*
+245174,1363654,toetama,1,True,v,vastu mida / mille vastu
+245174,1363654,toetama,1,True,v,keda/mida*
+245174,1363654,toetama,1,True,v,millele
+245174,1363652,toetama,1,True,,millele
+245177,1363671,toetuma,1,True,v,mille vastu
+245177,1363671,toetuma,1,True,v,millele
+245177,1363672,toetuma,1,True,,millele
+245177,1363673,toetuma,1,True,v,kellele
+245177,1363674,toetuma,1,True,v,millele
+245218,1363803,tohtima,1,True,v,mida teha
+245218,1363804,tohtima,1,True,v,mida teha
+245312,1364048,toime saama,1,True,v,millega/kellega
+245314,1364053,toimetama,1,True,v,kuhu
+245324,1364090,toime tulema,1,True,v,millega/kellega
+245324,1364091,toime tulema,1,True,v,millega
+245324,1364091,toime tulema,1,True,v,milleta
+245334,1364116,toimima,1,True,v,kuidas
+245385,1364265,toituma,1,True,v,millest
+245438,1364401,tolereerima,1,True,v,keda/mida*
+245520,1364601,tolmu koguma,1,True,v,mis
+245520,1364602,tolmu koguma,1,True,v,mis
+245599,1364787,tonksama,1,True,v,millega
+245599,1364787,tonksama,1,True,v,kuhu
+245599,1364787,tonksama,1,True,v,keda/mida*
+245647,1364913,tooma,1,True,v,keda/mida
+245647,1364913,tooma,1,True,v,kust + kuhu
+245647,1364913,tooma,1,True,v,kust
+245647,1364913,tooma,1,True,v,kuhu + millega
+245647,1364914,tooma,1,True,v,mida
+245647,1364915,tooma,1,True,v,mida
+245647,1364916,tooma,1,True,v,mida
+245647,1364917,tooma,1,True,v,keda
+245647,1364918,tooma,1,True,v,keda/mida
+245647,1364919,tooma,1,True,,mida
+245647,1364920,tooma,1,True,v,mida
+245647,1364921,tooma,1,True,,keda
+245954,1365653,torkama,1,True,v,millega
+245967,1365712,tormama,1,True,v,kuhu
+245967,1365714,tormama,1,True,v,kuhu
+245967,1365716,tormama,1,True,v,mida tegema
+245976,1365749,tormi jooksma,1,True,v,millele/kellele
+245976,1365750,tormi jooksma,1,True,v,kellele/millele
+246188,1366250,traati tõmbama,1,True,v,kellele
+246243,1366397,trahvima,1,True,v,mille eest
+246243,1366397,trahvima,1,True,v,keda*
+246460,2531150,treenima,1,True,v,mida*
+246460,1366891,treenima,1,True,v,keda*
+246494,1366966,trehvama,1,True,v,keda*
+246494,1366966,trehvama,1,True,v,kellega
+246494,1366967,trehvama,1,True,v,kuhu
+246494,1366968,trehvama,1,True,v,mida*
+246494,1366968,trehvama,1,True,v,millesse
+285311,1441073,troonilt tõukama,1,True,v,keda
+246895,1367925,truudust murdma,1,True,v,kellele/millele
+246916,1367969,trügima,1,True,v,kuhu
+246990,1368150,trünnima,1,True,v,keda*
+247177,1368558,tsiteerima,1,True,v,keda/mida*
+247527,1369352,tuginema,1,True,v,millel
+247527,1369352,tuginema,1,True,v,millele
+247650,1369690,tuhnima,1,True,v,kus
+247650,1369691,tuhnima,1,True,v,milles
+247650,1369692,tuhnima,1,True,v,milles
+247650,1369692,tuhnima,1,True,v,в чём
+247732,1369974,tuld avama,1,True,v,kelle pihta
+247737,1369979,tuld otsa panema,1,True,v,millele
+1340348,2433148,tuld otsa pistma,1,True,,millele
+247739,1369984,tuld räästasse panema,1,True,v,millele
+247742,1369988,tuld võtma,1,True,v,millest
+247802,1370137,tulema,1,True,v,kust
+247802,1370137,tulema,1,True,v,mida tegema
+247802,1370137,tulema,1,True,v,millega
+247802,1370137,tulema,1,True,v,mida tegemast
+247802,1370137,tulema,1,True,v,kuhu
+247802,1370151,tulema,1,True,v,kellel
+247803,1370179,tulema,2,True,v,kellel + mida teha
+247824,1370229,tulenema,1,True,v,kellele
+247824,1370229,tulenema,1,True,v,millest
+247979,1370628,tulistama,1,True,v,kelle/mille pihta
+247979,1370628,tulistama,1,True,v,keda/mida
+248150,1371100,tundma,1,True,v,mida*
+248150,1371102,tundma,1,True,,kuidas
+248150,1371102,tundma,1,True,,mida*
+248150,1371102,tundma,1,True,,millisena
+248150,1371103,tundma,1,True,v,mida*
+248150,1371105,tundma,1,True,v,mida*
+248150,1371106,tundma,1,True,v,mida*
+248150,1371109,tundma,1,True,v,keda*
+248150,1371110,tundma,1,True,v,keda*
+248150,1371111,tundma,1,True,v,mida*
+248155,1371146,tundma õppima,1,True,v,keda/mida*
+248167,1371175,tunduma,1,True,v,mida tegevat
+248167,1371175,tunduma,1,True,v,milline + millisena
+248167,1371175,tunduma,1,True,v,et
+248181,1371223,tungima,1,True,v,kuhu
+248181,1371224,tungima,1,True,v,kuhu
+248181,1371225,tungima,1,True,v,kuhu
+248181,1371226,tungima,1,True,v,kuhu
+248199,1371287,tunnetama,1,True,v,et
+248199,1371287,tunnetama,1,True,v,keda/mida*
+248243,1371391,tunnistama,1,True,v,et
+248243,1371391,tunnistama,1,True,v,mida*
+248243,1371392,tunnistama,1,True,v,mida*
+248243,1371393,tunnistama,1,True,v,kelle/mille vastu
+248243,1371393,tunnistama,1,True,v,mida*
+248243,1371394,tunnistama,1,True,v,milliseks
+248243,1371395,tunnistama,1,True,v,mida*
+248243,1371396,tunnistama,1,True,adj,mida*
+248243,1371398,tunnistama,1,True,v,keda/mida*
+248245,1371423,tunnistust andma,1,True,v,millest
+248267,1371480,tunnustama,1,True,v,millega
+248404,1371820,turja kargama,1,True,v,kellele
+248411,1371835,turjal liugu laskma,1,True,v,kelle
+248629,1372369,tutvuma,1,True,v,kellega
+248629,1372370,tutvuma,1,True,v,millega
+248639,1372397,tutvustama,1,True,v,keda*
+248639,1372397,tutvustama,1,True,v,kellele
+248639,1372398,tutvustama,1,True,,kellele
+248639,1372398,tutvustama,1,True,,mida*
+248791,1372747,tuult alla tegema,1,True,v,millele/kellele
+248869,1372923,tuupi andma,1,True,v,kellele
+248871,1372931,tuupi saama,1,True,v,kelle käest
+248871,1372931,tuupi saama,1,True,v,kellelt
+248872,1372933,tuupi tegema,1,True,v,kellele
+248905,1373040,tuvastama,1,True,v,et
+248933,1373114,tõdema,1,True,v,et
+248978,1373250,tõestama,1,True,v,et
+249052,1373463,tõlkima,1,True,v,mis keelest + mis keelde
+249065,1373504,tõmbama,1,True,v,millega
+249065,1373507,tõmbama,1,True,,kuhu
+249065,1373507,tõmbama,1,True,,millesse
+249065,1373514,tõmbama,1,True,v,mida teha
+249114,1373727,tõrelema,1,True,v,kellega
+249114,1373727,tõrelema,1,True,v,mille pärast
+249128,1373774,tõrjuma,1,True,v,keda/mida
+249128,1373775,tõrjuma,1,True,v,keda/mida
+249128,1373776,tõrjuma,1,True,v,mida
+249128,1373777,tõrjuma,1,True,v,keda/mida
+249128,1373778,tõrjuma,1,True,v,keda*
+249131,1373796,tõrkuma,1,True,v,mida tegemast
+249145,1373836,tõrvama,1,True,v,mida
+249145,1373837,tõrvama,1,True,v,keda/mida*
+249205,1374023,tõstma,1,True,v,keda/mida
+249205,1374027,tõstma,1,True,v,mida*
+249205,1374028,tõstma,1,True,v,mida*
+249205,1374029,tõstma,1,True,v,keda/mida
+249205,1374030,tõstma,1,True,v,mida*
+249205,1374031,tõstma,1,True,v,mida*
+249205,1374032,tõstma,1,True,v,mida*
+249218,1374083,tõtt vaatama,1,True,v,kellega/millega
+249219,1374084,tõtt vahtima,1,True,v,kellega/millega
+249351,1374443,tähele panema,1,True,v,et
+249351,1374443,tähele panema,1,True,v,keda/mida*
+249356,1374462,tähelepanu juhtima,1,True,v,millele
+249357,1374464,tähelepanu pöörama,1,True,v,millele/kellele
+249367,1374487,tähendama,1,True,v,mida*
+249367,1374487,tähendama,1,True,v,et
+249367,1374488,tähendama,1,True,v,mida*
+249367,1374490,tähendama,1,True,v,mida*
+249367,1374491,tähendama,1,True,v,mida*
+249412,1374630,tähistama,1,True,v,mida*
+249412,1374629,tähistama,1,True,v,mida*
+249412,1374631,tähistama,1,True,v,mida*
+249499,1374883,täiendama,1,True,v,mida* + millega
+249499,1374884,täiendama,1,True,v,mida*
+249532,1374959,täima,1,True,v,mida teha
+249558,1375020,täis jootma,1,True,v,keda
+249693,1375301,täis valguma,1,True,v,mida*
+249732,1375389,täitma,1,True,v,millega
+249741,1375420,täituma,1,True,v,kellega/millega
+249778,1375534,tänama,1,True,v,mida tegemast
+249778,1375534,tänama,1,True,v,keda/mida*
+249778,1375534,tänama,1,True,v,mille eest
+249816,1375619,tänavale tõstma,1,True,v,keda
+249817,1375621,tänavale viskama,1,True,v,keda
+249943,1375905,täpsustama,1,True,v,kas
+249984,1376023,tögama,1,True,v,keda*
+250316,1376775,töötama,1,True,v,kus
+250316,1376775,töötama,1,True,v,kellena
+250410,1377025,tüdima,1,True,v,kellest/millest
+250413,1377036,tüdinema,1,True,v,kellest/millest
+250456,1377188,tühistama,1,True,v,mida
+250456,2466693,tühistama,1,True,v,keda
+250510,1377379,tükkima,1,True,v,mida tegema
+250510,1377380,tükkima,1,True,v,mida tegema
+250530,1377440,tülitama,1,True,v,keda*
+250530,1377440,tülitama,1,True,v,millega
+250530,1377441,tülitama,1,True,,keda*
+250530,1377442,tülitama,1,True,,keda*
+250531,1377445,tülitsema,1,True,v,kellega
+250531,1377445,tülitsema,1,True,v,mille pärast
+250539,1377462,tülpima,1,True,v,kellest/millest
+250571,1377558,tünga tegema,1,True,v,kellele
+250724,1377930,tüütama,1,True,v,keda*
+250848,1378297,uhkeldama,1,True,v,millega
+250855,1378322,uhkustama,1,True,v,millega
+251046,1378849,uksele koputama,1,True,v,mis
+251088,1378937,ulatama,1,True,v,mida
+251088,1378937,ulatama,1,True,v,kellele
+251088,1378939,ulatama,1,True,v,mida tegema
+251088,1378939,ulatama,1,True,v,milleni
+251089,1378948,ulatuma,1,True,v,mida tegema
+251089,1378948,ulatuma,1,True,v,milleni
+251089,1378949,ulatuma,1,True,,kuhu
+251089,1378950,ulatuma,1,True,v,kuhu
+251089,1378947,ulatuma,1,True,v,milleni
+251264,1379417,umbusaldama,1,True,v,keda/mida*
+251416,1379784,unistama,1,True,v,millest/kellest
+251416,1379784,unistama,1,True,v,et
+251459,1379899,unustama,1,True,v,mida tegemata
+251459,1379899,unustama,1,True,v,kuhu
+251459,1379899,unustama,1,True,v,mida teha
+251489,1379998,uppuma,1,True,v,kuhu
+251598,1380272,usaldama,1,True,v,keda*
+251598,1380273,usaldama,1,True,v,mida*
+251598,1380274,usaldama,1,True,v,mida teha
+251598,1380275,usaldama,1,True,v,kelle kätte
+251598,1380275,usaldama,1,True,v,kellele
+251598,1380276,usaldama,1,True,v,kellele
+251639,1380400,uskuma,1,True,v,kellesse/millesse
+251639,1380400,uskuma,1,True,v,keda/mida*
+251639,1380402,uskuma,1,True,v,et
+251688,1380550,ust näitama,1,True,v,kellele
+251752,1380688,usutlema,1,True,v,keda*
+251752,1380687,usutlema,1,True,v,keda*
+251825,1380886,uudistama,1,True,v,keda/mida*
+251892,1381079,uurima,1,True,v,keda/mida*
+251892,1381080,uurima,1,True,v,keda/mida*
+251892,1381081,uurima,1,True,v,mida*
+252030,1381427,uut ja vana tegema,1,True,v,kellele
+252132,1381688,vaatama,1,True,v,keda/mida*
+252132,1381690,vaatama,1,True,v,keda*
+252132,2073289,vaatama,1,True,v,kelle/mille järele
+252163,1381803,vaatlema,1,True,v,keda/mida*
+252163,1381804,vaatlema,1,True,v,mida*
+252163,1381805,vaatlema,1,True,v,keda/mida*
+252205,1381926,vabadus,1,True,s,mida teha
+252284,1382119,vabandama,1,True,v,et
+252284,1382119,vabandama,1,True,v,kelle ees
+252284,1382120,vabandama,1,True,v,mida*
+252284,1382120,vabandama,1,True,v,millega
+252284,1382118,vabandama,1,True,v,keda/mida*
+252291,1382143,vabanema,1,True,v,millest
+252291,1382141,vabanema,1,True,,millest
+252291,1382142,vabanema,1,True,v,kust
+252312,1382202,vabastama,1,True,v,millest
+252312,1382203,vabastama,1,True,v,mille tõttu
+252343,1382267,vaba voli andma,1,True,v,kellele
+252473,1382622,vaeva nägema,1,True,v,millega
+252473,1382622,vaeva nägema,1,True,v,mille kallal
+252484,1382653,vaevuma,1,True,v,mida tegema
+252597,1382986,vahelduma,1,True,v,kellega/millega
+252617,1383049,vahele jääma,1,True,v,millega
+319847,1793900,vahele rääkima,1,True,v,kellele
+252624,1383070,vahele segama,1,True,v,kellele/millele
+252628,1383085,vahele tõmbama,1,True,v,millega
+252628,1383085,vahele tõmbama,1,True,v,keda
+252629,1383086,vahele võtma,1,True,v,mille eest
+252629,1383086,vahele võtma,1,True,v,keda
+252670,1383218,vahendama,1,True,,millest
+252670,1383218,vahendama,1,True,,millesse
+252708,1383342,vahetama,1,True,v,milleks
+252708,1383342,vahetama,1,True,v,mille vastu
+252708,1383342,vahetama,1,True,v,mida
+252708,1383343,vahetama,1,True,v,mida
+252708,1383344,vahetama,1,True,v,mida
+252708,1383345,vahetama,1,True,v,mida
+252708,1383346,vahetama,1,True,v,mida
+252880,1383805,vaidlema,1,True,v,mille üle
+252880,1383805,vaidlema,1,True,v,kellega
+252990,1384135,vaimustuma,1,True,v,kellest/millest
+253022,1384218,vaipa alt tõmbama,1,True,v,kellel/millel
+253023,1384219,vaipa alt ära tõmbama,1,True,v,kellel/millel
+253049,1384279,vajama,1,True,v,keda/mida*
+253054,1384294,vajuma,1,True,v,kuhu
+253054,1384297,vajuma,1,True,v,millesse
+253054,1384298,vajuma,1,True,v,kuhu
+253081,1384385,vaktsineerima,1,True,v,mille vastu
+253096,1384414,valama,1,True,v,kuhu
+253108,1384472,valdama,1,True,v,mida*
+253108,1384471,valdama,1,True,v,keda/mida*
+253108,1384473,valdama,1,True,v,mida*
+253167,1384638,valetama,1,True,v,kellele
+253368,1385100,valgust näitama,1,True,v,millega
+253443,1385290,valima,1,True,v,millest / mille hulgast
+253443,1385290,valima,1,True,v,mille vahel
+253443,1385290,valima,1,True,v,kas
+253443,1385292,valima,1,True,v,millesse
+253443,1385292,valima,1,True,v,kelleks
+253481,1385384,valimisvankri ette rakendama,1,True,v,keda/mida
+253575,1385656,vallandama,1,True,v,mille pärast
+253639,1385845,valmis jõudma,1,True,,millega
+253649,1385868,valmis seadma,1,True,v,mis/kes
+253649,1385868,valmis seadma,1,True,v,milleks
+253657,1385890,valmistuma,1,True,v,milleks
+253657,1385890,valmistuma,1,True,v,mida tegema
+253688,1385975,valu andma,1,True,v,millele
+253688,1385974,valu andma,1,True,,kellele
+253748,1386125,valvama,1,True,v,mida/keda*
+253748,1386125,valvama,1,True,v,mille üle
+253748,1386125,valvama,1,True,v,kelle/mille järele
+253748,1386126,valvama,1,True,v,keda/mida*
+254058,1386980,vankri ette rakendama,1,True,v,kelle/mille
+254075,1387009,vankrit vedama,1,True,,mille
+254129,1387155,vaos hoidma,1,True,v,keda/mida
+254157,1387235,vapustama,1,True,v,keda/mida*
+254157,1387236,vapustama,1,True,,mida*
+254157,1387237,vapustama,1,True,v,mida*
+254205,1387386,varastama,1,True,v,kust
+254205,1387386,varastama,1,True,v,kellelt
+254226,1387441,varba peale astuma,1,True,v,kellele
+254344,1387750,varjama,1,True,v,mille eest
+254360,1387806,varju heitma,1,True,v,kellele/millele
+254388,1387880,varjust välja astuma,1,True,v,kelle/mille
+254400,1387923,varna riputama,1,True,v,mida
+254462,1388075,varustama,1,True,v,millega
+254462,1388075,varustama,1,True,v,keda/mida
+254462,1388076,varustama,1,True,v,keda/mida
+254462,1388076,varustama,1,True,v,millega
+254593,1388414,vastama,1,True,v,kellele/millele
+254593,1388414,vastama,1,True,v,millega
+254593,1388416,vastama,1,True,v,kellele/millele
+254593,1388419,vastama,1,True,,kellele
+254593,1388419,vastama,1,True,,millega
+254593,1388420,vastama,1,True,v,millele
+254607,1388461,vastanduma,1,True,v,kellele/millele
+254687,1388699,vastu ajama,1,True,v,millele
+254695,1388724,vastu hakkama,1,True,v,kellele
+254715,1388779,vastukarva silitama,1,True,v,keda*
+254729,1388809,vastu käima,1,True,v,millele
+254729,1388810,vastu käima,1,True,v,kellele
+254754,1388872,vastu minema,1,True,v,kellele
+320598,1495676,vastu olema,1,True,v,millele/kellele
+254781,1388927,vastu panema,1,True,v,kellele/millele
+254781,1388928,vastu panema,1,True,v,kellele/millele
+254781,1388929,vastu panema,1,True,v,millele/kellele
+254796,1388966,vastu pidama,1,True,v,millele
+254822,1389044,vastu saama,1,True,v,kellele
+254827,1389058,vastu seisma,1,True,v,millele
+254827,1389059,vastu seisma,1,True,v,kellele/millele
+254844,1389089,vastutama,1,True,v,kelle/mille eest
+254847,1389098,vastu tatti andma,1,True,v,kellele
+254853,1389109,vastu tegutsema,1,True,v,millele/kellele
+254858,1389124,vastu tulema,1,True,v,kellele/millele
+254858,1389124,vastu tulema,1,True,v,milles
+254858,1434420,vastu tulema,1,True,v,kellele
+254883,1389196,vastu vaidlema,1,True,v,kellele
+254883,1389196,vastu vaidlema,1,True,v,milles
+254917,1389295,vastu väitma,1,True,v,kellele/millele
+254937,1389334,vati sees hoidma,1,True,v,keda*
+254955,1389375,vatti andma,1,True,v,kellele
+254975,1389416,vedama,1,True,v,kuhu + millega
+254975,1389429,vedama,1,True,v,kellel
+254975,1389429,vedama,1,True,v,millega
+255177,1389900,veenduma,1,True,v,et
+255177,1389900,veenduma,1,True,v,milles
+255188,1389934,veenma,1,True,v,keda*
+255188,1389934,veenma,1,True,v,mida tegema
+255188,1389934,veenma,1,True,v,milles
+255375,1390442,vehkima,1,True,v,millega
+255375,1390443,vehkima,1,True,,millega
+255375,1390444,vehkima,1,True,,millega
+255375,1390447,vehkima,1,True,,mida teha
+255376,1390457,vehklema,1,True,v,millega
+255566,1390890,venitama,1,True,v,mida*
+255566,1390891,venitama,1,True,v,mida*
+255566,1390893,venitama,1,True,v,mida*
+255566,1390894,venitama,1,True,v,mida*
+255566,1390895,venitama,1,True,v,mida*
+255566,1390896,venitama,1,True,v,mida*
+255566,1390897,venitama,1,True,v,keda/mida*
+255566,1390898,venitama,1,True,v,mida*
+255566,1390899,venitama,1,True,v,mida*
+255566,1390900,venitama,1,True,v,millega
+255566,1390900,venitama,1,True,v,mida*
+255566,1390902,venitama,1,True,v,mida*
+255777,2248518,verest välja lööma,1,True,v,keda
+256080,1392103,vestlema,1,True,v,kellega
+256080,1392103,vestlema,1,True,v,millest
+256152,1392278,vett peale tõmbama,1,True,v,millele
+256152,1392279,vett peale tõmbama,1,True,v,kellele
+256284,1392633,vigastama,1,True,v,keda/mida
+256284,1392634,vigastama,1,True,v,mida
+290430,1446192,viga tegema,1,True,v,kellele/millele
+290430,2458845,viga tegema,1,True,v,millele
+256334,1392796,vihastama,1,True,v,kelle/mille peale
+256334,1392796,vihastama,1,True,v,mille pärast
+256334,1392797,vihastama,1,True,v,keda*
+256336,1392806,vihastuma,1,True,v,mille pärast
+256336,1392806,vihastuma,1,True,v,kelle/mille peale
+256354,1392849,vihjama,1,True,v,et
+256354,1392849,vihjama,1,True,v,kellele/millele
+256360,1392873,vihkama,1,True,v,keda/mida*
+256418,1393027,vihtuma,1,True,v,mida teha
+256427,1393056,viibima,1,True,v,kus
+256545,1393430,viimast lihvi andma,1,True,v,millele
+256523,1393354,viima,1,True,v,keda/mida
+256523,1393354,viima,1,True,v,kuhu
+256523,1393354,viima,1,True,v,kust + kuhu
+256523,1393355,viima,1,True,v,mida
+256523,1393356,viima,1,True,v,kuhu
+256523,1393356,viima,1,True,v,mida
+256523,1393357,viima,1,True,v,keda/mida
+256523,1393358,viima,1,True,v,kuhu
+256562,1393485,viimsele teekonnale saatma,1,True,v,keda
+256563,1393487,viimsele teele saatma,1,True,v,keda
+256654,1393660,viipama,1,True,v,millega
+256763,1393972,viitama,1,True,v,millele
+256763,1393973,viitama,1,True,v,millele
+256763,1393974,viitama,1,True,v,millele/kellele
+256772,1393991,viitsima,1,True,v,mida teha
+256795,1394050,viivitama,1,True,v,millega
+256901,1394373,vilistama,1,True,v,mille peale
+256901,1394373,vilistama,1,True,v,millele
+257029,1394739,villand olema,1,True,v,millest
+257029,1394739,villand olema,1,True,v,kellel
+257030,1394740,villand saama,1,True,v,kellel
+257030,1394740,villand saama,1,True,v,millest
+257085,1394875,viltu vaatama,1,True,v,kellele/millele
+257085,1394875,viltu vaatama,1,True,v,kelle/mille peale
+257150,1395091,vinguma,1,True,v,kelle/mille üle
+257150,1395091,vinguma,1,True,v,kelle/mille kallal
+257150,1395091,vinguma,1,True,v,mille pärast
+257252,1395392,virgutama,1,True,v,mida tegema
+257252,1395392,virgutama,1,True,v,keda/mida*
+257264,1395440,virisema,1,True,v,kelle/mille kallal
+257264,1395440,virisema,1,True,v,kelle/mille üle
+257264,1395440,virisema,1,True,v,mille pärast
+257352,1395719,viskama,1,True,v,mida
+257352,1395719,viskama,1,True,v,kuhu
+257352,1395720,viskama,1,True,v,mida*
+257573,1396275,voli andma,1,True,v,kellele
+257580,1396303,volitama,1,True,v,mida tegema
+257580,1396303,volitama,1,True,v,keda
+257825,1396954,vormuma,1,True,v,milleks
+257923,1397189,vuntsi kargama,1,True,v,kellele
+257997,1397401,võbistama,1,True,v,mida*
+258108,1397750,võimaldama,1,True,v,kellel + mida teha
+258106,1397742,võima,1,True,v,mida teha
+258106,1397743,võima,1,True,v,mida teha
+258106,1397741,võima,1,True,v,mida teha
+258106,1397744,võima,1,True,v,mida teha
+258106,1397745,võima,1,True,v,mida teha
+258106,1397746,võima,1,True,v,mida teha
+258126,1397821,võimendama,1,True,v,mida*
+258126,1397822,võimendama,1,True,v,mida*
+258233,1398076,võistlema,1,True,v,kellega
+258233,1398076,võistlema,1,True,v,milles
+258233,1398076,võistlema,1,True,v,kus
+258233,1398077,võistlema,1,True,v,kus
+258233,1398077,võistlema,1,True,v,kellega
+258233,1398077,võistlema,1,True,v,kelle/mille pärast
+258304,1398244,võitlema,1,True,v,mille eest
+258304,1398244,võitlema,1,True,v,kellega / kelle vastu
+258304,1398245,võitlema,1,True,v,millega
+258304,1398245,võitlema,1,True,v,mille vastu
+258304,1398245,võitlema,1,True,v,kellega/millega
+258326,1398300,võitma,1,True,v,milles
+258329,1398320,võitu saama,1,True,v,kellest/millest
+258364,1398394,võlgnema,1,True,v,kellele
+258369,1398410,võlgu jääma,1,True,v,kellele
+258370,1398411,võlgu olema,1,True,v,kellele
+258370,1398411,võlgu olema,1,True,v,mille eest
+258476,1398686,võrdlema,1,True,v,keda/mida*
+258476,1398686,võrdlema,1,True,v,kellega/millega
+258503,1398752,võrdsustama,1,True,v,mida
+258503,1398751,võrdsustama,1,True,v,keda/mida
+258503,1398751,võrdsustama,1,True,v,kellega/millega
+258504,1398755,võrdsustuma,1,True,v,kellega/millega
+258506,1398760,võrduma,1,True,v,millega
+258506,1398761,võrduma,1,True,v,millega
+258509,1398769,võrdusmärki panema,1,True,v,mille/kelle vahele
+258510,1398770,võrdusmärki tõmbama,1,True,v,mille/kelle vahele
+258629,1399056,võrku kuduma,1,True,v,kelle ümber
+258630,1399057,võrku langema,1,True,v,kelle/mille
+258719,1399274,võtma,1,True,v,keda/mida
+258719,1399275,võtma,1,True,v,mida*
+258719,1399277,võtma,1,True,v,keda/mida
+258719,1399278,võtma,1,True,v,keda
+258719,1399279,võtma,1,True,v,mida
+258719,1399280,võtma,1,True,v,keda
+258719,1399282,võtma,1,True,v,mida
+258719,1399283,võtma,1,True,v,mida*
+258719,1399284,võtma,1,True,v,kuidas
+258719,1399287,võtma,1,True,v,mida
+258719,1399291,võtma,1,True,v,mida
+258719,1399292,võtma,1,True,v,mida*
+258766,1399426,võõrandama,1,True,v,mida
+258766,1399426,võõrandama,1,True,v,kellele
+258766,1399426,võõrandama,1,True,v,kellelt
+258766,2490865,võõrandama,1,True,v,kellest
+258790,1399488,võõrduma,1,True,v,kellest/millest
+258790,1399489,võõrduma,1,True,v,millest
+258832,1399599,võõrutama,1,True,v,millest
+258832,1399599,võõrutama,1,True,v,keda
+258832,1399600,võõrutama,1,True,v,keda
+258832,1399600,võõrutama,1,True,v,millest
+258947,1399933,vähendama,1,True,v,mida*
+258947,1399934,vähendama,1,True,v,mida*
+259196,1400474,väitlema,1,True,v,mille üle
+259200,1400487,väitma,1,True,v,et
+259433,1401012,välja aitama,1,True,v,millest
+259434,1401018,välja ajama,1,True,v,keda/mida
+259434,1401017,välja ajama,1,True,v,mida*
+259434,1401019,välja ajama,1,True,v,kellele
+259434,1401019,välja ajama,1,True,v,mida
+259434,1401020,välja ajama,1,True,v,keda/mida
+259448,1401078,välja astuma,1,True,v,millest
+259461,1401123,välja heitma,1,True,v,millest
+259462,1401128,välja helistama,1,True,v,millest
+259468,1401143,välja hääletama,1,True,v,millest
+259469,1401144,välja hüppama,1,True,v,millest
+259474,1401158,välja jooksma,1,True,,millest
+259474,1401157,välja jooksma,1,True,v,millelt
+259474,1401157,välja jooksma,1,True,v,millest
+259474,1401159,välja jooksma,1,True,v,mida
+259477,1401171,välja juhatama,1,True,v,millest
+259480,1401181,välja jõudma,1,True,,kuhu
+259480,1401181,välja jõudma,1,True,,milleni
+259480,1401182,välja jõudma,1,True,,kust
+259480,1401182,välja jõudma,1,True,,millest
+259482,1401187,välja jätma,1,True,v,millest
+259482,1401187,välja jätma,1,True,v,kust
+259484,1401197,välja jääma,1,True,v,millest
+259488,1401209,välja kallama,1,True,v,mida
+259488,1401209,välja kallama,1,True,v,millest
+259488,1401210,välja kallama,1,True,v,mida
+259493,1401224,välja kantima,1,True,v,millest
+259496,1401232,välja kasvama,1,True,v,millest
+259496,1401233,välja kasvama,1,True,v,millest
+259496,1401234,välja kasvama,1,True,v,millest
+259506,1401265,välja kooruma,1,True,,millest
+259527,1401333,välja langema,1,True,v,kust
+259557,1401421,välja lõikama,1,True,v,millest
+259575,1401469,välja meelitama,1,True,v,kellelt
+259577,1401482,välja minema,1,True,v,mille peale
+259577,1401489,välja minema,1,True,v,millest
+259604,1401558,välja nägema,1,True,v,milline
+259615,1401589,välja otsima,1,True,v,kust
+259655,1401737,välja päästma,1,True,v,millest
+505001,1806045,välja saagima,1,True,v,millest
+259711,1401921,välja sööma,1,True,v,kust
+259711,1401921,välja sööma,1,True,v,keda/mida
+259717,1401937,välja tegema,1,True,v,kellest/millest
+259717,1401938,välja tegema,1,True,v,kellele
+259721,1401956,välja tooma,1,True,v,millest
+259730,1401998,välja tulema,1,True,v,millega/kellega
+259730,1402000,välja tulema,1,True,v,millest
+259730,1402002,välja tulema,1,True,v,millega
+641254,1402093,välja vabandama,1,True,v,keda
+259757,1402095,välja vahetama,1,True,v,mida/keda
+259757,1402096,välja vahetama,1,True,v,keda/mida
+259760,1402106,välja valama,1,True,v,mida
+259760,1402104,välja valama,1,True,v,millest
+259760,1402104,välja valama,1,True,v,mida
+259760,1402105,välja valama,1,True,v,mida
+259761,1402107,välja valetama,1,True,v,keda
+259768,1402130,välja vedama,1,True,v,milleni
+259779,1402175,välja vihastama,1,True,v,keda
+259786,1402197,välja viskama,1,True,v,keda
+259786,1402198,välja viskama,1,True,v,mida
+259786,1402199,välja viskama,1,True,v,mida
+259786,1402200,välja viskama,1,True,v,mida
+259801,1402263,välja õpetama,1,True,v,keda
+259801,1402264,välja õpetama,1,True,v,keda
+259811,1402292,väljendama,1,True,v,mida*
+259826,1402337,väljuma,1,True,v,kust
+259863,1402437,vältima,1,True,v,mida*
+259863,1402438,vältima,1,True,v,keda*
+259939,1402656,värisema,1,True,v,millest
+260026,1402872,värvima,1,True,v,milliseks
+260095,1403038,väsima,1,True,v,mida tegemast
+260095,1403038,väsima,1,True,v,millest
+260105,1403067,väsitama,1,True,v,keda*
+260105,1403068,väsitama,1,True,v,keda*
+260158,1403255,väärima,1,True,v,mida/keda*
+1160776,2197840,õhtule laskma,1,True,v,keda
+260621,1404450,õhutama,1,True,v,millele
+260621,1404453,õhutama,1,True,v,mida tegema
+260679,1404605,õiendama,1,True,v,kelle kallal
+260679,1404605,õiendama,1,True,v,mille pärast
+260787,1404916,õigustama,1,True,v,keda/mida*
+260787,1404917,õigustama,1,True,v,mida*
+260787,1404920,õigustama,1,True,v,mida*
+260796,1404939,õigust mõistma,1,True,v,kelle üle
+260880,1405142,õlga alla panema,1,True,v,millele
+261044,1405524,õnge tõmbama,1,True,v,keda
+261044,2249387,õnge tõmbama,1,True,v,keda
+261096,1405663,õnne soovima,1,True,v,mille puhul
+261096,1405663,õnne soovima,1,True,v,kellele
+261098,1405668,õnnestuma,1,True,v,kellel
+261098,1405669,õnnestuma,1,True,v,mida teha
+261098,1405670,õnnestuma,1,True,v,mida teha
+261124,1405743,õnnistama,1,True,v,keda*
+261124,1405744,õnnistama,1,True,v,millega
+261124,1405744,õnnistama,1,True,v,mida*
+261124,1405745,õnnistama,1,True,v,keda*
+261124,1405746,õnnistama,1,True,v,keda/mida*
+261124,1405747,õnnistama,1,True,v,keda
+261124,1405747,õnnistama,1,True,v,millesse
+261124,1405748,õnnistama,1,True,v,keda*
+261134,1405775,õnnitlema,1,True,v,keda*
+261134,1405775,õnnitlema,1,True,v,mille puhul
+261153,1405836,õpetama,1,True,v,mida tegema
+261153,1405836,õpetama,1,True,v,keda/mida*
+261332,1406268,õppima,1,True,v,mida tegema
+261332,1406268,õppima,1,True,v,kelleks
+261332,1406268,õppima,1,True,v,mida*
+261341,1406304,õppust võtma,1,True,v,millest
+261517,1406775,ägestuma,1,True,v,mille pärast
+261533,1406831,ähvardama,1,True,v,mida*
+261533,1406831,ähvardama,1,True,v,mida teha
+261533,1406830,ähvardama,1,True,v,mida teha
+261533,1406833,ähvardama,1,True,v,mida teha
+261533,1406833,ähvardama,1,True,v,keda/mida*
+261533,1406833,ähvardama,1,True,v,millega
+261533,1406832,ähvardama,1,True,v,mida teha
+261654,1407161,ära armuma,1,True,v,kellesse/millesse
+261662,1407189,ära blokkima,1,True,v,что
+261666,1407196,ära eksima,1,True,v,kuhu
+261666,1407196,ära eksima,1,True,v,kus
+261667,1407200,ära elama,1,True,v,millest
+261667,1407200,ära elama,1,True,v,millega
+261670,1407210,ära elatuma,1,True,v,millest
+261672,1407213,ära harjuma,1,True,v,kellega/millega
+507630,1809012,ära harjutama,1,True,v,kellel mida
+507630,1809012,ära harjutama,1,True,v,keda millest
+1369728,2479895,ära hiilima,1,True,v,kust
+1369728,2479893,ära hiilima,1,True,v,millest
+261678,1407224,ära hirmutama,1,True,v,keda
+261708,1407320,ära katkestama,1,True,v,millega
+261709,1407322,ära keelama,1,True,v,mida
+261715,1407337,ära kirjeldama,1,True,v,mida
+261717,1407339,ära kohkuma,1,True,,millest
+261719,1407343,ära kolima,1,True,,kust
+261719,1407343,ära kolima,1,True,,kuhu
+261726,1407360,ära kuluma,1,True,v,kellele
+261756,1407421,ära leppima,1,True,v,kellega
+261767,1407447,ära lõpetama,1,True,,mida
+261767,1407448,ära lõpetama,1,True,,mida
+261767,1407449,ära lõpetama,1,True,,keda
+261785,1407491,ära minema,1,True,v,kust
+261811,1407544,ära nihverdama,1,True,,millest
+261811,1407544,ära nihverdama,1,True,,kust
+261843,1407616,ära panema,1,True,v,mida
+261843,1407617,ära panema,1,True,v,mida
+261843,1407618,ära panema,1,True,v,kellele
+261843,1407619,ära panema,1,True,v,kellele
+261857,1407652,ära põgenema,1,True,v,kust
+261857,1407652,ära põgenema,1,True,v,kelle/mille eest
+261873,1407690,ära rääkima,1,True,v,mida
+261873,1407692,ära rääkima,1,True,v,keda
+261975,1407968,ära viilima,1,True,v,millest
+261993,1408025,ära väsitama,1,True,v,keda
+261993,1408026,ära väsitama,1,True,v,keda
+261994,1408028,ära väänama,1,True,v,mida
+261994,1408027,ära väänama,1,True,v,kellele
+261994,1408027,ära väänama,1,True,v,mida
+261994,1408029,ära väänama,1,True,v,mida
+262000,1408041,ära ütlema,1,True,v,kellele
+262000,1408041,ära ütlema,1,True,v,millest
+262000,1408043,ära ütlema,1,True,v,kellele
+262012,1408082,ärgitama,1,True,v,mida tegema
+262012,1408082,ärgitama,1,True,v,keda*
+262086,1408243,ärkama,1,True,v,mille peale
+262100,1408292,ärritama,1,True,v,keda*
+262100,1408290,ärritama,1,True,v,mida*
+262260,1408721,ööbima,1,True,v,kus / kelle juures
+262267,1408737,ööd veetma,1,True,v,kellega
+262437,1409154,ühele poole saama,1,True,v,millega
+262464,1409211,ühendama,1,True,v,millega
+262464,1409213,ühendama,1,True,v,kellega/millega
+262464,1409216,ühendama,1,True,v,kellega/millega
+262476,1409244,ühenduma,1,True,v,millega
+262476,1409246,ühenduma,1,True,v,kellega
+1073041,2016177,ühendust saama,1,True,v,kellega
+621835,2015606,ühendust võtma,1,True,v,kellega
+508472,1809990,ühes minema,1,True,v,kellegagi
+262590,1409541,ühilduma,1,True,v,millega
+262590,1409540,ühilduma,1,True,v,millega
+262594,1409555,ühinema,1,True,v,kellega/millega
+262752,1409927,ühtima,1,True,v,millega
+262762,1409953,ühtlustama,1,True,v,millega
+262762,1409953,ühtlustama,1,True,v,mida
+262937,1410434,ülal pidama,1,True,v,keda*
+262941,1410455,ülalt alla vaatama,1,True,v,kellele/millele
+262941,1410455,ülalt alla vaatama,1,True,v,kelle peale
+262941,1410455,ülalt alla vaatama,1,True,v,kellele
+508974,1810573,üle aitama,1,True,v,millest
+263114,1410835,üle andma,1,True,v,kellele
+263125,1410866,üle astuma,1,True,v,millest
+263148,1410926,üle helistama,1,True,v,keda/mida
+263150,1410930,üle hindama,1,True,v,keda/mida*
+263149,1410928,ülehindama,1,True,v,keda/mida*
+263154,1410945,üle hüppama,1,True,v,millest
+263154,1410945,üle hüppama,1,True,v,mille
+263161,1410968,üle jooksma,1,True,v,millest
+263161,1410969,üle jooksma,1,True,v,keda/mida
+263161,1410973,üle jooksma,1,True,v,millest
+263167,1410991,üle jääma,1,True,v,mida teha
+263175,1411020,üle kallama,1,True,v,keda/mida
+263175,1411020,üle kallama,1,True,v,millega
+263175,1411021,üle kallama,1,True,v,keda
+263175,1411021,üle kallama,1,True,v,millega
+263183,1411041,üle kanduma,1,True,v,kellele/millele
+263183,1411041,üle kanduma,1,True,v,millesse
+263188,1411060,üle kasvama,1,True,v,milleks
+263204,1411106,üle kuhjama,1,True,v,millega
+263221,1411154,üle käima,1,True,v,millega
+263232,1411175,üle külvama,1,True,v,millega
+263243,1411209,üle libisema,1,True,v,millest
+263295,1411347,üle minema,1,True,v,milleks
+263295,1411347,üle minema,1,True,v,millele
+263295,1411351,üle minema,1,True,v,millest
+263358,1411499,üle nuusutama,1,True,v,keda/mida
+263361,1411510,üle olema,1,True,v,millest
+263361,1411511,üle olema,1,True,v,kellest/millest
+263364,1411518,üle ostma,1,True,v,keda
+263369,1411526,üle pakkuma,1,True,v,millega
+263369,1411527,üle pakkuma,1,True,v,keda
+263381,1411566,üle pingutama,1,True,v,millega
+263388,1411588,üle puistama,1,True,v,millega
+263412,1411659,üle saama,1,True,v,millest
+263412,1411660,üle saama,1,True,v,millest
+263423,1411715,üles astuma,1,True,v,kelle/mille vastu
+263442,1411766,üles keerama,1,True,v,keda
+263442,1411767,üles keerama,1,True,v,keda
+263442,1411767,üles keerama,1,True,v,kelle vastu
+263442,1411768,üles keerama,1,True,v,mida
+263442,1411769,üles keerama,1,True,v,mida
+263445,1411780,üles kihutama,1,True,v,keda
+263451,1411801,üles kloppima,1,True,v,mida
+263451,1411802,üles kloppima,1,True,v,mida/keda
+263456,1411826,üles kutsuma,1,True,v,mida tegema
+263465,1411848,üles laulma,1,True,v,keda
+263482,1411902,üle soolama,1,True,v,millega
+263484,1411908,üles ostma,1,True,v,mida
+263484,1411909,üles ostma,1,True,v,keda/mida
+263513,1412001,üles tegema,1,True,v,mida
+263513,1412002,üles tegema,1,True,v,mida
+263532,1412078,üles töötama,1,True,v,keda/mida
+263532,1412079,üles töötama,1,True,v,mida
+263534,1412087,üles vaatama,1,True,v,kelle poole
+263545,1412140,üle sõitma,1,True,v,kellest/millest
+263598,1412307,üle vaatama,1,True,v,millest
+263606,1412348,üle valama,1,True,v,millega
+263608,1412351,üleval hoidma,1,True,v,mida
+263608,1412353,üleval hoidma,1,True,v,keda
+263613,1412359,üleval pidama,1,True,v,keda*
+263617,1412371,ülevalt alla vaatama,1,True,v,kelle peale
+263617,1412371,ülevalt alla vaatama,1,True,v,kellele
+263617,1412371,ülevalt alla vaatama,1,True,v,kellele/millele
+263620,1412378,üle vedama,1,True,v,mida/keda
+263624,1412387,üle viima,1,True,v,kuhu
+263640,2362936,üle võtma,1,True,v,kellelt/millelt
+263640,1412443,üle võtma,1,True,v,millega
+263810,1412798,üllatama,1,True,v,millega
+263810,1412798,üllatama,1,True,v,keda*
+263812,1412808,üllatuma,1,True,v,millest
+263882,1412984,ümber arvutama,1,True,v,millesse
+263893,1413009,ümber formeerima,1,True,v,milleks
+263916,1413060,ümber kehastuma,1,True,v,millesse
+263916,1413060,ümber kehastuma,1,True,v,kelleks/milleks
+263930,1413098,ümber kvalifitseerima,1,True,v,milleks
+263932,1413101,ümber käima,1,True,v,kellega/millega
+263972,1413203,ümber panema,1,True,v,millesse
+263972,1413203,ümber panema,1,True,v,millest
+509917,1811671,ümber ristima,1,True,v,milleks/kelleks
+264024,1413345,ümber vaatama,1,True,v,kelle/mille järele
+264027,1413354,ümber valima,1,True,v,keda
+264050,1413417,ümbritsema,1,True,v,millega
+264050,1413420,ümbritsema,1,True,v,millega
+264058,1413464,ümmardama,1,True,v,keda*
+264120,1413609,üritama,1,True,v,mida teha
+264132,1413655,ütlema,1,True,v,kelle/mille kohta
+264132,1413655,ütlema,1,True,v,kellele
