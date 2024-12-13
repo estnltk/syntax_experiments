@@ -1,4 +1,5 @@
 # 
+00 - Prepares and cleans annotations.
 
 01 - Patterns table and support tables.
 
