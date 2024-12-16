@@ -17,7 +17,7 @@
 
 
 
-### TABEL2 transaction
+### TABEL2 transaction_row
 
 | väli | tüüp  |  kirjeldus | näide | märkus |
 | --- | --- | --- | --- | --- |

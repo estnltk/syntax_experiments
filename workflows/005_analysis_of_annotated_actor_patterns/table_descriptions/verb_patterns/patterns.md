@@ -10,9 +10,7 @@ The table contains all annotated verb patterns.
 |verb_word |	main verb | võtma 
 |verb compound| verb compound| ära 
 |phrase_nr| phrase number | 1
-|adp	| verb conjunction | -
 |deprel	| deprel of the words that would be associated withe the pattern | obl 
-|inf verb	| infinite verb in the verb phrase | - 
 
 
 
