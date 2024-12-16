@@ -1,7 +1,11 @@
 import sqlite3
+import pandas as pd
+import timeit
+
 from ..utils import resolve_schema_and_table
 from ..db_checks import check_column_exists
 from ..db_table_ops import copy_table_structure
+from ..constants import SQL_ESCAPE_CHAR
 
 
 def filter_verb_transaction_tables(
@@ -18,7 +22,7 @@ def filter_verb_transaction_tables(
     delete_if_exists: bool = False,
     copy_indexes: bool = True,
     verbose: bool = False,
-) -> tuple[str, str]:
+) -> pd.DataFrame:
     """
     Filters and copies data from transaction tables based on head IDs.
 
@@ -43,8 +47,12 @@ def filter_verb_transaction_tables(
     - verbose: Whether to print detailed logs of the process.
 
     Returns:
-    - Tuple of names for the new filtered transaction head and row tables.
+    - Pandas Dataframe object, with statistics of created tables and function execution times.
     """
+
+    overall_start = timeit.default_timer()
+    stat_create = {}
+    stat_insert = {}
 
     if not new_transaction_head:
         new_transaction_head = transaction_head
@@ -112,7 +120,8 @@ def filter_verb_transaction_tables(
 
     if not table_ids or not column_ids:
         raise ValueError("'ids_table' and 'ids_column' must be provided.")
-
+    create_head_start = timeit.default_timer()
+    # Copy structure of transaction head table
     schema_target_head, table_target_head = copy_table_structure(
         conn,
         source_schema=schema_source_head,
@@ -123,7 +132,16 @@ def filter_verb_transaction_tables(
         verbose=verbose,
         copy_indexes=copy_indexes,
     )
+    stat_create[
+        (
+            schema_target_head,
+            table_target_head,
+        )
+    ] = (
+        timeit.default_timer() - create_head_start
+    )
 
+    create_rows_start = timeit.default_timer()
     schema_target_row, table_target_row = copy_table_structure(
         conn,
         source_schema=schema_source_row,
@@ -134,7 +152,16 @@ def filter_verb_transaction_tables(
         verbose=verbose,
         copy_indexes=copy_indexes,
     )
+    stat_create[
+        (
+            schema_target_row,
+            table_target_row,
+        )
+    ] = (
+        timeit.default_timer() - create_rows_start
+    )
 
+    insert_head_start = timeit.default_timer()
     # Populate data in new transaction head table
     sql_head = f"""
     INSERT INTO "{schema_target_head}"."{table_target_head}"
@@ -147,7 +174,16 @@ def filter_verb_transaction_tables(
     if verbose:
         print(sql_head)
     conn.execute(sql_head)
+    stat_insert[
+        (
+            schema_target_head,
+            table_target_head,
+        )
+    ] = (
+        timeit.default_timer() - insert_head_start
+    )
 
+    insert_row_start = timeit.default_timer()
     # Populate data in new transaction row table
     sql_row = f"""
     INSERT INTO "{schema_target_row}"."{table_target_row}"
@@ -160,6 +196,123 @@ def filter_verb_transaction_tables(
     if verbose:
         print(sql_row)
     conn.execute(sql_row)
+    stat_insert[
+        (
+            schema_target_row,
+            table_target_row,
+        )
+    ] = (
+        timeit.default_timer() - insert_row_start
+    )
 
+    db_commit_start = timeit.default_timer()
     conn.commit()
-    return True
+    db_commit_duration = timeit.default_timer() - db_commit_start
+
+    cur = conn.cursor()
+    stats = []
+    db_stat_start = timeit.default_timer()
+    # collect stats
+    for sh, tbl in (
+        (
+            schema_ids,
+            table_ids,
+        ),
+        (
+            schema_source_head,
+            table_source_head,
+        ),
+        (
+            schema_source_row,
+            table_source_row,
+        ),
+        (
+            schema_target_head,
+            table_target_head,
+        ),
+        (
+            schema_target_row,
+            table_target_row,
+        ),
+    ):
+        stats.append(
+            (
+                "",
+                sh,
+                tbl,
+                __count_table_rows(cur=cur, schema=sh, table_name=tbl),
+                (
+                    round(
+                        stat_create[
+                            (
+                                sh,
+                                tbl,
+                            )
+                        ],
+                        3,
+                    )
+                    if (sh, tbl) in stat_create
+                    else ""
+                ),
+                (
+                    round(
+                        stat_insert[
+                            (
+                                sh,
+                                tbl,
+                            )
+                        ],
+                        3,
+                    )
+                    if (sh, tbl) in stat_insert
+                    else ""
+                ),
+            )
+        )
+
+    stats.append(
+        (
+            "fetching rows count",
+            "---",
+            "---",
+            "---",
+            "---",
+            round(timeit.default_timer() - db_stat_start, 3),
+        )
+    )
+    stats.append(
+        ("db commit", "---", "---", "---", "---", round(db_commit_duration, 3))
+    )
+    stats.append(
+        (
+            "total time",
+            "---",
+            "---",
+            "---",
+            "---",
+            round(timeit.default_timer() - overall_start, 3),
+        )
+    )
+
+    df_stats = pd.DataFrame(
+        stats,
+        columns=[
+            "",
+            "Schema",
+            "Table",
+            "Rows Total",
+            "Create Structure (sec)",
+            "Insert Data / Execution Time (sec)",
+        ],
+    )
+    return df_stats
+
+
+def __count_table_rows(cur: sqlite3.Cursor, schema: str, table_name: str):
+    """
+    For internal use only. Does not validate schema and table names.
+    """
+    cur.execute(
+        f"SELECT COUNT(*) FROM {SQL_ESCAPE_CHAR}{schema}{SQL_ESCAPE_CHAR}.{SQL_ESCAPE_CHAR}{table_name}{SQL_ESCAPE_CHAR}"
+    )
+    return cur.fetchone()[0]
