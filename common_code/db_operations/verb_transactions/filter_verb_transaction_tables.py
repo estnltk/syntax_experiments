@@ -139,7 +139,7 @@ def filter_verb_transaction_tables(
     sql_head = f"""
     INSERT INTO "{schema_target_head}"."{table_target_head}"
     SELECT th_source.*
-    FROM "{schema_source_head}"."{table_target_head}" AS th_source
+    FROM "{schema_source_head}"."{table_source_head}" AS th_source
     INNER JOIN "{schema_ids}"."{table_ids}" AS heads_table
     ON th_source.id = heads_table."{column_ids}"
     ON CONFLICT(id) DO NOTHING;
