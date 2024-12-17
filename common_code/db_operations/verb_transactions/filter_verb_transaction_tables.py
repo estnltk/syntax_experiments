@@ -51,7 +51,6 @@ def filter_verb_transaction_tables(
     """
 
     overall_start = timeit.default_timer()
-    stat_create = {}
     stat_insert = {}
 
     if not new_transaction_head:
@@ -120,7 +119,7 @@ def filter_verb_transaction_tables(
 
     if not table_ids or not column_ids:
         raise ValueError("'ids_table' and 'ids_column' must be provided.")
-    create_head_start = timeit.default_timer()
+    create_tables_start = timeit.default_timer()
     # Copy structure of transaction head table
     schema_target_head, table_target_head = copy_table_structure(
         conn,
@@ -132,16 +131,7 @@ def filter_verb_transaction_tables(
         verbose=verbose,
         copy_indexes=copy_indexes,
     )
-    stat_create[
-        (
-            schema_target_head,
-            table_target_head,
-        )
-    ] = (
-        timeit.default_timer() - create_head_start
-    )
 
-    create_rows_start = timeit.default_timer()
     schema_target_row, table_target_row = copy_table_structure(
         conn,
         source_schema=schema_source_row,
@@ -152,14 +142,7 @@ def filter_verb_transaction_tables(
         verbose=verbose,
         copy_indexes=copy_indexes,
     )
-    stat_create[
-        (
-            schema_target_row,
-            table_target_row,
-        )
-    ] = (
-        timeit.default_timer() - create_rows_start
-    )
+    create_tables_duration = timeit.default_timer() - create_tables_start
 
     insert_head_start = timeit.default_timer()
     # Populate data in new transaction head table
@@ -213,47 +196,49 @@ def filter_verb_transaction_tables(
     stats = []
     db_stat_start = timeit.default_timer()
     # collect stats
-    for sh, tbl in (
+    cur.execute(
+        f"""
+        SELECT COUNT(DISTINCT "{column_ids}")
+        FROM "{schema_ids}"."{table_ids}"
+        """
+    )
+    stats.append(
+        ("head_ids unique values", schema_ids, table_ids, cur.fetchone()[0], "---")
+    )
+
+    for name, sh, tbl in (
         (
+            "head_ids_table",
             schema_ids,
             table_ids,
         ),
         (
+            "transaction_head",
             schema_source_head,
             table_source_head,
         ),
         (
+            "transaction_row",
             schema_source_row,
             table_source_row,
         ),
         (
+            "new_transaction_head",
             schema_target_head,
             table_target_head,
         ),
         (
+            "new_transaction_row",
             schema_target_row,
             table_target_row,
         ),
     ):
         stats.append(
             (
-                "",
+                name,
                 sh,
                 tbl,
                 __count_table_rows(cur=cur, schema=sh, table_name=tbl),
-                (
-                    round(
-                        stat_create[
-                            (
-                                sh,
-                                tbl,
-                            )
-                        ],
-                        3,
-                    )
-                    if (sh, tbl) in stat_create
-                    else ""
-                ),
                 (
                     round(
                         stat_insert[
@@ -265,7 +250,7 @@ def filter_verb_transaction_tables(
                         3,
                     )
                     if (sh, tbl) in stat_insert
-                    else ""
+                    else "---"
                 ),
             )
         )
@@ -276,17 +261,30 @@ def filter_verb_transaction_tables(
             "---",
             "---",
             "---",
-            "---",
             round(timeit.default_timer() - db_stat_start, 3),
         )
     )
     stats.append(
-        ("db commit", "---", "---", "---", "---", round(db_commit_duration, 3))
+        (
+            "creating tables",
+            "---",
+            "---",
+            "---",
+            round(create_tables_duration, 3),
+        )
+    )
+    stats.append(
+        (
+            "committing result to db",
+            "---",
+            "---",
+            "---",
+            round(db_commit_duration, 3),
+        )
     )
     stats.append(
         (
             "total time",
-            "---",
             "---",
             "---",
             "---",
@@ -297,12 +295,11 @@ def filter_verb_transaction_tables(
     df_stats = pd.DataFrame(
         stats,
         columns=[
-            "",
+            "Parameter",
             "Schema",
             "Table",
-            "Rows Total",
-            "Create Structure (sec)",
-            "Insert Data / Execution Time (sec)",
+            "Rows",
+            "Time (sec)",
         ],
     )
     return df_stats
