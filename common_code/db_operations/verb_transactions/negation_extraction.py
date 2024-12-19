@@ -4,15 +4,18 @@
 
 import sqlite3
 from ..db_checks import is_valid_table_name, is_db_table, check_all_col_names
+from ..db_udf import udf_lower, register_user_defined_functions
 
 
-def extract_negations(cur, transaction_head: str, transaction_row: str, patterns: str, output_table: str, overwrite=False):
+def extract_negations(conn, cur, transaction_head: str, transaction_row: str, patterns: str, output_table: str, overwrite=False):
     """
     Extracts negation phrase indexes from given transactions according to negation patterns.
     Saves negation pattern IDs and IDs of negation phrase matches in output table.
     
     Parameters
     ----------
+    conn:
+        SQLite connection
     cur:
         database Cursor object
     transaction_head: str
@@ -74,6 +77,8 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
             """.format(output_table=output_table))
         else:
             raise ValueError("Output table already exists")
+            
+    register_user_defined_functions(conn=conn)
     
     # creating output table
     cur.execute("""
@@ -86,7 +91,7 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
        INNER JOIN
            {transaction_row} AS phrases
        ON
-           pat.form = phrases.form
+           pat.form = udf_lower(phrases.form)
        AND
            pat.deprel = phrases.deprel
        AND
@@ -103,7 +108,7 @@ def extract_negations(cur, transaction_head: str, transaction_row: str, patterns
        INNER JOIN
            {transaction_head} AS verbs
        ON
-           pat.form = verbs.form
+           pat.form = udf_lower(verbs.form)
        AND
            pat.deprel = verbs.deprel
        AND

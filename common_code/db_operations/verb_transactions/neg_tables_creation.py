@@ -1,5 +1,6 @@
 # imports
 import sqlite3
+from ..db_udf import udf_lower, register_user_defined_functions
 
 def create_verb_neg_table(cur, verb_matches: str, transaction_head: str, output_table: str):
     """
@@ -141,202 +142,14 @@ def create_verb_neg_support_table(cur, verb_matches: str, transaction_head: str,
     ORDER BY
         relative_support DESC
     """.format(output_table=output_table, verb_matches=verb_matches, transaction_head=transaction_head, verb_neg=verb_neg))
+    
 
-
-def create_neg_patterns_table(cur, verb_neg: str, verb_neg_phrases: str, output_table: str):
+def create_neg_tables(conn, cur, verb_matches: str, transaction_head: str, transaction_row: str):
     """
-    Finds negation patterns from tables containing negated verb forms ('olema') and transactions containing a negation word ('ei', 'ära'). Creates a new table of negation patterns
+    Creates three negation tables that can be further used in negation patterns extraction or transaction filtering.
     
     Parameters:
-            cur - SQLite Cursor-object
-            verb_neg - name of table containing negated verbs found from transactions
-            verb_neg_phrases - name of table containing transactions that contain a negated verb form
-            output_table - output table name
-            
-    """
-    cur.execute("""
-    DROP TABLE IF EXISTS {output_table}
-    """.format(output_table=output_table))
-
-    cur.execute("""
-    CREATE TABLE {output_table} (
-        pat_id INTEGER PRIMARY KEY AUTOINCREMENT,
-        form TEXT,
-        deprel TEXT
-    )
-    """.format(output_table=output_table))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        form,
-        deprel
-    )
-    SELECT DISTINCT
-        form,
-        deprel
-    FROM
-        {verb_neg}
-    WHERE
-        verb='olema'
-    AND
-        instr(form, 'pol') > 0
-    OR
-        instr(form, 'Pol') > 0
-    """.format(output_table=output_table, verb_neg=verb_neg))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        form,
-        deprel
-    )
-    SELECT DISTINCT
-        form,
-        deprel
-    FROM
-        {verb_neg_phrases}
-    WHERE
-        lemma='ei'
-    AND
-        instr(feats, 'neg') > 0
-    AND
-        deprel='aux'
-    """.format(output_table=output_table, verb_neg_phrases=verb_neg_phrases))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        form,
-        deprel
-    )
-    SELECT DISTINCT
-        form,
-        deprel
-    FROM
-        {verb_neg_phrases}
-    WHERE
-        lemma='ära'
-    AND
-        instr(feats, 'neg') > 0
-    AND
-        deprel='aux'
-    """.format(output_table=output_table, verb_neg_phrases=verb_neg_phrases))
-    cur.connection.commit()
-
-
-def create_neg_feats_table(cur, neg_patterns: str, verb_neg: str, verb_neg_phrases: str, output_table: str):
-    """
-    Finds and creates a new table for 'feats' column values of negation (pattern) occurrences among transactions.
-    
-    Parameters:
-            cur - SQLite Cursor-object
-            neg_patterns - name of negation patterns table
-            verb_neg - name of table containing negated verbs found from transactions
-            verb_neg_phrases - name of table containing transactions that contain a negated verb form
-            output_table - output table name
-    """
-    cur.execute("""
-    DROP TABLE IF EXISTS {output_table}
-    """.format(output_table=output_table))
-
-    cur.execute("""
-    CREATE TABLE {output_table} (
-        pat_id INTEGER,
-        feats TEXT
-    )
-    """.format(output_table=output_table))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        pat_id,
-        feats
-        )
-    SELECT DISTINCT
-        pat_id,
-        feats
-    FROM
-    (
-        SELECT
-            pat_id,
-            form,
-            deprel
-        FROM
-            {neg_patterns} AS pat
-    ) AS tbl
-    INNER JOIN
-        {verb_neg} AS verb_neg
-    ON
-        (tbl.form=verb_neg.form AND tbl.deprel=verb_neg.deprel)   
-    WHERE
-        verb_neg.verb='olema'
-    AND
-        instr(verb_neg.form, 'pol') > 0
-    OR
-        instr(verb_neg.form, 'Pol') > 0
-    """.format(output_table=output_table, neg_patterns=neg_patterns, verb_neg=verb_neg))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        pat_id,
-        feats
-    )
-    SELECT DISTINCT
-        pat_id,
-        feats
-    FROM
-    (
-        SELECT
-            pat_id,
-            form,
-            deprel
-        FROM
-            {neg_patterns} AS pat
-    ) as tbl
-    INNER JOIN
-        {verb_neg_phrases} AS phrases
-    ON
-        (tbl.form=phrases.form AND tbl.deprel=phrases.deprel)
-    WHERE
-        lemma='ei'
-    AND
-        instr(feats, 'neg') > 0
-    AND
-        phrases.deprel='aux'
-    """.format(output_table=output_table, neg_patterns=neg_patterns, verb_neg_phrases=verb_neg_phrases))
-
-    cur.execute("""
-    INSERT INTO {output_table} (
-        pat_id,
-        feats
-    )
-    SELECT DISTINCT
-        pat_id,
-        feats
-    FROM
-    (
-        SELECT
-            pat_id,
-            form,
-            deprel
-        FROM
-            {neg_patterns} AS pat
-    ) AS tbl
-    INNER JOIN
-        {verb_neg_phrases} AS phrases
-    ON
-        (tbl.form=phrases.form AND tbl.deprel=phrases.deprel)
-    WHERE
-        lemma='ära'
-    AND
-        instr(feats, 'neg') > 0
-    AND
-        phrases.deprel='aux'
-    """.format(output_table=output_table, neg_patterns=neg_patterns, verb_neg_phrases=verb_neg_phrases))
-    cur.connection.commit()
-
-def create_neg_tables(cur, verb_matches: str, transaction_head: str, transaction_row: str):
-    """
-    Creates all five negation tables.
-    
-    Parameters:
+            conn - SQLite connection
             cur - SQLite Cursor-object
             verb_matches - name of table containing ID-s of verbs that occur in existing verb patterns (vp_data3)
             transaction_head - transaction head table name
@@ -346,12 +159,10 @@ def create_neg_tables(cur, verb_matches: str, transaction_head: str, transaction
             verb_neg - transaction heads from transaction_head that contain a negated verb and match a verb pattern from vp_data3
             verb_neg_phrases - transactions from transaction_row that also match a transaction head from verb_neg table
             verb_neg_support - informative table of negation support among verbs, in descending order
-            neg_patterns - negation patterns
-            neg_feats - 'feats' column values that occur together with a negation pattern
             
     """
+    register_user_defined_functions(conn=conn)
+    
     create_verb_neg_table(cur, verb_matches, transaction_head, 'verb_neg')
     create_verb_neg_phrase_table(cur, 'verb_neg', transaction_row, 'verb_neg_phrases')
     create_verb_neg_support_table(cur, verb_matches, transaction_head, 'verb_neg', 'verb_neg_support')
-    create_neg_patterns_table(cur, 'verb_neg', 'verb_neg_phrases', 'neg_patterns')
-    create_neg_feats_table(cur, 'neg_patterns', 'verb_neg', 'verb_neg_phrases', 'neg_feats')

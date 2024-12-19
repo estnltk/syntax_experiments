@@ -38,6 +38,6 @@ def remove_aux_verbs(cur, transaction_row: str):
             "Ebastabiilsus on [aux] õpetanud elama" -> "Ebastabiilsus õpetanud elama"
     """
     cur.execute("""
-    DELETE FROM {transaction_row} WHERE deprel='aux' AND lemma!='ei'
+    DELETE FROM {transaction_row} WHERE deprel='aux' AND lemma!='ei' AND lemma!='ära'
     """.format(transaction_row=transaction_row))
     cur.connection.commit()
