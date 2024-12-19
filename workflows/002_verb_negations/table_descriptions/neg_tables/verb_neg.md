@@ -1,4 +1,4 @@
-# Description of verb_neg table
+## Description of verb_neg table
 
 The table contains *transaction_head* table rows with selected attributes from transactions database (v32) that contain a negated verb and match a verb pattern from vp_data3 *patterns* table.
 

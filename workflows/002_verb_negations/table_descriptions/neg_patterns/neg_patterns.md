@@ -1,0 +1,15 @@
+## Description of neg_patterns table
+
+The table contains negation patterns extracted from *verb_neg* and *verb_neg_phrases* tables of *neg_tables.db* database.
+
+| Column name | Description | Example
+|---|---|---|
+|pat_id| pattern ID | 14
+|form| word form in *verb_neg* or *verb_neg_phrases* table | polnud
+|deprel| word deprel | advcl
+|example| example phrase from transactions database | kulutusi *poleks*
+
+
+## Additional information
+
+- Word forms represented are various *olema*-verb negated forms starting with a prefix *pol-*, word *ei* and different forms of word *ära*. 
