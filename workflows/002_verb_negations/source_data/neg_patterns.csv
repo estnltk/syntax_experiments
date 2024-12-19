@@ -1,0 +1,59 @@
+pat_id,form,deprel,example
+1,pole,root,selleks *pole* tüdrukut tarvis
+2,polnud,root,mul *polnud* luba
+3,poleks,root,tema *poleks* nõus
+4,polnud,parataxis,*polnud* Gabriel ühegagi rahul
+5,pole,advcl,ülikonda *pole*
+6,polnud,ccomp,seda *polnud* vaja
+7,pole,parataxis,*pole* enam lavakartust
+8,pole,conj,võimalust *pole*
+9,pole,acl:relcl,kes *pole* katsetega nõus
+10,polnud,acl:relcl,mille eest *polnud* vaja maksta
+11,pole,acl,*pole* kortereid
+12,poleks,advcl,kulutusi *poleks*
+13,polnud,conj,*polnud* aega
+14,polnud,advcl,lapsi *polnud*
+15,pole,ccomp,puhkust *pole* olemas
+16,pole,csubj:cop,meil *pole* vaja minna
+17,pole,csubj,*pole* olemas piire
+18,polegi,root,põhimõtteid õieti *polegi*
+19,polegi,acl:relcl,mida tegelikult *polegi* olemas
+20,polnud,acl,*polnud* kompetentsi
+21,poleks,ccomp,*poleks* neidki
+22,polevat,root,väidetavalt *polevat* teeneid enam vaja
+23,polekski,conj,*polekski* erinevusi
+24,poleks,conj,*poleks* olemaski
+25,pole,cop,*pole*
+26,polevat,conj,*polevat* loota
+27,poleks,acl:relcl,mida *poleks* vaja olnud
+28,pole,aux,*pole*
+29,polnud,csubj,*polnud* midagi
+30,polnudki,root,mul *polnudki* raha vaja
+31,poleks,acl,*poleks* lõhna
+32,poleks,parataxis,*poleks* vaaritamist
+33,polnuks,root,õigupoolest *polnuks* tal keeli üldse vaja õppida
+34,polekski,acl,*polekski* vaja otsida
+35,polnud,aux,*polnud*
+36,polnuks,advcl,*polnuks* järjekindlust
+37,polevat,parataxis,*polevat* raha
+38,polevat,advcl,*polevat* lepingut
+39,polegi,conj,väärikust aga *polegi*
+40,polnud,csubj:cop,*polnud* tal vaja käia
+41,polevat,acl:relcl,kelle jaoks *polevat* probleeme
+42,polegi,ccomp,paremaid *polegi* olemas
+43,polnudki,advcl,*polnudki* ametikohti
+44,polnud,cop,*polnud*
+45,polnuks,conj,*polnuks* joomist
+46,polnd,acl:relcl,mida Tädi *polnd* nõus
+47,polekski,root,uurimisobjekti *polekski* olemas väljaspool teooriaid
+48,poleks,aux,*poleks*
+49,ei,aux,rikkaks *ei* saa
+50,_ei,aux,*_ei* täida eesmärki
+51,_ei_,aux,võimalus *_ei_* tähenda jõuavad
+52,_-ei,aux,*_-ei* poolda ebajunalaid_ jälle
+53,--ei,aux,*--ei* soovita ma jääda
+54,ärgem,aux,investeeringute kõrval *ärgem* unustagem elu poolt
+55,ärge,aux,mitte *ärge* üritage suruda
+56,ära,aux,*ära* kummarda teda
+57,ärgu,aux,*ärgu* kartku
+58,ärme,aux,*ärme* rahvast ka unusta
