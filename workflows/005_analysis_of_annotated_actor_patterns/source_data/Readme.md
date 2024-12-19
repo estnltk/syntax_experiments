@@ -8,3 +8,4 @@ loc_lemmas_edited - väike hulk sõnu (u 1000), mis võiks olla kohad.
 
 verb_patterns - käsitsi annoteeritud verbide vahetabel patterns tabeli loomiseks. Luuakse 00_prepare_source_data notebookis ja loodud csv fail tuleb kopeerida sealt source_data kausta.
 
+koondkorpus_examples - luuakse sammus analysis_example_extractions failis 02. Salvestatakse alamkataloogi data/ kust see tuleb source_data kausta kopeerida. 
