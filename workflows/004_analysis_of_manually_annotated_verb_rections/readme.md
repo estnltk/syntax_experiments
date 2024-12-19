@@ -1,0 +1,3 @@
+## Analysis of manually annotated verb rections
+
+* [`propbank_preannotator_verb_patterns.csv`](propbank_preannotator_verb_patterns.csv) -- käsitsi koostatud verbi argumendistruktuuride kirjeldused projektist EKTB75. Andmebaas on tuletatud automaatselt käsitsi koostatud andmetabeli põhjal, mistõttu see ei kata kõikide verbide argumendistruktuure täielikult ning esineda võib ka automaatteisendamisest tulenevaid vigu (täpsem töövoog asub [**siin**](https://github.com/estnltk/estnltk-model-data/tree/main/propbank_sem_roles)). 
