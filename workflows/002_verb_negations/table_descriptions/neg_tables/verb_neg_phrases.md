@@ -1,4 +1,4 @@
-# Description of verb_neg_phrases table
+## Description of verb_neg_phrases table
 
 The table contains *transaction_row* table rows with selected attributes from transactions database (v32) that match a transation head from *verb_neg* table.
 

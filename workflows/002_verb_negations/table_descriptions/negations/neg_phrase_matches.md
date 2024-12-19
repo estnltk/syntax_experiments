@@ -1,4 +1,4 @@
-# Description of neg_phrase_matches table
+## Description of neg_phrase_matches table
 
 The table contains negation pattern IDs and head IDs of transactions that contain a match to these patterns.
 

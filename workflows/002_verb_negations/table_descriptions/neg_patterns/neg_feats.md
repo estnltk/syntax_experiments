@@ -1,6 +1,6 @@
-# Description of neg_feats table
+## Description of neg_feats table
 
-The table contains *feats* attribute values from *verb_neg* and *verb_neg_phrases* tables that match a pattern in *neg_patterns* table.
+The table contains *feats* attribute values from *verb_neg* and *verb_neg_phrases* tables of *neg_tables.db* database that match a pattern in *neg_patterns* table.
 
 | Column name | Description | Example
 |---|---|---|

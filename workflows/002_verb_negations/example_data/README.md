@@ -1,4 +1,5 @@
 ### Example data
 
-- `filtered_neg_100.db` sisaldab 100 juhuslikku transaktsiooni andmebaasist `v32_filtered_neg.db`, kus on ainult eitusvormis verbi sisaldavad filtreeritud transaktsioonid
-- `filtered_no_neg_100.db` sisaldab 100 juhuslikku transaktsiooni andmebaasist `v32_filtered_no_neg.db`, kus on ainult eitusvormis verbi mittesisaldavad filtreeritud transaktsioonid
+Väiksemal transaktsioonide hulgal jooksutatud töövoo tulemuseks saadud andmebaasid.
+Lähteandmeteks on andmebaas *transactions.db*, mis koosneb ~300 transaktsioonist, mille hulgas on esindatud eitusvormi sisaldavad,
+eitusvormi mitte-sisaldavad ning olemasolevatele verbimustritele vastavad ja neile mitte-vastavad transaktsioonid.

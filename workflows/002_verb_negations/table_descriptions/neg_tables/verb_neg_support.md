@@ -1,4 +1,4 @@
-# Description of verb_neg_support table
+## Description of verb_neg_support table
 
 The table contains information about negation support among verbs that match verbs in *patterns* table from vp_data3 and occur in *verb_neg* table.
 
