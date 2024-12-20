@@ -1,0 +1,8 @@
+head_id;sentence_id;verb;verb_compound;verb_loc;verb_form;root_deprel;kaane;root_lemma;root_form;root_loc;root_loc_rel;root_parent_loc;koht;elus;sentence
+876;487;saama;;3;saab;obl;el;mina;Minust;2;-1;;;YES;“ Minust saab teenija .
+206;120;saama;;7;saa;obl;el;sõna;sõnadest;4;-3;;;;Kui inimene ikka sõnadest aru ei saa , siis pole ka rusikatega midagi teha .
+96;63;saama;;3;saa;obl;el;inimene;inimestest;5;2;;;YES;Ma ei saa aru inimestest , kes üldse napsu ei võta , nagu ka neist , kes hommikust õhtuni joovad .
+74;50;saama;;4;saa;obl;el;toidupood;toidupoest;5;1;;;;Kui sa ei saa toidupoest soovitut , on asi päris hull .
+640;343;saama;;32;saab;obl;el;tüdruk;tüdrukust;31;-1;;;YES;Mulle millegipärast tundub , et mehed murravad truudust külmema südamega , sest nende jaoks on armukese juures tähtis see , et jõuaks käbe voodisse ja pärast on suva , mis tüdrukust saab .
+219;127;saama;;23;saanud;obl;el;alkoholism;alkoholismist;25;2;;;;“ Mu suhted on seni kõik läbi kukkunud , ” pihib BEATRICE , kes on uue armastuse , DJ PRIIT KUUSIKu kõrval saanud üle alkoholismist .
+674;367;saama;;3;sai;obl;el;sõprus;sõprusest;5;2;;;;See suhe sai alguse sõprusest .

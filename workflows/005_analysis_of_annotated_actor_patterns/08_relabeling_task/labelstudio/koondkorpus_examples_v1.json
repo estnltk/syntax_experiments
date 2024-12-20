@@ -1,7 +1,293 @@
 [
   {
     "data": {
-      "text": "Niipea , kui ma koju tulen , muutub ta tujukaks ja v\u00f5imukaks : \u201c Tee seda !"
+      "text": "M\u00e4letan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks .\nM\u00e4letan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks ."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 26,
+              "end": 32,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 39,
+              "end": 44,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 80,
+              "end": 85,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 86,
+              "end": 90,
+              "labels": [
+                "verb_comp"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 139,
+              "end": 145,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 152,
+              "end": 157,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 193,
+              "end": 198,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 199,
+              "end": 203,
+              "labels": [
+                "verb_comp"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "\u201c Minust saab teenija .\nKui inimene ikka s\u00f5nadest aru ei saa , siis pole ka rusikatega midagi teha .\nMa ei saa aru inimestest , kes \u00fcldse napsu ei v\u00f5ta , nagu ka neist , kes hommikust \u00f5htuni joovad .\nKui sa ei saa toidupoest soovitut , on asi p\u00e4ris hull .\nMulle millegip\u00e4rast tundub , et mehed murravad truudust k\u00fclmema s\u00fcdamega , sest nende jaoks on armukese juures t\u00e4htis see , et j\u00f5uaks k\u00e4be voodisse ja p\u00e4rast on suva , mis t\u00fcdrukust saab .\n\u201c Mu suhted on seni k\u00f5ik l\u00e4bi kukkunud , \u201d pihib BEATRICE , kes on uue armastuse , DJ PRIIT KUUSIKu k\u00f5rval saanud \u00fcle alkoholismist .\nSee suhe sai alguse s\u00f5prusest ."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 2,
+              "end": 8,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9,
+              "end": 13,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 41,
+              "end": 49,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 57,
+              "end": 60,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 107,
+              "end": 110,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 115,
+              "end": 125,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 210,
+              "end": 213,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 214,
+              "end": 224,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 428,
+              "end": 437,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 438,
+              "end": 442,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 552,
+              "end": 558,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 563,
+              "end": 576,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 588,
+              "end": 591,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 599,
+              "end": 608,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Niipea , kui ma koju tulen , muutub ta tujukaks ja v\u00f5imukaks : \u201c Tee seda !\nMilline seksuaalfantaasia tundub k\u00f5ige apetiitsem : seks tundmatuga liftis ; torulukksepp tuleb koju ; j\u00f5uluvana ja snegurot\u0161ka v\u00f5i doktor ja patsient ?\nKuidas sa rahaliselt toime tuled ?\nM\u00e4e on kohtunud piletikassa juures p\u00e4rnakatega , kes v\u00e4idavad end olevat tulnud uude kontserdimajja juba \u00fcheksandat-k\u00fcmnendat korda ."
     },
     "annotations": [
       {
@@ -14,7 +300,7 @@
                 "nimis\u00f5na"
               ]
             },
-            "from_name": "annotated_partofspeech",
+            "from_name": "phrase",
             "to_name": "text",
             "type": "labels"
           },
@@ -26,112 +312,79 @@
                 "verb"
               ]
             },
-            "from_name": "annotated_partofspeech",
-            "to_name": "text",
-            "type": "labels"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "data": {
-      "text": "Milline seksuaalfantaasia tundub k\u00f5ige apetiitsem : seks tundmatuga liftis ; torulukksepp tuleb koju ; j\u00f5uluvana ja snegurot\u0161ka v\u00f5i doktor ja patsient ?"
-    },
-    "annotations": [
-      {
-        "result": [
-          {
-            "value": {
-              "start": 90,
-              "end": 95,
-              "labels": [
-                "verb"
-              ]
-            },
-            "from_name": "annotated_partofspeech",
+            "from_name": "phrase",
             "to_name": "text",
             "type": "labels"
           },
           {
             "value": {
-              "start": 96,
-              "end": 100,
+              "start": 166,
+              "end": 171,
               "labels": [
-                "nimis\u00f5na"
+                "verb"
               ]
             },
-            "from_name": "annotated_partofspeech",
-            "to_name": "text",
-            "type": "labels"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "data": {
-      "text": "Kuidas sa rahaliselt toime tuled ?"
-    },
-    "annotations": [
-      {
-        "result": [
-          {
-            "value": {
-              "start": 21,
-              "end": 26,
-              "labels": [
-                "nimis\u00f5na"
-              ]
-            },
-            "from_name": "annotated_partofspeech",
+            "from_name": "phrase",
             "to_name": "text",
             "type": "labels"
           },
           {
             "value": {
-              "start": 27,
-              "end": 32,
+              "start": 172,
+              "end": 176,
               "labels": [
-                "verb"
+                "nimis\u00f5na"
               ]
             },
-            "from_name": "annotated_partofspeech",
-            "to_name": "text",
-            "type": "labels"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "data": {
-      "text": "M\u00e4e on kohtunud piletikassa juures p\u00e4rnakatega , kes v\u00e4idavad end olevat tulnud uude kontserdimajja juba \u00fcheksandat-k\u00fcmnendat korda ."
-    },
-    "annotations": [
-      {
-        "result": [
-          {
-            "value": {
-              "start": 73,
-              "end": 79,
-              "labels": [
-                "verb"
-              ]
-            },
-            "from_name": "annotated_partofspeech",
+            "from_name": "phrase",
             "to_name": "text",
             "type": "labels"
           },
           {
             "value": {
-              "start": 85,
-              "end": 99,
+              "start": 250,
+              "end": 255,
               "labels": [
                 "nimis\u00f5na"
               ]
             },
-            "from_name": "annotated_partofspeech",
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 256,
+              "end": 261,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 337,
+              "end": 343,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "phrase",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 349,
+              "end": 363,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "phrase",
             "to_name": "text",
             "type": "labels"
           }

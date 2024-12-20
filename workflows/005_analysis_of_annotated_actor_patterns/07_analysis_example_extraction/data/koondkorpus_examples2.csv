@@ -1,0 +1,3 @@
+head_id;sentence_id;verb;verb_compound;verb_loc;verb_form;root_deprel;kaane;root_lemma;root_form;root_loc;root_loc_rel;root_parent_loc;koht;elus;sentence
+355;199;kukkuma;alla;6;kukkus;obl;el;pea;peast;8;1;;;YES;Mäletan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks .
+355;199;kukkuma;alla;6;kukkus;obl;el;lagi;laest;15;6;;;;Mäletan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks .

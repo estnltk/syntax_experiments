@@ -1,0 +1,27 @@
+
+<View>
+    <Labels name="label" toName="text">
+
+	<Label value="V" background="#7AC130"/> 
+    <Label value="OBL" background="#0795E2"/> 
+    
+</Labels>
+<Text name="text" value="$text"/>
+<Header value="Kas tegu on aja- või kohamäärusega?"/>
+<Choices name="aegkoht" toName="text">
+    <Choice value="alati"/>
+    <Choice value="vahel"/>
+    <Choice value="mitte kunagi"/>
+  </Choices>
+<Header value="Kas tegu on isiku või organisatsiooniga?"/>
+<Choices name="per_org" toName="text">
+    <Choice value="alati"/>
+    <Choice value="vahel"/>
+    <Choice value="mitte kunagi"/>
+  </Choices>
+<Header value="Kas tegu on millegi muuga?"/>
+<Choices name="muu" toName="text">
+    <Choice value="muu"/>
+  <Choice value="pole kindel"/>
+</Choices>
+</View>
