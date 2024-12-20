@@ -18,6 +18,9 @@
 
 - verb ja kääne jaoks dictinct root count ja kas on juba annoteeritud 
 
+04 - tabelid
 
+- verbobl ja rootsõna mis on nimekirja põhjal elusad
 
+- verbobl ja rootsõna mis on nimekirja põhjal kohad
 
