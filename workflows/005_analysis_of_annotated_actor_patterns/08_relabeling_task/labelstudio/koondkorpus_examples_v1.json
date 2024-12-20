@@ -1,0 +1,142 @@
+[
+  {
+    "data": {
+      "text": "Niipea , kui ma koju tulen , muutub ta tujukaks ja v\u00f5imukaks : \u201c Tee seda !"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 16,
+              "end": 20,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21,
+              "end": 26,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Milline seksuaalfantaasia tundub k\u00f5ige apetiitsem : seks tundmatuga liftis ; torulukksepp tuleb koju ; j\u00f5uluvana ja snegurot\u0161ka v\u00f5i doktor ja patsient ?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 90,
+              "end": 95,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 96,
+              "end": 100,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "Kuidas sa rahaliselt toime tuled ?"
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 21,
+              "end": 26,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 27,
+              "end": 32,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "text": "M\u00e4e on kohtunud piletikassa juures p\u00e4rnakatega , kes v\u00e4idavad end olevat tulnud uude kontserdimajja juba \u00fcheksandat-k\u00fcmnendat korda ."
+    },
+    "annotations": [
+      {
+        "result": [
+          {
+            "value": {
+              "start": 73,
+              "end": 79,
+              "labels": [
+                "verb"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 85,
+              "end": 99,
+              "labels": [
+                "nimis\u00f5na"
+              ]
+            },
+            "from_name": "annotated_partofspeech",
+            "to_name": "text",
+            "type": "labels"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
-head_id;sentence_id;verb;verb_compound;root_deprel;kaane;root_lemma;phrase;koht;elus;sentence
-875;485;tulema;;obl;adit;kodu;koju;YES;;Niipea , kui ma koju tulen , muutub ta tujukaks ja võimukaks : “ Tee seda !
-731;396;tulema;;obl;adit;kodu;koju;YES;;"Milline seksuaalfantaasia tundub kõige apetiitsem : seks tundmatuga liftis ; torulukksepp tuleb koju ; jõuluvana ja snegurotška või doktor ja patsient ?"
-53;39;tulema;;obl;adit;toim;toime;;;Kuidas sa rahaliselt toime tuled ?
-497;264;tulema;;obl;adit;kontserdimaja;kontserdimajja;;;Mäe on kohtunud piletikassa juures pärnakatega , kes väidavad end olevat tulnud uude kontserdimajja juba üheksandat-kümnendat korda .
+head_id;sentence_id;verb;verb_compound;verb_loc;verb_form;root_deprel;kaane;root_lemma;root_form;root_loc;root_loc_rel;root_parent_loc;koht;elus;sentence
+875;485;tulema;;6;tulen;obl;adit;kodu;koju;5;-1;;YES;;Niipea , kui ma koju tulen , muutub ta tujukaks ja võimukaks : “ Tee seda !
+731;396;tulema;;12;tuleb;obl;adit;kodu;koju;13;1;;YES;;"Milline seksuaalfantaasia tundub kõige apetiitsem : seks tundmatuga liftis ; torulukksepp tuleb koju ; jõuluvana ja snegurotška või doktor ja patsient ?"
+53;39;tulema;;5;tuled;obl;adit;toim;toime;4;-1;;;;Kuidas sa rahaliselt toime tuled ?
+497;264;tulema;;12;tulnud;obl;adit;kontserdimaja;kontserdimajja;14;1;;;;Mäe on kohtunud piletikassa juures pärnakatega , kes väidavad end olevat tulnud uude kontserdimajja juba üheksandat-kümnendat korda .
