@@ -6,9 +6,7 @@ import pandas as pd
 
 def get_transaction_examples(
     connection: sqlite3.Connection, 
-    transactions_db: str, 
     transactions: str, 
-    transhead_db: str,
     transaction_head: str, 
     mainverb: str, 
     comp: str, 
@@ -21,9 +19,7 @@ def get_transaction_examples(
     Fetches transaction information for given verb and case.
     Parameters:
         connection: sqlite3.Connection - The SQLite database connection object.
-        transactions_db: str - The name of the transaction table database.
         transactions: str - The name of the transaction table.
-        transhead_db: str - The name of the transaction_head table database.
         transaction_head: str - The name of the transaction_head table.
         mainverb: str - The main verb word.
         comp: str - Verb compound.
@@ -40,22 +36,27 @@ def get_transaction_examples(
         head.sentence_id as sentence_id,
         head.verb,
         head.verb_compound as verb_compound,
+        head.loc as verb_loc,
+        head.form as verb_form,
         tr.deprel as root_deprel,
         '{kaane1}' as kaane,
         tr.lemma as root_lemma,
-        tr.form as phrase,
+        tr.form as root_form,
+        tr.loc as root_loc,
+        tr.loc_rel as root_loc_rel,
+        tr.parent_loc as root_parent_loc,
         tr.koht as koht,
         tr.elus as elus
     from 
-    (select * from {db1}.{enrich}
+    (select * from entrans.{enrich}
     where deprel = 'obl'
     and INSTR(',' || feats || ',', ',' || '{kaane1}' || ',') > 0) as tr
     join 
-    (select * from {db2}.{head}
+    (select * from trans.{head}
     where verb == '{mainverb}'
     and verb_compound == '{comp}') as head
     on head.id = tr.head_id
-    """.format(kaane1 = kaane, db1=transactions_db, enrich=transactions, db2=transhead_db, head=transaction_head, mainverb=mainverb,comp=comp)
+    """.format(kaane1 = kaane, enrich=transactions, head=transaction_head, mainverb=mainverb,comp=comp)
 
     df= pd.read_sql_query(query, connection)
 
