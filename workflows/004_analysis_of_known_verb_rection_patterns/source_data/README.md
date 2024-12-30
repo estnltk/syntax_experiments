@@ -1,4 +1,3 @@
-### Analysis of known verb rection patterns
+### Source data
 
-- `/source_data` sisaldab lähteandmeid verbimustrite eraldamiseks
-- `/table_descriptions` sisaldab loodud tabelite dokumentatsiooni
+Sisaldab lähteandmeid verbimustrite eraldamiseks (fail *12_eesti_ilmik_rektsiooniga_linkideta.csv*).
