@@ -2,6 +2,64 @@
 import sqlite3
 from ..db_udf import udf_lower, register_user_defined_functions
 
+def create_temp_table(cur, verb_neg: str, verb_neg_phrases: str):
+    """
+    Helper method that creates a temporary table of negated forms of verb 'olema'. Is necessary because negated forms of verb 'olema' can occur among both transaction heads and transaction rows, but only unique forms should exist among negation patterns.
+    
+    Parameters:
+            cur - SQLite Cursor-object
+            verb_neg - name of table containing negated verbs found from transactions
+            verb_neg_phrases - name of table containing transactions that contain a negated verb form
+    
+    Resulting temporary table will be deleted after unique rows are saved to actual output table.
+    """
+    cur.execute("""
+    CREATE TABLE temp (
+        pat_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        form TEXT,
+        deprel TEXT
+    )
+    """)
+
+    cur.execute("""
+    INSERT INTO temp (
+        form,
+        deprel
+    )
+    SELECT DISTINCT
+        udf_lower(form),
+        deprel
+    FROM
+        {verb_neg}
+    WHERE
+        verb='olema'
+    AND
+        instr(udf_lower(form), 'pol') > 0
+    AND
+        instr(udf_lower(feats), 'neg') > 0
+    """.format(verb_neg=verb_neg))
+    
+    cur.execute("""
+    INSERT INTO temp (
+        form,
+        deprel
+    )
+    SELECT DISTINCT
+        udf_lower(form),
+        deprel
+    FROM
+        {verb_neg_phrases}
+    WHERE
+        lemma='olema'
+    AND
+        instr(udf_lower(form), 'pol') > 0
+    AND
+        instr(udf_lower(feats), 'neg') > 0
+    AND
+        deprel='aux'
+    """.format(verb_neg_phrases=verb_neg_phrases))
+    
+
 def create_neg_patterns_table(cur, verb_neg: str, verb_neg_phrases: str, output_table: str):
     """
     Finds negation patterns from tables containing negated verb forms ('olema') and transactions containing a negation word ('ei', 'ära'). Creates a new table of negation patterns
@@ -24,24 +82,24 @@ def create_neg_patterns_table(cur, verb_neg: str, verb_neg_phrases: str, output_
         deprel TEXT
     )
     """.format(output_table=output_table))
-
+    
+    create_temp_table(cur, verb_neg, verb_neg_phrases)
+    
     cur.execute("""
     INSERT INTO {output_table} (
         form,
         deprel
     )
     SELECT DISTINCT
-        udf_lower(form),
+        form,
         deprel
     FROM
-        {verb_neg}
-    WHERE
-        verb='olema'
-    AND
-        instr(udf_lower(form), 'pol') > 0
-    AND
-        instr(udf_lower(feats), 'neg') > 0
-    """.format(output_table=output_table, verb_neg=verb_neg))
+        temp
+    """.format(output_table=output_table))
+    
+    cur.execute("""
+    DROP TABLE temp
+    """)
 
     cur.execute("""
     INSERT INTO {output_table} (
@@ -127,10 +185,37 @@ def create_neg_feats_table(cur, neg_patterns: str, verb_neg: str, verb_neg_phras
     WHERE
         verb_neg.verb='olema'
     AND
-        instr(udf_lower(verb_neg.form), 'pol') > 0
-    AND
         instr(udf_lower(feats), 'neg') > 0
     """.format(output_table=output_table, neg_patterns=neg_patterns, verb_neg=verb_neg))
+    
+    cur.execute("""
+    INSERT INTO {output_table} (
+        pat_id,
+        feats
+    )
+    SELECT DISTINCT
+        pat_id,
+        feats
+    FROM
+    (
+        SELECT
+            pat_id,
+            form,
+            deprel
+        FROM
+            {neg_patterns} AS pat
+    ) as tbl
+    INNER JOIN
+        {verb_neg_phrases} AS phrases
+    ON
+        (tbl.form=udf_lower(phrases.form) AND tbl.deprel=phrases.deprel)
+    WHERE
+        lemma='olema'
+    AND
+        instr(feats, 'neg') > 0
+    AND
+        phrases.deprel='aux'
+    """.format(output_table=output_table, neg_patterns=neg_patterns, verb_neg_phrases=verb_neg_phrases))
 
     cur.execute("""
     INSERT INTO {output_table} (
