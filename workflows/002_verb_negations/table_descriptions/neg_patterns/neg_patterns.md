@@ -12,4 +12,4 @@ The table contains negation patterns extracted from *verb_neg* and *verb_neg_phr
 
 ## Additional information
 
-- Word forms represented are various *olema*-verb negated forms starting with a prefix *pol-*, word *ei* and different forms of word *ära*. 
+- Word forms represented in resulting patterns are various *olema*-verb negated forms starting with a prefix *pol-*, word *ei* and different forms of word *ära*. 
