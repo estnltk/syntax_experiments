@@ -1,4 +1,3 @@
-### Analysis of known verb rection patterns
+### Table descriptions
 
-- `/source_data` sisaldab lähteandmeid verbimustrite eraldamiseks
-- `/table_descriptions` sisaldab loodud tabelite dokumentatsiooni
+Töövoo käigus loodavate andmebaasitabelite dokumentatsioon andmebaaside kaupa.
