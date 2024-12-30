@@ -1,3 +1,3 @@
 ### Template search
 
-Siia tuleb uute verbimustrite otsimise sisuline osa.
+Uute verbimustrite otsimine. Näitena otsing, milliste verbide korral on advmod kohustuslik fraasi liige ja milliste korral mitte.
