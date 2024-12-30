@@ -1,3 +1,3 @@
 ### Transaction simplification
 
-Siia läheb transaktsioonidest mitte-huvipakkuvate deprelite eemaldamise osa.
+Transaktsioonide lihtsustamine nende hulgast ebahuvitavate süntaktiliste suhete (*deprel* -väärtuste) eemaldamise kaudu.
