@@ -1,8 +1,11 @@
-# Mustriga katmata verbid ja nende alluvad
+# Uncovered verbs and their dependents based on patterns.
 
-Andmete kirjeldus ja kogumise kood: [make_kala77.ipynb](./make_kala77.ipynb)
+01 - Data description and collection script
 
-Baasi kasutamise näited: [kala77_examples.ipynb](./kala77_examples.ipynb)
+02 - Examples of database usage
 
-Korjatud andmed: [GoogleDrive link](https://drive.google.com/file/d/1fIz_6zAS3y6RWwdrtw9IZGT3eK_6yVzk/view?usp=drive_link).
+example_data - Databases with sample data for running the workflow.
 
+helpers - heper functions for collecting data.
+
+Collected data: [GoogleDrive link](https://drive.google.com/file/d/1fIz_6zAS3y6RWwdrtw9IZGT3eK_6yVzk/view?usp=drive_link).

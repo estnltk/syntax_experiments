@@ -70,23 +70,23 @@ def fill_table_verb_transactions(conn, verb_id, pat_ids):
     conn.commit()
 
 
-def show_verb_trans_stat(conn, verb):
+def show_verb_trans_stat(conn, verb, trx_source_schema, patterns_src_schema):
     print("verb", verb)
     # compare data of
-    #   db_pat
-    #   db_tr
-    #   kala777
+    #   {trx_source_schema}
+    #   {trx_source_schema}
+    #   uncovered_transactions
     sql = (
-        """
+        f"""
     SELECT COUNT(DISTINCT vm.head_id) AS total
-    FROM db_pat.verb_matches AS vm
+    FROM {patterns_src_schema}.verb_matches AS vm
     WHERE vm.pat_id IN(%s)
     """
         % verb["pat_ids"]
     )
     total = conn.execute(sql).fetchone()[0]
 
-    print("db_pat total:", total)
+    print(f"{patterns_src_schema} total:", total)
 
     sql = """
     SELECT COUNT(DISTINCT head_id)
@@ -102,7 +102,7 @@ def show_verb_trans_stat(conn, verb):
         verb["pat_ids"],
     )
     total = conn.execute(sql).fetchone()[0]
-    print("db_pat unmatched:", total)
+    print(f"{patterns_src_schema} unmatched:", total)
 
     sql = """
     SELECT COUNT(DISTINCT head_id)
@@ -118,18 +118,18 @@ def show_verb_trans_stat(conn, verb):
         verb["pat_ids"],
     )
     total = conn.execute(sql).fetchone()[0]
-    print("db_pat matched:", total)
+    print(f"{patterns_src_schema} matched:", total)
 
-    sql = """
+    sql = f"""
     SELECT COUNT(DISTINCT th.id) AS total
-    FROM db_tr.transaction_head AS th
+    FROM {trx_source_schema}.transaction_head AS th
     WHERE th.verb = :verb AND th.verb_compound = :verb_compound
     """
     total = conn.execute(
         sql, {"verb": verb["verb"], "verb_compound": verb["verb_compound"]}
     ).fetchone()[0]
 
-    print("db_tr all:", total)
+    print(f"{trx_source_schema} all:", total)
 
     sql = """
     SELECT COUNT(head_id) AS total
@@ -138,5 +138,5 @@ def show_verb_trans_stat(conn, verb):
     """
     total = conn.execute(sql, {"verb_id": verb["verb_id"]}).fetchone()[0]
 
-    print("kala77 all:", total)
+    print("uncovered_transactions all:", total)
     print(" ")
