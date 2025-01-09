@@ -1,4 +1,4 @@
-from vabamorf_2_neural import neural_model_tags
+from .vabamorf_2_neural import neural_model_tags
 # või installida estnltk_neural 1.7.3 ja importida otse seal
 # from estnltk_neural.taggers.neural_morph.new_neural_morph.vabamorf_2_neural import neural_model_tags
 
