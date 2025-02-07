@@ -1,0 +1,200 @@
+abstr	abstraktne entiteet (nt üksus, suhe, süsteem)
+abstr	abstract entity
+abstr/konkr	abstr/konkr entiteet (nt vahend, võttestik, teatav süsteem, meetod)
+abstr/konkr	abstract/concrete entity
+abstr/konkr_omadus	esilduva omadusega abstr/konkr entiteet
+abstr/konkr_omadus	abstr/concr_property
+abstr_asend/suund	asend, suund, siht (abstr)
+abstr_asend/suund	position, direction, target
+ADV_aste	(nt väga, äärmiselt)
+ADV_seisund	seisundiadverb (nt kinni, lahti, välja)
+aeg	ajalõik, piiratud või piiramata kestus
+aeg	time
+aeg_aastaaeg	aastaaeg (4 aastaaega)
+aeg_aastaaeg	time_season
+aeg_kuu	kuu (12 kuud)
+aeg_kuu	time_month
+aeg_nädalapäev	nädalapäev (7 päeva)
+aeg_nädalapäev	time_day
+aeg_tähtpäev	tähtpäev, püha (nt küünlapäev, võidupäev)
+aeg_tähtpäev	time_holiday
+ese	ese, objekt
+ese	artefact, object
+ese_anum	anum, nõu, mahuti
+ese_anum	artefact_vessel
+ese_instru	tööriist, sõiduvahend jt
+ese_instru	artefact_instrument, vehicle
+ese_kunst	kunstiteos, käsitöö, kunstilooming
+ese_kunst	artefact_piece of art, handicraft
+ese_raha	rahaühik, rahasumma vm vara
+ese_raha	artefact_money
+ese_riie	riietusese, rõivas, ka jalats
+ese_riie	artefact_clothing
+ese_semio	teos, sõnaline (märgiline) toode, programm jm
+ese_semio	artefact_semiotical
+ese_semio_Piibli raamat	Piibli raamat (Koguja raamat)
+ese_semio_Piibli raamat	artefact_semiotical_parts of the Bible
+esitus	info, teave, nimetus, märk jt
+esitus	representation
+esitus_arv	arv, number, arvuline näitaja (nt viies, kolmandik)
+esitus_arv	representation_number
+esitus_info	info, teave jt (nt aadress, andmed)
+esitus_info	representation_information, content
+esitus_keel	(grammatiline) keeleüksus, keeletermin
+esitus_keel	representation_(grammatical) unit of language, linguistic term
+esitus_keel_suhtlus	suhtlusüksus, kõnetlussõna, sõimusõna jms (nt braavo, härra, kurat)
+esitus_keel_suhtlus	representation_unit of communication
+esitus_keel_täht	täht, häälik
+esitus_keel_täht	representation_letter, sound
+esitus_kujutis	pilt, sümbol, kujutis, märk
+esitus_kujutis	representation_image, symbol
+esitus_mõõt	mõõde, mõõt, mõõtühik, suurus, pikkus jt
+esitus_mõõt	representation_quantity_definite
+esitus_tiitel	seisuse, teaduskraadi nimetus, aunimetus
+esitus_tiitel	representation_title
+esitus_tähis	tähis, sümbol, märk (nt O, g)
+esitus_tähis	representation_symbol
+inimene	inimolend, isik, indiviid
+inimene	human, person
+in_elukutse	elukutse, amet
+in_elukutse	profession
+in_müt	üleloomulik olend, muinasjututegelane vm (nt Punamütsike)
+in_müt	human_mythological
+in_omadus	esilduva omadusega inimene
+in_omadus	human_his property
+in_rahvas	teatud rahva esindaja, rahvas, inimrühm
+in_rahvas	human_nation
+in_rahvas_keel	mingi rahvuse keel, keele nimetus
+in_rahvas_keel	human_nation_language
+in_roll	esilduva rolliga olend, mõttesuuna, sotsiaalse staatuse esindaja
+in_roll	human_role
+in_sugulane	teatava sugulussuhte esindaja
+in_sugulane	human_relative
+in_tegija	agent, tegevuse tegija, seisundis olija
+in_tegija	human_agent of the activity, subject
+kehaosa	inimese (ja looma) kehaosa
+kehaosa	body part
+kehaosa_loom	looma kehaosa
+kehaosa_loom	body part_animal
+kogus	n-ö puhas kogusesõna, kogus (mis tahes asja)
+kogus	amount
+koht	ruumi, pinna, joone punkt või piirkond, asukoht
+koht	place
+koht_ala	maa-ala, piirkond
+koht_ala	place_territorium
+koht_asutus	asutus, institutsioon, teatav üksus
+koht_asutus	institution
+koht_geogr	kohanimi, geopoliitiline koht
+koht_geogr	place name
+koht_geogr_maailmajagu	maailmajagu
+koht_geogr_maailmajagu	place name
+ADV_koht	(nt üles, ette)
+ADV_põhjus	(nt järelikult)
+ADV_tulemus	märgib lõpetatust või tulemuslikkust, saavutust (nt välja, ära)
+ADV_viis	(nt aeglaselt, hästi)
+ADV_modaalsus	rõhuadverb (nt võib-olla, tõtt-öelda)
+amet	amet
+auaste	auaste
+koht_geogr_veekogu	ookean, meri, jõgi jm veekogud
+koht_geogr_veekogu	place name_seas et al
+koht_hoone	rajatis, (suurem) ehitis
+koht_hoone	place_building
+koht_kehaosa	kehapiirkond (ka loomal)
+koht_kehaosa	place_body part
+koht_loodus	looduslik piirkond, pinnavorm
+koht_loodus	place_nature
+koht_suund/asend	suund, asupaik
+koht_suund/asend	place_direction, location
+konkr	konkreetne entiteet
+konkr	concrete entity
+konkr_omadus	esilduva omadusega konkreetne entiteet
+konkr_omadus	concrete entity_its property
+käsklus	käsklus
+loom	loom
+loom	animal
+loom_kala	kala
+loom_kala	animal_fish
+loom_liik	liik/tüüp/rühm loomi
+loom_liik	animal_kind/type/group of
+loom_lind	lind
+loom_lind	animal_bird
+loom_omadus	esilduva omadusega loom
+loom_omadus	animal_its property
+loom_putukas	putukas, mardikas, lülijalgne
+loom_putukas	animal_insect
+materjal/aine	materjal, aine, sh keemiline element
+materjal/aine	material/substance, incl. chemical elements
+nähtus	asjade muutumine ajas, see, mis ilmneb, tekib
+nähtus	phenomenon
+nähtus_füüs	füüsikaline nähtus (nt heli)
+nähtus_füüs	phenomenon_physical
+nähtus_loodus	loodusnähtus, loomulik, isetekkeline nähtus
+nähtus_loodus	phenomenon_nature, natural kind
+nähtus_psühh	tunne, psüühikaga seotud nähtus, kognitiivne fakt
+nähtus_psühh	phenomenon_psychological, emotion
+objekt	objekt
+objekt	object
+objekt_loodus	looduslik, loomulik objekt
+objekt_loodus	object_natural
+objekt_loodus_tähtkuju	tähtkujud (Kaljukits)
+objekt_loodus_tähtkuju	object_natural
+omadus	omadus, iseloomulik tunnus
+omadus	property
+omadus_abstr	abstraktne omadus (nt väärtus)
+omadus_abstr	property_abstract
+omadus_aeg	ajaga seotud omadus (nt suvine, eilne)
+omadus_aeg	property_time
+omadus_füüs	füüsikaline omadus (mass, kõrgus, kiirus, heli, värv jne)
+omadus_füüs	physical property (weight, speed, height, sound, colour, etc)
+omadus_koht	koha, asendi, suunaga seotud omadus (nt aknapoolne)
+omadus_koht	property_location
+omadus_kval	sisuline omadus, hinnang (nt hea)
+omadus_kval	qualitative property
+omadus_psühh	psüühikaga (tunnetega, tajuga) seotud omadus
+omadus_psühh	property_psychological, cognitive, emotional
+organism	organism, elusolend
+organism	living being
+seisund	olek, seis teataval ajahetkel, üldine olukord
+seisund	state
+seisund_haigus	haiguslik seisund
+seisund_haigus	state_illness, disease
+seisund_füüs	(asjade) füüsiline seisund
+seisund_füüs	state_physical
+sündmus	aja, koha ja tegevusega piiritletud sündmus, juhtum
+sündmus	event
+taim	taim, taimestik
+taim	plant, flora
+taim_liik	liik/tüüp/rühm taimi
+taim_liik	plant_kind/type/group of
+taim_omadus	esilduva omadusega taim
+taim_omadus	plant_its property
+taim_seen	seen
+taim_seen	plant_mushroom
+taim_õis	taime õis koos varrega
+taim_õis	plant_flower together with its stalk
+tegevus	tegevus, protsess
+tegevus	activity, process
+tegevus_kõnetegu	kõnetegu, suhtlusakt (nt käsk, palve, hüüatus)
+tegevus_kõnetegu	activity_speech act
+tegevus_muutus	seisundit/olekut muutev tegevus
+tegevus_muutus	activity_change
+tegevus_mäng	sportmäng, lauamäng jt
+tegevus_mäng	activity_game
+tegevus_tegu	tegevuse üksikjuhtum, toiming, tegevuse tulemus
+tegevus_tegu	activity_act, action
+toit	toit, söök, toiduaine
+toit	food
+toit_jook	jook, vedelik joomiseks
+toit_jook	food_drink
+toit_maitseaine	maitseaine, vürts
+toit_maitseaine	food_spice
+toit_vili	taime osa toiduna
+toit_vili	food_seed of the plant
+vald	valdkond, eriala, tegevusala
+vald	domain, speciality
+VERB_abstr	abstraktse sisuga tegevus
+VERB_abstr	verb_abstract
+omadus_vanus	vanust kirjeldav omadus
+omadus_füüs_värv	värv, värvus
+VERB_aeg	ajaga seostuv tegevus (nt kestma)
+VERB_aeg	verb_time
