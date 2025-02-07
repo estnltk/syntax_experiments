@@ -5,7 +5,7 @@
 **v01_experiment_1**: Trying to find physical locations by finding words in spatial cases that are several verbs' direct dependents.
 
 * *v01_locations_by_verb.ipynb*: for finding possible physical locations by looking for words in cases denoting location for multiple verbs. For better documentation look inside the file.
-* **v01_locations_by_verb_timefilter.ipynb*: for finding possible physical locations by looking for words in cases denoting location for multiple verbs where words denoting time are filtered out.
+* *v01_locations_by_verb_timefilter.ipynb*: for finding possible physical locations by looking for words in cases denoting location for multiple verbs where words denoting time are filtered out.
 * *timetest_v01.ipynb*: for finding possible timewords using files in base_data
 
 **v02_manual_annotation**: Preparing material for experiment 2 - gpt annotation.
