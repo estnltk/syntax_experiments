@@ -1,17 +1,9 @@
-## Labelling physical locations - v03
+## Physical location labelling
 
-The aim of this work is to develop a tagger for obliques that tags physical locations in Estonian texts. More detailed documentation can be found in each folder's README file.
+This repository is for developing a tagger that automatically annotates physical locations in Estonian. It has two approaches, the data of which is seperated into two different folders.
 
-**Base_data**: data used for annotation. Includes wordlists, prompts and files to be annotated annotated.
+1. **physical_location_by_context**
+Work done by Kertu Saul for her PhD. Has various methods for annotating physical locations by relying on sentence context.
 
-**Code**: code files for different development tasks. 
-
-**Documentation**: different types of explanatory files. Includes annotation guidelines and explanations for annotation labels. 
-
-**Results**: results obtained from running code or doing manual annotation. 
-
-
-### Version history
-**v03**: second experiment. Annotating physical locations with gpt and calculating its quality.
-**v02**: preliminary work for second experiment. Preparing manually annotated test material. Used in v03 to annotate physical locations with GPT and calculate its results.
-**v01**: first experiment. Trying to find physical locations by finding words in spatial cases that are several verbs' direct dependents. Results had good quality but too little quantity.
+2. **physical_locations_by_word**
+Work done by  Kristina Katarina Kaljumäe for her bachelor's thesis. Annotates physical locations based only on the word itself.
