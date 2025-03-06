@@ -1,4 +1,5 @@
---QUERY 1: LEIA KÕIK SÕNAD, MILLEL ON VÄHEMALT 1 KOHA/AJA/SEISUNDI/SÜNDMUSE TÄHENDUS JA SÕNA KÕIK SEMANTILISED TÜÜBID
+--QUERY 1: LEIA KÕIK SÕNAD, MILLEL ON VÄHEMALT 1 KOHA/AJA/SEISUNDI/SÜNDMUSE TÄHENDUS 
+--JA SÕNA KÕIK SEMANTILISED TÜÜBID
 --võta ainult koha, aja, seisundi ja sündmuse sõnad
 WITH words_with_target_types AS (
     SELECT DISTINCT w.value AS word
@@ -393,4 +394,50 @@ FROM word_semantic_types wst
 JOIN word_type_counts wtc ON wst.word = wtc.word
 WHERE wtc.type_count = 1 -- Only keep words with 1 semantic type
 GROUP BY wst.word, wst.semantic_types
+ORDER BY wst.word
+
+--QUERY 8: LEIA KÕIK SÕNAD, MILLEL ON AINULT 1 SEMANTILINE TÜÜP JA SEE POLE KOHT/AEG/SEISUND/SÜNDMUS
+--võta sõnad, mis pole koha, aja, seisundi ja sündmuse sõnad
+WITH words_with_target_types AS (
+    SELECT DISTINCT w.value AS word
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.lang = 'est' 
+    AND (
+        st.code not IN (
+            'koht', 'koht_ala', 'koht_asutus', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu',
+            'koht_hoone', 'koht_kehaosa', 'koht_loodus', 'koht_suund/asend',
+            'aeg', 'aeg_aastaaeg', 'aeg_kuu', 'aeg_nädalapäev', 'aeg_tähtpäev',
+            'seisund', 'seisund_haigus', 'seisund_füüs',
+            'sündmus'
+        )
+    )
+),
+--leia, mis semantiliste tüüpidega iga sõna on
+word_semantic_types as (
+SELECT w.value AS word, st.code
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
+    GROUP BY w.value, st.code
+    ),
+word_type_counts AS (
+    -- Count distinct semantic types per word
+    SELECT word, COUNT(DISTINCT code) AS type_count
+    FROM word_semantic_types
+    GROUP BY word
+)
+-- Filter only words that have 1 semantic type
+SELECT 
+    wst.word, wst.code
+FROM word_semantic_types wst
+JOIN word_type_counts wtc ON wst.word = wtc.word
+WHERE wtc.type_count = 1 -- Only keep words with 1 semantic type
+GROUP BY wst.word, wst.code
 ORDER BY wst.word
