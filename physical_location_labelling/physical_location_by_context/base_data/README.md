@@ -1,8 +1,10 @@
 ## Base data used in experiments
 
 **ekilexist**: base data extracted from the Institute of Estonian Language's lexicographic database [Ekilex] (https://github.com/keeleinstituut/ekilex) 
-* *ADV_kohad_ekilexist.txt*: list of spatial adverbs (ADV_koht)
-* *sona_sem_tyyp_ekilexist*: words with their semantic types. One word can have more than one semantic type
+* *obliikva_1_semtyyp.csv*: words that have one semantic type (location, time, event, state)
+* *obliikva_2_semtyyp.csv*: words that have 2 semantic types where at least one is location, time, event, state.
+* *obliikva_semtyybiga_koik.csv*: words with all their semantic types. 
+* *sem_type_ekilex.xlsx*: an excel file of the previous 3 files for ease of viewing
 * *valjendverbid.csv/valjendverbid-txt*: a list of phrasal verbs
 
 **gpt**: data for annotating physical locations with GPT

@@ -18,3 +18,8 @@
 
 * *v03_gpt_annotation.ipynb*: annotating 1000 words with GPT as physical locations (LOC) or something else (NONE)
 * *v03_gpt_results.ipynb*:  comparing automatic and manual annotation files. Finds quality of automatic annotation.
+
+**v04_rulebased_annotation**: Annotating obliques with various freely available resources
+
+* *obliikva_semantika_ekilexist_script.sql*: Sql queries for extracting a word's semantic type info from ekilex
+* *v04_spatial_obliques_from_SQLite.ipynb*: finds all obliques in spatial cases from a database, writes them into a new table  

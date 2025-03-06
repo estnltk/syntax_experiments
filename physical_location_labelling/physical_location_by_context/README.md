@@ -12,6 +12,8 @@ The aim of this work is to develop a tagger for obliques that tags physical loca
 
 
 ### Version history
+**v04**: Annotating obliques in spatial cases with various freely available resources
+
 **v03**: second experiment. Annotating physical locations with gpt and calculating its quality.
 
 **v02**: preliminary work for second experiment. Preparing manually annotated test material. Used in v03 to annotate physical locations with GPT and calculate its results.
