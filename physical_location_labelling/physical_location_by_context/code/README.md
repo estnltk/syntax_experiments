@@ -23,3 +23,4 @@
 
 * *obliikva_semantika_ekilexist_script.sql*: Sql queries for extracting a word's semantic type info from ekilex
 * *v04_spatial_obliques_from_SQLite.ipynb*: finds all obliques in spatial cases from a database, writes them into a new table  
+* *v04_semtype_co-occurance.ipynb*: Finds how much each semantic type appears with location, time, state and event tags. Looks through words that have 2 semantic types where 1 is loc, time, state or event. 
