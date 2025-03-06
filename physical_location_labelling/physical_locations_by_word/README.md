@@ -1,1 +1,1 @@
-Kristina, palun pane oma kood ja dokumentatsioon siia.
+Work done by  Kristina Katarina Kaljumäe for her bachelor's thesis. Annotates physical locations based only on the word itself.

@@ -1,0 +1,87 @@
+Here is a list of rules defining 'kohafraas' in Estonian. Analyze the rules carefully and determine the appropriate label (1, 0, ?, or -) for each word based on the given rules. If a word could fit multiple categories, follow the most specific applicable rule.
+
+List of Rules:
+## Sissejuhatus
+
+Kohad on nimisõnad või pärisnimed, mis vastavad füüsilisele lokatsioonile, kuhu saab minna või kus saab olla. 
+Näiteks on kohad "Elva", "tuba", "Soome", "pood" ja "Peipsi järv".
+Neid me märgendame '1'-ga.
+Mõned nimisõnad võivad korraga tähendada kohta ja aega.
+Näiteks "põhikool", "võistlus" ja "Berliini lahing".
+Neid märgendatakse '?'-ga.
+Mõnede sõnade puhul pole võimalik tuvastada, mida need tähendavad.
+Näiteks  "RBH", "80.", "plaju", "pst" ja "RS4".
+Neid märgendatakse '-'-ga.
+Mõnede sõnade puhul on selge, et need ei saa olla kohad.
+Näiteks  ei ole kohad "putukas", "rõõmus", "see", "ta" ja "kolm".
+Neid märgendatakse '0'-ga.
+
+## Täpsemad juhised
+
+Kõik linnad ja asulad on kohad.
+Näiteks "Tallinn".
+
+Esemed on kohad.
+Näiteks "kauss" ja "tool".
+
+Kui inimene saab füüsiliselt sinna sisse minna, siis see on koht.
+Näiteks "auto" ja "ruum".
+
+Asjad, mille peal inimene saab seista on kohad.
+Näiteks "põrand".
+
+Taimed on kohad.
+Näiteks "õunapuu", "põõsas" ja "võilill".
+
+Ilmakaared on kohad.
+Näiteks "ida". 
+
+Maailm ja osoonikiht on kohad (ei oska üldisemat mõistet siia veel mõelda).
+
+Eesnimed, perekonnanimed ja isikud ei ole kohad.
+Näiteks "Paul Keres" ja "Paula".
+
+Organisatsioonid, üritused ja firmad ei ole kohad.
+Näiteks "NATO", "etendus" ja "Spotify".
+
+Ajaperioodid ei ole kohad.
+Näiteks "keskaeg" ja "õhtu".
+
+Joogid ja toidud ei ole kohad.
+Näiteks "vesi", "eine" ja "pasta".
+
+Riided ei ole kohad.
+Näiteks "koolivorm" ja "püksid".
+
+Koolid ja bürood on märgitud "?"-ga.
+Näiteks "Tallinna 21.Kool".
+
+
+List of Words:
+Tartu, Tartu Ülikool, shl, ajupoolkera, kõhklus, vigane, kummipall, rattamaraton, aegviidu, suusk
+
+
+Vastus ChatGPT-lt:
+
+Analüüsime sõnad vastavalt reeglitele:
+Tartu – Linn, seega 1
+Tartu Ülikool – Kool, seega ?
+shl – Ei ole selge tähendus, seega -
+ajupoolkera – Kehaosa, mitte koht, seega 0
+kõhklus – Abstraktne mõiste, mitte koht, seega 0
+vigane – Omadussõna, mitte koht, seega 0
+kummipall – Ese, seega 1
+rattamaraton – Üritus, mitte koht, seega 0
+Aegviidu – Asula, seega 1
+suusk – Ese, seega 1
+Vastused:
+Tartu – 1
+Tartu Ülikool – ?
+shl – -
+ajupoolkera – 0
+kõhklus – 0
+vigane – 0
+kummipall – 1
+rattamaraton – 0
+Aegviidu – 1
+suusk – 1
