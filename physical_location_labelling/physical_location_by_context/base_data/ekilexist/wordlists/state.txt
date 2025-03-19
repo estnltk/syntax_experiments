@@ -14,7 +14,13 @@ abielusidemed
 abieluvõrdsus
 abitus
 abitusseisund
+abjekt
+abjektsioon
+abjektsus
+ablatsioon
+abort
 absoluutne vaesus
+abstinentsinäht
 abstsess
 abuulia
 Addisoni tõbi
@@ -28,11 +34,14 @@ adneksiit
 aegpomm
 aegumine
 aegumus
+aevastus
 afaasia
 afektiseisund
+afoonia
 aft
 agorafoobia
 agranulotsütoos
+agressiivsus
 agrofoon
 aheldatus
 aheldus
@@ -40,14 +49,17 @@ ahend
 ahendus
 ahenemus
 ahvirõuged
+aidatud tuntus
 AIDS
 aids
 ainevahetushaigus
 ainevahetushäire
 ainuabielu
+ainuvalitsus
 ajanappus
 ajapomm
 ajapuudus
+ajateenistus
 ajavahestress
 ajuabstsess
 ajuatroofia
@@ -66,6 +78,7 @@ ajupõletik
 ajupõrutus
 ajurabandus
 ajusong
+ajusopp
 ajusurnud
 ajuturse
 ajuudu
@@ -74,18 +87,25 @@ ajuvapustus
 ajuverevalum
 ajuvigastus
 ajuvähk
+aklimatisatsioon
 akne
 akraania
 akromegaalia
+aktiivne puhkus
+aktiivsus- ja tähelepanuhäire
 aktinomükoos
+akuutsus
 alaalia
 alaareng
 alaealisus
 alahappesus
+alajahtumine
 alakoormatus
 alakoormus
 alalhoidumine
 alamlus
+alarahastatus
+alarahastus
 alastiolek
 alastus
 alatalitlus
@@ -100,6 +120,8 @@ alaväärsuskompleks
 albuminuuria
 aleksia
 alfa-gal-sündroom
+algidu
+algseis
 alistumus
 alkaloos
 alkoholideliirium
@@ -111,19 +133,32 @@ alkoholism
 alkoholisõltuvus
 alkoholiuim
 alkoholpsühhoos
+allaandmine
+allajäämine
+allakäigu spiraal
+allakäiguspiraal
+allasurumine
 allavaje
+allavandumine
+allergia
 allism
 allodüünia
+allokatsioon
+alluvus
+alopeetsia
 ALS
 Alzheimer
 Alzheimeri tõbi
 althoie
 altidus
+altminek
 aluminoos
 amblüoopia
 amenorröa
 amentsia
 amentsus
+ametiseisund
+amneesia
 Amori nool
 amöbiaas
 amööbdüsenteeria
@@ -139,6 +174,7 @@ anateem
 anatsiidsus
 aneemia
 anentsefaalia
+anesteesia
 aneurüsm
 angiin
 angioneuroos
@@ -149,6 +185,7 @@ ankrus
 anküloos
 anoomia
 anoreksia
+anosmia
 antrakoos
 antraks
 anuuria
@@ -156,22 +193,31 @@ aordiahend
 aortiit
 apaatia
 apaatsus
+apelsinikoorenahk
+apelsininahk
 apenditsiit
 apepsia
 aplaasia
 apnoe
 apopleksia
+aps
 arahnoidiit
 arenguhäire
 arengupuue
+arest
 aresti all
 aresti alla
 aresti alt
 argielu
 argihall
 argihallus
+argipäev
+argipäevasus
+argisus
+argus
 armastusabielu
 armastuskolmnurk
+armastusväärsus
 armetus
 armisong
 armkasvaja
@@ -181,6 +227,7 @@ armukadeduspiin
 armukirg
 armukolmnurk
 armupiin
+armurinne
 arseenimürgistus
 arseenimürgitus
 arteriaalne hüpertensioon
@@ -192,20 +239,29 @@ artriit
 artroos
 arusaadamatus
 arusaamatus
+arust
 arvel
 arvele
 arvelt
 arvutisõltuvus
 asbestoos
+asendushooldus
+asenduskaristus
 asfüksia
 ASH
+asjalkäik
+asjalkäimine
+asjalugu
+asjaolu
 askariaas
 askaridiaas
 askaridoos
 asoteemia
+asperger
 Aspergeri sündroom
 astaasia
 asteenia
+asteeniline
 astenoopia
 astigmatism
 astma
@@ -213,6 +269,8 @@ astmahoog
 astrotsütoom
 astsiit
 asu
+asumine
+asümmeetria
 asüstoolia
 atakk
 ataksia
@@ -220,21 +278,33 @@ ataraksia
 ateroom
 ateroskleroos
 atetoos
+ATH
+atoonia
 atroofia
 atsidoos
 Augeiase tallid
+aukoht
 auku
+aura
 au sees
 au sisse
+austus
+aut
 autism
 autismispektri häire
 autoimmuunhaigus
 autoimmuunsus
 autoinfektsioon
 autointoksikatsioon
+automaatpiloot
+autonoomia
+autopiloot
 autorlus
 autorsus
 avalik kord
+avalikkus
+avanemisperiood
+avarii
 avariiolukord
 avatud suhe
 avatus
@@ -248,23 +318,29 @@ bakterveresus
 balanss
 Balkani sündroom
 baltofoobia
+banaalsus
 bardakk
 bardo
 barotrauma
 beebikõõm
+beebiootele
 beebiootus
+beebit ootama
 bensiinimürgistus
 bensiinimürgitus
 beribeeri
 bigaamia
 bigoreksia
 bikiinivorm
+biomarker
 bipolaarne häire
 bipolaarne meeleoluhäire
 bipolaarsus
+blackout
 blastoom
 blefariit
 blenorröa
+blokaad
 borrelioos
 botulism
 bradükardia
@@ -276,17 +352,27 @@ brutselloos
 buboon
 buboonkatk
 buliimia
+bumerang
 bursiit
 bussinoos
 börsipalavik
 C-hepatiit
+circulus vitiosus
+condition humaine
 COVID
 COVID-19
 dakrüadeniit
 daltonism
 Damoklese mõõk
+debiilsus
+defitsiit
+defitsiitne
+dehüdratatsioon
+dehüdratsioon
 dekompensatsioon
+dekoreerima
 deliirium
+delikaatsus
 dementsus
 denge
 dengepalavik
@@ -294,6 +380,7 @@ dengue-palavik
 depersonalisatsioon
 depigmentatsioon
 deprekas
+depressioon
 depressiooniseisund
 derealisatsioon
 dermatiit
@@ -302,11 +389,14 @@ dermatoos
 desorganisatsioon
 detsentralisatsioon
 deviantsus
+deviatsioon
 diabeet
+diabeetiline
 diabeetiline kooma
 dialoogirežiim
 diapaus
 diarröa
+diasporaa
 diastaas
 diatees
 diferent
@@ -315,13 +405,19 @@ difteeria
 difteriit
 digipaast
 digiväsimus
+digiärksus
 diktaatorlus
 dilemma ees
 dilemma ette
 diplomaatiline puutumatus
 diploopia
 dipsomaania
+disharmoonia
+diskontinuiteet
+dissonants
 distorsioon
+distress
+divertiikul
 Downi sündroom
 džungliseadus
 düsbioos
@@ -333,31 +429,50 @@ düsgraafia
 düskomfort
 düsleksia
 düslipideemia
+düsosmia
 düspepsia
 düsplaasia
+düstress
 düstroofia
 düsuuria
+ebabilanss
 ebaedu
 ebajahukaste
 ebakindlus
 ebaklapp
 ebakorrapära
 ebakorrapärasus
+ebakorrektsus
 ebakrupp
+ebakõla
 ebaliiges
+ebaloogilisus
 ebasoosing
+ebasümmeetria
+ebatäpsus
 ebavõrdsus
+ebaõiglus
 ebaõnn
 ebaõnnestumine
 ebaühtlus
 ebola
 Ebola viirushaigus
 ede
+edemus
 edulootus
+edulugu
+edumaa
+eduseis
+edutus
+Eeden
+Eedeni aed
 eelarvedefitsiit
 eeldiabeet
+eelisjärjekord
 eelisseisund
 eelnäht
+eelpension
+eelsoodumus
 eelsümptom
 eeluurimisvangistus
 eelvangistus
@@ -365,6 +480,8 @@ eemaldumus
 eemalolek
 eesnäärmepõletik
 eesnäärmevähk
+eeternarkoos
+eetertuimastus
 eevaülikond
 eevaülikonnas
 Egiptuse lihapotid
@@ -372,6 +489,7 @@ Egiptuse nuhtlus
 Egiptuse pimedus
 ehedus
 ehhinokokoos
+ehholaalia
 ehku peal
 ehm
 ehmatus
@@ -379,19 +497,27 @@ ei idane ega mädane
 ei mahu hinge
 ei mahu pähe
 ei näe selget päeva
+ei ole kiita
 ei saa saamagi
+eitamine
 eklampsia
 ekraanisõltuvus
 eksaltatsioon
+eksalteeritus
 eksamipalavik
 eksanteem
 ekseem
+ekshibitsionism
 eksiil
+eksistents
 eksitus
 eksoftalmia
+ekspertlus
 eksterritoriaalsus
+ekstraklass
 ekstrasüstol
 ekstrasüstoolia
+ekstreem
 elatustase
 elavhõbedamürgistus
 elavhõbedamürgitus
@@ -400,6 +526,7 @@ elektritrauma
 elevantsus
 eliting
 elu ja olu
+elujärg
 eluke
 elukene
 elukord
@@ -413,7 +540,10 @@ eluoht
 elu-olu
 eluolu
 eluots
+elupõlv
 eluraskus
+elurikkus
+eluring
 elustandard
 elustiilihaigus
 elutase
@@ -430,11 +560,14 @@ emakarebend
 emakavaje
 emakaverejooks
 emakavähk
+emapiim
 ematus
 emboolia
 embrüoom
+embus
 emerituur
 emfüseem
+emmetroopia
 empaatiavõimetus
 enamusosalus
 endastmõistetavus
@@ -444,10 +577,12 @@ endokriinhaigus
 endometrioos
 end sisse sööma
 energiajulgeolek
+energiakadu
 energiakriis
 energiaostuvõimetus
 energiasõltuvus
 energiavaesus
+eneseisolatsioon
 enesestmõistetavus
 ennast sisse sööma
 ensootia
@@ -462,6 +597,7 @@ enurees
 epidermofüütia
 epilepsia
 epilepsiahoog
+epileptiline
 episootia
 eraklikkus
 eraklus
@@ -473,12 +609,18 @@ eraldatus
 eraldi leivas
 erapooletus
 eravalduses
+erekas
 erektsioon
 e-residentsus
 ergotism
 erikohtlemine
+erilaad
+erilisus
 eriolukord
+eripära
+eripärasus
 erisoov
+erosioon
 erotomaania
 erru
 eru
@@ -488,9 +630,18 @@ erutusseisund
 erüsiipel
 erüteem
 erütreemia
+esimus
 esindatus
 esinduslikkus
+esinemisnärv
+esinemispalavik
+esinemisärevus
+esirida
+esmatarve
+etteanne
+eufooria
 eustress
+evakuatsioon
 faavus
 fantoomrasedus
 farüngiit
@@ -498,10 +649,13 @@ fastsioliaas
 fenüülketonuuria
 feodaalaristokraatia
 fetaalne alkoholisündroom
+fibrillatsioon
 fibromüalgia
 fibromüoom
 fibroom
+fibroos
 fibrosarkoom
+fiksidee
 fiktiivabielu
 fimoos
 finantskriis
@@ -511,6 +665,7 @@ finantsseisund
 finantstervis
 finantsvabadus
 finnoos
+fissuur
 fistul
 flebiit
 flegmoon
@@ -518,12 +673,15 @@ fluoroos
 fokaalinfektsioon
 follikuliit
 fonasteenia
+foobia
 fosforipuudus
 fosforivaegus
 fotofoobia
 fotokahjustus
 fotosensibilisatsioon
+fotosensitiivsus
 fotovananemine
+fraktuur
 frustratsioon
 funktsioonihäire
 furunkul
@@ -536,12 +694,14 @@ gaasimürgitus
 gaasivalu
 galaktoseemia
 gammatsism
+ganglion
 gangreen
 gangreenne
 gangrenoosne
 gastralgia
 gastriit
 gastroenteriit
+geenirike
 geiabielu
 genitaalherpes
 genitaaltüügas
@@ -556,17 +716,21 @@ glioom
 glossiit
 glükeemia
 glükosuuria
+gneiss
 gonartroos
 gonorröa
 granuloom
+graviidne
 gripiepideemia
 gripipandeemia
 gripipuhang
 gripp
+grupimõtlemine
 gumma
 günekomastia
 haage
 haamervarvas
+haav
 haavahaigus
 haavainfektsioon
 haavamädanik
@@ -576,6 +740,7 @@ haavandtõbi
 haavapalavik
 haavumus
 hahkhallitus
+haigevoodi
 haiglanakkus
 haiglus
 haigus
@@ -586,14 +751,21 @@ haiguspilt
 haiguspuhang
 haigusseisund
 haimoriit
+haistmisvõimetus
+hajala
 hajaliolek
+hajevil
+hajevile
 hajevilolek
 hajumus
 hajutatus
 hakitus
+hakkamasaamine
 halaasion
 halb toon
 halb õnn
+haldusarest
+haldustrahv
 haledus
 haletsus
 hale vari
@@ -607,18 +779,24 @@ halltõbi
 halvatus
 halvatusnäht
 halvemus
+hambaauk
 hambad risti
 hambad ristis
 hambahaigus
 hambakaaries
 hambapõletik
 hambasööbija
+hambavalu
 hambumusanomaalia
+hambus
 hammastus
+hammustus
 hammustushaav
 hapnikunälg
 hapnikupuudus
+hapnikutarve
 hapnikuvaegus
+hapnikuvajadus
 hapnikuvõlg
 hardumus
 hardus
@@ -630,6 +808,7 @@ harkseis
 harvikhaigus
 hasartmängusõltuvus
 hauapimedus
+hauarahu
 haudmehaigus
 haudmemädanik
 haudumus
@@ -637,7 +816,10 @@ haugi mälu
 Havanna sündroom
 hea järje peal
 hea järje peale
+heakord
+heakorrastus
 heaolu
+heaolutunne
 hebefreenia
 hegemoonia
 heinanohu
@@ -653,6 +835,7 @@ hematuuria
 hemeraloopia
 hemipleegia
 hemofiilia
+hemolüüs
 hemorraagia
 hemorraagiline
 hemorraagiline diatees
@@ -669,6 +852,7 @@ hetkeseisund
 higihernes
 higilööve
 higipull otsa ees
+hiidkasv
 hiidsus
 hiigeledu
 hiilgevorm
@@ -680,33 +864,48 @@ hingamispeetus
 hingeahastus
 hingeldus
 hingeldustõbi
+hingeliigutus
 hingepiin
 hingerahu
 hingeseisund
+hingestatus
 hingevärin
 hing niidiga kaelas
 hing on täis
 hing paelaga kaelas
 hirm on nahas
+hirmujudin
 hirmukangestus
+hirmuvabin
+hirmuvõpatus
+hirmuvärin
 hirsutism
+Hispaania gripp
 HIV-infektsioon
 HIV-nakkus
 hobuseisu
 hobuseköha
+hobuserautamine
+hobuserautus
 hobuste Aafrika katk
 Hodgkini lümfoom
 Hodgkini tõbi
 hoiul
 hoiule
+hommikuhämar
+hommikuhämarik
+hommikuhämarus
 hommikupimedus
 homoabielu
+homofoobia
 homosuhe
+homoviha
 homöostaas
 hoogjoomine
 hooldamatus
 hormoonid möllavad
 hospitaalinfektsioon
+hukatus
 hukkumisoht
 hulgiluumurd
 hulgimurd
@@ -715,6 +914,11 @@ hulgiskleroos
 hulgitrauma
 hullu lehma tõbi
 hullulehmatõbi
+hullumaja puhvet
+hullumeelsus
+hullus
+humanitaarkatastroof
+humanitaarkriis
 hundiisu
 hundikurk
 hundiseadus
@@ -727,15 +931,22 @@ huulepõletik
 huvide konflikt
 huvikonflikt
 huviorbiit
+huvipuudus
 huvitatus
 hõbelehisus
 hõivatus
 hõive
 hõlbuelu
+hõlma all
+hõlma alla
+hõlma alt
 hõlmas
 hõlpelu
 hõõrdumus
 hõõtsik
+häbiasi
+häbilugu
+häbistus
 hädaoht
 hädaolukord
 hädaorg
@@ -747,7 +958,10 @@ hädas nagu mustlane mädas
 häireolukord
 häireseisukord
 häirimatus
+hälve
+hämarik
 hämarolek
+hämarus
 hämaruspimesus
 händikäp
 härdumus
@@ -755,29 +969,40 @@ härduspisar
 hävimatus
 hääldusalus
 häälehäire
+häälekadu
 häälekus
+häälestus
 häälest ära
+hääletus
 häälteenamus
+hübriidimmuunsus
 hüdrartroos
 hüdreemia
+hüdrofoobia
 hüdronefroos
 hüdrotooraks
 hüdrotseele
 hüdrotsefaalia
 hüljatus
+hümn
+hüperaktiivsus
 hüpereemia
 hüperesteesia
 hüperfunktsioon
 hüperglükeemia
 hüperhidroos
+hüperinflatsioon
 hüperkeratoos
 hüperoopia
+hüperplaasia
 hüpersekretsioon
 hüpersomnia
 hüpertensioon
 hüpertermia
+hüpertoonia
 hüpertooniatõbi
 hüpertrihhoos
+hüpertroofia
 hüpertüreoos
 hüpervitaminoos
 hüpnoos
@@ -786,12 +1011,16 @@ hüpodermoos
 hüpofunktsioon
 hüpoglükeemia
 hüpogonadism
+hüpohondria
 hüpokaleemia
 hüpokaltseemia
 hüpoksia
 hüpomaania
 hüponatreemia
+hüpostaas
 hüpotensioon
+hüpotermia
+hüpotoonia
 hüpotroofia
 hüpotüreoos
 hüpovitaminoos
@@ -799,11 +1028,20 @@ hüsteeria
 hüsteerika
 hüübimatus
 hüübivus
+hüüvis
 hygge
+idée fixe
+identiteedikriis
+identsus
 idiootia
+idiosünkraasia
+idiotism
+idüll
 igamus
 igapäev
 igapäevaelu
+igavene puhkus
+igavene uni
 igavestel jahimaadel
 igemehaigus
 igemekasvaja
@@ -817,18 +1055,34 @@ ihutervis
 iileus
 iiveldus
 iiveldustunne
+ikaldus
+iksjalad
 ikterus
+illusoorsus
 illustratiivsus
+ilma
+ilmaelu
 ilma hoolde
 ilma hooleks
 ilmajäetus
+ilmaolud
+ilmastikuolud
+ilmastikutingimused
+ilme
 iluuni
 imbetsilsus
 immuunpuudulikkus
 immuunsuskadu
 immuunsuspuudulikkus
 impetiigo
+impotentsus
+indemniteet
+indolents
+indolentsus
+infantiilsus
+infantilism
 infarkt
+infarktioht
 infektsioon
 infektsioonhaigus
 infektsioosne
@@ -840,16 +1094,27 @@ infosulg
 infoväsimus
 Inglise haigus
 inglishaigus
+inimareng
+inimkatastroof
+inimnägu
 inimolu
 inimpale
 inimtervis
+inimväärikus
 initsiatiivipuudus
 inkontinents
+inkontinentsus
+inkubatsiooniaeg
+inkubatsiooniperiood
 innatus
 insomnia
+inspiratsioon
 insufitsientsus
+insult
 intellektipuue
+internetisõltuvus
 intoksikatsioon
+intolerantsus
 invaginatsioon
 invaliidsus
 invasioonihaigus
@@ -857,13 +1122,18 @@ irdoks
 irdumus
 iriit
 irruli
+irv
+irve
 isadus
+isasus
 isatus
 iseendastmõistetavus
 iseenesestmõistetavus
 isemürgistus
 isenakatumine
 isenakatus
+isepära
+isepärasus
 iseseisvusetus
 isheemia
 isheemiatõbi
@@ -878,40 +1148,58 @@ isukaotus
 isupuudus
 isutus
 itsi täis
+jaatamine
 jahiõnn
+jahm
+jahmatus
+jahukaste
 jalad ees
 jalad on nagu vatist
 jalakasurm
 jalaseen
+jalasirutus
+jalgealune
 jalgealune kõigub
 jalge ees
+jalutus
 janupalavik
+janutunne
 jaotumus
 jaotuvus
 Jeruusalemma sündroom
+jobutus
+jonksus
 joobeseisund
 joobumus
+joogijanu
+jooksja
 jooksu
 jooksus
 jooksva
 joomahullus
 joomatõbi
 joomauim
+joone all
+joone alla
 joonteräga
 joovastus
 joove
 jotatsism
 juhe on koos
 juhtpositsioon
+julgeolek
 julgeolekuolukord
+julgeolekurisk
 jumala armust
 jumalatus
+jups
 jutuhoog
 jutumärkides
 jutuohjad
 jututuhin
 juua täis
 juuksed tõusevad püsti
+juuksekadu
 juuksekarvad tõusevad püsti
 juuksetus
 juukseväljalangus
@@ -926,7 +1214,10 @@ jõepimedus
 jõudeelu
 jõudekäik
 jõudepõlv
+jõukus
+jõuluehe
 jõulurahu
+jõuväli
 jäiteoht
 jälitusluul
 jämesoolepõletik
@@ -939,9 +1230,14 @@ järjel
 järjele
 järje peal
 järje peale
+järjestus
+järk
+jätab soovida
 jätkumine
 jääkmagneetumus
 jääkmagnetism
+jääknäht
+jääpuder
 jäävangi
 jäävangis
 jäävangist
@@ -964,9 +1260,14 @@ kaasteadmine
 kaastundeväsimus
 kaasuv haigus
 kaasvaldus
+kaasvastutus
 kabinetivaikus
 kabjahaigus
+kae
+kaebus
+kaenlas
 kaetis
+kaevikusõda
 kahe jalaga maa peal
 kahe kivi vahel
 kahelinägemine
@@ -977,27 +1278,37 @@ kahe tule vahel
 kahe veskikivi vahel
 kahheksia
 kahjustus
+kahjutus
+kahune
+kahus
 kahvatustõbi
 kahvatu vari
 kahvlis
 kaif
 kainestus
+kainus
 kaiss
+kaisus
 kaisust
+kaisutus
 kaitsepidurdus
 kaitseseisukord
 kaitseseisund
 kaitsetus
+kaitseväeteenistus
 kaitsmatus
 kaitstus
+kajakõne
 kaksikabielu
 kaksikalluvus
 kaksikdiagnoos
 kaksikelu
 kaksikrasedus
 kaksindus
+kaks kärbest ühe hoobiga
 kaks kätt risti rinna peal
 kaksteistsõrmikuhaavand
+kaks ühes
 kalahaigus
 kalamürgistus
 kalamürgitus
@@ -1010,28 +1321,43 @@ kaldkiulisus
 kalduolek
 kalevi all
 kalevi alla
+kalkvel
+kalkvele
+kallakus
 kaltsifikatsioon
 kaltsiumipuudus
 kaltsiumivaegus
+kambas
 kammitsetus
 kamm turjas
+kampas
+kanaihu
 kananahk
+kanapimedus
 kanapimesus
+kanarind
 kandidoos
+kandmine
 kandpöid
 kanepijoove
+kanepine
 kangestus
 kangestuskramptõbi
 kangustõbi
 kankroid
+kannatus
+kaos
 kaotsis
 kaotusseis
 kapatsism
+kapitalism
+kapitalismus
 kapsahaigus
 kapsanuuter
 kaputt
 karastatus
 karastumus
+karastus
 karbunkul
 kardiaalastma
 kardiomüopaatia
@@ -1042,6 +1368,7 @@ karg
 kargu
 karistamatus
 karistatus
+karjaimmuunsus
 karjaõnn
 karjääriplatoo
 karpaalkanali sündroom
@@ -1058,18 +1385,24 @@ karusmarja-jahukaste
 karuuni
 karvad tõusevad püsti
 karvakiskumine
+karvane käsi
 karvanääpsupõletik
 karvupidi kokku
 karvupidi koos
 kassaseis
+kassiahastus
 kassihaigus
 kassikatk
 kasutatavus
+kasvaja
 kasvuhäire
 kasvuraskus
 katalepsia
+katarakt
 katarr
 katatoonia
+katk
+katkelisus
 katkestus
 katkestusseis
 katkuepideemia
@@ -1085,14 +1418,20 @@ kaugelenägevus
 kaugnägelikkus
 kaugnägevus
 kaugühendus
+kaunistama
+kausaalsus
 kausalgia
+kavern
 keeled suus
 keelehalvatus
 keel ei paindu
 keelel kibelema
 keeleoskamatus
+keeleoskustase
 keele peal kibelema
 keelepõletik
+keeletase
+keeletus
 keelevähk
 keel kuivab
 keel kuivab suulakke kinni
@@ -1102,6 +1441,7 @@ keel suus
 keeltepaabel
 keel vestil
 keel vesti peal
+keem
 keerdkasv
 keerdlehisus
 keerdsõlm
@@ -1117,6 +1457,7 @@ kehvveresus
 keiliit
 kelmikus
 keloid
+kenadus
 kennelköha
 keratiit
 keratoos
@@ -1124,8 +1465,10 @@ kere on hele
 keskeakriis
 keskendatus
 keskkonnakahjustus
+keskkonnarisk
 keskkonnatervis
 keskkõrvapõletik
+keskväli
 kessoontõbi
 kestendus
 ketendus
@@ -1135,6 +1478,8 @@ ketoos
 kevadväsimus
 kibe käes
 kidi
+kidu
+kihelus
 kiilaspäisus
 kiinimuhktõbi
 kiire uni
@@ -1156,11 +1501,18 @@ kinetoos
 king pigistab
 kinniistumine
 kinnikülmutamine
+kinnisidee
+kinnismõte
+kinnisus
+kinnisvaramull
 kirehoog
 kiremöll
 kirepuhang
+kirikuteenistus
 kirikuvanne
+kirjaoskamatus
 kirjas
+kirjasaladus
 kirjutuskramp
 kirsiks tordil
 kirss tordil
@@ -1170,10 +1522,15 @@ kitsikus
 kivihaue
 kivitõbi
 klamüdioos
+klamüüdia
+klapirike
+klassipositsioon
 klaustrofoobia
 kleptomaania
 kliiketendustõbi
+kliima
 kliimakriis
+kliiniline surm
 klimp kurgus
 kloasm
 klomp kurgus
@@ -1188,11 +1545,13 @@ kodukahjustus
 kodukanandus
 kodurahu
 kodutus
+koeksistents
 koeraelu
 koerakatk
 koeranael
 koerapõli
 kogelus
+kogukondlus
 kogukus
 kohalolek
 kohalolu
@@ -1200,58 +1559,80 @@ kohal viibima
 kohanematus
 kohanemus
 kohatäide
+kohevil
 kohkumus
 kohtualluvus
 kohtuhärrus
 kohtujärelevalve
+kohtuveskid jahvatavad
 kohustatus
 kohutus
 KOK
+kokainism
 kokkujooks
 kokkukuuluvus
 kokkulangevus
 koksartroos
 koksiit
 koktsidioos
+koldküps
 koldküpsus
 koletsüstiit
+kolgata
+Kolgata tee
+kolgatatee
 kolienteriit
 koliit
 kolikambris
 koljumurd
 koljutrauma
+kollakus
 kollanaast
 kollanägemine
 kollapalavik
+kollaps
 kollatõbi
+kollektiivne immuunsus
 kollektiivpuhkus
 kollenakkus
+kollimatsioon
 kolloidolek
 kolmepäevapalavik
+kolmikjaotus
 kolmiknegatiivne rinnavähk
 kolonaat
 kolorektaalvähk
 kolpiit
 koltushaigus
 komando all
+kombits
 komedoon
+komfort
+komistuskivi
 kompjalg
 kompjalgsus
 kompkabi
 komplitseeritus
 komppöid
 kompulsiivne söömishäire
+komu
 kondinõrkus
 konditsioon
 kondivalu
 kondroom
 kondüloom
+konflikt
 konfliktitus
 konfliktsituatsioon
+konformism
+konfrontatsioon
 kongestioon
 konjunktiviit
 konjunktuur
+konkrement
 konkubinaat
+konnasilm
+konservimine
 konsulaarkriis
 kontraktuur
 kontrolli all
@@ -1266,8 +1647,14 @@ koolikud
 kooliküpsus
 kooliolud
 koolivalmidus
+kooljaluu
+kooma
 koomaseisund
+koomika
+koondelisus
 koondumus
+koone
+koordineeritus
 koorelõhe
 koorepragu
 koorepõletik
@@ -1275,10 +1662,15 @@ kooris
 koormusastma
 koormusnorm
 koosa
+kooseksisteerimine
+kooseksistents
 kooselu
 kooskõlastamatus
+kooskõlastatus
 koostöövalmidus
+kopitus
 kopp on ees
+koprolaalia
 kopsuabstsess
 kopsuastma
 kopsuemboolia
@@ -1291,6 +1683,7 @@ kopsukatk
 kopsukavern
 kopsukelmepõletik
 kopsuklamüdioos
+kopsuklamüüdia
 kopsukollaps
 kopsukorditus
 kopsumädanik
@@ -1307,39 +1700,59 @@ kopsuödeem
 korditus
 korea
 koronaarhaigus
+koronts
 koroonaepideemia
 koroonahaigus
 koroonakriis
 koroonanakkus
+koroonane
 koroonapandeemia
 koroonaviirushaigus
 korplööve
 korralagedus
 korraldamatus
+korratu
+korratus
 korterikitsikus
 korteriolud
 korteritingimused
+kortsneer
+kostil
+kostile
+kostitus
 kotthaue
 kotti
 kottis
+kottpime
 kottpimedus
 kott-tõbi
 kraes
 kraesse
+krae vahel
+krae vahele
 krambihoog
+krambis
+krampi
+krampis
 kramptõbi
 kraniosünostoos
 kreen
+kreeps
 krepitatsioon
 kretinism
 kriimunäoline
+kriimustus
+kriis
 kriisiistung
 kriisiolukord
 kriisisituatsioon
 kriisivalmidus
 kriisivalmisolek
 kriitiline punkt
+krill
 kriminaalne joove
+kringel
+kripeldus
 kromosoomhaigus
 kromosoomihaigus
 krookes
@@ -1348,9 +1761,13 @@ kroonimurd
 kroonrooste
 kroonu leib
 kroonuleib
+kroonuteenistus
 krousi
+krousis
+krupoosne
 krupp
 kruvid logisevad
+krõbedus
 krüptorhism
 ksantelasm
 ksantopsia
@@ -1368,13 +1785,24 @@ kuivlaiksus
 kuivmädanik
 kuiv seadus
 kuiv silm
+kuivus
 kuivustunne
+kukekannus
+kukil
+kukile
+kukilt
 kuklakangestus
+kullalootus
 kullamäed
 kultuurišokk
+kulumus
 kumerselgsus
+kumulatsioon
 kuperoosa
 kuperoosne
+kurbloolisus
+kurbloolus
+kurenokajälg
 kurguhaigus
 kurgukatarr
 kurgumandlipõletik
@@ -1390,6 +1818,7 @@ kurnatus
 kursisolek
 kurtumus
 kurtus
+kurvameelsus
 kusehäda
 kusemishäire
 kusepakitsus
@@ -1401,6 +1830,8 @@ kusiveresus
 kutsehaigus
 kutsekasvaja
 kutsevähk
+kutu
+kutupiilu
 kuue laua vahel
 kuulihaav
 kuulmishallutsinatsioon
@@ -1443,6 +1874,8 @@ kõhusoetõbi
 kõhusong
 kõhusopp
 kõhutõbi
+kõhutühi
+kõhutühjus
 kõhutüüfus
 kõhuvalu
 kõhuvesitõbi
@@ -1457,6 +1890,8 @@ kõnehälve
 kõnepuue
 kõnesituatsioon
 kõrgseis
+kõrgusehirm
+kõrgusekartus
 kõrgushaigus
 kõrgvererõhktõbi
 kõrgvererõhuhaigus
@@ -1477,6 +1912,7 @@ kõrvahaigus
 kõrvakõvastus
 kõrvalsuhe
 kõrvapõletik
+kõrvatagused on märjad
 kõrvavalu
 kõrvetised
 kõrv kikkis
@@ -1499,9 +1935,11 @@ käed sügelevad
 käehaav
 käekäik
 käest ära
+kägar
 kägarasend
 kägariste
 käigupuudus
+käima peal olema
 käitumishäire
 käitumishälve
 kännu taga kinni
@@ -1517,6 +1955,7 @@ kärntõbi
 kärss kärnas
 kärss kärnas ja maa külmand
 kärss kärnas ja maa külmunud
+kärssus
 käsi kullas
 käsi käib hästi
 käsi on all
@@ -1524,11 +1963,17 @@ käsi on mängus
 käsi on sees
 käsi pikal
 käsi õieli
+käsutus
 käsutuses
 käsutusse
+kättesaadavus
 kääbuskasv
+köbruke
+köbrukene
+köha
 köhahoog
 köies
+köiskond
 köprus
 Kört-Pärtli särk
 küberjulgeolek
@@ -1539,11 +1984,14 @@ külastusabielu
 külgkalle
 külglibisemine
 külgrõhtseis
+külgõõtsumine
 küliliasend
 küllastatus
 küllastumus
 küllastus
+küllastusvajak
 küllasus
+küllus
 külmakahjustus
 külmakangestus
 külmalaik
@@ -1554,6 +2002,7 @@ külmatunne
 külmatõbi
 külmavill
 külmavärin
+külmetus
 külmetushaigus
 külmetustõbi
 külmtõbi
@@ -1563,6 +2012,9 @@ külmunud õla sündroom
 külmunud õlg
 künahaukamine
 küpsus
+küsimärgi all
+küsimärgi alla
+küsitletav
 kütkestus
 kütusevaesus
 küündivus
@@ -1572,8 +2024,15 @@ küünekriim
 küünekriimustus
 küüneseen
 küüneviha
+küünistus
+küünte vahele
+küüsi
 küüsis
 küüsist
+laagerdumine
+laagerdus
+labasus
+laegas
 laenuorjus
 lagas
 lagedapelgus
@@ -1582,12 +2041,15 @@ lageda taeva alla
 lagendikupelgus
 lahendamatus
 lahihambumus
+lahingukord
 lahingušokk
 lahinguvalmidus
 lahinguvalmis
 lahjus
 lahkheli
 lahkmeel
+lahkuminek
+lahtine
 lahtine luumurd
 lahtiolek
 lahtise taeva all
@@ -1605,6 +2067,7 @@ laiksus
 laiktõbi
 lained löövad üle pea
 lained löövad üle pea kokku
+lainel
 lainele
 laines
 lainesse
@@ -1626,24 +2089,34 @@ lampjalgsus
 lamppöidsus
 langetõbi
 langetõvehoog
+langusmeeleolu
 laos
 lapikus
+lapsehoolduspuhkus
+lapseootele
 lapseootus
+lapsepuhkus
 lapsevaev
 lapsevoodipalavik
 larüngiit
 laskeasend
 laskehaav
+lastehaigus
 lastehalvatus
 lastehalvatustõbi
+lastekari
 lastetus
+last ootama
 lauatagune
 laul on lauldud
 laupõletik
 lausloomataud
+lauspilvitus
 laustaud
 lauvaje
 lavakramp
+lavanärv
+lavastuslik
 leegionäride haigus
 leegionärihaigus
 leepra
@@ -1657,9 +2130,12 @@ lehes
 leheseis
 lehevarisemistõbi
 lehtes
+leigus
 leivad ühes kapis
 leivapuudus
+lemb
 lembus
+lemme
 lendnõgi
 lennuhirm
 lennuilm
@@ -1667,6 +2143,8 @@ lennuohutus
 lennutromboos
 lennuväsimus
 leptospiroos
+lesepõli
+lesepõlv
 letargia
 leukeemia
 leukoom
@@ -1674,9 +2152,12 @@ leukoos
 leukopeenia
 leukoplaakia
 leukotsütoos
+libedus
 libe tee
 liblikad kõhus
 liblikad lendavad kõhus
+ligidus
+ligilähedus
 ligiolek
 ligiolu
 ligipääsematus
@@ -1684,6 +2165,7 @@ ligipääsmatus
 lihahaav
 lihamürgistus
 lihamürgitus
+lihapott
 lihasdüsmorfia
 lihasdüstroofia
 lihasepõletik
@@ -1703,13 +2185,17 @@ liigesetuberkuloos
 liigesevalu
 liigesvalu
 liighigistamine
+liigirikkus
+liigjahtumine
 liigkarvasus
 liigkusesus
+liigliha
 liignõristus
 liigsarvestumine
 liigsarvestumus
 liigsoojumus
 liigtalitlus
+liigtundlikkus
 liigtäitumine
 liigunisus
 liigveresus
@@ -1749,21 +2235,35 @@ lipu alla
 lipödeem
 listerioos
 liveedo
+LK
 logorröa
+loid
 loidumus
 loidus
 loobumus
+looduskaitse all
 looduskoldeline haigus
 looduslikkus
+loogus
+looja karja
+loojakarja
+looja karjas
+loojakarjas
 loomahaigus
 loomataud
+loomulikud vajadused
+loomusund
 lordoos
 lovi
 lubatavus
 lubihaue
 lubiraig
 lubjastumine
+lubjastus
+ludin
 ludomaania
+lugemisjärg
+lugupidamine
 luitumus
 luksatsioon
 luku tagant
@@ -1774,6 +2274,8 @@ lumeolud
 lumepime
 lumevaalimine
 lumiseen
+lumm
+lummus
 lunatism
 lutipudelikaaries
 luues
@@ -1782,6 +2284,7 @@ luuhõrenemine
 luukadu
 luukasvaja
 luukasvis
+luuliidus
 luulumõte
 luu minu luust ja liha minu lihast
 luumuhk
@@ -1801,11 +2304,16 @@ lõa otsa
 lõa otsas
 lõa otsast
 lõhestatus
+lõhnatundetus
 lõimetus
+lõimetusaeg
 lõpetamata
 lõpetamatus
 lõpetatus
 lõppseis
+lõpusirge
+lõvikoobas
+lõõsk
 läbimäda
 läbi nagu Läti raha
 läbipõlemine
@@ -1813,9 +2321,13 @@ läbitavus
 lädramälu
 lähedalolek
 lähedalolu
+lähedus
 lähtepositsioon
+läide
 läkaköha
+lämbumisoht
 lämbumistunne
+lämbus
 lämmastikveresus
 Lääne-Niiluse viirus
 läänetus
@@ -1825,7 +2337,9 @@ löts
 löögi all
 löögi alla
 lööve
+lühinägelikkus
 lühinägevus
+lühipuhkus
 lülisambakõverdus
 lülisambamurd
 lülisambatuberkuloos
@@ -1839,6 +2353,8 @@ lümfogranulomatoos
 lümfoom
 lümfödeem
 Lyme’i tõbi
+maa-alused
+maailmakuulsus
 maailmamaine
 maakaartkeel
 maalised
@@ -1849,15 +2365,22 @@ maani täis
 maaolud
 maapagu
 maapagulus
+maapuudus
 maa põleb jalge all
 maasika-hahkhallitus
+maaviha
 madalpunkt
 madalseis
+magaja
 magamatus
+magamine
+magneetumus
 mahajäetus
+mahasurumine
 maihaigus
 maitsepuudus
 majandusjulgeolek
+majanduskriis
 majandusraskused
 majandusseisak
 majoriteet
@@ -1865,6 +2388,7 @@ maksaabstsess
 maksahaigus
 maksakaantõbi
 maksakoolikud
+maksalutikas
 maksapõletik
 maksatsirroos
 maksavoolmed
@@ -1874,8 +2398,12 @@ makseraskus
 maksuraskus
 malaaria
 malaariaepideemia
+malleus
+mandlikivi
 mandlipõletik
 maniakaal-depressiivne psühhoos
+mannetus
+mantia
 maohaav
 maohaavand
 maohäda
@@ -1886,7 +2414,10 @@ maoverejooks
 maovoolmed
 maovähk
 marasm
+marrastus
 marssalikepike paunas
+martüürium
+maruhoog
 marutaud
 marutõbi
 masekas
@@ -1897,16 +2428,25 @@ massipsühhoos
 mastiit
 mastoidiit
 materiaalne ilmajäetus
+materjalipuudus
+medalilootus
 meeldumus
+meelehaigus
+meeleheitlik
+meeleliigutus
+meelemõistus
 meelemärkus
+meelemärkusetu
 meeleoluhäire
 meelepuue
 meelerahu
 meelesegadus
 meeleseisund
+meelest
 meelevald
 meelevaldsus
 meeltesegadus
+meelus
 meestehaigus
 meestepõlgus
 meestevihkamine
@@ -1918,11 +2458,14 @@ melliitdiabeet
 melomaania
 meningiit
 meningoentsefaliit
+menopaus
+menorraagia
 menstruatsioonihäire
 merehaigus
 merehäda
 mereklaar
 merevalmis
+merevärske
 MERS
 mesallianss
 mesinädalate põiepõletik
@@ -1938,6 +2481,7 @@ metsamarutaud
 metsaüksindus
 migreen
 migreenihoog
+mikrograafia
 mikroinsult
 mikrospooria
 mindfulness
@@ -1947,6 +2491,7 @@ miniatuuris
 miniinsult
 mioos
 misandria
+mis kärbes hammustas
 misogüünia
 mitmevärviline kliiketendustõbi
 mitmikabielu
@@ -1957,17 +2502,23 @@ mitteolemine
 mitteteadmine
 mittetäitmine
 mittevahelesegamine
+mittevastavus
 modernsus
+moehaigus
 molli juurde
 molli juures
+momentum
+monogaamia
 monomaania
 mononukleoos
+monopolism
 Montgomery haigus
 moodsus
 moraalne kulumine
 morfiumimürgistus
 mosaiiklaiksus
 mudasus
+muhk
 muhkkatk
 muhutaud
 mukormükoos
@@ -1986,6 +2537,7 @@ munasarjakasvaja
 munasarjapõletik
 munasarjatsüst
 murekoorem
+murepilv
 muserdus
 musklis
 mustade käte haigus
@@ -1993,22 +2545,31 @@ must kass on läbi jooksnud
 mustkusesus
 mustlaselu
 mustmädanik
+mustpea
 must stsenaarium
 mutism
+mutualism
 mõeldud-tehtud
 mõistusabielu
 mõistuseabielu
 mõlu
 mõni kruvi on puudu
+mõnutunne
+mõra
 mõraline
 mõrane
+mõtiskelu
+mõtisklus
 mõtlemishäire
 mõttekaaslus
 mõttekramp
 mõttekus
+mõttemõlgutus
 mõttepaus
+mõttetus
 mõõdus
 mõõgahaav
+mõõn
 mõõt saab täis
 mõõtu
 mädaemakas
@@ -2017,13 +2578,16 @@ mädakusesus
 mädalaik
 mädamuhk
 mädanik
+mädapaise
 mädaplekk
 mädapunn
 mädapõletik
+mädasoo
 mädaveresus
 mädavill
 mädavill-lööve
 mädavistrik
+mädavoolus
 mäehaigus
 mäestikuhaigus
 mägihaigus
@@ -2032,21 +2596,27 @@ mähkmelööve
 mähkmeärritus
 mäletamisvõimetus
 mäluaugus
+mäluauk
 mäluhäire
 mälukaotus
+mälulünk
 mälunõrkus
 mälusügavus
 mängukorda
 mängukorras
+mängukõlbmatu
 mänguohjad
+mängurlus
 mängusõltuvus
 mänguvalmis
 mänguvorm
 mäng väärib küünlaid
 männi-pigirooste
+märatsema
 märggangreen
 märg haud
 märgmädanik
+märg unenägu
 märg unistus
 määramatus
 määratus
@@ -2067,22 +2637,29 @@ müramistuju
 mürgistus
 mürgistushirm
 mürsušokk
+müük
 nabapõletik
 nabasong
+naer
 naerukramp
 naerunäoline
 naerutuju
+naeruväärsus
 nagu kilud karbis
 nagu kotis
 nagu meelest ära
+nagu muiste
+nagu muistegi
 nagu munas kana
 nagu munavalus kana
+nagu prillikivi
 nagu silgud pütis
 nagu tühjaks pigistatud sidrun
 nagu veskikivi kaelas
 nahahaav
 nahahaigus
 nahakasvaja
+nahakoi
 nahalööve
 nahamädanik
 nahapaksend
@@ -2100,19 +2677,25 @@ naistehaigus
 naistepõlgus
 naistevihkamine
 naisus
+nakatumisoht
+nakk
 nakkus
 nakkushaigus
 nakkuslik
+nakkusoht
 nanism
 Napoleoni kompleks
 nappus
+nari
 narkojoove
 narkolepsia
 narkomaania
+narkoos
 narkosõltuvus
 narkouim
 nartsism
 nartsissism
+needus
 neelamishäire
 neelamistakistus
 neelupõletik
@@ -2123,6 +2706,7 @@ neerupõletik
 neerutuberkuloos
 neeruvaagnapõletik
 neeruvoolmed
+nefriit
 nefrolitiaas
 nefroos
 nefroskleroos
@@ -2133,8 +2717,10 @@ nekrobioos
 neljajäsemehalvatus
 neljaviiendikuline häälteenamus
 neoplaasia
+netisõltuvus
 neuralgia
 neurasteenia
+neuriit
 neuroborrelioos
 neurodermatiit
 neurodermiit
@@ -2157,9 +2743,14 @@ noahaav
 noateral
 noatera peal
 nohinal
-nokk kinni ja saba lahti, saba kinni ja nokk lahti
+nohu
+nokaut
+"nokk kinni ja saba lahti, saba kinni ja nokk lahti"
+nonkonformism
 nooma
 nooremus
+normaalnägevus
+normatiivsus
 normis
 noseemataud
 nosematoos
@@ -2167,7 +2758,10 @@ nostalgia
 novokaiinblokaad
 nuditeet
 nuginakkus
+nuhtlus
 nulliring
+nullpunkt
+nullseis
 nullsumma mäng
 nullsummamäng
 nunnumeeter
@@ -2179,38 +2773,53 @@ nurkiste
 nutijoove
 nutikael
 nutipöial
+nutisõltuvus
 nutiturvalisus
 nutuhoog
 nutukramp
 nutumaik
 nutumaitse
 nutumärg
+nutupill
 nututuju
+nuum
+nuuter
 nõdrameelsus
 nõgesekubel
 nõgesepalavik
 nõgeslööve
 nõgestõbi
 nõgihaigus
+nõgiseen
 nõgusselgsus
 nõiakatel
 nõiakütke
 nõletõbi
 nõlg
+nõrgabstsess
 nõrgameelsus
 nõrgamõistuslikkus
 nõrgemus
+nõrgmädanik
 nõrkusehetk
 nõrkushetk
 nõtk
+nõtrus
 nõukanostalgia
 nõutus
 nägemishäire
 nägemispuue
 nägemisväsimus
+nägurielu
+näguripäevad
 nähtaval
 nähtavale
+näilikkus
+näilisus
 nälgus
+näljaaeg
+näljadieet
+näljahäda
 näljanõrkus
 näljanäpistus
 näljapaistetus
@@ -2219,6 +2828,8 @@ näljastreik
 näoilme
 näopimedus
 näost valge kui lubi
+näotus
+näpp
 näpud on mängus
 näpud põhjas
 näpud sügelevad
@@ -2256,36 +2867,50 @@ nüktaloopia
 nümfomaania
 nürmus
 nüstagm
+nüüdsus
 obliteratsioon
 obsessiiv-kompulsiivne häire
+obstruktsioon
 odontiit
+odraiva
 oftalmia
 ohatis
+oht
 ohustatud
 ohutus
 ohvreid nõudma
 Oidipuse kompleks
 oimetus
 oivalisus
+o-jalad
 o-jalgsus
 oksehoog
 oksendushoog
 oksüdatiivne stress
 okupatsioon
+olek
 olelus
+olemasolek
+olemasolemine
+olemasolu
 olenevus
 oleskelu
 oligeemia
 oligofreenia
+oligopol
 oliguuria
 olukord
 olulisus
+olümpialootus
 omadega augus
 omadega läbi
 omadega puntras
 omadega puntrasse
 oma lehm ojas
 omal kohal
+omandus
+omapära
+omapärasus
 omariiklus
 omas elemendis
 on aamen
@@ -2300,6 +2925,7 @@ oopiumimürgitus
 ooteasend
 ooterežiim
 ootevalmis
+ootus
 ootuspinge
 operatsioonihaav
 opiomaania
@@ -2314,15 +2940,21 @@ orienteeritus
 orjaahelad
 orjaike
 orjakütked
+orjapõli
+orjapõlv
+orjus
 ornitoos
 ornung
 ortoreksia
 osadus
+osakaal
 osalisus
+osatähtsus
 oseen
 oseena
 oskamatus
 osoonimürgitus
+ostalgia
 osteoartroos
 osteofüüt
 osteokondriit
@@ -2335,40 +2967,55 @@ osteoporoos
 osteosarkoom
 osteoskleroos
 ostiit
+ostubuum
+ostupaanika
+ostupalavik
 ostusoov
 ostusõltuvus
 otiit
 otoskleroos
+otsatus
 otseside
+otsiskelu
 otsustamatus
 paabel
 Paabeli vangipõlv
 paadumus
+paanikahoog
 paanikahäire
+paanikaosakond
 paariselu
 paast
 paastukuur
 paastumine
 paasturavi
 pabin
+paeluss
 paelusstõbi
 pagendus
 pagulaselu
+pagulaspõlv
 pahausksus
+pahempoolsus
 pahemus
 pahurus
+paigalmarss
 paigalolek
 paigalpüsimine
 paigalseis
 paigalseismine
 paigustaud
+paigutus
 paikapidav
 paisatus
+paise
 paistetus
 pajukil
 pakatis
 pakendiringlus
+pakitsus
 pakku
+palavik
 palavikuhaigus
 palavikuhoog
 palavikukramp
@@ -2384,7 +3031,9 @@ palgavõrdsus
 paljas kui püksinööp
 paljaspeasus
 paljaspäisus
-palju kisa, vähe villa
+"palju kisa, vähe villa"
+paljus
+paljusus
 pallivahetus
 panariitsium
 pandeemia
@@ -2396,6 +3045,8 @@ pansootia
 pantvangistus
 paos
 papilloom
+paradiis
+paradiisiaed
 paradoksaalne uni
 parafimoos
 paragripp
@@ -2412,21 +3063,32 @@ parasomnia
 paratüüfus
 pardikõnnak
 parees
+parempoolsus
+paremus
 paresteesia
 pargend
+pariteet
+pariteetsus
+parkimine
 parkinsonism
 Parkinsoni tõbi
 parlanks
 parodontiit
 parodontoos
+parosmia
 parotiit
 parterasend
 partnerlus
+partokraatia
 passiivne suitsetamine
 patiseis
+patoloogia
+patronaat
 patsis
+patt
 patusus
 patusüü
+paus
 peaajuinfarkt
 peaajukasvaja
 peaajupõletik
@@ -2439,6 +3101,8 @@ pea on pulki täis
 peapõrutus
 peapööritus
 pearinglus
+peas
+peast
 peata kana
 peataolek
 pedikuloos
@@ -2454,14 +3118,27 @@ peetus
 pehme keelega
 pehmemädanik
 pehmumus
+peiteaeg
+peiteperiood
 peitmunand
 peitmunandilisus
+peitveri
+pekki
+pekkis
 pelg
 pellagra
 pemfigus
+pension
+pensionipõli
+pensionipõlv
+pensionipäevad
+pensionäripõli
+pensionäripõlv
+penss
 perekonnaseis
 peremeheohjad
 perenaiseohjad
+pereside
 perforatsioon
 periartriit
 perikardiit
@@ -2472,12 +3149,16 @@ pesematus
 pessimum
 petehhia
 petetus
+petlikkus
+petturi sündroom
 pidalitõbi
 pidamatus
+pidevusetus
 pidu ja pillerkaar
 pidu meie tänaval
 pidurdatus
 pidurdusseisund
+pidurüü
 pigilaiksus
 pigis
 pigisse
@@ -2488,6 +3169,7 @@ pigmentatsioonihäire
 pigmentkivi
 piimaallergia
 piimajõed ja pudrumäed
+piimane
 piimanäärmepõletik
 piimanäärmevähk
 piimapais
@@ -2496,6 +3178,7 @@ piimküps
 piimküpsus
 piinatus
 piiramisseisukord
+piiratus
 piirdesööbija
 piirialane isiksushäire
 piiristunud
@@ -2508,13 +3191,23 @@ piisavus
 piiskinfektsioon
 piisknakkus
 pika
+pikeering
 pikk COVID
+pikne
+pilditu
+pilge
+pilkaspime
 pilkaspimedus
+pilvepiir
 pilvis
+pilvisus
+pilvitus
 pimedusega löödud
 pimedusekartus
+pimekurt
 pimekurtus
 pimesoolepõletik
+pimestus
 pimesus
 pinevus
 pingemurd
@@ -2522,18 +3215,28 @@ pingepeavalu
 pingeseisund
 pingsus
 pingus
+pingusetus
 pingutusastma
+pinss
 pisarakotipõletik
+pisarane
 pisaranäärmepõletik
 pisivigastus
 pissihäda
 plaanitus
 plahvatuskindlus
+plahvatusoht
+platel
+platele
+plate peal
+plate peale
 plekiline soetõbi
 pleuriit
 pliimürgistus
 pliimürgitus
+plikaohtu
 plinder
+PMS
 pneumokonioos
 pneumoonia
 pneumoskleroos
@@ -2542,16 +3245,30 @@ podagra
 podagrasõlm
 poeetilisus
 poegimishalvatus
+poeriiul
 pohlad olema
+pohm
+pohmakas
 pohmane
+pohmas
+pohmell
+pohmelus
+poisikeseohtu
+poisiohtu
+poissmehepõlv
+polaarsus
 pole haisugi
 pole hamba all kuiva kohta
 pole lõhnagi
+pole nali
+pole nalja
 poliomüeliit
 pollinoos
+polundra
 polüartriit
 polüdaktüülia
 polüfaagia
+polügaamia
 polüneuriit
 polüneuropaatia
 polüpoos
@@ -2559,41 +3276,57 @@ polüskleroos
 polütrauma
 polütsüteemia
 polüuuria
+polüüp
 pommikahtlus
 pompoon
 poogen olema
 poolelus
+poolhämar
 poolhämarus
+poolkaitse
 poolmäda
 poolmädanenud
 poolpeetud
 poolpidune
+poolpilves
 poolpimedus
 poolspagaat
 pooluni
+poose
+pordu
 porduelu
 porfüüria
 pornosõltuvus
 porujommis
+positsioonisõda
+posituur
 posttraumaatiline stressihäire
 Potjomkini küla
 Prantsuse haigus
 prantsustõbi
 prediabeet
+predispositsioon
 preeklampsia
+preestriseisus
 prei
 prekantseroos
+premenstruaalne sündroom
 presbüoopia
+prii
 priileib
+priilt
 priipõli
 priipõlv
 priius
 prioonhaigus
+prioriteet
 privaatsus
 probleemsituatsioon
 prodromaalnäht
 prodroom
+profaansus
 progeeria
+Prokrustese säng
 proktiit
 prolaps
 proliferatsioon
@@ -2603,6 +3336,7 @@ propelleris
 proportsionaalsus
 prosopagnoosia
 prostatiit
+prostratsioon
 proteinuuria
 prouapõli
 pruriigo
@@ -2610,6 +3344,7 @@ pruudipõud
 pruunlaiksus
 pruunmädanik
 pruunrooste
+prääks
 prügipimedus
 pseudartroos
 pseudoartroos
@@ -2624,6 +3359,7 @@ psüühikahaigus
 psüühikahäire
 ptoos
 PTSH
+publikuhuvi
 puderkasvaja
 pudetõbi
 pudrumäed
@@ -2632,14 +3368,22 @@ pudrune
 puerilism
 puerperaalpalavik
 puhas plats
+puhetis
+puhevil
 puhitis
 puhitus
 puhitustunne
 puhkeasend
 puhkeolek
+puhkepaus
 puhkeseisund
+puhkus
+puhkusaeg
+puhkuseaeg
 puhtus
 puhuvad uued tuuled
+puhvi
+puhvis
 puidumädanik
 puidurike
 puksiiri
@@ -2655,22 +3399,31 @@ punasüdamik
 punataud
 punaveresus
 punavus
+punavõim
+pundis
 punetised
 punetus
 punnseis
 punnsilmsus
+puntis
+purgatoorium
 purjes
 purujommis
 purupurjus
+purustus
 pusas
 pussihaav
 pustul
 putkus olema
 putukakahjustus
 putukkahjustus
+puudujääk
+puudulikkus
 puuduolek
+puudus
 puudusel
 puudushaigus
+puue
 puukborrelioos
 puukentsefaliit
 puumädanik
@@ -2680,6 +3433,7 @@ puusavalu
 puuslak
 puutehell
 puutenakkus
+puutumus
 puuviljamädanik
 põdrakahjustus
 põdurus
@@ -2689,6 +3443,7 @@ põhi peal
 põhjatus
 põhjendamatus
 põhjendatus
+põhjuslikkus
 põiehaigus
 põiehalvatus
 põiekas
@@ -2698,6 +3453,8 @@ põiepakitsus
 põiepidamatus
 põiepõletik
 põievähk
+põigiti
+põiki
 põikimurd
 põistangtõbi
 põletik
@@ -2714,8 +3471,10 @@ põlu alt
 põlveltasend
 põlvevalu
 põlviliasend
+põnevus
 põranda all
 põranda alla
+põrgukatel
 põrgu on lahti
 põrgupiin
 põrgutee on sillutatud heade kavatsustega
@@ -2724,9 +3483,13 @@ põrnatõbi
 põsekoopapõletik
 põskkoopapõletik
 põuakahjustus
+põuakuiv
 põuakuivus
+põud
 päevad on loetud
 päevapimesus
+päevavari
+pähesaamine
 päikeseallergia
 päikesekahjustus
 päikesekuumus
@@ -2735,6 +3498,9 @@ päikesepõletus
 pärakulõhe
 päralt
 pärasoolevähk
+päriselu
+pärisorjus
+pärispõlv
 pärmseentõbi
 pärssumus
 pätk
@@ -2749,17 +3515,25 @@ püelonefriit
 pügajaraig
 pügaraig
 pühendumus
+pühitsus
 püksid on naise jalas
 püksid sõeluvad püüli
 pülorospasm
 püodermia
 püonefriit
 püonefroos
+püorröa
+püreksia
 pürofoobia
 püromaania
+püsi
+püsikestvus
 püsimine
+püsirahastus
 püsisuhe
+püsitus
 püssirohutünni otsas
+püstasend
 püstihädas
 püstihätta
 püstijala
@@ -2771,8 +3545,11 @@ püügikorras
 püügivalmis
 püügiõnn
 Pyrrhose võit
+queer
 raadiovaikus
+rabandus
 rabandushoog
+rabedus
 radikuliit
 ragaad
 rahahäda
@@ -2782,31 +3559,48 @@ rahakriis
 rahaline tervis
 rahalugemine
 rahalõhn
+rahamure
 raha nagu raba
 rahanappus
 rahanduskriis
 rahapuudus
 raha põleb taskus
 rahekahjustus
+rahetera
 rahhiit
 rahhiitiline käevõru
 rahhiitiline roosikrants
 rahuldatus
+rahulikkus
 rahulolek
 rahulolu
 rahu majas
 rahumeel
 rahuolek
+rahupõli
+rahupõlv
+rahusadam
 rahutud jalad
 rahutute jalgade sündroom
+rahvavõim
 rahvuskirik
 rahvuskonflikt
 rahvusriiklus
+raig
 raisku
+raksu
+raksus
 rambipalavik
+rambus
+rammestus
+rammetus
 randmekanali sündroom
 randmekanalisündroom
+rangis
+rangjalad
 rangjalgsus
+rannavorm
+rappaminek
 raputatud lapse sündroom
 rasedus
 rasedusarm
@@ -2839,24 +3633,30 @@ rasvumus
 rasvveresus
 rasvväärastus
 ratsaasend
+rattaringlus
 rauapuudus
 rauapuudusaneemia
 rauavaegus
 rauavaegusaneemia
+raudeesriie
 raudne eesriie
 raudne haare
+raugus
 raukus
 raukuskae
 raukuskõhetus
 raukusnõdrameelsus
+rautus
 ravimihaigus
 ravimimürgistus
 ravimimürgitus
 ravimisõltuvus
 ravinälgimine
 ravipaast
+reastus
 rebadel
 rebadele
+rebend
 rebestus
 rebimishaav
 reeglitus
@@ -2872,30 +3672,42 @@ reisipalavik
 reisivintsutus
 reisiväsimus
 relatiivsus
+relvakandmine
+relvakonflikt
 relvarahu
 remanents
 REM-uni
 renoveering
 reostatus
+reostus
 reproduktiivtervis
+reserveeritud
 residentsus
 resignatsioon
+respekt
+retentsioon
 retiniit
 retinoblastoom
 retriit
 reuma
 reumatism
 reumatoidartriit
+rigiidsus
 riigileib
 riigipankrot
+riigitoit
+riigivõlg
 riiklus
 riik riigis
+riisiko
 riiulile
 riivlemine
 riivlus
 riketsioos
 rikkiminek
+rikutus
 ringmädanik
+ringmäng
 riniit
 rinnaangiin
 rinnahaigus
@@ -2913,28 +3725,38 @@ rinnutu
 rinnutus
 ripplamang
 rippuvus
+risk
 riskirasedus
 ristallergia
 risthambumus
 ristiks kaelas
 ristikuvähk
+rististe
 rist ja viletsus
 ristluuvalu
 risuks
 rivaliteet
+rivikord
 rivist välja
 rivist väljas
+riviteenistus
 rjassakandmine
 rohekae
+rohekus
 roheline kae
+roheline koridor
 roheline laine
 rohtus
+roid
 roidemurd
+roidumus
 roiskkärbus
 roiskveresus
+romantika
 roojamispakitsus
 roojaoksendus
 roojapidamatus
+rool
 roosa kliiketendustõbi
 roosatähn
 roosihaigus
@@ -2945,10 +3767,14 @@ Rootsi kardinad
 rosaatsea
 roseaatsea
 roseool
+rotatsism
+rotaviirus
 rotihammustustõbi
 rubid
 ruptuur
+rusutis
 rusutus
+rutt
 ruugehallitus
 ruumikitsikus
 ruuminappus
@@ -2960,13 +3786,20 @@ rõngasse
 rõuged
 rõugeepideemia
 rõõmsus
+rõõmutus
 rähmasus
 rändekriis
 ränderahutus
 rändurielu
+räni
 ränipuit
+rännakupuhkus
 rännukihk
 räpasus
+räsasjalad
+räsasjalgne
+rätsepaiste
+rätsepiste
 rööpast välja
 rööpast väljas
 rühihäire
@@ -2980,20 +3813,28 @@ saadikupuutumatus
 saaresurm
 saartalitlus
 saastatus
+saaste
 saastumus
 saastus
 saatan peitub detailides
 saatan peitub pisiasjades
+saatel
+saatus
 saavutusvajadus
+sabajuurikas
 sadulas püsima
 sadulselg
+sahtlipõhi
+sakk
 Saku lihas
+saladus
 saladuseloor
 saladuskate
 saladusloor
 salakoi
 salaside
 salasoov
+salastatus
 salasuhe
 salatõbi
 salku
@@ -3002,11 +3843,14 @@ salmonelloos
 salpingiit
 samal lainel
 samasooliste abielu
+samasus
 samaväärsus
+sammalduma
 sammal kasvab selga
 sammaspool
 sammaspoolik
 sandileib
+sanktsioon
 sansaara
 sapijuhapõletik
 sapikivitõbi
@@ -3020,17 +3864,22 @@ SARS
 sars
 sarvis
 sarvkestapõletik
+sasipusa
 sassiminek
 saturatsioon
 saturnism
 savi olema
 sclerosis multiplex
+seadistus
 seadusetus
 seaduslikkus
+seaduspärasus
 seagripp
 seakatk
+sealilm
 seatõbi
 seborröa
+sedapsi
 seedehäire
 seederike
 seemnevoolus
@@ -3050,8 +3899,12 @@ segaduses
 segainfektsioon
 seganakkus
 segasusseisund
+segiolek
+seisak
 seisang
 seisukord
+seisund
+seisus
 seisusevahe
 sekkumatus
 seksipoos
@@ -3063,18 +3916,24 @@ selgrookõverdus
 selgroomurd
 selgroopõletik
 selgrootuberkuloos
+selgusehetk
+selgushetk
 seljaajukasvaja
 seljaajukuive
 seljaajupõletik
 seljaajusong
 seljahäda
+seljasirutus
 seljavalu
+seltskond
 seniilatroofia
 seniilsus
+seong
 seoslikkus
 seostatus
 seostus
 seotus
+separaatrahu
 separaatsus
 sepik seljas
 sepsis
@@ -3082,6 +3941,7 @@ septitseemia
 Siberi katk
 sibula-ebajahukaste
 sidekestapõletik
+sidekoestumine
 sidekudekasvaja
 sideroos
 sigade Aafrika katk
@@ -3092,14 +3952,17 @@ siinolek
 siinolu
 siinviibimine
 siirdetöötus
+siksak
 silikoos
 silindernägemine
 silmad ees ja taga
+silmad häbi täis
 silmad lähevad lahti
 silmad püsti peas
 silmahaigus
 silmakae
 silmamarjad
+silmapete
 silmapõletik
 silmatripper
 silmlaiksus
@@ -3110,14 +3973,21 @@ sinetus
 sinikus
 sinivill
 siseemigratsioon
+sisehaigus
 sisejulgeolek
+sisekonflikt
+sisekriis
 sisekõrvapõletik
 siseolukord
 sisepagulus
 sisepiin
 siserahu
 siseturvalisus
+sisetüli
+sisevastuolu
+sissekukkumine
 sisse võetud olema
+sissisõda
 sitamaitse suus
 situatsioon
 situatsioonikomöödia
@@ -3136,7 +4006,9 @@ slepis
 sleppi
 snepris
 soetõbi
+soetõbine
 sohielu
+sohk
 soige
 soikeseisund
 soikusolek
@@ -3153,7 +4025,11 @@ soodsus
 soodumus
 soodüsfooria
 soohaigus
+soojakadu
+soojus
+soojuskadu
 soojussisaldus
+soolatüügas
 soolehaigus
 soolekatarr
 soolekeerd
@@ -3174,8 +4050,12 @@ soopalavik
 soopor
 soosegadus
 soosing
+sopis
+sopistis
 sopsu
+sordiin
 sordiini all
+sorptsioon
 sotsiaalfoobia
 sotsiaalmeediapaast
 sotsiaalne distantseerumine
@@ -3183,16 +4063,23 @@ sotsiaalne kaasatus
 sotsiaalne tõrjutus
 sotsiaalärevus
 sotsiofoobia
+spasm
 spasmofiilia
 spermatorröa
+spetsiifika
 spiraalmurd
 spliin
 spondüliit
 spondüloos
+sponsorlus
+spontaanne tuntus
 sporaadilisus
 spordivigastus
+staatus
 stagflatsioon
+stagna
 stagnatsioon
+stardijärjekord
 stardikiirendus
 status quo
 steatoos
@@ -3200,6 +4087,7 @@ steatopüügia
 stenokardia
 stenoos
 Stockholmi sündroom
+stohhastiline
 stomatiit
 strabism
 strangulatsioon
@@ -3208,17 +4096,20 @@ striia
 striktuur
 struuma
 stuupor
+sudoku
 sufitsiit
 sugillatsioon
 suguhaigus
 sugulusabielu
 sugulussidemed
+suguvõimetus
 suhkruhaigus
 suhkurdiabeet
 suhkurkusesus
 suhkurtõbi
 suhteline vaesus
 suhtelisus
+suhtes
 suhtes olema
 suhtesõltlane
 suhtesõltuvus
@@ -3241,27 +4132,40 @@ suletus
 sulgahel
 sulgpatjadel
 sulgseis
+sulgus
 sulundseotis
 suluseis
 sumbumus
+sumin
 sundabielu
+sundasumine
+sundhirm
 sundneuroos
 sundseis
 sunnismaisus
+supersümmeetria
 supervorm
 supine
+supp
+surimuri
 surmahaigus
 surmaoht
 surmapiin
 surmasuhu
 surmatõbi
+surmauni
 surmavalu
 surmavill
 surmavus
 surmaväsimus
+surmaöö
+surnud punkt
 surnud ring
 surnukahvatus
+surra-murra
+surramurra
 surutus
+suud-silmad häbi täis
 suu- ja sõrataud
 suu- ja sõratõbi
 suulaelõhe
@@ -3270,6 +4174,8 @@ suuneeluvähk
 suu putru täis
 suupõletik
 suur hall
+suurushullus
+suurushullustus
 suurusluul
 suusad lähevad risti
 suusad ristis
@@ -3278,30 +4184,38 @@ suuvalge
 suu vett täis
 suvalisus
 suveräniteet
+suveräänsus
 suveuinak
 suveuni
 svips
 sõbrasuhe
+sõdurileib
 sõelmädanik
 sõiduohutus
 sõidus
 sõiduvorm
 sõjajalal
 sõjajalale
+sõjamasin
 sõjaneuroos
 sõjaoht
 sõjaolud
 sõjaolukord
+sõjapagu
 sõjapilv
 sõjapurustus
 sõjaseisukord
+sõjateenistus
 sõjaudu
 sõjavangi
 sõjavangis
 sõjavangist
+sõjavanker
+sõjaväeteenistus
 sõjaõnn
 sõlmes
 sõltumus
+sõltuvus
 sõltuvusaine
 sõltuvusprobleem
 sõprus
@@ -3314,6 +4228,9 @@ sõrmseong
 säilimine
 säsilõhe
 säärehaavand
+sääsekubel
+sääsekupp
+sääsepunn
 sööbija
 söödal
 söödamürgistus
@@ -3323,8 +4240,12 @@ söögitoruahend
 söögitoruvähk
 söömatus
 söömishäire
+sööstlend
 sööthiir
+sööti
+söötis
 söötraig
+süda läheb pahaks
 süda läheb vesiseks
 südameastma
 südameatakk
@@ -3364,16 +4285,29 @@ südar
 süfiliid
 süfiliitlööve
 sügatõbi
+sügavik
 sügavkülmas
 sügelised
 sügismasendus
+sügispime
 sügomükoos
 sükoos
+sülelus
+süles
+sülest
+sülle
+sümbioos
+sümbioosne
+sümbiootiline
 sündaktüülia
+sünkro
+sünkroon
 sünnikahjustus
 sünnimuhk
 sünnitrauma
 sünnitusvalu
+sünostoos
+süvauni
 süvavaesus
 süüdimatus
 süüdivus
@@ -3381,15 +4315,22 @@ süüdlus
 süüfilis
 süükoorem
 süülisus
+süüme
+süümekas
+süümepiin
+süütus
 šanker
+šeflus
 šokk
 švips
 zooantroponoos
 zoonoos
 taabes
 taandumus
+taba
 tabeliseis
 taevastel jahimaadel
+taevast kukkunud
 tagakiusamisluul
 tagakiusamismaania
 tagataskus
@@ -3401,7 +4342,9 @@ tahmasus
 tahtehäire
 tahtejõuetus
 tahtenõrkus
+tahtepingutus
 taimehaigus
+taimekahjustaja
 taimekahjustus
 taimetervis
 tajuhäire
@@ -3429,15 +4372,24 @@ tardumus
 tarduni
 tarneprobleem
 tarneraskus
+tarre
 tarretus
+tasakaal
 tasakaaluasend
 tasakaaluhäire
 tasakaaluseisund
 tasakaalustamatus
 tasakaalustatus
+tasakaalustus
+tasakaalutunne
 tasalülitus
+tasemel
+tatitaud
 tatitõbi
 tavaelu
+tavalisus
+tavapära
+tavapärasus
 tbc
 tead
 teadlikkus
@@ -3446,24 +4398,38 @@ teadmine
 teadvel
 teadvelolek
 teadvusekaotus
+teadvusetu
+teesulg
 teetanus
+tegevteenistus
 tegevusetus
 tegevusvalmidus
 tehnoseisund
+tehnostress
 teineteisemõistmine
 telemaania
+templiteenistus
 tendiniit
 tendovaginiit
 tenesm
+tenuur
+teostus
+teralisus
+terasus
 teratoblastoom
 teratoom
+teravmeel
+teritus
+territoriaalne puutumatus
 terrorioht
 terrorismioht
 tervisehäda
 tervisehäire
 tervisekahjustus
 tervisemure
+terviserike
 terviseseisund
+terviseärevus
 tetaania
 tetrapleegia
 TIA
@@ -3472,26 +4438,37 @@ tiinus
 tiirud
 tiisikus
 tilksüda
+tillikas
 tinamürgistus
 tinamürgitus
 tinglikkus
+tippklass
 tippvorm
 tiri
 tiriasend
 tiriripe
+tiriseis
 titekõõm
+titeootele
+titepuhkus
+toenglamang
 toengpõlvitus
 toesehaigus
 toetussõltuvus
 tohuvabohu
+toiduahel
 toiduallergia
 toidujulgeolek
 toidukooma
 toidumürgistus
 toidumürgitus
+toiduohutus
 toidusõltuvus
 toidutalumatus
+toimetulek
 toimetulematus
+toimetulemine
+toitumisahel
 toitumishäire
 toitumus
 tokseemia
@@ -3502,12 +4479,21 @@ tompus
 tonsilliit
 toofus
 tool kõigub
+toonus
 topeltnägemine
 topistumine
 topistus
+topless
+torkav
 torkehaav
 tormihäda
+tormikeeris
+tormivari
+torm ja tung
+torsioon
 Tourette'i sündroom
+traagika
+tragism
 trahheiit
 trahhoom
 transiseisund
@@ -3524,6 +4510,7 @@ trihhinoos
 trihhofüütia
 trihhomoniaas
 trihhomonoos
+triibuline nimekiri
 triivpakis
 triivpakki
 trimm
@@ -3536,7 +4523,11 @@ tromboos
 trombotsütopeenia
 troopikahaigus
 troopikapalavik
+trükipilt
 tselluliit
+tsemendi peal
+tsemendi peale
+tsentralisatsioon
 tservitsiit
 tsirkus Barcelona
 tsirkus Barcelonas
@@ -3551,14 +4542,20 @@ tsüklotüümia
 tsüstiit
 tsüstitserkoos
 tsütolüüs
+tšill
 tuberkul
 tuberkuloos
+tudengipõlv
 tudin
 tugevama õigus
 tuhvli all
+tuige
 tuiksoonelaiend
 tuiksoonelubjastus
 tuiksoonepõletik
+tuimastus
+tuimestus
+tuimus
 tukastus
 tukkumistõbi
 tulareemia
@@ -3566,20 +4563,32 @@ tulehaav
 tulekahjumärk
 tulemärk
 tuleohutus
+tulevikulootus
+tulukooslus
+tulv
 tumm isheemia
 tummus
 tundehäire
+tundeliigutus
 tundeseisund
 tungalteramürgistus
 tungalteramürgitus
+tunnelnägemine
+tunnike
+tunnikene
 tunnustamatus
 tunnustatus
+tuntus
 tupekramp
 tupepõletik
 tupeseen
 tupevaje
 tuppumine
 tuppumus
+turiseis
+turjal
+turjale
+turjalt
 turse
 turukonjunktuur
 turuolud
@@ -3588,17 +4597,23 @@ turuseisund
 turusituatsioon
 turutasakaal
 turvalisus
+turve
+tusk
 tuukrihaigus
 tuulerõuged
 tuules
 tuuletus
 tuulevaikus
+tuulevari
 tuul tiibades
 tuumanohu
 tuumor
+tõbi
 tõbisus
 tõeline polütsüteemia
 tõendatus
+tõenäosuslik
+tõmbetuul
 tõmblustõbi
 tõrjutus
 tõrjutusrisk
@@ -3608,10 +4623,12 @@ tõsiolud
 tõugata ja lükata
 tõugurike
 tõuseb tulu
+tõus-mõõn
 tõusufaas
 tõvehoog
 tõvesängi
 tõvesängis
+tõvevoodi
 tõvevoodis
 tõvevoodisse
 tähelepanuhäire
@@ -3620,8 +4637,10 @@ täies purjes
 täies õies
 täie teadmisega
 täisealisus
+täisgaas
 täishõive
 täiskarskus
+täisküpsus
 täismahus
 täismäng
 täis nagu pinal
@@ -3639,19 +4658,25 @@ täispurjedes
 täispurjeis
 täispurjes
 täistööhõive
+täisõitsemine
+täisõitseng
 täitumus
 täitumustunne
+täituvus
 täitõbi
 täkku täis
 tänavatutvus
 täpiks i peal
 täpp i peal
 täppverevalum
+tärgeldus
 tööd andma
 tööhõive
 tööjõupuudus
+tööohutus
 töörahu
 tööseisak
+tööstress
 tööstuskriis
 töötaolek
 töötrauma
@@ -3659,18 +4684,22 @@ töövigastus
 töövõimetus
 tööväsimus
 tüfliit
+tühisus
 tühja minema
 tühja pesa sündroom
 tükeldatus
 tülin
 tülpimus
 tümpaania
+tüng
 türeotoksikoos
 türotoksikoos
+tüsistus
 tüvemädanik
 tüvepõletik
 tüvevähk
 tüüfus
+tüüfushaige
 tüünus
 udarapõletik
 uimastinälg
@@ -3681,6 +4710,7 @@ uimus
 uinak
 uinumishäire
 uksele koputama
+ulakus
 ula peal
 ulu all
 uluall
@@ -3691,11 +4721,14 @@ ulualt
 umbes olema
 umbjoove
 umbkott
+umbrohtumus
+umbrohusus
 umbsoolepõletik
 umbsus
 umbus
 umme
 ummikseis
+ummistus
 ummuksisolek
 ummus
 uneapnoe
@@ -3710,6 +4743,7 @@ unepaanika
 unepuudus
 unerahu
 unerammestus
+unerähm
 uneskõndimine
 unesränne
 unetarve
@@ -3719,6 +4753,8 @@ uneuim
 unevajadus
 uneähm
 uneärevus
+uni
+unisoon
 unisus
 unitõbi
 unustus
@@ -3732,22 +4768,33 @@ uriinipeetus
 uriinipidamatus
 urineerimishäire
 urtikaaria
+usalduskriis
 uskmatus
 ussripikupõletik
 usstõbi
 usupimedus
+utsin
+uudismoodustis
 uurimisalluvus
+uuris
 uuritus
+uusmoodustis
+uus must
+uusvasakpoolsus
 vaariks
 vaatepilt
 vabaabielu
 vabad käed
+vabadus
+vabajooks
+vabakäik
 vabasuhe
 vaegkirjutamine
 vaegkuulmine
 vaeglugemine
 vaegnägemine
 vaegpingus
+vaegsoojumus
 vaegtalitlus
 vaegtoitumus
 vaegushaigus
@@ -3758,11 +4805,14 @@ vaesuslõks
 vaesusrisk
 vaginiit
 vaginism
+vahaküps
 vahaküpsus
 vahelduva eduga
 vahelduvus
 vahelöök
 vaherahu
+vahk
+vahtimine
 vaikus
 vaimuhaigus
 vaimuhäire
@@ -3770,6 +4820,8 @@ vaimupimedus
 vaimupuue
 vaimuseisund
 vaimutervis
+vaimuärksus
+vajak
 vajakajäämine
 vakantsus
 valduses
@@ -3782,9 +4834,16 @@ valgeveresus
 valgupuudus
 valgusekartus
 valguskartus
+valguskiir
 valguslööve
+valgustatus
+valgustundlik
+valgustundlikkus
 valgustunud
 valguvaegus
+valitsemisohjad
+valitsuskriis
+valitsusohjad
 valkkusesus
 vallaspõli
 vallaspõlv
@@ -3813,48 +4872,65 @@ vangipõli
 vangipõlv
 vangis
 vangist
+vangistus
+vangitorn
 vanglaleib
 vangus
 vaost väljas
 vapluskramp
 vapped
 vappekülm
+varakus
 varalahusus
 varaühisus
 varikoos
+varjamine
 varjusolek
 varjusurm
 varrepõletik
 varroatoos
 varupink
 varustamishäire
+vasakpoolsus
 vasallisõltuvus
 vasemürgistus
 vasemürgitus
+vasikaiga
 vaskuliit
+vastast
 vastasus
+vastavus
 vastukülaskäik
+vastunäidustus
 vastuolek
 vastuolu
 vastuseis
 vastutav hoid
 vastutusekoorem
 vastutuskoorem
+veatus
 vedelikukaotus
 vedelikupuudus
 vedelus
+vee ja leiva peal
 veekahjustus
+veekalkvel
+veekalkvele
 veenikomu
 veenilaiend
 veenipõletik
 veepuudus
 veetõbi
 veevarustus
+veeälevil
+veeälevile
 veiseröögatus
 veistehullus
 Vene värk
 venitusarm
 verehaigus
+verehüüve
+verejooks
 verekaotus
 verekusemine
 verekämp
@@ -3866,6 +4942,7 @@ veremürgitus
 verepais
 veresoonkasvaja
 veretung
+verevaesus
 verevalandus
 verevähk
 veri keeb
@@ -3884,6 +4961,7 @@ veritsustõbi
 veritähnus
 verivill
 vertiigo
+vertikaalasend
 vesikõht
 vesiliiges
 vesiliug
@@ -3897,17 +4975,24 @@ vesivill
 veskikivina kaelas
 vestlusohjad
 vibratsioontõbi
+videvik
 videvikpimesus
+videvikuaeg
+videvikutund
 vidukil
+vidus
+vigastuspaus
 viigiseis
 viimane piisk karikas
 viimane piisk karikasse
 viimane tilk karikas
 viimane tilk karikasse
+viimane uni
 viimase tuhande peal
 viimase veerandi peal
 viimistlematus
 viimistletus
+viinaaur
 viinauim
 viinauni
 viinaväsimus
@@ -3920,6 +5005,9 @@ viirusnakkus
 viitsimatus
 vikerkestapõletik
 vildakselgsus
+viletsus
+viletsusepäevad
+viletsuspäevad
 viljakustervis
 viljapuu-juurevähk
 villik
@@ -3928,20 +5016,26 @@ villu
 viltrooste
 viltuminek
 viltuvedamine
+vilu
 vilus
 vinanohu
+vine
 vingumürgistus
 vingumürgitus
+vinn
+vinnastus
 vinnid
 vinnlööve
 vinntõbi
 vintsutus
 virelus
+virgumine
 virilism
 virilus
 viroos
 virvendusarütmia
 visiitabielu
+visin
 vistar
 vistrik
 vitamiinipuudus
@@ -3949,16 +5043,22 @@ vitamiinivaegus
 vitiliigo
 vituviha
 voodimärgamine
+voolmed
 voolmevalu
 vormist väljas
 vuajerism
 võidulootus
 võiduseis
 võidusoon
+võimukriis
 võimulolek
+võimuohjad
 võimupositsioon
 võimutüüri juures
 võimuvaakum
+võistlusnärv
+võistluspaus
+võistluspinge
 võlakeeris
 võlavangistus
 võplus
@@ -3968,12 +5068,17 @@ võrdõiguslikkus
 võrdõiguslus
 võrkkestapõletik
 võrklaiksus
+võtmekoht
 võtmepositsioon
+võõrandamatus
+võõrutusnäht
 vähemusosalus
 vähemusstress
+vähesus
 väheveresus
 vähieelne seisund
 vähihaigus
+vähikatk
 vähirakk
 vähisiire
 vähkkasvaja
@@ -3989,61 +5094,106 @@ väljalangemus
 väljalangevus
 väljalangus
 väljapeetus
+väljasopistis
+väljasopistus
+väljavaade
+väntsutus
 väravavõimalus
 värihalvatus
 värske õhu mürgitus
 värskus
+värvikirevus
 värviline kliiketendustõbi
 värvipimedus
 värvipimesus
+väsimus
 väsimusmurd
+väss
+vässu
 väärareng
 väärasend
 väärlülipuit
 vöötohatis
 wellness
+win-win
+woke
+õhetus
 õhkemboolia
+õhkkümblus
 õhkrind
 õhktopistus
+õhtuhämarik
+õhtuhämarus
 õhtupime
 õhtupimedik
 õhtupimedus
+õhtuvidevik
 õhuhaigus
+õhuke rahakott
 õhupuudus
+õhureostus
+õhusaaste
 õhusõiduhaigus
+õhuvann
+õieehtes
 õierüü
+õies
 õietolmuallergia
+õigusjõud
 õiguspära
 õiguspärasus
+õitsel
+õitseng
+õlitase
+õlleaur
 õllejanu
+õllesoe
 õlleuim
 õndsus
 õnnejoovastus
+õnnemaa
+õnnepõli
+õnnepõlv
 õnnesärgis sündinud
 õnnetus ei hüüa tulles
 õnnistatud olek
 õnnistatud seisund
 õnnis teadmatus
 õpetatus
+õpitud abitus
 õudsus
 äbarus
+ägedus
 äge kõht
+ähmi
+ähmil
+ähmis
+ähmi täis
 ähvarduspoos
 äkkeksanteem
 äkkvalu
 äkkverejooks
 äksi täis
+äng
+ängistus
+ängistustunne
 änksi täis
+ärajäämanäht
 äraolek
 äraolemine
 ärevushäire
+äririsk
+ärksameelsus
+ärksus
 ärkvelolek
 ärritatus
 ärritunud soole sündroom
 ödeem
 ökokriis
+ökoloogia
 ökorisk
 ökotasakaal
+ööpime
 ööpuhkus
 ööuni
 öövaikus
@@ -4054,11 +5204,16 @@ wellness
 üheõiguslikkus
 ühiselu
 ühismeelsus
+ühisvaldus
 ühtekuuluvus
 ühtelangevus
+ühtivus
 ühtlus
 üks hõikab teist taga
 üksijäämine
+üksikvangistus
+üksildus
+üksildustunne
 üksindus
 üksiolek
 üksiolemine
@@ -4067,16 +5222,25 @@ wellness
 üksolemine
 üksteisemõistmine
 ülalõuaurkepõletik
+üldanesteesia
 üldhaigestumine
 üldhaigus
+üldnarkoos
 üldreaktsioon
 üldseis
 üldseisund
+üldtuimastus
+ülejahtumine
 ülejõud
+ülekaal
+ülekohus
 ülekoormatus
 üleküllastatus
 üleküllastus
+ülemeelikus
 ülemvalitsus
+ülendus
+üleolek
 ülepinge
 ülerahvastatus
 ülerahvastus
@@ -4084,332 +5248,18 @@ wellness
 ületamatus
 ületoitumus
 ületreenitus
+ületöötamine
 ülevalolek
 ülevõim
 üleväsinud
 ülihappesus
+ülimus
 ülimuslikkus
+ülitundlikkus
 üliõpilasabielu
+ümarlaiksus
 ümarselgsus
 ümarusstõbi
+x-jalad
+x-jalgne
 x-jalgsus
-abjekt
-abjektsioon
-abjektsus
-ablatsioon
-abstinentsinäht
-afoonia
-aklimatisatsioon
-akuutsus
-alajahtumine
-alarahastatus
-alarahastus
-allakäigu spiraal
-allakäiguspiraal
-allergia
-alopeetsia
-amneesia
-anosmia
-argus
-austus
-biomarker
-debiilsus
-delikaatsus
-depressioon
-digiärksus
-disharmoonia
-distress
-düsosmia
-düstress
-eduseis
-eelpension
-eksalteeritus
-ekshibitsionism
-eksistents
-emmetroopia
-erilaad
-eripära
-eripärasus
-erosioon
-esimus
-esinemisnärv
-esinemispalavik
-esinemisärevus
-eufooria
-fibroos
-fiksidee
-fissuur
-foobia
-geenirike
-grupimõtlemine
-haav
-haistmisvõimetus
-hambavalu
-hambus
-heaolutunne
-hemolüüs
-hingeliigutus
-hingestatus
-hirmujudin
-hirmuvabin
-hirmuvõpatus
-hirmuvärin
-Hispaania gripp
-homofoobia
-homoviha
-hukatus
-hullus
-huvipuudus
-hämarik
-hämarus
-häälekadu
-hübriidimmuunsus
-hüdrofoobia
-hüperinflatsioon
-hüperplaasia
-hüpertoonia
-hüpertroofia
-hüpohondria
-hüpotermia
-hüpotoonia
-idée fixe
-identsus
-idiotism
-ikaldus
-illusoorsus
-ilmaelu
-ilme
-impotentsus
-indolents
-indolentsus
-infantiilsus
-infantilism
-inimareng
-inimväärikus
-inspiratsioon
-internetisõltuvus
-intolerantsus
-irve
-isepära
-isepärasus
-jaatamine
-jahm
-jahmatus
-janutunne
-joogijanu
-julgeolekurisk
-jups
-juuksekadu
-jõukus
-jõuväli
-jääknäht
-kainus
-kanapimedus
-kannatus
-karastus
-karjaimmuunsus
-kassiahastus
-katk
-keeletus
-kidu
-kinnisidee
-kinnismõte
-kinnisus
-kliima
-kliiniline surm
-koeksistents
-kogukondlus
-kollektiivne immuunsus
-kolmikjaotus
-komfort
-konformism
-konkrement
-konnasilm
-koomika
-koondelisus
-koone
-koordineeritus
-kooseksisteerimine
-kooseksistents
-kooskõlastatus
-kopitus
-kreeps
-kukil
-kukile
-kukilt
-kulumus
-kumulatsioon
-kurbloolisus
-kurbloolus
-kurenokajälg
-kurvameelsus
-kõhutühi
-kõhutühjus
-kõrgusehirm
-kõrgusekartus
-lahtine
-lauspilvitus
-lavanärv
-libedus
-liigjahtumine
-liigtundlikkus
-loomusund
-lugupidamine
-lumm
-lõhnatundetus
-lämbus
-lühinägelikkus
-marrastus
-maruhoog
-meelehaigus
-meeleheitlik
-meeleliigutus
-meelemõistus
-meelemärkusetu
-menorraagia
-moehaigus
-monogaamia
-murepilv
-mutualism
-mõnutunne
-mõõn
-mädapaise
-mäluauk
-mälulünk
-märg unenägu
-naer
-netisõltuvus
-nonkonformism
-normaalnägevus
-nutisõltuvus
-näilikkus
-näilisus
-olek
-olemasolek
-olemasolemine
-olemasolu
-omapära
-omapärasus
-orjus
-ostalgia
-ostubuum
-ostupaanika
-ostupalavik
-paanikahoog
-paise
-pakitsus
-parosmia
-peas
-peast
-pension
-penss
-petlikkus
-petturi sündroom
-piiratus
-pikne
-pilvisus
-pilvitus
-pinss
-pisarane
-pohm
-pohmakas
-pohmell
-pohmelus
-polügaamia
-posituur
-prioriteet
-publikuhuvi
-põnevus
-põud
-pähesaamine
-päriselu
-pärisorjus
-pärispõlv
-püreksia
-püsirahastus
-püstasend
-rabandus
-rahetera
-rahulikkus
-rambus
-rammestus
-rammetus
-respekt
-rigiidsus
-riigivõlg
-riisiko
-rikutus
-risk
-rististe
-roidumus
-romantika
-rusutis
-rõõmutus
-rätsepaiste
-rätsepiste
-segiolek
-sidekoestumine
-silmapete
-sisetüli
-spasm
-spetsiifika
-suguvõimetus
-suhtes
-sundhirm
-surmauni
-suurushullus
-suurushullustus
-suveräänsus
-süda läheb pahaks
-sümbioos
-süüme
-süümepiin
-tasakaalutunne
-teadvusetu
-tehnostress
-terasus
-teravmeel
-terviserike
-terviseärevus
-toenglamang
-toonus
-tormikeeris
-torm ja tung
-torsioon
-traagika
-tragism
-tuimus
-tulukooslus
-tundeliigutus
-tunnelnägemine
-tusk
-tõus-mõõn
-tööstress
-tühisus
-tüsistus
-uni
-vaegsoojumus
-vaimuärksus
-varakus
-vastunäidustus
-vertikaalasend
-võistlusnärv
-võistluspinge
-võõrutusnäht
-woke
-õhetus
-õies
-õpitud abitus
-ägedus
-äng
-ängistus
-ängistustunne
-ärajäämanäht
-äririsk
-ärksameelsus
-ärksus
-üksildus
-üksildustunne
-ülejahtumine
-üleolek
-ülitundlikkus
