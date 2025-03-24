@@ -22,8 +22,9 @@
 **v04_rulebased_annotation**: Annotating obliques with various freely available resources
 
 * *obliikva_semantika_ekilexist_script.sql*: Sql queries for extracting a word's semantic type info from ekilex
-* *v04_spatial_obliques_from_SQLite.ipynb*: finds all obliques in spatial cases from a database, writes them into a new table  
 * *v04_semtype_co-occurance.ipynb*: Finds how much each semantic type appears with location, time, state and event tags. Looks through words that have 2 semantic types where 1 is loc, time, state or event. 
-* *v04_semtype_statistics.ipynb*: Calculates various statistical information for rule-based semantic tagging done on the Estonian Reference Corpus. 
+* *v04_semtype_statistics_lemma.ipynb*: Calculates semantic tag coverage and lemma frequency for words in spatial cases in the estonian Reference corpus
+* *v04_semtype_statistics_verb.ipynb*: Seperates case from feats, calculates tag frequency, percentages and proportions per verb and case pair
 * *v04_semtype_to_database.ipynb*: Adds semantic tags (currently from ekilex) to lemmas that appear in spatial cases in the Estonian Reference corpus. 
+* *v04_semtype_visualization.ipynb*: creates a hoverplot showing if verb'case pair takes locations or not_locations and how much the words have been annotated
 * *v04_spatial_obliques_from_SQLite.ipynb*: Finds all obliques in spatial cases from the Estonian Reference corpus and writes them into a database table
