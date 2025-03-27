@@ -17,4 +17,4 @@
 * *kohad_1000_gpt_valjund_pipe.csv* : gpt annotation for 1000 words with sentence context. Delimiter is a semicolon (;). NB! GPT also outputs the sentence it was given as context for easier annotation, but sentences can contain semicolons, so a semicolon isn't the best delimiter.
 
 **v04_rulebased_annotation**
-* *verb_koht_vs_mittekoht.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents have been annotated
+* *verb_koht_vs_mittekoht_naited.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents have been annotated. Includes 3 examples of dependents: location, not_location, not_annotated

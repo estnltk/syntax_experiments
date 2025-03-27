@@ -1,4 +1,3 @@
-9/11
 Aasia mängud
 aastakonverents
 aastakoosolek
@@ -10,13 +9,11 @@ aatomisõda
 abiellumine
 abilöök
 abistatud enesetapp
-aeroobika
 aeroobikatreening
 aeroobikatrenn
 aftekas
 after-party
 afäär
-agoraa
 agressioon
 agressioonisõda
 ahelavarii
@@ -29,17 +26,12 @@ ainetund
 ajaloosündmus
 ajalootund
 ajasõit
-ajasääst
-ajavõit
 ajujaht
 ajurünnak
-ajusurm
 aktsioon
 aktus
 alagrupimäng
 alagrupiturniir
-allajäämine
-altminek
 ametijuubel
 ametikõrgendus
 ametireis
@@ -50,8 +42,6 @@ Anschluss
 anšluss
 antiikmängud
 antiikolümpiamängud
-antikliimaks
-antrakt
 apell
 aplaava
 apoteoos
@@ -69,10 +59,8 @@ arupidamine
 arvamuskorje
 arvamusküsitlus
 arvamusuuring
-asenduskaristus
 asendustund
 asfaldijooks
-assamblee
 asutamiskongress
 asutamiskoosolek
 asümmeetriline sõda
@@ -97,7 +85,6 @@ autoriõhtu
 autovõidusõit
 autoõnnetus
 avaaktus
-avaala
 avadefilee
 avaetendus
 avaettekanne
@@ -106,14 +93,12 @@ avaistung
 avakohtumine
 avakontsert
 avakoosolek
-avakõne
 avalöök
 avamatš
 avamine
 avantüür
 avapala
 avapauk
-avarii
 avaring
 avastart
 avastusretk
@@ -128,22 +113,16 @@ baby shower
 bakhanaal
 Balti kett
 bankett
-basaar
 beebikino
 benefiss
 biennaal
 bioloogiatund
-bioloogiline surm
-bivakk
 blamaaž
 boksipeatus
 Brexit
 briifing
-briljantpulm
-bufonaad
 bussiavarii
 börsikrahh
-Cooperi test
 corrida
 DDoS-rünnak
 DDoS-rünne
@@ -170,7 +149,6 @@ dionüüsiad
 diplomietendus
 disko
 diskoõhtu
-doktorikool
 doominoefekt
 DoS-rünnak
 DoS-rünne
@@ -181,7 +159,6 @@ duell
 ebaõnnejada
 edasipääs
 edasi-tagasireis
-edulugu
 eelarvevaidlus
 eelesietendus
 eelhääletus
@@ -190,7 +167,6 @@ eelkaitsmine
 eellugu
 eelläbirääkimised
 eellöök
-eelnenu
 eelolümpia
 eelproov
 eelring
@@ -202,7 +178,6 @@ eeskava
 ehalkäik
 ehalkäimine
 eine
-ekiden
 eksam
 eksmatrikulatsioon
 eksmatrikuleerimine
@@ -210,7 +185,6 @@ eksmatt
 eksootikareis
 ekspluatatsioonihäire
 ekspo
-elamus
 elamusretk
 elektrikatkestus
 elluastumine
@@ -224,7 +198,6 @@ EM
 EM-võistlused
 enampakkumine
 ennustusvõistlus
-epopöa
 eraldistart
 erandjuht
 erandjuhtum
@@ -237,10 +210,8 @@ erinõupidamine
 eriolümpia
 eriolümpia maailmamängud
 eriolümpiamängud
-eriprojekt
 eriseminar
 erruminek
-eshatoloogia
 esietendus
 esiettekanne
 esilavastus
@@ -251,7 +222,6 @@ esitlusfestival
 esitluskontsert
 esitus
 esivõistlused
-eskatoloogia
 esmaesitus
 esmaettekanne
 esmalavastus
@@ -264,7 +234,6 @@ etendus
 etlusvõistlus
 etteaste
 ettekandekoosolek
-ettelugemine
 ettesõit
 ettevalmistuskursus
 euroliiga
@@ -293,12 +262,10 @@ folk
 fotojaht
 fotoseanss
 fotosessioon
-gaala
 gaalaetendus
 gaalakontsert
 gaalaõhtu
 gaasiplahvatus
-gala
 galaetendus
 galakontsert
 galaõhtu
@@ -307,7 +274,6 @@ galopivõidusõit
 gastroll
 georetk
 gepsimine
-gerilja
 golfivõistlus
 graafikanäitus
 grillipidu
@@ -321,8 +287,6 @@ haigestumisjuht
 haigestumisjuhtum
 haigusjuht
 haigusjuhtum
-hambamurre
-hambavahetus
 hansapäevad
 happening
 happy end
@@ -335,8 +299,6 @@ heategevusüritus
 hekatomb
 helihardus
 hiigeltulekahju
-hingetõmbeaeg
-hingetõmbepaus
 hinnaralli
 hoiatusstreik
 hokimatš
@@ -348,15 +310,10 @@ hommikupalvus
 hommikusöök
 hukk
 hulgilaat
-humanitaarkatastroof
-humanitaarkriis
 hundiaju
 hundijaht
 huvireis
-hõbepulm
 hõimuõhtu
-häbiasi
-häbilugu
 hädajuht
 hädajuhtum
 hädapeatus
@@ -377,8 +334,6 @@ hüppevoor
 ideatsioon
 ideekonkurss
 ideevõistlus
-identiteedikriis
-ilmaime
 ilmaletoomine
 ilmaletulek
 ilmasõda
@@ -397,8 +352,6 @@ infopäev
 infotund
 inimkannatanu
 inimkaotus
-inimkatastroof
-inimohver
 initsiatsioon
 initsiatsiooniriitus
 inkvisitsiooniprotsess
@@ -417,7 +370,6 @@ istjad
 istjatsed
 istumisstreik
 istung
-istungjärk
 jaanik
 jaanilaat
 jaanilõke
@@ -437,7 +389,6 @@ jooksukross
 jooksutreening
 jooksutrenn
 jooksuvõistlus
-joomaaeg
 joomaorgia
 joomapidu
 jooming
@@ -449,18 +400,14 @@ juhtumus
 juhtunu
 jumalateenistus
 jutulepääs
-juubel
 juubelikontsert
 juubelipidustus
 juubelisünnipäev
-juudi juubel
-juudijuubel
 juudipogromm
 juuniküüditamine
 juunipööre
 jõukatsumine
 jõulujumalateenistus
-jõululaat
 jõulupidu
 jõuproov
 jõutreening
@@ -477,8 +424,6 @@ järelpulm
 jätkupidu
 jätkusõda
 jäärajasõit
-jüripäev
-kaasus
 kabaree-etendus
 kabevõistlus
 kabinetiistung
@@ -486,7 +431,6 @@ kabinetinõupidamine
 kabinetivahetus
 kadalipp
 kadiš
-kadriõhtu
 kaevamised
 kaevandusplahvatus
 kahekõne
@@ -507,9 +451,7 @@ kallaletungisõda
 kalmistupüha
 kaminaõhtu
 kammerkontsert
-kamuflett
 kannapööre
-kannatustee
 kanuumatk
 kaotsiminek
 kapustnik
@@ -565,7 +507,6 @@ kestvussõit
 kettaheitevõistlus
 kevadmess
 kevadränne
-kihlad
 kihlus
 kihluspidu
 kihutuskoosolek
@@ -583,7 +524,6 @@ kirikukohv
 kirikukontsert
 kirikulõhe
 kirikutalitus
-kirikuteenistus
 kirikuvisitatsioon
 kirjandivõistlus
 kirjanduslik kohus
@@ -638,9 +578,6 @@ kokkuleppemäng
 kokkusaamine
 kokkutulek
 kokteiliõhtu
-kolgata
-Kolgata tee
-kolgatatee
 kollisioon
 kollokvium
 kolmekõne
@@ -655,7 +592,6 @@ kommerss
 kompleksvõistlus
 komsomolikoosolek
 kondiproov
-konflikt
 konkurss
 konnaränne
 konnatalgud
@@ -692,7 +628,6 @@ koolipidu
 koolitulistamine
 koolitund
 koolitus
-koolituspäev
 koolitusreis
 koolitusseminar
 koondamislaine
@@ -703,7 +638,6 @@ kooriproov
 koosistumine
 kooskäimine
 koosloomepäevak
-koosolek
 koosolemine
 koosoleng
 koosviibimine
@@ -714,27 +648,20 @@ kordusvalimised
 kordusõppus
 korjandus
 koroonajuhtum
-korral
-korso
 korvpallimäng
 korvpallitreening
 korvpallitrenn
 kosmosereis
 kossutrenn
 kostüümipidu
-kovisioon
 kriisikoosolek
 kriisinõupidamine
 kristalliöö
 kriteerium
-kroonupüha
 krossivõistlus
 kruiis
-kräu
 kukutamine
 kuldjuubel
-kuldpulm
-kultuuripäev
 kultuurireis
 kultuurirevolutsioon
 kultuurisündmus
@@ -762,7 +689,6 @@ kvalifikatsioonimäng
 kvalifikatsiooniturniir
 kvalifikatsioonivõistlus
 kõnekoosolek
-kõnetund
 kõnevõistlus
 kõneõhtu
 kõrgmissa
@@ -789,7 +715,6 @@ künnivõistlus
 küpsuseksam
 küttimisretk
 küünlalaat
-küünlavalgusõhtu
 laat
 laavapurse
 laborikatse
@@ -799,7 +724,6 @@ laevaavarii
 laevahukk
 laevaõnnetus
 lahing
-lahkuminek
 lahkumisetendus
 lahkumiskontsert
 lahkumiskõne
@@ -809,7 +733,6 @@ lahtihüpe
 lahtine tund
 laibamatus
 lantš
-lapsepõlvetrauma
 laser-show
 laseršõu
 laskeharjutus
@@ -822,7 +745,6 @@ lauakirik
 lauaõppus
 laubakas
 laulatus
-laulev revolutsioon
 laululaager
 laulupidu
 lauluproov
@@ -836,12 +758,10 @@ lavajuubel
 lavaletulek
 lavaproov
 lavastus
-leeripäev
 leinajumalateenistus
 leinamissa
 leinaseisak
 leinatalitus
-lektoorium
 Leningradi blokaad
 lennuintsident
 lennureis
@@ -870,7 +790,6 @@ loendus
 loengkontsert
 lohutussõit
 lohutusturniir
-loksper
 loobumiskaotus
 loobumisvõit
 looduskatastroof
@@ -886,7 +805,6 @@ lusikapidu
 lustipidu
 lustisõit
 lustratsioon
-luukamber
 luuleprõmm
 luulevõistlus
 luuleõhtu
@@ -916,22 +834,17 @@ lõunaeine
 lõunakontsert
 lõunaoode
 lõunasöök
-lõunatund
-läbielamus
 läbimäng
 läbiotsimine
 läbirääkimine
 läbirääkimised
-lähiajalugu
 lähtepauk
 läänistus
 lööm
 lööming
 lühimatk
-lühipuhkus
 lüüasaamine
 maailmaesietendus
-maailmaime
 maailmakarikas
 maailmakarikavõistlused
 maailmakongress
@@ -946,7 +859,6 @@ maalilaager
 maanteejooks
 maanteesõit
 maapulm
-maapäev
 maastikumäng
 maastikupõleng
 maastikutulekahju
@@ -960,17 +872,14 @@ maipidustused
 mairongkäik
 majandusfoorum
 majanduskonverents
-majanduskriis
 maksufestival
 malemeistrivõistlused
 maleolümpia
 maletšempionaat
 malevõistlus
-maneežisõit
 manifestatsioon
 manööver
 mardilaat
-martüürium
 maskeraad
 maskiball
 maskipidu
@@ -982,13 +891,11 @@ massimiiting
 massirahutus
 massiüritus
 matemaatikatund
-matinee
 matk
 matke
 matš
 matškohtumine
 matšturniir
-matus
 matused
 matusepidu
 matusetalitus
@@ -997,7 +904,6 @@ medalisõit
 meediasündmus
 meeleavaldus
 meelelahutusüritus
-meelespidamine
 meeskonnasõit
 meeskonnavõistlus
 mehelesaamine
@@ -1007,7 +913,6 @@ meistrikursus
 meistrisari
 meistrivõistlused
 melodeklamatsioon
-memoriaal
 memoriaalvõistlus
 menarhe
 merekatastroof
@@ -1019,7 +924,6 @@ mereoperatsioon
 merereis
 mereristsed
 meresõda
-meretee
 mereõnnetus
 meteoriidikatastroof
 meteoriidiplahvatus
@@ -1033,17 +937,14 @@ metsatulekahju
 metskitsejaht
 metsseajaht
 miiting
-millenniumivahetus
 minetus
 minimatš
-ministeriaal
 miraakel
 missa
 missivõistlus
 mitmepäevasõit
 mitmevõistlus
 mitmikavarii
-mitmikmatus
 mitteilmumine
 mittetulek
 MK
@@ -1060,14 +961,11 @@ moe-show
 moešõu
 monoetendus
 monolavastus
-mootorrattaralli
 mootorrattaõnnetus
 moritaat
 morsipidu
 motivatsiooniüritus
-motokross
 motomatk
-motoralli
 motovõistlus
 mudelautondus
 muldasängitamine
@@ -1075,25 +973,20 @@ mullistus
 multimeediaetendus
 munitsipaalvalimised
 murdeekspeditsioon
-murdepunkt
 murdmaavõistlus
 musta luige sündmus
 must luik
 must missa
 muuseumitund
 muuseumiöö
-muusika-aasta
 muusikafestival
 muusikalikontsert
-muusikalilava
 muusikapidu
 muusikatund
 muusikaõhtu
 muutus
-mõisapäev
 mõrvaprotsess
 mõtluslaager
-mõttekoda
 mõttetalgud
 mõõduvõtmine
 mõõduvõtt
@@ -1103,7 +996,6 @@ mälestusaktus
 mälestusjooks
 mälestusjumalateenistus
 mälestuskontsert
-mälestusloeng
 mälestusnäitus
 mälestusteenistus
 mälestusturniir
@@ -1111,7 +1003,6 @@ mälestusvõistlus
 mälestusõhtu
 mälestusüritus
 mängud
-mänguperiood
 mänguvoor
 märtsiküüditamine
 märtsipommitamine
@@ -1121,8 +1012,6 @@ müsteerium
 müüginäitus
 naiskursused
 naistelugu
-naljakus
-naljalugu
 napikas
 narkosurm
 naturalisatsioon
@@ -1141,11 +1030,9 @@ Normandia dessant
 nukuetendus
 nullimäng
 nurisünnitus
-nuumvasikas
 nõiaprotsess
 nõiasabat
 nõupidamine
-nädal
 nädalalõpukursus
 nädalatund
 näidishukkamine
@@ -1165,13 +1052,11 @@ Nürnbergi protsess
 ohvripidu
 ohvritalitus
 oksjon
-oksjonihaamer
 oktoobripühad
 oktoobrirevolutsioon
 oleng
 olmetrauma
 olümpia
-olümpiaad
 olümpiamängud
 olümpiaregatt
 olümpiaturniir
@@ -1184,7 +1069,6 @@ omnium
 ooperietendus
 operatiivnõupidamine
 opteerimine
-oranž revolutsioon
 orelikontsert
 orgia
 orienteerumisvõistlus
@@ -1200,9 +1084,7 @@ otsasõit
 otsesed valimised
 paadimatk
 paadiralli
-paariminek
 paaripanek
-paarismatus
 paasasöömaaeg
 paastulaager
 pakettreis
@@ -1222,7 +1104,6 @@ panihhiida
 pantvangidraama
 pantvangikriis
 papagoilaskmine
-paraad
 paralümpia
 paralümpiamängud
 paraolümpia
@@ -1232,7 +1113,6 @@ parlamendivalimised
 partneriaad
 parvematk
 pattulangemine
-peaassamblee
 peakoosolek
 pealeminek
 pealetungilahing
@@ -1241,7 +1121,6 @@ pearaharahutused
 peied
 peomöll
 peoõhtu
-pereheitmine
 perekonnanõukogu
 perekonnapidu
 perekonnatüli
@@ -1288,7 +1167,6 @@ play-off-mäng
 plebistsiit
 pleenum
 plekimõlkimine
-plenaar
 plenaaristung
 plenaarium
 plenäär
@@ -1306,10 +1184,8 @@ poolfinaalseeria
 poolfinaalturniir
 pooljuubel
 pop-up-näitus
-potilaat
 praasnik
 Praha kevad
-praktikatund
 pralle
 Prantsuse revolutsioon
 prassing
@@ -1317,17 +1193,14 @@ preemiareis
 premjäär
 presentatsioon
 presidendivalimised
-pressikas
 pressikonverents
 pretsedent
-proloog
 promotsioon
 promoveerimine
 pronksimatš
 pronksimäng
 pronksiöö
 prooviesinemine
-proovitund
 propagandaüritus
 proseminar
 protestiavaldus
@@ -1343,9 +1216,7 @@ puhkepeatus
 puhkeõhtu
 puhkusereis
 puhumisreid
-pulma-aastapäev
 pulmajoodud
-pulmapidu
 pulmapidustused
 pulmareis
 pulmasõit
@@ -1386,7 +1257,6 @@ püha õhtusöömaaeg
 püsinäitus
 püstijalavastuvõtt
 püütiamängud
-raamatuaasta
 raamatulaat
 raamatumess
 raamatunäitus
@@ -1401,7 +1271,6 @@ rahuvalvemissioon
 rahvahääletamine
 rahvahääletus
 rahvajooks
-rahvakoosolek
 rahvaküsitlus
 rahvaliikumine
 rahvaloendus
@@ -1414,7 +1283,6 @@ rahvatantsupidu
 rahvaülestõus
 rahvaüritus
 raketirünnak
-rallikross
 randevuu
 rannapuhkus
 rassirahutus
@@ -1437,12 +1305,10 @@ regulaarlend
 regulaarreis
 rehkendustund
 reisipakett
-reisitee
 reisitõrge
 reiv
 rekonkista
 relvakokkupõrge
-relvakonflikt
 retk
 revanšmatš
 reveranss
@@ -1453,7 +1319,6 @@ revolutsioonisõjad
 riid
 riigieksam
 riigipööre
-riigipüha
 riigivisiit
 riitus
 rikkumine
@@ -1464,7 +1329,6 @@ ristilöömine
 ristimine
 ristiretk
 ristisurm
-ristitee
 ristjatsed
 ristlus
 ristsed
@@ -1472,7 +1336,6 @@ rividrill
 riviharjutus
 riviõppus
 rodeo
-rogain
 rohevahetus
 roim
 rokikontsert
@@ -1505,11 +1368,9 @@ rüsin
 rüüstekäik
 rüüsteretk
 rüütliturniir
-saabumiskohv
 saajasõit
 saanisõit
 saatuselöök
-sabat
 safari
 saja-aastane sõda
 sajandijuubel
@@ -1535,15 +1396,12 @@ seeriavõistlus
 seik
 seiklus
 seinatreening
-seitsmevõistlus
 sekeldus
 seksrevolutsioon
 seksuaalrevolutsioon
 sellieksam
 seminarlaager
 sendioksjon
-sensatsioon
-sessioon
 setsessioon
 setsessioonisõda
 shopping
@@ -1555,14 +1413,10 @@ siirderiitus
 silgusõda
 simman
 sinilillejooks
-sisekonflikt
-sisekriis
 sisemeistrivõistlused
 sisesõda
-sisevastuolu
 sisseastumiseksam
 sisseastumiskatse
-sissekukkumine
 sissetung
 sissetungimine
 skandaal
@@ -1594,7 +1448,6 @@ sprindisõit
 staadionijooks
 staadionikross
 stardipauk
-stiilikas
 stiilipidu
 stiiliõhtu
 streigilaine
@@ -1606,7 +1459,6 @@ stuudiokontsert
 suaree
 suhtekoolitus
 sulesõda
-sundpuhkus
 supee
 superfinaal
 surmajuht
@@ -1654,7 +1506,6 @@ sõda
 sõdurieksam
 sõelmäng
 sõidueksam
-sõidutund
 sõjaleek
 sõjatuli
 sõjaväeparaad
@@ -1665,18 +1516,14 @@ sõpruskohtumine
 sõprusmatš
 sõprusmäng
 sõprusvisiit
-sõu
 sõuderegatt
 sõudevõistlus
 säru
 söerajasõit
-söögiaeg
-söögikord
 söögipeatus
 söök
 sööm
 söömaaeg
-söömakord
 söömaorgia
 söömapidu
 sööming
@@ -1687,22 +1534,16 @@ süldipidu
 sümfooniakontsert
 sümpoosion
 sümpoosium
-sündmus
 sündmusteahel
 sündmustik
 sünnipäevapidu
-sünnitamine
-sünnitus
 süstamatk
 šoping
 šoppamine
 šõu
 žakerii
 taandumislahing
-taasiseseisvumispäev
-taasiseseisvuspäev
 taaskohtumine
-taastulek
 tabamus
 taganemislahing
 tagasikutsumine
@@ -1750,8 +1591,6 @@ teatevõistlus
 teatriball
 teejoomine
 teemantjuubel
-teemantpulm
-teemanädal
 teemanäitus
 teemapidu
 teemapäev
@@ -1760,7 +1599,6 @@ teenusetõkestusrünne
 teenustõkestusrünnak
 teereis
 teetseremoonia
-teetähis
 teeõhtu
 tegevustik
 tehisabort
@@ -1768,29 +1606,23 @@ tehnikanäitus
 tehnikarevolutsioon
 telekonverents
 teleoksjon
-telklaager
 tellimuslend
-templiteenistus
 temposõit
 teooriaeksam
 terrorirünnak
-tervituskohv
 tiitlimatš
 tiitlivõistlus
 tiitlivõit
 tinapulm
-ting
 tippkohtumine
 tippnõupidamine
 tippsündmus
 tippvõistlus
 titepidu
 toetusstreik
-toidukord
 toitjakaotus
 tollioksjon
 tolmuplahvatus
-tootetutvustus
 tootmisnõupidamine
 topeltmõrv
 topeltvõit
@@ -1807,12 +1639,8 @@ tralling
 transaktsioon
 treening
 treeningkogunemine
-treeninglaager
 treeningmäng
-treeningtund
 treeningukogunemine
-treeningulaager
-treeningutund
 treeningvõistlus
 trehvunks
 trenn
@@ -1835,7 +1663,6 @@ tsirkuseetendus
 tsiviilmissioon
 tsiviilprotsess
 tsooniturniir
-tšarter
 tšarterlend
 tšarterreis
 Tšehhi põrgu
@@ -1878,7 +1705,6 @@ tähtsündmus
 täienduskursus
 täiendusseminar
 täiskoguistung
-täistabamus
 tänavalahing
 tänavarahutus
 tänujumalateenistus
@@ -1900,7 +1726,6 @@ tööstuslik pööre
 tööstusnäitus
 tööstusrevolutsioon
 töösõit
-töötuba
 töövarjupäev
 töövisiit
 töövõistlus
@@ -1911,9 +1736,7 @@ uisutamisvõistlus
 uisuvõistlus
 ujumiskursus
 ujumistund
-ujutus
 ultraheli
-ultratriatlon
 ultravõistlus
 ummistusrünnak
 ummistusrünne
@@ -1921,18 +1744,15 @@ universiaad
 unplugged-kontsert
 uppumissurm
 usaldushääletus
-usalduskriis
 usukonflikt
 usurahutus
 usutavand
 uudistesaade
 uurimisreis
 uurimisretk
-uusaasta
 uusaastaball
 uusaastakontsert
 uusaastapidu
-uusaastapäev
 vaadend
 vaakumekstraktsioon
 vaakumsünnitus
@@ -1942,9 +1762,7 @@ vabadussõda
 vabasurm
 vabaõhuetendus
 vabaõhujumalateenistus
-vabaõhukino
 vabaõhukontsert
-vabaõhuteater
 vabaõhuüritus
 vaenukuritegu
 vahejooks
@@ -1952,14 +1770,11 @@ vahejuhtum
 vaheldus
 vahelejäämine
 vahesõit
-vahetund
 vaheujumine
 vahevalimised
 vaidluskoosolek
 vaidlusõhtu
-vaikusminut
 vakupidu
-vakus
 vakusepidu
 valikabort
 valikmäng
@@ -1969,7 +1784,6 @@ valimiskaotus
 valimiskoosolek
 valimisvoor
 valimisvõit
-valitsuskriis
 vallandamine
 vallutusretk
 vallutussõda
@@ -1980,7 +1794,6 @@ vapslus
 vargusjuht
 vargusjuhtum
 varguslugu
-varietee
 varieteekava
 varieteeprogramm
 varing
@@ -2000,7 +1813,6 @@ vastuvõtueksam
 vastuvõtukatse
 vastuvõtupidu
 vastuvõtutseremoonia
-vastuvõtutund
 vebinar
 veeavarii
 veebikoosolek
@@ -2027,20 +1839,15 @@ vestluskursus
 vestlusring
 vestlusõhtu
 vettesünnitus
-via crucis
-via dolorosa
 vibulaskevõistlus
 vibulaskmisvõistlus
 videodisko
 videokonverents
 videokoosolek
 Vietnami sõda
-vigiil
-vigiilia
 vigurmarss
 vihakuritegu
 vihmapüha
-viievõistlus
 viimsele teekonnale saatma
 viimsele teele saatma
 viimsepäevakohus
@@ -2053,16 +1860,13 @@ visiit
 visitatsioon
 viskevõistlus
 vodevill
-volbriöö
 voolukatkestus
 vulkaanipurse
-võidupärg
 võiduseeria
 võidusõit
 võimeteproov
 võimlemispidu
 võimlemistund
-võimukriis
 võimukõnelused
 võimulepääs
 võimuletulek
@@ -2088,14 +1892,11 @@ võõrsilmäng
 võõrusetendus
 võõruspidu
 vägivallajuhtum
-vägivallapuhang
 vähisurm
 väike slämm
 väisang
 väitlus
 välikatse
-välikino
-välilaager
 välilahing
 välinäitus
 välislähetus
@@ -2125,8 +1926,6 @@ välkrünnak
 välkturniir
 välkvisiit
 välkõppus
-värviline revolutsioon
-Walpurgi öö
 workshop
 õestuspidu
 õhkmatus
@@ -2157,7 +1956,6 @@ workshop
 õnnetusjuht
 õnnetusjuhtum
 õnnistamispidu
-õnnistamispäev
 õpihuvilaager
 õpikoda
 õpilaskontsert
@@ -2169,17 +1967,13 @@ workshop
 õppelaager
 õppelaskmine
 õppematk
-õppepäev
 õppereis
 õpperetk
-õppetund
 õppevisiit
 õppus
 õppused
-õueteater
 äkk-kallaletung
 äkkrünnak
-äkksurm
 äkkõppus
 ärasaatmine
 äratuskoosolek
@@ -2211,10 +2005,8 @@ workshop
 ühisüritus
 üksikjuht
 üksikjuhtum
-üksikmatus
 üksikstart
 ülalistumised
-üldjuht
 üldjuhtum
 üldkoosolek
 üldlaulupidu
@@ -2229,12 +2021,9 @@ workshop
 ülestõus
 ületootmiskriis
 ülevaatenäitus
-ülikoolikursus
 üliõpilaslaulupidu
 üliõpilasmängud
-üliõpilaspäevad
 üliõpilasrahutused
-üllatusmoment
 üllatuspidu
 üllatuspomm
 üllatusrünnak
@@ -2243,7 +2032,6 @@ workshop
 ümarlauaarutelu
 ümarlauakohtumine
 ümarlauanõupidamine
-ümarlaud
 ümbermaailmareis
 ümberminek
 ümbervalimine
