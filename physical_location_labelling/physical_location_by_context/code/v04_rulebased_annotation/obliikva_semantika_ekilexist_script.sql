@@ -319,7 +319,7 @@ word_type_counts AS (
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only words that have more than 1 semantic type
+-- Filter only words that have 1 semantic type
 SELECT 
     wst.word, wst.semantic_types
 FROM word_semantic_types wst
@@ -403,7 +403,7 @@ SELECT w.value AS word,
                 	'seisund', 'seisund_haigus', 'seisund_füüs', 'sündmus', 'ese_instru', 'ese', 'ese_kunst', 
                 	'ese_raha', 'ese_semio', 'ese_riie', 'taim', 'objekt_loodus', 'objekt', 'osa', 'nähtus_loodus') 
                     THEN 'SOBIB'
-                ELSE st.code  -- Keep other types as they are
+                ELSE 'OTHER' -- Keep other types as they are
             END
          AS semantic_types
     FROM word w
@@ -414,21 +414,26 @@ SELECT w.value AS word,
     WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
     GROUP BY w.value, st.code
     ),
---Leave no repeat semantic types for the same word
+--Put each semantic tag class in a separate column
 word_type_counts AS (
-    -- Count distinct semantic types per word
-    SELECT word, COUNT(DISTINCT semantic_types) AS type_count
+    SELECT word, 
+           COUNT(DISTINCT semantic_types) AS type_count,
+           BOOL_OR(semantic_types = 'KOHT') AS has_koht,
+           BOOL_OR(semantic_types = 'SOBIB') AS has_sobib,
+           BOOL_OR(semantic_types = 'OTHER') AS has_other
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only locations that have less than 3 semantic types and besides koht they can be sobib
-SELECT distinct wst.word
-FROM word_semantic_types wst
-JOIN word_type_counts wtc ON wst.word = wtc.word
-WHERE wtc.type_count < 3 -- Only keep words with less than 3 semantic type
-and wst.semantic_types in ('KOHT', 'SOBIB') -- if they are koht or sobib
-GROUP BY wst.word, wst.semantic_types
-ORDER BY wst.word
+--vali sellised sõnad, millel on kas 1. üks semantiline tüüp ja see on koht või 2. kaks semantilist tüüpi ja need on koht ja sobib
+SELECT 
+    wtc.word
+FROM word_type_counts wtc
+WHERE (
+    (wtc.type_count = 1 AND wtc.has_koht)  -- If 1 type, it must be koht
+    OR
+    (wtc.type_count = 2 AND wtc.has_koht AND wtc.has_sobib)  -- If 2 types, must be koht and SOBIB
+)
+ORDER BY wtc.word;
 
 --QUERY 9: LEIA KÕIK SÕNAD, MILLEL ON 1 VÕI MITU AJAGA SOBIVAT MÄRGENDIT
 --võta ainult ajasõnad
@@ -456,7 +461,7 @@ SELECT w.value AS word,
                 WHEN st.code IN (
                 	'esitus', 'nähtus_loodus', 'omadus_aeg') 
                     THEN 'SOBIB'
-                ELSE st.code  -- Keep other types as they are
+                ELSE 'OTHER'
             END
          AS semantic_types
     FROM word w
@@ -467,21 +472,26 @@ SELECT w.value AS word,
     WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
     GROUP BY w.value, st.code
     ),
---Leave no repeat semantic types for the same word
+--Put each semantic tag class in a separate column
 word_type_counts AS (
-    -- Count distinct semantic types per word
-    SELECT word, COUNT(DISTINCT semantic_types) AS type_count
+    SELECT word, 
+           COUNT(DISTINCT semantic_types) AS type_count,
+           BOOL_OR(semantic_types = 'AEG') AS has_aeg,
+           BOOL_OR(semantic_types = 'SOBIB') AS has_sobib,
+           BOOL_OR(semantic_types = 'OTHER') AS has_other
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only locations that have less than 3 semantic types and besides aeg they can be sobib
-SELECT distinct wst.word
-FROM word_semantic_types wst
-JOIN word_type_counts wtc ON wst.word = wtc.word
-WHERE wtc.type_count < 3 -- Only keep words with less than 3 semantic type
-and wst.semantic_types in ('AEG', 'SOBIB') -- if they are koht or sobib
-GROUP BY wst.word, wst.semantic_types
-ORDER BY wst.word
+--vali sellised sõnad, millel on kas 1. üks semantiline tüüp ja see on aeg või 2. kaks semantilist tüüpi ja need on aeg ja sobib
+SELECT 
+    wtc.word
+FROM word_type_counts wtc
+WHERE (
+    (wtc.type_count = 1 AND wtc.has_aeg)  -- If 1 type, it must be AEG
+    OR
+    (wtc.type_count = 2 AND wtc.has_aeg AND wtc.has_sobib)  -- If 2 types, must be AEG and SOBIB
+)
+ORDER BY wtc.word;
 
 --QUERY 10: LEIA KÕIK SÕNAD, MILLEL ON 1 VÕI MITU SEISUNDIGA SOBIVAT MÄRGENDIT
 --võta ainult seisundisõnad
@@ -499,7 +509,7 @@ WITH words_with_target_types AS (
         )
     )
 ),
---leia, mis semantiliste tüüpidega iga kohasõna on + grupeeri koht ja temaga sobivad märgendid
+--leia, mis semantiliste tüüpidega iga sõna on + grupeeri seisund ja temaga sobivad märgendid
 word_semantic_types as (
 SELECT w.value AS word,
             CASE 
@@ -509,7 +519,7 @@ SELECT w.value AS word,
                 WHEN st.code IN (
                 	'nähtus_psühh', 'nähtus', 'nähtus_loodus', 'omadus_psühh', 'abstr_asend/suund', 'abstr_konkr_omadus', 'ese_raha') 
                     THEN 'SOBIB'
-                ELSE st.code  -- Keep other types as they are
+                ELSE 'OTHER'
             END
          AS semantic_types
     FROM word w
@@ -520,21 +530,26 @@ SELECT w.value AS word,
     WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
     GROUP BY w.value, st.code
     ),
---Leave no repeat semantic types for the same word
+--Put each semantic tag class in a separate column
 word_type_counts AS (
-    -- Count distinct semantic types per word
-    SELECT word, COUNT(DISTINCT semantic_types) AS type_count
+    SELECT word, 
+           COUNT(DISTINCT semantic_types) AS type_count,
+           BOOL_OR(semantic_types = 'SEISUND') AS has_seisund,
+           BOOL_OR(semantic_types = 'SOBIB') AS has_sobib,
+           BOOL_OR(semantic_types = 'OTHER') AS has_other
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only locations that have less than 3 semantic types and besides aeg they can be sobib
-SELECT distinct wst.word
-FROM word_semantic_types wst
-JOIN word_type_counts wtc ON wst.word = wtc.word
-WHERE wtc.type_count < 3 -- Only keep words with less than 3 semantic type
-and wst.semantic_types in ('SEISUND', 'SOBIB') -- if they are koht or sobib
-GROUP BY wst.word, wst.semantic_types
-ORDER BY wst.word
+--vali sellised sõnad, millel on kas 1. üks semantiline tüüp ja see on seisund või 2. kaks semantilist tüüpi ja need on seisund ja sobib
+SELECT 
+    wtc.word
+FROM word_type_counts wtc
+WHERE (
+    (wtc.type_count = 1 AND wtc.has_seisund)  -- If 1 type, it must be SEISUND
+    OR
+    (wtc.type_count = 2 AND wtc.has_seisund AND wtc.has_sobib)  -- If 2 types, must be SEISUND and SOBIB
+)
+ORDER BY wtc.word;
 
 --QUERY 11: LEIA KÕIK SÕNAD, MILLEL ON 1 VÕI MITU SÜNDMUSEGA SOBIVAT MÄRGENDIT
 --võta ainult seisundisõnad
@@ -548,15 +563,16 @@ WITH words_with_target_types AS (
     WHERE w.lang = 'est' 
     AND st.code = 'sündmus'
     ),
---leia, mis semantiliste tüüpidega iga kohasõna on + grupeeri koht ja temaga sobivad märgendid
+--leia, mis semantiliste tüüpidega iga sõna on
 word_semantic_types as (
 SELECT w.value AS word,
             CASE 
+	            when st.code = 'sündmus' then 'SÜNDMUS'
                 WHEN st.code IN (
                 	'tegevus', 'tegevus_tegu', 'ese_kunst', 'abstr/konkr', 'nähtus', 'toit', 
                 	'nähtus_füüs', 'tegevus_kõnetegu', 'tegevus_mäng') 
                     THEN 'SOBIB'
-                ELSE st.code  -- Keep other types as they are
+                ELSE 'OTHER' -- Keep other types as they are
             END
          AS semantic_types
     FROM word w
@@ -567,21 +583,26 @@ SELECT w.value AS word,
     WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
     GROUP BY w.value, st.code
     ),
---Leave no repeat semantic types for the same word
+--Put each semantic tag class in a separate column
 word_type_counts AS (
-    -- Count distinct semantic types per word
-    SELECT word, COUNT(DISTINCT semantic_types) AS type_count
+    SELECT word, 
+           COUNT(DISTINCT semantic_types) AS type_count,
+           BOOL_OR(semantic_types = 'SÜNDMUS') AS has_syndmus,
+           BOOL_OR(semantic_types = 'SOBIB') AS has_sobib,
+           BOOL_OR(semantic_types = 'OTHER') AS has_other
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only locations that have less than 3 semantic types and besides aeg they can be sobib
-SELECT distinct wst.word
-FROM word_semantic_types wst
-JOIN word_type_counts wtc ON wst.word = wtc.word
-WHERE wtc.type_count < 3 -- Only keep words with less than 3 semantic type
-and wst.semantic_types in ('sündmus', 'SOBIB') -- if they are koht or sobib
-GROUP BY wst.word, wst.semantic_types
-ORDER BY wst.word
+--vali sellised sõnad, millel on kas 1. üks semantiline tüüp ja see on sündmus või 2. kaks semantilist tüüpi ja need on sündmus ja sobib
+SELECT 
+    wtc.word
+FROM word_type_counts wtc
+WHERE (
+    (wtc.type_count = 1 AND wtc.has_syndmus)  -- If 1 type, it must be sündmus
+    OR
+    (wtc.type_count = 2 AND wtc.has_syndmus AND wtc.has_sobib)  -- If 2 types, must be sundmus and SOBIB
+)
+ORDER BY wtc.word;
 
 --QUERY 12: LEIA KÕIK SÕNAD, MILLE MÄRGEND EI SAA OLLA KOHT (AGA POLE KA AEG, SÜNDMUS, SEISUND)
 --võta ainult mittekohad
@@ -626,7 +647,6 @@ word_type_counts AS (
     FROM word_semantic_types
     GROUP BY word
 )
--- Filter only locations that have less than 3 semantic types and besides aeg they can be sobib
 SELECT distinct wst.word
 FROM word_semantic_types wst
 JOIN word_type_counts wtc ON wst.word = wtc.word

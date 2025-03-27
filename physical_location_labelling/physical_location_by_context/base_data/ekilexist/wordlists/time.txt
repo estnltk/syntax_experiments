@@ -1,17 +1,14 @@
 24/7
-9/11
 aastaaeg
 aastajagu
 aasta-kaks
 aastake
 aastakene
-aastakäik
 aastakümme
 aastalõpp
 aastamiljon
 aasta-paar
 aastapäev
-aastaring
 aastasada
 aastatagune
 aastatuhat
@@ -19,7 +16,6 @@ aastavahetus
 aatomiajastu
 aatomisajand
 abiaeg
-abiellumisealine
 abiellumisiga
 abiellumisvanus
 abieluaasta
@@ -40,13 +36,8 @@ ahviaasta
 ajaaken
 ajahetk
 ajahõlm
-ajahäda
 ajajaotus
 ajajärk
-ajakadu
-ajakaotus
-ajake
-ajakene
 ajakonstant
 ajakulu
 ajal
@@ -56,28 +47,20 @@ ajalõik
 ajameri
 ajanorm
 ajaraam
-ajaraisk
-ajaraiskamine
 ajaratas
 ajast aega
 ajastik
 ajastu
-ajastus
-ajasääst
 ajavahe
 ajavahemik
 ajavaru
-ajavõit
 ajavälp
-ajavöönd
-akadeemiline kalender
 akadeemiline puhkus
 akadeemiline tund
 akadeemiline veerand
 akadeemiline veerandtund
 akad t
 ak t
-aktiivne puhkus
 al
 alates
 alatund
@@ -89,11 +72,9 @@ algkümnend
 algmine
 algminut
 algpäev
-algstaadium
 algule
 algupool
 algupäevad
-algus
 algusaasta
 algusaeg
 algushetk
@@ -112,22 +93,18 @@ anno
 anno Domini
 antiikaeg
 antiikajastu
-antrakt
 antropogeen
 antropotseen
 aoaeg
 apr
 aprillikuu
-argipäev
 arhaikum
 arheosoikum
 armuaeg
 arstiaeg
 aruandeaasta
 aruandeperiood
-arvates
 arveldusperiood
-aspirantuur
 aspirantuuriaeg
 asutamisaasta
 asutamisaeg
@@ -135,47 +112,36 @@ aug
 august
 augustikuu
 aupäev
-avanemisperiood
 avapäev
 avatud uste päev
 beebibuum
 bioloogiline kell
-briljantpulm
 buum
 börsibuum
 CET
 cinquecento
-daatum
 dekaad
 dekreediaeg
-dekreet
 dekreetpuhkus
 dets
 detsember
 detsembrikuu
 devon
-diakrooniline
 dieedipäev
 digiajastu
 digitaalajastu
-diktatuur
 doonoripäev
 draakoni aasta
 draakoniaasta
-ead ja ajad
-eatu
 eavahe
 ediakaara
 eelajalugu
 eelarveaasta
 eelarveperiood
-eelaste
 eeli
-eelisjärjekord
 eelkambrium
 eelkevad
 eelkooliiga
-eelnenu
 eelpäev
 eelõhtu
 Eesti aeg
@@ -187,8 +153,6 @@ ehakuma
 ehapuna
 ehavalgel
 ehitusbuum
-eile
-eKr
 ekraaniaeg
 eksamisessioon
 ekspluatatsiooniaeg
@@ -202,33 +166,24 @@ elukuu
 elukümme
 elunädal
 eluperiood
-elupõlv
-elupõlved
 elupäev
-eluring
 elusügis
 elutund
 eluõhtu
-e.m.a
 emadepäev
 emakeelepäev
 endisaeg
 eneoliitikum
-ennak
 ennegu
-enne Kristust
 ennelõuna
-enne meie ajaarvamist
 eoon
 eotseen
 epohh
-erandkorras
 eriaegne
 esiaeg
 esiajalugu
 esmaspäev
 etapiaeg
-ettepoole
 fanerosoikum
 feeriad
 feodaalaeg
@@ -238,14 +193,11 @@ finantsaasta
 fiskaalaasta
 garantiiaeg
 generaalpaus
-Greenwichi aeg
 gripihooaeg
 Gutenbergi galaktika
 haiglapäev
 haiguspuhkus
 haiguspäev
-hakatus
-hakatusel
 hakul
 halloween
 hanketähtaeg
@@ -259,7 +211,6 @@ haudevältus
 heinaaeg
 heinakuu
 heinamaarjapäev
-hellenism
 helmekuu
 hetk
 hiilgeaasta
@@ -279,24 +230,17 @@ hilistalv
 hilisõhtu
 hiljaaegu
 hiljavõitu
-hiljemini
 hiljuti
 hingamispäev
 hingedeaeg
 hingedekuu
 hingedepäev
-hingetõmbeaeg
-hingetõmbepaus
-histooria
 hobupäev
 hobuse aasta
 hobuseaasta
 hobusepäev
 holodomor
 holotseen
-hommikuhämar
-hommikuhämarik
-hommikuhämarus
 hommikupool
 hommikupoolik
 hommikutund
@@ -309,19 +253,15 @@ humanitaarpaus
 hundikuu
 hunditund
 hõbejuubel
-hõbepulm
 hõimupäev
 hädaaeg
-hällipäev
 hällist hauani
 härja aasta
 härja-aasta
 Ida-Euroopa aeg
 idanemisaeg
-iga
 igamisaeg
 igamistähtaeg
-igavik
 igiaeg
 iid
 iidamast ajast
@@ -335,20 +275,15 @@ infoajastu
 inimajalugu
 inimajastu
 inimiga
-inimpõlv
-inkubatsiooniaeg
-inkubatsiooniperiood
 innatsükkel
 inspiratsioonipäev
 interglatsiaal
-internatuur
 interreegnum
 interregnum
 isadepäev
 isapuhkus
 iseseisvuspäev
 issanda aastal
-istungjärk
 istutamisaeg
 istutusaeg
 jaagup
@@ -367,7 +302,6 @@ jaanuarikuu
 jaguaeg
 jahiaeg
 jahihooaeg
-jahikalender
 jahikeeluaeg
 jahirahu
 jalamehepäev
@@ -377,27 +311,18 @@ jalgpallihooaeg
 jom kippur
 jom kipur
 jooksul
-joomahoog
 joomapäev
-joomasööst
-joomatsükkel
-joomatuur
-juubel
 juubeliaasta
 juubelitähtpäev
-juudi juubel
-juudijuubel
 juuli
 juulikuu
 juuni
 juunikuu
-juura
 juuraajastu
 jõudeaeg
 jõudehetk
 jõudeolek
 jõudetund
-jõul
 jõuluaeg
 jõulud
 jõulukuu
@@ -412,21 +337,16 @@ jõuluöö
 jänese aasta
 jäneseaasta
 järelpäev
-järelromantism
-järgselt
 jääaeg
 jääaegne
 jäävaheaeg
 jüri
 jürikuu
-jüripäev
 jüriöö
 kaamos
 kaasaeg
-kadri
 kadrilaupäev
 kadripäev
-kadriõhtu
 kaduneljapäev
 kaduvik
 kaheksakümnendad
@@ -449,7 +369,6 @@ kandidaadiaeg
 kannatusnädal
 kanutipäev
 karantiiniaeg
-karbon
 karistusaeg
 karistusminut
 karjalaskepäev
@@ -491,9 +410,7 @@ keskiga
 kesklõuna
 kesknädal
 keskpäevatund
-kesksuvi
 kesktalv
-keskõhtu
 kesköö
 kesköötund
 kestel
@@ -511,7 +428,6 @@ kevadsuvi
 kevadtalv
 kevadõhtu
 kevadöö
-kibekiire
 kinnisperiood
 kinnisvarabuum
 kirikuaasta
@@ -524,14 +440,11 @@ kliimaperiood
 kliimastaadium
 kliistripühad
 klikeaeg
-klikeaegne
 klikiaeg
-klikiaegne
 klimakteerium
 kodanikupäev
 koera aasta
 koera-aasta
-koguaeg
 kogunemisaeg
 kohalik aeg
 kohtupäev
@@ -540,7 +453,6 @@ koidik
 koiduaeg
 koidutund
 koit
-koivaht
 kolletamispäev
 kolmandikaeg
 kolmapäev
@@ -554,7 +466,6 @@ koloniaalajastu
 komandanditund
 konkista
 konstitutsioonipäev
-kontrollaeg
 konverentsipäev
 kooliaasta
 kooliaeg
@@ -564,7 +475,6 @@ koolipõli
 koolipõlv
 koolipäev
 koolitalv
-koolituspäev
 koolivaheaeg
 kooljakuu
 kord-paar
@@ -574,11 +484,9 @@ korjeaeg
 korjusepäev
 koroona-aasta
 koroonaaeg
-korral
 kosmoseajastu
 kosmosesajand
 kriidiajastu
-kroonupüha
 kudemisaeg
 kuivaperiood
 kuke aasta
@@ -587,8 +495,6 @@ kuldaeg
 kuldajastu
 kuldne ajastu
 kuldne tund
-kuldpulm
-kultuuripäev
 kutsikaiga
 kuuaasta
 kuuekümnendad
@@ -600,7 +506,6 @@ kvaliteetaeg
 kvaternaar
 kõige kauemaks
 kõneminut
-kõnetund
 kõrgaeg
 kõrghetk
 kõrghooaeg
@@ -608,7 +513,6 @@ kõrgkeskaeg
 kõrglaine
 kõrgperiood
 kõrgrenessanss
-kõrgsuvi
 kõrvitsapüha
 käitusaeg
 külastamisaeg
@@ -624,7 +528,6 @@ külviaeg
 külvinädal
 kümmeaastak
 kümmepäevak
-kümnend
 künnipäev
 küpsusvanus
 kütteperiood
@@ -632,7 +535,6 @@ küttimishooaeg
 küünlakuu
 küünlamaarjapäev
 küünlapäev
-küünlavalgusõhtu
 laadapäev
 laadimisaeg
 laagerdusaeg
@@ -654,11 +556,9 @@ lambapüha
 langusaeg
 langusperiood
 lapseaastad
-lapsehoolduspuhkus
 lapseiga
 lapseooteaeg
 lapseootusaeg
-lapsepuhkus
 lapsepõli
 lapsepõline
 lapsepõlv
@@ -666,12 +566,10 @@ lapsepõlveaeg
 lastekaitsepäev
 lauba
 laudaperiood
-laulev revolutsioon
 laupäev
 laurits
 lauritsapäev
 leeriaeg
-leeripäev
 lehtmajade püha
 leina-aasta
 leinaaeg
@@ -679,10 +577,7 @@ leinaminut
 leinapäev
 lendlus
 lennuaeg
-lennutund
 leseaasta
-lesepõli
-lesepõlv
 lesepäevad
 lihaheide
 lihaheitepäev
@@ -712,7 +607,6 @@ luuvalupäev
 lõikuskuu
 lõikuspüha
 lõikustänupüha
-lõimetusaeg
 lõokesetalv
 lõppaasta
 lõppaeg
@@ -726,19 +620,15 @@ lõpukuu
 lõpukuupäev
 lõpukümnend
 lõpuminut
-lõpupool
 lõpupäev
 lõpusekund
 lõpuveerand
 lõunaaeg
 lõunapaus
-lõunapuhkus
-lõunatund
 lõunavahe
 lõunavaheaeg
 lähiaasta
 lähiaeg
-lähiajalugu
 lähikuu
 lähiminevik
 lähinädal
@@ -749,14 +639,12 @@ lähitund
 Lääne-Euroopa aeg
 lüpsiaeg
 lüpsiperiood
-maailmaaeg
 maailmalõpp
 maarjapäev
 maasikaaeg
 maast madalast
 maast-madalast
 madalhooaeg
-madis
 madisepäev
 mahlaaeg
 mahlakuu
@@ -780,7 +668,6 @@ mardiõhtu
 maretapäev
 marjaaeg
 markusepäev
-mart
 maslenitsa
 matusepäev
 meeaasta
@@ -791,7 +678,6 @@ meheiga
 meheleminekuiga
 mehepõlv
 meie ajaarvamise järgi
-menopaus
 merepäev
 mesikuu
 mesinädalad
@@ -802,32 +688,21 @@ mihklikuu
 mihklipäev
 militaarajalugu
 millennium
-millenniumivahetus
-minevaasta
-mint
-mints
-minut
 miotseen
 mitut puhku
 Moskva aeg
 muinasaeg
-muinsus
 munadepüha
 munapüha
 munemisperiood
 murdeiga
-murdekoht
-murdepunkt
 murdsekund
 murepäevad
 mustad jõulud
 mustad päevad
 must päev
 must reede
-muudkui
 muuseumipäev
-muusika-aasta
-mõisapäev
 mõtlemisaeg
 mõõnaaeg
 mõõnaperiood
@@ -836,7 +711,6 @@ mänguaeg
 mänguiga
 mängukolmandik
 mänguminut
-mänguperiood
 mängupäev
 mänguveerand
 märts
@@ -878,10 +752,8 @@ noorukiiga
 noorusaastad
 noorusaeg
 noorusiga
-noorusmaa
 nooruspõlv
 nooruspäevad
-noorusrajad
 normaalaeg
 normaeg
 nov
@@ -899,7 +771,6 @@ nõukaaeg
 Nõukogude aeg
 nõukogude aeg
 näd
-nädal
 nädalajagu
 nädalalõpp
 nädalalõputi
@@ -908,11 +779,7 @@ nädalapäevad
 nädalati
 nädalavahetus
 nädaliti
-nägurielu
-näguripäevad
 nälja-aasta
-näljaaeg
-näljahäda
 näljapäev
 näärid
 näärikuu
@@ -930,16 +797,11 @@ oktoobrikuu
 olelusring
 oligotseen
 olümpia-aasta
-olümpiaad
 ootamisaeg
 ooteaeg
-ootejärjekord
-oranž revolutsioon
 ordoviitsium
 orduaeg
 orjaaeg
-orjapõli
-orjapõlv
 orjaöö
 pa
 paarimisaeg
@@ -958,7 +820,6 @@ paastunädal
 paastupäev
 paavlipäev
 pagulasaastad
-pagulaspõlv
 paiku
 pakasepäev
 paleogeen
@@ -969,18 +830,10 @@ palgapäev
 palmipuudepüha
 palvepäev
 pangapäev
-paus
-peagi
 pealelõuna
 peetripäev
-peiteperiood
 peiupõlv
-pensionipõli
-pensionipõlv
 pensionipäev
-pensionipäevad
-pensionäripõli
-pensionäripõlv
 peopäev
 perm
 pesitsusaeg
@@ -988,9 +841,7 @@ pesitsusperiood
 pesitsusrahu
 pesupäev
 pidupäev
-pihta
 piibutund
-pikendus
 pikk nädalalõpp
 pikku
 pinsipäev
@@ -1002,7 +853,6 @@ pliotseen
 poegimisaeg
 poegimisvahemik
 poisipõlv
-poissmehepõlv
 polaarpäev
 polaarsuvi
 polaartalv
@@ -1019,14 +869,12 @@ poolpüha
 poolsajand
 pooltund
 popipäev
-popsipäev
 porikuu
 postipäev
 praegune
 praegusaeg
 praegushetk
 praktikaaeg
-praktikatund
 prant
 prime time
 primetime
@@ -1035,7 +883,6 @@ prooviaasta
 prooviaeg
 proovinädal
 proovipäev
-proovitund
 proterosoikum
 protestipäev
 pruudipõli
@@ -1043,23 +890,17 @@ pruudipõlv
 pruun katk
 puberteediaeg
 puberteediiga
-puberteet
 pudrupäev
 puerpeerium
 puhe
 puhkeaeg
 puhkehetk
-puhkepaus
 puhkeperiood
 puhkepäev
 puhketund
-puhkus
-puhkusaeg
-puhkuseaeg
 puhkusekuu
 puhkusepäev
 puhteaeg
-pulma-aastapäev
 pulmaaeg
 pulmajooks
 pulmalaupäev
@@ -1084,7 +925,6 @@ päevaaeg
 päevake
 päevakene
 päeval
-päeva lõpuks
 päevasüda
 päev-paar
 pähkliaasta
@@ -1097,20 +937,15 @@ päise päeva ajal
 pärast Kristust
 pärastlõuna
 pärastlõunatund
-pärastpoole
 pärtel
 pärtlipäev
 Pätsi aeg
 Pätsu aeg
 pöördeaeg
-pöördekoht
 pööriaeg
 pööripäev
-pöörlemisperiood
 pühaba
 pühadelaupäev
-pühade vahe
-pühadevahe
 pühakutepäev
 pühapäev
 pühapäevak
@@ -1120,12 +955,9 @@ pühvliaasta
 püügihooaeg
 püügiperiood
 püügipäev
-raamatuaasta
 rahandusaasta
 rahastamisperiood
 rahuaeg
-rahupõli
-rahupõlv
 rahupüha
 rahvuspüha
 raieaeg
@@ -1134,8 +966,6 @@ raiering
 rakmepäev
 ramadaan
 rannahooaeg
-raseduskuu
-rasedusnädal
 raseduspuhkus
 rauaaeg
 raugaiga
@@ -1153,10 +983,7 @@ reisipäev
 reklaamipaus
 rekordaasta
 relaksatsiooniaeg
-renessanss
-restauratsioon
 restauratsiooniaeg
-riigipüha
 ringiaeg
 ristineljapäev
 ristipäev
@@ -1169,7 +996,6 @@ rotiaasta
 rukkikuu
 rukkimaarjapäev
 rändeaeg
-rännakupuhkus
 röövikujärk
 röövikustaadium
 saagiaasta
@@ -1178,7 +1004,6 @@ saaros
 saateaeg
 saatepäev
 saatetund
-sabat
 saj
 sajand
 sajandialgus
@@ -1189,14 +1014,12 @@ sajupäev
 Saksa aeg
 salooga
 samaaegsus
-samasuvine
 sanitaarpäev
 saunapäev
 sea aasta
 sea-aasta
 seemneaasta
 seeneaasta
-sees
 seisuaeg
 seisuga
 seisupäev
@@ -1206,15 +1029,11 @@ seitsmevennapäev
 selliaasta
 sem
 semester
-semukapitalism
-sept
 september
 septembrikuu
 sesoon
 sesoonsus
 sess
-sessioon
-sessioonõpe
 sideeriline aasta
 sideeriline kuu
 sideeriline ööpäev
@@ -1236,14 +1055,11 @@ sporofaas
 sporofüüt
 sporogoon
 staaž
-stagna
 stagnaaeg
-stuudium
 suguküpsus
 suitsupaus
 suitsutund
 sukkot
-sundpuhkus
 supelhooaeg
 superteisipäev
 surma-aasta
@@ -1255,7 +1071,6 @@ surmalaupäev
 surmapäev
 surmatund
 surmatunnini
-surmaöö
 suur laupäev
 suur neljapäev
 suur nädal
@@ -1266,13 +1081,11 @@ suusahooaeg
 suusatalv
 suveaeg
 suvehakk
-suvehari
 suveharjapäev
 suvehooaeg
 suvekuu
 suvepuhkus
 suvepäev
-suvesüda
 suvevaheaeg
 suveõhtu
 suveöö
@@ -1284,7 +1097,6 @@ sõbrapäev
 sõiduaeg
 sõja-aasta
 sõjaaeg
-sõjaajalugu
 sõjanädal
 sõjapäev
 sõjapäevad
@@ -1293,16 +1105,12 @@ säilitustähtaeg
 säluiga
 säriaeg
 säritusaeg
-söögiaeg
-söögikord
 söögipaus
 söögivahe
 söögivaheaeg
 söögivahetund
-söömakord
 söömavahe
 südapäev
-südasuvi
 südatalv
 südaöö
 südaöötund
@@ -1316,24 +1124,18 @@ sügissuvi
 sügistalv
 sügisõhtu
 sügisöö
-sünna
 sünniaasta
 sünniaastapäev
 sünniaeg
 sünnidaatum
 sünnikuu
 sünnikuupäev
-sünnipäev
 sünnipäevanädal
-sünnitamine
-sünnitus
 sünnitusiga
 sünnituspuhkus
 sünoodiline kuu
 sünoodiline periood
 süütalastepäev
-taasiseseisvumispäev
-taasiseseisvuspäev
 taassünnipäev
 taastumisaeg
 tabanipäev
@@ -1343,9 +1145,7 @@ tagatisaeg
 tagumiktund
 tagumikutund
 taimekasvuperiood
-taksojärjekord
 talgupäev
-tali
 talihari
 taliharjapäev
 talihooaeg
@@ -1358,7 +1158,6 @@ talvehakk
 talvehari
 talvehooaeg
 talvekuu
-talvepuhkus
 talvepäev
 talvepüha
 talvesüda
@@ -1372,8 +1171,6 @@ tasuvusaeg
 teatriaasta
 teatrikuu
 teatripäev
-teemantpulm
-teemanädal
 teenistusaasta
 teenistusaeg
 tegevusaasta
@@ -1388,9 +1185,7 @@ teismeiga
 tekkeaeg
 tekkimisaeg
 telehooaeg
-teopäev
 termidoor
-tertsiaar
 tervisepäev
 tiigri aasta
 tiigriaasta
@@ -1403,27 +1198,20 @@ tipphetk
 tipphooaeg
 tipptund
 tiputund
-titepuhkus
-toidukord
 toimeaeg
 tollal
 toomapäev
 tootmisaeg
-tootmistsükkel
 tormipüha
 trahviminut
 treeningpäev
-treeningtund
 treeningupäev
-treeningutund
 trennipäev
 triias
 trimester
 troopiline aasta
 tsaariaeg
 tsiviilaeg
-tsükliõpe
-tudengipõlv
 tuhandeaastane
 tuhapäev
 tuhkakolmapäev
@@ -1434,8 +1222,6 @@ tulevaasta
 tunaeile
 tunaeilne
 tunahomme
-tunnike
-tunnikene
 turismihooaeg
 turupäev
 tutipäev
@@ -1454,8 +1240,6 @@ täiskasvanuiga
 täismeheiga
 täistund
 täistööpäev
-täisõitsemine
-täisõitseng
 täna
 täna-homme
 tänapäev
@@ -1465,7 +1249,6 @@ tänupüha
 tärmin
 tööaasta
 tööaeg
-tööiga
 töönädal
 tööpäev
 tööpüha
@@ -1486,11 +1269,8 @@ urbepüha
 ussimaarjapäev
 usupuhastuspüha
 usupüha
-UTC
 uue kalendri järgi
-uusaasta
 uusaastahommik
-uusaastapäev
 uusaastaöö
 uusaeg
 uusaegkond
@@ -1499,16 +1279,10 @@ vaatlusaasta
 vaatlusaeg
 vaatlusperiood
 vaba aeg
-vabavaht
 vaheaasta
-vahelt
-vahepeal
 vaheperiood
 vahepäev
-vahetsi
-vahetund
 vahetusaasta
-vahikord
 vaibefaas
 vaibejärk
 vaikiv ajastu
@@ -1516,7 +1290,6 @@ vaikne laupäev
 vaikne neljapäev
 vaikne nädal
 vaikushetk
-vaikusminut
 vaimude tund
 vaimupäev
 valentinipäev
@@ -1533,7 +1306,6 @@ valmimisaeg
 valmimistähtaeg
 valmistamisaeg
 valmistusaeg
-valvekord
 vana-aasta
 vana-aastaõhtu
 vana-aastaöö
@@ -1549,28 +1321,23 @@ vana kuu
 vanakuu
 vananaistesuvi
 vanapõli
-vanapõlv
 vangistusaeg
 vangla-aasta
 vankripõlv
 vanus
 vanusevahe
 varahommik
-varakapitalism
 varakeskaeg
 varakevad
 varaklassitsism
-varakristlus
 vararenessanss
 varasuvi
 varasügis
 varatalv
 varavõitu
 varaõhtu
-varsti
 vaseaeg
 vase-kiviaeg
-vasikaiga
 vastlad
 vastlakuu
 vastlapäev
@@ -1579,7 +1346,6 @@ vastsestaadium
 vastsündinuiga
 vastuvõtuaeg
 vastuvõtupäev
-vastuvõtutund
 veebr
 veebruar
 veebruarikuu
@@ -1593,11 +1359,6 @@ vekslitähtaeg
 vendium
 Vene aeg
 veteranipäev
-videvik
-videvikuaeg
-videvikutund
-vidus
-vigastuspaus
 vihmaaeg
 vihmakuu
 vihmapaus
@@ -1621,25 +1382,19 @@ viivitus
 viivitusaeg
 viivuke
 viivukene
-viletsusepäevad
-viletsuspäevad
 vilja-aasta
 viljakandeiga
 viljakandeperiood
 virgeaeg
 visiidiaeg
 vkj
-volber
 volbripäev
-volbriöö
 voodipäev
 võiduaeg
 võidupüha
 võimaluste aken
 võinädal
 võistlushooaeg
-võistluskalender
-võistluspaus
 võistluspäev
 võlatähtaeg
 võlatähtpäev
@@ -1654,33 +1409,22 @@ väljumisaeg
 väljutusperiood
 välp
 vältel
-värviline revolutsioon
 väärtuspäev
 vööndiaeg
-Walpurgi öö
 WET
 õa
 õdang
 õhtueha
 õhtuhakk
-õhtuhämarik
-õhtuhämarus
 õhtukuma
 õhtupool
 õhtupoolik
 õhtupuna
 õhtutund
-õhtuvidevik
-õieaeg
 õilmekuu
-õitsemisaeg
-õitseng
 õnneaeg
-õnnepõli
-õnnepõlv
 õnnepäev
 õnnetund
-õnnistamispäev
 õpiaasta
 õpiaeg
 õpinguaasta
@@ -1692,7 +1436,6 @@ WET
 õppeperiood
 õppepoolaasta
 õppepuhkus
-õppepäev
 õppevaheaeg
 õppeveerand
 õuna-aasta
@@ -1700,18 +1443,14 @@ WET
 äripäev
 ärkamisaeg
 ärkvelaeg
-öö
 ööd-päevad
 ööp
 ööpäev
 öörahu
 öösüda
 öötund
-öövahetus
-öövalve
 üheaegsus
 üheksakümnendad
-ühesuvine
 ühtlusaeg
 üleeile
 üleeilne
@@ -1735,8 +1474,6 @@ WET
 ülikoolipõlv
 ülikoolipäevad
 üliõpilaspäev
-üliõpilaspäevad
-üllatusmoment
 ümmargune sünnipäev
 ürgaeg
 ürgaegkond
