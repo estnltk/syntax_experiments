@@ -1,0 +1,143 @@
+## Kõik linnad ja asulad on kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a place name referring to a geographical location.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+liuväli, Belesta, J, hankija, Priština, maahaigla, Rootsi, Abhaasia, kettaheitesektor, Philadelphia.
+
+Train: Nõugaste, turbaauk, lillepaviljon, Saksa, Svalbard, Lembit, rumm, kambja, Toronto, Lublino.
+
+## Esemed on kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a noun referring to a physical item no bigger than a human that a person can own. 
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+tool, ülekandepult, kolleeg, ASVEL, ootesaal, taldrik, tõukeratas, oasta, rada, sõrmus.
+
+Train: proua, kuupind, loss, lumelaud, kruupink, ranne, videomakk, patarei, teave, radiaator. 
+
+## Kui inimene saab füüsiliselt sinna sisse minna, siis see on koht.
+
+Provide the output in JSON format, where: 
+
+'1' indicates that the given Estonian word is a physical location that a person can enter into.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+buss, ajalehekiosk, lennuk, veebiarutelu, eeluurimisvangla, Ines, külapood, Microlink, sõjaväeõppus, sentimeeter.
+
+Train: Veevärk, pood, messikeskus, teoloogiaseminar, peasaal, sõjaretk, kuulirahe, jääpank, lossikirik, kontoriruum.
+
+## Asjad, mille peal inimene saab seista on kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is something that a person can stand on.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+lennuväli, armastus, kaifima, rannik, esmaba, stardipukk, plats, rootsima, MM-küla, lava.
+
+Train: paadinina, teave, protestimarss, kodustaadion, Aleksanderplats, jooksulint, polikliinik, kinnisvaraotsing, olümpiapoodium, põhiklass.
+
+## Taimed on kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a plant.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+kolmene, rinnavähioperatsioon, tamm, sõstrapõõsas, tulp, kultuuriringkond, delegatsioon, lill, elulõng, kinganina.
+
+Train: maapind, õunapuu, allikas, lill, Ristna, A-kategooria, põõsas, laevavrakk, sulgvõhik, puu.
+
+## Suunad on kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a direction.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+Belesta, parem, põhi, füüsika, edel, all, ajakiri, Elle, sprindiladvik, lääs.
+
+Train: ida, em, söögikoht, kirre, kagu, Oslo, tõusuund, lõuna, loe, Novatourss, vasak.
+
+
+## Eesnimed, perekonnanimed ja isikud ei ole kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a personal name.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+Priština, David, puupulk, Valeri, korsett, Puškin, eluülikool, Kaimo, Erika, norralane.
+
+Train: erikool, millea, Paul, põllumajandusülikool, Päts, Walther, ümbris, Darwin, Ero, ususeminar.
+
+## Organisatsioonid, üritused ja firmad ei ole kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is either an organization, event, or company. 
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+Ravibuda, Telia, Octoberfest, autoklubi, kohtukord, hetkemeeleolu, moe-show, Starman, registreerimine, kirikukoor.
+
+Train: ribi, veefestival, erikool, alavesi, protestimarss, MTÜ, Spotify, büroo, ameerika-turnee, sektsioon.
+
+## Ajaperioodid ei ole kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a time period.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+müügilett, hobune, koidik, nädalavahetus, maailmameistrivõistlus, püksitsehh, uusaeg, aasta, päev, kasutusvalm.
+
+Train: kuut, Haider, detsember, esmaspäev, lemmikloomapood, jooksulint, keskaeg, Wyonk, hommik, sajand.
+
+## Joogid ja toidud ei ole kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is either a food or a drink.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+riigikorraldus, piparkook, hiigelfirma, vesi, lõunasöök, eurohoius, lamamistool, karastusjook, praemuna, Abhaasia.
+
+Train: rumm, toosama, kiire, uhu, praad, piim, eine, modem, linnarahvas, pasta.
+
+## Riided ei ole kohad.
+
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is an article of clothing.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+tsiviilriietus, alevikodanik, kittel, aidsikabinet, püksid, Peeteli, Invest, sall, kinnas, välisturnee.
+
+Train: koolivorm, tuur, jakk, särk, peasaal, zoloogia, biokeskus, müts, sokk, jääpank.
+
+## Asutused on märgitud "?"-ga.
+
+Provide the output in a JSON format, where:
+
+'1' indicates that the given Estonian word is an institution. 
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+Vaivara, aadressbüroo, kunstiülikool, maa-amet, andma, aluspõhjakivim, sõdur, Maaülikool, triibuvaip, keeltekool.
+
+Train: ravivõimlem, Williams, Pallas, reisibüroo, motodoktor, elementaarkool, erikool, töökäsi, advokaadibüroo, puiatu.
+
+## Sõnad, mis ei oma eesti keelest tähendust on märgitud "-"-ga.
+
+Provide the output in a JSON format, where:
+
+'1' indicates that the given Estonian word is valid and has meaning.
+'0' indicates that the word does not meet these criteria.
+Evaluate the following words accordingly:
+Vaivara, aadressbüroo, kunstiülikool, maa-amet, andma, aluspõhjakivim, sõdur, Maaülikool, triibuvaip, keeltekool.
+
+Train: 
