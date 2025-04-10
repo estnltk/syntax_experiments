@@ -1,7 +1,7 @@
 ```
-conda create -n chat-gpt python=3.9
+conda create -n chat-gpt python=3.10
 conda activate chat-gpt
-pip install openai==0.27.2
+pip install openai
 conda install pandas
 conda install openpyxl
 pip install outlines
