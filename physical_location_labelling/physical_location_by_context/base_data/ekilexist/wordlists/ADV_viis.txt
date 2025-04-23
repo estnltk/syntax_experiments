@@ -1,0 +1,3413 @@
+aasta-aastalt
+abil
+a cappella
+accelerando
+adagio
+ad libitum
+administratiivkorras
+aegamööda
+aegapidi
+aegsalt
+aegsasti
+afekteeritult
+agaralt
+agarasti
+agitato
+ahastavalt
+ahistavalt
+ahnelt
+ahnesti
+ahtalt
+aimamisi
+aina
+aineliselt
+aineti
+ainiti
+ainitiselt
+ainuisikuliselt
+ainuti
+ainuüksi
+aiva
+ajatasa
+ajuga
+aka
+akromaatiliselt
+akuraat
+akuraatselt
+alalugu
+alaspidi
+alatasa
+alatsi
+algkristlus
+algselt
+alias
+alistunult
+alkeemiliselt
+all
+alla
+allamäge
+allapidi
+allargando
+allegretto
+allegro
+althõlma
+altkulmu
+altkäe
+altpulga
+alusel
+alustus
+alustuseks
+alutsi
+amabile
+ametlikult
+ammuli sui
+ammulisui
+analoogiliselt
+analoogselt
+andante
+angroo
+animato
+antipaatne
+aplalt
+aplamisi
+aplasti
+a posteriori
+appassionato
+a priori
+aralt
+ardente
+areldi
+argipäevaselt
+arglikult
+argselt
+argsi
+argumenteeritult
+arhitektuuriliselt
+aristokraatlikult
+aristokraatselt
+armastavalt
+armetult
+armsalt
+armsasti
+armutult
+aromaatselt
+arrogantselt
+arusaadavalt
+arutult
+arvamisi
+arvata
+arvukalt
+arvustavalt
+asap
+"asja ees, teist taga"
+asjata
+asjatult
+aste-astmelt
+astmeti
+astroloogiliselt
+a tempo
+auga
+aukus
+au naturel
+ausalt
+ausasti
+avakõrvu
+avakäsi
+avalikult
+avamatult
+avameeli
+avameelselt
+avasilmi
+avasui
+avasüli
+avec
+baasil
+bel canto
+bioloogiliselt
+bona fide
+bukvaalselt
+bukvalistlikult
+ca
+calando
+cantabile
+circa
+cito
+comodo
+contra
+cresc.
+crescendo
+cum laude
+da capo
+d. c.
+decresc.
+decrescendo
+de facto
+de iure
+de jure
+dekoratiivselt
+delikaatselt
+dementselt
+demonstratiivselt
+de profundis
+detailselt
+diakrooniliselt
+diferentseeritult
+digitaalselt
+diktaatorlikult
+dim.
+diminuendo
+diplomaatia
+diplomaatiliselt
+distsiplineeritult
+dolce
+doloroso
+dotseerivalt
+ebaotstarbekalt
+ebaseaduslikult
+ebasündsalt
+ebateadlikult
+ebatõeliselt
+ebaõigesti
+edasi
+edasilükkamatult
+edasi-tagasi
+edaspidi
+edevalt
+ees
+eesmärgikindlalt
+eesmärgitult
+eest
+eestimaiselt
+eestipäraselt
+eestkätt
+eestvedamisel
+eestvõtmisel
+eestvõttel
+eestvõtul
+egiidi all
+ehku peale
+ehkupeale
+eksikombel
+eksimatult
+eksklusiivselt
+eksponentsiaalselt
+eksprompt
+ekstra
+elama nagu miska
+elama nagu miška
+elamuslikult
+elavalt
+elektrooniliselt
+elektroonselt
+eluga
+eluohtlikult
+elutruult
+emergentselt
+empiiriliselt
+enamjagu
+en bloc
+endaette
+endamisi
+en détail
+en détail
+endiselt
+endist viisi
+endistviisi
+enese ette
+enesekriitiliselt
+en face
+en gros
+ennakult
+ennatult
+enne
+ennekuulmatult
+e.o.
+eo ipso
+e-postitsi
+erakordselt
+eraldatult
+erandkorras
+erateel
+eraviisil
+eredalt
+eredasti
+ergalt
+ergult
+eri
+eriaegselt
+eriliselt
+erinevalt
+erisuguselt
+eriti
+erksalt
+eroico
+erudeeritult
+esialgselt
+esialgu
+esimese hooga
+esimese jutiga
+esimese laksuga
+esimese raksuga
+esimese uhaga
+esimese valuga
+esiotsa
+esipuhku
+esiti
+esmalt
+espressivo
+essusti
+etapi kaupa
+etapikaupa
+etapiti
+etapi viisi
+etapiviisi
+etc.
+et cetera
+ette
+ettearvatult
+ette ja taha
+ettekavatsemata
+ettekavatsetult
+ette-taha
+ettevaatlikult
+eufooriliselt
+excl.
+exclusive
+ex officio
+f
+facile
+faktiliselt
+feroce
+festivo
+ff
+fff
+fifty-sixty
+filisterlikult
+flebile
+formaaljuriidiliselt
+formaalselt
+forte
+forte fortissimo
+fortissimo
+fugato
+fui
+fuih
+furioso
+giocoso
+giusto
+glissando
+grandioso
+grazioso
+grave
+grupiti
+grupi viisi
+grupiviisi
+haaval
+haavunult
+haigelt
+hajali
+hajevil
+hajevile
+hajutatult
+hajuvil
+hajuvile
+hakitult
+halastamatult
+halduskorras
+haledalt
+haledasti
+hallilt
+halvatult
+halvavalt
+halvustavalt
+hammustavalt
+hanerida
+hanerivi
+hapralt
+haprasti
+hapult
+harali
+hardalt
+hardasti
+hardunult
+harilikult
+harjapidi
+harjunult
+harkis jalu
+harkisjalu
+haruharva
+harukord
+harukordadel
+harukordselt
+harukorral
+harukorril
+harutihti
+harva
+harvalt
+harvasti
+harvem
+harvemini
+heameelega
+hea mehe poolest
+heast-paremast
+heast peast
+heas usus
+heauskselt
+hea õnne peale
+heitunult
+heldelt
+heldinult
+heledalt
+heledasti
+hellalt
+hellasti
+hergelt
+hetkelt
+hetkepealt
+higiselt
+hiilimisi
+hiilivalt
+hiirvagusi
+hilinenult
+hilissügiseselt
+hilju
+hiljukesi
+himuti
+himutsevalt
+hindavalt
+hinge kinni pidades
+hingestatult
+hingpakki
+hingpakkis
+hingpuhult
+hirmsalt
+hirmsasti
+hirmunult
+hirmus
+hitchcockilikult
+hoiatavalt
+hoide
+holpsti
+hooajati
+hooajuti
+hoobilt
+hoogsalt
+hoogsasti
+hoo kaupa
+hookaupa
+hoolega
+hoolikalt
+hoolimatult
+hoolitsevalt
+hoolsalt
+hoolsamini
+hoolsasti
+hoopsalt
+hoopsasti
+hooti
+hrl
+hukutavalt
+hulga kaupa
+hulgakaupa
+hulgakesi
+hulgaliselt
+hulgani
+hulganisti
+hulgemini
+hulgi
+hulgiti
+hullemini
+hunnitult
+huupi
+huvitavalt
+huvitavamalt
+huvitult
+hõlma pidi
+hõlmapidi
+hõlpsamini
+hõredalt
+hõredamini
+hõredasti
+häbematult
+häbenemisi
+häbitult
+hädaga
+hädamisi
+hädapärast
+hädavaevalt
+hädavaevu
+häirimatult
+häiritult
+häirivalt
+hämmastavalt
+hämmastunult
+hämmeldunult
+härdalt
+härdasti
+härgamisi
+hästi
+hävimatult
+hävitavalt
+hüljatult
+hüperaktiivselt
+hüplikult
+ideaaljuhul
+ideaalselt
+ideeliselt
+idiootlikult
+iga hinna eest
+iga ihukarvaga
+iga ihurakuga
+iga kell
+igakülgselt
+igal juhul
+iga naks
+iga pidi
+igapidi
+iga pooriga
+igapäevaselt
+iga rakuga
+igast poorist
+igatekanti
+igatemoodi
+igatepidi
+igateviisi
+igati
+igatipidi
+igat pidi
+igatpidi
+igatsevalt
+igat viisi
+igatviisi
+igavesti
+iga viisi
+igaviisi
+igavlevalt
+ihu ja hingega
+ihust ja hingest
+iiliti
+ikka ja alati
+ikka ja ikka
+ikka ja jälle
+ilkuvalt
+illustratiivselt
+ilma
+ilmaaegu
+ilmaasjata
+ilma peal
+ilma peale
+ilmekalt
+ilmselgelt
+ilmselt
+ilmtingimata
+ilusalt
+ilusasti
+ilusti
+imekiiresti
+imekombel
+imekähku
+imeruttu
+imestamisi
+imestunult
+imeväel
+incl.
+inclusive
+incognito
+in corpore
+indiviiditi
+inertselt
+in flagranti
+inglikeeli
+inimeseti
+inimesiti
+inkognito
+innukalt
+in spe
+instinktiivselt
+internatsionaalselt
+intuitiivselt
+in vitro
+in vivo
+irevil
+irevile
+irvi
+irvis
+irvisui
+isalikult
+ise
+iseendast
+iseenesest
+isekeskis
+isemoodi
+isepäi
+isetahtsi
+iseviisi
+iseäranis
+isiklikult
+isikuti
+istu
+istukile
+istuli
+isukalt
+isutult
+itsis
+jadamisi
+jae
+jagamatult
+jahedalt
+jahvatatult
+jala
+jalamaid
+jalapealt
+jalga pidi
+jalgapidi
+jalg jala ette
+jalg-jalalt
+jalgsi
+jalgu
+jalgu pidi
+jalgupidi
+jaluli
+jalus
+jalust
+jamasti
+ja nii edasi
+ja nõnda edasi
+jao kaupa
+jaokaupa
+jaopärast
+jaoti
+jne
+jonksti
+joobnud päi
+joobnudpäi
+joobnult
+jooksujalu
+jooksult
+jooksu pealt
+jooksupealt
+joondu
+joonelt
+jube
+jubedalt
+jubedasti
+juhtimisel
+juhtumisi
+juhuslikult
+juhuti
+julgelt
+julgesti
+julmalt
+jumalakeeli
+jumala muidu
+jumalamuidu
+jumekalt
+jumetult
+jupi kaupa
+jupikaupa
+jupiti
+jupphaaval
+jutilt
+jutti
+juttis
+juulikuiselt
+juuresolekul
+jõledalt
+jõngalt
+jõngilt
+jõnkadi-jõnkadi
+jõnkat-jõnkat
+jõnks
+jõnkshaaval
+jõnksti
+jõnt-jõnt
+jõude
+jõudsalt
+jõudsasti
+jõudu mööda
+jõudumööda
+jõul
+jäitsi
+jäle
+jäledalt
+jäledasti
+jälgilt
+jämedalt võttes
+jämedates joontes
+järelejätmatult
+järelemõtlematult
+järelemõtlikult
+järgemisi
+järgemööda
+järgepidi
+järgnevalt
+järgu kaupa
+järgukaupa
+järguti
+järjekindlusetult
+järjepannu
+järjepanu
+järjest
+järjesti
+järk-järgult
+järsku
+järsult
+jäärapäiselt
+jönt-jönt
+k.a
+ka
+kaaderhaaval
+kaalukalt
+kaalutletult
+kaalutlevalt
+kaalutult
+kaaluvalt
+kaamelt
+kaanest kaaneni
+kaaps
+kaapsti
+kaardu
+kaardus
+kaasa
+kaasa arvatud
+kaasaarvatult
+kaasaegselt
+kaasas
+kaelakuti
+kaelastikku
+kah
+kahe kaupa
+kahekaupa
+kahekeelselt
+kahekesi
+kahekordselt
+kaheksa kaupa
+kaheksakaupa
+kaheksakesi
+kaheldamatult
+kahe suupoolega
+kaheti
+kahevõrra
+kahjuks
+kahkvel
+kahkvele
+kahte lehte
+kahte pidi
+kahtepidi
+kahte viisi
+kahteviisi
+kahtlemata
+kahtlematult
+kahtlemisi
+kahtlevalt
+kahtlustavalt
+kahtpidi
+kahtviisi
+kainestavalt
+kakshaaval
+kaksi
+kaksipidi
+kaksiraksi
+kaksiratsa
+kaksiratsi
+kaksiti
+kalbelt
+kaldu
+kaldus
+kalgilt
+kallakil
+kalligraafiliselt
+kallilt
+kalpsti
+kambakesi
+kangekaelselt
+kangelaslikult
+kangelt
+kangemini
+kangesti
+kapitaalselt
+kappadi-kappadi
+karastavalt
+karedalt
+karistamata
+karistamatult
+karja kaupa
+karjakaupa
+karlips
+karlipsti
+karmilt
+karnaps
+karnapsti
+kartlikult
+kartmatult
+karupidi
+karuspidi
+karvapealt
+karvhaaval
+karviuh
+karviuhti
+karvupidi
+karvutsi
+kasimatult
+kasinalt
+kasinasti
+kassisammul
+kastist välja
+kastist väljas
+kasu
+kasulikult
+kasutamatult
+kasutult
+kasvavas joones
+katkeliselt
+katkematult
+katkestamatult
+katki
+kaude
+kaudselt
+kaugelt
+kaugvaates
+kaunikesti
+kaunilt
+kaunisti
+kaupa
+kaupluseti
+kavalalt
+kavalasti
+kavatsetult
+kebjalt
+keedetult
+keelavalt
+keeli
+keeliti
+kehvalt
+kehvasti
+kehvemini
+keksti
+kelmikalt
+kelmilt
+kenakesti
+kenasti
+kepsti
+keras
+kergejalgselt
+kerge käega
+kergel käel
+kergelt
+kergemini
+kergesti
+kerra
+keskel
+keskele
+keskelt
+keskeltläbi
+keskendatult
+keskendunult
+keskmiselt
+kesksuviselt
+ketti pidi
+kettipidi
+kibedalt
+kibedamini
+kibedasti
+kibekiirelt
+kibekiiresti
+kibekähku
+kibinal-kabinal
+kibin-kabin
+kihelkonniti
+kihi kaupa
+kihikaupa
+kihinal-kahinal
+kihiti
+kihitine
+kihku-kähku
+kihthaaval
+kihtimisi
+kiht-kihilt
+kiiga-kaaga
+kiira-käära
+kiirelt
+kiiremalt
+kiiremas korras
+kiiremini
+kiiresti
+kiirustamisi
+kiitvalt
+kiivalt
+kikikõrvu
+kikikõrvul
+kikkis kõrvu
+kikkiskõrvu
+kildhaaval
+kild killult
+kild-killult
+kilohaaval
+kilo kaupa
+kilokaupa
+kilplaslikult
+kindlalt
+kindlameelselt
+kindlasti
+kindlasõnaliselt
+kinnijalu
+kinni silmi
+kinnisilmi
+kinni sui
+kinnisui
+kippadi-kappadi
+kippadi-koppadi
+kirglikult
+kirkalt
+kirts-kärts
+kissi
+kissis
+kissis silmi
+kississilmi
+kitsalt
+kiusakalt
+kiverdi-kõverdi
+kiviselt
+klassiti
+klõmdi
+klõmm
+klõpsti
+kobamisi
+koba peale
+kobarati
+kobavalt
+kobina peale
+kogemata
+kogemata kombel
+kogu hingest
+kohakuti
+koha pealt
+kohaselt
+kohastikku
+kohe
+kohemaid
+koheselt
+kohkumisi
+kohkunult
+kohma-kohma
+kohmetult
+kohmetunult
+kohtlaselt
+kohtulikult
+koiba pidi
+koibapidi
+kokkulepitult
+kokkupoole
+kokkuräägitult
+kokkusurutult
+kokkuvõetult
+kokkuvõtlikult
+kokkuvõtvalt
+kole
+koledalt
+koledasti
+kolinal
+kollakalt
+kolmati
+kolme kaupa
+kolmekaupa
+kolmekesi
+kolmekordselt
+kolme pidi
+kolmepidi
+kolmeti
+kolmi
+kolmiti
+kombekalt
+kombel
+kombeliselt
+kompamisi
+konkreetselt
+konksu pidi
+konksupidi
+kontra
+kooldu
+kooldus
+kooljalikult
+koomal
+koomale
+koormavalt
+koppadi-koppadi
+kopsti
+kordamisi
+kordamööda
+kord-korralt
+korduvalt
+korraga
+korralikult
+korralt
+korrapealt
+korras
+korrast
+kosti
+kostil
+kostile
+kosutavalt
+krabinal
+kraed pidi
+kraedpidi
+kramplikult
+kraps
+krapsakalt
+krapsilt
+krapsti
+krapsupealt
+kribinal
+kribinal-krabinal
+kribin-krabin
+kriipsupealt
+kriminaalkorras
+kristalselt
+kristlikult
+kriuh
+kriuh-krauh
+kriuh-kräuh
+krunni
+krunnis
+krõpsti
+kubinal
+kuda
+kuidagi
+kuidagimoodi
+kuidagipidi
+kuidagiviisi
+kuidamoodi
+kuidas
+kuidasmoodi
+kuidaspidi
+kuidaviisi
+kuigipalju
+kuigivõrd
+kui hundikurku
+kui mutiauku
+kuis
+kuivalt
+kuivatatult
+kuivi jalu
+kuivijalu
+kujukalt
+kujuldasa
+kujutlemisi
+kukerkuuti
+kukerpalli
+kukult
+kukusti
+kuldselt
+kulisside taga
+kulmugi kergitamata
+kulmu kergitamata
+kulub nagu leiba
+kulu ja kirjadega
+kulul
+kumaras
+kumbagi pidi
+kumbagipidi
+kumba pidi
+kumbapidi
+kumeras
+kummargil
+kummargile
+kummi
+kummis
+kummuli
+kuritahtlikult
+kurjalt
+kurjasti
+kurjemini
+kurvalt
+kurvastavalt
+kurvasti
+kurvemalt
+kurvemini
+kusagil
+kuski
+kuskil
+kuss
+kustkaudu
+kutsuvalt
+kuue kaupa
+kuuekaupa
+kuuekesi
+kuuldavalt
+kuuldavasti
+kuulekalt
+kuulmatult
+kuulsusetult
+kuulu järgi
+kuumalt
+kuumemini
+kuu viisi
+kuuviisi
+kvartaalselt
+kõditavalt
+kõhklematult
+kõhklemisi
+kõhklevalt
+kõhtu pidi
+kõhtupidi
+kõhuli
+kõige enne
+kõige huvitavamalt
+kõige lähemalt
+kõigepealt
+kõigest hingest
+kõigest väest
+kõige vääritumalt
+kõige ägedamalt
+kõige ägedamini
+kõigiti
+kõike pidi
+kõikepidi
+kõiksepealt
+kõikumatult
+kõksti
+kõlatult
+kõlisevalt
+kõmdi
+kõminal
+kõmm
+kõnelematagi
+kõps
+kõpsti
+kõrgilt
+kõrinal
+kõri pidi
+kõripidi
+kõrshaaval
+kõrval
+kõrvu pidi
+kõrvupidi
+kõvasti
+kõvemini
+kõveralt
+kõverdi
+kõveriti
+kõõksti
+kõõrdi
+käbedalt
+käbedasti
+käbekähku
+kädinal
+käevangu
+käevangus
+käevangust
+käginal
+kähku
+käist pidi
+käistpidi
+käkaskaela
+käntsti
+käpakil
+käpakile
+käpili
+käppa pidi
+käppapidi
+käppelt
+käpukil
+käpukile
+käpuli
+käratult
+käredalt
+käredasti
+kärmelt
+kärmemalt
+kärmemini
+kärmesti
+kärts ja mürts
+kärts-mürts
+käsikaudu
+käsikäes
+käsi pidi
+käsipidi
+käsipõsakil
+käsipõsakile
+käsi südamel
+käsitsi
+käsu korras
+käsukorras
+kätt pidi
+kättpidi
+kätt südamele pannes
+käuksti
+kääksti
+käändeti
+kääri
+köidetult
+köit pidi
+köitpidi
+köitvalt
+köökus
+köötsakil
+köötsa-köötsa
+köötsus
+külalislahkelt
+külge pidi
+külgepidi
+külgi pidi
+külgipidi
+külili
+küliti
+külitsi
+küljekuti
+küljeli
+küljeti
+küljetsi
+küllalt
+küllaltki
+külma kõhuga
+külmalt
+külmavereliselt
+külmutatult
+kümne kaupa
+kümnekaupa
+kümnekesi
+kümne küünega
+küpsiküüsi
+kütte
+küünlaehtes
+küünlaehtesse
+küüsipidi
+küütsakil
+küütsus
+laadnalt
+ladinal
+ladusalt
+ladusamini
+ladusasti
+laginal
+lahedalt
+lahedasti
+lahinal
+lahke käega
+lahkel käel
+lahkelt
+lahkesti
+lahtise käega
+lahtise tekstiga
+lahti silmi
+lahtisilmi
+lahtisi silmi
+lahtiste silmadega
+lahti sui
+lahtisui
+lahve
+laiahaardeliselt
+laiali
+laialipillatult
+laialt
+laias kaares
+laias laastus
+laiemalt
+laiguti
+laineti
+laisalt
+laitvalt
+laiuti
+lakkamata
+lambist
+lamentabile
+lampi
+lapiti
+laraki
+larghetto
+largo
+larinal
+lataki
+latsakil
+latsakile
+lausa
+lautsil
+lautsile
+lautsilt
+lebolt
+legaalselt
+legato
+lehthaaval
+leht-lehelt
+lehvivi hõlmu
+leigelt
+lendamisi
+lennujalu
+lennult
+lento
+leti alt
+libamisi
+libedalt
+libedamini
+libedasti
+libinal
+ligadi-logadi
+liga-loga
+ligemalt
+ligikaudselt
+ligikaudu
+lihasesisesi
+lihtsalt
+lihtsasti
+lihtsustatult
+lihtviisil
+lihva-lohva
+liialdamatult
+liialdatult
+liigeldi-loogeldi
+liigiti
+liigutatult
+liigutavalt
+limps
+limpsti
+linka-lonka
+linnulennul
+linnulennult
+linnutiivul
+linta-lonta
+lipa-lapa
+lips
+lipsti
+lipuehtes
+lipuehtesse
+liuska
+live
+lobinal
+loetavalt
+lohinal
+lohutavalt
+lohutult
+lohva-lohva
+lohvat-lohvat
+loiult
+lollilt
+lollisti
+longus päi
+longuspäi
+lonkshaaval
+lonksu kaupa
+lonksukaupa
+lonta-lonta
+lont-lont
+loogeldi
+loomuldasa
+loomutruult
+lopa-lapa
+lopa-lopa
+lopelt
+lopsti
+ludinal
+lugubre
+luhvt
+luipa
+lummatult
+lummunult
+lups
+lupsti
+luusipäev
+lõbu pärast
+lõbusalt
+lõbusasti
+lõbustatult
+lõdvalt
+lõdva randmega
+lõigatult
+lõiguti
+lõnksti
+lõplikult
+lõõpimisi
+lõõpivalt
+läbi hammaste
+läbi häda
+läbikaalutult
+läbi mustade prillide
+läbimõeldult
+läbimõtlematult
+läbi roosade prillide
+läbisegamini
+läbisegi
+läbistikku
+läheb nagu leiba
+lähemalt
+lähivaates
+lähtuvalt
+lämmatavalt
+lönt-lönt
+lörtsti
+löödult
+lühemalt
+lühemini
+maad ja ilmad kokku
+maad ja taevad kokku
+maad pidi
+maakonniti
+maast-ilmast
+maast ja ilmast
+maast ja taevast
+maestoso
+magusalt
+magusasti
+maha
+mahajäetult
+mahitusel
+mainimisi
+maitsi
+maksku mis maksab
+maksvel
+maksvele
+mala fide
+malbelt
+maokil
+maokile
+maoli
+marcato
+marineeritult
+marudalt
+marudasti
+marult
+masendavalt
+maskeeritult
+materiaalselt
+meelega
+meelekindlalt
+meeleldi
+meeletult
+meelevastane
+meeli
+meelitatult
+meelsalt
+meelsamini
+meelsasti
+meeshaaval
+mees-mehelt
+meeterhaaval
+meeter-meetrilt
+meetri kaupa
+meetrikaupa
+meetri viisi
+meetriviisi
+mehiselt
+meilitsi
+mereteitsi
+meritsi
+mesikeeli
+mezzo
+mezzo forte
+mezzo piano
+metsikult
+mf
+mil kombel
+millimeeterhaaval
+mil moel
+mil viisil
+mingit moodi
+mingitmoodi
+mingit pidi
+mingitpidi
+minugi poolest
+minugipoolest
+minugi pärast
+minugipärast
+minu poolest
+minupoolest
+minu pärast
+minupärast
+minuti pealt
+minutipealt
+miskaudu
+miskitmoodi
+miskitpidi
+mis kombel
+mis moel
+mismoodi
+mis mühiseb
+mispidi
+mis viisil
+mitme kaupa
+mitmekaupa
+mitmekesi
+mitmekordselt
+mitmekümne kaupa
+mitmekümnekaupa
+mitmeselt
+mitmeti
+mitut pidi
+mitutpidi
+mobiilitsi
+moderato
+moel
+moe pärast
+moepärast
+moka otsast
+mokaotsast
+molto
+momentaalselt
+momentaanselt
+momentselt
+moodi
+moodupärast
+moonutatult
+morendo
+mornilt
+mp
+mugavamini
+muhedalt
+muhedasti
+muhelemisi
+muidu
+muidugi
+muigamisi
+muigel sui
+muigelsui
+muigvel sui
+muigvelsui
+muljetavaldavalt
+murdeti
+murusalt
+mustades toonides
+mustades värvides
+mustalt
+mutatis mutandis
+muuseas
+muuti
+mõistamisi
+mõistetavalt
+mõistu
+mõistuslikult
+mõlema suupoolega
+mõlemat pidi
+mõlematpidi
+mõlemiti
+mõne kaupa
+mõnekaupa
+mõnekesi
+mõrudalt
+mõrult
+mõõdetult
+mäletatavasti
+mängeldes
+mänglemisi
+mänglevalt
+mänguliselt
+mängult
+märkamatult
+märksalt
+mässitult
+mätta otsast
+möödakarva
+möödapääsematult
+möödapääsmatult
+müdinal
+mühinal
+müks
+müksti
+mürinal
+naa
+naamoodi
+naapidi
+naasama
+naaviisi
+naelutatult
+naerul sui
+naerulsui
+naerusilmi
+naerusui
+nagu hundikurku
+nagu jumal juhatab
+nagu lepase reega
+nagu lepse reega
+nagu mullu ja muiste
+nagu mullu ja muistegi
+nagu mutiauku
+nagu mühin
+nagu nalja
+nagu nuga läbi või
+nagu nuga võist läbi
+nagu nõiaväel
+nahaalusi
+najakil
+naks
+naksti
+naljalt
+naljameeli
+nalja pärast
+naljapärast
+naljatamisi
+naljatavalt
+naljatlemisi
+nalja viluks
+naljaviluks
+napilt
+naps
+napsti
+narrilt
+narristi
+nattipidi
+natukehaaval
+natukesehaaval
+natuuras
+nautlevalt
+negatiivselt
+nelja
+nelja kaupa
+neljakaupa
+neljakesi
+neljakäpakil
+neljakäpakile
+neljakäpukil
+neljakäpukile
+neljakäpuli
+nelja silma all
+neto
+neutraalselt
+nibin-nabin
+nihu
+nihusti
+nii
+niidetult
+nii et hing väljas
+nii et laksub
+nii et maa must
+nii et mürtsub
+nii et naksub
+nii et ninast veri väljas
+nii et nina tatine
+nii et puru taga
+nii et päkad välguvad
+nii et seda nägu
+nii et silm ka ei pilgu
+nii et tiriseb
+nii et tolmab
+nii et tulejutt taga
+nii et tükid taga
+nii ja naa
+nii- ja naapidi
+nii mis laksub
+nii mis mühin
+nii mis mürtsub
+niimoodi
+niipidi
+nii pikk kui lai
+niisama
+niisama hästi kui
+niisamuti
+niiviisi
+nii või naa
+niivõrd-kuivõrd
+niks-naks
+niksti
+nimeliselt
+nimelt
+nime pidi
+nimepidi
+nime poolest
+nimetsi
+nimme
+nina pidi
+ninapidi
+ninatsi
+nipsakalt
+nipsti
+nipsust
+nirinal
+nirult
+nirusti
+niuh
+niuh-näuh
+niuhti
+nobedalt
+nobedamini
+nobedasti
+nokka pidi
+nokkapidi
+nolens volens
+nonstop
+nooblilt
+noolelt
+nooljalt
+noolkiirelt
+noorelt
+nooruslikult
+noppesti
+norgus päi
+norguspäi
+normaalselt
+norus päi
+noruspäi
+nukralt
+nukulikult
+nupukalt
+nurgeti
+nuripidi
+nurjatult
+nurka pidi
+nurkapidi
+nurki pidi
+nurkipidi
+nutikalt
+nutuselt
+nõelavalt
+nõjakil
+nõjal
+nõks
+nõkshaaval
+nõks-nõks
+nõnda
+nõndamoodi
+nõndasama
+nõndasamuti
+nõndaviisi
+nõtkuvi põlvi
+nõudvalt
+nõuetekohaselt
+nõustuvalt
+nõutavalt
+nõutult
+nädala kaupa
+nädalakaupa
+nädalate viisi
+nägu pidi
+nägupidi
+nägusalt
+nägusasti
+nähtamatult
+nähvakalt
+näilikult
+näiliselt
+näoli
+näo pärast
+näost näkku
+näost-näkku
+näotsi
+näotult
+näpitsi
+näpp-näpult
+näpsakalt
+näpsti
+näpuotsaga
+näruselt
+närusti
+närvalt
+nätaki
+näts
+näuh
+näuhti
+nördinult
+nöökamisi
+nöökavalt
+nööri mööda
+nööri pidi
+nööripidi
+nürilt
+nüüdisaegselt
+odavalt
+odavasti
+ogaralt
+ohtralt
+ohtrasti
+oivaliselt
+olenevalt
+oletamisi
+omaette
+omajagu
+omakeeli
+omakeskis
+omakohta
+omakorda
+oma käega
+omakäeliselt
+oma käe peal
+omalaadselt
+omal jalal
+omal jõul
+omal käel
+omal nahal
+omal riisikol
+omal soovil
+omal volil
+omamoodi
+oma mullis
+oma naha peal
+omanuhti
+omapead
+omapuhku
+omapäi
+omapäraselt
+omaselt
+omas mullis
+omasoodu
+omast peast
+omatahtsi
+oma tasku peal
+omavahel
+omavoliliselt
+omavolitsi
+ontlikult
+on tuli rummus
+ootamatult
+ootavalt
+opa
+operatiivselt
+optimaalselt
+optimistlikult
+orastele
+oraste peale
+originaalselt
+orjalikult
+orjameelselt
+osa kaupa
+osakaupa
+osaliselt
+osalt
+osas
+osati
+osavalt
+osavamini
+osavasti
+ositi
+oskamatult
+oskuslikult
+osutusel
+otsa pidi
+otsapidi
+otse
+otse ja omadega
+otsejooneliselt
+otsejoonelt
+otsejoones
+otsejoont
+otsekohe
+otsekoheselt
+otsekoosi
+otseloodis
+otsemaid
+otsemalt
+otsemat teed
+otsemini
+otseselt
+otsesilmi
+otsesui
+otsesõnaliselt
+otsesõnu
+otseteed
+otseti
+otsitult
+otstarbekalt
+otstarbekohaselt
+otstarbetult
+otsusekindlalt
+otsustavalt
+p
+paaniliselt
+paari kaupa
+paarikaupa
+paarikesi
+paarinisti
+paaristikku
+paariti
+paari viisi
+paariviisi
+padavai
+padinal
+paelu pidi
+paelupidi
+paganlikult
+pahandatult
+pahaselt
+pahasoovlikult
+pahasti
+pahatahtlikult
+pahauskselt
+pahempidi
+pahinal
+pahupidi
+pahuralt
+paigal
+paigalt
+paikkonniti
+pailt
+painajalikult
+painavalt
+paitavalt
+paitsi
+pakiliselt
+pakilt
+pakilt-palavalt
+paksult
+palavalt
+palavasti
+palgest palgesse
+palja jalu
+paljajalu
+palja käega
+palja käsi
+paljakäsi
+paljalt
+palja päi
+paljapäi
+paljaste kätega
+paljasääri
+paljukesi
+paluvalt
+paradoksaalselt
+parajalt
+parajasti
+parasjagu
+par avion
+parema meelega
+parempidi
+parinal
+parlando
+parts
+partsti
+parve kaupa
+parvekaupa
+parviti
+passionato
+pateetiliselt
+patuselt
+paugupealt
+pauh
+pauhti
+paukselt
+peaasjalikult
+pead ligi
+peadligi
+pead pidi
+peadpidi
+peal
+peale
+pealegi
+pealetükkivalt
+pealiskaudselt
+pealiskaudu
+pealtnäha
+peamiselt
+pedantselt
+peenelt
+peenetundeliselt
+peenikeselt
+pehmelt
+pehmesti
+pelgalt
+pentsikult
+pepsilt
+pepuli
+perekonniti
+pereti
+perfektselt
+personaalselt
+pesakonniti
+pesiti
+pessimistlikult
+pesuväel
+pesuväele
+petlikult
+pfui
+pianissimo
+piano
+piano pianissimo
+piduehtes
+piduehtesse
+pidupäevaselt
+pidurdamatult
+pidurdavalt
+pihus
+piimjalt
+piinlikult
+piiramatult
+piiratult
+piirkonniti
+piiskhaaval
+piisuti
+pika hambaga
+pikaldaselt
+pikali
+pikalt
+pikalt ja laialt
+pikalt-laialt
+pikemalt
+pikemini
+pikikiudu
+piki silmi
+pikisilmi
+pikka
+pikkamisi
+pikkamööda
+pilamisi
+pilkamisi
+pilkeliselt
+pilusilmi
+pilusilmil
+pimedalt
+pimedast peast
+pimesi
+pimesilmi
+pimestavalt
+pindmiselt
+pinevalt
+pingeliselt
+pingetult
+pingevabalt
+pingsalt
+pinguldatult
+pingutatult
+pinnaliselt
+pinnapealselt
+piredalt
+piripardani
+pirtsakalt
+pisarsilmi
+pisarsilmil
+pisikeselt
+pisikselt
+pisitasa
+piskuhaaval
+pizz.
+pizzicato
+plaanitult
+plaks
+plaksti
+plaksupealt
+plarts
+plartsti
+platooniliselt
+plauh
+plauhti
+pliks-plaks
+pliu
+plumps
+plumpsti
+plõksti
+pms
+pobinal
+poco a poco
+poeetiliselt
+poliitiliselt
+pominal
+pool
+poole persega
+poolest
+poole sõna pealt
+pooli hääli
+poolihääli
+poolikult
+pooljoostes
+poolkogemata
+poolkolmat
+poolkuuldavalt
+poolküliti
+poolkülitsi
+poolküljetsi
+poolmuidu
+poolnaljatamisi
+poolpõigiti
+poolpõiki
+poolsalaja
+poolsosinal
+pooltki
+pooltõsiselt
+poolvargsi
+poolviltu
+poolvägisi
+popilt
+portamento
+portsjoniti
+posinal
+positiivselt
+post factum
+postitsi
+potsti
+pp
+ppp
+praalivalt
+praetult
+praktiliselt
+prantsaki
+prantsti
+prauh
+prauhti
+prestissimo
+presto
+priilt
+priimalt
+priipärast
+pringilt
+priskelt
+priskesti
+privaatselt
+probleemitult
+pro et contra
+professionaalselt
+pro forma
+proovimisi
+proportsionaalselt
+prõmaki
+prõmdi
+psühholoogiliselt
+puhanguti
+puhtalt
+puhtast südamest
+puhta südamega
+puhuti
+puiklevalt
+puiselt
+pulkhaaval
+pulk-pulgalt
+pulmaehtes
+punakalt
+punaselt
+pundis
+pungis silmi
+pungissilmi
+punkt
+punkthaaval
+punktipealselt
+punktipealt
+punkt-punktilt
+punnitatult
+puntis
+purjus päi
+purjuspäi
+purustatult
+puudutamisi
+puudutatult
+puurivalt
+puusakil
+puust ja punaselt
+põhiliselt
+põhimiselt
+põhimõtteliselt
+põhjalikult
+põhja pidi
+põhjapidi
+põhjendamatult
+põhjuslikult
+põiklemisi
+põiklevalt
+põikpäiselt
+põlevate silmadega
+põlve otsas
+põlveotsas
+põlve peal
+põlvili
+põlvi pidi
+põlvipidi
+põlvkonniti
+põmdi
+põmm
+põnevalt
+põsakil
+põsakile
+põsekil
+põsekile
+põske pidi
+põskepidi
+põuaselt
+päeva pealt
+päevapealt
+päevaselt
+päevhaaval
+päitseid pidi
+päitseidpidi
+pärakuti
+pärani
+pärani silmi
+päranisilmi
+pära pidi
+pärapidi
+päraselt
+pärast
+pärastikku
+pärikarva
+pärilainet
+pärildi
+pärilikult
+päta-päta
+pöördeliselt
+pühalt
+pühapäevaselt
+pükse pidi
+püksepidi
+püsimatult
+püsitult
+püsti jalu
+püstijalu
+püsti päi
+püstipäi
+püstloodi
+püstloodis
+püüdlikult
+quasi
+quieto
+raama
+raashaaval
+raasu kaupa
+raasukaupa
+rabatult
+rabedalt
+rabinal
+radiaalselt
+radikaalselt
+raevukalt
+raevunult
+raevuselt
+rafineeritult
+rahu
+rahujalal
+rahujalale
+rahuldamatult
+rahuldatult
+rahuldunult
+rahulolematult
+rahulolevalt
+rahumeeli
+rahunenult
+rahustavalt
+rahvuseti
+rajooniti
+rajuvil
+rajuvile
+rakke
+rakkes
+rakkesse
+rakkest
+raksupealt
+rallentando
+rammetult
+rapsakalt
+rapsti
+raskelt
+raskemini
+raskesti
+rasvaselt
+ratsa
+ratsmeid pidi
+ratsmeidpidi
+ratsukile
+ratsuli
+raudkindlalt
+raudpolt
+raudpoltkindlalt
+raudteitsi
+rea kaupa
+reakaupa
+rea viisi
+reaviisi
+recitando
+reeglina
+reeglipäraselt
+reetlikult
+reeturlikult
+regiooniti
+reipalt
+reipasti
+relvitsi
+reserveeritult
+resigneerunult
+resoluutselt
+ribadeks
+ribinal
+ribinal-rabinal
+ribinal-robinal
+riburada
+riburadamisi
+riburada mööda
+riburada pidi
+riburadapidi
+ridahaaval
+rida-realt
+rigoroso
+rihma pidi
+rihmapidi
+rihti
+rihtis
+riiakalt
+riides
+riidesse
+riidest lahti
+riivamisi
+riivitult
+riks-raks
+rindupidi
+rinforzando
+ringiratast
+ringis
+ringkonniti
+rinnakuti
+rinnati
+rinnu
+rinnuti
+rinnutsi
+ripa-rapa
+rippu
+rippus
+risoluto
+ristijalu
+risti ja põiki
+risti ja rästi
+ristikäsi
+risti-põigiti
+risti-põiki
+risti-rästi
+ristisjalu
+ristis käsi
+ristiskäsi
+ristselili
+ristseliti
+rit.
+ritard.
+ritardando
+ritenuto
+robinaga
+robinal
+robinal-rabinal
+rohekalt
+rohkearvuliselt
+rohkelt
+rohkesti
+roomakil
+ropsult
+ropsupealt
+ropult
+ropusti
+rubato
+rumalalt
+rumalasti
+ruskelt
+rutakalt
+ruttamatult
+ruttamisi
+ruttu
+rutusti
+ruutpesiti
+rõhukalt
+rõhutatult
+rõhuvalt
+rõvedalt
+rõvedasti
+rõõmsalt
+rõõmsasti
+rõõmutult
+räbalalt
+räbalasti
+rängalt
+rängasti
+rängemalt
+rängemini
+räpakalt
+rääkimatagi
+rääma
+röstitult
+rööbiti
+rööpselt
+rühma kaupa
+rühmakaupa
+rühmiti
+rütmiliselt
+saamatult
+saareti
+saatanlikult
+saatuslikult
+saba pidi
+sabapidi
+sabas
+sada protsenti
+sadistlikult
+sagedasti
+sageli
+sahmus
+saja kaupa
+sajakaupa
+sajakesi
+sajuselt
+sala
+salahilju
+salaja
+salajas
+salakesi
+salalikult
+salamahti
+salamisi
+salkkonniti
+salvamisi
+salvavalt
+samaaegselt
+samaaegu
+samahästi
+samahästi kui
+sama moodi
+samamoodi
+samaviisi
+sammhaaval
+samm-sammult
+sammu kaupa
+sammukaupa
+sampsu
+sampsus
+samuti
+sandimini
+sandisti
+sanga pidi
+sangapidi
+sangarlikult
+sapiselt
+sarvi pidi
+sarvipidi
+sassi
+sassis
+sattumisi
+scherzando
+seadsalt
+seadusandlikult
+seadusekohaselt
+seadusevastaselt
+seadusjärgselt
+seaduslikult
+seaduspäraselt
+seadusvastaselt
+sealhulgas
+sealjuures
+sealtkaudu
+sedakaudu
+sedamaid
+seda moodi
+sedamoodi
+sedamööda
+sedapidi
+sedapsi
+sedasi
+sedaviisi
+seejuures
+seekaudu
+seekõrval
+seeria viisi
+seeriaviisi
+seeriaviisiliselt
+seespidi
+seeüle
+segamatult
+segamini
+segaselt
+segi
+segiläbi
+seina pidi
+seinapidi
+seitsme kaupa
+seitsmekaupa
+seitsmekesi
+sekundi pealt
+sekundipealt
+sekund-sekundis
+selga pidi
+selgapidi
+selgelt
+selgemini
+selgesti
+selili
+seliti
+selitsi
+seljakil
+seljakile
+seljakuti
+seljali
+selja taga
+seljataga
+selja tagant
+seljatagant
+selja taha
+seljataha
+seljati
+sellekaudu
+sellekohaselt
+selliselt
+seltsimehelikult
+seltsis
+seltskonniti
+semplice
+sendi pealt
+sendipealt
+sentimeeterhaaval
+seotult
+sereno
+serioso
+servamisi
+servapidi
+servast serva
+servast servani
+servi
+serviti
+sesooniti
+sf
+sforzando
+sforzato
+sfz
+sh
+sihikindlalt
+sihilikult
+sihipäraselt
+sihiteadlikult
+sihitult
+siia ja sinna
+siia-sinna
+siidjalt
+siinjuures
+siiralt
+siivsalt
+sika-saka
+silbiti
+silma all
+silma alla
+silma alt
+silmakirjaks
+silmakirjalikult
+silmalt
+silmanähtavalt
+silmapaistvalt
+silmapilk
+silmapilkselt
+silmast silma
+silmast-silma
+silme all
+silme alla
+silme alt
+silmili
+silmipimestavalt
+silmis
+silmnähtavalt
+silphaaval
+sinakalt
+sine die
+singa-songa
+sinkadi-sonkadi
+sinkadi-vinkadi
+sinka-sonka
+sinka-vinka
+sinka-vonka
+sinna ja tänna
+sinna juurde
+sinnajuurde
+sinna-tänna
+sipsti
+sirakil
+sirakile
+sirevil
+sirevile
+sirgelt
+sirgesti
+sirgjoon
+sirgjooneliselt
+sirgu
+sirtsti
+sirukil
+sirukile
+siruli
+sirvimisi
+sisse-välja
+sisuldasa
+sisuliselt
+sitasti
+sitkelt
+siu
+siuh
+siuh-säuh
+siuhti
+siuh-vilks
+siva
+skaibitsi
+smirna
+soiku
+soikus
+sokkis
+solvavalt
+solvunult
+soodsalt
+soodsasti
+soojalt
+soojemini
+soolaselt
+soolatult
+sooti
+soovitatavalt
+soovitavalt
+sorakas
+sorakil
+sorakile
+soravalt
+soravasti
+sorditi
+sorgu
+sorgus
+sorinal
+sorteeritult
+sorus
+sosinal
+sosistamisi
+sostenuto
+sotsiaalselt
+spetsiaalselt
+spiccato
+spikaato
+sportlaslikult
+stacc.
+staccato
+stiihiliselt
+strepitoso
+sub.
+subito
+sugereerivalt
+sugestiivselt
+sugukonniti
+suhteliselt
+suitseid pidi
+suitseidpidi
+sukkis
+suletud uste taga
+suluksis
+sumbunult
+sumedalt
+summa summarum
+summutatult
+sundimisi
+sundkorras
+sunnil
+sunnitult
+sunniviisi
+sunniviisil
+sunniviisiliselt
+supsti
+suu ammuli
+suud mööda
+suudmööda
+suuli
+suuliselt
+suunitletult
+suure algustähega
+suurelt
+suures kaares
+suures piiris
+suuresti
+suure tähega
+suuri silmi
+suurisilmi
+suuri vaevu
+suurivaevu
+suurtes joontes
+suurtes piirides
+suusoojaks
+suusõnal
+suusõnaliselt
+sõbrajalal
+sõjamehelikult
+sõltumatult
+sõltuvalt
+sõnaahtralt
+sõnahaaval
+sõna kaupa
+sõnakaupa
+sõnakehvalt
+sõnakuulelikult
+sõnaliselt
+sõnamurdlikult
+sõnaohtralt
+sõnaosavalt
+sõna pealt
+sõnapealt
+sõnasõnaliselt
+sõna-sõnalt
+sõnavõtlikult
+sõnul
+sõnuti
+sõnutsi
+sõrga pidi
+sõrgapidi
+sõrme pidi
+sõrmepidi
+sõrmi pidi
+sõrmipidi
+sädelevalt
+sädinal
+särasilmi
+särasilmil
+säravalt
+säravi silmi
+särgiväel
+särgiväele
+särinal
+säristama
+säuh
+säuhti
+söakalt
+südamerahuga
+südamerahus
+südametult
+südametäiega
+südamlikult
+südasuviselt
+südikalt
+südilt
+sügavamini
+sügavuti
+sülitsi
+sümboolselt
+sümpaatselt
+sündmatult
+sündsalt
+sündsusetult
+sünkrooniliselt
+sünkroonis
+sünkros
+süsteemikindlalt
+süsteemipäraselt
+süsteemitult
+süsteemselt
+süstemaatiliselt
+sütitavalt
+süvendatult
+süvenemata
+süvenenult
+süviti
+süvitsi
+süüdlaselt
+süüdlaslikult
+süütult
+šikilt
+šokeeritult
+šokeerivalt
+žanriti
+taas
+tagajärjetult
+tagakätt
+tagantkäe
+tagantkätt
+tagantselja
+tagaselja
+tagasihaaravalt
+tagasikätt
+tagaspidi
+tagatippu
+tagatipuks
+tagurpidi
+tahes-tahtmata
+tahes-tahtmatult
+tahes või tahtmata
+tahes või tahtmatult
+tahtlikult
+tahtmatult
+tahtsi
+taibukalt
+taidurlikult
+taipamatult
+taiplikult
+tajutavalt
+takistamatult
+takku
+takkus
+taktiliselt
+taktitult
+taktitundeliselt
+taktitundetult
+taktivaeselt
+taldu pidi
+taldupidi
+talitsetult
+talumatult
+talumehelikult
+talutavalt
+tantsujalu
+taoliselt
+tapvalt
+tarbetult
+tardunult
+targalt
+targasti
+targemini
+targu
+tarmukalt
+tarvilikult
+tasa
+tasahaaval
+tasahilju
+tasahiljukesi
+tasahääli
+tasakesi
+tasakesti
+tasapisi
+tasaselt
+tasavägiselt
+tasem
+tasemini
+tasuta
+tatsa-tatsa
+tav
+tavaliselt
+tavamõistes
+tavatult
+teadaolevalt
+teadjalt
+teadmatult
+teadupoolest
+teadupäraselt
+teadupärast
+teaduslikult
+teadvalt
+teatavalt
+teatavasti
+teenitult
+teeseldult
+teesklevalt
+tegusalt
+tehniliselt
+tehnoloogiliselt
+tehtult
+teisalt
+teiseselt
+teisipidi
+teisi sõnu
+teisisõnu
+teisiti
+teist moodi
+teistmoodi
+teist pidi
+teistpidi
+teist viisi
+teistviisi
+telefonitsi
+telgi taga
+tempestoso
+tenebroso
+tenero
+tenuto
+teokiirusel
+teosammul
+terahaaval
+tera kaupa
+terakaupa
+teraselt
+teravalt
+teravasti
+tervelt
+terviklikult
+tervislikult
+tête-à-tête
+tibamisi
+tigedalt
+tigedasti
+tigukiirusel
+tigusammul
+tihedalt
+tihedamalt
+tihedamini
+tihedasti
+tiheli
+tihemini
+tihkelt
+tihkesti
+tihti
+tiideviltu
+tiidsalt
+tiidsasti
+tiira-taara
+tilga kaupa
+tilgakaupa
+tilkhaaval
+tingimata
+tingimisi
+tinnaga
+tipa-tapa
+tipp-tipp
+tipp-topp
+tip-tip
+tirilimps-poolteist
+tobedalt
+tobedasti
+toetavalt
+toetusel
+toimetusel
+tolksti
+tollhaaval
+toll-tollilt
+tonksti
+topless
+toredalt
+toredasti
+torsakalt
+torukil
+torukile
+toruli
+tosina kaupa
+tosinakaupa
+tosinakesi
+trah
+trahh
+triiki
+triikis
+trobikonniti
+truualamlikult
+truuilt
+truuisti
+truult
+truusti
+truuvilt
+trööstitult
+tsiuh
+tsiuh-tsäuh
+tsiviliseeritult
+tublilt
+tugevalt
+tugevamini
+tugevasti
+tuhandekesi
+tuhandest
+tuhatnelja
+tuhat tulist
+tuhat-tulist
+tuhknai
+tuhmilt
+tuimalt
+tuisupäiselt
+tujuti
+tukkapidi
+tulevalgel
+tulevalgele
+tulipalavalt
+tuliselt
+tulisi jalu
+tulistjalu
+tulistvalu
+tulutult
+tundeliselt
+tunni kaupa
+tunnikaupa
+tunnipealt
+tunniti
+tunni viisi
+tunniviisi
+tunnustavalt
+turja pidi
+turjapidi
+turvaliselt
+tusaselt
+tuttavlikult
+tutti
+tuttipidi
+tuulekiirul
+tuulekiirusel
+tõemeeli
+tõepoolest
+tõepäraselt
+tõesti
+tõetruult
+tõrjuvalt
+tõsimeeli
+tõsimeelselt
+tõtakalt
+tõtlikult
+tõttu
+tõusvas joones
+tõuti
+täbaralt
+täbarasti
+tähe all
+tähelepandamatult
+tähthaaval
+tähtsalt
+täht-tähelt
+täie auruga
+täiega
+täiel tuuril
+täie paaruga
+täie pasaga
+täie rauaga
+täies tükis
+täie vilega
+täievoliliselt
+täisnurgi
+täisnurkselt
+täistuuridel
+täistuuril
+täiuslikult
+tänapäevaselt
+täpipealt
+täpp-täpilt
+täpselt
+täpsemalt
+täpsemini
+töiselt
+tölbilt
+törtsti
+tüdimatult
+tühja
+tühjalt
+tükati
+tükeldatult
+tüki kaupa
+tükikaupa
+tükis
+tükiviisi
+tükkhaaval
+tükk-tükilt
+tülgastavalt
+tüüpiliselt
+u
+udu-umbe
+uduumbe
+uduumbes
+uhkelt
+uhkesti
+uhkes üksinduses
+ui-ai
+uimaselt
+uisapäi
+uisapäisa
+uitel
+uitvel
+ula
+uljalt
+ulme
+ulmeliselt
+ultimatiivselt
+umbes
+umbkaudselt
+umbkaudu
+umbnelja
+umbropsu
+umbselt
+ummisjalu
+ummispäi
+undrehti
+uniselt
+unistavalt
+uperkuuti
+upselt
+usaldavalt
+usalduslikult
+usinalt
+usinasti
+uskmatult
+uskumatult
+ustavalt
+usutavalt
+utreeritult
+uudselt
+uuesti
+uurakil
+uurakile
+uurivalt
+uut moodi
+uutmoodi
+v.a
+vaba käega
+vabalt
+vabandavalt
+va banque
+vaenulikult
+vaeselt
+vaevaliselt
+vaevalt
+vaevaselt
+vaevatult
+vaevu
+vaevu-vaevu
+vaguniti
+vaguralt
+vagusalt
+vagusi
+vahedalt
+vaheldumisi
+vahelduvalt
+vaheliti
+vahet
+vahetpidamata
+vahetpidamatult
+vahetult
+vahvalt
+vahvasti
+vaidlematult
+vaigistavalt
+vaiki
+vaikimisi
+vaikselt
+vaimus
+vait
+vajalikult
+vakka
+vakshaaval
+valdkonniti
+valepidi
+valesti
+valet pidi
+valetpidi
+validalt
+valimatult
+valitult
+valjaid pidi
+valjaidpidi
+valju
+valjult
+valjusti
+valulikult
+valuliselt
+valusalt
+valusamini
+valusasti
+valutult
+vana moodi
+vanamoodi
+vana usu peale
+vana viisi
+vanaviisi
+vandenõulaslikult
+vandeseltslaslikult
+vanusegrupiti
+vanuserühmiti
+vapralt
+vaprasti
+vapustatult
+varakevadiselt
+varaks
+varakult
+varal
+varale
+vargsi
+varjamatult
+varjatult
+varmalt
+varrukat pidi
+varrukatpidi
+varuks
+vastakuti
+vastamisi
+vastastikku
+vastavalt
+vastikult
+vastukarva
+vastulainet
+vastumeeli
+vastumeelne
+vastumeelselt
+vastumeelt
+vastuoksa
+vastupidi
+vastu tahtmist
+vastutahtmist
+vastutahtsi
+vastuvaidlemata
+vastuvett
+vastuvoolu
+vatsuli
+veatult
+veebipõhiselt
+veel kord
+veelkord
+veenvalt
+vegetatiivselt
+veidihaaval
+veloce
+velpalt
+venitamisi
+verbaalselt
+versus
+vesitsi
+vetruvalt
+vibraato
+vibrato
+vice versa
+vidusilmi
+vidusilmil
+vigaselt
+vigastamatult
+vigoroso
+vihjamisi
+vihuti
+viibimata
+viibimatult
+viie kaupa
+viiekaupa
+viiekesi
+viilutatult
+viimselt
+viisakalt
+viisakasti
+viisi
+viisil
+viivitamata
+viivitamatult
+viksilt
+viksisti
+vildakalt
+viletsalt
+viletsamalt
+viletsamini
+viletsasti
+viljatult
+vilkalt
+vilksti
+viltu
+vilult
+vilunult
+vimmakalt
+vinderdi-vänderdi
+vindumisi
+vinta-vänta
+viperusteta
+virgalt
+virgasti
+visalt
+visavii
+vis-à-vis
+vissisti
+viu
+viudi
+viuh
+viuhti
+vivace
+vonksti
+voolavalt
+vormikohaselt
+vormiliselt
+vormi pärast
+vormi täiteks
+vs.
+vuh
+vuhh
+vuhti
+vuih
+vulpsti
+vurdi
+vurtsti
+v. v.
+võdinal
+võidu
+võikalt
+võimsalt
+võimsasti
+võimukalt
+võistu
+võlutult
+võluväel
+võrdlemisi
+võrratult
+võtku mis võtab
+võõrikult
+võõriti
+väekaupa
+väel
+väele
+väevõimuga
+väevõimul
+vägevalt
+vägevasti
+vägisi
+vägivaldselt
+vähehaaval
+vähekesi
+väikehulgi
+väikeselt
+väikest viisi
+väikestviisi
+väikselt
+väitel
+väledalt
+väledasti
+välgukiirul
+välgukiirusel
+väliselt
+välispidi
+välja arvatud
+väljapeetult
+välkkiirelt
+välkkiiresti
+vältimatult
+värisevi käsi
+värvikirevalt
+väsinult
+vääralt
+väärikalt
+vääriliselt
+vääriti
+väärituimalt
+vääritult
+vöötatult
+õhukeselt
+õhutihedalt
+õhutsi
+õieehtes
+õieehtesse
+õieti
+õigemini
+õigesti
+õiget pidi
+õigetpidi
+õigusjärgselt
+õilsalt
+õilsameelselt
+õitsel
+õkva
+õlga pidi
+õlgapidi
+õliselt
+õlitatult
+õndsalikult
+õndsalt
+õnnekaupa
+õnnekombel
+õnnelikult
+õnnestunult
+õrnalt
+õrnasti
+õrnatundeliselt
+õudsalt
+õudselt
+õudustäratavalt
+õõnsalt
+ägedaimalt
+ägedaimini
+ägedalt
+ägedamalt
+ägedamini
+ägedasti
+äkiliselt
+äkist
+äkiste
+äkisti
+äkitselt
+äkitsi
+äkki
+ängistavalt
+äraarvamatult
+äraseletatult
+äraspidi
+äratundvalt
+äratuntavalt
+ääretasa
+ääri-veeri
+äärt pidi
+äärtpidi
+öeldavasti
+öiselt
+öko
+üha
+üheaegselt
+ühe hingetõmbega
+ühe hoobiga
+ühe hooga
+ühe joonega
+ühe jutiga
+ühe kaupa
+ühekaupa
+ühekorraga
+üheksa kaupa
+üheksakaupa
+üheksakesi
+üheksakordselt
+ühe pauguga
+ühes
+üheselt
+ühes jutis
+üheskoos
+ühe soojaga
+ühes taktis
+ühest suust
+ühe sõõmuga
+ühetasa
+üheti
+ühetooniliselt
+ühe valuga
+ühiselt
+ühtaegu
+ühtaina
+ühtalati
+ühteaegu
+ühtejoont
+ühtejutti
+ühtejärge
+ühtelugu
+ühte moodi
+ühtemoodi
+ühte pidi
+ühtepidi
+ühtepuhku
+ühtesoodu
+ühtevalu
+ühte viisi
+ühteviisi
+ühtilma
+ühtjärge
+ühtlaselt
+ühtlugu
+ühtmoodi
+üht pidi
+ühtpidi
+ühtsoodu
+ühtvalu
+ühtviisi
+ühtäkki
+ükshaaval
+üksi
+üksi-kaksi
+üksikasjalikult
+üksikasjaliselt
+üksiksõnuti
+üksikult
+üksinda
+üksipidi
+üksipulgi
+üksipäini
+üksipäinis
+üksi silmi
+üksisilmi
+üksi sõnu
+üksisõnu
+üksiti
+üksjagu
+üks-kaks
+üks-kaks-kolm
+ükskolmat
+ükslugu
+ükspäinis
+üksäkki
+üks ühele
+üksüheselt
+üldiselt
+üldjoontes
+üldjuhtumil
+üldjuhul
+üldplaanis
+üldreeglina
+üle
+üle jala
+ülejala
+üle kaela
+ülekaela
+üle kere
+üle käe
+ülekäe
+üle nipli
+üle pea ja kaela
+ülepeakaela
+ülesaamatult
+ülesmäge
+ülesvett
+ülesvoolu
+ületsi
+üleval
+üle õla
+üleõla
+üleöö
+üle öö
+ülihästi
+ülikiiresti
+ülilühidalt
+üllalt
+üllameelselt
+ümardatult
+ümberarvestatult
+ümber nurga
+ümbernurga
+ümberpöördult
+ümbert
+ümmarguselt
+üpris
+üsna
+ütlematagi
