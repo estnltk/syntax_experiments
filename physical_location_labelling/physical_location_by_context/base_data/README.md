@@ -2,8 +2,9 @@
 
 **ekilexist**: base data extracted from the Institute of Estonian Language's lexicographic database [Ekilex] (https://github.com/keeleinstituut/ekilex) 
 
+* *adverbs*: contains lists of words with adverb tags in ekilex. For Kadri Muischnek.
 * *wordlists*: contains word lists as txt files for location, time, state, event and not_location
-* *obl_2_semtyyp.xlsx*: words that have 2 semantic types where at least one is location, time, event, state. Used to find what semantic types can be combined
+* *obl_2_semtyyp.xlsx*/*obl_2_semtyyp.csv*: words that have 2 semantic types where at least one is location, time, event, state. Used to find what semantic types can be combined
 * *semtype_loc_or_not.xlsx*: is a semantic type a location or not.
 * *valjendverbid.csv/valjendverbid.txt*: a list of phrasal verbs
 
