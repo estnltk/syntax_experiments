@@ -17,7 +17,9 @@
 * *kohad_1000_gpt_valjund_pipe.csv* : gpt annotation for 1000 words with sentence context. Delimiter is a semicolon (;). NB! GPT also outputs the sentence it was given as context for easier annotation, but sentences can contain semicolons, so a semicolon isn't the best delimiter.
 
 **v04_rulebased_annotation**
-* *verb_location_vs_notlocation_annotated.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents have been annotated. Includes 3 examples of dependents: location, not_location, not_annotated
-* *verb_location_vs_notlocation_unique_dependents.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents are unique. Includes 3 examples of dependents: location, not_location, not_annotated
-* *verb_location_time_vs_other.html*: a hoverplot showing if a verb+case pair's dependents are locations/times or something else and how many of the dependents are unique. Includes 3 examples of dependents: location/time, other tags, not_annotated
+* *verb_location_time_vs_other.html*: a hoverplot showing if a verb+case pair's dependents are locations/times or something else and how many of the dependents are unique. Now colored based on a verb's synset counts from Wordnet
+* *verb_location_time_vs_other_wordnet.html*: same as previous but only has verb+case pairs where the verb appears in Wordnet
+* *verb_location_vs_notlocation_annotated.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents have been annotated. Now colored based on a verb's synset counts from Wordnet
+* *verb_location_vs_notlocation_unique_dependents.html*: a hoverplot showing if a verb+case pair's dependents are locations or not and how many of the dependents are unique. Now colored based on a verb's synset counts from Wordnet
+* *verb_location_vs_notlocation_unique_dependents_wordnet.html*: same as previous but only has verb+case pairs where the verb appears in Wordnet
 
