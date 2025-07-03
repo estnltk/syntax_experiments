@@ -1,0 +1,6 @@
+Provide the output in JSON format, where: 
+
+'1' indicates that the given Estonian word is a physical location that a person can enter into.
+'0' indicates that the word does not meet these criteria.
+
+Evaluate the following words accordingly where each word is on a separate line.

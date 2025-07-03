@@ -1,0 +1,6 @@
+Provide the output in JSON format, where:
+
+'1' indicates that the given Estonian word is a spacial direction.
+'0' indicates that the word does not meet these criteria.
+
+Evaluate the following words according to whether they serve that purpose in the given context.
