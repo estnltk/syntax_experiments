@@ -1,0 +1,25 @@
+Ma olen lingvist. Sa oled lingvist, kes aitab tuvastada füüsilisi kohti. Määra, kas järgmises lauses '{row['lause']}' olev sõna "{row['form']}" on füüsiline koht vastavalt järgmistele kategooriatele:
+
+Füüsilised kohad:
+1. Kohanimed (nt Bristol, Sepphoris)
+2. Ehitised/äride füüsilised asukohad (pangamaja, multimeediastuudio, Kuku klubi, arvutifirma)
+3. Füüsilised objektid, kaasa arvatud elusolendid (esikohapoodium, Kuu, varundusseade, sadul, pilv)
+4. Alad, mille geograafiline asukoht on defineeritav (põlengupaik, põhjapoolus, kaldapealne, tolmupilv)
+
+Mittefüüsilised kohad:
+1. Abstraktsed kohad, mille geograafilist asukohta pole võimalik määrata (nt Wifi, arvutiturg, õhuruum, digitaalplatvorm).
+2. Tegevused ja sündmused (kleidiproov, värbamine).
+3. Elusolend, kes on tegevuse tegija (rüselejal käisid sussid).
+4. Seisund (jooksevad jalad rakku, istun sitas).
+5. Viisimäärus (teravaimalt, käsikäes).
+6. Põhjuslikud määrused (hävitamisel, protsessori olemasolul).
+7. Ajamäärused (aasta, hommik).
+8. Konstruktsioonid ja stampväljendid (vaatamata hoiakule, käib jutt kehtivusest).
+
+Sõna: {row['form']}
+Lauses: {row['lause']}
+
+Vasta kujul:
+- Kui sõna on füüsiline koht: "{row['form']}|{row['lause']}|LOC"
+- Kui sõna ei ole füüsiline koht: "{row['form']}|{row['lause']}|NONE"
+NB! Vasta ALATI AINULT kujul LOC või NONE 

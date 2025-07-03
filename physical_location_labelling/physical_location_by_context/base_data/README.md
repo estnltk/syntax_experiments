@@ -10,8 +10,10 @@
 
 **gpt**: data for annotating physical locations with GPT
 * *fyysiliste_kohtade_prompt.txt*: prompt used for preliminary testing of GPT's annotation. More detailed than the prompt used for large scale annotation.
+* *fyysiliste_kohtade_prompt_lyhem.txt*: prompt used for GPT annotation. Prompt is in Estonian.
 * *gptle_test_10.csv*: csv file containing 10 sentences and words to test GPT annotation
 * *kohad_gptle.csv*:  csv file containing 1000 sentences and words in those sentences to be annotated by GPT
+* *prompt_english.txt*: English translated version of the prompt used for GPT annotation.
 
 **time**: word lists used to filter out temporal obliques. Data from Heiki-Jaan Kaalep's previous work found in the same branch under the folder *rule_based_semantic_categorisation* 
 * *ajamaarused.csv*: possible temporal obliques found by using NerTagger and TimexTagger 

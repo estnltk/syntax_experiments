@@ -1,0 +1,26 @@
+I am a linguist. You are a linguist, who helps detect physical locations. Determine whether the word "{row['form']}" in the following sentence "{row['sentence']}" is a physical location based on the following categories:
+
+Physical locations:
+1. Place names (e.g. Bristol, Sepphoris)
+2. Buildings/physical locations of businesses (bankhouse, multimedia studio, club Kuku, computer company)
+3. Physical objects, including living beings (first place podium, the Moon, backup device, saddle, cloud)
+4. Areas with a definable geographical location (scene of the fire, the North Pole, shoreline, cloud of dust)
+
+Not physical locations:
+1. Abstract locations, whose geographical location can't be determined (e.g Wifi, computer market, airspace, digital platform).
+2. Activities and events (dress rehersal, recruitment).
+3. Living being who's the performer of the action (slippers went for the scrambler).
+4. State (run legs to blisters, sit in shit).
+5. Manner adverbials (most acutely, hand in hand).
+6. Reason adverbials (in case of destruction, in the existance of a processor).
+7. Time adverbials (year, morning).
+8. Constructions and expressions (despite the attitude, talking about validity).
+
+Word: {row['form']}
+In sentence: {row['sentence']}
+
+Answer in the format:
+- If a word is a physical location: "{row['form']}|{row['sentence']}|LOC"
+- If a word isn't a physical location: "{row['form']}|{row['sentence']}|NONE"
+
+NB! ALWAYS ONLY answer in the form LOC or NONE
