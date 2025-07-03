@@ -11,7 +11,7 @@
 	* alad, mille geograafiline asukoht on defineeritav: põlengupaik, põhjapoolus, kaldapealne, tagaots, tolmupilv
 
 * loc_a: abstraktsed kohad, mille asukoht on kas ebamäärane või ei eksisteerigi
-	* ebamäärased suunad/teekonnad: liigub tsenterist eemale, ida, trajektoor, liikus ummikteel 
+	* ebamäärased suunad/teekonnad: ida, trajektoor, liikus ummikteel 
 	* nähtamatud/abstraktsed/määratlemata piirideta alad: Wifi, kvantmaailm, arvutiturg, õhuruum, digitaalplatvorm, liigub läheduses, hommikukaste, rambivalgus
 	* organisatsioonid/kollektiivid: istun valitsuses, käin ülikoolis, hokitrennis, liigun võrgustikesse, lahkun töökohalt, vormelimaailm (koolid, trennid, lasteaiad)
 	* veebisaidid, telekanalid: Delfi, Yle

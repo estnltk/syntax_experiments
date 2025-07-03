@@ -1,4 +1,4 @@
-## Labelling physical locations by context - v03
+## Labelling physical locations by context - v04
 
 The aim of this work is to develop a tagger for obliques that tags physical locations in Estonian texts. More detailed documentation can be found in each folder's README file.
 
@@ -12,7 +12,7 @@ The aim of this work is to develop a tagger for obliques that tags physical loca
 
 
 ### Version history
-**v04**: Annotating obliques in spatial cases with various freely available resources
+**v04**: Annotating obliques in spatial cases with various freely available resources. Analysing results.
 
 **v03**: second experiment. Annotating physical locations with gpt and calculating its quality.
 
