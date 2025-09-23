@@ -1,0 +1,3 @@
+* *v01_locations_by_verb.ipynb*: for finding possible physical locations by looking for words in cases denoting location for multiple verbs. Better documentation inside the file.
+* *v01_locations_by_verb_timefilter.ipynb*: for finding possible physical locations by looking for words in cases denoting location for multiple verbs where words denoting time are filtered out.
+* *v01_timetest.ipynb*: for finding possible timewords from Heiki-Jaan Kaalep's previous work with NER and Timex taggers
