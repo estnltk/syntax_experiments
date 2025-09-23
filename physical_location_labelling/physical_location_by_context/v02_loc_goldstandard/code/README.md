@@ -1,0 +1,3 @@
+* *v02_annotation_analysis.ipynb*: analyses the manual annotation of 1000 obliques found in goldstandard.csv
+* *v02_random_sample.ipynb*: takes a random sample of 1000 forms from the [v33 verb transactions database](https://github.com/estnltk/syntax_experiments/tree/verb_templates/workflows/001_verb_transactions/v33) to be annotated as a gold standard. Adds the verb phrase to ease annotation.
+* *v02_sentence_by_id_katrin.ipynb*: finds sentences the words in the gold standard are from from the Estonian Reference corpus. Code made by Katrin Tsepelina.

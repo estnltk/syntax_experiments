@@ -1,0 +1,1 @@
+* *random_sample_1000.csv*: inital random sample of 1000 forms and their verb phrases for annotating. Made with *v01_random_sample.ipynb*

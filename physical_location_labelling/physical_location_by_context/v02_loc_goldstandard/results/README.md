@@ -1,0 +1,2 @@
+* *goldstandard.csv*: 1000 manually annotated obliques in spatial cases with their forms and example phrases. Delimiter is pipe: |. Used in *v02_annotation_analysis.ipynb* in the code folder. 
+* *goldstandard.xlsx*: 1000 manually annotated obliques in spatial cases with their forms and example phrases. Data from *random_sample_1000.csv*. Annotation was done in this file.

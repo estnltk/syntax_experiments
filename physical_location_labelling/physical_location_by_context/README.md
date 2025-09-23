@@ -1,18 +1,12 @@
-## Labelling physical locations by context - v04
+## Labelling physical locations by context - v05
 
-The aim of this work is to develop a tagger for obliques that tags physical locations in Estonian texts. More detailed documentation can be found in each folder's README file.
-
-**Base_data**: data used for annotation. Includes wordlists, prompts and files to be annotated annotated.
-
-**Code**: code files for different development tasks. 
-
-**Documentation**: different types of explanatory files. Includes annotation guidelines and explanations for annotation labels. 
-
-**Results**: results obtained from running code or doing manual annotation. 
+The aim of this work is to develop a tagger that tags adverbials with a semantic type in Estonian texts. Workflow is tested on (physical) locations. More detailed documentation can be found in each folder's README file.
 
 
 ### Version history
-**v04**: Annotating obliques in spatial cases with various freely available resources. Analysing results.
+**v05**: revising wordlists created in v04. Creating a new gold standard to test how well LLMs tag all kinds of semantic types, not just physical locations.
+
+**v04**: third experiment. Annotating adverbs and obliques in spatial cases with wordlists from EKILEX. Seeing whether a significant amount of verbs prefer oblique dependents of only one semantic type.
 
 **v03**: second experiment. Annotating physical locations with gpt and calculating its quality.
 

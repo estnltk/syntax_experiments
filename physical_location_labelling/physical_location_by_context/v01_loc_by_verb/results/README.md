@@ -1,0 +1,2 @@
+* *physical_locations.csv/xlsx*: possible physical locations by each verb with their frequency in the corpus and a concreteness rating.
+* *physical_locations_timeless.csv*: possible physical locations by each verb with their frequency in the corpus and a concreteness rating but where possible time denoting words have been filtered out.
