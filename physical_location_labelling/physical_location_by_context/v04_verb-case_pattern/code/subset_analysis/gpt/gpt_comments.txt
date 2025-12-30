@@ -1,0 +1,10 @@
+potentsiaalsed süntaksi vead:
+
+1. "ta tuli Narva kandis üle piiri", peasõna: Narva, verb: kandma -> peaks olema "tulema" aga "kandis" on vist süntaksis valesti 
+2. "... kes oli varastanud kaitseliitlasest mehelt püstoli", peasõna: kaitseliitlasest (peaks olema mehelt?)
+3. " ... leedulasest bussijuhilt... ", peasõna: leedulasest (peaks olema bussijuhilt?)
+4. kui on <??> Liit siis peaks tegelikult olema mõlemad sõnad kaasatud (Euroopa Liit, Nõukogude Liit jms)
+5. "... nimetusse järve" - "nimetusse" on peasõnaks 
+6. peasõnaks on inglise keelne sõna "That's", mis on laulu pealkirjas
+
+
