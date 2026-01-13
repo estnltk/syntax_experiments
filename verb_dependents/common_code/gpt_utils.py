@@ -22,22 +22,20 @@ def in2json(input_dict:List[Dict[str, str]]):
     return json.dumps(input_dict, ensure_ascii=False)
 
 
-def user_message(text:str, phrase:str) -> Dict[str, Union[str, Dict[str, str]]]:
-    """Creates user message with role:user and content is input sentence and phrase.
-    """
-    mes ={
-            "role": "user",
-            "content": {"l": text, "c": phrase}
-            }
-    return mes
+def user_message(**kwargs) -> Dict[str, Union[str, Dict[str, str]]]:
+    """Creates user message with role:user and content from keyword arguments."""
+    return {
+        "role": "user",
+        "content": kwargs
+    }
 
 
-def assistant_message(yesno:str, short_ans:str, long_ans:str) -> Dict[str, Union[str, Dict[str, str]]]:
+def assistant_message(**kwargs) -> Dict[str, Union[str, Dict[str, str]]]:
     """Creates assistant message with role:assistant and content is yes/no, short answer and long answer.
     """
     mes = {
             "role": "assistant",
-            "content": {"a": yesno, "s": short_ans, "r": long_ans}
+            "content": kwargs
             }
     return mes
 
