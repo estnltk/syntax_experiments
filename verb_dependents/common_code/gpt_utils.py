@@ -55,12 +55,15 @@ def messages_2_str(messages:List[Dict[str, str]]):
             new_string += f"l: {l}\n"
             new_string += f"c: {c}\n"
         if mes["role"]=="assistant":
-            a = mes["content"]["a"]
-            s = mes["content"]["s"]
-            r = mes["content"]["r"]
-            new_string += f"a: {a}\n"
-            new_string += f"s: {s}\n"
-            new_string += f"r: {r}\n\n"
+            if "a" in mes["content"].keys():
+                a = mes["content"]["a"]
+                new_string += f"a: {a}\n"
+            if "s" in mes["content"].keys():
+                s = mes["content"]["s"]
+                new_string += f"s: {s}\n"
+            if "r" in mes["content"].keys():
+                r = mes["content"]["r"]
+                new_string += f"r: {r}\n\n"
     
     return new_string
 
@@ -95,10 +98,10 @@ def classify_batch(my_batch, few_shots, system_prompt, client, deployment):
         try:
             data = json.loads(raw_output)
 
-            if len(data) != len(batch):
+            if len(data) != len(my_batch):
                 raise ValueError(f"Väljundis ei ole õige arv vastuseid. Peaks olema {len(batch)} aga on {len(data)}.")
                 
-            elif len(data) == len(batch):
+            elif len(data) == len(my_batch):
                 for item in data:
                     ClassificationDict(**item)
 
