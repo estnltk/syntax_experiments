@@ -1,4 +1,4 @@
-# Näited kohakäändes olevate sõnade märgendamisel
+# Näited kohakäändes olevate sõnade märgendamisel tekkinud probleemidest
 
 ## Vormihomonüümid
 
