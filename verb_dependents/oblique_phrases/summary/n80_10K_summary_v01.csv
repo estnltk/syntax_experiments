@@ -1,2 +1,3 @@
-yes%_1,yes%_2,no%_2,yes_2_no_cnt,yes_2_no%,no_2_yes_cnt,no_2_yes%
-64.74,86.94,13.06,8,0.08,2056,20.56
+model,yes%,no%,ref_model,yes->no%,no->yes%
+1,64.74,33.34,,,
+2,86.94,13.06,1,0.08,20.56
