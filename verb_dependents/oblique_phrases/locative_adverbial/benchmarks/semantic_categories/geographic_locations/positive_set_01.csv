@@ -1,101 +1,101 @@
 sentence_id,head_id,head_loc,verb,verb_compound,morph_case,lemma,form,sentence,timex_tag,ekilex_tag,ner_tag
-11913401,19063090,12,algama,,ill,ööklubi,ööklubisse,"Ronitakse hõbedaselt läikivasse Hansabussi ja algab sõit Riiga , La Rocca ööklubisse , kus finaalkontsert peetakse .",,location,
-180141,299501,4,säilima,,in,Välis-Eesti,Välis-Eestis,"Tänu neile on Välis-Eestis säilinud arvestatav hulk perekondi , kus keele puhtuse nõue on edasi antud vanemailt lastele .",,location,LOC
-12386887,19829859,4,hargnema,,in,teemaja,teemajas,Tegevus hargnes Siberi teemajas .,,location,
-4887237,7846578,6,õpetama,,in,klubi,klubis,33aastane Ni õpetab ühes Luksemburgi klubis lapsi .,,,
-6427967,10334047,1,kiirustama,,adit,õnnetuspaik,Õnnetuspaika,Õnnetuspaika kiirustanud Soome ja Eesti päästekopterid meest enne pimeduse saabumist ei leidnud .,,location,
-19290807,29049787,5,pesitsema,,in,maakoht,maakohas,blackboy_: mina pesitsen maakohas kus pole randa aga on veekohad olemas kyll :P,,location,
-7079025,11380082,13,jooma,,in,peidupaik,peidupaigas,"Mina pidin ise oma rinnad tühjaks lüpsma , seda piima jõid mu peidupaigas rotid .",,location,
-90373,153131,4,liikuma,,in,Eesti,Eestis,"Ka nüüd liigub Eestis mehi , kes väidavad , et just nemad oskavad Venemaaga asju ajada ja läbi rääkida .",,location,LOC
-7362167,11815640,19,lõhkema,,in,paik,paikades,"Neid ju seostati pommidega , mis viimasel ajal — tšetšeenia ikka veel veniva sõja ajal — aeg-ajalt rahvarohketes paikades lõhkesid .",,location,
-59366,102298,7,pesitsema,,in,Eesti,Eestis,Peeter Raja hinnangul pesitseb juba praegu Eestis üle 2000 paari kalakurgi .,,location,LOC
-906727,1444775,5,tellima,,el,Eesti,Eestist,Nüüd tellivad nad endale Eestist lennuki järgi ja sõidavad kuhu vaja .,,location,LOC
-17981481,27361936,13,juhatama,,in,maja,majas,"Sealt uksest sisenenud külastajaid võtab vastu sekretär , kes juhatab tulija suures majas õigesse kohta .",,,
-3124190,5017287,4,võtma,kaasa,el,eramaja,eramajast,"Elvas võtsid tüdrukud eramajast kaasa lisaks väärisehetele ka 11 juukseklambrit , mille väärtus oli 12 krooni .",,location,
-7640888,12255289,9,ronima,,ill,ööklubi,ööklubidesse,"Koolipidusid korraldavad vaid paar kooli , noored ronivad ööklubidesse , tarbivad alkoholi ja narkootikume .",,location,
-1490439,2372492,6,müüma,,ill,välisklubi,välisklubidesse,""" Flora on müünud jalgpallureid välisklubidesse viie miljoni dollari eest , see on meie jaoks palju kõvem argument kui koduste meistrivõistluste võitmine . """,,alive,
-10749809,17219799,3,süttima,,in,kalamaja,Kalamajas,"Eile varahommikul Kalamajas süttinud puumajas hukkus üks elanik , neli said vigastada ja ülejäänud jäid peavarjuta .",,,
-15681750,24469459,13,pagema,,el,telemaja,telemajast,"Ma usun , mehed , et teil tasub jääda maale , sest telemajast peagi pageb viimne rott .",,,
-5950379,9552490,19,pöörduma,tagasi,adit,töökoht,töökohta,"Hamburgis tehtud uuringu põhjal selgus , et ligi 70 protsenti naistest pöörduks pärast esimese lapse sündi heameelega vanasse töökohta tagasi , tegelikkuses teeb seda aga vaid 58 protsenti värsketest emadest .",,,
-11093039,17769586,17,peitma,,in,koht,kohas,Seejärel lõhuvad kolmandad spetsiaalsete vahenditega riideeseme küljes oleva turvaseadme ning neljandad peidavad mõnes kaameraulatusest väljapoole jäävas kohas kauba kotti ja sammuvad välja .,,,
-161967,269592,11,laskma,,adit,koht,kohta,"Selliste koerte omanikud reeglina ei lase oma hoolealust ka käidavasse kohta ehk rahva sekka vabalt ringi jooksma , vaid hoiavad teda rihma otsas .",,,
-5348132,8578949,13,külastama,,adit,hukkumispaik,hukkumispaika,"Ta lisas , et 14.-15. septembril külastab büroo delegatsioon laeva hukkumispaika .",,location,
-7527628,12090178,5,võtma,kaasa,adit,seltsimaja,seltsimajja,"Gustav võttis teda kord seltsimajja kaasa , kui seal suur pidu oli ja siis ta kuulis esimest korda , kuidas orkester mängis .",,location,
-10414642,16706782,10,ajama,,in,asupaik,asupaikades,"Eestlased on maailmaseiklejad , kuid nad ajavad oma uutes asupaikades kiiresti jõulisi juuri .",,location,
-4594375,7384057,4,jälgima,,in,Tartu,Tartus,pealtvaatajat jälgis eile Tartus ülikooli spordihoones korvpalli neljandat finaalmängu,,location,ORG
-18784958,28377233,20,astuma,läbi,el,vallamaja,vallamajast,"Vallavanema sõnul on huvi eriti märgata olnud viimase poole aasta jooksul , kui igas kuus paar Tallinna ettevõtjat Kohila vallamajast läbi astub .",,location,
-10542842,16899573,4,võimutsema,,in,näitusemaja,näitusemajas,Eesti Rahva Muuseumi näitusemajas võimutseb pühapäevast saadik maalähedane jõul : jõulukrässid ja -kroonid ning rodu sarvilisi jõulusokkusid .,,,
-9886125,15860912,9,sirguma,,in,maja,majas,"Ideaalne oleks , kui lastekodulaps sirguks täiskasvanuks ühes majas .",,,
-98824,166962,40,avama,,in,Eesti,Eestis,"Ajaloo tuultesse sattunud Miksoni ( alias Edvald Hinriksson ) , Pätsu “ vaikiva ajastu ” poliitilise politsei ( polpol ) töötaja , “ saja käega mehe ” , ka “ Mikiks ” -kutsutu traagiline saatus avab tol ajal Eestis toimunu tagamaid uue nurga alt .",,location,LOC
-5052411,8108223,3,töötama,kokku,in,Narva,Narvas,Praegu töötab Narvas kolm tema ettevõtet kokku üle 200 töötajaga .,,location,LOC
-3656084,5888005,5,sõitma,ringi,in,koht,kohtades,""" Sõitsime ringi koledamates kohtades , millele võib muidugi "" kahe "" hindeks panna .",,,
-7466813,11985885,10,saatma,välja,el,kabinet,kabinetist,"Nende sõnade juures vehib ta energiliselt kätega ja saadab kabinetist välja kõik , kes tulnud olulisele paberile allkirja nõutama .",,,
-3137626,5038403,21,hoidma,kinni,in,koht,kohas,"Al-Nashiri , kes oli 12. oktoobril 2000 toimunud rünnaku peakavandaja , polnud kohtus , kuna USA hoiab teda kinni teadmata kohas .",,,
-4338953,6980009,11,evakueerima,,el,puumaja,puumajast,Esmaspäeva õhtul Leete tänavas toimunud tulekahju käigus evakueerisid päästetöötajad kahekorruselisest puumajast seitse inimest .,,location,
-8245434,13229710,13,sööma,,in,Tartu,Tartus,"Nimelt pakub Rannahotell tavatuid praekartuleid , mida viimati sõin 15 aasta eest Tartus .",,location,LOC
-12177022,19496121,22,tooma,tagasi,ill,autofirma,autofirmasse,"Jüri Kuuse sõnul saadab autofirma esindaja sellistel puhkudel sõidukit kuni piirini , võtab ekspordideklaratsioonile piiri ületamist kinnitava pitseri ja toob paberi autofirmasse tagasi .",,location,
-130033,217788,3,kõndima,,in,paik,paigas,"Kõnnime ka paigas , kuhu nende töö ja tegevus peaks lõpuks välja jõudma ehk saare saeraami ümbruses .",,location,
-3738010,6019717,30,märatsema,,in,kodukoht,kodukohas,"Meeleavaldajad on aga lubanud , et kui Kohl taas kohtumise ära jätab , läheb asi tõsiseks ja Bonni tuuakse hordide kaupa vihaseid kaevureid , kes praegu märatsevad veel oma kodukohas .",,location,
-12466788,19957184,6,kandma,,adit,Narva,Narva,"Ta oli tulnud kuu-kahe eest Narva kandis üle piiri , kaasas Soome margad ja dollarid .",,location,LOC
-10012815,16062465,1,helisema,,in,hullumaja,Hullumajas,Hullumajas heliseb telefon .,,,
-8229861,13205537,24,pesitsema,,in,klubi,klubis,"Väga imelikuks teeb asja veel see , et vanuse piirang ei ole selles klubis mitte 18 a , vaid 21 a , kuna klubis pesitseb ka kasiino .",,,
-13841208,22069929,6,astuma,sisse,ill,klubi,klubisse,"Kui organiseerunud kaunitarid esimest korda klubisse sisse astusid , jäid noormeestel lihtsalt suud lahti .",,,
-525217,827800,1,süütama,,in,Tartu,Tartus,Tartus süütas psühhiaatriahaigla kinnisest osakonnast põgenenud mees jõululaupäeva õhtul oma endise naise .,,location,LOC
-4092805,6587208,10,ehitama,,in,koht,kohtades,Neist OÜ Topkraft ehitab ebaseaduslikult koguni mitut maja eri kohtades ning ignoreerib kõiki linna ehitusjärelvalve ettekirjutusi järjepidevalt .,,,
-85546,145512,10,maksma,,in,Eesti,Eestis,"Käesolev Luup pakub välja kümme nime , kelle sõna Eestis maksab .",,location,LOC
-1969328,3140384,3,juhtuma,,ill,Narva,Narvasse,Harva juhtub Narvasse üheaegselt paarkümmend islandlast .,,location,LOC
-1547946,2463085,4,investeerima,,ill,dotcom-firma,dotcom-firmadesse,"Investeerige oma säästud dotcom-firmadesse ja teenige koos IT spetsialistidega , "" soovitavad pangandusspetsialistid San Franciscos .",,,
-16245204,25161290,7,tulistama,,in,Narva-Jõesuu,Narva-Jõesuus,"Tundmatud kurjategijad tulistasid kolmapäeva õhtul Ida-Virumaal Narva-Jõesuus automaatrelvast sõiduautot , mille juht hukkus ning kaaslane sai haavata .",,location,LOC
-1197159,1903631,26,meenutama,,ill,Eesti,Eestisse,"Isiklikult jäängi Boriss Jeltsinit mäletama kui inimest , kellel on soe ja tugev käepigistus ning kes peaagu kõigil kohtumistel meenutas oma seikluslikku ja romantilist lendu Eestisse 1991. aasta jaanuaris .",,location,LOC
-11214741,17967762,36,õhkima,,in,koht,kohas,"ETV pressiesindaja Annaliisa Sisask märgib tänast “ Pealtnägijat ” tutvustades , et eelmisel reedel Tallinnas Stockmanni kaubamajas ( fotol ) plahvatanud pomm on esimene , mille lunaraha nõudnud kurjategija oma ähvarduse teoks tegemisel õhkis avalikus kohas .",,,
-437398,683621,5,olema,ära,in,Eesti,Eestis,"Mulle näib , et Eestis on spordi väärtushinnangud paigast ära .",,location,LOC
-1815897,2890070,12,laiutama,,in,Eesti,Eestis,"Selline jõudude vahekord paneb paratamatult filmikriitikuid oigama , et Hollywood laiutab Eestis liiga palju .",,location,LOC
-2651581,4254617,9,õhkima,,in,paik,paigas,"Kohaliku politsei teatel õhkisid terroristid kütuveokid kolmes eri paigas , kuid kõik rünnakud olid suunatud Yazidi ususekti vastu , vahendas  Reutersit .",,location,
-1276691,2029060,12,vedama,,adit,koht,kohta,"Siis likvideerisid nad selle koha , vedasid ellujäänud rongiga kusagile uude kohta ja hakkasid meid taas teed mööda ajama .",,,
-2159140,3449157,2,tahtma,,ill,klubi,klubisse,Saksamaa klubisse tahan küll minna .,,,
-5700248,9142615,10,hankima,,el,klubi,klubist,Manchester Unitedi meeskonna peatreener Sir Alex Ferguson hankis Šotimaa klubist FC Motherwell 36-aastase väravavahi Andy Gorami .,,,
-12709251,20332434,6,sõidutama,,adit,viietärniöömaja,viietärniöömajja,"Limusiin sõidutab vanameistri Eesti ainsasse viietärniöömajja , vanalinnas asuvasse Park Consul Schlössle Hotelli .",,,
-4753214,7633153,10,külmuma,,in,koht,kohas,Tihti selles just eksitakse ja toru külmub nimelt selles kohas .,,,
-1307863,2077899,4,tooma,ära,el,Narva,Narvast,Me toome inimese Narvast viieks päevaks pere juurest ära .,,location,LOC
-14199124,22574077,4,passima,,in,Narva,Narvas,"Veel jõululaupäeval passis Narvas paari päeva pikkuses järjekorras ligi 240 , Koidulas 205 ja Luhamaal 100 veokit .",,location,LOC
-11346498,18179869,6,varastama,,el,hulgimüügifirma,hulgimüügifirmast,"Valgas varastasid kurjategijad esmaspäeval ühest hulgimüügifirmast 26 000 krooni , gaasipüstoli ja hulga kaupa .",,,
-15682241,24470139,15,kaduma,,ill,Tartu,Tartusse,"Kui sõjaväest tagasi tulin , meelitas Jaak Uudmäe treener , kadunud Jaan Jürgenstein mind Tartusse .",,location,
-5018678,8055643,5,ehitama,,in,koolimaja,koolimajas,Täna veel ehitavad õpilased koolimajas vedurile kabiini .,,location,
-1091423,1734506,15,juhatama,,in,asulakoht,asulakohas,"1968-76 juhatas L. Jaanits kaevamisi Sindi lähedal avastatud meie kõige varasemas , Pulli asulakohas .",,location,
-9027010,14514052,4,õpetama,,in,kabinet,kabinetis,"Ülikooli türgi keele kabinetis õpetab Gayibli 23 inimest , lisaks käib ta kodudes eratunde andmas .",,,
-67985,116943,21,vastutama,,in,Eesti,Eestis,"Kaido Kama leidis , et ennekõike hääletatakse usalduse küsimust ja seda , kes on need konkreetsed inimesed , kes vastutavad Eestis valitseva olukorra eest .",,location,LOC
-3422732,5509831,4,võtma,ette,ill,firma,firmadesse,"Tööinspektorid võtavad reide firmadesse ette ka omal algatusel , kontrollimaks näiteks töökaitse- ja ohutusnõuete , aga ka töösuhteid reguleerivate õigusaktide täitmist .",,,
-468798,735431,6,parkima,,all,parkimiskoht,parkimiskohale,Trans-pordiamet lasi töölt lahti invaliidide parkimiskohale parkinud Vene saatkonna auto teisaldanud parkimiskontrolöri Edvard Luha .,,,
-38986,67543,21,jooma,,in,klubi,Klubis,"Mulle ütles ta näiteks , et tal lisandus koolis veel üks tund , kuid samal ajal jõi teise mehega Šoti Klubis veini .",,,ORG
-243432,389359,3,eksisteerima,,in,Eesti,Eestis,"“ Kuni Eestis eksisteerivad “ taskuarmeed ” , millest pole riigijuhtidel aimugi , on kaitseministri pädevust raske hinnata .",,location,LOC
-3615681,5822435,10,rändama,,el,Eesti,Eestist,""" Ma kardan , et Kompu on mingi dokumendiga Eestist Hispaaniasse rännanud ja sealt mujale maailma levinud , "" ütles Eesti parimaid viirusespetsialiste Meelis Nigols , kes on aastaid tegelenud arvutiviiruste uurimisega .",,location,LOC
-1441530,2294102,9,passima,,in,koht,kohtades,"Tegelikus elus aga puksiirautod lihtsalt passivad ohvreid päevast-päeva kohtades , kust valesti peatunud autot saab kerge vaevaga tabada .",,,
-393364,611381,4,tulema,ära,el,Tartu,Tartust,Nii tuligi ta Tartust Jelena Poznjaki käe alt ära ja astus pealinnas balletikooli .,,location,LOC
-4809866,7723099,15,tellima,,el,arhitektuuristuudio,arhitektuuristuudiost,"AS Port Artur , kes kaubamaja haldab , tellis uue kaubamaja projekti Andres Siimu arhitektuuristuudiost Siim & Kreis .",,,
-4768762,7658590,15,avanema,,adit,kabinet,kabinetti,"Otse ruumi vastasseinas on samasugused , kuid klaasitud uksed , mis praegu avanevad peremehe kabinetti .",,,
-11208387,17956728,13,röövima,,el,Tartu,Tartust,"Sellepärast ei suudagi ma lõplikult hukka mõista neid sulisid , kes röövisid Tartust terve sularahaautomaadi .",,location,LOC
-2707330,4342727,8,peitma,,ill,partnerfirma,partnerfirmadesse,"Nagu on nüüdseks selgunud , peitis Enron partnerfirmadesse oma kaotused , hoides seda saladuses investeerijate eest .",,,
-176152,292872,10,sadama,,in,Eesti,Eestis,"Põllumeeste jaoks oli ilm halb juba mais , kui Eestis sadas keskmiselt vaid pool kuunormi ( 22 mm tavalise 45 asemel ) .",,location,LOC
-5699908,9142079,5,jälgima,,in,kalamaja,Kalamajas,Aasta jooksul jälgis võttegrupp Kalamajas Väike-Patarei 3 asuva puitmaja renoveerimistöid ning käis uurimas puitmajade seisukorda naaberriikides .,,,
-8469148,13574349,7,põrkama,kokku,in,koht,kohas,"Sõmermaa lisas , et täpselt samas kohas , kus nüüd ränk õnnetus juhtus , olid talvel kokku põrganud kaks autot .",,,
-2866581,4596834,12,väljuma,,ill,Tartu,Tartusse,Diiselrong number DR1BJ ( liin 0212 ) väljub kell 14.42 Tallinnast Tartusse .,,location,LOC
-3482511,5607857,3,vaatama,ringi,in,kalamaja,Kalamajas,""" Vaadake Kalamajas ringi , kõik kohad on prügihunnikuid täis , "" soovitavad nad .",,,
-8962889,14409047,18,mahtuma,ära,adit,peokoht,peokohta,"Esimest korda kolis Nõmme gümnaasium linnahalli sünnipäeva pidama viis aastat tagasi , kui selgus , et varasemasse peokohta - Sakala keskusesse - ei mahu enam kõik pidulised ära .",,,
-160707,267403,3,süttima,,in,Eesti,Eestis,Mullu süttis Eestis mitu tulekahju löökidest TV-antennidesse .,,location,LOC
-9402534,15098275,2,võtma,kaasa,el,suusaklubi,suusaklubist,Tartu suusaklubist võttis Teppan kaasa veel Kairit Sikkali ja Agris Ambrosi .,,,
-11801824,18888066,23,sõitma,edasi,adit,kontserdipaik,kontserdipaika,"Esialgu oli ta plaaninud Eestisse tulla neljamehelise kaaskonnaga , kuid et teised olnud kontserdist liialt väsinud , sõitnud nad otse edasi järgmisesse kontserdipaika Poola .",,,
-164592,274111,25,vestlema,,in,kabinet,kabinetis,"Paar tundi hiljem loobus Aleksandri sõbratar Ljudmila oma esialgsetest ütlustest : “ Eelmise seletuse andsin politseitöötajate sõnade järgi , kes vestlesid minuga Tallinna politseiprefektuuri kabinetis nr. 407. ”",,,
-12305831,19700389,6,minema,ära,ill,Narva,Narvasse,Telepilt läheb nüüd hoopis ära Narvasse .,,location,
-8029088,12883575,9,hankima,,el,maja,majast,Teisema ülalpidamise oli ta hankinud linna naiste kooskäimise majast .,,,
-6468921,10402204,6,toimima,,in,Narva,Narvas,Seni on venekeelne grupp toiminud Narvas ja Jõhvis .,,location,LOC
-6794549,10931476,2,lubama,,adit,majatiib,majatiiba,"Uude majatiiba lubab Uus Sakala rajada kinosaale ja kontserdiruume , hotelle ega büroosid majja ei tule .",,location,
-14677647,23139190,12,toimuma,,ill,firma,firmadesse,"REEDEL , 1. Juunil toimub Tallinnas eelkõige tudengitele suunatud ekskursioon turu-uuringu firmadesse ja statistikaametisse .",,,
-5706049,9152411,14,edenema,,in,töökoht,töökohas,"Kujutle , et kohtud endise kolleegiga ja kõneled , kui hästi sul uues töökohas asjad edenevad .",,,
-1312176,2084907,9,pöörduma,tagasi,all,Eestimaa,Eestimaale,"Juba paari kuu pärast pöörduvad mitmed peolised tagasi Eestimaale , kuid nende südameisse jaab soe mälestus kaugel lõunamaal peetud Eesti peost .",,location,LOC
-7661336,12284177,1,andma,üle,in,erakabinet,Erakabinetis,Erakabinetis andis president üle oma hilinenud jõulukingitused - kübaranõela ja Walt Whitmani “ Leaves of Grass ” eritrüki .,,,
-2269578,3633232,6,tunglema,,in,postimaja,postimajas,"Sajad inimesed tunglesid eile Tallinna postimajas , et saada olümpiavõitja Andrus Veerpalult tema margi esitlusel autogrammi .",,location,
-12946583,20710932,5,sadama,maha,in,Lääne-Eesti,Lääne-Eestis,Nädal hiljem aga sadas Lääne-Eestis maha paks lumi .,,location,LOC
-10700263,17146871,4,pooma,üles,in,elumaja,elumajas,Tallinnas Sõpruse puiestee elumajas poos end üles 1972. aastal sündinud Juri .,,location,
-5363591,8602930,8,jalutama,ringi,in,Eesti,Eestis,""" Seni arvasid piiritagused ratturid , et Eestis jalutavad ringi jääkarud .",,location,LOC
 5223906,8379920,13,sokutama,,ill,koht,kohtadesse,Tulevärgi korraldajad usaldasid iseenda pürotehnilisi oskusi ja sokutasid tuldpurskavaid asjandusi terrassil kõikvõimalikesse kohtadesse .,,,
-1975901,3150973,2,pagema,,el,tapamaja,tapamajast,"Ka tapamajast pagenud loomale kaasa-elamine - naaber , kas olete kuulnud , neid jahitakse helikopteriga !",,location,
+13075735,20922853,10,mahtuma,ära,ill,ööklubi,ööklubisse,"Uskumatu , milline staarimeri mahtus ära ühte tavalisse Tallinna ööklubisse .",,location,
+4365861,7023072,13,eksisteerima,,in,asukoht,asukohas,"Kolmandaks tuvastamisest , et vara ikkagi veel eksisteerib tagastamist väärival kujul endises asukohas .",,location,
+2090036,3335330,23,külastama,,adit,varjupaik,varjupaika,""" Tüdrukud oskasid nii ilusti küsida , et ma ei saanud ära öelda , "" sõnas mõned päevad enne kontserti Kauge tänava varjupaika külastanud Reet Linna .",,location,
+9721802,15598745,20,lubama,,ill,supeluskoht,supeluskohtadesse,"Et aga nüüd igalpool väga palju haigeid on olemas , kelle elukutse ehk varandusline seisukord mitte ei luba kallistesse supeluskohtadesse Kuresaare ja Haapsalu tulla , siis näib enam kui kohane olevat tungivale tarvele vastu tulla ja suureviisilist meremuda väljasaatmist korraldada , nimelt Tallinna , Peterburi , Riiga , Narva , ka Moskvasse .",,,
+300625,472314,6,esinema,,in,Aafrika,Aafrikas,Troopilisi rohtlaid ehk savanne esineb Aafrikas ja Lõuna-Ameerikas .,,location,LOC
+11386231,18245156,5,hankima,,el,tapamaja,tapamajast,"Jaapanis hankisid doktor Frankensteinid tapamajast ühe lehma kümme munarakku , vahetasid nende tuumad teise lehma omade vastu ja istutasid kolmandasse .",,location,
+7311602,11735889,14,eksponeerima,,in,ööklubi,ööklubides,"Ja seda ta oli : inimtaies , kes end publikule eksponeeris põhiliselt Londoni ööklubides .",,location,
+5823071,9343474,4,sõitma,ringi,in,Kagu-Eesti,Kagu-Eestis,Sõitsin koos nendega Kagu-Eestis ringi ja kohtusime paljude kohalike inimestega .,,location,LOC
+12109039,19385719,23,koolitama,,in,teatristuudio,teatristuudios,"Kuna Jack oli valmis tegema ükskõik mida , et jalga filmistuudio ukse vahele saada , läks ta Metro-Goldwyn-Mayerisse jooksupoisiks ning koolitas end teatristuudios .",,location,
+340153,525756,32,pöörduma,tagasi,adit,sünnikoht,sünnikohta,"Asjadel näib olevat jõud , mis paneb nad ringlema ja omaniku juurde ühel või teisel moel tagasi tulema nagu religioossele ja moraalsele käsitlusele kohale : hing ja vaim pöörduvad tagasi oma sünnikohta ( Godelier 1999 : 15 ) .",,location,
+161967,269592,11,laskma,,adit,koht,kohta,"Selliste koerte omanikud reeglina ei lase oma hoolealust ka käidavasse kohta ehk rahva sekka vabalt ringi jooksma , vaid hoiavad teda rihma otsas .",,,
+6221656,9992956,17,paigutama,,all,töökoht,töökohale,""" Me oleme samuti edendanud korruptsiooniga võitlemise projekti seeläbi , et paigutasime 70 protsenti linnaametnikest teisele töökohale .",,,
+6091475,9777979,11,teatama,,ill,internetiotsingufirma,internetiotsingufirmasse,"Lucovsky kirjeldas , et teatas 2004. aasta novembris Ballmerile lahkumisest internetiotsingufirmasse .",,,
+2866581,4596834,12,väljuma,,ill,Tartu,Tartusse,Diiselrong number DR1BJ ( liin 0212 ) väljub kell 14.42 Tallinnast Tartusse .,,location,LOC
+10338296,16587950,15,mahtuma,ära,ill,klubi,klubisse,"Aivar Meos pidu korraldavast firmast Kosmos Control kardab , et kõik soovijad ei mahu klubisse ära .",,,
+12030560,19255505,11,helisema,,in,Eesti,Eestis,"Selle tähistamiseks ning Vabadussõjas langenute mälestuseks helisevad kell 10.30 kogu Eestis kirikukellad , mälestusmärkide ja langenute kalmude juurde pannakse pärgi ning kaitsejõudude üksustes peetakse hardushetk .",,location,LOC
+2767383,4438079,1,sadama,,in,Põhja-Eesti,Põhja-Eestis,Põhja-Eestis sajab lund ja on tuisku .,,location,LOC
+713402,1135987,10,võtma,,ill,Aafrika,Aafrikasse,"Tõniste , keda kolleegid arstina väga hindavad , oli Aafrikasse minekut võtnud kui seiklust .",,location,LOC
+4792805,7696825,19,kõndima,,adit,kabinet,kabinetti,"Samas ei saa mingil moel vabandada olukorda , kus mingisugused kontorirottidest sotsiaaltöötajad kõnnivad täiesti süüdimatult keset tööaega doktori kabinetti ja mugistavad seal veel peaaegu pool tundi naeru .",,,
+5018678,8055643,5,ehitama,,in,koolimaja,koolimajas,Täna veel ehitavad õpilased koolimajas vedurile kabiini .,,location,
+15681750,24469459,13,pagema,,el,telemaja,telemajast,"Ma usun , mehed , et teil tasub jääda maale , sest telemajast peagi pageb viimne rott .",,,
+1787403,2845065,10,kõndima,,in,Tartu,Tartus,"Kalats^ov kõndis Simonovilt edasimüümiseks saadud plastilise lõhkeainega Tartus Turu 6 asuvasse restorani McDonalds , kus pidi selle müümiseks kohtuma talle tundmatu ja ennast Andreiks nimetanud isikuga .",,location,LOC
+1189626,1891311,6,arenema,,in,Narva,Narvas,""" Üllatas see , et Narvas arenevad sündmused väga kiiresti , "" ütles Arjakas .",,location,LOC
+1441530,2294102,9,passima,,in,koht,kohtades,"Tegelikus elus aga puksiirautod lihtsalt passivad ohvreid päevast-päeva kohtades , kust valesti peatunud autot saab kerge vaevaga tabada .",,,
+7466813,11985885,10,saatma,välja,el,kabinet,kabinetist,"Nende sõnade juures vehib ta energiliselt kätega ja saadab kabinetist välja kõik , kes tulnud olulisele paberile allkirja nõutama .",,,
+19224103,28987570,13,vastutama,,in,kinnipidamiskoht,kinnipidamiskohtades,Alates vangistusseadustiku jõustumisest 1. detsembrist möödunud aastal vastutab Sotsiaalministeerium tervishoiukorralduse eest meie kinnipidamiskohtades .,,location,
+4338953,6980009,11,evakueerima,,el,puumaja,puumajast,Esmaspäeva õhtul Leete tänavas toimunud tulekahju käigus evakueerisid päästetöötajad kahekorruselisest puumajast seitse inimest .,,location,
+12946583,20710932,5,sadama,maha,in,Lääne-Eesti,Lääne-Eestis,Nädal hiljem aga sadas Lääne-Eestis maha paks lumi .,,location,LOC
+112158,188439,12,soovima,,ill,Eesti,Eestisse,"Nii Euroopas kui Ameerikas on küll ja küll mehi , kes Eestisse tulla sooviksid .",,location,LOC
+14041779,22356141,2,tervitama,,in,peatuspaik,peatuspaigas,"Igas peatuspaigas tervitasid tuletoojaid kohalikud puhkpilliorkestrid , lauljad-tantsijad ja paigapealsed elanikud .",,location,
+8807767,14140432,29,kiirustama,,adit,katlamaja,katlamajja,"Kuni vanem vend kuulas loengut hulkade teooriast , uuris Luik kodus mõne punapõskse kursusekaaslase sinusoide , ja kui Silver õhtul kontrolltöö taha istus , kiirustas tema Siniaasa juurde katlamajja kodumaa-armastuse seminari .",,location,
+960596,1530542,2,helisema,,in,kabinet,kabinetis,Valvearsti kabinetis heliseb telefon :,,,
+7318402,11747902,2,askeldama,,in,maja,majas,Selles majas askeldab peale Kristi Nagla ja Riina Siigi veel vallavalitsuse elamumajanduse spetsialist Lea Madissov .,,,
+83856,142682,21,tõstma,välja,el,maja,majast,"Ometi leidis muuseum sellest vähesest ajutise toa president Pätsist jäänud maisele varandusele , mille presidendi sugulased pärast omandiõiguse taastamist tagasisaadud majast välja tõstsid .",,,
+5950379,9552490,19,pöörduma,tagasi,adit,töökoht,töökohta,"Hamburgis tehtud uuringu põhjal selgus , et ligi 70 protsenti naistest pöörduks pärast esimese lapse sündi heameelega vanasse töökohta tagasi , tegelikkuses teeb seda aga vaid 58 protsenti värsketest emadest .",,,
+9728196,15608718,5,tellima,,el,arvutifirma,arvutifirmast,"Kui firmajuht tellib endale arvutifirmast virtuaalbüroo paketi , siis ei ole tal enam vaja karta , et tegemist on katsetusjärgus oleva riist- ja tarkvaraga .",,,
+3958038,6373939,5,kerkima,,all,elumaja,elumajale,"Nii on ruumivajadusest kerkinud elumajale peale teine korrus ( kus on ka üks Pirruse töötuba ) , ühte otsa talveaed ( see sai alguse Ajakirjandusmajast ajakirja Pioneer aknalaualt ja täieneb iga soojamaa-reisi järel Vahemere-äärsete taimedega ) ning õue peale ait , kus ühel pool on Pirruse ja teisel pool Jüri töötuba .",,location,
+7260170,11674762,27,olema,ära,el,Tartu,Tartust,"Et ta teisi oskab , käib ta Soomes , Rootsis , Prantsusmaal , Itaalias jne loenguid pidamas , sõna levitamas ja raha teenimas ning on seepärast Tartust palju ära .",,location,LOC
+62802,107889,2,rippuma,,in,elukoht,elukohas,"Mooni elukohas ripuvad abielluda soovijate fotod suure saali seintel stendidel , Moon ise käib seal ringi ja paneb fotode järgi inimesi paari .",,location,
+12115167,19395974,9,minema,edasi,ill,välisklubi,välisklubisse,"« Võib-olla lähen kuhugi edasi , mõnda teise välisklubisse , aga kõigepealt pean uurima , mis täpselt põlvel viga .",,alive,
+3738010,6019717,30,märatsema,,in,kodukoht,kodukohas,"Meeleavaldajad on aga lubanud , et kui Kohl taas kohtumise ära jätab , läheb asi tõsiseks ja Bonni tuuakse hordide kaupa vihaseid kaevureid , kes praegu märatsevad veel oma kodukohas .",,location,
+4729326,7597763,5,sulgema,,adit,toimumispaik,toimumispaika,"Politsei sulges juurdepääsud plahvatuse toimumispaika , sündmuskohal tegutsevad eriteenustuste töötajad .",,,
+11642337,18636252,8,jalutama,,adit,mängupaik,mängupaika,"“ Vooru eel jalutab kogu naiskond üheskoos mängupaika , õhtul naaseme hotelli juba bussiga . ”",,location,
+2707330,4342727,8,peitma,,ill,partnerfirma,partnerfirmadesse,"Nagu on nüüdseks selgunud , peitis Enron partnerfirmadesse oma kaotused , hoides seda saladuses investeerijate eest .",,,
+12354189,19779873,6,valvama,,in,kaubamaja,Kaubamajas,Politsei andmetel vägivallatsesid kolm Tallinna Kaubamajas valvanud turvameest 25 . veebruaril 26-aastase Indreku kallal .,,location,ORG
+3754082,6046169,39,võtma,välja,el,laevafirma,laevafirmast,""" Riigile on kindlasti vaja just niipalju raha , kui seda on võimalik välja võtta ilma ettevõtet kahjustamata , "" nentis Sarnet , lisades , et õiguslikult on see lubatud , sest varasematel aastatel pole riik talle kuuluvast laevafirmast kasumit välja võtnud .",,location,
+10525927,16874878,15,olema,alles,in,firmapood,firmapoes,"1997. aasta oktoobris müügile ilmunud raamat on tänaseks kadunud kõikidest raamatukauplustest , vaid kirjastuse firmapoes on veel alles viimased eksemplarid .",,location,
+7501728,12043485,17,peitma,,adit,kultuurimaja,kultuurimajja,"Looduse mäng oli tõepoolest algamas , vaid meie riskisime teele asuda , ülejäänud seltskond peitis ennast kultuurimajja .",,location,
+2001150,3192394,8,kavandama,,ill,firma,firmasse,"Töökohavahetus on sageli konfidentsiaalne protsess ; teise firmasse tööleminekut kavandavad inimesed pole reeglina huvitatud sellest , et nende plaan enne realiseerimist laiemale avalikkusele teatavaks saaks .",,,
+14414113,22829027,18,vedama,,adit,kinnimaja,kinnimajja,"Mis politsei , tahan ma teada , Reformierakond on kommunistliku taustaga organisatsioon , miks politsei seda bandet kinnimajja ei vea ?",,location,
+5700248,9142615,10,hankima,,el,klubi,klubist,Manchester Unitedi meeskonna peatreener Sir Alex Ferguson hankis Šotimaa klubist FC Motherwell 36-aastase väravavahi Andy Gorami .,,,
+7109809,11434459,14,kõndima,,adit,kohtumispaik,kohtumispaika,"See oli ehk pisut ennatlik tegu , aga hoopis rahulikumalt kõndisin üle silla kohtumispaika , tellisin seljankasupi , sõin selle ära ja süütasin sigareti .",,location,
+13143495,21030400,6,tulema,tagasi,adit,majake,majakesse,"Kuni käis uksepauk ja Tim majakesse tagasi tuli , siis alles lasin oma kehal rahulikult mõnudesse lennata .",,location,
+3007112,4823402,15,passima,,in,istumiskoht,istumiskohas,"Loomade turvakodu perenaine Kaja Kübar kirjutas , et hallõgijad passivad ka vihmaga oma tavalises istumiskohas .",,,
+10020315,16074206,9,tervitama,,in,keskpaik,keskpaigas,"Laulja James Hetfield tervitas kõiki neid umbes kontserdi keskpaigas , kui ta lihtsalt ja selgelt konstateeris , et ka ansambel tuli Eestisse kohtuma oma fännidega , värskendama nende muljet vanadest lemmiklauludest .",,,
+3085545,4953035,5,pesema,,in,veevõtukoht,veevõtukohtades,"Naised pesevad juukseid avalikes veevõtukohtades , lapsed jooksevad paljajalu lehmakookidega kaetud tänavatel .",,,
+14264943,22644386,21,passima,,in,telestuudio,telestuudios,""" Mu enda kodu on üsna samas võtmes , "" selgitab ta , et mõni toonivalik passib noorele näitlejatarile võib-olla telestuudios vaat et pareminigi .",,location,
+13714347,21913471,20,ootama,,ill,koduklubi,koduklubisse,"Eesti koondise ääremängija Andre Pärna jaoks on tänasel kohtumisel veidi omalaadne alatoon - pärast matši Prantsusmaaga ootab teda tagasisõit koduklubisse Leuvenisse , kus ta pole tänavu veel kordagi võidurõõmu maitsnud .",,alive,
+8229861,13205537,24,pesitsema,,in,klubi,klubis,"Väga imelikuks teeb asja veel see , et vanuse piirang ei ole selles klubis mitte 18 a , vaid 21 a , kuna klubis pesitseb ka kasiino .",,,
+1969328,3140384,3,juhtuma,,ill,Narva,Narvasse,Harva juhtub Narvasse üheaegselt paarkümmend islandlast .,,location,LOC
+16563375,25545165,5,naasma,,adit,arestimaja,arestimajja,"Saagim naasis kell kuus arestimajja ja tegi Kenderile selgeks : kui ta kõigile paberitele ilusasti autogrammi annab , saab ta välja .",,location,
+4125309,6640444,18,kolima,,el,ajakirjandusmaja,Ajakirjandusmajast,-Tallinnasse Rocca al Mare lähistele ehitatakse 170 miljonit krooni maksev kaubanduskeskus -Eesti Päevaleht kolib sügisel Ajakirjandusmajast RET-i kvartalisse,,,
+7113689,11442002,9,ronima,,ill,maja,majasse,""" Eks sa näe , misukesed maivanderid mo majasse ronivad , "" naeris Aadam .",,,
+5699908,9142079,5,jälgima,,in,kalamaja,Kalamajas,Aasta jooksul jälgis võttegrupp Kalamajas Väike-Patarei 3 asuva puitmaja renoveerimistöid ning käis uurimas puitmajade seisukorda naaberriikides .,,,
+10012815,16062465,1,helisema,,in,hullumaja,Hullumajas,Hullumajas heliseb telefon .,,,
+3687785,5938852,5,ootama,,ill,maja,majadesse,Eelkõige ootab firma neisse majadesse noori peresid .,,,
+6663134,10721341,2,tunglema,,in,kaubamaja,kaubamajas,"Tallinna kaubamajas tunglesid eile sajad lapsed , kes võistlesid spinnerite ehk vurride keerutamises .",,location,
+8962889,14409047,18,mahtuma,ära,adit,peokoht,peokohta,"Esimest korda kolis Nõmme gümnaasium linnahalli sünnipäeva pidama viis aastat tagasi , kui selgus , et varasemasse peokohta - Sakala keskusesse - ei mahu enam kõik pidulised ära .",,,
+1377429,2190595,5,jõudma,,adit,Narva,Narva,""" Kust see heroiin Narva jõuab ? """,,location,LOC
+8939749,14369630,18,askeldama,,in,paik,paigus,"Ja kõik need erivanused Tootsid , Kiired ja Teeled askeldavad korraga , ühel ajal , kuid eri paigus .",,location,
+10076751,16164680,9,käima,,ill,emafirma,emafirmasse,"Iga raamatupidaja teab , kuidas käib näiteks tütarfirmast emafirmasse kasumi väljapumpamine .",,location,
+6239514,10021775,10,esitlema,,in,filmiklubi,filmiklubis,Oma varasemaid töid esitleb Peter Greenaway ka Briti Nõukogu filmiklubis 20. jaanuaril kell 17.,,alive,
+38986,67543,21,jooma,,in,klubi,Klubis,"Mulle ütles ta näiteks , et tal lisandus koolis veel üks tund , kuid samal ajal jõi teise mehega Šoti Klubis veini .",,,ORG
+17561,30188,3,lahkuma,,el,Eesti,Eestist,"“ Oleksin Eestist lahkunud tagasi vaatamata , ” ohkab tänaseks juba neli aastat siin elanud Benton ( 51 ) .",,location,LOC
+645630,1025517,11,jalutama,,in,majahoov,majahoovides,"Anne Veski sõnul pole miilitsaid just igas trepikojas , kuid majahoovides jalutab neid ringi päris palju .",,,
+8028057,12881683,5,tervitama,,in,peamaja,peamajas,"Natsiooni väikeses tänavanurgale kiilutud peamajas tervitas meid umbes kahekümneaastane noormees , kes rääkis suurepärast ladina keelt .",,location,
+11801824,18888066,23,sõitma,edasi,adit,kontserdipaik,kontserdipaika,"Esialgu oli ta plaaninud Eestisse tulla neljamehelise kaaskonnaga , kuid et teised olnud kontserdist liialt väsinud , sõitnud nad otse edasi järgmisesse kontserdipaika Poola .",,,
+12177022,19496121,22,tooma,tagasi,ill,autofirma,autofirmasse,"Jüri Kuuse sõnul saadab autofirma esindaja sellistel puhkudel sõidukit kuni piirini , võtab ekspordideklaratsioonile piiri ületamist kinnitava pitseri ja toob paberi autofirmasse tagasi .",,location,
+7362167,11815640,19,lõhkema,,in,paik,paikades,"Neid ju seostati pommidega , mis viimasel ajal — tšetšeenia ikka veel veniva sõja ajal — aeg-ajalt rahvarohketes paikades lõhkesid .",,location,
+19290807,29049787,5,pesitsema,,in,maakoht,maakohas,blackboy_: mina pesitsen maakohas kus pole randa aga on veekohad olemas kyll :P,,location,
+1716762,2732936,18,pakutama,,in,spordiklubi,spordiklubides,15aastase treeneristaazhiga Zhanna Soo arvates peaks liikumisstiilide virvarrist endale sobivaima leidmiseks lugema hoolikalt läbi kõik ajakirjanduses ning spordiklubides pakutavad treeningmeetodeid tutvustavad kirjatükid .,,location,
+11464305,18366406,11,käima,ringi,in,stuudio,stuudios,"Teleseriaali “ Siperian nero ” heitunud näitlejad käisid YLE TV2 stuudios ringi , sest röövkraaded olid sealt öö jooksul lisaks paarile arvutile viinud ka vuntsid ja parukad .",,location,
+8156093,13092292,13,pöörduma,tagasi,all,koht,kohale,""" Kunagi kommunismi poolt rõhutud Ida-Euroopa riigid pöörduvad lõpuks tagasi oma seaduslikule kohale Euroopas , mis on rajatud demokraatlikele väärtustele , õiguslikkusele ja austusele inimõiguste vastu .",,,
+1490439,2372492,6,müüma,,ill,välisklubi,välisklubidesse,""" Flora on müünud jalgpallureid välisklubidesse viie miljoni dollari eest , see on meie jaoks palju kõvem argument kui koduste meistrivõistluste võitmine . """,,alive,
+8186737,13140546,10,naasma,,el,Aafrika,Aafrikast,"Terastrossina sitketest naistest hoopis viletsamast puust on ka nende Aafrikast naasnud misjonärist vend Jack , kes ei tõusegi päriselt jalule , on aga sellegipoolest sümpaatne inimene .",,location,LOC
+35534,61412,11,üürima,,in,turvamaja,turvamajas,"Leena , nagu teda kutsutakse , üürib korterit Keemia tänava turvamajas ja jälgib hoolega poja tegemisi .",,,
+3077957,4940694,10,jagama,,in,asupaik,asupaigas,"Abilinnapea Kalev Kallo sõnul jagab Pirita linnaosa valitsus praeguses asupaigas , Merivälja tee 24 , mitme äriettevõtte ja korteriga hoonet , mis ei vasta ruumijaotuse ja arhitektuurse lahenduse poolest tänapäevase haldusüksuse vajadustele .",,location,
+18784958,28377233,20,astuma,läbi,el,vallamaja,vallamajast,"Vallavanema sõnul on huvi eriti märgata olnud viimase poole aasta jooksul , kui igas kuus paar Tallinna ettevõtjat Kohila vallamajast läbi astub .",,location,
+12546993,20080848,7,magama,,in,arestimaja,arestimajas,Purjus Kaja magas end kõigepealt Võru arestimajas kaineks .,,location,
+6903959,11094287,15,võtma,kaasa,ill,stuudio,stuudiosse,"Kui isa tema julgusest kuulda saab , küllap ta võtab siis tütre koos endaga stuudiosse kaasa , üks asjalik abiline kulub talle kindlasti ära .",,location,
+5170549,8295426,8,jalutama,,adit,tapamaja,tapamajja,""" Kui 28.000 lehma jalutas 1999. aastal tapamajja , siis oli küsimus , kuidas põllumajandus üldse säilitada , "" ütles Padar .",,location,
+5346272,8576234,8,treenima,,in,alpimajake,alpimajakeses,""" Küsige Myllylä käest , miks ta alpimajakeses treenib , "" laiutas Alsgaard käsi küsimusele , miks tema ei ole hõreda õhu käes vormikõverat üritanud üles keerata .",,,
+8469148,13574349,7,põrkama,kokku,in,koht,kohas,"Sõmermaa lisas , et täpselt samas kohas , kus nüüd ränk õnnetus juhtus , olid talvel kokku põrganud kaks autot .",,,
+5059302,8119855,14,kihutama,,adit,elumaja,elumajja,"Ta on hoidnud kaamerat õlal Austraalias ja Polüneesias , kihutanud koos pommirühmaga varisenud elumajja , roninud ( koos sarmika mustalokilise leedu madrusega ) 52 meetri kõrgusele laevamasti otsa , et sipelgatena siblivatest kursantidest parema rakursi saaks .",,location,
+657594,1045060,7,tõstma,välja,el,elumaja,elumajast,"Omanikud tõstsid ebaseaduslikult Tallinnas Meriväljal asuvast elumajast üürnikud välja , kuid politsei väidab , et ei saa kannatanuid millegagi aidata .",,location,
+1797806,2862323,5,lõhkema,,in,elumaja,elumajas,TUNDMATU : Pae tänava elumajas lõhkenud pommi päritolu uurimine võtab aega,,location,
+7443110,11950647,34,resideeruma,,in,maja,Majas,"Kaks peamist üritustesarja kandsid nimesid Hüpnytro Soundsystem ( Tõnso , Saaremets , Lange ) , mis toimus peamiselt RESTKOS , ja Heven Offbeats ( Tero , Drushkov ) , mis resideerus enamasti Kodulinna Majas .",,,ORG
+1547946,2463085,4,investeerima,,ill,dotcom-firma,dotcom-firmadesse,"Investeerige oma säästud dotcom-firmadesse ja teenige koos IT spetsialistidega , "" soovitavad pangandusspetsialistid San Franciscos .",,,
+3725480,5999418,18,kolima,,el,Narva,Narvast,"Ainult niipalju , et seal mainitud Igor Peter Belokon oli samuti pärnulane , vist küll alles sõjapäevil Narvast Pärnusse kolinud , Hindre kooli- ja malekaaslane .",,location,LOC
