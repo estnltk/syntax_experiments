@@ -2,11 +2,7 @@ import os
 import sys 
 import json
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../../../../common_code")))
-from gpt_utils import *
-
-def in2json(sisend):
-    return json.dumps(sisend, ensure_ascii=False)
+from common_code.gpt_utils import *
 
 
 SYSTEM_PROMPT = """
