@@ -202,6 +202,6 @@ FEW_SHOTS = [
 ]
 
 
-FEW_SHOTS_STR = messages_2_str(FEW_SHOTS)
+FEW_SHOTS_STR = few_shot_dialog_to_text(FEW_SHOTS)
 
 

@@ -47,7 +47,7 @@ ALIVE_FEW_SHOTS = [
             assistant_message(a="yes", r="'kes' refers to human."),
 ]
 
-ALIVE_FEW_SHOTS_STR = messages_2_str(ALIVE_FEW_SHOTS)
+ALIVE_FEW_SHOTS_STR = few_shot_dialog_to_text(ALIVE_FEW_SHOTS)
 
 
 
@@ -130,7 +130,7 @@ ABSTRACT_FEW_SHOTS = [
     
 ]
 
-ABSTRACT_FEW_SHOTS_STR = messages_2_str(ABSTRACT_FEW_SHOTS)
+ABSTRACT_FEW_SHOTS_STR = few_shot_dialog_to_text(ABSTRACT_FEW_SHOTS)
 
 
 
@@ -171,5 +171,6 @@ TIME_FEW_SHOTS = [
             assistant_message(a="no", r="Situation not time."),
 ]
 
-TIME_FEW_SHOTS_STR = messages_2_str(TIME_FEW_SHOTS)
+TIME_FEW_SHOTS_STR = few_shot_dialog_to_text(TIME_FEW_SHOTS)
+
 
