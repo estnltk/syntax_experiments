@@ -4,6 +4,9 @@ import json
 
 from common_code.gpt_utils import *
 
+def in2json(sisend):
+    return json.dumps(sisend, ensure_ascii=False)
+
 
 SYSTEM_PROMPT = """
 You are a classification assistant.
