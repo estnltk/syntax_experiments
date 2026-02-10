@@ -2,7 +2,9 @@
 
 **01_workflow_with_nertimex:** - workflow to get base data in the database
 
-**02_add_n80_data:** - middle step to merge "section" data with spatial_obl table and assign section (n80 etc)
+**02_add_n80_data:** - middle step to merge "section" data with spatial_obl table and assign section (n80, n20 etc)
+
+**03_make_n20_dataset:** - creating dataset from n20 examples
 
 **03_make_n80_dataset:** - creating dataset from n80 examples
 
