@@ -158,3 +158,62 @@ TIME_FEW_SHOTS = [
 TIME_FEW_SHOTS_STR = few_shot_dialog_to_text(TIME_FEW_SHOTS)
 
 
+
+ORG_SYSTEM_PROMPT = """
+You are a classification assistant.
+Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to an organization in the context of the sentence.
+Ask internally: In the context of this sentence, does the phrase denote an institution acting or capable of acting, rather than merely a place?
+Criteria for organization:
+- An entity that can function as a collective decision-maker or actor.
+- Consists of people in a structured system
+- Can act, decide, fund, regulate, employ, announce, or govern
+- Exists beyond just a physical building, location, venue or general environment
+- Is NOT an action (toimetamine, toetamine, rahastamine, etc) .
+
+Analyse the given criteria, analyse the 'few_shots' examples and generalise. Ignore capitalization. Do not assume that every school, hospital, bank, or university is automatically an organization — context determines meaning.
+Then process the list called 'batch'.
+
+Output JSON requirements:
+- Respond strictly with an array of JSON objects, one object per 'batch' item.
+- The JSON array must be in the exact same order as the batch items.
+- Response must be without markdown or comments.
+- Each output JSON must have:
+  "a": "yes" (organization) or "no" (not organization)
+"""
+
+ORG_FEW_SHOTS = [
+            user_message(l="Riik andis ülikoolile raha .",c="ülikoolile"),
+            assistant_message(a="yes", r="Organization received money."),
+    
+            user_message(l="Ma käin ülikoolis loengus.", c="ülikoolis"),
+            assistant_message(a="no", r="Physical location."),
+    
+            user_message(l="Ministeeriumis otsustati seadust muuta.", c="Ministeeriumis"),
+            assistant_message(a="yes", r="Organization making changes."),
+    
+            user_message(l="Ta ootas haiglas arsti.", c="haiglas"),
+            assistant_message(a="no", r="Physical location"),
+
+            user_message(l="Nõukogu on siiamaani lähtunud investeeringute toetamisel ühest põhimõttest.", c="toetamisel"),
+            assistant_message(a="no", r="An action that the organization takes."),
+
+            user_message(l="Noored käisid Suusaliidu kulul puhkusel.", c="kulul"),
+            assistant_message(a="no", r="Organization funds the vacation but the phrase is not and organization."),
+
+            user_message(l="Kooli hinnangul on asi halb.", c="hinnangul"),
+            assistant_message(a="no", r="Opinion and not an organization."),
+
+            user_message(l="ÜRO ettepanekul viidi sisse muudatud.", c="ettepanekul"),
+            assistant_message(a="no", r="Action and not an organization."),
+
+            user_message(l="Meie kooli nõukogu otsusel loodi uusi töökohti.", c="otsusel"),
+            assistant_message(a="no", r="Action and not an organization."),
+
+]
+
+ORG_FEW_SHOTS_STR = few_shot_dialog_to_text(ORG_FEW_SHOTS)
+
+
+
+
+
