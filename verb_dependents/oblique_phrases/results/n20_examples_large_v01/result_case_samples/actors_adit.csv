@@ -1,0 +1,3 @@
+sentence_id,head_id,head_loc,verb,verb_compound,morph_case,lemma,form,sentence,timex_tag,ekilex_tag,ner_tag,classification,explanation,is_time,is_alive,is_event,is_org,exclude,classification2
+8836460,14195481,5,suhtuma,,adit,konkurent,konkurenti,Parempoolsed poliitikud suhtusid uude konkurenti skepsise või halvakspanuga .,,alive,,no,,no,yes,no,no,yes,actor
+4796313,7702794,6,suhtuma,,adit,Simeon,Simeoni,"Isegi veendunud vabariiklased suhtuvad 58-aastasesse Simeoni hästi , pidades teda tõsiseks ja töökaks ärimeheks , kes pole kaldunud mõne teise eksiilmonarhide kõlvatuvõitu eluviisi poole .",,,PER,no,,no,yes,no,no,yes,actor
