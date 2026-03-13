@@ -1,0 +1,2 @@
+sentence_id,head_id,head_loc,verb,verb_compound,morph_case,lemma,form,sentence,timex_tag,ekilex_tag,ner_tag,classification,explanation,is_time,is_alive,is_event,is_org,exclude,classification2
+14497271,22925607,7,vaevlema,,in,Nostradamu,Nostradamus,"1566 arenes podagra , mille käes Nostradamus aastaid vaevelnud oli , vesitõveks .",,,,no,,no,yes,no,no,yes,actor

@@ -1,0 +1,43 @@
+,case_endings,among_gpt_no_examples,among_gpt_yes_examples,comment
+"('in', 'adit')",s+unk,pigem mitte,pigem mitte,"kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('in', 'ill')",s+sse,ok,ok,
+"('in', 'el')",s+st,ok,"ok, kahtlane",
+"('in', 'abl')",s+lt,kahtlane,ok,
+"('in', 'all')",s+le,kahtlane,"ok, kahtlane",
+"('in', 'ad')",s+l,"ok, kahtlane","ok, kahtlane",
+"('adit', 'in')",unk+s,pigem mitte,"kahtlane, pigem mitte","kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('adit', 'ill')",unk+sse,"pigem mitte, kahtlane",kahtlane,"kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('adit', 'el')",unk+st,pigem mitte,kahtlane,"kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('adit', 'abl')",unk+lt,pole näiteid,pole näiteid,"kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('adit', 'all')",unk+le,pigem mitte,"ok, kahtlane","nt 'bussipeatusse pingile’ kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('adit', 'ad')",unk+l,pole näiteid,pigem mitte,"kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('ill', 'in')",sse+s,pole näiteid,"ok, kahtlane",
+"('ill', 'adit')",sse+unk,kahtlane,pigem mitte,25000-sse koju
+"('ill', 'el')",sse+st,pigem mitte,kahtlane,"'kahjumisse jäämisest’, ’viirusesse haigestunust’"
+"('ill', 'abl')",sse+lt,pole näiteid,pole näiteid,
+"('ill', 'all')",sse+le,pole näiteid,"ok, kahtlane",
+"('ill', 'ad')",sse+l,pigem mitte,kahtlane,
+"('el', 'in')",st+s,kahtlane,pigem mitte,valimisringkonnast 14-s
+"('el', 'adit')",st+unk,"ok, kahtlane","ok, kahtlane","kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('el', 'ill')",st+sse,ok,ok,"aastast aastasse, kuust kuusse jne"
+"('el', 'abl')",st+lt,pigem mitte,kahtlane,Väljus jaamast keskuselt luba saamata
+"('el', 'all')",st+le,kahtlane,kahtlane,ametist tööle
+"('el', 'ad')",st+l,pole näiteid,pigem mitte,
+"('abl', 'in')",lt+s,pigem mitte,pigem mitte,
+"('abl', 'adit')",lt+unk,kahtlane,ok,"Kõrguselt pähe/jõkke; kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('abl', 'ill')",lt+sse,pole näiteid,ok,
+"('abl', 'el')",lt+st,pigem mitte,kahtlane,
+"('abl', 'all')",lt+le,ok,ok,
+"('abl', 'ad')",lt+l,pole näiteid,pole näiteid,
+"('all', 'in')",le+s,pigem mitte,pigem mitte,
+"('all', 'adit')",le+unk,kahtlane,kahtlane,"kõigile/mulle/talle pähe/sülle jne; kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('all', 'ill')",le+sse,pole näiteid,"ok, kahtlane",
+"('all', 'el')",le+st,kahtlane,"ok, kahtlane",maandus 20m kaugusele autost
+"('all', 'abl')",le+lt,kahtlane,pole näiteid,
+"('all', 'ad')",le+l,pigem mitte,pole näiteid,
+"('ad', 'in')",l+s,pigem mitte,pigem mitte,
+"('ad', 'adit')",l+unk,pole näiteid,"kahtlane, pigem mitte","kui adit, siis mõnikord on see tegelikult osastavas käändes"
+"('ad', 'ill')",l+sse,pigem mitte,pigem mitte,
+"('ad', 'el')",l+st,pole näiteid,pigem mitte,
+"('ad', 'abl')",l+lt,kahtlane,"ok, kahtlane",
+"('ad', 'all')",l+le,pole näiteid,pigem mitte,

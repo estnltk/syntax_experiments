@@ -1,2 +1,5 @@
 # Ignore specific directories containing API keys
 physical_location_labelling/physical_locations_by_word/model_configurations/*.*
+
+# Ignore MacOS trash
+**/.DS_Store

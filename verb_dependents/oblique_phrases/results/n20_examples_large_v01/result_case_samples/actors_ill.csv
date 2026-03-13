@@ -1,0 +1,6 @@
+sentence_id,head_id,head_loc,verb,verb_compound,morph_case,lemma,form,sentence,timex_tag,ekilex_tag,ner_tag,classification,explanation,is_time,is_alive,is_event,is_org,exclude,classification2
+9018186,14499673,6,süstima,,ill,õpilane,õpilastesse,"Kuigi lehe tegemise idee on õpilastesse enamasti süstinud õpetajad , teevad noored seda suure innuga .",,alive,,no,,no,yes,no,no,yes,actor
+3990163,6422749,17,armuma,,ill,meditsiiniõde,meditsiiniõesse,"Sel ajal kui mitmed meeskolleegid talle külge proovivad lüüa , armub ta ise seriaalis kaasa tegevasse meditsiiniõesse Juliesse ( Jessica Lange ) .",,alive,,no,,no,yes,no,no,yes,actor
+3414249,5495283,15,süstima,,ill,kes,kellesse,"Esimesi eksponaate hakkasid muuseumi tarvis alates 1993. aastast tallele panema Tallinna politseikooli kadetid , kellesse politsei ajalugu uuriv Mai Krikk süstis kogumisvaimustust .",,,,no,,no,yes,no,no,yes,actor
+10018978,16071762,5,armuma,,ill,vanahärra,vanahärrasse,Üks vanaproua armus hiljuti vanahärrasse .,,alive,,no,,no,yes,no,no,yes,actor
+7100736,11418986,9,armuma,,ill,Diana,Dianasse,"Liisusse suhtus ta küll ka hästi , kuid Dianasse armus ta sügavalt , jäägitult ja lõputult , nii nagu oma kogenematuse tõttu ikka armutakse .",,alive,PER,no,,no,yes,no,no,yes,actor
