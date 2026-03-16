@@ -1,0 +1,4 @@
+sentence_id,word_form,start,end,sentence,current_deprel,current_case,current_analysis
+359994,manifesti,10,19,"Need kaks manifesti , eriti II ( mille koostas Paul Kurtz ) , on naturalistlike väidete käepärased kogud .",nsubj:cop,gen,"com,gen,sg"
+10460877,Midri,18,23,"Asi ei ole õige , Midri pole teab kui ebausklik mees , aga nüüd ta taganeb .",nsubj:cop,adit,"adit,prop,sg"
+14983427,Koreograafi-,0,12,"Koreograafi- ja tantsijakalduvused on Eriku puhul pisut üllatavad , sest tegelikult on ta Tartu ülikooli filosoofiateaduskonna kolmanda kursuse tudeng , kes astus ülikooli 17aastasena , sest läks kooli 5aastaselt ja kohe teise klassi .",nsubj:cop,gen,"com,gen,sg"
