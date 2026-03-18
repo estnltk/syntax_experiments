@@ -1,23 +1,16 @@
 ## Result files
 
-These files are not manual annotations but results from gpt prompting.
+These files are results from gpt prompting.
 
-Each subfolder denotes the section and datafile.
+*n80_examples_large_v02* is a future job.
 
- **n20_examples_large_v01**: result files based on data file n20_examples_large_v01.csv.
+Each subfolder combines category (n20/n50/n80 etc) and data file name (examples_large_v01) aka manner of sampling data.
 
- **n50_examples_large_v01**: result files based on data file n50_examples_large_v01.csv.
+Each folder is divided into gpt_v0x folders. These subfolders do not match the prompt numbers in prompts folder.
 
- **n80_examples_large_v01**: result files based on data file n80_examples_large_v01.csv.
+The final result file is located in the highest gpt_v0x version folder and has a name "gpt_b10_run01.csv" or "gpt_10K_b10_run01.csv".
 
- **n80_examples_large_v02**: result files based on data file n80_examples_large_v02.csv.
-
-
-Each folder is divided into gpt_v0<num> for the step in prompting (v01 is for "physical location prompting", v02 is for abstract location and other prompting). These subfolders do not match the prompt numbers in prompts folder.
-
-In each subfolder the "final result file" is gpt_b10_run01.csv or gpt_10K_b10_run01.csv.
-
-That file has:
+The result file has:
 
 | columns | explanation | example |
 | ------------- | ------------- | ------------- | 
@@ -39,15 +32,16 @@ That file has:
 | is_alive	| answer to "is it alive" prompt, yes/no | yes |
 | is_event	| answer to " is it an event" prompt, yes/no | no |
 | is_org	| answer to "is it an organization" prompt, yes/no |  no |
-| classification2| for n20 and n50: category (loc, time, event, actor, UNK) |  actor |
+| classification2| label (loc, time, event, actor, UNK) |  actor |
 
-For n80_examples_large_v01:
+## Exceptions
+
+For n80_examples_large:
 - classification: location prompt, first one and bad results
 - classification2: answer to new location prompt, yes/no 
-- classification3: category (loc, time, event, actor, UNK)
+- classification3: label (loc, time, event, actor, UNK)
 
-In case classification=="yes" then the rest of the prompts are not use and therefore those values will be empty.
-
+In case classification=="yes" then the rest of the prompts are not used and therefore those values will be empty.
 
 Additional files waiting manual annotation may be added to subfolders.
 

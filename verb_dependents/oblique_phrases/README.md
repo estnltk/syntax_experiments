@@ -1,17 +1,27 @@
 ## Problem statement
 
-Paljud verb-käändepaari kombinatsioonid määravad üheselt ära vastavasse lünka mineva sõna semantilise rolli:
+Many combinations of verbs-case forms clearly determine the semantic role of the word that appears in a given position in a sentence:
 
-- kas see on aja või kohamäärus
+- whether it is an adverbial of place 
+- adverb of time
+- an event
+- an agent/actor (a participant referring to a person/organization)
+- adverbial of manner 
+- cause/condition
+- construction
+- or an element that belongs to the verb’s argument structure
 
-- viisimäärus
+Our aim is to study this phenomenon through statistical analysis of large-scale sentence annotations.
 
-- või on see verbi argumendistruktuuri kuuluv element
+To do this, we use EKILEX dictionaries and LLMs to assign semantic categories, along with simple statistical methods to group the results, and manual annotation to identify interesting linguistic hypotheses.
 
-Meie eesmärk on uuroda antud probleemi lausete massmärgenduste statistilse analüüsiga. 
 
-Selleks kasutame EKILEX-i sõnastikke ja LLM-e sementiliste kategooriate märgendamiseks ning lihtsat statistilist analüüsi tulemususte grupeerimiseks ning käsitsi märgendamist huvitavate lingvistiliste hüpoteeside tuvastamiseks.
+## Workflow
 
+- Use existing labels to filter data 
+- Group data 
+- Use GPT to relabel data 
+- Final analysis
 
 
 
