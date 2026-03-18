@@ -20,6 +20,7 @@ In each subfolder the "final result file" is gpt_b10_run01.csv or gpt_10K_b10_ru
 That file has:
 
 | columns | explanation | example |
+| ------------- | ------------- | ------------- | 
 | sentence_id	| sentence id | 21087297 |
 | head_id	| head word id  | 29915194 |
 | head_loc	| location of head word in the sentence | 3 |
