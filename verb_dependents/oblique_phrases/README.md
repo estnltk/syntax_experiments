@@ -1,4 +1,21 @@
-## 
+## Problem statement
+
+Paljud verb-käändepaari kombinatsioonid määravad üheselt ära vastavasse lünka mineva sõna semantilise rolli:
+
+- kas see on aja või kohamäärus
+
+- viisimäärus
+
+- või on see verbi argumendistruktuuri kuuluv element
+
+Meie eesmärk on uuroda antud probleemi lausete massmärgenduste statistilse analüüsiga. 
+
+Selleks kasutame EKILEX-i sõnastikke ja LLM-e sementiliste kategooriate märgendamiseks ning lihtsat statistilist analüüsi tulemususte grupeerimiseks ning käsitsi märgendamist huvitavate lingvistiliste hüpoteeside tuvastamiseks.
+
+
+
+
+## Files
 
 [data](data) -- input files for gpt prompting
 
