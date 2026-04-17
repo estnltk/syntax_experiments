@@ -1,0 +1,101 @@
+id,sentence_id,head_id,row_loc,verb,verb_compound,feats,pos,lemma,form,status,ekilex_tag,ner_tag,timex_tag,morph_case,tags,sentence
+1,3,2,3,toimuma,,"com,in,sg",S,lõpp,lõpus,,,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,Kaheksakümnendate aastate lõpus toimus Türi 1.
+7,5,3,12,saama,pihta,"all,com,pl",S,keel,keeltele,,,,,all,,"Bändi , mille solist ei osanud laulda , kidramees ei saanud keeltele pihta ja trummari eesmärk oli võimalikult palju müra teha ."
+19,10,10,4,tulema,,"ad,sg",P,sina,sul,,,,,ad,,Kui sageli tuli sul kooli juhtkonna ees aru anda ?
+22,12,11,3,viilima,,"com,el,pl",S,tund,tundidest,,,,,el,,Ma viilisin tundidest igal võimalikul juhul .
+23,12,11,6,viilima,,"ad,com,sg",S,juht,juhul,,,,,ad,,Ma viilisin tundidest igal võimalikul juhul .
+40,21,25,1,muutuma,,"el,sg",P,mis,Millest,,,,,el,,Millest selline muutus ?
+59,25,33,12,minema,peale,"all,com,sg",S,rahvas,rahvale,,alive,,,all,|A|AE|AL|AS|AT|AET|ALT|AST|,"Tegutsesin siis diskorina ja nägin , et eurobiit ja disko lähevad rahvale peale ."
+69,29,37,6,tekkima,,"el,sg",P,see,sellest,,,,,el,,Pidevalt tantsumusa sees olles tekib sellest küllastus .
+85,37,51,8,kutsuma,,"adit,com,sg",S,elu,ellu,,,,,adit,,"Pole välistatud , et me pundi kunagi ellu kutsume ."
+88,39,53,4,tulema,,"adit,com,sg",S,toim,toime,,,,,adit,,Kuidas sa rahaliselt toime tuled ?
+92,41,56,1,meeldima,,"all,sg",P,mina,Mulle,,,,,all,,Mulle meeldib teha südamelähedasi asju nii hästi kui võimalik ja ma püüan selle eest ka head tasu saada .
+103,47,66,3,nägema,,"ad,com,sg",S,lett,letil,,,,,ad,,"Kui näen letil mõnda head filmi , plaati või šeffi riietuseset , neelan konksu alla ja ostan ära , maksku mis maksab ."
+119,50,74,5,saama,,"com,el,sg",S,toidupood,toidupoest,,location,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Kui sa ei saa toidupoest soovitut , on asi päris hull ."
+129,54,84,3,loobuma,,"ad,com,sg",S,aeg,ajal,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
+130,54,84,4,loobuma,,"com,el,pl",S,juhutöö,juhutöödest,,,,,el,,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
+131,54,85,9,kirjutama,,"all,com,pl",S,bänd,bändidele,,alive,,,all,|A|AE|AL|AS|AT|AET|ALT|AST|,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
+132,55,86,7,tulema,,"ad,pl",P,tema,neil,,,,,ad,,"Praegu põhiliselt Vanilla Ninjale , sest neil tuleb mais ilmuva plaadi jaoks materjal kokku panna ."
+138,59,92,6,tekkima,,"ad,sg",P,mina,mul,,,,,ad,,Ükskord ööklubist koju tulles tekkis mul enda arvates hea lauluidee .
+142,60,93,3,toksima,sisse,"ad,com,sg",S,pill,pillil,,,,,ad,,"Toksisin pala pillil sisse , aga hommikul kuulates ei kõlvanud see kuhugi ."
+148,63,96,5,saama,,"com,el,pl",S,inimene,inimestest,,alive,,,el,|A|AE|AL|AS|AT|AET|ALT|AST|,"Ma ei saa aru inimestest , kes üldse napsu ei võta , nagu ka neist , kes hommikust õhtuni joovad ."
+153,63,97,15,võtma,,"el,pl",P,see,neist,,,,,el,,"Ma ei saa aru inimestest , kes üldse napsu ei võta , nagu ka neist , kes hommikust õhtuni joovad ."
+155,63,98,18,jooma,,"com,el,sg",S,hommik,hommikust,,,,TIME,el,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Ma ei saa aru inimestest , kes üldse napsu ei võta , nagu ka neist , kes hommikust õhtuni joovad ."
+170,68,109,13,tahtma,,"com,el,sg",S,pidu,peost,,event,,,el,|E|AE|EL|ET|AET|ELT|,"Narkootikumidest ja vahel ka napsust on kerge ära öelda , aga kihvtist peost , heast filmist või toredast sündmusest ei tahaks küll ilma jääda ."
+183,75,121,17,minema,ära,"com,el,sg",S,käsi,käest,,,,,el,,"Kindlasti saabub ka stabiilsem periood , kuid kui praegu peaks naisterahvaga kantseldama , siis läheks asi käest ära ."
+188,81,131,8,tiirutama,,"ad,com,pl",S,tuur,tuuridel,,,,,ad,,Saime tuhandeid kirju ja meie ümber tiirutasid tuuridel fännitarid .
+196,83,135,5,tulema,,"all,com,sg",S,kontsert,kontserdile,,event,,,all,|E|AE|EL|ET|AET|ELT|,"Inimest , kes tuleb kontserdile , näeb sind esimest korda ja ütleb , et sa oled nii ilus ja tark ja ma tahan sinuga abielluda , ei saa tõsiselt võtta ."
+205,84,142,14,helistama,,"com,el,sg",S,hommik,hommikust,,,,TIME,el,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Mõned tüdrukud muutusid lausa tüütuks , uurisid telefoninumbri välja ja helistasid iga päev hommikust õhtuni ."
+221,92,157,2,täitma,,"ad,com,sg",S,aasta,aastal,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Sel aastal täitsime oma missiooni , mille eesmärgiks oli pääseda kümne parima sekka ja teha tüdrukutele promo , üliõnnestunult ."
+233,94,163,11,kaasnema,,"all,pl,pos",A,positiivne,positiivsetele,,,,,all,,"Tegelikult ma polekski võita soovinud , sest sellega kaasneb lisaks positiivsetele palju negatiivseid emotsioone ."
+237,96,166,13,tundma,kaasa,"all,pl",P,tema,neile,,,,,all,,"Mul on Claire's Birthday võidu üle hea meel , aga samas tunnen neile kaasa ."
+239,97,167,1,ootama,,"com,ill,sg",S,poi,Poisse,,,,,ill,,Poisse ootab raske ettevalmistusperiood .
+248,100,172,4,lõpetama,,"com,in,sg",S,pedagoogikaülikool,pedagoogikaülikoolis,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,Sa oled lõpetanud pedagoogikaülikoolis orkestrijuhtimise eriala .
+253,103,177,3,pidama,,"com,in,sg",S,silm,silmas,,,,,in,,Ma pean silmas muusika teoreetilise baasi tundmist .
+258,104,179,8,nõudma,,"abl,sg",P,mina,mult,,,,,abl,,"Ma ei viitsinud eriti pedas õppida ja mult nõudis kooli lõpetamine suurt pingutust , sest ma ei leidnud sealt , mida otsisin ."
+269,106,183,4,viima,,"all,com,sg",S,siht,sihile,,,,,all,,Kuid visadus viis sihile ja orkestrijuhi paberid on mul taskus .
+272,107,185,5,mõtlema,,"all,com,sg",S,tegutsemine,tegutsemisele,,,,,all,,Ma pole õpitud ametis tegutsemisele mõelnud .
+275,109,188,2,aitama,,"ad,sg",P,sina,sul,,,,,ad,,Mis sul muusikamaailmast välja tulla aitab ?
+277,110,189,1,tekkima,,"ad,sg",P,mina,Mul,,,,,ad,,Mul tekkis viis aastat tagasi tõsine huvi lennunduse vastu ning kavatsen sel kevadel kindlasti amatöörpiloodi paberid ära teha .
+281,110,190,13,kavatsema,,"ad,com,sg",S,kevad,kevadel,,time,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,Mul tekkis viis aastat tagasi tõsine huvi lennunduse vastu ning kavatsen sel kevadel kindlasti amatöörpiloodi paberid ära teha .
+285,112,193,1,meeldima,,"all,sg",P,mina,Mulle,,,,,all,,"Mulle meeldib ka suusatada ja ujuda , aga need on liialt tavalised alad ."
+297,120,206,4,saama,,"com,el,pl",S,sõna,sõnadest,,,,,el,,"Kui inimene ikka sõnadest aru ei saa , siis pole ka rusikatega midagi teha ."
+323,127,219,25,saama,,"com,el,sg",S,alkoholism,alkoholismist,,state,,,el,|S|AS|LS|ST|AST|LST|,"“ Mu suhted on seni kõik läbi kukkunud , ” pihib BEATRICE , kes on uue armastuse , DJ PRIIT KUUSIKu kõrval saanud üle alkoholismist ."
+331,129,225,11,elama,välja,"adit,com,sg",S,raev,raevu,,,,,adit,,Enam ei ürita Beatrice enesetappe rõdult alla hüpates ega ela raevu välja nõusid lõhkudes .
+334,129,225,14,elama,välja,"com,in,pl",S,lõhk,lõhkudes,,,,,in,,Enam ei ürita Beatrice enesetappe rõdult alla hüpates ega ela raevu välja nõusid lõhkudes .
+336,130,226,6,peituma,,"com,in,sg",S,armastus,armastuses,,,,,in,,Tema hingerahu põhjus peitub uues armastuses .
+346,133,231,7,saama,,"com,in,sg",S,oktoober,oktoobris,,,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Priit : Tuttavaks saime 1998. aasta oktoobris Vibe'i korraldamise ajal , siis nägime esimest korda teineteist ."
+361,135,235,12,nägema,,"ad,com,pl",S,üritus,üritustel,,event,,,ad,|E|AE|EL|ET|AET|ELT|,Järgmise aasta jooksul nägime teineteist kuskil ehk paar korda - mingitel üritustel .
+375,141,245,3,sattuma,,"com,ill,sg",S,sõna,Sõnasse,,,,,ill,,Aga Võitlevasse Sõnasse sattusin täiesti juhuslikult ühel päeval kohvi jooma .
+377,141,245,8,sattuma,,"ad,com,sg",S,päev,päeval,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,Aga Võitlevasse Sõnasse sattusin täiesti juhuslikult ühel päeval kohvi jooma .
+401,150,264,16,helistama,,"all,sg",P,mina,mulle,,,,,all,,"Järgmised poolteist kuud , mil tema oli New Yorgis ja mina siin , helistas ta mulle kolm korda päevas - iga kõne kestis kuskil 40-50 minutit ."
+412,152,269,2,valitsema,,"com,in,sg",S,elu,elus,,,,,in,,Mu elus valitsesid väga segased ajad .
+416,153,271,11,naasma,,"ad,com,sg",S,aasta,aastal,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Olin omadega puntras , sest just enne seda , 1999. aastal naasis vanglast minu abikaasa Oleg Belokrõlov ."
+417,153,271,13,naasma,,"com,el,sg",S,vangla,vanglast,,location,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Olin omadega puntras , sest just enne seda , 1999. aastal naasis vanglast minu abikaasa Oleg Belokrõlov ."
+428,155,274,7,saama,kokku,"com,in,sg",S,kohvik,kohvikus,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Sel ajal , kui me Priiduga kohvikus kokku saime ja kokku jäimegi , olid Oleg ja Raul Pariisi äri ajama sõitnud ."
+443,160,282,3,külastama,,"com,in,sg",S,maikuu,maikuus,,,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Vahepeal , maikuus külastasin Pariisis veel Olegi ja Rauli ning adusin , et mul pole nendega enam vähimatki ühist ."
+444,160,282,5,külastama,,"in,prop,sg",S,Pariis,Pariisis,,location,LOC,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Vahepeal , maikuus külastasin Pariisis veel Olegi ja Rauli ning adusin , et mul pole nendega enam vähimatki ühist ."
+449,161,286,9,minema,,"all,sg",P,mina,mulle,,,,,all,,"Nad olid justkui võõrad mehed , kelle tegemised mulle sugugi korda ei läinud ."
+458,166,295,3,juhtuma,,"com,in,sg",S,lennujaam,Lennujaamas,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"B : Lennujaamas juhtus aga nii , et Jürgen jäi liiklusummikusse ega jõudnud õigeks ajaks kohale ."
+463,166,296,11,jääma,,"com,ill,sg",S,liiklusummik,liiklusummikusse,,state,,,ill,|S|AS|LS|ST|AST|LST|,"B : Lennujaamas juhtus aga nii , et Jürgen jäi liiklusummikusse ega jõudnud õigeks ajaks kohale ."
+466,167,298,2,tulema,vastu,"all,prop,sg",S,Priit,Priidule,,,,,all,,Aga Priidule tuli sõber vastu .
+500,179,315,1,imponeerima,,"all,sg",P,mina,Mulle,,,,,all,,"Mulle tohutult imponeerib , kui inimene suudab vaadata maailma silmaklappideta ."
+508,180,318,11,väljendama,,"com,ill,pl",S,asi,asjadesse,,,,,ill,,"On väga palju neid , kes väljendavad oma suhtumist mingitesse asjadesse väga resoluutselt - et see on jama , ja kõik !"
+517,182,321,5,meeldima,,"all,sg",P,mina,mulle,,,,,all,,"Selle poolest meeldibki Priit mulle väga , et ta on avatud uutele asjadele ."
+550,193,340,7,nägema,,"com,el,sg",S,päev,päevast,,,,,el,,"Elan temaga koos ja näen teda päevast päeva ning selle tema headuse kõrval tunnen vahel häbi enda mõtete pärast , mis on olnud kurjad ja õelad ."
+560,195,346,3,ütlema,,"all,sg",P,mina,mulle,,,,,all,,Seda on mulle öelnud ka mu lähedased inimesed .
+571,199,355,8,kukkuma,alla,"com,el,sg",S,pea,peast,,,,,el,,"Mäletan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks ."
+572,199,355,10,kukkuma,alla,"com,in,sg",S,tuba,toas,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Mäletan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks ."
+576,199,355,15,kukkuma,alla,"com,el,sg",S,lagi,laest,,,,,el,,"Mäletan , et aasta tagasi kukkus heast peast suures toas minu silme ees plafoon laest alla , tuhandeks killuks ."
+580,200,356,3,jooksma,,"adit,com,sg",S,tuba,tuppa,,location,,,adit,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Majapidajanna jooksis tuppa : ah , lõhud jälle ?"
+581,202,358,3,meeldima,,"all,sg",P,mina,mulle,,,,,all,,"Sest kui mulle midagi ei meeldi , olen ma teinud nii ."
+600,207,369,10,panema,,"adit,com,sg",S,paik,paika,,location,,,adit,|L|AL|EL|LS|LT|ALT|ELT|LST|,"B : Väga väiksed intiimsed asjad panevad n-ö asja paika : hääl , lõhn , olemine , kuidas mees hingab , magab , istub , sööb ."
+607,208,375,6,meeldima,,"all,sg",P,mina,mulle,,,,,all,,"Kõik asjad kokku - kui mulle midagi ei meeldi , siis hakkab see aja jooksul häirima , paisub sees ."
+627,212,386,15,baseeruma,,"ad,pl",P,mis,millel,,,,,ad,,"P : Tegelikult on asi väga lihtne : kui sisemuses pole kõik asjad , millel suhe baseerub , paigas , siis suhe ei toimi ."
+629,212,386,19,baseeruma,,"com,in,sg",S,paik,paigas,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"P : Tegelikult on asi väga lihtne : kui sisemuses pole kõik asjad , millel suhe baseerub , paigas , siis suhe ei toimi ."
+643,218,398,1,meeldima,,"all,sg",P,mina,Mulle,,,,,all,,Mulle meeldib vahel karjuda ...
+650,220,401,3,möllama,,"com,in,sg",S,algus,Alguses,,,,,in,,P : Alguses ikka möllasime päris kõvasti .
+667,228,413,10,kõndima,,"ad,com,sg",S,hetk,hetkel,,time,,TIME,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Mäletan , et New Yorgis ma lihtsalt kõndisin ühel hetkel minema ."
+670,229,414,5,saama,kokku,"ad,com,sg",S,mood,moel,,,,,ad,,"Aga siis , naljakal moel , saime me Priiduga tänaval kuidagi uuesti kokku ."
+673,229,414,10,saama,kokku,"ad,com,sg",S,tänav,tänaval,,location,,,ad,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Aga siis , naljakal moel , saime me Priiduga tänaval kuidagi uuesti kokku ."
+688,236,426,3,võtma,,"com,in,sg",S,lõpp,lõpus,,,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Läinud aasta lõpus võtsin Priidu kimono , mille talle kinkisin , ning viskasin selle rõdult alla ."
+691,236,427,9,kinkima,,"all,sg",P,tema,talle,,,,,all,,"Läinud aasta lõpus võtsin Priidu kimono , mille talle kinkisin , ning viskasin selle rõdult alla ."
+693,236,428,15,viskama,alla,"abl,com,sg",S,rõdu,rõdult,,location,,,abl,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Läinud aasta lõpus võtsin Priidu kimono , mille talle kinkisin , ning viskasin selle rõdult alla ."
+704,238,435,20,ajama,,"adit,com,sg",S,selg,selga,,,,,adit,,"Mõne hetke pärast juba juurdlesin , et peaks ikka alla minema , aga kuulsin , kuidas Priit jopet juba selga ajas ja järele läks ."
+723,245,450,1,käima,peal,"ad,sg",P,mina,Mul,,,,,ad,,"Mul käivad tihti peal tujud , kus ma ei viitsi ühel hetkel enam midagi teha , miski ei huvita ja ..."
+729,245,451,12,viitsima,,"ad,com,sg",S,hetk,hetkel,,time,,TIME,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Mul käivad tihti peal tujud , kus ma ei viitsi ühel hetkel enam midagi teha , miski ei huvita ja ..."
+754,256,472,3,tooma,,"all,com,sg",S,direktor,direktorile,,,,,all,,Eesti Kontserdi direktorile ja Arsise kellade ansambli juhile Aivar Mäele ( 42 ) tõi austava aasta mehe tiitli tema eestkostel üheksa kuuga valminud Pärnu Kontserdimaja .
+757,256,473,20,valmima,,"ad,com,sg",S,eestkoste,eestkostel,,,,,ad,,Eesti Kontserdi direktorile ja Arsise kellade ansambli juhile Aivar Mäele ( 42 ) tõi austava aasta mehe tiitli tema eestkostel üheksa kuuga valminud Pärnu Kontserdimaja .
+773,259,481,30,tulema,,"ad,com,sg",S,linn,linnal,,,LOC,,ad,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Aivar Mäe arvab aasta tegu ehk Pärnu Kontserdimaja ehitust kommenteerides , et investeering Pärnusse oli päris suur , Pärnu lihtsalt anus ja ägas säärase kultuurikantsi järele : “ Pärnu linnal tuli mõte teha kontserdihoone kolmkümmend aastat tagasi , nüüd on see unistus täitunud ."
+778,260,484,1,külastama,,"com,in,sg",S,detsember,Detsembris,,time,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Detsembris külastas uut maja juba pool Pärnu linna , see kõneleb ise enda eest . ”"
+792,263,491,11,hakkama,,"com,in,sg",S,koha,kohas,,,,,in,,"“ Praegu ei oska ette arvata , mis seal uues kohas kõik toimuma hakkab , aga kindlasti saab ta linna südameks , kuna see maja võimaldab nii palju , ” kõlab ta optimistlik prognoos ."
+807,264,497,14,tulema,,"adit,com,sg",S,kontserdimaja,kontserdimajja,,location,,,adit,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Mäe on kohtunud piletikassa juures pärnakatega , kes väidavad end olevat tulnud uude kontserdimajja juba üheksandat-kümnendat korda ."
+815,267,502,4,kõnelema,,"com,el,sg",S,projekt,projektist,,,,,el,,"vMäe kõneleb uuest projektist niisuguse põlemisega , nagu oleks see elu ja surma küsimus ."
+845,274,518,10,minema,,"all,com,sg",S,luure,luurele,,,,,all,,"Samas mainivad Mäe kohta mõned ta kolleegid , et luurele läheksid nad vaid temaga ."
+851,276,519,6,andma,alla,"all,com,sg",S,poliitika,poliitikale,,,,,all,,Aivar Mäe ei anna alla poliitikale ega pankadele .
+865,281,524,9,rändama,,"all,com,sg",S,peadirigent,peadirigendile,,alive,,,all,|A|AE|AL|AS|AT|AET|ALT|AST|,"Tuusik rändas aga ruttu Mäe käest omakorda RAM-i peadirigendile , kes pidavat seda rohkem vajama ."
+866,282,527,7,jääma,,"ad,com,sg",S,puhkus,puhkusel,,,,,ad,,"“ Olen kindel , et jään puhkusel haigeks !"
+868,283,530,20,jääma,,"ad,com,sg",S,juht,juhul,,,,,ad,,"See oleks kohutav , kui ma peaks seal seitse päeva kohal olema ja veel muda sees lamama - igal juhul jään haigeks , ” naerab Mäe ."
+873,284,532,6,käima,,"ad,com,sg",S,puhkusereis,puhkusereisil,,event,,,ad,|E|AE|EL|ET|AET|ELT|,"“ Ma pole käinud ühelgi puhkusereisil , vihkan ka väliskomandeeringuid ."
+879,285,535,8,minema,,"com,ill,sg",S,komandeering,komandeeringusse,,,,,ill,,"Kui võimalik , siis ma ei lähegi komandeeringusse . ”"
+885,287,537,3,andma,,"com,in,sg",S,aasta,aastas,,,,SET,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Ansambel annab aastas kuni sada kontserti välismaal - seal ootab Aivar õhtul saabuvat emotsionaalset laengut , see talle sobib ."
