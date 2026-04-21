@@ -1,7 +1,16 @@
 
 New workflow for spatial obl (instead of verb_dependents).
 
-Work in progress. (Currently everything is in notebooks, in the future it will be in script format)
+Work in progress. Pyhon files are tested and work with conf file. Notebooks should be up to date.
+
+
+### data 
+
+- whatever data is necessary (ekilex tag files for prep, etc)
+
+### conf 
+
+- configuration file to run py files with desired parameters
 
 ### prep: 
 
@@ -14,5 +23,10 @@ Work in progress. (Currently everything is in notebooks, in the future it will b
 - operating with spatial obl (creating tables, statistics, scatterplots, n-class assignment, etc)
 
 
+### results 
+
+- scatterplots
+- maybe some sample files to see what is in the tables
+- probably gpt answer files in the future 
 
 
