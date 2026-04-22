@@ -127,11 +127,7 @@ WITH words_with_target_types AS (
     WHERE w.lang = 'est' 
     AND (
         st.code IN (
-            'koht', 'koht_ala', 'koht_asutus', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu',
-            'koht_hoone', 'koht_kehaosa', 'koht_loodus', 'koht_suund/asend',
-            'aeg', 'aeg_aastaaeg', 'aeg_kuu', 'aeg_nädalapäev', 'aeg_tähtpäev',
-            'seisund', 'seisund_haigus', 'seisund_füüs',
-            'sündmus'
+            'grupp', 'koht_asutus', 'organisatsioon'
         )
     )
 ),
@@ -386,8 +382,8 @@ WITH words_with_target_types AS (
     WHERE w.lang = 'est' 
     AND (
         st.code IN (
-            'koht', 'koht_ala', 'koht_asutus', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu',
-            'koht_hoone', 'koht_kehaosa', 'koht_loodus', 'koht_suund/asend', 'abstr_asend/suund', 'ese_anum', 'omadus_koht'
+            'koht', 'koht_ala', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu', 'koht_hoone', 
+            'koht_kehaosa', 'koht_loodus', 'koht_suund/asend', 'abstr_asend/suund', 'ese_anum', 'omadus_koht'
         )
     )
 ),
@@ -396,8 +392,8 @@ word_semantic_types as (
 SELECT w.value AS word,
             CASE 
                 WHEN st.code IN (
-                    'koht', 'koht_ala', 'koht_asutus', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu',
-                    'koht_hoone', 'koht_kehaosa', 'koht_loodus', 'koht_suund/asend', 'abstr_asend/suund', 'ese_anum', 'omadus_koht') 
+                    'koht', 'koht_ala', 'koht_geogr', 'koht_geogr_maailmajagu', 'koht_geogr_veekogu', 'koht_hoone', 
+                    'koht_kehaosa', 'koht_loodus', 'koht_suund/asend', 'abstr_asend/suund', 'ese_anum', 'omadus_koht') 
                     THEN 'KOHT'
                 WHEN st.code IN (
                 		'ese_instru', 'ese', 'ese_kunst', 'ese_raha', 'ese_semio', 'ese_riie', 
@@ -667,7 +663,7 @@ WITH words_with_target_types AS (
     JOIN semantic_type st ON mst.semantic_type_code = st.code
     WHERE w.lang = 'est' 
     AND st.code IN ( 'inimene', 'in_elukutse', 'in_müt', 'in_omadus', 'in_rahvas', 'in_roll', 'in_sugulane', 'in_tegija',
-    		'loom', 'loom_kala', 'loom_liik', 'loom_lind', 'loom_omadus', 'loom_putukas', 'organisatsioon'
+    		'loom', 'loom_kala', 'loom_liik', 'loom_lind', 'loom_omadus', 'loom_putukas'
     		)
     ),
 --leia, mis semantiliste tüüpidega iga sõna on
@@ -675,7 +671,7 @@ word_semantic_types as (
 SELECT w.value AS word,
             CASE 
 	            when st.code IN ('inimene', 'in_elukutse', 'in_müt', 'in_omadus', 'in_rahvas', 'in_roll', 'in_sugulane', 
-	            'in_tegija', 'loom', 'loom_kala', 'loom_liik', 'loom_lind', 'loom_omadus', 'loom_putukas', 'organisatsioon')
+	            'in_tegija', 'loom', 'loom_kala', 'loom_liik', 'loom_lind', 'loom_omadus', 'loom_putukas')
 	           		then 'ELUS'
                 WHEN st.code IN (
                 	'esitus_tiitel') 
@@ -710,5 +706,101 @@ WHERE (
     (wtc.type_count = 1 AND wtc.has_elus)  -- If 1 type, it must be elus
     OR
     (wtc.type_count = 2 AND wtc.has_elus AND wtc.has_sobib)  -- If 2 types, must be elus and SOBIB
+)
+ORDER BY wtc.word;
+
+--QUERY 14: LEIA KÕIK SÕNAD, MILLEL ON AINULT 1 MÄRGEND JA SEE ON GRUPP
+--võta ainult koha, aja, seisundi ja sündmuse sõnad
+WITH words_with_target_types AS (
+    SELECT DISTINCT w.value AS word
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.lang = 'est' 
+    AND st.code = 'grupp'
+),
+--leia, mis semantiliste tüüpidega iga sõna on + grupeeri koht, aeg, seisund
+word_semantic_types as (
+SELECT w.value AS word, st.code AS semtype
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
+    GROUP BY w.value, st.code
+    ),
+word_type_counts AS (
+    -- Count distinct semantic types per word
+    SELECT word, COUNT(DISTINCT semtype) AS type_count
+    FROM word_semantic_types
+    GROUP BY word
+)
+-- Filter only words that have 1 semantic type
+SELECT 
+    wst.word, wst.semtype
+FROM word_semantic_types wst
+JOIN word_type_counts wtc ON wst.word = wtc.word
+WHERE wtc.type_count = 1 -- Only keep words with 1 semantic type
+GROUP BY wst.word, wst.semtype
+ORDER BY wst.word
+
+--QUERY 15: LEIA KÕIK SÕNAD, MILLEL ON 1 VÕI MITU ORGANISATSIOONIGA SOBIVAT MÄRGENDIT
+--võta ainult ORGANISATSIOONID
+WITH words_with_target_types AS (
+    SELECT DISTINCT w.value AS word
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.lang = 'est' 
+    AND (
+        st.code IN (
+            'grupp', 'koht_asutus', 'organisatsioon'
+        )
+    )
+),
+--leia, mis semantiliste tüüpidega iga kohasõna on + grupeeri koht ja temaga sobivad märgendid
+word_semantic_types as (
+SELECT w.value AS word,
+            CASE 
+                WHEN st.code IN (
+                    'grupp', 'koht_asutus', 'organisatsioon') 
+                    THEN 'ORG'
+                WHEN st.code IN (
+                		'koht', 'koht_ala', 'koht_geogr', 'koht_hoone', 'inimene', 'in_sugulane', 'loom', 'loom_liik', 'loom_lind') 
+                    THEN 'SOBIB'
+                ELSE 'OTHER' -- Keep other types as they are
+            END
+         AS semantic_types
+    FROM word w
+    JOIN lexeme l ON l.word_id = w.id 
+    JOIN meaning m ON m.id = l.meaning_id 
+    JOIN meaning_semantic_type mst ON m.id = mst.meaning_id 
+    JOIN semantic_type st ON mst.semantic_type_code = st.code
+    WHERE w.value IN (SELECT word FROM words_with_target_types)  -- Limit to words found in Step 1
+    GROUP BY w.value, st.code
+    ),
+--Put each semantic tag class in a separate column
+word_type_counts AS (
+    SELECT word, 
+           COUNT(DISTINCT semantic_types) AS type_count,
+           BOOL_OR(semantic_types = 'ORG') AS has_org,
+           BOOL_OR(semantic_types = 'SOBIB') AS has_sobib,
+           BOOL_OR(semantic_types = 'OTHER') AS has_other
+    FROM word_semantic_types
+    GROUP BY word
+)
+--vali sellised sõnad, millel on kas 1. üks semantiline tüüp ja see on koht või 2. kaks semantilist tüüpi ja need on koht ja sobib
+SELECT 
+    wtc.word
+FROM word_type_counts wtc
+WHERE (
+    (wtc.type_count = 1 AND wtc.has_org)  -- If 1 type, it must be koht
+    OR
+    (wtc.type_count = 2 AND wtc.has_org AND wtc.has_sobib)  -- If 2 types, must be koht and SOBIB
 )
 ORDER BY wtc.word;
