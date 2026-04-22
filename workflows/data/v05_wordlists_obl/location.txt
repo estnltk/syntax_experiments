@@ -5,11 +5,7 @@ Aabla
 Aabra
 Aachen
 Aadami
-aadlikonvent
-aadlimõis
 Aadma
-aadressbüroo
-aadresslaud
 Aadria
 Aadria meri
 Aadumäe
@@ -35,6 +31,7 @@ Aasa
 aasaheinamaa
 aasana
 Aasia
+Aasiaat
 Aasov
 Aasovimaa
 Aasovi meri
@@ -45,7 +42,6 @@ Aasu
 Aasukalda
 Aasumetsa
 Aasuvälja
-aašram
 aatrium
 Aavere
 Aavidu
@@ -64,36 +60,28 @@ Abessiinia
 Abhaasia
 Abidjan
 abiehitis
-abifond
 abihoone
-abikirik
-abiklass
-abiklooster
-abikomitee
-abikool
 Abikülä
 abilennuväli
-abimajand
 abimõis
 abiruum
 Abissaare
-abistamiskassa
-abiteenistus
-abitsehh
 Abja
 Abjaku
 Abja-Paluoja
 Abja-Vanamõisa
+Abovjan
 Abramihhina
 Abramihhino
 Abruka
 Abruzzo
 Abrutsid
 Abşeroni poolsaar
-abtkond
+Abşeron-Xızı
 Abu Dhabi
 Abuja
 Abula
+Abu Musa
 Aburi
 abüssaal
 Acapulco
@@ -117,12 +105,9 @@ Adra
 Adraku
 Adrianoopol
 Adžaaria
-adventisti kirik
-advokaadibüroo
 Adõgee
 aed
 aedik
-aedkool
 aedlinn
 Aegna
 Aegviidu
@@ -136,7 +121,6 @@ Afar
 afeel
 Afgaani
 Afganistan
-AFP
 Aga
 Aga Burjaatia
 Agali
@@ -145,19 +129,23 @@ aganik
 Agartala
 Agasilla
 Agban
+Ağcabädi
+Agdam
+Ağdam
+Agder
+Agdžabedi
+Ağdärä
 Ageri
+Agía Nápa
 Aginskoje
 Ágio Óros
-agitatsioonipunkt
-agitpunkt
 aglomeratsioon
 Agra
 agraarmaa
-agrofirma
-agrotööstuskoondis
 agul
 agulitänav
 Agusalu
+Ahali vilajett
 Ahaste
 Ahekõnnu
 Ahelaid
@@ -167,6 +155,8 @@ Aheru järv
 ahervare
 ahervars
 Ahhaia
+Ahhalkhalakhi
+Ahhaltsihhe
 Ahhemeniidide riik
 Ahijärv
 Ahisilla
@@ -186,11 +176,13 @@ ahjurind
 ahjuvare
 Ahli
 Ahmedabad
+Ahta
 ahterpiik
 Ahtme
 ahtrikajut
 ahtritekk
 ahtritrümm
+Ahtuba
 ahu
 Ahula
 Ahunapalu
@@ -214,18 +206,17 @@ Aiaste
 aiatagune
 aiavaas
 aiaveer
-aiaäri
 aiaäär
 aiaäärne
 Aichi
 Aidaku
 aidamade
 aidasalv
-aidsikabinet
 Aidu
 Aidu-Liiva
 Aidu-Nõmme
 Aidu-Sooküla
+Aígina
 Aila
 aimakk
 Aimla
@@ -249,11 +240,10 @@ ajakapsel
 ajalehekiosk
 ajaleheputka
 ajalooallikas
-ajaloomuuseum
 ajaloomälestis
 ajusisene
-akadeemia
 Akarnaania
+Akershus
 Akita
 Akkerman
 Akko
@@ -265,6 +255,7 @@ Akmolinsk
 aknaauk
 aknaava
 aknalaud
+aknamulk
 aknanišš
 aknaorv
 aknapool
@@ -274,15 +265,16 @@ aknavahe
 aknaäärne
 Akron
 akropol
+Akrotíri
 Aksi
 Akste
 Aktau
 Aktjubinsk
-aktsiaettevõte
 aktusesaal
 Aktöbe
+akupark
+Akureyri
 akva
-akvaarium
 akvatoorium
 akvedukt
 Akvitaania
@@ -302,11 +294,12 @@ Alam-Baieri
 Alam-Frangimaa
 alamik
 alamjooks
-alamkoda
-alamkorrakohus
+Alam-Kharthli
 Alam-Normandia
 Alam-Saksi
 Alam-Sileesia
+Alam-Svanethi
+Alam-Tunguska
 Alamõisa
 Alamõiža
 alanduslehter
@@ -327,9 +320,12 @@ Ala-Tilga
 Alatskivi
 Ala-Tsumba
 Alatõr
+Alaverdi
 Alavere
 Alavus
+Alba
 Albaania
+Alba Iulia
 Albany
 Alberta
 Alberti järv
@@ -339,15 +335,18 @@ Albion
 Alborz
 Albu
 Albuquerque
+Aldan
 Alekere
 Alekhsandrapol
 Aleksandria
 Aleksandropol
 Aleksandrovsk
 Aleksandrovsk-Gruševski
+Aleksandrovsk-Sahhalinski
 Aleksejevka
 Alekvere
 alemaa
+Alentejo
 Aleppo
 alepõld
 Aletschhorn
@@ -357,29 +356,25 @@ alev
 Alevi
 alevik
 Aleviku
+Alexandria
+Al-Fujayrah
 Alföld
+Algarve
 algasend
 algkodu
 algkolle
-algkool
 algpeatus
 Al-Ḩijāz
 Aljava
-alkoholipood
 alkoov
-alkopood
 Al-Kuwayt
 Allahabad
 Allaste
 allasum
-allasutus
 allatuule
 allatuult
 allee
 Allegheny
-allettevõte
-allettevõtja
-allianss
 Allika
 allikajärv
 allikakoht
@@ -398,14 +393,11 @@ allkülg
 all-linn
 allmaaraudtee
 allnurk
-allosakond
 alltuule
 alltuulekülg
 allveeris
 alläär
-allüksus
 Alma-Ata
-alma mater
 Almatõ
 Almatõ oblast
 Almetjevsk
@@ -424,12 +416,12 @@ alpiniit
 Alsace
 Alžeeria
 Alžiir
+Alta
 altaan
 Altai
 Altai krai
 altariruum
 Altdorf
-alternatiivkool
 Altja
 Altküla
 Altmäe
@@ -459,21 +451,19 @@ Ama
 Amaravati
 Amasoonia
 Amazonas
-amatöörklubi
-amatöörteater
+Ambazonia
 Ambla
 ambrasuur
-ambulants
-ambulatoorium
+Ambrolauri
 Ameerika
 Ameerika Samoa
 Ameerika Ühendriigid
-ametiasutus
-ametikool
 ametikorter
 ametiruum
 amfiteater
 amfora
+Amga
+Amgun
 Amhara
 Amiens
 Amman
@@ -488,11 +478,13 @@ Amuurimaa
 Amuuri oblast
 Amuuri-äärne Komsomolsk
 anaalne
+Anabar
 Anadõr
+Anaheim
 Anapa
 Anatoolia
-anatoomikum
 Anchorage
+Ancona
 Andaluusia
 Andamanid
 Andamanid ja Nicobarid
@@ -538,7 +530,6 @@ Anjou
 Ankara
 ankrukoht
 ankrupaik
-ankurüürnik
 Anna
 Annaba
 Annam
@@ -549,23 +540,22 @@ Annelinn
 Annikoru
 Annikvere
 annivakk
-ansambliteater
 Ansbach
 Anseküla
 Ansi
 ANSV
+Anžero-Sudžensk
 Antalya
 Antananarivo
 Antant
 Antarktika
+Antarktika poolsaar
 Antarktis
 Antiatlas
 Antigua ja Barbuda
-antiigipood
 Antiik-Kreeka
 antiikmaailm
 antiklinaal
-antikvariaat
 Antiliibanon
 Antillid
 Antkruva
@@ -576,19 +566,19 @@ Antsu
 Antverpen
 Antwerpen
 anum
+Anuradhapura
 Anykščiai
 Ao
 aolinn
 Aomen
 Aomori
+Aosta
 Aovere
-AP
 Apalatšid
 Apandiku
 apartement
 apartment
 Ape
-apellatsioonikohus
 Apenniini
 Apenniinid
 Apenniini poolsaar
@@ -601,12 +591,9 @@ Appenzell
 Appenzell Ausserrhoden
 Appenzell Innerrhoden
 apsiid
-apteegikett
-apteegivõrk
 Apuulia
 Araabia
 Araabia Ida
-Araabia Liiga
 Araabia Lääs
 Araabia maad
 araabia maad
@@ -617,11 +604,14 @@ araabia riigid
 Araabia Ühendemiraadid
 Araal
 Araali meri
+Arad
 Arafura meri
+Aragatsotn
 Aragón
 Aragvi
 Arakani osariik
 Araks
+Aran
 Arandi
 Aranküla
 Ararat
@@ -635,38 +625,29 @@ Aravu
 Aravuse
 Arbavere
 Arbīl
-arbitraažikohus
 arboreetum
 Ardennid
 Ardla
 Ardu
 Are
 areaal
-arenduskeskus
 arenenud maa
 arenenud riik
 arengumaa
 arenguriik
-areopaag
 Aresi
-arestikamber
-arestimaja
 aretusaed
-aretusjaam
-aretusühing
 Argentiina
 Argentina
+Argeș
 Argolída
 Argolis
 Argonne
 Argun
 Arhangelsk
 arheoloogiamälestis
-arhiiv
-arhiivraamatukogu
 arhipelaag
 arhitektuuriansambel
-arhitektuuribüroo
 arhitektuurimälestis
 arhitektuuripärl
 arhivolt
@@ -677,18 +658,18 @@ Arisvere
 Arizona
 Arjadi
 Arjassaare
-arjergard
 Arju
-ARK
 arkaad
 Arkaadia
 arkaadkäik
+Arkadag
 Arkansas
 arkatuur
 Arkma
 Arkna
 Arktika
 Arktika saarestik
+Arlington
 Arlon
 Armagh
 Armavir
@@ -699,10 +680,10 @@ Arno
 Arossa
 Ar-Riyāḑ
 arstikabinet
-arstipunkt
 Arzamass
-artell
+Artašat
 Artemivsk
+Arthik
 Artjomovsk
 Artsahh
 Artshahh
@@ -731,15 +712,12 @@ Aruvalla
 Aruvälja
 Arvila
 arvutiklass
-arvutusjaam
-arvutuskeskus
 arõkk
 Asahikawa
 asana
 Åsbyn
 Asdod
 asehalduskond
-asenduskodu
 asenduskorter
 Aserbaidžaan
 Aseri
@@ -751,7 +729,7 @@ asfalttänav
 Aşgabat
 Ashdod
 Ashkelon
-asjadevalitsus
+Ash-Shāriqah
 Askelon
 asm
 Asmara
@@ -765,12 +743,14 @@ Assikvere
 Assiut
 Assoori
 Assoorid
+Assoori saared
 Assuan
 Assur
 Assüüria
 Astana
 astang
 Astangu
+Astara
 Aste
 astenosfäär
 Asti järv
@@ -779,7 +759,7 @@ astmikpüramiid
 astmiktorn
 astmikviil
 Astrahan
-astronoomiaobservatoorium
+Astrahhan-Bazar
 Astuuria
 Astuvere
 asuala
@@ -805,13 +785,15 @@ asupaik
 asustusala
 asustuskeskus
 asustusüksus
-Asutav Kogu
 Asva
 Aswān
 asüül
 Ašgabat
 Ašhabad
+Ašotshkh
+Aštarak
 Azawad
+Azizbekov
 Ataalia
 Atacama
 Ataste
@@ -827,11 +809,13 @@ Atlandi ookean
 Atlant
 atlant
 Atlanta
+Atlantic City
 Atlantis
 Atlase mäed
 atoll
 Atra
 Atsalama
+Atšinsk
 Atõrau
 Auaste
 Auce
@@ -848,7 +832,6 @@ Augli
 Augsburg
 Augšdaugava maakond
 Augusta
-aujärg
 Auksi
 Aukštaitija
 Auküla
@@ -858,9 +841,8 @@ Aula-Vintri
 Aulepa
 Aunus
 Aunuse-Karjala
-aurusaun
-auruveski
 Auschwitz
+Aust-Agder
 Austerlitz
 Austin
 Austla
@@ -869,41 +851,21 @@ austraalne
 Australaasia
 Austria
 Austria-Ungari
-austrikasvandus
-autobaas
 autobussijaam
 autodroom
-autofirma
-autoinspektsioon
 autokabiin
-autokauplus
-autokool
 autokuur
-autolammutus
-autolammutuskoda
-automaatpesula
 automagistraal
-automajand
 autoparkla
-autopesula
-autoregistrikeskus
-autoremonditöökoda
-autosalong
-autoservis
 autosild
 autotee
-autoteenindus
-autotehas
 autotekk
-autotootja
-autotöökoda
 auul
 Auvere
 Auvergne
 Auvergne-Rhône-Alpes
 avakosmos
 avalaht
-avalik maja
 avalohk
 avamaa
 avameri
@@ -918,11 +880,10 @@ avaruum
 Avaste
 Avatša
 avatud köök
-avaturg
 avaus
-avavangla
 avavesi
 avaõu
+Aveiro
 avenüü
 Avignon
 Avijõgi
@@ -942,9 +903,13 @@ Babrujsk
 Babülon
 Babüloni rippaiad
 Babüloonia
+Bacău
+Bács-Kiskun
 Baden
 Baden-Baden
 Baden-Württemberg
+Badulla
+Baffini laht
 Baffini saar
 Bagdad
 Bago
@@ -954,18 +919,23 @@ Bahama saared
 Bahmut
 Bahrein
 Bahtšisarai
+Baia Mare
 Baieri
+Baieri Alpid
 Baierimaa
 Baieri mets
 Baikal
+Baikalimaa
 Baikonur
 Baile Átha Cliath
 Bajkongõr
 Bakbyn
+Bakersfield
 Baktria
 Bakuu
 Bakwanga
 Balaklava
+Balašov
 Balaton
 Baleaarid
 Baleaari saared
@@ -974,15 +944,16 @@ Bali
 balka
 Balkaaria
 Balkan
+Balkanabat
 Balkani mäed
 Balkani poolsaar
+Balkani vilajett
 Balkaš
 ballastitank
-balletiteater
 ballisaal
 balloon
 Balti
-Balti Assamblee
+Bălți
 Baltiisk
 Balti kubermang
 Baltikum
@@ -993,6 +964,7 @@ Balti riigid
 Baltiski
 balustraad
 Balvi
+Balõktšõ
 Bamako
 banaanivabariik
 Banaat
@@ -1008,14 +980,15 @@ Bangui
 Banja Luka
 Banjul
 Banksi saar
-baptisteerium
-baptisti kirik
+Banská Bystrica
+Baraba
 barakk
 Baranavičy
 Baranovitši
+Baranya
 Barbados
-barbershop
 Barcelona
+Barda
 Barentsi meri
 barhaan
 barhaanahelik
@@ -1029,6 +1002,8 @@ barr
 barrikaad
 Barõssav
 Barysaŭ
+Basarabeasca
+Basargetšhar
 Basel
 Baseli linnakanton
 Baseli maakanton
@@ -1052,21 +1027,27 @@ Bataavia
 Batalpašinsk
 Bathumi
 Bathurst
+Batken
+Baton Rouge
+Batticaloa
 Batumi
 batuudimaastik
 batüaal
 Bauska
 Bautzen
 Bayreuth
-BBC
 Beaujolais
 Bedford
 Bedfordshire
 Beijing
 beilerbeilik
+Beira
 Beirut
+Beja
 Bekaa
 Bekaa org
+Békés
+Békéscsaba
 Belaja
 Belaja Tserkov
 Belau
@@ -1078,6 +1059,7 @@ Belgorod
 Belgorod-Dnestrovski
 Belgrad
 Belize
+Bellingshauseni meri
 Bellinzona
 Belmopan
 Beloje järv
@@ -1085,11 +1067,15 @@ Belomorsk
 Belozersk
 Belotsarsk
 Belovežje laas
+Belovo
 Belt
+Beltsõ
 Beluhha
 Belutšistan
 belvedere
 Benares
+Bender
+Benderõ
 Benelux
 Beneluxi maad
 Bengal
@@ -1100,18 +1086,18 @@ Benguela hoovus
 Benin
 Benin City
 bensiinihoidla
-bensiinijaam
-bensiinitankla
 bensiinitsistern
 bensiinivaat
-bensukas
 bentaal
 Beograd
+Berat
 Berditšev
 Berdjansk
 Berdõtšiv
 Beresje
 Berezina
+Berezniki
+Bergamo
 Bergen
 Bergsby
 Beringi meri
@@ -1120,12 +1106,12 @@ Berkshire
 Berliin
 Bermuda
 Bern
-bernardiini ordu
 Beskiidid
 Bessaraabia
+Bessarabka
 Betaania
 Betbakdala
-betoonitehas
+betoonlagi
 betoonvundament
 Betšuaanamaa
 Bhilai
@@ -1137,19 +1123,21 @@ Biafra laht
 Białowieża laas
 Białystok
 Biarezina
-biblioteek
 bidee
+Bihać
 Bihar
+Bihor
 Bii-Hem
 Biisk
 Bija
+Bijeljina
 bikiinipiirkond
 Bila Tserkva
 Bilbao
 Bilgorod-Dnistrovskõi
 Bilhorod-Dnistrovskõi
+Biläsuvar
 Bioko
-bioloogiajaam
 biotiik
 biotoop
 Birkas
@@ -1161,36 +1149,46 @@ Biržai
 Bisagidbyn
 Biskaia
 Biskaia laht
+Bismarck
 Bissau
-bistro
-bistroo
+Bistrița
+Bistrița-Năsăud
 Biškek
 Bitüünia
 bjeff
 black box
 Blackpool
+Blagodat
+Blagoevgrad
 Blagoveštšensk
 Blekinge
 blindaaž
 Bloemfontein
-BMW
-BNS
 bobirada
 Bobo-Dioulasso
 Bobriki
 Bobruisk
 Bochum
+Bodaibo
 Boden
+Bodø
 Bodrum
+Bogdanovka
 Bogotá
 Bo Hai
+Bohol
 Bohtar
 Bohuslän
 Boiootia
+Boise
 boks
+Boksitogorsk
 Boliivia
+Bolnisi
 Bologna
 Bologoje
+Bolševik
+Bolzano
 Bombay
 Bonaire
 Bonn
@@ -1199,10 +1197,10 @@ boolikauss
 Boose
 Borbi
 Bordeaux
-bordell
 Bordžomi
 Borislav
 Borispol
+Borissoglebsk
 Borissov
 Borjomi
 Borneo
@@ -1210,7 +1208,9 @@ Bornholm
 Borodino
 Borovitši
 Borrby
+Borsod-Abaúj-Zemplén
 Boržomi
+Bortšalo
 Borõslav
 Borõspil
 Bosnia
@@ -1218,14 +1218,18 @@ Bosnia ja Hertsegoviina
 Bosnia ja Hertsegoviina Föderatsioon
 Bosporus
 Boston
-botaanikaaed
+Bozen
 Botnia laht
+Botoșani
 Botswana
 Bouvet' saar
 Brabant
 Brades
 Bradford
+Braga
+Bragança
 Brahmaputra
+Brăila
 Brandenburg
 Brasiilia
 Brasília
@@ -1235,12 +1239,14 @@ Brazzaville'i Kongo
 Bratislava
 Bratsk
 Braunschweig
+Brčko
 Breemen
 Bregenz
 Bremen
 Bremerhaven
 bremsberg
 Brenner
+Brescia
 Brest
 Brest-Litovsk
 Brežnev
@@ -1249,6 +1255,7 @@ BRIC-i riigid
 BRICS-i riigid
 Bridgetown
 Brighton
+Brindisi
 Brisbane
 Bristol
 Bristoli laht
@@ -1270,7 +1277,6 @@ Briti Togomaa
 Briti Uus-Guinea
 Brjansk
 Brno
-broilerikasvandus
 Brześć nad Bugiem
 Brugge
 Brunei
@@ -1293,7 +1299,6 @@ Bukavu
 Bukoviina
 Bulgaaria
 bulvar
-Bundestag
 burdjukk
 Bureja
 Bureja mäestik
@@ -1304,27 +1309,27 @@ Burgundia-Franche-Comté
 Burjaadi
 Burjaatia
 Burkina Faso
-bursa
 Burtnieki järv
 Burundi
 Busan
+Būshehr
+Buskerud
 bussijaam
 bussikas
-bussipark
 bussipeatus
 bussitasku
+Buzău
 Buzuluk
-butiik
 butiikhotell
 butiikmaja
 Butša
+Bärdä
 Bögelmä
-börs
-börsiettevõte
 Böömi
 Böömi- ja Määrimaa
 Böömimaa
 büroohoone
+büroomaja
 Bütsants
 Bütsantsi riik
 Bydgoszcz
@@ -1334,9 +1339,11 @@ Caen
 Caerdydd
 Cagliari
 Cahors
+Cahul
 Calabria
 Calais
 Calais' väin
+Călărași
 Calgary
 Cali
 California
@@ -1346,6 +1353,7 @@ Cambridge
 Cambridgeshire
 Campania
 Camp David
+Campobasso
 Canaverali neem
 Canberra
 Cannae
@@ -1353,27 +1361,31 @@ Cannes
 Canterbury
 Capri
 Caracas
+Caraș-Severin
 Cardiff
 Carlisle
 Carlow
 Carolina
 Carpentaria laht
 Carrick-on-Shannon
+Carson City
 Cartagena
 Casablanca
-cash and carry
+Caserta
 Casiquiare
 Casnewydd
+Castelo Branco
 Castilla – La Mancha
 Castilla y León
 Castlebar
 Castries
 Catania
+Catanzaro
 Cavan
 Cayenne
+Cebu
 Celebes
 Centre-Val de Loire
-CERN
 Cēsis
 České Budějovice
 Cetinje
@@ -1389,12 +1401,13 @@ Champagne-Ardenne
 Chandigarh
 Changchun
 Changsha
+Changwon
 Chaniá
 Chari
+Charleston
 Charlotte Amalie
 Chattanooga
 Chattogram
-Checkpoint Charlie
 Cheju
 Chelmsford
 Chemnitz
@@ -1415,37 +1428,44 @@ Chíos
 Chișinău
 Chittagong
 Chongqing
+Cho Oyu
 Christchurch
 Chūbu
 Chūgoku
 Chur
-CIA
 Cincinnati
 Citlaltépetl
 city
 Ciudad de Guatemala
+Ciudad de la Paz
 Ciudad de México
 Ciudad Trujillo
 Clackmannanshire
 Clare
 Cleveland
+Clonmel
+Cluj
 Cluj-Napoca
 Clyde
-CNN
 Cochin
 Cockburn Town
 Cognac
 Coimbatore
+Coimbra
 Colombia
 Colombo
 Colóni saarestik
 Colorado
+Colorado Springs
 Columbia
 Columbia ringkond
 Columbus
+Comino
 Como
 Como järv
+Comrat
 Conakry
+Concord
 Connacht
 Connecticut
 Constanța
@@ -1457,9 +1477,8 @@ Córdoba
 Cork
 Cornwall
 Coromandeli rannik
-Cortes
-cortes
-Cortina d'Ampezzo
+Corpus Christi
+Cortina d’Ampezzo
 Costa Rica
 Costermansville
 Côte d'Azur
@@ -1467,25 +1486,31 @@ Côte d'Ivoire
 Cotonou
 Cotopaxi
 Cottbus
+Covasna
 Coventry
+Craiova
 Cranz
-crêperie
+Cres
+Crișana
 Crna Gora
+Csongrád-Csanád
 Częstochowa
 Cumberland
 Cumbria
 Curaçao
 Cusco
+Cälilabad
 Đa
 Daakia
 daatša
 Dadra ja Nagar Haveli ja Daman ja Diu
 Daegu
-Daesh
+Daejeon
 Dagestan
 Dahomee
 Dakar
 Dakota
+Đakovica
 Dalarna
 Dalian
 Dallas
@@ -1493,6 +1518,7 @@ Dalmaatsia
 Dalsland
 Damaskus
 Damāvand
+Dâmbovița
 Đa Năng
 dansker
 Danzigi koridor
@@ -1506,27 +1532,31 @@ Darmstadt
 Darwin
 Dasht-e Kavīr
 Dasht-e Lūt
+Daşkäsän
 Daşoguz
+Daşoguzi vilajett
 Dašhovuz
+Daškessan
 datša
 Daugava
 Daugavpils
+Davise väin
 Davos
 Dawei
 Dayton
 Debrecen
+Dedophlistskaro
 Deelos
 Dehradun
 Dejevi
 Dejevo
-dekanaat
 dekanter
+Dekéleia
 Dekkan
 Dekkani kiltmaa
 Delaware
 Delémont
 Delfi
-delfinaarium
 Delhi
 Delos
 deltarannik
@@ -1535,9 +1565,6 @@ dendraarium
 dendroaed
 dendropark
 Denver
-departemang
-depoopank
-depositoorium
 depressioonilehter
 Derbent
 Derby
@@ -1545,53 +1572,44 @@ Derbyshire
 Derhamn
 derivatsioonikanal
 Derry
+Des Moines
 Desna
-dessantvägi
 Dessau
 dessertlusikatäis
 Dežnjovi neem
 Detroit
 Detskoje Selo
+Deva
 Devon
 Devoni saar
 Dhaka
-diagnoosikabinet
-diagnostikakabinet
+Dharamsala
 diagonaalne
-dialoogipolitsei
 dialüüsikabinet
 diasteem
+Dibër
 Diby
 Dickson
 Diego Garcia
 diele
 Dienvidkurzeme maakond
-digilabor
 Diibi
-diivan
 Dijon
 Dili
+Dilidžan
 Dinaari mäestik
 diplomaadikohver
-diplomaatiline esindus
 Dirhami
 dirigendipult
 Dirslätt
-disainibüroo
-diskontopank
 diskordantsus
 diskosaal
-dispanser
-dispetšerkeskus
-dispetšerpunkt
-dispetšikeskus
-dispetšipunkt
 Dispur
 distrikt
-distsiplinaarpataljon
 Djaangõ
 Djibouti
 Djokuuskaj
+Dmanisi
 Dmitrijevsk
 Dmitrijevsk-Stalinsk
 Dmõtrijivsk
@@ -1606,7 +1624,8 @@ Dnipropetrovsk
 Dnister
 Dno
 Dobele
-Dobrogea
+Dobrič
+Dobrich
 Dobrudža
 Dodekaneesid
 Dodoma
@@ -1614,6 +1633,7 @@ Doha
 dokk
 doldrum
 Dolgaani-Neenetsimaa
+Dolj
 dolmen
 Dolomiidid
 dolomiidikarjäär
@@ -1634,7 +1654,6 @@ Donostia
 Donostia-San Sebastián
 Doonau
 doonorriik
-dopingulabor
 Dorchester
 Dordogne
 dormitoorium
@@ -1643,16 +1662,17 @@ Dorset
 Dortmund
 dott
 Douala
+Douglas
 Douro
 Dover
 Doveri väin
 Down
-DPA
 Draakonimäed
-draamateater
+Drammen
 Drava
 Drenthe
 Dresden
+Drobeta-Turnu Severin
 Drogheda
 Drogobõtš
 Drohobõtš
@@ -1665,8 +1685,12 @@ dzott
 Dzūkija
 Dzäudžõkäu
 Džalal-Abad
+Džalal-Abadi oblast
+Džalaloghli
+Džalilabad
 Džambul
 Džankoi
+Džavahhethi
 Džezkazgan
 Džizak
 Džohhar
@@ -1680,8 +1704,8 @@ Dubovo
 Dubrovnik
 Dudinka
 Duero
-duhhaan
 Duisburg
+Dunántúl
 Dunaújváros
 Dunbartonshire
 Dundaga
@@ -1695,11 +1719,11 @@ Durbe
 Durham
 Durrës
 Dušanbe
+Dušethi
 dušikabiin
 dušinurk
 duširuum
 duširuum-WC
-duuma
 DV
 Dvina
 Düsseldorf
@@ -1722,8 +1746,7 @@ Edivere
 Edmonton
 Edom
 Edru
-eduskund
-Eduskunta
+Edžmiatsin
 Edwardi järv
 Eelam
 eelesitatud
@@ -1735,8 +1758,6 @@ eelpositsioon
 eelpõrgu
 eelsadam
 eeltoodud
-eeluurimisvangla
-eelvägi
 eend
 Eense
 Eerikvere
@@ -1763,8 +1784,6 @@ eessein
 Eesti
 Eesti Aiake
 Eestimaa
-Eesti Maapäev
-Eesti Maja
 Eesti-poolne
 Eesti Rohuaed
 Eesti-sisene
@@ -1778,9 +1797,11 @@ eesvall
 eesõu
 eetsine
 Efesos
+Egedesminde
 Eger
 Egeuse meri
 Egiptus
+Egrisi
 Ehavere
 Ehime
 ehisaed
@@ -1788,25 +1809,19 @@ ehissammas
 ehisviil
 ehitis
 ehitismälestis
-ehitusettevõte
 ehituskonstruktsioon
 ehituskrunt
 ehitusmälestis
 ehituspaik
-ehituspood
 ehitustander
 ehitustanner
 ehitustarind
-ehitustrust
-ehitusvalitsus
 Ehmja
 ehtekarp
 Eidapere
 eikellegimaa
 Eikla
 Einbi
-einela
-einelaud
 Eipri
 Eisenstadt
 Eisma
@@ -1816,33 +1831,27 @@ Eistvere
 Eivere
 Eivissa
 ejalett
-ekleesia
-eksarhaat
-eksiilvalitsus
 eksikaator
 eksklaav
 eksogeenne
 eksosfäär
-eksperimentaaltsehh
-ekspordipank
 ekspordiriik
 ekvaatoriline
 Ekvatoriaal-Guinea
 ekvatoriaalvööde
-EL
 elamine
 elamisala
 elamispind
 elamu
-elamukooperatiiv
 elamukvartal
 elamulaam
 elamumaa
 elamumassiiv
 elamurajoon
-elamuühistu
+Elar
 elavnurk
 Elba
+Elbasan
 Elbe
 Elbi
 Elbiku
@@ -1851,19 +1860,9 @@ Elbu
 eldoraado
 Eldorado
 Elea
-elektribörs
-elektrijaam
-elektri- ja küttejaam
-elektrijõujaam
 elektrikapp
-elektrimüüja
-elektritankla
-elementaarkool
 elevaator
 Elevandiluurannik
-eliitkool
-eliitväeosa
-eliitvägi
 Elis
 Élisabethville
 Elista
@@ -1873,9 +1872,11 @@ Ellamaa
 Ellesmere
 Ellice'i saared
 elling
+El Paso
 El Salvador
 Elsass
 Elst
+Elton
 eluase
 eluhoone
 elukohariik
@@ -1892,8 +1893,6 @@ elutuba
 Elva
 Elüüsiumi väljad
 emaaed
-emaettevõte
-emafirma
 emailkastrul
 emailnõu
 emaistandik
@@ -1903,21 +1902,15 @@ emakraav
 emakupp
 emalinn
 emamaa
-emapank
 emapuur
-emaühing
 emiiririik
 Emilia-Romagna
 emiraat
-emissioonipank
-emiteerija
-emitent
 Emmaste
 Emmaste-Kurisu
 Emmaste-Selja
 Emmu
 Emmuvere
-EMO
 empoor
 empüreum
 Emumäe
@@ -1937,28 +1930,15 @@ Enno
 Ennu
 Enontekiö
 Enso
+Entre Douro e Minho
 Enugu
 Eoste
 Epeiros
 Ephesos
-episkopaalkirik
 epitsenter
 Epneri
-e-pood
 Epra
-e-raamatukogu
-eraettevõte
-erafirma
-eragümnaasium
-erahaigla
-erakas
-erakauplus
-erakla
-erakliinik
-erakool
-erakorralise meditsiini osakond
 erakorter
-erakõrgkool
 Erala
 eraldivaldus
 eraldusriba
@@ -1966,37 +1946,25 @@ eramaa
 eramaja
 eramets
 eramu
-erapank
-eraraadio
 eraraudtee
 Erastvere
 eratee
-eraõppeasutus
-eraülikool
+Érd
 Erebus
 Ereda
 Ereste
 Erfurt
 ergastulum
 Ērģeme
-erialaliit
 Erie
 Erie järv
-erihooldekodu
 e-riik
-eriinternaatkool
-erikohus
-erikool
-eriteenistus
 Eritrea
-eriõppeasutus
 Erja
 erker
 Ermakova
 Ermistu
 Ermistu järv
-erootikatelefon
-ERR
 Erra
 Erra-Liiva
 Er-Rijad
@@ -2013,9 +1981,6 @@ esikorrus
 Esiküla
 esikülg
 esindushoone
-esinduskauplus
-esinduspood
-esindusrestoran
 esindusväljak
 esine
 esinemiskoht
@@ -2031,9 +1996,6 @@ Esivere
 eskarp
 Eskilstuna
 Esku
-esmaabipunkt
-esmasturg
-esmatarbepood
 Esna
 esplanaad
 Espoo
@@ -2045,11 +2007,11 @@ Essu
 Esztergom
 estakaad
 Estosadok
+Estremadura
 estuaar
 eSwatini
 ešogett
 Ežva
-etendusasutus
 etik
 Etioopia
 Etna
@@ -2058,48 +2020,41 @@ Etruuria
 Etsaste
 ettekalle
 etteraie
-ettevõtlusinkubaator
 ettevõttesisene
-ETV
 Euboia
 Eufrat
 Euraasia
 euroala
-euroliit
+eurokraav
 Euroopa
-Euroopa Komisjon
-Euroopa Liidu Nõukogu
-Euroopa Liit
 euroriik
 eurotsoon
 Eurotunnel
-evakuatsioonipunkt
 Evengimaa
 Evenkia
 Everest
+Évora
 Évros
 Evrytanía
 Exeter
 Extremadura
+Eyjafjallajökull
 Eyre
 Eyre'i järv
 faarvaater
 Faenza
-faktooria
-faktooringufirma
-fakulteet
 falansteer
 Falkirk
 Falklandi saared
 Falun
 Famagusta
 fansa
-farmaatsiatehas
+Faro
 Fārs
-fazenda
+fassaadilaudis
 favela
-FBI
 Fehmarn
+Fejér
 Fennoskandia
 feodaallinnus
 feodaalriik
@@ -2107,41 +2062,30 @@ Feodossija
 feood
 Fergana
 Fergana org
+Ferizaj
 Fermanagh
 Ferrara
 Fès
 festivalilinn
 Fezzan
 fiaal
-fideikomiss
 Fidži
 Fidži meri
+Fier
 Fife
 figuurpudel
-filateeliakauplus
-filharmoonia
-filiaal
 Filipiini
 Filipiinid
 Filipiini meri
-filmikompanii
 filmipaviljon
-filmistuudio
 filmostaat
-filmoteek
 filterjaam
-filtratsioonilaager
 filtreerimisjaam
-finantsasutus
-finantsinspektsioon
-finantsorgan
 finišikoridor
 finišisirge
 Finnmark
 Firenze
-firmakauplus
-firmamatja
-firmapood
+Fizuli
 fjeld
 fjord
 fjordrannik
@@ -2156,36 +2100,28 @@ Flevoland
 flokkul
 Florida
 Flying Fish Cove
+Focșani
 Foiniikia
 Fokída
-Folketing
-fondibörs
-fondihoidla
-fonoteek
 fontanell
-foogtikohus
 foogtkond
 Fookis
 forellijõgi
-forellikasvandus
 forellitiik
-formeering
 Formosa
 Fort-de-France
 Fort-Lamy
+Fort Worth
 fotaarium
-fotoarhiiv
 fotoateljee
-fotolabor
 fotosein
 fotosfäär
-fototeek
 fototöökoda
-fotoäri
 framuug
 Franche-Comté
 Frangimaa
 Frangi riik
+Frankfort
 Frankfurt
 Frankfurt Maini ääres
 Frankfurt Oderi ääres
@@ -2195,6 +2131,7 @@ Frederiksberg
 Free State
 Freetown
 Freiburg
+Fresno
 Fribourg
 Friedland
 frigidaarium
@@ -2204,41 +2141,31 @@ frontispiss
 frontoon
 Frunze
 Früügia
-FSB
 Fthiótida
 fuajee
-fuajeebaar
 Fuji
 Fujian
 Fukui
 Fukuoka
 Fukushima
 Funafuti
+Funchal
 funkmaja
 Fuzhou
 Fällarna
 fännisektor
 Fääri saared
-föderaalkogu
-föderaalkohus
-föderaalparlament
 föderaalringkond
-föderaalvalitsus
-föderaalvangla
-föderatsiooninõukogu
 Förbi
 Förby
 Fööniksisaared
-füüsikaklass
-füüsikalabor
-füüsikalaboratoorium
+Füzuli
 Fyn
 gaasiballoon
 gaasihoidla
 gaasikamber
 gaasikatlamaja
 gaasimagistraal
-gaasitankla
 gaasiterminal
 gabariitvärav
 Gabès
@@ -2249,6 +2176,7 @@ Gagauusia
 Gagra
 Galaatia
 Galápagose saared
+Galați
 galeriimaja
 Galicia
 Galiitsia
@@ -2268,18 +2196,14 @@ Gansu
 Gao
 garaaž
 garaažiboks
-garaažiühistu
 Garabogazköl
+Garðabær
 Garda järv
 gardekas
 garderoob
 Garmisch-Partenkirchen
 Garonne
 Gascogne
-gasellettevõte
-gasellfirma
-gastronoomiakauplus
-gastropubi
 Gaza
 Gaza maariba
 Gaza sektor
@@ -2290,12 +2214,13 @@ Gatwick
 Gauja
 Gaujiena
 Gauteng
+Gavar
 Gavrilovka
 Gdańsk
 Gdov
 Gdynia
 Geelong
-geibaar
+Gegharkhunikh
 geiser
 geison
 Gelderland
@@ -2308,8 +2233,6 @@ Genua
 geodeetiline
 geodeetiline märk
 geodeetiline punkt
-geoloogiamuuseum
-geoloogiateenistus
 geomaantee
 George Town
 Georgetown
@@ -2318,21 +2241,26 @@ geosünklinaal
 Gera
 Germaania
 gesenk
-gestaapo
-Gestapo
 geto
+Geysir
+Ghamarlu
 Ghana
 Gharakhilisa
 Ghatid
+Ghzõlghotšh
+Ghukasjan
 Gibraltar
 Gibraltari väin
 Gifu
 Gilberti saared
-gild
 gildihoone
 Gironde
 Giza
 Gitega
+Giurgiu
+Gjakovë
+Gjilan
+Gjirokastër
 Gjumri
 Glåma
 Glamorgan
@@ -2342,6 +2270,7 @@ glassii
 Glazkar
 Glazov
 gletšer
+Gliwice
 globaalküla
 globaallõuna
 globaalne lõuna
@@ -2351,25 +2280,32 @@ Glomma
 Gloucester
 Gloucestershire
 glüptoteek
+Gnjilane
 Goa
 Gobi
 Godthåb
 Golan
 Golani kõrgendikud
-golfiklubi
 golfirada
 golfiväljak
 Gomel
 Gomorra
+Goražde
 Gorelõi Rei
+Gori
+Goris
+Gorj
 Gorki
 Gorlivka
 Gorlovka
 Gorno-Altaisk
+Gorohhovets
 Gorzów Wielkopolski
 Gostomel
+Gozo
 Gotha
 Gotland
+Goyang
 Gqeberha
 graafikaateljee
 grafiitreaktor
@@ -2388,7 +2324,6 @@ Grenada
 Grenadiinid
 Grenoble
 griin
-grillbaar
 grimmiruum
 Grobiņa
 Grodna
@@ -2396,7 +2331,6 @@ Grodno
 Groningen
 Groznõi
 grott
-GRU
 Gruusia
 Grööni
 Gröönimaa
@@ -2406,12 +2340,14 @@ Guadalajara
 Guadalquivir
 Guadeloupe
 Guadiana
+Guajaana
 Guajaana mägismaa
 Guam
 Guangdong
 Guangzhou
 Guangxi
 Guantánamo
+Guarda
 Guatemala
 Guayaquil
 gubaa
@@ -2424,21 +2360,24 @@ Guinea laht
 Guizhou
 Guiyang
 Gujarat
-GULAG
-Gulag
 Gulbene
 Gulistan
 Guliston
 Gumbinnen
+Gunma
+Guria
 Gurjev
-gurmeerestoran
 Gussev
 Gustavia
 Gutanäs
 Guwahati
 Guyana
 Gvardeisk
+Gwangju
+Gõda poolsaar
+Gädäbäy
 Gäncä
+Gäncä-Daşkäsän
 Gästrikland
 Gävle
 Gävleborg
@@ -2448,10 +2387,10 @@ Götamaa
 Göteborg
 Götzis
 Göttingen
-gümna
-gümnaasium
+Göygöl
 gümnaasiumihoone
 Győr
+Győr-Moson-Sopron
 Haabersti
 Haabneeme
 Haabsaare
@@ -2459,6 +2398,7 @@ Haabsilla
 Haag
 Haage
 Haakla
+Haakon VII meri
 Haamaste
 Haamse
 Haanja
@@ -2474,7 +2414,6 @@ Haaslava
 Haava
 Haavakannu
 Haavakivi
-haavakliinik
 haavamets
 Haavametsa
 Haavapää
@@ -2483,9 +2422,11 @@ haavik
 Haavistu
 Habaja
 Habarovsk
-hacienda
+Habomai
+Hadrut
 Haeska
 haff
+Hafnarfjörður
 Hagaste
 Hagåtña
 Hageri
@@ -2495,10 +2436,6 @@ haguküla
 Haiba
 Haidaku
 Haifa
-haigekassa
-haigemaja
-haigla
-haiglaapteek
 haiguskolle
 haiguspesa
 Haikou
@@ -2512,17 +2449,14 @@ haja
 hajaasustus
 hajaküla
 hajalinn
-hajatalu
+Hajdú-Bihar
 Hakassia
 Haki
 Hakjala
 Hakodate
 Haldi
 Haldreka
-haldusasutus
 haldushoone
-halduskeskus
-halduskohus
 halduspiirkond
 haldusterritoorium
 haldusterritoriaalne
@@ -2532,6 +2466,7 @@ Halinga
 haljak
 Haljala
 haljasala
+haljaskatus
 haljaskesa
 haljaskoridor
 haljasriba
@@ -2550,28 +2485,24 @@ Halonnesos
 halsinurk
 Halõma
 Ḩamāh
-hamam
-hambakliinik
-hambalabor
+Hamamlu
+Hamar
 hambalaie
-hambapolikliinik
-hambaravila
 hambavahe
 hambavall
 hambaõõs
 hambumus
 Hamburg
 hamburgeriputka
+Hamilton
 Hamina
 hammaada
-hammam
 Hammaste
 Hammerfest
 hammustuskoht
 Hampshire
 Handi-Mansimaa
 Handimiku
-hanefarm
 hanelaut
 hangehari
 Hangzhou
@@ -2579,14 +2510,13 @@ Hanija
 Hanikase
 Hanikatsi laid
 Hanila
-hanila
 Hanka
 Hanko
+Hanlar
 Hannika
 Hannover
 Hannuste
 Hanoi
-Hansa Liit
 hansalinn
 Han-Tengri
 Hantõ-Mansiisk
@@ -2599,23 +2529,16 @@ Harbiin
 Harbin
 Hardangeri fjord
 Harga
-hargettevõte
 Hargeysa
+Harghita
 Hargi
 Hargla
 hargmik
 hargsoon
-haridusamet
-haridusasutus
-hariduskeskus
-haridusministeerium
-haridusselts
-haridustempel
 Hari kurk
 Harilaid
 haritorn
 harjatorn
-harjavabrik
 Harju
 Harju-Jaani
 Harjuküla
@@ -2624,7 +2547,6 @@ Harju maakond
 Harju-Madise
 Harju-Risti
 harjutusala
-harjutuskool
 harjutusväli
 Harkiv
 Harkov
@@ -2633,22 +2555,23 @@ Harku järv
 Harkujärve
 Harmagedoon
 Harmi
-Harno
-harrastusteater
+Harrisburg
 Harz
+Hartford
 Hartum
 harujõgi
-harukauplus
-harukontor
 harukraav
-haruraamatukogu
 haruraudtee
 harutee
 Haryana
+Haskovo
 Hasselt
 Hastings
+Hašuri
 Hatanga
 hatik
+Hatloni vilajett
+Hatšmass
 Hatu
 hauakabel
 hauakamber
@@ -2659,7 +2582,6 @@ hauaküngas
 hauaplats
 haudeala
 haudehitis
-haudejaam
 haudemaja
 haudepott
 Haudjasaare
@@ -2676,12 +2598,12 @@ Hawaii saared
 hea koht
 Hea Lootuse neem
 Heard ja McDonald
-heategevusfond
 Heathrow
 Hebei
 Hebriidid
 Hebriidi saared
 Hebron
+Hedmark
 Hedžas
 Heedu
 Heeska
@@ -2714,14 +2636,11 @@ heitesektor
 Hekla
 Helbi
 Helda
+Helena
 helend
 Helenurme
 heletaiga
 Helgoland
-heliarhiiv
-heliplaadifirma
-Heliste kirik
-helistuudio
 heliväli
 Hellamaa
 Hellas
@@ -2743,6 +2662,7 @@ Henan
 Hendriksoni küür
 Hendrikumõisa
 Herakleion
+Herāt
 Herculaneum
 Hereford
 Herefordshire
@@ -2765,7 +2685,8 @@ hertsogkond
 Hertu
 Hessen
 Hevaha
-HEV-kool
+Heves
+Hevsurethi
 Hewlêr
 Hibiinid
 Hibinogorsk
@@ -2787,9 +2708,9 @@ hiigelehitis
 hiigellinn
 hiigelrajatis
 hiigelterritoorium
+hiiglaehitis
 hiiglalinn
 Hiina
-hiinakas
 Hiinalinn
 hiinalinn
 hiireauk
@@ -2811,6 +2732,7 @@ Himki
 Himma
 Himmaste
 Himmiste
+Hîncești
 Hindaste
 Hindsa
 Hindu
@@ -2840,37 +2762,31 @@ Hispaniola
 Hispanoameerika
 hitse
 Hlõnov
-HLÜ
 Hmelnitski
 Hmelnõtskõi
 Hobart
-hobulaenutuspunkt
 Hobulaid
 hoburaudkaar
-hobusefarm
-hobusekasvandus
 hobusekoppel
 hobusetall
 hobusetee
 hobuveski
 Hô Chi Minh
+Hódmezővásárhely
 Hohhot
 hoidla
 hoiuala
 hoiukamber
 hoiukarp
-hoiukassa
 hoiukodu
 hoiukoht
-hoiu-laenuühistu
 hoiumets
-hoiupaik
 hoiuruum
 hokiväljak
 Hokkaidō
+Hoktemberjan
 holarktiline
 Holdi
-holding-firma
 Holdre
 Holland
 Hollandi Antillid
@@ -2878,17 +2794,16 @@ Hollandi Guajaana
 Hollandi Ida-India
 Hollandi tuulik
 Hollandi Uus-Guinea
-Hollywood
 holm
 Holmenkollen
 Holsta
 Holstein
+Holsteinsborg
 Holstre
 Holvandi
 Holyrood
 Homieĺ
 hommikumaa
-homobaar
 Homs
 Honduras
 Hông
@@ -2897,12 +2812,6 @@ Honiara
 Honolulu
 Honshū
 Honšiu
-hooldejaam
-hooldekodu
-hooldusasutus
-hooldushaigla
-hooldusjaam
-hoolekandeasutus
 Hoomuli
 hoone
 hoonekarp
@@ -2911,14 +2820,13 @@ hoonestik
 hoonestu
 hoonestus
 hoonestusala
-hooneühistu
-hooramaja
 Hoorni neem
 hoovimaja
 hoovinurk
 hoovipealne
 hoovipoolne
 Hopa
+Hordaland
 Horezm
 Horezmi vilajett
 horisontaalasend
@@ -2936,19 +2844,14 @@ horst
 Horug
 Horvaatia
 Hosby
-hospidal
-hospiits
-hospital
-hostel
 Hostomel
-hotell
-hotellikett
 hotellimajutus
 hotellinumber
 hotellituba
 Hotõmäe
 Houston
 Hradec Králové
+Hrazdan
 Hrodna
 hruštšovka
 Huang He
@@ -2961,30 +2864,23 @@ hukkamiskoht
 hukkamispaik
 hukkumiskoht
 hukkumispaik
+Hulagiidide riik
 Hulaku
-hulgibaas
-hulgifirma
-hulgiladu
-hulgimüüja
 Hulja
 Hull
-hullar
 Hullo
 Humala
 humalaaed
-humanitaargümnaasium
-humanitaarkool
 humanitaarkoridor
-humanitaarorganisatsioon
 Humber
 Hummuli
 Hunan
 hundiauk
 hundilaut
 Hundinurga
-hunta
+Hunedoara
 Huntingdonshire
-huraal
+Huntsville
 Hurda
 Hurghada
 Hurmi
@@ -2994,21 +2890,18 @@ hurtsik
 Husari
 Hutita
 Huuksi
-huvikeskus
-huviklubi
-huvikool
 Hõbeda
 hõbemedal
 Hõbemäe
 Hõbesalu
 Hõreda
 hõrendik
+Hõzõ
 häbedus
 häbemepilu
 hädasadam
 hädaväljapääs
 häil
-häirekeskus
 Hälsingland
 Hälvati
 Häme
@@ -3029,8 +2922,6 @@ Härmä
 härrasmaja
 härrastemaja
 Härämäe
-hävituslaager
-hävituspataljon
 Häädemeeste
 hääletamiskabiin
 hääletamiskast
@@ -3042,16 +2933,13 @@ Höbring
 Höbringi
 Hübja
 hüdria
-hüdroehitis
-hüdrometeoroloogiajaam
 hüdrosfäär
 hüdrosõlm
 hügieeniruum
+hüpekas
 Hüperborea
-hüpermarket
-hüpikpood
-hüpoteegipank
 hüpotsenter
+hüppekas
 hüppekast
 hüppemägi
 hüppepaik
@@ -3065,6 +2953,8 @@ Hüüru
 Hyderabad
 Hyōgo
 Hyvinkää
+ʻAjmān
+Ialomița
 Iași
 Ibadan
 Ibaraki
@@ -3076,6 +2966,7 @@ ida
 Ida-Aasia
 idaala
 Ida-alad
+Ida-Antarktis
 Ida-Aserbaidžaan
 Ida-Bengal
 Ida-Eesti
@@ -3110,6 +3001,7 @@ Ida-Samoa
 idaserv
 Ida-Siber
 Ida-Siberi meri
+Ida-Zängäzur
 idatiib
 Ida-Timor
 Ida-Transvaal
@@ -3119,8 +3011,7 @@ Ida-Virumaa
 Ida-Viru maakond
 Idaväin
 Idi Amin Dada järv
-iduettevõte
-idufirma
+Idževan
 Idumea
 Ieper
 Igaküla
@@ -3163,15 +3054,17 @@ Ikšķile
 Ilbaku
 Île-de-France
 Ileía
+Ilfov
 Ilion
 Ilistvere
+Ilkhaanide riik
+Ilkhanaat
 Illarionovski
 Illi
 Illinois
 Illuka
 Illurma
 Illüüria
-ilmajaam
 ilmajagu
 ilmakaar
 ilmamaa
@@ -3181,7 +3074,6 @@ ilmanurk
 ilmaruum
 Ilmastalu
 Ilmaste
-ilmateenistus
 Ilmatsalu
 Ilmen
 Ilmjärv
@@ -3194,11 +3086,11 @@ Ilzene
 Ilžnä
 Iltsmu
 iluaed
-iludussalong
+ilukarp
 Ilūkste
+Ilulissat
 Ilumetsa
 Ilumäe
-ilusalong
 Ilvese
 Imandra
 Imara
@@ -3215,8 +3107,6 @@ imemaa
 Imerethi
 Imereti
 imeti
-IMF
-impeerium
 Imphal
 impordiriik
 Imste
@@ -3248,18 +3138,11 @@ Indsikurmu
 Indus
 industriaalmaa
 industriaalriik
+infektsioonikolle
 inferno
-infoagentuur
-infobüroo
-infokeskus
-infokiosk
 infolaud
 infolett
-infopunkt
 infosaal
-infotalitus
-infoteenindus
-infrapunasaun
 Ingeri
 Ingerimaa
 Ingküla
@@ -3273,52 +3156,25 @@ inhalatoorium
 inimasula
 inimmaailm
 Inju
-inkassofirma
-inkubaator
-inkubaatoriettevõte
-inkubant
-inkubatoorium
-inkvisitsioon
-inkvisitsioonikohus
 Inn
+Innlandet
 Innsbruck
-insektaarium
-inseneribüroo
-insenerivägi
-inspektuur
-instants
 Insterburg
-intendantuur
 intensiiv
-intensiivosakond
-internaat
-internaatkodu
-internaatkool
-internatsionaal
 internetiavarus
-internetikasiino
-internetikohvik
-internetipood
 internetipunkt
-Interpol
-Interrinne
 intiimpiirkond
 intramuskulaarne
 intravenoosne
 Intsikurmu
-invaliididekodu
 invatualett
 inva-WC
 Inverness
-investeerimisfond
-investeerimispank
-investeerimisühing
 Ioánnina
 ionosfäär
 Iowa
 Ípeiros
 Ipswich
-i-punkt
 Iqaluit
 Iraak
 Iraan
@@ -3330,6 +3186,7 @@ Iravere
 Irbeni väin
 Irbe väin
 Irbid
+Irbit
 Irboska
 Irboska nulk
 Irian Jaya
@@ -3353,18 +3210,16 @@ isamaja
 Isar
 isatalu
 iseteeninduskassa
-iseteeninduskauplus
 iseteeninduskeskkond
 iseteenindusportaal
 Isfahan
 Ishikawa
-ISIS
 Iska
+İskele
 İskenderun
 Islamabad
 islamimaa
 islamimaailm
-Islamiriik
 islamiriik
 Island
 Isle of Wight
@@ -3373,7 +3228,7 @@ Issaku
 Issõk-Kul
 İstanbul
 istandik
-istandus
+Istaravšan
 istmealune
 istmetasku
 Istria
@@ -3394,6 +3249,7 @@ Itaalia Somaalimaa
 Ithaka
 itsi
 Itškeeria
+Iturup
 Ivangorod
 Ivano-Frankivsk
 Ivano-Frankovsk
@@ -3401,6 +3257,7 @@ Ivanovo
 Ivanovo-Voznessensk
 Ivaski
 Ivaste
+Iveria
 Iwate
 Jaafo
 Jaagarahu
@@ -3408,12 +3265,12 @@ Jaagupi
 Jaahvo
 Jaakna
 Jaama
+jaamaesine
 jaamahoone
 Jaamaküla
 Jaamamõisa
 jaamatee
 Jaamistõ
-jaanalinnufarm
 Jaani
 Jaanika
 Jaanikese
@@ -3427,6 +3284,8 @@ Jaaniveski
 Jaapan
 Jaapani hoovus
 Jaapani meri
+Jaapani Põhjaalad
+Jaapani Sisemeri
 Jaaska
 Jaastrova
 Jaava
@@ -3434,11 +3293,6 @@ Jabara
 Jablonovõi ahelik
 Jackson
 jacuzzi
-jaekaubandusvõrk
-jaekett
-jaemüügifirma
-jaemüüja
-jaevõrk
 Jaffa
 Jaffna
 jahiala
@@ -3448,17 +3302,14 @@ jahikott
 jahiloss
 jahimaa
 jahimaja
-jahimajand
 jahionn
-jahisadam
 jahitasku
-jahtklubi
 jahumatt
 jahutusnõu
-jahuveski
 Jaipur
 Jakarta
 Jakobimõisa
+Jakobshavn
 Jakutsk
 Jakuutia
 jalakäijate tunnel
@@ -3467,7 +3318,6 @@ jalam
 Jalametsa
 jalaruum
 Jalase
-jalatsivabrik
 jalatäis
 jalgots
 jalgpallimuru
@@ -3483,31 +3333,36 @@ jalgtäpp
 Jalta
 Jalukse
 Jaluse
+jalutusaed
+jalutusala
 jalutuspaik
 jalutusruum
+jalutusväljak
+Jam
 Jamaica
 Jamaika
 Jamal
 Jamali Neenetsimaa
+Jambol
 Jamburg
 Jamestown
 Jammu
 Jammu ja Kashmir
+Jam-Zapolski
 Jana
 Jandova
 Jangtse
 Jan Mayen
 Jantra
 jaos
-jaoskond
 jaosmaa
 jaotusalajaam
-jaotusvõrguettevõtja
 jaranga
 Jarkend
 Jaroslavl
 Jaska
 Jasnaja Poljana
+Jász-Nagykun-Szolnok
 Jatsmani
 Jauni
 Jaunjelgava
@@ -3516,12 +3371,19 @@ Jeedasküla
 Jeemen
 Jeeriko
 Jeeriku
+Jefferson City
+Jeghegnadzor
+Jeghvard
+Jeisk
 Jeju
 Jēkabpils
 Jekaterinburg
 Jekaterinodar
 Jekaterinoslav
 Jelabuga
+Jelenendorf
+Jelenino
+Jelenovka
 Jelets
 Jelgava
 Jelizavetgrad
@@ -3534,6 +3396,7 @@ Jenissei
 Jerevan
 Jermakova
 Jersey
+Jersey City
 Jeruusalemm
 Jesil
 Jessentuki
@@ -3562,23 +3425,17 @@ Jonava
 Joniškis
 joode
 joogikartong
-joogikoht
 joogiküna
-joogimaja
-joogipaik
+joogimold
 joogisarv
 joogitops
 jooksuaed
 jooksudistants
 jooksukoppel
-joomakoht
-joomapunker
-joomaurgas
 joonevahe
 Joonia
 Joonia meri
 Joonia saared
-joonistusklass
 Joonuse
 Joosu
 Joosu-Suurküla
@@ -3593,9 +3450,9 @@ Jordaania
 Jordan
 Jordani Läänekallas
 Joškar-Ola
-jsk
 Juba
 Judea
+Judea ja Samaaria
 Jugo
 Jugorski Šar
 Jugoslaavia
@@ -3604,13 +3461,9 @@ Jugra väin
 Jugu
 juhikabiin
 Juhkentali
-juhtimiskeskus
 juhtimispunkt
-julgeolekukomitee
-julgeolekuteenistus
-julgestuspolitsei
-julgestusteenistus
 Julia Alpid
+Julianehåb
 jumalakoda
 Juminda
 Juminda neem
@@ -3622,8 +3475,6 @@ Jurbarkas
 Jūrmala
 Jursi
 jurta
-justiitskolleegium
-justiitsministeerium
 Juzivka
 Juzovka
 Južno-Sahhalinsk
@@ -3631,15 +3482,8 @@ Juuda
 Juuda ja Samaaria
 Juudamaa
 Juudi autonoomne oblast
-juudipood
 juudiriik
-juuditurg
 juuksekeeris
-juukselõikla
-juuksla
-juuksurisalong
-juuksuritöökoda
-juuksuriäri
 Juula
 Juuliku
 Juura
@@ -3647,17 +3491,12 @@ juurdepääsutee
 juurdeveoraudtee
 juurdeveotee
 juurdevoolukanal
-juurdlusorgan
 Juuru
 juurviljahoidla
 juurviljaputka
 Juusa
 juustukelder
-juustutehas
-juustutsehh
-juustuvabrik
 juustuvann
-juveelikauplus
 Jõe
 jõeharu
 jõehaud
@@ -3705,15 +3544,11 @@ Jõhvi
 jõhvikaraba
 jõhvikasoo
 Jõksi
-jõuamet
-jõuametkond
-jõujaam
 jõukese
 jõuks
 jõulinnak
 Jõulusaar
 jõuluturg
-jõuministeerium
 jõusaal
 Jõõpre
 Jädivere
@@ -3724,8 +3559,8 @@ Jäine Mander
 Jäine Manner
 Jälevere
 Jälgimäe
+jälgpind
 Jämaja
-Jämejala
 Jämsä
 Jämtland
 Jändja
@@ -3734,9 +3569,7 @@ Jänistvere
 Jänkistan
 Järavere
 järelasend
-järelevalveasutus
 järelmaailm
-järelvägi
 Järise
 Järiste
 Järlepa
@@ -3804,12 +3637,8 @@ jäätisekiosk
 jäätkaevandus
 jäätmaa
 jäätmehoidla
-jäätmejaam
 jäätmekast
-jäätmekäitlusettevõte
 jäätmemaja
-jäätmepõletusjaam
-jäätmepõletustehas
 jäätrass
 jääväljak
 Jönköping
@@ -3820,8 +3649,6 @@ Jüüti poolsaar
 Jyväskylä
 Kaaba
 kaablisoon
-kaablitehas
-kaadriosakond
 Kaagjärv
 Kaagjärve
 Kaagna
@@ -3844,7 +3671,6 @@ Kaansoo
 kaaraken
 Kaaratautsa
 kaardikamber
-kaardipõrgu
 Kaare
 Kaarepere
 kaarfriis
@@ -3883,11 +3709,9 @@ Kaatsova
 Kaave
 Kaavere
 Kaavi
-kabak
 Kabala
 Kabardi
 Kabardi-Balkaaria
-kabaree
 kabel
 Kabeli
 kabeliaed
@@ -3916,7 +3740,6 @@ Kadarpiku
 kadastik
 Kaderna
 kadetikasiino
-kadetikorpus
 Kadijevka
 Kadijivka
 Kadiküla
@@ -3928,17 +3751,18 @@ Kadrioru loss
 Kadrioru park
 Kaduna
 Kadõni
-kaelakohus
 Kaelase
 kaenal
 Kaera
+kaerakott
+kaerakõrs
 kaerapõld
+kaeratorp
 Kaerepere
 Kaesŏng
 kaev
 Kaeva
 kaevand
-kaevandus
 kaevanduskäik
 kaevanduslinn
 kaevandusväli
@@ -3955,6 +3779,8 @@ kaevurake
 kaevusalv
 kaevushaud
 Kaevussaare
+kaevuämber
+Kafan
 kaganaat
 Kagarinna
 Kagavere
@@ -3963,6 +3789,7 @@ Kagoshima
 Kagu-Aasia
 Kagu-Eesti
 kagukaar
+Kagul
 kagunurk
 kagupiir
 Kaguvere
@@ -3971,6 +3798,7 @@ Kahala
 kaheinimesetuba
 Kahejõemaa
 kahepereelamu
+kahetuba
 kahhelsein
 Kahhethi
 Kahheti
@@ -3993,9 +3821,7 @@ Kailuka
 Kaimanisaared
 Kaimi
 Kaimri
-kainer
 kainestuskamber
-kainestusmaja
 Kainuu
 Kairo
 Kairouan
@@ -4009,15 +3835,12 @@ kaitseehitis
 kaitseistandik
 kaitsejoon
 kaitsekraav
-Kaitseliit
 kaitselõik
 kaitsemets
-kaitseministeerium
 Kaitsemõisa
 kaitsepiirkond
-kaitsepolitsei
 kaitserajatis
-kaitseringkond
+kaitseriba
 kaitsetamm
 kaitsetekk
 kaitsetorn
@@ -4047,20 +3870,14 @@ Kalahari
 kalahaudemaja
 kalajõgi
 kalajärv
-kalakasvandus
 kalakasvatustiik
 kalakoht
-kalakombinaat
 kalakäik
 Kalamaja
-kalamajand
 Kalana
 kalapunkt
 kalapääs
 Kalarand
-kalaresto
-kalarestoran
-kalasadam
 Kalastaja poolsaar
 kalasump
 kalatiik
@@ -4100,8 +3917,6 @@ Kaleste
 Kalevala
 Kalevi
 Kalevi-Liiva
-kalevimanufaktuur
-kalevivabrik
 Kalgi
 kalifaat
 Kalifornia
@@ -4169,6 +3984,7 @@ Kaloga
 Kaluga
 Kaluka
 kalurionn
+kaluriosmik
 Kaluuga
 Kalvarija
 Kalvi
@@ -4198,11 +4014,10 @@ Kamjanets-Podilskõi
 Kamjanske
 Kammeri
 kammersaal
-kammerteater
 kammitasku
 kammitupp
-kammivabrik
 Kamnitsa
+Kamo
 kamorka
 Kampaania
 Kampala
@@ -4220,7 +4035,7 @@ Kanaarid
 Kanaari saared
 Kanada
 Kanada Arktika saared
-kanafarm
+Kanagawa
 kanakuur
 kanakuut
 Kanaküla
@@ -4240,7 +4055,9 @@ Kanariku
 Kanassaare
 Kanazawa
 Kanavere
+Kandahār
 Kandalakša
+Kandalakša laht
 Kandava
 kandekast
 kandekorv
@@ -4252,6 +4069,7 @@ Kandiküla
 Kandla
 Kandle
 Kandsi järv
+Kandy
 Kanepi
 kanepikasvandus
 Kangasala
@@ -4286,6 +4104,7 @@ Kanpur
 Kansai
 Kansas
 Kansas City
+Kansk
 Kantaabria
 Kanta-Häme
 kantiin
@@ -4294,11 +4113,11 @@ Kantō
 Kanton
 kanton
 Kantreküla
-kantselei
 Kantsi
 Kapadookia
 Kapa-Kohila
 kapakohila
+Kapan
 Kapera
 Kapernaum
 Kapi
@@ -4307,10 +4126,10 @@ Kapimaa
 kapitaalsein
 kapitagune
 kapitalimaailm
-Kapitoolium
 Kapitooliumi küngas
 Kaplinn
 kaponiir
+Kaposvár
 Kapra
 Kaprio laht
 kapsaaed
@@ -4324,7 +4143,9 @@ Kapšagaj
 kaptenisild
 Kaptšagai
 Kapu
+Kara
 Karabahh
+Karabaš
 Kara-Bogaz-Goli laht
 Karachi
 Karaganda
@@ -4342,8 +4163,8 @@ Karala
 Kara meri
 Karamsina
 karandlagi
-karaokebaar
 Karaski
+Kárášjohka
 Karatau
 Karatšai
 Karatšai-Tšerkessia
@@ -4351,6 +4172,7 @@ Karavangid
 karavanipark
 karavanitee
 karavanpark
+Karavansarai
 karavanserai
 Kara Värav
 Karba
@@ -4359,6 +4181,8 @@ karbikene
 kardinapilu
 kardirada
 Kardla
+Kardzhali
+Kǎrdžali
 Kareda
 Kareni osariik
 Karepa
@@ -4381,14 +4205,13 @@ Karinõmme
 Karisilla
 Kariste
 karistusala
-karistuskoloonia
 karistusring
 Karisöödi
 Karitsa
 Karivärava
 Karja
 karjaaed
-karjafarm
+Karjagino
 karjakaev
 karjakoppel
 karjaköök
@@ -4417,13 +4240,14 @@ Karkuse
 Karla
 Karl-Marx-Stadt
 Karlova
+Karlovac
 Karlovy Vary
 Karlskrona
 Karlsruhe
 Karlstad
 Karmel
 Karmeli mägi
-karn
+Karmir Gjugh
 Karnataka
 karniis
 Karoli
@@ -4456,8 +4280,6 @@ Karstula
 Karši
 Kartaago
 Kartaliinia
-kartellierakond
-kartellipartei
 Kartli
 kartodroom
 kartoteegikast
@@ -4480,13 +4302,11 @@ Karunga
 karuperse
 Karusaar
 Karuse
-karusloomakasvandus
 karussell-lüpsiplats
 Karuste
 karüatiid
 Kasahhi
 Kasahstan
-kasakavägi
 Kasakova
 Kasari
 Kasari jõgi
@@ -4503,17 +4323,14 @@ Kasepää
 Kasevälja
 Kashi
 Kashmir
-kasiino
-kasiinokett
 Kasispea
 Kaskaadid
 Kaskaadimäestik
-Kaskinen
 Kásos
 Kaspia
+Kaspiamaa
 Kaspia meri
 Kassari
-kassatsioonikohus
 Kassel
 Kassema
 kassett
@@ -4521,13 +4338,12 @@ kassettlagi
 kassettlahingumoon
 Kassi
 kassiauk
-kassikool
 Kassilaane
+Kassimov
 Kassinurme
 Kassiratta
 Kassisaba
 Kassitoome
-kassivabrik
 Kassivere
 Kastamara
 kastehein
@@ -4549,11 +4365,7 @@ Kastre
 kastrul
 kasulik pind
 Kasvandu
-kasvandus
-kasvatusasutus
-kasvatusmaja
 kasvuala
-kasvuettevõte
 kasvuhoone
 kasvukoht
 kasvumaja
@@ -4581,11 +4393,11 @@ katastroofipaik
 katastroofipiirkond
 katedraal
 katedraalkirik
-kateeder
 katel
 Katela
 katelok
 Katerõnoslav
+Katharinenfeld
 Katku
 katkuhaud
 katlamaja
@@ -4596,19 +4408,14 @@ katmikala
 Katowice
 katseaed
 katseala
-katsebaas
-katsejaam
 katseklaas
 katselabor
 katselaboratoorium
 katselapp
 katselaut
-katsemajand
-katsemetskond
+katsepolügon
 katsepolügoon
 katsepõld
-katsetehas
-katsetsehh
 Katsina
 Katšini osariik
 Kattegat
@@ -4619,7 +4426,6 @@ katusealune
 katusehari
 katusekamber
 katusekelp
-katusekohvik
 katusekorrus
 katusekorter
 katuselatern
@@ -4627,44 +4433,23 @@ katuseterrass
 katuseviil
 katuslagi
 kaubaait
-kaubabörs
 kaubahall
 kaubahoov
 kaubajaam
-kaubakeskus
-kaubakoda
-kaubakompanii
-kaubakontor
-kaubaladu
 kaubalinn
-kaubamaja
-kaubandusesindus
-kaubandusettevõte
-kaubandusfirma
-kaubanduskeskus
-kaubanduskett
-kaubanduskoda
-kaubanduskontsern
-kaubandusministeerium
-kaubanduspalat
 kaubandustänav
-kaubandusvõrk
 kaubaputka
-kaubasadam
-kaubastu
 kaubatee
 kaubatänav
 Kaubi
 Kauda
 Kaude
 Kaugatoma
-kaugejaam
 Kaug-Ida
 kaugkarjamaa
 Kaugu
 kaugune
 kaugushüppekast
-kaugõppeosakond
 Kaukaasia
 Kaukasus
 Kauksi
@@ -4673,8 +4458,8 @@ Kaunas
 Kauniainen
 Kaunispe
 Kaunissaare
-kauplusekett
 kauplusladu
+kaupmehemaja
 Kauru
 Kaurutootsi
 Kause
@@ -4697,6 +4482,7 @@ Kaxgar
 Kéa
 Keava
 Kecskemét
+Kedabek
 Kėdainiai
 kedrakeraamika
 Kedre
@@ -4704,28 +4490,21 @@ Keedika
 keedukann
 keeduklaas
 keedukoda
+keedukoht
 keedupott
 keeduväli
 keeglirada
 keeglisaal
+keeksivorm
 Keelatud Linn
 keeleala
 keelealune
-keeleinspektsioon
-keelenõuandla
-keelepesa
 keelesaar
 Keelingi saared
-keeltekool
 keeluala
 keelutsoon
 Keelva
 Keema
-keemiaklass
-keemiakombinaat
-keemialabor
-keemialaboratoorium
-keemiatehas
 Keemu
 Keeni
 Keenia
@@ -4743,6 +4522,7 @@ keevisliide
 keevistarind
 keevisõmblus
 Kefaloniá
+Keflavík
 kehaasend
 Kehala
 Kehila
@@ -4757,9 +4537,9 @@ Keila-Joa
 keilut
 Keiser Wilhelmi maa
 keisririik
-KEK
 Ķekava
 Kelba
+Kelbadžar
 kelder
 keldriboks
 keldrikord
@@ -4767,14 +4547,12 @@ keldrikorrus
 keldrikorter
 Keldrimäe
 keldrimägi
-keldripood
 keldriruum
 keldrisaal
 kelgumägi
 kelgurada
 Kellamäe
 Kellassaare
-kellassepatöökoda
 kellatorn
 Kellavere
 Kellavere mägi
@@ -4795,7 +4573,6 @@ Kemi
 Kemijärvi
 kemmerg
 kemps
-kennel
 Kenni
 Kent
 Kentucky
@@ -4812,7 +4589,6 @@ Kerepäälse
 Keressaare
 Kergatsi
 kergehitis
-kergetööstusettevõte
 kergliiklustee
 kergmetroo
 kergsein
@@ -4823,7 +4599,6 @@ Kerguta
 Keri
 Kerita
 kerkeala
-kerksuskeskus
 Kérkyra
 Kermānshāh
 Kernu
@@ -4839,26 +4614,18 @@ Kesk-Aafrika Vabariik
 Kesk-Aasia
 keskala
 Kesk-Ameerika
-keskasutus
+Kesk-Aran
 Kesk-Doonau madalik
+Kesk-Dunántúl
 Kesk-Eesti
-keskeriõppeasutus
 Kesk-Euroopa
 Kesk-Frangimaa
 Kesk-Frangi riik
-keskhaigla
-keskjaam
 keskjooks
 Kesk-Jüütimaa
 Kesk-Kongo
-keskkonnaministeerium
-keskkontor
 Kesk-Kreeka
-keskkriminaalpolitsei
 Keskküla
-kesklabor
-kesklaboratoorium
-keskladu
 Kesklahe
 Kesklinn
 kesklinn
@@ -4866,9 +4633,7 @@ kesklööv
 Kesk-Makedoonia
 keskmassiiv
 Keskmustmullavöönd
-keskmuuseum
 keskmäestik
-keskpank
 Keskpiirkond – Loire'i org
 keskplaan
 Kesk-Pohjanmaa
@@ -4876,20 +4641,18 @@ keskpositsioon
 keskpunkt
 keskpõrand
 keskpäevajoon
-keskraamatukogu
 Keskranna
 Keskriigid
 Kesk-Siberi kiltmaa
 Kesk-Soome
 Kesk-Šoti madalik
 keskturg
+Kesk-Ungari
 keskuslinn
-keskvalitsus
 Kesk-Vene kõrgustik
 Keskvere
 keskväljak
 keskvöönd
-keskõppeasutus
 Kesse
 Kesselaid
 kessoon
@@ -4897,26 +4660,23 @@ kessoonlagi
 Kessulaid
 Kestla
 Kesu
+Kešiškend
 Ket
-ketiapteek
-ketihotell
-ketikauplus
-ketipood
 Ketneri
-ketrustsehh
-ketrusvabrik
 Ketsemani
-ketserikohus
 kettagolfipark
 kettagolfirada
 kettaheitering
-KGB
 khaaniriik
 Khān Yūnis
+Khārg
 Kharthli
-khk
+Kharvansara
+Khešiškhend
 Khmeer
+Khobulethi
 Khorat
+Khulna
 Khūzestān
 Khuthaisi
 Khyber Pakhtunkhwa
@@ -4927,7 +4687,6 @@ kibitka
 kibu
 Kibuna
 Kibura
-kibuts
 Kidaste
 Kidise
 Kidron
@@ -4938,12 +4697,9 @@ Kielce
 Kieli kanal
 Kigali
 Kihelkonna
-kihelkonnakohus
-kihelkonnakool
 Kihelkonna-Liiva
 Kihlepa
 Kihlevere
-kihlveokontor
 Kihme
 Kihmla
 Kihnu
@@ -4965,19 +4721,13 @@ kiiluveerivi
 Kiini
 kiinimuhk
 Kiiova
-kiirabijaam
 Kiirassaare
 kiirendusrada
 kiirgusvarje
 kiirgusvöönd
 kiirkeedupott
 kiirkeetja
-kiirkliinik
-kiirsöögikoht
-kiirsöökla
 kiirtee
-kiirtoidukoht
-kiirtoidurestoran
 Kiisa
 kiisakoda
 Kiisamaa
@@ -5005,6 +4755,7 @@ kilehall
 kilehoone
 kilekasvuhoone
 kilesaun
+kiletunnel
 Kilgi
 Kiliikia
 Kilimanjaro
@@ -5017,6 +4768,7 @@ kilptee
 kilpvulkaan
 kiltmaa
 Kiltsi
+Kilulinn
 Kimalasõ
 kimmkatus
 kimppiilar
@@ -5027,22 +4779,16 @@ kindlusemüür
 kindluskirik
 kindlusloss
 kindlustis
-kindlustusasutus
-kindlustusfirma
-kindlustusselts
 kindlusvangla
-kindralkomissariaat
 kindralkubermang
-kindralstaap
+Kinešma
 kingakarp
 kingakott
-kingaparandus
 kingapood
 kingikott
 Kingissepa
 Kingissepp
 Kingli
-kingsepatöökoda
 Kingston
 Kingston upon Hull
 Kingston upon Thames
@@ -5053,19 +4799,8 @@ kink
 Kinki
 Kinksi
 Kinnereti järv
-kinnimaja
-kinnine vangla
-kinnipidamisasutus
-kinnipidamiskoht
-kinnisvarabüroo
-kinnisvarafirma
 kinnituskoht
-kinobuss
-kinokassa
 kinosaal
-kinostuudio
-kinoteater
-kinovõrk
 Kinshasa
 Kinshasa Kongo
 Kios
@@ -5077,8 +4812,6 @@ Kiratsi
 kirbel
 Kirbla
 Kirbu
-kirbukas
-kirbuturg
 Kirdalu
 Kirde-Eesti
 Kirde-Hiina
@@ -5096,9 +4829,8 @@ kirikaed
 Kirikla
 kirikla
 kirikuaed
+kirikuesine
 kirikukihelkond
-kirikukogudus
-kirikukool
 kirikukott
 Kirikuküla
 kirikuküla
@@ -5112,11 +4844,11 @@ Kirikuvalla
 Kirila
 Kirimäe
 Kirisaare
+Kiriši
 Kiritimati
 Kiritu
 Kirivalla
 Kirivere
-kirjandusmuuseum
 kirjanurk
 kirjapaun
 kirjutustuba
@@ -5138,16 +4870,17 @@ Kirtsi
 Kiruma
 Kirumpää
 Kiruna
-kirurgiahaigla
-kirurgiakliinik
 Kiruvere
+Kisalföld
 Kisangani
 Kiska
 Kislovodsk
 Kissa
+Kisseljovsk
 Kisuvere
 Kišinjov
 kišlakk
+Kizel
 Kitakyūshū
 Kitsa
 Kitseküla
@@ -5179,7 +4912,6 @@ kivikuhjatis
 kivikõrb
 Kiviküla
 kivikülv
-kivilaev
 kivilinn
 Kiviloo
 Kivilõppe
@@ -5207,11 +4939,8 @@ kiviväli
 Kiviõli
 Kivu
 Kivu järv
+Kjustendil
 klaashoone
-klaasikoda
-klaasimistöökoda
-klaasitöökoda
-klaasivabrik
 klaaskapp
 klaaskast
 klaaskasvuhoone
@@ -5224,42 +4953,33 @@ Kladno
 Klagenfurt
 Klaipėda
 Klaipėda piirkond
-klarnetiklass
 klassikarada
 klassiruum
 klassituba
 klausuur
-klaveriklass
-klaverivabrik
 Kleemu
 kleristoorium
-klh
 klibukõrb
 klibulood
 klibuvall
-klienditugi
 Kliima
 kliimakamber
-kliimaministeerium
 kliimavööde
 kliimavöönd
-kliinik
-kliinikum
 Klin
 klindiastang
 klint
+Klintsõ
 klistiirikann
 Klistina
+Kljazma
 Kljutševskaja sopka
 Klondike
 Kloodi
 Klooga
 Kloogaranna
-klooster
 Kloostri
 kloostriaed
-kloostrikirik
-kloostrikool
 Kloostrimetsa
 Kloostri-Rannu
 klosett
@@ -5268,10 +4988,8 @@ klubihoone
 klubiruum
 Kluhhori
 klump
-kn
-Knesset
 Knossos
-kobarkino
+kobarlinn
 Kōbe
 Kobela
 Kobilu
@@ -5290,6 +5008,7 @@ Kodasoo
 Kodavere
 Kodesmaa
 Kodeste
+Kodijärve
 Kodila
 Kodila-Metsküla
 Kodismaa
@@ -5298,53 +5017,42 @@ koduaed
 Kodu-Eesti
 kodukant
 kodukatus
-kodukeskjaam
 kodukoht
-kodukohvik
 kodukolle
-kodukontor
 kodukotus
 koduküla
 kodulinn
-koduloomuuseum
 kodulähedane
 kodumaa
 kodumail
 kodumaile
 kodumailt
-kodumajand
-kodumajanduskool
 kodumeri
 kodumets
 kodumuru
 kodunt
 kodunurk
 kodupaik
+kodupesa
 kodupind
 koduplats
-kodupood
-koduresto
-kodurestoran
 koduriik
 kodusaal
 kodusadam
 kodutanum
 kodutänav
 koduväljak
+koduümbrus
 Koela
 koelmu
 Koemetsa
 koeraaedik
-koerahotell
 koerakaelanurk
-koerakool
 koerakuut
 koeralaut
 koeraputka
 Koeravere
 Koeri
-koertehotell
-koertekool
 Koeru
 Kōfu
 Kogalõm
@@ -5354,15 +5062,12 @@ Kogri
 Kogrõ
 kogujadreen
 kogujakraav
+kogujatee
 kogukonnaaed
-kogukonnakohus
-kogukonnakool
 kogukonnamaa
 Kogula
 kogumiskaev
-kogumiskoht
 kogumiskraav
-kogumispunkt
 kogunemiskoht
 kogunemispaik
 Koguva
@@ -5371,7 +5076,6 @@ kohake
 kohakene
 Kohala
 Kohala-Eesküla
-kohamuuseum
 kohapealne
 kohastikune
 Kohatu
@@ -5382,37 +5086,23 @@ Kohima
 Kohtla
 Kohtla-Järve
 Kohtla-Nõmme
+Kohtla-Uueküla
 Kohtru
 kohtuhoone
-kohtujärg
 kohtukoda
-kohtukolleegium
-kohtulaud
 kohtumaja
-kohtuministeerium
 kohtumispaik
-kohtupalat
 kohtusaal
-kohve
 kohver
 kohviistandus
-kohvik
 kohvikann
-kohvikklubi
-kohvik-pood
-kohvikpood
-kohviksöökla
 kohvimaa
-kohvimaja
 kohvinurk
 kohvipadi
 kohvipakk
 kohviplantaaž
-kohvipood
-kohviröstla
 kohviserviis
 kohvitass
-kohvituba
 koiauk
 Koidanov
 Koidma
@@ -5449,7 +5139,6 @@ Kokemäki
 Koki
 kokill
 Kokkola
-kokkuostupunkt
 kokkupuuteala
 kokkupuutepind
 kokkuveotee
@@ -5458,13 +5147,13 @@ Kokora
 Kokre
 Koksi
 Koksvere
-kokteilibaar
 Koktšetav
 Kokuta
 Kokõ
 Kokõjüri
 Kokõmäe
 kolahoov
+Kolchis
 Koldamäe
 koldeesine
 koldekumm
@@ -5480,9 +5169,9 @@ Kolgata
 Kolgata mägi
 Kolgu
 Kolgujev
-kolh
 kolikamber
 Kolila
+kolimiskast
 Koljaku
 Koljala
 Kolka
@@ -5493,8 +5182,6 @@ Kolkja
 Kollane jõgi
 Kollane meri
 kolle
-kolledž
-kollektiivliige
 kollektor
 Kolli
 Kollino
@@ -5503,13 +5190,11 @@ Kolmas Maailm
 Kolmas Reich
 Kolmas Riik
 Kolme Pagoodi kuru
-kolmepäevakoht
 kolmnurkviil
 Kolo
 Kolodavitsa
 Kolomna
 koloniaalimpeerium
-koloniaalkauplus
 koloniaalmaa
 koloniaalriik
 koloniaalvaldus
@@ -5518,59 +5203,45 @@ Koloreinu
 Kolossova
 Kolpin
 Kolpino
+Koltšugino
 Kolu
 kolumbaarium
 Kolumbia
 Koluta
 Koluvere
 Kolõma
-komandantuur
 komandopunkt
 Komandorisaared
 komandosild
+Komárom-Esztergom
 Komarovka
 Komarovo
 kombainilaava
-kombijaam
-kombinaat
-kombinaatteater
 Komi
 Komimaa
 Komi-Permi autonoomne ringkond
-komisjonipood
 komitaat
-kommertsgümnaasium
-kommertskohus
-kommertskool
-kommertspank
-kommertsraadio
 kommipaber
-kommipood
-kommivabrik
-kommunaalamet
-kommunaalettevõte
 kommunaalkorter
 kommunaalmaja
-kommuun
 Komoori
 Komoorid
 Komoori saared
 Komorra
 Kompassi
-kompetentsikeskus
-kompositsiooniklass
 kompostikast
 kompvekipaber
 Komsi
+Komsomolets
 Komsomolsk Amuuri ääres
 komtuurkond
-komöödiateater
 Konajev
-kondiitriäri
+Konda
 Kondopoga
 Konduši
 Konevets
 Konevitsa
+konfliktipiirkond
 kong
 Kongo
 Kongo-Brazzaville
@@ -5580,39 +5251,27 @@ Konguta
 konjakimaja
 Konju
 konku
-konkurentsiamet
 konnaoja
 Konnapere
-konservatoorium
 konservipurk
-konservitsehh
 konsonandialguline
 konsool
 konspiratiivkorter
-konstaablijaoskond
-konstaablipunkt
 Konstanz
 Konstantinoopol
-konstitutsioonikohus
-konstrueerimisbüroo
 Konsu
 Konsu järv
-konsulaaresindus
-konsultatsioonifirma
 kontaktpind
 konteinerhotell
 konteineriterminal
 konteinermaja
 konteinerterminal
 kontinent
-kontor
 kontorihoone
 kontraforss
 kontreskarp
-kontrollikoda
 kontrollkaev
 kontrollpunkt
-kontsentratsioonilaager
 kontserdihall
 kontserdihoone
 kontserdilava
@@ -5653,28 +5312,18 @@ koolimaja
 koolimetskond
 Koolimäe
 Koolina nulk
-koolipidaja
-kooliraadio
 kooliruum
-koolisöökla
-kooliteater
 koolituba
-koolitusfirma
-koolituskeskus
-koolivõrk
-koolkodu
 Koolma
 Koolmajärve
 koolmekoht
 koomits
 koondumiskoht
 koondumispaik
-koonduslaager
 Koonga
 Koonu
 koopajää
 koopasuu
-kooperatiiv
 kooperatiivelamu
 kooperatiivkorter
 kooperatiivmaja
@@ -5682,11 +5331,7 @@ koopiamaja
 Koopsi
 Kooraste
 Koordi
-koordinatsioonibüroo
-koordinatsioonikeskus
-koordineerimiskeskus
 koorealune
-koorejaam
 koorekann
 koorekirn
 koorerebend
@@ -5698,19 +5343,20 @@ Koorla
 Koorvere
 Koosa
 Koosalaane
-kooskäimiskoht
-koostetehas
-koostootmisjaam
+Koostöömeri
 Kootsi
 Koovi
 Koovälja
 Kopa
+Kópavogur
+Kopeisk
 Kopenhaagen
 Kopetdag
 Kopli
 kopliaed
 Kopli laht
 Kopli liinid
+Koplimetsa
 Kopli poolsaar
 Koplitaguse
 Koporje laht
@@ -5720,11 +5366,11 @@ Koppelmaa
 kopratamm
 kopteriplats
 kopteriväljak
-koraanikool
 Korallimeri
 korallisaar
 korallsaar
 Korba
+Korçë
 Kordiljeerid
 kordodroom
 Kordofan
@@ -5740,6 +5386,8 @@ Korijärve
 Korinthía
 Korintos
 koristuskaeveõõs
+Korjaki mägismaa
+Korjakkia
 korjanduskarp
 korjanduskott
 korjemaa
@@ -5751,11 +5399,11 @@ Koroljov
 koroonakolle
 Koror
 korpustaru
-korrakaitsepunkt
 korris
 korruselamu
 korrusmaja
 korrusparkla
+korrusvaagen
 Korsika
 Korski
 korsten
@@ -5774,15 +5422,13 @@ Kos
 Kose
 Kose-Uuemõisa
 Koseveski
-kosjakontor
 kosmodroom
+Kosmonautide meri
 kosmos
-kosmoseagentuur
 kosmoseavarus
-kosmosekeskus
-kosmoselabor
 Kosova
 Kosovo
+Kosovska Mitrovica
 Kossa
 Kosta
 Kostamus
@@ -5792,12 +5438,12 @@ Kostivere
 Kostkova
 Kostomukša
 Kostroma
-kostüümiladu
 Kosu
 Košice
 Kozhikode
 Kozlov
 Kozmodemjansk
+Kotajkh
 kotedž
 Kotelnika
 Kotelniki
@@ -5808,6 +5454,8 @@ Kotlandi
 Kotlas
 Kotlin
 Kotlõ
+Kotovsk
+Kotovskoje
 Kotsma
 Kotšinhiina
 Kotte
@@ -5818,6 +5466,7 @@ Kovaši
 Kovel
 Kovrov
 Koväslova
+Kowloon
 kraabe
 kraal
 Kraasna
@@ -5843,21 +5492,20 @@ Kranjska
 Krantsova
 Krāslava
 Krasnaja Poljana
+Krasnoarmeisk
+Krasnoarmiisk
 Krasnodar
 Krasnodon
 Krasnogorodsk
 Krasnogorodskoje
 Krasnogvardeisk
 Krasnojarsk
+Krasnoje Selo
 Krasnokokšaisk
+Krasnoselsk
 Krasnovodsk
 Krasnõi
 krateer
-krediidiasutus
-krediidipank
-krediidiühistu
-krediitpank
-kreeditorriik
 Kreeka
 Kreekaküla
 Kreenholm
@@ -5865,16 +5513,13 @@ Kreenholmi
 Kreeta
 Krei
 kreis
-kreisikohus
 kreisilinn
 kreisivaba linn
-kreiskool
 krematoorium
 Krementšug
 Krementšuk
 Kremessova
 kreml
-kreperii
 Kretinga
 Kriguli
 kriidikalju
@@ -5883,32 +5528,27 @@ Kriilevälja
 Kriimani
 kriisikolle
 kriisipiirkond
-kriisipood
 Kriiva
-kriminaalkohus
-kriminaaltalitus
 Krimm
 Krimmi poolsaar
+kristallisaator
 kristallvaas
 Kristiaania
+Kristiansand
 Kristianstad
 Kristiinankaupunki
 Kristiine
 Krivoi Rog
+Krk
 Krkonoše
 Kroaatia
 krohvlagi
-krokodillifarm
 kromlehh
 kromosfäär
 Kronoberg
 Kroonlinn
-kroonuasutus
-kroonugümnaasium
-kroonukool
 kroonumaa
 kroonumõis
-kroonupalat
 kroonuvald
 kroonvärk
 Krootuse
@@ -5928,18 +5568,18 @@ kruvijoon
 Krõvõi Rig
 Krõvõi Rih
 Kräsuli
+krüokamber
 Krüüdneri
 Kzõl-Orda
 Kuala Lumpur
 Kuban
 Kubanimaa
+Kubatlõ
 kube
 kubemepiirkond
 kubermang
-kubermangugümnaasium
 kubermangukeskus
 kubermangulinn
-kubermanguvalitsus
 Kubja
 kubrik
 Kudani
@@ -5952,7 +5592,6 @@ kudepaik
 Kudina
 Kudjape
 Kudruküla
-kudumisvabrik
 Kudõmkar
 Kugalepa
 kuhjatis
@@ -5997,6 +5636,7 @@ Kujawy-Pomorze
 Kuke
 Kukepala
 Kukeranna
+Kukës
 Kukevere
 Kukin Bereg
 Kukiranna
@@ -6014,59 +5654,46 @@ Kukunor
 kulbas
 Kuldhord
 Kuldīga
-kuldijaam
 kuldmedal
 Kuldne Kolmnurk
 Kuldre
 Kuldsarve laht
 Kuldsed Liivad
 Kulgu
+Kulikovo
 Kulina
-kulinaarkauplus
 kuliss
 Kulja
+Kuljab
 Kulje
-kulka
 Kulkna
 kulku
 Kulla
 Kullaaru
 Kullaga
-kullakaevandus
 kullakamber
 Kullamaa
 Kullametsa
 Kullamäe
 Kullarannik
-kullassepaäri
 kullaväli
 Kullenga
-kullerfirma
-kullerifirma
 Kulli
 Kullimaa
 Kulna
+Kulob
+kultusehitis
 kultusekivi
 kultusekoht
 kultushoone
 kultuskivi
 kultuskoht
 kultuurheinamaa
-kultuuriasutus
-kultuurifond
-kultuurikeskus
 kultuurikolle
 kultuurikõrb
-kultuurimaja
 kultuurimeka
-kultuuriministeerium
 kultuurimälestis
-kultuuripalee
 kultuuripealinn
-kultuuritempel
-kultuurivaramu
-kultuuriülikool
-kultuurkapital
 kultuurkarjamaa
 kultuurmaa
 kultuurmaastik
@@ -6084,11 +5711,10 @@ Kumamoto
 Kumasi
 Kumbli
 Kumma
-kummitusköök
 kummituslinn
 Kumna
-Kumu
 Kunajev
+Kunašir
 Kunda
 Kundruse
 Kundsa
@@ -6100,6 +5726,7 @@ Kuningaküla
 kuningalinn
 kuningaloss
 Kuningamäe
+Kuninganna Maudi maa
 kuningapalee
 Kuningate org
 kuningatiib
@@ -6109,18 +5736,7 @@ Kunksilla
 kunku
 Kunlun
 Kunming
-kunstiakadeemia
-kunstiasutus
-kunstigalerii
-kunstigümnaasium
 kunstikamber
-kunstikeskus
-kunstikool
-kunstimuuseum
-kunstisalong
-kunstitempel
-kunstiõppeasutus
-kunstiühing
 kunstkoelmu
 Kunsu
 kuntrik
@@ -6208,6 +5824,7 @@ kurtiin
 Kurtna
 Kuru
 kuru
+Kurunegala
 kuruorg
 kurv
 kurvikoht
@@ -6223,19 +5840,12 @@ Kuzbass
 Kuznetski söebassein
 Kuznetsk-Sibirski
 Kutaisi
+Kutkašen
 Kutsala
-kutsehariduskeskus
-kutsekas
-kutsekeskkool
-kutsekoda
-kutsekool
-kutsenõuandla
-kutseõppeasutus
-kutseõppekeskus
-kutsikavabrik
 Kuuba
 Kuuda
 Kuudeküla
+Kuudse mägi
 kuuendikumaa
 kuuepäevakoht
 kuuldepiirkond
@@ -6246,12 +5856,13 @@ Kuulja
 kuulpudel
 kuumaastik
 kuumasaar
-kuumaõhusaun
 Kuumi
 kuupkapiteel
+kuupmaja
 Kuura
 Kuurakõsõ
 kuurialune
+kuuriboks
 kuurort
 kuurortlinn
 kuursaal
@@ -6272,6 +5883,7 @@ kuut
 Kuutsemägi
 Kuutsi
 Kuveit
+Kvareli
 kvartalisiht
 kvartertekk
 kveeršlaag
@@ -6339,7 +5951,6 @@ Kõrgessaare
 kõrghoone
 kõrghotell
 kõrgkallas
-kõrgkool
 kõrglava
 kõrgmaja
 kõrgmets
@@ -6375,7 +5986,6 @@ Kõrtsuotsa
 Kõruse
 Kõruse-Metsaküla
 kõrvalehitis
-kõrvalfirma
 kõrvalhoone
 kõrvalmaantee
 kõrvalmõis
@@ -6420,9 +6030,9 @@ käigutee
 käigutunnel
 käimla
 Käina
-käitis
 Käkisalmi
 Käku
+Kälbäcär
 Kämara
 kämpa
 kämping
@@ -6468,14 +6078,10 @@ Kärstna
 Kärsu
 Käru
 käsikamber
-käsikeskjaam
 käsikohver
-käsipesula
 käsipuu
 käsitöökarp
-käsitöökoda
 käsitöökorv
-käsitööring
 Käsmu
 Käsmu laht
 Käsmu poolsaar
@@ -6505,14 +6111,12 @@ käärseis
 käärtoeng
 Käätso
 Köisi
-köitekoda
 kökats
 köks
 Kökšetau
 Köln
 Königsberg
 Köpetdag
-köstrikool
 Köstrimäe
 kööginurk
 kööginõu
@@ -6521,11 +6125,9 @@ köögiviljaaed
 kööktuba
 kübarakarp
 kübarakartong
-kübaraäri
 Kübassaare
 kübermaailm
 küberruum
-küberväejuhatus
 Küdema
 Kühmamäe
 Kükita
@@ -6538,20 +6140,12 @@ külakene
 külakirik
 külakoht
 külakolgas
-külakool
-külakõrts
 Külaküla
-külaliskorter
-külalismaja
-külalistemaja
 külalistetuba
 külalistuba
 Külama
-külanõukogu
 Külaoru
 külaplats
-külapood
-külaraamatukogu
 Külasema
 külastu
 külastuskeskus
@@ -6593,19 +6187,15 @@ külmkamber
 külmkasvuhoone
 külmkirst
 külm koht
-külmladu
 külmlaut
 külmlava
 külmlett
 külmutuskamber
-külmutusladu
 külmvöö
 külvikassett
 külvikast
 külvimaa
 külvipind
-kümbla
-kümblusasutus
 kümnesse
 küna
 Kündja
@@ -6629,14 +6219,10 @@ kütismaa
 Kütke
 kütteava
 Küttejõu
-kütusefirma
 kütusehoidla
 kütusemahuti
-kütusemüüja
 küvett
 küüler
-küülikla
-küülikufarm
 küün
 küünarseong
 küünealune
@@ -6650,19 +6236,22 @@ Kymenlaakso
 Kymi
 Kyōto
 Kyrá Panagiá
+Kyrenia
+Kythera
+Kýthira
 Kýthnos
 Kyūshū
+Kyustendil
 Laabi
 laadaplats
 Laadi
 laadik
-laadimisjaam
-laadimispunkt
 Laadjala
 Laadla
 Laadoga
 Laadoga järv
 Laadoga-Karjala
+Laadogamaa
 laadruum
 laadungiruum
 laagerduskelder
@@ -6684,7 +6273,6 @@ laastkorv
 laastukatus
 laastukorv
 Laatre
-laatsaret
 Laatsi
 laavajärv
 laavaväli
@@ -6692,43 +6280,26 @@ laavu
 Labandõ
 Labe
 Labiau
-labor
-laboratoorium
 laborihoone
 laborinõu
 Labrador
 Labradori meri
 Labradori poolsaar
 Labõritsa
+Laçın
 Ladakh
 Ladina-Ameerika
-ladina kool
 Ladina kvartal
-ladina köök
 Laekannu
 laekarniis
 Laekvere
-laenukassa
-laenukontor
-laenupank
-laenuraamatukogu
-laenutusosakond
-laenutuspunkt
 laepealne
 Laeste
 Laeva
-laevaehitustehas
-laevafirma
-laevakompanii
-laevakontor
 laevalagi
-laevandusettevõte
-laevandusfirma
 Laevaranna
 laevasild
-laevastik
 laevatee
-laevatehas
 laevatekk
 laevatrapp
 laevatrepp
@@ -6743,7 +6314,6 @@ lagesoo
 lage vesi
 lagitäpp
 Lagos
-Lagting
 Laguja
 laguun
 laguunrannik
@@ -6764,7 +6334,6 @@ Lahetaguse
 lahe taha
 Laheva
 lahi
-lahingukool
 lahingupaik
 lahinguväli
 Lahmuse
@@ -6773,12 +6342,10 @@ Lahore
 laht
 Lahti
 Lahu
-lahuskool
 lahusosa
 lahustükk
 lahvandus
 Laiaküla
-laiekraankino
 laiendus
 Laiksaare
 Laiküla
@@ -6808,13 +6375,11 @@ Lakovitsa
 Lakshadweep
 Lalli
 Lalsi
-lamadestiir
 lamamisase
 La Mancha
 La Manche
 lamav politseinik
 lambaaed
-lambafarm
 lambakarjamaa
 lamekatus
 laminaatpõrand
@@ -6825,13 +6390,11 @@ Lammiku
 lamminiit
 lammisoo
 lammorg
-lammutuskoda
 lampkast
 lampkatus
 Lanarkshire
 Lancashire
 Lancaster
-landesveer
 Landshut
 Langa
 langatushäil
@@ -6849,6 +6412,7 @@ lank
 Lanksaare
 Lannamõtsa
 Lannuste
+Lansing
 Lanzarote
 Lanzhou
 Lante
@@ -6870,13 +6434,13 @@ lapikene
 Lapimaa
 lapimaa
 lapimaasüsteem
-lapitalu
 La Plata
 La Plata laht
 Lappeenranta
 lapsepõlvekodu
 Laptevite meri
 Lapua
+L'Aquila
 La Rioja
 Lárisa
 Larnaca
@@ -6889,57 +6453,36 @@ laskekoht
 laskemoonaladu
 laskepesa
 laskepilu
-laskerada
 laskesektor
-lasketiir
 laskeväli
 laskumisrada
-laskurkorpus
 Lasnamäe
 Lasnamägi
 Las Palmas
 lass
 Lassi
-lasteaed
-lasteaed-algkool
-lasteaed-põhikool
 lasteala
-lasteasutus
-lastehaigla
-lastekas
-lastekliinik
-lastekodu
-lasteküla
-lastemaja
-lasteorganisatsioon
-lasteosakond
 lastepark
-lastepolikliinik
-lastepäevakodu
-lasteraamatukogu
-lastering
 lastestaadion
-lastesõim
-lasteteater
 lastiruum
 lastitekk
 lasuurrannik
 Lasva
 Las Vegas
 Lazdijai
+Lazethi
 Lazio
 Latakia
 Latgale
-latifundium
 Latium
 latriin
+Latšin
 latter
 Lau
 lauahoov
 lauamõis
 lauanõu
 lauapind
-lauavabrik
 laube
 laudaesine
 laudalakk
@@ -6956,6 +6499,7 @@ laudvooder
 laudvooderdis
 Lauga
 Lauga jõgi
+Lauga laht
 laugas
 laugasjärv
 laugastik
@@ -7000,6 +6544,7 @@ lavatorn
 Lavi
 lavra
 Lavrõ
+Lebapi vilajett
 Lebavere
 lebola
 lee
@@ -7027,13 +6572,17 @@ Leevaku
 Leevi
 Leevijõe
 Leevre
+Léfka
 Lefkáda
+Lefke
 Le Havre
 lehekiosk
 Lehemetsa
 leheputka
 leheruum
 Lehetu
+leheveergudel
+leheveergudele
 Lehmja
 Lehola
 lehter
@@ -7046,6 +6595,7 @@ lehtmets
 Lehtmetsa
 lehtonn
 lehtpuumets
+lehtsamblasoo
 Lehtse
 Lehu
 Leibre
@@ -7056,30 +6606,23 @@ Leigri
 Leikude
 Leila
 leiliruum
-leilisaun
 Leimani
 Leina
-leinamaja
 Leinster
 Leipste
 Leipzig
+Leiria
 Leisi
 Leiso
 Leistu
 Leisu
 Leitrim
 leitseauk
-leiubüroo
 leiukoht
-leiunurk
 leiupaik
-leiupood
 leivaastja
-leivakauplus
 leivaküna
 leivamõhk
-leivapood
-leivatehas
 leivik
 Leivu
 Lejasciems
@@ -7097,10 +6640,7 @@ Lemmakõnnu
 Lemmaru
 Lemmatsi
 Lemmetsa
-lemmikkoht
 Lemmikküla
-lemmikloomahotell
-lemmikloomapood
 Lemmküla
 Lemnos
 Lemsalu
@@ -7110,27 +6650,23 @@ lendla
 Leninabad
 Leninakan
 Leningrad
+Leningradi oblast
+Lenino
 Leninobod
 Leninsk
+Leninsk-Kuznetski
 Lenkoran
 lennuauk
 lennuava
-lennubaas
-lennufirma
 lennujaam
 lennujoon
-lennujuhtimiskeskus
 lennujuhtimistorn
 lennukaar
 lennukeelutsoon
-lennukitehas
-lennuklubi
-lennukompanii
 lennukoridor
 lennumägi
 lennurada
 lennutrass
-lennuväebaas
 lennuväli
 Lenska
 León
@@ -7150,7 +6686,6 @@ Lepispea
 Lepna
 Lepplaane
 Leppneeme
-leprosoorium
 Lepä
 Lesbos
 lesila
@@ -7158,9 +6693,11 @@ Lesnoi
 Lesotho
 Lessogorski
 Lestima
+Lezhë
 Lethe
 letikamber
 Letipea
+Letšhumi
 Leukas
 Leuven
 levaada
@@ -7173,9 +6710,11 @@ leviauk
 levikuala
 levikupiirkond
 levila
-leviosakond
 Lewes
+Lexington
+Leyte
 Lhasa
+Liancourt Rocks
 Liaodongi poolsaar
 Liaoning
 Libatse
@@ -7198,9 +6737,6 @@ liginullenergiamaja
 Liguri
 Liguuria
 Liguuria meri
-lihakarn
-lihakombinaat
-lihapood
 lihasesisene
 Lihavõttesaar
 lihkepind
@@ -7218,8 +6754,6 @@ Liibo
 Liibüa
 Liibüa kõrb
 liidumaa
-liidunõukogu
-Liidupäev
 liiduriik
 liiduvabariik
 Liigalaskma
@@ -7233,20 +6767,12 @@ liiklussaar
 liiklussoon
 liiklussõlm
 liiklustee
-liikmeslinn
-liikmesmaa
-liikmesriik
 liikumistee
 Liikva
 Liiküla
 Liimala
 Liinamäe
 liinikoridor
-liisingettevõte
-liisingfirma
-liisinguandja
-liisinguettevõte
-liisingufirma
 Liispõllu
 liitekoht
 liitlasmaa
@@ -7293,7 +6819,6 @@ liivik
 Liivi laht
 Liivimaa
 Liivimaa hertsogkond
-Liivi ordu
 Liivoja
 liivpinnas
 Lilastvere
@@ -7304,14 +6829,12 @@ Lille
 lilleaed
 Lillehammer
 lillekast
-lillekauplus
 lillekiosk
 lilleklump
 lillekorv
 Lilleküla
 lilleniit
 lillepeenar
-lillepood
 lillepott
 lillevaas
 Lilli
@@ -7326,7 +6849,6 @@ Limassol
 Limbaži
 Limburg
 Limerick
-limnoloogiajaam
 Límnos
 Limousin
 Limpopo
@@ -7335,7 +6857,6 @@ Linaküla
 Linaleo
 linaleoauk
 linapõld
-linavabrik
 Lincoln
 Lincolnshire
 Lindi
@@ -7343,27 +6864,21 @@ lindla
 Lindmetsa
 Lindora
 Lindsi
+lineaarpark
 lingvaalne
 Linköping
 Linna
 Linnaaluste
-linnaamet
-linnaarhiiv
 linnadžungel
 linnahall
 linnajagu
 linnak
 Linnaka
-linnakantselei
 linnake
 linnakirik
 linnakivid
 linnakodu
-linnakogudus
 linnakoht
-linnakohtunik
-linnakohus
-linnakool
 linnakorter
 Linnakse
 linnaline asula
@@ -7371,8 +6886,6 @@ linnalähedane
 linnalähine
 linnamaa
 linnamaastik
-linnamuuseum
-linnamõis
 Linnamäe
 linnamägi
 linnamüür
@@ -7380,7 +6893,6 @@ linnaosa
 Linnape
 linnapiirkond
 linnaruum
-linnasaun
 linnastu
 linnasüda
 linnatänav
@@ -7389,21 +6901,16 @@ linnriik
 linnuaed
 linnuala
 linnuauk
-linnufarm
-linnujaam
 linnukaitseala
-linnukasvandus
 linnumaja
 Linnumäe
 linnupuu
 linnus
 linnusasula
 Linnuse
-linnusekohus
 linnuselään
 linnusemägi
 linnuvaatlustorn
-linnuvabrik
 Linz
 Linte
 Lintsi jõgi
@@ -7414,7 +6921,6 @@ Lipetsk
 Lipniku
 Lipstu
 Lipu
-lipumaa
 lipuriik
 liputiib
 lipuväljak
@@ -7429,7 +6935,6 @@ Listaku
 litoraal
 litosfäär
 litsides
-litsimaja
 Litsmetsa
 Little Rock
 Litu
@@ -7450,12 +6955,14 @@ Livadija
 Līvāni
 Liverpool
 Līves
+Livigno
 Livorno
 ljaano
 Ljouwert
 Ljubljana
 Llanos
 LNG-terminal
+Lô
 Lobamba
 Lobi
 Lobotka
@@ -7465,6 +6972,7 @@ Loch Ness
 Lodeinoje Pole
 Lodja
 Lodomeeria
+Łódź
 lodža
 lodu
 lodukoht
@@ -7477,7 +6985,6 @@ loengusaal
 Lofoodid
 loft
 Logina
-logistikakeskus
 logistikapark
 Logroño
 logusk
@@ -7494,7 +7001,6 @@ Loime
 Loire
 Loire'i alad
 Loja
-lokaal
 lokaalkatlamaja
 lokaalne
 Loko
@@ -7504,7 +7010,6 @@ Lokuta
 Lokuti
 Lolland
 Lolu
-lombard
 Lombardia
 Lombi
 lombike
@@ -7517,6 +7022,7 @@ Lompka
 Londi
 London
 Londonderry
+Long Beach
 Longford
 Long Island
 Loo
@@ -7535,23 +7041,12 @@ looduskeskkond
 loodusmaastik
 loodusobjekt
 looduspark
-looduspood
 loodusrada
 loodusvöönd
 Loogamäe
 looge
 Looküla
-loomaaed
-loomafarm
-loomakasvatustalu
-loomakliinik
 loomalaut
-loomapark
-loomapood
-loomaravila
-loomeettevõte
-loomelinnak
-loomemaja
 loomets
 Loomse
 Loona
@@ -7570,6 +7065,7 @@ lootsiküla
 Lootvina
 Lop Nur
 loputuskast
+Lori
 Lorraine
 Los Angeles
 lossihoov
@@ -7583,10 +7079,12 @@ Lota
 Lothian
 Lotring
 Louisiana
-lounge
+Louisville
 Lourenço Marques
 Louth
 Lovat
+Loveč
+Lovech
 Loviisa
 Lovozero
 Lowlands
@@ -7595,15 +7093,14 @@ Luang Prabang
 Lubja
 lubjaauk
 lubjakivikarjäär
-Lubjanka
 Lublin
 Lubumbashi
 Lubusz
+Lucca
 Lucknow
 Ludza
 Luga
 Lugansk
-lugemissaal
 Luguse
 luhaheinamaa
 Luhamaa
@@ -7626,13 +7123,9 @@ luitemännik
 luiterannik
 Luke
 Luksemburg
-lukshotell
-luksnumber
-luksushotell
 luksuskorter
 luksuskuurort
 luksusnumber
-luksusrestoran
 luksustelk
 luksusvilla
 lukuauk
@@ -7656,11 +7149,13 @@ lumeväli
 Lund
 Lungu
 Lusaka
+Lusavan
 Lusitaania
 Lussu
 lustaed
 lusthoone
 Lusti
+Lustimõisa
 Lustivere
 lustla
 Luzern
@@ -7679,6 +7174,7 @@ Lutsu
 Luua
 Luuga
 Luuga jõgi
+Luuga laht
 luugiava
 luuk
 luukabel
@@ -7686,24 +7182,17 @@ Luukererannik
 Luuküla
 Luulupe
 Luunja
-luureagentuur
-luureasutus
-luurevõrk
 Luuri
 Luusika
 Luuska
 Luutsniku
 Luxembourg
+Luxemburg
 Luxor
 Lviv
 Lvov
 Lõbe
 Lõbembe
-lõbumaja
-lõbupaik
-lõbustusasutus
-lõbustuskoht
-lõbustuspark
 Lõetsa
 lõge
 lõhandik
@@ -7740,12 +7229,15 @@ lõugas
 Lõuka
 Lõuna-Aafrika
 Lõuna-Aafrika Vabariik
+Lõuna-Aasia
+Lõuna-Alföld
 Lõuna-Ameerika
 Lõuna-Austraalia
 Lõuna-Brabant
 Lõuna-Bug
 Lõuna-Carolina
 Lõuna-Dakota
+Lõuna-Dunántúl
 Lõuna-Eesti
 Lõuna-Egeus
 Lõuna-Euroopa
@@ -7753,6 +7245,7 @@ Lõuna-Georgia
 Lõuna-Hiina meri
 Lõuna-Holland
 Lõuna-Jeemen
+Lõuna-Jäämeri
 lõunakaar
 lõunakallas
 Lõuna-Karjala
@@ -7769,6 +7262,8 @@ Lõunameri
 lõunameri
 lõunanaba
 Lõuna-Näljastepp
+Lõunaookean
+Lõuna-Orkney saared
 lõunaosa
 lõunaosariik
 Lõuna-Osseetia
@@ -7793,6 +7288,7 @@ lõunasopp
 Lõuna-Sporaadid
 Lõuna-Sudaan
 Lõuna-Šoti mägismaa
+Lõuna-Taani
 lõunatiib
 lõunatipp
 Lõuna-Tirool
@@ -7808,7 +7304,7 @@ Lädinä
 Lähevere
 lähiala
 lähikaudne
-lähikauplus
+lähikosmos
 lähine
 lähis
 Lähis-Ida
@@ -7833,6 +7329,7 @@ Lämmijärv
 Länga
 länik
 Länkäran
+Länkäran-Astara
 lännik
 Läpi
 Läsna
@@ -7847,11 +7344,13 @@ lävepakk
 Läädinka
 Läägi
 Lääne-Aasia
+Lääne-Antarktis
 Lääne-Aserbaidžaan
 Lääne-Austraalia
 Lääne-Bengal
 Lääne-Berliin
 Lääne-Bug
+Lääne-Dunántúl
 Lääne-Dvina
 Lääne-Eesti
 Lääne-Eesti saarestik
@@ -7878,6 +7377,7 @@ Lääne-Makedoonia
 Lääne-Malaisia
 Läänemere maad
 Läänemeri
+Lääne-Moldova
 Läänemüür
 Lääne-Nigula
 läänenõlv
@@ -7934,7 +7434,6 @@ Lüneburg
 Lüneburgi nõmm
 lünett
 lünk
-lüpsifarm
 lüpsik
 lüpsikarussell
 lüpsikoda
@@ -7942,7 +7441,6 @@ lüpsilaut
 lüpsiplats
 Lüshun
 Lüshunkou
-lütseum
 Lützen
 Lütä
 Lüübek
@@ -7959,15 +7457,12 @@ Lyckholm
 Lyon
 maa-ala
 maa-alune
-maa-apteek
 maa-asula
 maabumiskoht
 maabumissild
 Maade
-maaeluministeerium
 Maagimäestik
 maagisoon
-maahaigla
 maahaud
 maailmajagu
 maailmakaar
@@ -7982,34 +7477,26 @@ maailmariik
 maailmaruum
 maakael
 maakalmistu
-maakauplus
+maakelder
 maakera
 maakera kuklapool
 maakild
-maakino
-Maakirik
 maakirik
 maakitsus
-maaklerfirma
-maaklerifirma
 maakoda
 maakodu
-maakogudus
 maakoht
-maakohus
 maakolgas
 maakondlik
 maakonnalinn
 maakoorekurd
 Maakri
-maakõrts
 maalahmakas
 maalapike
 maalapp
 Maalasti
 maaliateljee
 maalikast
-maaliklass
 maaline
 maalinn
 maalõhkuja
@@ -8024,21 +7511,17 @@ maandumisplats
 maandumisrada
 Maanselkä
 Maantee
-maanteeamet
 maanteekraav
 maanteesild
 maanteetamm
 maanukk
 maanurk
 maapaik
-maaparandusühistu
 maapiir
 maapiirkond
 maapinnalähedane
-maapood
 maapõu
 maar
-maaraamatukogu
 Maardla
 Maardu
 maareserv
@@ -8076,7 +7559,6 @@ maatükk
 Maa-väline
 maaväline
 maaüksus
-maaülikool
 Macau
 Machu Picchu
 Mackenzie
@@ -8087,6 +7569,8 @@ madalmeri
 madalmets
 madalmik
 madalmäestik
+madalrõhkkonna tagala
+madalrõhuala tagala
 madalrõhulohk
 madalseiklusrada
 madalsoo
@@ -8096,6 +7580,7 @@ Madhya Pradesh
 Madi
 Madila
 Madise
+Madison
 Madona
 Madras
 Madrid
@@ -8108,7 +7593,6 @@ magalarajoon
 Magalhãesi väin
 magamisase
 magamisasend
-magamiskoht
 magamistuba
 Magari
 magas
@@ -8130,13 +7614,11 @@ magnetosfäär
 magnetpoolus
 Magnitogorsk
 Magrib
-magusatootja
+magustoidukauss
 Magway
 Maharashtra
 mahasõidutee
 mahemaa
-mahetalu
-mahetootja
 Mahhatškala
 Mahilioŭ
 Mahlamäe
@@ -8153,6 +7635,7 @@ Maima
 maimutiik
 Main
 Maine
+Mainila
 Maini-äärne Frankfurt
 Mainz
 maismaa
@@ -8173,38 +7656,27 @@ majalobudik
 majalogu
 majalogudik
 majaloks
-majamuuseum
 majamürakas
-majand
 majandushiid
 majandushoone
 majandushoov
 majanduskeskus
-majandusministeerium
 majanduspiirkond
-majanduspolitsei
 majandusruum
 majandusvöönd
 majandusõu
-majandusühendus
-majandusüksus
+majaosmik
 majapidamishoone
-majapidamiskool
 majapidamisruum
 majatagune
 majatiib
 majauberik
 majaubrik
 majavaldus
-majavalitsus
 majoraatmõis
 Majori
 Mājro
 Majuro
-majutusasutus
-majutusettevõte
-majutuskoht
-majutuspaik
 Makaroneesia
 Makarova
 Makedoonia
@@ -8212,10 +7684,7 @@ Makejevka
 Makijivka
 Makita
 Maksameri
-maksuamet
-maksuhaldur
 maksuparadiis
-maksupolitsei
 Malabari rannik
 Malabo
 Malacca
@@ -8233,7 +7702,6 @@ Malda
 Maldiivi
 Maldiivid
 Male
-maleföderatsioon
 malemaa
 Maleva
 Mali
@@ -8245,7 +7713,7 @@ malmkatel
 malmnõu
 Malmö
 Malta
-Malta ordu
+Malta saar
 Maltsa
 Maluku saared
 Malvaste
@@ -8253,13 +7721,13 @@ Malviinid
 Malõi
 Mamelukkide riik
 Mammaste
-mammutkool
 Mamonovo
 Mamoudzou
 Man
 Managua
 manala
 Manama
+Manas
 Mancha
 Manchester
 mandaatala
@@ -8280,6 +7748,7 @@ mandriosa
 Mandžukuo
 Mandžuuria
 maneež
+Manes
 Manggõstau
 Manggõstau oblast
 Mangu
@@ -8304,20 +7773,21 @@ mansardkorrus
 mansardtuba
 Manzhouli
 mantelkorsten
-manufaktuur
+Mantova
 Manõja
 Maosaar
 Maputo
 Maramaa
+Maramureș
 Marana
 Maraton
 maratonirada
 Marbella
 Marche
+Mardakert
 Mardihansu
 maremm
 Marga
-margiesindus
 Margilan
 Marg‘ilon
 Marguse
@@ -8332,9 +7802,7 @@ Marimaa
 Marina
 Marinova
 Marinu
-marionetiteater
 marionettriik
-marionettvalitsus
 Maritsa
 Mariupol
 marjaaed
@@ -8345,10 +7813,12 @@ Marjamäe
 marjasoo
 Markiisaared
 Marksa
+Marmaatia
 Marmara meri
 marmorimurd
 Marna
 Marne
+Marneuli
 Maroko
 Marrakech
 Marrakeš
@@ -8361,23 +7831,25 @@ Martna
 Martsa
 Martsina
 Martunašen
+Martuni
 Maru
 Mārupe
 Marõ
 Mary
 Maryland
+Mary vilajett
 Masa
+Masbate
 Mascarenhasi saared
 Maseru
 Mashhad
 masinakuur
-masinatehas
 masinpesula
+Masis
 Maskareenid
 Maskareeni saared
 Maskat
 Maskat ja Omaan
-maskiteater
 Masluva
 Masoovia
 Masqaţ
@@ -8385,7 +7857,6 @@ massaaživann
 Massachusetts
 Massiaru
 massihaud
-massiülikool
 Massu
 mastaba
 Masti
@@ -8394,13 +7865,13 @@ Masuuria
 Mašhad
 mašikulii
 Mašrik
+Mazār-e Sharīf
 Mazsalaca
 Mažeikiai
 Matapera
 Mata Utu
 Matjama
 Matka
-matkaklubi
 matkakodu
 matkaonn
 matkarada
@@ -8415,10 +7886,8 @@ Matsue
 Matsuri
 Matsuyama
 Matterhorn
-matusebüroo
 matusekabel
 matusekoht
-matusemaja
 matusepaik
 matuseplats
 Mauna Kea
@@ -8439,24 +7908,16 @@ Medellín
 Medelpad
 mediaalne
 Mediina
-meditsiiniakadeemia
-meditsiiniasutus
 meditsiinilinnak
-meditsiinipunkt
-meditsiiniraamatukogu
-medpunkt
-medrese
+Medveditsa
 Medvežjegorsk
 Meedia
-meediamaja
 Meedla
 Meegaste
 Meegomäe
 Meeksi
 Meelaku
 Meeliku
-meeliskoht
-meelispaik
 Meelste
 meelteaed
 Meelva
@@ -8464,24 +7925,21 @@ Meemaste
 Meenikunnu soo
 Meerapalu
 Meeri
-meesklooster
-meeskohus
 meestehoid
-meestekliinik
 meestepool
-meestesaun
 megaliitehitis
+megalinn
 megaron
 Meghalaya
 Megiddo
 Megreelia
 Mehama
+Mehedinți
 Mehhiko
 Mehhiko laht
 Mehide
 Mehikoorma
 Mehka
-meierei
 meiereihoone
 meistrikuld
 Meiuste
@@ -8504,10 +7962,8 @@ Melso
 Meltssaarõ
 Memeli piirkond
 memoriaalansambel
-memoriaalmuuseum
 memoriaaltuba
 Memphis
-menažerii
 menhir
 Menorca
 menstruaalanum
@@ -8517,19 +7973,16 @@ Meossaare
 Mērdzene
 mereala
 merealune
-mereannirestoran
 merehaud
 merekael
 merekallas
 merekitsus
-merekool
 merekuiv
 merekuurort
 Mereküla
 Merekülä
 merelinn
 meremadalik
-meremuuseum
 Meremõisa
 Meremäe
 meremärk
@@ -8539,7 +7992,6 @@ merepeegel
 merepind
 merepoolne
 merepõhi
-merepääste
 mererand
 mererannik
 mereriik
@@ -8548,12 +8000,9 @@ mereselg
 meresopp
 meretagune
 mereterrass
-meretuulepark
 merevaigurannik
 Merevaigutee
 merevaksal
-merevoorimees
-mereväebaas
 merevärav
 mereäär
 mereäärne
@@ -8583,19 +8032,14 @@ messikeskus
 Messina
 messiruum
 Mezen
+Mežduretšensk
 metallgaraaž
-metallitehas
-metallitöökoda
 metallkonstruktsioon
 metallsild
 metalltarind
 metallvaat
-meteojaam
-meteoroloogiajaam
-meteoroloogiateenistus
 Metkavitsa
 metroo
-metroojaam
 metropol
 metsaala
 metsaeraldis
@@ -8608,7 +8052,6 @@ metsakarjamaa
 Metsakasti
 Metsakivi
 metsakolgas
-metsakool
 metsakuru
 metsakvartal
 metsakäär
@@ -8627,7 +8070,6 @@ metsamaastik
 metsamaja
 metsamajake
 metsamajakene
-metsamajand
 metsamassiiv
 Metsamägara
 metsandik
@@ -8677,11 +8119,9 @@ metsavälu
 metsavöönd
 metsaäär
 Metsaääre
-metsaühistu
 Metsik Lääs
 Metsiku
 Metskaevu
-metskond
 Metsküla
 Metsla
 Metslõugu
@@ -8691,17 +8131,18 @@ Metste
 Metz
 Meuse
 México
-MI5
 Miami
 Miass
 Michigan
 Michigani järv
 Middelburg
 Middlesbrough
+Middlesex
 Midi-Pyrénées
 Midlands
 Mie
-migratsiooniamet
+Miercurea Ciuc
+Mihhailovka
 Mihkli
 mihraab
 mihrab
@@ -8713,7 +8154,6 @@ Miila
 miiliahi
 miiliauk
 Miilimäe
-miilitsa lastetuba
 miinikamber
 miinitõke
 miiniväli
@@ -8721,43 +8161,41 @@ Miitavi
 Mikita
 Mikitamäe
 Mikkeli
-mikroettevõte
+Mikojan
 mikrokorter
 Mikroneesia
 Mikroneesia Liiduriigid
 mikropragu
 mikrorajoon
 Miku
+Mil
 Milano
 Mileetos
-militaarmuuseum
 militaarobjekt
-militaarstruktuur
+Mili tasandik
 miljonilinn
 miljööala
+Mil-Muğan
 Mílos
 Milwaukee
 minarett
 Mindanao
+Mindoro
 mineraalallikas
 mineraaljärv
 mineraalveeallikas
 Mineralnõje Vodõ
 Mingetšaur
 Mingäçevir
-ministeerium
-ministeeriumikool
 Minneapolis
 Minnesota
 Minsk
 Minussinsk
 mirador
+Mir-Bašir
 Mirgorod
 Mirzojan
-misjonijaam
-misjonikool
 misjonimaja
-misjoniselts
 Miskolc
 Mişrātah
 Mississippi
@@ -8768,6 +8206,7 @@ Missouri
 Mizoram
 Miti
 Mito
+Mitrovicë
 Mitšurinsk
 mitteeluruum
 mittemetsamaa
@@ -8775,17 +8214,9 @@ Mitüleene
 Miyagi
 Miyazaki
 MKA
-MLA
-mobiilbüroo
-mobiilioperaator
-mobiilsideoperaator
-mobilisatsioonipunkt
 Mobutu Sese Seko järv
-modelliagentuur
 Modena
 Moe
-moeateljee
-moemaja
 moemeka
 moepealinn
 Mogadishu
@@ -8801,8 +8232,10 @@ mokatass
 Mokornulk
 Mokra
 Mokredi
+Mokša
 Moku
 Moldaavia
+Molde
 moldorg
 Moldova
 Molėtai
@@ -8821,7 +8254,6 @@ Mongoli impeerium
 mongolite riik
 Mongoolia
 Moni osariik
-monoteater
 Monrovia
 Mons
 monstrants
@@ -8832,6 +8264,8 @@ Montenegro
 Monte Rosa
 Monterrey
 Montevideo
+Montgomery
+Montpelier
 Montréal
 Montserrat
 Montšegorsk
@@ -8839,7 +8273,6 @@ monumentaalehitis
 moodulhoone
 moodulkorsten
 moodullagi
-moodullasteaed
 moodulmaja
 moodustuskoht
 Moona
@@ -8865,11 +8298,13 @@ moreenmaastik
 moreenrand
 moreenseljak
 moreentasandik
+Møre og Romsdal
 morg
 Morija mägi
 Morioka
 Morna
 Moroni
+Morphou
 mosaiikpõrand
 Mosambiik
 Mosel
@@ -8878,8 +8313,10 @@ Moskiitorannik
 Moskoovia
 Moskva
 Moskva Kreml
+Moskvamaa
 Moskva suurvürstiriik
 moslemiriik
+Mostar
 Mosul
 mošee
 Moštšnõi
@@ -8889,18 +8326,20 @@ motodroom
 motoringrada
 Mount Everest
 Mpumalanga
+Mtshetha
+Mtshetha-Mthianethi
 mudaauk
 mudajärv
 mudaköök
+mudamülgas
 mudapeenar
-mudaravila
 Mudaste
 mudavulkaan
 mudaälves
 Mudiste
 Muduri
+Muğan
 mugavuslipumaa
-mugavuspood
 Muhkamõtsa
 Muhkva
 Muhu
@@ -8922,7 +8361,6 @@ muinaslinnus
 muinaspõld
 Muinas-Skandinaavia
 muinsuskaitseala
-muinsuskaitseamet
 muistis
 Mujaste
 Mukatševo
@@ -8955,16 +8393,11 @@ Mumbai
 Muna
 munakivitänav
 Munalaskme
-mungaklooster
 mungakong
 Mungalaht
 munitsiipium
-munitsipaalettevõte
-munitsipaalkool
 munitsipaalkorter
-munitsipaallasteasutus
 munitsipaalmaja
-munitsipaalpolitsei
 Munsi
 Munster
 Munteenia
@@ -8982,6 +8415,7 @@ murdkelpkatus
 murdmaarada
 murdmaastik
 Murdõmäe
+Mureș
 Murgap
 Muri
 Murika
@@ -9002,7 +8436,6 @@ murukatus
 murulapp
 muruplats
 muruväljak
-music hall
 mussoonmets
 Must Aafrika
 Mustahamba
@@ -9035,7 +8468,6 @@ mustmullavöönd
 Mustmätta
 Mustoja
 mustpõrand
-Mustsada
 Mustu
 Mustumetsa
 Mustvee
@@ -9051,18 +8483,8 @@ Mutsu
 Muuga
 Muuksi
 Muurmani rannik
-muuseum
-muuseumihoone
-muuseumipood
 Muusika
-muusikaakadeemia
 muusikakeskus
-muusikakirjastus
-muusikakool
-muusikaliteater
-muusikamuuseum
-muusikateater
-muusikaõppeasutus
 Mwanza
 Mõdriku
 Mõedaka
@@ -9072,15 +8494,12 @@ Mõhküla
 mõhn
 mõhnastik
 Mõigu
-mõis
 mõisaansambel
 Mõisaaseme
 Mõisaholm
 mõisahoone
 mõisahäärber
-mõisakohus
 mõisakompleks
-mõisakool
 Mõisaküla
 mõisaloss
 Mõisamaa
@@ -9093,7 +8512,7 @@ mõisapõld
 mõisasüda
 mõisatall
 Mõisimaa
-Mõjekvaphe
+Mõjekvape
 mõjukond
 mõjupiirkond
 Mõkolajiv
@@ -9130,7 +8549,6 @@ mõõtekolb
 mõõtenõu
 mõõtepiirkond
 mõõtesilinder
-mõõteteenistus
 mädakolle
 mädamaa
 Mädameri
@@ -9175,7 +8593,6 @@ mäestik
 mäestikujõgi
 mäestikujärv
 Mäe-Suhka
-mäesuusakeskus
 Mäetaguse
 Mäe-Tilga
 mäetipp
@@ -9189,7 +8606,6 @@ Mägi-Altai
 mägiasula
 Mägi-Badahšan
 mägietapp
-mägihotell
 mägijõgi
 mägijärv
 Mägi-Karabahh
@@ -9209,6 +8625,7 @@ Mägipe
 mägiplatoo
 mägiraudtee
 Mägise
+Mägi-Şirvan
 mägismaa
 mägismaastik
 Mägiste
@@ -9220,11 +8637,9 @@ Mähe
 Mähkli
 Mähma
 Mäiste
-mäkk
 Mäksa
 Mäla
 Mälaren
-mälestusmuuseum
 Mäletjärve
 Mälgi
 Mäliküla
@@ -9232,7 +8647,6 @@ Mäliste
 Mälivere
 Mällikvere
 Mällu
-mäluasutus
 mälumispind
 mälumispindmik
 Mändjala
@@ -9245,7 +8659,6 @@ mängumuru
 mängunurk
 mängupaik
 mänguplats
-mängupõrgu
 mängusaal
 mängutuba
 mänguväljak
@@ -9289,7 +8702,6 @@ Möldre
 Möldri
 Möllatsi
 mördikast
-mööblivabrik
 möödasõidukoht
 Möösia
 Mügra
@@ -9298,23 +8710,16 @@ mülgas
 München
 Mündi
 mündikarp
-mündikoda
 Münster
-müntla
 Mürgi
 mürgiampull
 mürgikarikas
 mürsukast
 mürsulehter
 Mütilene
-müügiesindus
-müügikoht
 müügipakend
-müügipunkt
 müügiputka
 müügisaal
-müügisalong
-müükla
 müüriava
 müürihari
 müürikatel
@@ -9324,11 +8729,13 @@ müüripalk
 müüripärlin
 müüristik
 müüritis
+müüritorn
 müürlatt
 Müüsia
 Müüsleri
 Myanmar
 Mýkonos
+Mymensingh
 Mysore
 Mysuru
 Mytilíni
@@ -9345,6 +8752,7 @@ naat
 Naatsaret
 Nabala
 nabamaa
+Nabatea
 Naberežnõje Tšelnõ
 Nablus
 Nadalama
@@ -9354,14 +8762,11 @@ naelakast
 Naelavere
 Nafarroa
 naftaallikas
-naftabaas
 naftahoidla
 naftajuhe
-naftakompanii
+Naftalan
 naftapuurauk
 naftariik
-naftasadam
-naftaterminal
 naftatsistern
 naftaväli
 Nagaland
@@ -9369,8 +8774,8 @@ Nagano
 Nagasaki
 Nagoya
 Nagpur
+Nagykanizsa
 Naha
-nahavabrik
 Nahhitševan
 Nahhodka
 Nahkanuia
@@ -9380,16 +8785,11 @@ nahklähker
 nahksild
 nahktelk
 Nairobi
-naisklooster
-naisorganisatsioon
 Naissaar
 Naissoo
-naistekliinik
-naistenõuandla
 naiste paradiis
 naistepool
 naisterand
-naistesaun
 naistetualett
 Naistevalla
 Naistevälja
@@ -9398,7 +8798,6 @@ najalt
 Najd
 Nakhon Ratchasima
 nakkepind
-nakkushaigla
 nakkuskolle
 nakkuspesa
 Nalšetš
@@ -9407,6 +8806,7 @@ Namangan
 Nam Co
 Namibi kõrb
 Namiibia
+Namp'o
 Namur
 Nanchang
 Nancy
@@ -9421,6 +8821,7 @@ Napi
 Napoli
 Nara
 Naravere
+Narese väin
 Narjan-Mar
 narkolabor
 narkopesa
@@ -9437,7 +8838,6 @@ Narva-tagune
 Narvataguse
 Narvik
 Narõn
-NASA
 Nashville
 Nasja
 Nassau
@@ -9445,7 +8845,6 @@ nasv
 Nasva
 Nazran
 Natal
-NATO
 Natsi-Saksamaa
 Natturi
 Naujoji Akmenė
@@ -9464,11 +8863,13 @@ Naxçıvan
 Náxos
 Naypyidaw
 Nay Pyi Taw
-NBA
 N'Djamena
 NE
+Neamț
 Neandertal
 Neanurme
+Nebit-Dag
+Nebitdag
 Nebraska
 Nedrema
 Nedsaja
@@ -9486,11 +8887,15 @@ Neeruti
 neetliide
 Neeva
 Neevalinn
+Neftçala
+Neftetšala
 negatiivne pinnavorm
 Negeb
 Negev
 Negevi kõrb
+Negros
 Nehatu
+Neiden
 Neisse
 Neitla
 neitsikamber
@@ -9509,11 +8914,10 @@ Nepal
 Nepste
 neriitiline
 Neringa
+Nerkhin Ahta
 Nesterov
+Nezametnoje
 netiavarus
-netikasiino
-netikohvik
-netipood
 Neuchâtel
 neutraalveed
 Neva
@@ -9548,8 +8952,6 @@ Nigeeria
 Niger
 Nigula
 Niguli
-Niguliste
-Niguliste kirik
 Nihatu
 Nihka
 nihkrivi
@@ -9568,10 +8970,14 @@ Niitsiku
 Niitvälja
 Nikolai Teise maa
 Nikolajev
+Nikolajevka
+Nikolsk
+Nikolsk-Ussuriiski
 Nikopol
 Nikosia
 Nilbõ
 nimekast
+nimmekoht
 nimmepiirkond
 Nina
 ninamine
@@ -9580,43 +8986,40 @@ Ninase
 Ninasi
 Ningxia
 Ninive
+Ninotsminda
 Nipigoni järv
 nipsis
 Nisa Lužická
 Nissi
 Nistru
 Niš
-nišiteater
 Nizza
+Nižnekamsk
+Nižnevartovsk
 Nižni Novgorod
 Nižni Tagil
 Nitra
 Niue
 Njassa järv
 Njassamaa
-NKVD
 NL
 NO
 Noarootsi
 noatäke
+Nógrád
 Nogu
 Nohipalo
 Nohipalu
+nokatass
 Nókis
 Noo
 Noodasküla
-noodikirjastus
 Noonu
 Nooritsmetsa
 Noorma
-noorsooteater
-noortehotell
-noortekeskus
-noortekodu
-noortemaja
 Nooska
 Nootamaa
-nooteater
+Nor Bajazet
 Norbi
 nord
 Nordenskiöldi meri
@@ -9625,12 +9028,12 @@ Nordland
 nordost
 Nord-Pas-de-Calais
 Nordrhein-Westfalen
+Nord-Trøndelag
 nordvest
 Norfolk
 Norfolki saar
 Norilsk
 normaalmägi
-normaaltalu
 Normandia
 Norra
 Norra meri
@@ -9642,20 +9045,19 @@ Northampton
 Northamptonshire
 Northumberland
 Norwich
-notariaalkontor
-notaribüroo
-nō-teater
 Nottingham
 Nottinghamshire
 Nouakchott
 Nouméa
 Novaja Kahhovka
+Novaja Ladoga
 Novaja Zemlja
 Nova Kahhovka
 Nova Scotia
 Novgorod
 Novgorodi vabariik
 Novi Sad
+Novokuibõševsk
 Novokuznetsk
 Novo-Mariinsk
 Novomoskovsk
@@ -9670,28 +9072,23 @@ NSVL
 NSV Liit
 nudistirand
 Nugeri
+Nuhha
 Nuia
 Nuku‘alofa
 nukuhäll
-nukukliinik
-nukulava
 nukumaja
 nukunurk
 nukuriik
 Nukus
 nukutuba
-nukuvalitsus
 Nulga
 nulk
 nullenergiamaja
 nullkorrus
 nulumets
-numbrisaun
-numbritehas
 numbrituba
 Numiidia
 Nunavut
-nunnaklooster
 nunnakong
 Nurga
 nurgaaken
@@ -9732,12 +9129,12 @@ Nutu
 Nutumüür
 Nuubia
 Nuuk
-nuumafarm
 nuumalaut
 nuumikla
 Nuustaku
 nuut
 Nuutre
+Nuxa
 NW
 Nõela
 Nõelaneem
@@ -9773,10 +9170,7 @@ Nõo
 nõostik
 Nõrava
 nõru
-nõuandla
 nõudepeatus
-nõukoda
-nõukogu
 Nõukogude
 nõukogude
 Nõukogude Liit
@@ -9790,16 +9184,12 @@ Näduvere
 nägemiskaugus
 nägemisulatus
 nägemisväli
-näidismajand
 näituseruum
 Näljastepp
 Näo
 Näpi
-näpupood
 Närapää
 Närke
-närvihaigla
-närvikliinik
 Näsare
 Nässuma
 Näsuvere
@@ -9812,6 +9202,7 @@ Nüpli
 Nüri
 Nürnberg
 nüüdis-Eesti
+Nyíregyháza
 Nyköping
 Nysa Łużycka
 O‘ahu
@@ -9829,11 +9220,8 @@ Obja
 oblastikeskus
 Oblu
 Obninsk
-observatoorium
 Obwalden
 Odalätsi
-odavlennufirma
-odavpood
 Odense
 Odensholm
 Oder
@@ -9844,23 +9232,21 @@ Odiste
 Odivere
 Odra
 Odulemma
-OECD
 Oela
 Oese
 Oessaare
 Oeti
 Offaly
-offshore
 Ogaden
 Ogandi
 Ogre
+Oğuz
 Ohakvere
 Ohekatku
 Ohepalu
 Ohessaare
 Ohhoota meri
 Ohio
-ohranka
 Ohtja
 Ohtla
 Ohtu
@@ -9887,7 +9273,6 @@ Oisu
 Ōita
 Oitme
 Oiu
-oivakeskus
 oja
 ojakäär
 Ojaküla
@@ -9904,14 +9289,14 @@ okasmets
 okaspuumets
 Okayama
 Okeaania
-okeanaarium
 Okinawa
 Oklahoma
 Oklahoma City
 oksaauk
 oksakoht
 Oksitaania
-oksjonimaja
+Oktemberjan
+Oktoobrirevolutsiooni saar
 oktsident
 Olaine
 Oldenburg
@@ -9920,8 +9305,6 @@ Olehkova
 Oleksandrivsk
 Olenjok
 Oleski
-Oleviste
-Oleviste kirik
 Olgina
 oliiviistandus
 Oljokma
@@ -9934,6 +9317,7 @@ Olohkuva
 Olomouc
 Olonets
 Olsztyn
+Olt
 Olteenia
 Olustvere
 olv
@@ -9943,12 +9327,11 @@ olümpiaküla
 olümpialinn
 olümpiastaadion
 Olümpos
+Olympia
 Om
 Omaan
 Omaha
 omakandi
-omanikfirma
-omavalitsusasutus
 omavalitsusüksus
 Omdurman
 Omedu
@@ -9959,9 +9342,6 @@ Onega
 Onega järv
 Ongassaare
 Onitsha
-onkohaigla
-onkoloogiahaigla
-onkoloogiakeskus
 onn
 Ontario
 Ontario järv
@@ -9979,9 +9359,7 @@ Oomiste
 Oomuli
 Oonga
 Oonurme
-ooperilava
 ooperimaja
-ooperiteater
 Oore
 Oorgu
 oos
@@ -9994,14 +9372,14 @@ ooteplatvorm
 ooteruum
 ootesaal
 ootetuba
-operaatorfirma
-operatiivstaap
-operatsiooniplokk
 operatsioonisaal
 operatsioonituba
 operatsiooniväli
 Opole
-Opus Dei
+Opotška
+Oppland
+Opska
+Oradea
 Orajõe
 Oral
 Oran
@@ -10011,26 +9389,25 @@ Oranjestad
 oranžerii
 oratoorium
 Orava
-orbudekodu
-ordenikapiitel
 Ordžonikidze
-ordu
 ordulinnus
 orduloss
 Oregon
 Orehhovo-Zujevo
-oreliklass
 orelirõdu
 oreliväär
 Orenburg
 Orešek
 org
+Orgejev
 Orgemäe
 Orgita
 Orgmetsa
 Orguse
+Orhei
 orient
 Oriküla
+oriljoon
 Orinoco
 Orinõmme
 Orissa
@@ -10042,9 +9419,9 @@ Orjol
 orkestra
 orkestriruum
 Orkney saared
+Orlando
 Orléans
 Ormsö
-ornitoloogiajaam
 Oro
 Oromia
 Orsk
@@ -10065,13 +9442,10 @@ oruterrass
 oruveer
 orv
 Ōsaka
-osakond
 osalisriik
-osariik
 osastis
 osatükk
-OSCE
-osk
+Osijek
 Oslo
 osm
 Osmani riik
@@ -10086,12 +9460,12 @@ Osseetia
 Ossipenko
 ossuaarium
 Ossõpenko
+Østfold
 Ostjako-Vogulsk
 Ostland
 Ostrava
 Ostrov
 Ostrova
-ostukeskus
 ostuparadiis
 ostutalu
 ostutänav
@@ -10099,6 +9473,7 @@ Osula
 Oświęcim
 Oš
 Ozjorsk
+Ozurgethi
 Otepää
 Otepää kõrgustik
 Oti
@@ -10106,6 +9481,7 @@ Otiku
 Otiküla
 Otradnoje
 Otsa
+otsakelp
 otsapoolne
 otsasein
 otsatuba
@@ -10142,7 +9518,6 @@ Paabeli torn
 Paaburissa
 Paadenurme
 paadikuur
-paadisadam
 paadisild
 paaditekk
 Paadrema
@@ -10173,8 +9548,6 @@ Paatsalu
 Paavstiriik
 paavstiriik
 paberikorv
-paberivabrik
-paberiveski
 Pada
 Pada-Aruküla
 Padakõrve
@@ -10217,11 +9590,6 @@ Paevälja
 Paflagoonia
 Paganamaa
 Pagari
-pagarikoda
-pagaripood
-pagaritsehh
-pagaritöökoda
-pagariäri
 Pagasi
 pagasiait
 pagasiruum
@@ -10230,7 +9598,6 @@ pagass
 pagood
 Pago Pago
 pagulaslaager
-pagulasvalitsus
 Pahapilli
 Pahavalla
 pahemal
@@ -10244,9 +9611,7 @@ Paidra
 paigake
 paigakene
 paige
-paik
 Paiķēni
-paikkino
 paikkond
 paikkondlik
 paiklik
@@ -10278,12 +9643,9 @@ pajustik
 Pajuveski
 Pakasjärv
 Pakaste
-pakihoid
-pakihoiuruum
 pakiruum
 Pakistan
 pakktaru
-pakktuba
 Paklova
 Pakri
 Pakri neem
@@ -10291,7 +9653,10 @@ Pakri poolsaar
 Pakri saared
 Pakruojis
 Paks Margareeta
+pakstaak
+pakstaaktuul
 paksuti
+paktaaktuul
 Pala
 Palade
 Palamulla
@@ -10309,14 +9674,15 @@ Palatu
 Palau
 palavvöö
 palavvööde
+Palawan
 Paldiski
 palearktiline
 palee
+Paleeväljak
 palendsein
 Palermo
 Palestiina
 palestik
-palestra
 palgamaa
 palgikord
 palgimets
@@ -10335,6 +9701,7 @@ paljastu
 paljundusistandik
 paljunduspeenar
 palklagi
+palklaudis
 palkmaja
 palkon
 palkonn
@@ -10388,8 +9755,7 @@ Panaji
 Panama
 Panamá
 Panama kanal
-pandimaja
-pandimõis
+Panay
 Pandivere
 Pandivere kõrgustik
 Pandžab
@@ -10403,9 +9769,6 @@ Panevėžys
 Panfilovi
 Panga
 pangahoone
-pangainspektsioon
-pangakontor
-pangamaja
 pangasmäestik
 Pangodi
 panila
@@ -10413,13 +9776,11 @@ panipaik
 Pankjavitsa
 pankrannik
 pann
-pannkookla
 Pannoonia
 Pannoonia nõgu
-pansionaat
-pantomiimiteater
 Paope
 Papeete
+Paphos
 Papiaru
 Papilaht
 Papilaid
@@ -10438,11 +9799,9 @@ paradiisisaar
 Paraguai
 Paraguay
 Paralepa
-paralleelklass
 paralleeltänav
 Paramaribo
 Paraná
-parandusmaja
 Parapalu
 parapett
 parasiitkraater
@@ -10451,6 +9810,9 @@ Parasmetsa
 Parasmäe
 parasvöö
 parasvööde
+pardal
+pardale
+pardalt
 parditiik
 Pardubice
 paremal
@@ -10463,21 +9825,19 @@ paremkallas
 paremkurv
 pargirada
 Pargitaguse
+Pargolovo
 Pari
 Pariis
 Pariisi
-Pariisi kommuun
 Parika
 Parila
 Parisselja
 Parivere
-parkalitöökoda
 Parkanova
 parkettpõrand
 parkimismaja
 parkimisplats
 parkimistasku
-parkimistöökoda
 parkla
 parkmaastik
 parkmets
@@ -10485,7 +9845,6 @@ parkmik
 Parksepa
 Parksi
 parkuuriväljak
-parlament
 parlatoorium
 Parma
 Parmu
@@ -10494,14 +9853,10 @@ Parnassós
 Páros
 Partia
 partla
-partnerettevõte
-partnerkool
 partnerlinn
-partnerorganisatsioon
 partnerriik
 Partsaare
 partsell
-partselltalund
 Partsi
 parvesaun
 parvetuskanal
@@ -10514,21 +9869,18 @@ Pasklep
 Paslepa
 Passi
 passiivmaja
-passijaoskond
-passilaud
 Pastaku
 Pasti
-pastoraalseminar
 pastoraat
 pastorimaja
 Pasvalys
 pašalõk
+Pazardzhik
+Pazardžik
 Patagoonia
-pataljon
 Patarei vangla
 Pataste
 pateen
-patendiamet
 Pathein
 Patika
 Patjala
@@ -10536,11 +9888,8 @@ Patkuli tiik
 Patküla
 Patna
 Pátra
-patrullteenistus
 Pattaya
 Pattina
-patupesa
-patuurgas
 Pauastvere
 Pauliku
 Paunaste
@@ -10556,12 +9905,8 @@ peaalune
 peafassaad
 peahoone
 peajõgi
-peakeskus
 peakirik
-peakonsulaat
-peakontor
 peakorpus
-peakorter
 peakraater
 peakraav
 peaksi
@@ -10589,23 +9934,19 @@ pealtuule
 pealtuulekülg
 Pealuu
 pealööv
-peamaja
 peamõis
 Peanse
 Peantse
 peaorg
 peaots
-peapostkontor
 Pearl Harbor
 peasaal
 peasaar
 peasissekäik
-peastaap
 peastrekk
 peašaht
 peatee
 peatekk
-peatoimetus
 peatrepp
 peats
 Peatskivi
@@ -10614,18 +9955,10 @@ peatuskoht
 peatuspaik
 peatuspunkt
 peatänav
-peatööettevõtja
-peatöövõtja
-peavaht
-peavaksal
-peavalitsus
 peavari
 peaväljak
+Peć
 Pécs
-peda
-pedagoogikainstituut
-pedagoogikaülikool
-pedagoogium
 Pedajamäe
 Pedase
 Pedaspea
@@ -10646,6 +9979,7 @@ peedipudel
 Peedo
 Peedu
 peegellabürint
+peegellagi
 peegelpind
 peegelsein
 peeglisaal
@@ -10657,10 +9991,12 @@ peergkorv
 Peeri
 Peerni
 Peetel
+Peeter I saar
 Peeterristi
 Peetri
 Peetri jõgi
 Peetrimõisa
+Peetri väljak
 Pehka
 peidik
 peidukas
@@ -10671,6 +10007,7 @@ Peipsi
 Peipsi järv
 Peipsiveer
 Peipsiääre
+Pejë
 Peking
 pelagiaal
 peldik
@@ -10691,7 +10028,6 @@ Penniinid
 Penniini mäed
 Pennsylvania
 Penza
-Pentagon
 penthouse
 Penu
 Penuja
@@ -10701,27 +10037,15 @@ peosaal
 peotelk
 Peraküla
 Perametsa
-perbüroo
 Perdaku
 Perea
-perearstikeskus
 pereelamu
-pereettevõte
-perefarm
-perefirma
 perekamber
-perekonnafarm
 perekonnakabel
 perekonnakalmistu
-perekonnanõuandla
-perekonnaseisuamet
-perekonnaseisubüroo
-perekool
 Pereküla
 peremaja
-perenõuandla
 perepalat
-pererestoran
 Peresi
 Peresniga
 Peressaare
@@ -10741,15 +10065,16 @@ permaaed
 permakultuuriaed
 Permikomi
 Permisküla
+Pernik
 Perosoontsa
 Perovsk
 perroon
 Persåker
 perselohk
 personaalunioon
-personaliosakond
 perspektiivportaal
 Perth
+Perugia
 Peruu
 perv
 pervepealne
@@ -10768,18 +10093,17 @@ pesapaik
 pesaruum
 pesaõõnsus
 pesaõõs
+Peshkopi
 pesitsusala
 pesitsuskoht
 pesitsuspaik
 pesitsusterritoorium
+Pest
 pesukast
 pesukauss
-pesukoda
 pesukorv
 pesuköök
-pesula
 pesuladu
-pesumaja
 pesupali
 pesuruum
 pesutänav
@@ -10821,9 +10145,10 @@ Phthiotis
 Phuket
 Phönjan
 piaal
+Piatra Neamț
 Pibari
 Picardie
-pidalitõbila
+Pico
 pidamisala
 Pidula
 Pidula-Kuusiku
@@ -10836,6 +10161,7 @@ pidusaal
 Pieksämäki
 Pielinen
 Piemonte
+Pierre
 Pietarsaari
 Pietermaritzburg
 pigatasandik
@@ -10855,7 +10181,6 @@ Pihleni
 Pihtla
 Pihva
 Piibe
-piibliselts
 piiblivöö
 Piibumäe
 Piigandi
@@ -10867,29 +10192,20 @@ Piilse
 Piilsi
 Piilu
 piiluauk
-piimabaar
-piimafarm
 piimakann
-piimakarjafarm
 piimakarjalaut
 piimakelder
 piimakirn
 piimakoda
 piimakott
-piimaköök
 piimalähker
 piimamahuti
 piimanõu
 piimapakk
 piimaplekk
-piimapood
-piimapunkt
 piimapütt
 piimaruum
-piimasaal
-piimatalitus
 piimavinku
-piimaühistu
 piinakamber
 piipkann
 Piipsemäe
@@ -10900,15 +10216,12 @@ piirdekonstruktsioon
 piirdemüür
 piirdetarind
 Piiri
-piirijaam
 piirijõgi
-piirikaitserügement
 piirikindlus
 piirikraav
 piirilinn
 piirimaa
 piiripeenar
-piiripolitsei
 piiripunkt
 piiririba
 piiririik
@@ -10918,14 +10231,10 @@ piiri tagant
 piiritagune
 piiri taha
 piiritsoon
-piiritusevabrik
-piiritusvabrik
-piirivalvekordon
 Piirivarbe
 piirivöönd
 piiriäärne
 piiriülene
-piirkonnakool
 piirpind
 Piirsalu
 Piirumi
@@ -10948,7 +10257,6 @@ Pikakannu
 Pikaküla
 Pikaliiva
 pikamaa
-pikapäevakool
 Pikardia
 Pikareinu
 Pikaristi
@@ -10978,7 +10286,6 @@ Pikru
 pikuti
 pikutine
 Pikva
-pilapood
 pilaster
 pilbaskatus
 Pilda
@@ -10995,6 +10302,7 @@ Pillau
 Pille
 pillikast
 pillikott
+pillirookatus
 pilliroopadrik
 pillirootihnik
 pillirooväli
@@ -11010,13 +10318,12 @@ pilvelõhkuja
 pilvemets
 pilvepragu
 pilvetagune
+pimeala
 pime kurv
 pime nurk
-pimepood
 Pimestiku
 pimešaht
 pimik
-pinakoteek
 Pinang
 Pindi
 pindmik
@@ -11034,7 +10341,6 @@ Pinsk
 Pinska
 pinukoda
 pinumaa
-pioneerimalev
 Piprarannik
 pipratoos
 Pireus
@@ -11044,7 +10350,7 @@ Pirita klooster
 Pirkanmaa
 Pirmastu
 Pirsallika
-pirukabaar
+Pirtševan
 Pisa
 Pisa torn
 Pisiidia
@@ -11054,30 +10360,25 @@ Pisisaare
 pissipott
 pissuaar
 Pišpek
-pizzeria
 Pitaluva
 Pitcairn
+Pitești
 Pitkäranta
-pitsabaar
 Pitsalu
-pitseeria
+Pitsunda
 Pittsburgh
 Piusa
 Piusa jõgi
 Piusa koopad
 Pivarootsi
 Pjatigorsk
-plaadifirma
-plaadipood
 Plaani
-plaanikomitee
 plaaž
 plaatpõrand
 plaatvooder
 plafoon
 plahvatuslehter
 Plaksi
-planetaarium
 planktiline
 planktoniline
 Plasku
@@ -11114,28 +10415,21 @@ Podlaasia
 Podmotsa
 Podolsk
 Podoolia
-poeke
-poekett
-pogri
+Podporožje
 Pohjanmaa
 Pohla
 pohlamännik
 Pointe-Noire
-poistekool
 Poitou-Charentes
 Poka
 Pokolduva
-pokris
 Pokrovsk
 Pokrovskaja Sloboda
 Poksa
 Poksi
-poksiklubi
 poksiring
 polaar
 polaarala
-polaarium
-polaarjaam
 polaarjoon
 polaarmaa
 polaarmeri
@@ -11146,26 +10440,13 @@ Polatsk
 polder
 Polesje
 Polessk
-poliitiline politsei
-polikas
-polikliinik
 polis
-politseiamet
-politseiasutus
-politseikohus
-politseimaja
-politseipataljon
-politseiprefektuur
 politseiriik
-politseiteenistus
-politseivalitsus
 polje
-polk
 Polli
 Poloda nulk
 Polotsk
 Polovina
-polpol
 Poltaava
 Poltava
 poltliide
@@ -11173,7 +10454,6 @@ Poltoratsk
 poltühendus
 polügon
 Polüneesia
-polütehnikum
 Pombre
 Pommeri
 pommiauk
@@ -11181,6 +10461,7 @@ pommilehter
 pommivarjend
 Pomorze
 Pompei
+Ponta Delgada
 pontoonsild
 Pontos
 Pontose mäed
@@ -11194,7 +10475,6 @@ poolasumaa
 Poole
 poolipesa
 poolituskoht
-pooljaam
 poolkelder
 poolkelpkatus
 poolkoloonia
@@ -11217,10 +10497,6 @@ popsikoht
 popsiküla
 popsisaun
 popsitare
-pop-up-butiik
-pop-up-kohvik
-pop-up-pood
-pordumaja
 Porhov
 Pori
 poriauk
@@ -11236,6 +10512,7 @@ Pornuse
 Porosluva
 Porsa
 portaal
+Portalegre
 Port Artur
 Port-au-Prince
 Port-aux-Français
@@ -11252,7 +10529,6 @@ Porto Alegre
 Port of Spain
 Porto-Novo
 Port Said
-portselanimanufaktuur
 portselannõu
 portselanserviis
 portselantass
@@ -11271,21 +10547,18 @@ Port Vila
 Porvoo
 positiivne pinnavorm
 possaad
-possubaas
 Posti
-postiasutus
 postijaam
 postikott
 postimaantee
 postimaja
-postipunkt
 postitalu
 postitee
-postkontor
 postmaantee
 postvundament
 Poznań
 Potaluva
+Potenza
 Poti
 potid-pannid
 potike
@@ -11303,10 +10576,8 @@ Pragi
 pragu
 Praha
 prahipaik
+Prahova
 Praia
-praktikaasutus
-praktikabaas
-praktikakool
 Prandi
 Prange
 Prangli
@@ -11315,6 +10586,7 @@ Prantsuse Afarite ja Issade ala
 Prantsuse Ekvatoriaal-Aafrika
 Prantsuse Guajaana
 Prantsuse Guinea
+Prantsuse India ookeani hajasaared
 Prantsuse Indohiina
 Prantsuse Kongo
 Prantsuse Lõunaalad
@@ -11326,30 +10598,21 @@ Prantsuse Somaalimaa
 Prantsuse Sudaan
 Prantsuse Togo
 Prantsusmaa
-praostkond
 Prassi
 Pravdinsk
 Prayagraj
+Predazzo
 Preedi
 Preeksa
 preeria
-prefektuur
 Preiļi
 Preisi Leedu
 Preisimaa
-prelatuur
 prenner
 presentkatus
 presidendiloss
 presidentkond
 Pressi
-pressiagentuur
-pressibüroo
-pressiesindus
-pressikeskus
-pressiosakond
-pressitalitus
-pressiteenistus
 presskann
 Preston
 Prešov
@@ -11359,61 +10622,46 @@ Priekule
 Prienai
 prigu
 Priipalu
-priisikohus
 Priisle
-prikaas
+Prijedor
 Prikumsk
 Prillimäe
-prillipood
 Primorje
 Primorje krai
 Primorsk
 Pringi
 Prints Edwardi saar
-printsipaal
 Priozersk
 Pripjat
 Prishtina
 Priština
+Prizren
 Pritsi
 pritsikuur
 pritsimaja
 pritsukuur
-privaatkool
-produktsioonifirma
-profiklubi
-profülaktoorium
-progümnaasium
-projekteerimisbüroo
-projektiteater
 Prokopjevsk
-prokuratuur
 promenaad
 pronksmedal
 prooviala
 prooviauk
 proovikabiin
 proovikaevand
-proovikoda
 proovilapp
 prooviruum
 proovisaal
 proovivõtupunkt
-propagandatalitus
 propüleed
-prosektuur
 proskeenion
 Proskuriv
 Proskurov
 prospekt
 prostseenium
-protokolliosakond
 protseduurikabinet
 protseduurituba
 Provence
 Provence-Alpes-Côte d'Azur
-proviisorapteek
-proviisoriapteek
+Providence
 provints
 provintsikeskus
 provintsilinn
@@ -11421,7 +10669,6 @@ Przemyśl
 Prževalsk
 Pruntova
 Prut
-pruulikoda
 Pruuna
 Prõpjat
 Prõpjats
@@ -11433,7 +10680,6 @@ prügikorv
 prügila
 prügimaja
 prügipang
-prügipõletusjaam
 prügišaht
 prügiurn
 prügiämber
@@ -11442,17 +10688,10 @@ Prypiać
 ps
 Psará
 pseudobasiilika
-psühhiaatriahaigla
-psühhiaatriakliinik
-psühhoneuroloogiahaigla
-PTG
-pubi
 Pudisoo
 Pudivere
 Puducherry
-pudukauplus
 Puduküla
-pudupood
 Puebla
 Puerto Rico
 pugem
@@ -11466,34 +10705,22 @@ puhasnurk
 puhaspõrand
 puhasruum
 puhastuba
-puhastusfirma
-puhastusjaam
 puhas vuuk
 puhasvuuk
 Puhatu
 Puhja
 puhkeala
 puhkease
-puhkeasutus
-puhkebaas
-puhkekeskus
-puhkekodu
-puhkekoht
 puhkekompleks
-puhkeküla
 puhkemaastik
-puhkemaja
 puhkemajake
 puhkemajakene
 puhkemets
 puhkenurk
-puhkepaik
 puhkeruum
-puhketalu
 puhketasku
 puhketuba
 Puhkova
-puhkpilliklass
 puhmaraba
 Puhmu
 Puhtaleiva
@@ -11503,11 +10730,8 @@ puhtpuistu
 puhverriik
 puhvertsoon
 puhvervöönd
-puhvet
 Puiatu
 Puide
-puidutsehh
-puidutöökoda
 puiestee
 puiestik
 Puiga
@@ -11536,7 +10760,6 @@ puitvai
 puitvooder
 Puka
 Pukamäe
-pukibaar
 pukksild
 pukktuulik
 pukkveski
@@ -11556,17 +10779,13 @@ pulvärk
 pumbakamber
 pumbamaja
 pumptermos
-Punaarmee
 Puna-Hiina
 punaimpeerium
-Punakaart
 Punaküla
 Punakülä
 Punane jõgi
-Punane kaardivägi
 Punane meri
 Punane nõgu
-Punane Rist
 Punane Volta
 Punane väljak
 punanurk
@@ -11616,9 +10835,11 @@ Pusku
 Puspuri
 pusta
 Puškin
-putka
+Puškino
+Puškinskije Gorõ
 Putkaste
 Putrajaya
+Puttalam
 puttamisgriin
 Putu
 putukaväil
@@ -11636,8 +10857,6 @@ puukann
 puukarp
 puukast
 puukirik
-puukoda
-puukool
 puukorv
 puukuur
 puulobudik
@@ -11657,19 +10876,18 @@ puurisuu
 puurkaev
 Puurmani
 puurtorn
+puusa
 puusas
 Puusepa
 puusild
 puustus
 puustusmaa
 Puutli
-puutöökoda
 puuviljaaed
 puuviljahoidla
 puuviljaistandik
 puuvillaistandik
 puuvillaistandus
-puuvillavabrik
 puuõõnsus
 puuõõs
 puuämber
@@ -11684,16 +10902,13 @@ Põgari
 Põgari-Sassi
 põgenikelaager
 Põhara
-põhikool
 põhilevila
 põhimaantee
-põhiseaduskohus
-põhivõrguettevõtja
 Põhja
 Põhja-Aasia
 põhjaala
+Põhja-Alföld
 Põhja-Ameerika
-Põhja-Atlandi Lepingu Organisatsioon
 Põhja-Borneo
 Põhja-Brabant
 Põhja-Carolina
@@ -11754,6 +10969,7 @@ Põhja-Rodeesia
 Põhjasaar
 Põhja-Savo
 põhjaserv
+Põhja-Siberi madalik
 põhjasopp
 põhjasuund
 Põhja-Šoti mägismaa
@@ -11762,6 +10978,7 @@ Põhjaterritoorium
 põhjatiib
 põhjatipp
 Põhja-Transvaal
+Põhja-Ungari
 Põhja-Uvaalid
 põhjaveehorisont
 põhjaveekiht
@@ -11799,10 +11016,6 @@ põlendik
 Põlendmaa
 põletikukolle
 põlevkivibassein
-põlevkivielektrijaam
-põlevkivijaam
-põlevkivikaevandus
-põlevkivikarjäär
 Põlgaste
 põlisala
 põliskodu
@@ -11827,21 +11040,14 @@ põllulahmakas
 põllulapike
 põllulapp
 põllumaa
-põllumajandusettevõte
-põllumajanduskool
 põllumajandusmaa
 põllumajandusmaastik
-põllumajandusministeerium
-põllumajandusühistu
-põllumajandusülikool
 põllumassiiv
 põllunukk
 põllunurk
 põllupeenar
 põllurinnak
 põllutee
-põllutöökoda
-põllutöökool
 põlluvahe
 põlluvahetee
 põlluveer
@@ -11857,6 +11063,7 @@ põlvitus
 põlvitusiste
 põndak
 Põnni
+põntsatuul
 põrand
 põrandapragu
 põrandavaas
@@ -11885,12 +11092,9 @@ põõsatihnik
 põõsatundra
 Pädaste
 Päelda
-päevakeskus
-päevakodu
-päevakool
 päevalillepõld
 päevamärk
-päevastatsionaar
+Pähkinäsaari
 Pähkla
 pähklimets
 Pähklimäe
@@ -11901,12 +11105,8 @@ Päidre
 Päigiste
 Päijänne
 Päijät-Häme
-päikeseelektrijaam
-päikesejaam
-päikesejõujaam
 päikesekollektor
 päikeselinn
-päikesepark
 päikeseplekk
 päikeserannik
 päikesetekk
@@ -11942,11 +11142,9 @@ päritolumaa
 päritoluriik
 pärituult
 Pärivere
-pärlifarm
 Pärlijõe
 Pärlijõgi
 pärlin
-pärmivabrik
 Pärna
 pärnaallee
 pärnamets
@@ -11976,12 +11174,8 @@ Päärdu
 Pääsküla
 pääsla
 Pääsna
-päästeamet
-Päästearmee
 päästedepoo
 päästejaam
-päästekeskus
-päästeteenistus
 Pääväkese
 pöialseong
 Pöide
@@ -12002,9 +11196,7 @@ pöörderiba
 pöörduks
 Pööritsa
 pöörmekoht
-pügala
 Püha
-Püha Aujärg
 Püha Helena saar
 Pühajõe
 Pühajärv
@@ -12015,16 +11207,13 @@ Pühalepa
 Pühalepa-Harju
 Püha Linn
 Püha Maa
-pühamu
 pühapaik
-pühapäevakool
+Püha Peetruse väljak
 Püha Rooma riik
 pühasenulk
 pühasenurk
 Pühaste
 Pühatu
-Püha Vaimu kirik
-Pühavaimu kirik
 pühaveenõu
 Pühi
 pühkmekast
@@ -12042,14 +11231,13 @@ püsirohumaa
 Püssi
 püssirohuait
 püssirohukelder
+püssirohuladu
 püssirohutorn
-püssirohuveski
 Püssä
 püstak
 püstasendis
 püstformaat
 püstiasend
-püstijalabaar
 püstik
 püstkoda
 püstlõhe
@@ -12058,33 +11246,38 @@ pütsik
 püügiauk
 püügikoht
 püügivesi
-püüliveski
 püüniskraav
 püünisvagu
 Püünsi
 Pyeongchang
 Pyongyang
 Qaidam
+Qaqortoq
 Qarshi
+Qaryagin
 Qashqadaryo
+Qazax
+Qazax-Tovuz
 Qeshm
 Qingdao
 Qinghai
 Qiqihar
 Qom
 Qo‘qon
+Quba
+Qubadlı
+Quba-Xaçmaz
 Québec
 Queensland
+Quezon City
 Quito
+Qäbälä
 Raadama
 Raadi
-raadiolokatsioonijaam
 raadiomajakas
 raadioruhv
 raadiosaatejaam
 raadiosõlm
-raadioteater
-raadiotehas
 Raadivere
 Raadna
 Raaduvere
@@ -12092,14 +11285,7 @@ Raagi
 Raahe
 Raakva nulk
 Raamatu
-raamatuantikvariaat
-raamatuhoidla
-raamatukauplus
 raamatukoguhoone
-raamatupidamiskohuslane
-raamatupidamiskohustuslane
-raamatupidamisosakond
-raamatupood
 raamatuturg
 raand
 Raanitsa
@@ -12107,7 +11293,6 @@ Raasepori
 Raasiku
 Raassilla
 raatmaa
-raatus
 Raatvere
 Raavitsa
 rabaala
@@ -12129,17 +11314,13 @@ Rabat
 Rabavere
 Rabivere
 Radaja
-radarijaam
 Radovel
 Radžastan
 Radviliškis
 Rae
-raeapteek
 Raegma
 raekabel
 raekelder
-raekoda
-raekohus
 raekojaplats
 raekojaväljak
 Raeküla
@@ -12150,16 +11331,10 @@ Raespa
 raeväljak
 Rafaḩ
 Ragnit
-rahaasutus
 rahailm
 rahakarp
 rahakassa
 rahamaailm
-rahandusamet
-rahandusasutus
-rahandusministeerium
-rahapada
-rahapaja
 Raheste
 Rahinge
 Rahivere
@@ -12169,44 +11344,17 @@ Rahniku
 Rahnoja
 Rahtla
 Rahu
-rahukogu
-rahukohus
 Rahula
 rahula
 Rahumäe
 rahupaik
 rahuriik
 Rahuste
-rahuvalvekompanii
-rahuvalvepataljon
-rahuvägi
-rahvaarmee
-rahvakirik
-rahvakohus
-rahvakomissariaat
-rahvakool
-rahvamaja
-rahvaraamatukogu
-rahvateater
 rahvavabariik
-rahvavalitsus
-rahvaõpistu
-rahvaülikool
-rahvusarhiiv
-rahvusgalerii
-rahvuskaart
-rahvuskool
-rahvuskorpus
-rahvusmuuseum
-rahvusooper
 rahvuspark
-rahvusrestoran
 rahvusriik
 rahvusringkond
-rahvusteater
 rahvusvabariik
-Rahvusvaheline Olümpiakomitee
-rahvusülikool
 raidportaal
 raidtõke
 raieala
@@ -12228,6 +11376,7 @@ Raivola
 raj
 Raja
 rajakate
+rajakoppel
 Rajaküla
 rajamaa
 Rajangu
@@ -12235,18 +11384,14 @@ Rajasthan
 rajatagune
 rajatis
 Rajavahimaad
-rajoonikeskus
-rajoonikomitee
 rajoonilinn
 Raka
-rakenduskõrgkool
 raketibaas
-raketivägi
-raketiüksus
 raketodroom
 Rakke
 rakkekaev
 Rakvere
+Raleigh
 Ramallah
 Rām Allāh
 Rambouillet
@@ -12257,6 +11402,7 @@ Ramma
 Rammu
 Rammuka
 rammutukk
+Râmnicu Vâlcea
 Rampe
 Rampsilaid
 Ramsi
@@ -12271,6 +11417,7 @@ randla
 Randsalu
 randumissild
 Randvere
+rangluualune
 Rangu
 Ranguun
 Ranna
@@ -12296,11 +11443,8 @@ rannamoodustis
 Rannamõisa
 rannaniit
 rannanõlv
-rannapatarei
 rannapromenaad
 Rannapungerja
-rannaresto
-rannarestoran
 rannariba
 rannasalong
 rannatasandik
@@ -12328,29 +11472,30 @@ Raotu
 Rapla
 Raplamaa
 Rapla maakond
-RAS
+rapsipõld
+Ra's al-Khaymah
 Raseiniai
 Rasina
 Rasivere
+Rasŏn
 Rassi
 Rassiku
 Rassiotsa
+Rastjapino
 Rastla
 Rasva
+Razgrad
 ratasring
 Ratla
-ratsabaas
-ratsatalu
-ratsavägi
+Ratnapura
 ratsukil
+Ratša
+Ratša-Letšhumi ja Alam-Svanethi
 rattaparkla
 rattarada
 rattatee
 Ratva
 Raua
-rauakauplus
-rauakool
-rauapood
 Raudalu
 Raudla
 Raudlepa
@@ -12358,15 +11503,12 @@ Raudna
 Raudoja
 Raudsepa
 Raudsepä
-raudtee
 raudteejaam
-raudteekool
 raudteeliin
 raudteelõik
 raudteemagistraal
 raudteesild
 raudteetamm
-raudteetehas
 raudteetunnel
 raudteevaksal
 raudteeviadukt
@@ -12380,32 +11522,20 @@ raun
 Rauschen
 Rautina järv
 raveliin
-raviasutus
+Ravenna
 Ravila
-ravila
-ravimiamet
-ravimifirma
-ravimihiid
 ravimikarp
-ravimitehas
-ravimitootja
 ravimtaimla
 Rawalpindi
 rdt
 rdtj
-RE
-reaalgümnaasium
-reaalkool
 reaalune
 Reading
-realiseerimiskeskus
-reanimatsiooniosakond
 Reastvere
 reavahe
 Rebala
 Rebase
 rebaseauk
-rebasefarm
 Rebasemõisa
 Rebaski
 Rebasmäe
@@ -12425,17 +11555,13 @@ reetee
 Reetia
 Reetia Alpid
 refektoorium
-reformatsioonikirik
-reformeeritud kirik
-reformierakond
-reformitud kirik
 refuugium
+Regar
 Regensburg
 Regina
 regioon
 registratuur
 registreerimislaud
-rehabilitatsioonikeskus
 rehala
 Rehatse
 rehealune
@@ -12462,40 +11588,29 @@ Reinimaa-Pfalz
 Reinse
 Reinu
 Reinumurru
-reisibüroo
-reisifirma
 reisimajake
 reisimajakene
-reisisadam
 reisisiht
-reisiterminal
 Reiu
-reklaamibüroo
-reklaamifirma
 reklaamipind
 reklaampind
+rekordpaik
 reliktjärv
 reljeefivorm
 relvakamber
-relvakoda
-relva-SS
 Remda
 Remniku
 remondikoda
 remonditöökoda
 remontla
 remter
-rendiettevõte
-rendifirma
 rendikoht
 rendimaa
-rendimõis
 rendipind
 renditalu
 Renfrewshire
 renn
 Rennes
-rentei
 rentsel
 Reo
 reokreen
@@ -12505,17 +11620,14 @@ reomägi
 Reonda
 Reopalu
 reoveekaev
-repertuaarikino
-repertuaariteater
 Repino
 reservaat
 reservmaa
 reservuaar
 residents
+Reșița
 restkaev
 Resto
-resto
-restoran
 restoranitelk
 restpõrand
 Restu
@@ -12528,17 +11640,17 @@ Réunion
 Reval
 Revala
 reviir
-revolutsioonikomitee
-revolutsioonitribunal
-revüüteater
 Reykjavík
 Rheinhessen-Pfalz
 Rheinland-Pfalz
 Rhode Island
 Rhodos
 Rhône
+Rhône-Alpes
 Ribe
+Rîbnița
 riburida
+Richmond
 Rickul
 ridaelamu
 ridaelamuboks
@@ -12565,43 +11677,17 @@ Riidamäe
 riideait
 riidehoid
 riidehoiuruum
-riidekauplus
-riidepood
 riideruum
 Riidma
 riietehoid
 riietuskabiin
 riietusruum
-riigiaktsiaselts
-riigiarhiiv
-riigiasutus
-riigidepartemang
-riigiduuma
-riigiettevõte
-riigigümnaasium
-riigihaigla
-riigikaitseorganisatsioon
-riigikantselei
-riigikassa
-riigikirik
-riigikogu
-riigikohus
-riigikontroll
-riigikool
 riigilinn
 riigimaa
 riigimaantee
-riigimaja
-riigimajand
 riigimets
 riigimetsamaa
-riigimetskond
 riigimõis
-riigipank
-riigiprokuratuur
-riigipäev
-riigiraadio
-riigiteater
 Riihimäki
 Riihora
 riimveekogu
@@ -12613,13 +11699,10 @@ riistakamber
 riistakast
 riistakuur
 Riitsilla
-riiulifirma
 riiulivahe
 Riiviku
 Rijeka
 Rikassaare
-rikastusvabrik
-Riksdag
 Riksu
 rimba
 Rimmi
@@ -12628,11 +11711,8 @@ rindelõik
 rindpalk
 ringauditoorium
 Ringiste
-ringkino
 Ringkøbing
-ringkonnakohus
 ringmüür
-ringpanoraamkino
 ringrada
 ringristmik
 ringtee
@@ -12659,7 +11739,6 @@ rippsild
 ripptarind
 ripptorn
 risaliit
-riskifond
 risosfäär
 ristakuti
 ristamisi
@@ -12698,20 +11777,17 @@ Riuma
 Riviera
 Rivne
 Rjazan
-RK
-rk
-rmtk
 Road Town
-robotlaut
 Rocca al Mare
 Rodeesia
 Rodeesia ja Njassamaa
 Roela
+Rogaland
 Rogosi
 Rogosi-Mikita
 Rohe
 roheala
-roheidu
+rohekatus
 rohekoridor
 Roheline Mander
 Roheline Manner
@@ -12731,17 +11807,14 @@ Rohuküla
 rohumaa
 Rohuneeme
 rohuplats
-rohupood
 Rohusi
 rohusoo
 roidvõlv
 roietetagune
 Roiu
-ROK
 Rokina
 Rokiškis
 Romanov-na-Murmani
-romula
 rondavel
 rondeel
 rongijaam
@@ -12799,6 +11872,7 @@ Roskilde
 Roslep
 Rosma
 Rosona jõgi
+Rossi meri
 roster
 Rostock
 Rostov
@@ -12820,6 +11894,7 @@ Ržev
 rtj
 Ruanda
 Ruanda-Urundi
+Rubtsovsk
 Rudolfi järv
 Ruhijärv
 Ruhingu
@@ -12854,6 +11929,7 @@ Rumpo
 Runö
 Rupsi
 Rusa
+Ruse
 Rusima
 Ruskavere
 Russalu
@@ -12878,7 +11954,9 @@ Ruusmäe
 Ruutsi
 RV
 Rwanda
+Rõbatšje
 Rõbinsk
+Rõbnitsa
 rõdu
 rõhtasend
 rõhtkaeveõõs
@@ -12889,7 +11967,6 @@ rõhttoeng
 Rõhu
 rõivaait
 rõivahoid
-rõivakauplus
 rõivastusruum
 rõivistu
 Rõka
@@ -12936,7 +12013,6 @@ rändetee
 rändetrass
 rändjõgi
 rändjärv
-rändkino
 rändlaager
 Rängle
 Räni
@@ -12964,8 +12040,6 @@ räästakast
 räästapärlin
 Röa
 röntgenikabinet
-röstikoda
-röstla
 rööbastee
 rööbastik
 rööbitine
@@ -12974,7 +12048,6 @@ rööp
 rööpmestik
 Röösa
 röövlikoobas
-röövlipesa
 rübi
 Rügen
 rühmatuba
@@ -12984,14 +12057,9 @@ rünk
 rüsakoht
 rüsivall
 Rütavere
-rüütelkonnakomitee
-rüütliakadeemia
 rüütliloss
 rüütlimõis
-rüütliordu
-SA
 Saabolda
-saadikutekoda
 Saadjärv
 Saadjärve
 Saagri
@@ -13042,7 +12110,6 @@ Saartneem
 Saastna
 saat
 Saate
-saatejaam
 Saatse
 Saatse nulk
 Saatse saabas
@@ -13053,8 +12120,8 @@ Sabasţīyah
 Sabile
 Saburi
 Sabõrna
+Sacramento
 Sadala
-sadam
 Sadama
 sadamabassein
 sadamakai
@@ -13069,14 +12136,12 @@ Saduküla
 sadul
 sadultorn
 Sae
-saekaater
-saekoda
 Saetamme
 saetee
-saeveski
 Saga
 Sagadi
 Sagaing
+Sagaredžo
 Sagariste
 sagedusala
 sagedusluba
@@ -13098,7 +12163,6 @@ Saiakopli
 saiakorv
 Saia käik
 Saiakäik
-saiapood
 Saigon
 Saika
 Saikla
@@ -13107,12 +12171,14 @@ Saint-Barthélemy
 Saint-Denis
 Saint George's
 Saint Helena
+Saint Helier
 Saint John's
 Saint Kitts ja Nevis
 Saint Lawrence
 Saint Louis
 Saint Lucia
 Saint Paul
+Saint Peter Port
 Saint-Pierre
 Saint-Pierre ja Miquelon
 Saint Vincent
@@ -13139,7 +12205,6 @@ saksakamber
 Saksaküla
 Saksamaa
 Saksamaa Liitvabariik
-Saksa ordu
 Saksa-Rooma riik
 Saksa Samoa
 saksatuba
@@ -13153,41 +12218,39 @@ Sakudi
 Sakurgi
 Sakussaare
 Salacgrīva
+Sălaj
 Salajõe
 salajõgi
 salakamber
 salakorter
-salakõrts
 Salaküla
 salamaailm
 Salamanca
 Salamína
 Salamis
-salanõukogu
 salapaik
-salapolitsei
 Salaspils
-salateenistus
 salatikauss
-salatrükikoda
 Salatse
 Salatsi
-salaurgas
 Salavat
 Salavere
 Salda
 Saldus
 Salehard
+Salem
+Salerno
 Salevere
+Salgótarján
 Salinõmme
 Salisbury
+Saljanõ
 Salla
 salm
 Salme
 Salmistu
 Salo
 Saloniki
-saloon
 Salop
 Salosaar
 Salpausselkä
@@ -13206,17 +12269,21 @@ Salutaguse
 Salvador
 salvkaev
 Salween
+Salyan
 Samaara
 Samaaria
+Samar
 Samara
 Samarina
 Samarkand
+Şamaxı
 Sambesi
 Sambia
 samblasoo
 samblikumännik
 Sambu
 Samegrelo
+Samegrelo – Ülem-Svanethi
 Samliku
 Samma
 sammasait
@@ -13233,12 +12300,11 @@ Samoa saared
 Sámos
 Samothráki
 Samotraake
+Samtredia
+Samtshe
+Samtshe-Džavahhethi
 Sanaa
-sanaarium
 San Antonio
-sanatoorium
-sandarmeeria
-sandarmivalitsus
 sandek
 Sandi
 San Diego
@@ -13256,8 +12322,6 @@ sanglepalodu
 sanglepamets
 sanglepik
 Sangõ
-sanitaarinspektsioon
-sanitaarkordon
 sanitaarsõlm
 sanitaartsoon
 sanitaarvöönd
@@ -13276,9 +12340,12 @@ Sansibar
 sansõlm
 Santa Barbara
 Santa Cruz de Tenerife
+Santa Fe
 Santa Fe de Bogotá
 Santa Isabel
+Santa Maria
 Santander
+Santarém
 Santiago
 Santiago de Compostela
 Santo Domingo
@@ -13286,6 +12353,7 @@ Santoríni
 Santos
 Santovi
 saoase
+São Miguel
 Saône
 São Paulo
 São Tomé
@@ -13307,6 +12375,8 @@ saras
 sarasmaa
 Saratov
 Sarawak
+Sardarabad
+Sardarapat
 Sardiinia
 sarg
 Sargasso meri
@@ -13319,12 +12389,14 @@ Sarja
 sarkofaag
 Sarmaatia
 Sarnen
+Sarpsborg
 Saru
 Sarve
 Sarvemäe
 Saskatchewan
 Saskatoon
 Sassaniidide riik
+Sassari
 Sassi
 Sassukvere
 Satakunta
@@ -13333,6 +12405,7 @@ satelliitriik
 satraapia
 Satsu
 Satsõrina
+Satu Mare
 Sauaru
 Saudi
 Saudi Araabia
@@ -13378,7 +12451,6 @@ saviauk
 savihoone
 savik
 savikauss
-savikoda
 Savikoja
 Savikoti
 savikõrb
@@ -13409,17 +12481,12 @@ Schwarzwald
 Schwerin
 Schwyz
 Scopuse mägi
-Scotland Yard
-SD
-sd
 seaaed
 seaduselaegas
-seafarm
 sealaut
 sealpoolsus
 seasulg
 Seattle
-seavabrik
 Seda
 Seeba
 seebialus
@@ -13428,34 +12495,27 @@ seebikarp
 seebitoos
 seedermännimets
 seedrimets
-seemendusjaam
+Seekelimaa
 seemla
 seemneistandik
 seemnelank
-seemnepank
 seemnepuistu
 seemnepõld
 seenekoht
 seenekorv
 seenemets
 seenine
-seeniormaja
 Seeridsä nulk
 seespoolne
-seevald
-segaaktsiaselts
-segakauplus
-segakool
 segamets
 segapuistu
 segasumm
 segasummasuvila
 Seidla
 seiklusmänguväljak
-seim
-seimik
 seinaorv
 Seinapalu
+seinapoolne
 seinapragu
 seinatagune
 seinatühe
@@ -13469,23 +12529,14 @@ Seira
 seireala
 seiresüsteem
 Seiskari
-seismojaam
-seismoloogiajaam
 seisuveekogu
 Seišelli
 Seišellid
-SEJ
-sej
 Sejong
 Sekem
-sekkar
-sekkekeskus
-seksipood
-sekspood
 sektsioonelamu
-sekunda
+Seldžukkide riik
 selektsiooniaed
-selektsioonijaam
 Selenge
 Seleukiidide riik
 Selgase
@@ -13509,24 +12560,17 @@ Selkämeri
 Selli
 Seltini
 Seltnä
-seltsimaja
 Seltsisaared
 selva
 selvehall
 selvekassa
-selvekauplus
-selvepesula
-selvepesumaja
-selvepood
 Semej
 Semipalatinsk
 Semiramise rippaiad
-semstvo
-senat
+Senaki
 Sendai
 Senegal
 Senno
-SEPA
 Sepa
 Sepaküla
 sepapaja
@@ -13551,6 +12595,7 @@ Serpuhhov
 Seruküla
 servaala
 Servaääre
+serveerimiskauss
 serveerimisnõu
 serviis
 servik
@@ -13559,12 +12604,14 @@ servjoonvõlv
 Seskar
 Sesniki
 sessiilne
+Sestroretsk
 Seto
 Setomaa
 settebassein
 settelünk
 settetiik
 Setu
+Setúbal
 Setumaa
 setvertnoi
 Sevan
@@ -13577,6 +12624,7 @@ Severodonetsk
 Severodvinsk
 Severski Donets
 Sevilla
+Sfântu Gheorghe
 Sfax
 Shaanxi
 Shaba
@@ -13596,6 +12644,7 @@ Shetlandi saared
 Shiga
 Shijiazhuang
 Shikoku
+Shillong
 Shimane
 Shimla
 Shīrāz
@@ -13603,8 +12652,10 @@ Shizuoka
 Shkodër
 Shrewsbury
 Shropshire
+Shumen
 Siber
 Siberi
+Sibiu
 sibljak
 Sibulaküla
 sibulamaa
@@ -13612,17 +12663,6 @@ sibulkuppel
 sibultorn
 Sichuan
 Sichuani nõgu
-sideasutus
-sidejaam
-sidejaoskond
-sidekontor
-sideministeerium
-sidepataljon
-sideteenistus
-sidevägi
-sidumistuba
-sidusettevõte
-sidusfirma
 Siem Reap
 Sierra Leone
 Sierra Nevada
@@ -13633,17 +12673,15 @@ Sigala
 sigala
 sigarituba
 Sigaste
+Signagi
 Sigtuna
 Sigula
 Sigulda
 Sihanoukville
 Sihhote-Alin
 sihitee
-sihtasutus
-sihtfond
 sihtjaam
 sihtkaitsevöönd
-sihtkapital
 sihtkoht
 sihtriik
 Sihva
@@ -13688,11 +12726,11 @@ silgutünn
 Silicon Valley
 silikaatmaja
 silindervõlv
+Silistra
 Silla
 sillakaar
 sillake
 sillakoht
-sillakohus
 sillakoridor
 Sillamäe
 Sillaotsa
@@ -13701,9 +12739,9 @@ sillapiire
 Sillapää
 sillasammas
 silluskivi
-silmakliinik
 silmapesukauss
 silmapiiril
+silmapiirile
 Silmsi
 siloauk
 silohoidla
@@ -13737,7 +12775,6 @@ Sinimäed
 Sinine jõgi
 Sinine Niilus
 sinirand
-Sinn Féin
 Sint Eustatius
 Sint Maarten
 Sintra
@@ -13755,18 +12792,21 @@ Sirgumetsa
 Sirguvere
 Sirtsi
 Sirvaku
+Şirvan
+Şirvan-Salyan
 Sirvaste
+Sisak
+Sisavan
 Sise-Aasia
 sisebassein
 sisehall
 Sise-Hebriidid
 sisehoov
-sisekliinik
+Sise-Kharthli
 sisekülg
 siselinn
 sisemaa
 sisemeri
-siseministeerium
 Sise-Mongoolia
 sisenurk
 sisepark
@@ -13783,18 +12823,19 @@ siseveeris
 sisevooder
 siseväljak
 siseõu
+Sisian
+Sisimiut
 sissekäik
 sissesõiduhoov
-sisustuskaubamaja
 sitamaja
 Sitsi
 Sitsiilia
-sitsivabrik
 siugtee
 Sivaš
 Siverskõi Donets
 Sjælland
 Sjevjerodonetsk
+Sjunikh
 Skagerrak
 Skamja
 Skandinaavia
@@ -13803,11 +12844,10 @@ Skandinaavia poolsaar
 Skåne
 Skåtanäs
 skatepark
-skeeta
 skeitpark
 skenee
 Skíathos
-skiita
+Skien
 Skópelos
 Skopje
 skriptoorium
@@ -13826,22 +12866,28 @@ Skýros
 slaalominõlv
 slaalomivärav
 Slantsõ
+Slatina
 Slavjansk
 Slavkov u Brna
 Slavoonia
 Slavsk
 Sligo
 slipp
+Sliven
 slobodaa
+Slobozia
 Sloka
 Slovakkia
 Sloveenia
 Slovjansk
 slumm
 Småland
+Smaragdkolmnurk
 Smiltene
 Smolensk
+Smoljan
 Smolnitsa
+Smolyan
 Smürna
 Snelli tiik
 Sodankylä
@@ -13860,8 +12906,8 @@ Sofia
 Sogd
 Sogdiana
 Sogne fjord
+Sogn og Fjordane
 Sohlu
-sohvabaar
 soider
 Soikino poolsaar
 Soikola poolsaar
@@ -13869,10 +12915,10 @@ Soinaste
 Soitsjärv
 Soitsjärve
 Sojamaa
+Sojlan
 sokkel
 soklikorrus
 Sokotra
-solaarium
 Soldina
 solfataar
 solgikraav
@@ -13883,11 +12929,13 @@ Solingen
 Solnetšnoje
 Solothurn
 Solovetsi saared
+Soltsõ
 Somaali
 Somaalia
 Somaalimaa
 Somaali poolsaar
 Somerset
+Somogy
 Sompa
 Sonda
 songermaa
@@ -13907,10 +12955,7 @@ Soohara
 soohaud
 sooheinamaa
 soojak
-soojatootja
-soojuselektrijaam
-soojusjaam
-soojusjõujaam
+soojuspuurauk
 soojussaar
 soojusvöö
 soojärv
@@ -13924,10 +12969,10 @@ Sookatse
 Sooküla
 soolajärv
 soolak
-soolakaevandus
 soolakõrb
+soolaleival
+soolaleivale
 Soolameri
-soolaputka
 soolasoo
 soolaugas
 soolavakk
@@ -13944,8 +12989,8 @@ soomets
 Soometsa
 Soomevere
 Soomra
-soomusvägi
 Soomõoru
+soomülgas
 Soonda
 sooneke
 sooniit
@@ -13977,29 +13022,21 @@ sopike
 Sopimetsa
 sopka
 Sopron
-sordiaretusjaam
 Sorgu
 Sormuli
 Sorø
+Soroca
+Soroki
 Sorokino
 Sorokka
 Sorokõne
 Sorrento
 Sortavala
-sorteerimisjaam
-sorteerimiskeskus
-sorteerjaam
+Sør-Trøndelag
 Sortsi
-SOS-lasteküla
 Sosnovõi Bor
 Sossimägi
-sotsiaalhooldusasutus
-sotsiaalkindlustusamet
 sotsiaalkorter
-sotsiaalmaja
-sotsiaalmeediahiid
-sotsiaalministeerium
-sotsiaalosakond
 sotsialismileer
 sotsialismimaa
 sotsmaa
@@ -14009,48 +13046,36 @@ Sousse
 Southampton
 Sovetsk
 Sovetski
-sovh
-sovhoos
-sovhoostehnikum
 Sōya väin
-spaa
 spaahotell
 spagaat
 Sparta
-spermapank
-spin-off-ettevõte
+Spitak
 Spithami
 Spithamn
 Split
-SPOKU
-Spoku
 Sporaadid
 spordiehitis
-spordigümnaasium
 spordihall
 spordihoone
-spordikeskus
-spordiklubi
 spordikompleks
-spordikool
-spordimuuseum
 spordiplats
-spordipood
 spordipudel
 spordirajatis
 spordisaal
 spordiväljak
 Spratly saared
 Spree
+Springfield
 Squaw Valley
 Sri Jayawardenepura Kotte
 Sri Lanka
 Srinagar
-SRÜ
-SS
+Szabolcs-Szatmár-Bereg
 Szczecin
 Szeged
 Székesfehérvár
+Szekszárd
 Szolnok
 Szombathely
 staadioniring
@@ -14074,39 +13099,34 @@ Stanleyville
 Stans
 Stansted
 Staraja Russa
+Stara Zagora
 stardikoht
 stardikoridor
 stardipaik
 stardipunkt
 stardirada
 stardisirge
-start-up
-Stasi
-statistikaamet
-statsionaar
 Stavanger
 Stavropol
 std
 Steiermark
-steinerkool
+Steinkjer
 Stepanakert
 Stepanovštšina
 Stephanakert
+Stephanavan
 stepiavarus
 stepivöönd
 Stepnoi
-stereokino
 Sterlitamak
-stift
 stiihilisus
 Stirling
 Stockholm
 Stokholm
+Stolbovo
 stoll
-stomatoloogiapolikliinik
 Stora Rågö
 Storbyn
-Storting
 Stralsund
 Strasbourg
 stratosfäär
@@ -14114,20 +13134,16 @@ stratotüüp
 stratovulkaan
 strekk
 Strenči
-stripibaar
-striptiisibaar
-striptiisiklubi
+Strokkur
 Stromka
 Stroomi rand
-struktuuriüksus
+Stróvolos
 struuga
 Stučka
 stukkdekoor
 stukklagi
 Stuttgart
-stuudio
 stuudiokorter
-stuudioteater
 stuupa
 Stärletamak
 stülobaat
@@ -14138,6 +13154,7 @@ Subate
 subkontinent
 subtroopika
 subtroopiline
+Suceava
 Sucre
 Sudaan
 Sudaste
@@ -14152,13 +13169,11 @@ Suessi kanal
 Suffolk
 suflöörikast
 Sugalepa
-sugukonnamõis
-sugulava
-suguvõsamõis
+Sugdi vilajett
+Suhhona
 Suhhumi
 Suhkrupeamägi
 suhkrutoos
-suhtekorraldusfirma
 Suigu
 Suislepa
 suitsetamisruum
@@ -14173,11 +13188,8 @@ suitsunurk
 suitsuruum
 suitsusaun
 suitsutare
-suitsutsehh
 suitsutuba
-suitsutustsehh
 sukasäär
-sukavabrik
 Sulaoja
 Sulawesi
 Sulbi
@@ -14206,28 +13218,22 @@ Sunda saared
 sundasend
 Sunderland
 Sundimetsa
-sunnitöölaager
 Sunža
 Suojärvi
 Suomenlinna
 Suomenselkä
 Suonenjoki
 Supa
-supelasutus
 supelbassein
-supelhoone
 supelkoht
 supellinn
 supelmaja
 supelonn
 supelrand
 supelsild
-supermarket
-superministeerium
 superpositsioon
 superriik
 supikatel
-supiköök
 Supilinn
 supipott
 supitaldrik
@@ -14240,12 +13246,10 @@ Surabaya
 surdokamber
 Surgut
 Surhandarja
-surila
 Surinam
 Suriname
 Surju
 Surmakülä
-surmalaager
 surmalõks
 Surmaorg
 surmaorg
@@ -14269,9 +13273,8 @@ suruõhuballoon
 Surva
 survepott
 Surxondaryo
-sushi-baar
+Şuşa
 Sussex
-sušibaar
 Suzdal
 Suzhou
 Sutlej
@@ -14306,10 +13309,7 @@ Suureranna
 Suure-Rootsi
 Suuresadama
 Suuresta
-suurettevõte
 Suure-Veerksu
-suurfarm
-suurfirma
 suurhertsogiriik
 Suur Hiina kanal
 Suur Hiina tasandik
@@ -14323,7 +13323,6 @@ Suur Karujärv
 Suur katel
 Suur-Kaukasus
 suurklooster
-suurkool
 Suurküla
 Suurkülä
 suurlaut
@@ -14331,12 +13330,10 @@ Suur Liivakõrb
 suurlinn
 suur lomp
 suur maa
-suurmajand
 Suurmetsa
 Suurmogulite riik
 Suur-Mongoli riik
 Suur Munamägi
-suurmõis
 Suurna
 Suur nõgu
 Suur-Nõmmküla
@@ -14352,22 +13349,15 @@ Suur-Randvere
 Suur Rannavärav
 Suursaar
 suursaar
-suursaatkond
 Suur-Saksamaa
 suursaras
 Suursoo
 Suur Soolajärv
 Suur Soolakõrb
-suurtalu
-suurtarbija
-suurtootja
 suurtuba
 Suur-Tunb
-suurtükipatarei
 suurtükipolügoon
 suurtükitorn
-suurtükiväeüksus
-suurtükiüksus
 Suur Tütarsaar
 Suurupi
 Suur-Valahhia
@@ -14383,13 +13373,10 @@ Suurõ-Ruuga
 Suurõsuu
 Suurõ-Tsäpsi
 Suur Õun
-suusafirma
 suusahüppemägi
 suusahüpperada
 suusahüppetorn
 suusahüppetrampliin
-suusakeskus
-suusakuurort
 suusamaa
 suusameka
 suusamägi
@@ -14397,17 +13384,13 @@ suusanõlv
 suusasild
 suusastaadion
 suusatunnel
-suusavabrik
-suuskurkompanii
 Suva
 Suvalkija
 suveaed
 suvekirik
 suvekoda
 suvekodu
-suvekohvik
 suvekoloonia
-suvekool
 suvekorter
 suveköök
 suvelaut
@@ -14417,10 +13400,10 @@ suvemõis
 suvepesa
 suveresidents
 suvila
-suvilakooperatiiv
 suvilakrunt
 suvituslinn
 Suwałki koridor
+Suwon
 Svaasi
 Svaasimaa
 Svalbard
@@ -14432,12 +13415,12 @@ Sverdlovsk
 Sverdlovski oblast
 Svetlogorsk
 Svetogorsk
-svh
 Sviby
 Sviibi
 sviit
 Svir
 Svjatoi Krest
+Svjatõje Gorõ
 Swansea
 Święty Krzyż
 sõbrahoov
@@ -14457,42 +13440,23 @@ sõjahaav
 sõjahaud
 sõjakeeris
 sõjakolle
-sõjakomissariaat
-sõjakool
-sõjaministeerium
-sõjamuuseum
 Sõjamäe
 sõjamöll
 Sõjapiirimaa
-sõjasadam
 sõjasüüdlane
 sõjatander
-sõjatehas
-sõjavangilaager
-sõjaväeakadeemia
-sõjaväeasutus
-sõjaväebaas
-sõjaväehaigla
-sõjaväehunta
 sõjaväekalmistu
 sõjaväelinnak
-sõjaväepolitsei
-sõjaväeprokuratuur
-sõjaväeringkond
-sõjaväeüksus
-sõjaväljakohus
 Sõktõvkar
 sõlmekoht
 sõlmjaam
 sõltkond
 sõltlasmaa
 sõltlasriik
-Sõltumatute Riikide Ühendus
 Sõmera
 Sõmerpalu
 Sõmeru
 sõnaalguline
-sõnateater
 sõnavahe
 sõnnikuhoidla
 sõnnikukäik
@@ -14513,14 +13477,9 @@ Sõrumäe
 Sõrve
 Sõrve-Hindu
 Sõrve säär
-sõsarasutus
-sõsarettevõte
-sõsarorganisatsioon
-sõsarpartei
 sõsarsaar
 Sõzran
 Sõtke
-sõudebaas
 sõudekanal
 sõudestaadion
 sõus
@@ -14536,6 +13495,8 @@ säiliti
 säilituskoht
 säilituspaik
 säilitusruum
+Şäki
+Şäki-Zaqatala
 Säkna
 sälk
 sälkorg
@@ -14568,17 +13529,12 @@ Sääsküla
 Säässaare
 Säästla
 säästukarp
-säästukas
-säästukauplus
-säästupood
 Söderbi
 Söderby
 Södermanland
 söebassein
-söekaevandus
 söepunker
 söerada
-söeterminal
 söll
 Sölƶa-Ġala
 Sölƶ-Ġala
@@ -14596,23 +13552,16 @@ söödasõim
 Söödi
 söödimaa
 söödipõld
-söögikoht
-söögimaja
 sööginurk
 sööginõu
-söögipood
 söögisaal
 söögituba
-söökla
-söömakoht
 söötmiskoht
 südakindlus
 südalinn
 sügavpuurauk
 sügavuspunkt
 sügismaastik
-SÜKU
-Süku
 süldikauss
 sülemikupp
 Sülgoja
@@ -14621,7 +13570,6 @@ süljekauss
 Sülluste
 sünagoog
 sünaps
-sündikaat
 sündmuskoht
 sündmuspaik
 sündmuste horisont
@@ -14636,16 +13584,12 @@ sünnimaa
 sünnimaja
 sünnipaik
 sünnitalu
-sünnitushaigla
-sünnitusmaja
 Sürakuusa
 Sürgavere
 sürjamets
 süstekoht
 süstimiskoht
-süstlavahetuspunkt
 Süvahavva
-süvakool
 süvakosmos
 Süvalepa
 süvameri
@@ -14658,6 +13602,7 @@ süvik
 süüd
 Süüria
 Sydney
+Sylhet
 Sýros
 šafott
 šaht
@@ -14670,15 +13615,19 @@ Sýros
 Šanghai
 Šani osariik
 Šari
-šariaadikohus
-šašlõkibaar
+Šarõpovo
+Šeki
 šelf
 šelfimeri
+Šemahha
 Ševtšenko
 Šiauliai
+Šibenik
 Šikoku
+Šikotan
 Šilalė
 Šilutė
+Širak
 Širaz
 Širvintos
 šlakikoonus
@@ -14691,24 +13640,33 @@ Sýros
 Štšerbakov
 Štšerbinovka
 Štšerbõnivka
+Šumen
 Šupaškar
 šurf
+Šuša
 Švaabi Juura
 Švaabimaa
 Šveits
 Švenčionys
 Šõmkent
+Zadar
 Zagorsk
 Zagreb
 Zagrivje
 Z̄āgrose mäed
 Zahhonje
 Zaire
+Zakatalõ
 Zákynthos
+Zala
+Zalaegerszeg
+Zalău
 Zambezi
+Zangelan
 Zangezur
 Zaporižžja
 Zaporožje
+Zaqatala
 Zaragoza
 Zarasai
 Zaretšje
@@ -14718,7 +13676,7 @@ Zelenogorsk
 Zelenogradsk
 Zeltiņi
 Zemgale
-zemštšina
+Zestaphoni
 Zhangjiakou
 Zhejiang
 Zhengzhou
@@ -14731,18 +13689,16 @@ Zlatoust
 Zlín
 Zmijinõi
 Zomba
-zoo
-zookauplus
-zooloogiakauplus
-zoopark
+Zubovka
 Zug
+Zugdidi
 Zuiderzee
 Zwickau
 Zwolle
+Zängilan
 Zürich
 Žambõl
 Žambõli oblast
-žandarmeeria
 Ždanov
 Železnovodsk
 Žemaitija
@@ -14769,12 +13725,9 @@ Taani väin
 Taani väinad
 taara
 Taaralinn
-taarapunkt
 Taaravainu
 Taari
 taarn
-taaskasutuskeskus
-taaskasutusorganisatsioon
 taatsine
 tabamispunkt
 Tabara
@@ -14858,24 +13811,23 @@ taignaküna
 Taikse
 Tai laht
 Taimaa
-taimeaed
 taimepott
-taimetoidurestoran
+taimkatus
 taimla
 Taimõr
+Taimõri madalik
 Taimõri poolsaar
 tainaküna
 tainamõhk
 Taipei
 Tai Shan
+Taišet
 Taiwan
 Taiyuan
 Tajo
 Takamatsu
 takistusriba
 Taklimakan
-taksofirma
-taksopark
 taksopeatus
 takõrr
 talalagi
@@ -14886,12 +13838,12 @@ taldrik
 Taldõkorgan
 Taldõ-Kurgan
 Tali
-Taliban
 talikuurort
 Talila
 talispordikeskus
 talitee
 Talka
+Tallahassee
 Tallikeste
 Tallima
 Tallinn
@@ -14903,13 +13855,8 @@ taluhoone
 taluhäärber
 talukoht
 talumaja
-talumajand
+talumajutus
 talumets
-talumuuseum
-talund
-talupood
-talurahvakohus
-talurahvakool
 talutare
 talveaed
 talvekirik
@@ -14959,6 +13906,7 @@ Tammneeme
 Tammsaare
 Tammuna
 Tammuru
+Tampa
 Tampere
 Tamsa
 Tamsalu
@@ -14970,29 +13918,19 @@ Tanganjika
 Tanganjika järv
 Tanger
 Tanintharyi
-tankimisjaam
+tankipolügon
 tankitõrjekraav
-tankivägi
-tankla
-tanklakett
-tanklapood
 tankodroom
 Tannenbergi liin
+Tannu-Ola
 Tannu-Tuva
 Tansaania
 Tanska
-tantsuklubi
-tantsulokaal
 tantsuplats
 tantsupõrand
-tantsurestoran
-tantsuteater
 tantsuväljak
 tanum
 Tapa
-tapabaar
-tapamaja
-tapapunkt
 Tapiau
 Tapiku
 tapivangla
@@ -15012,20 +13950,18 @@ Taranto
 Taraz
 Tarawa
 tarbeaed
-tarbekunstimuuseum
-tarbijakaitseamet
-tarbijate ühistu
-tarbijaühistu
 tarbimiskoht
 Tarbja
 tare
 Tareste
+Targovishte
+Târgoviște
+Tǎrgovište
+Târgu Jiu
 Târgu Mureș
 Tarim
 taristuobjekt
 Taritu
-tarkusetempel
-tarkvarafirma
 tarnamätas
 Tarzani rada
 tartaanrada
@@ -15041,7 +13977,6 @@ Tarvastu
 tasamaa
 tasandik
 tasandikujõgi
-tasanduskool
 taskupark
 taskupudel
 Tasmaania
@@ -15051,48 +13986,27 @@ tassikene
 Tašauz
 Taškent
 Taz
+Tatabánya
 Tatarimaa
 Tatari väin
 Tatarstan
 Tatrad
+taudikolle
 Taunton
 Tauragė
 Tauria
-tavakool
-tavapood
+Tavuš
 Tbilisi
-teabeagentuur
-teabekeskus
-teabetalitus
-teabeteenistus
-teadeteagentuur
-teadusasutus
-teadusetempel
-teaduse tippkeskus
-teadusinstituut
-teadus- ja arendusasutus
-teaduskeskus
-teaduskond
-teaduskool
-teaduslabor
 teaduslinnak
-teaduspark
-teadusraamatukogu
-teadusteater
-teadustempel
 Tealama
 Teaste
 teatekuld
 teatrihoone
 teatrikassa
-teatrikool
-teatrilava
 teatrimaja
-teatristuudio
 Tedre
 Tedreküla
 Teeba
-teedeministeerium
 teedevõrk
 Teedla
 teeharu
@@ -15105,25 +14019,13 @@ teelooge
 teelõik
 teelähedane
 teemaa
-teemaja
-teemamuuseum
 teemapark
 teenijatuba
-teenindusbüroo
-teenindusettevõte
 teenindushoone
-teenindusjaam
-teeninduskeskus
-teeninduskombinaat
 teenindusmaja
-teeninduspunkt
 teenindusruum
 teenismõis
 Teenuse
-teenuseosutaja
-teenusepakkuja
-teenuskeskus
-teenusmaja
 teenõu
 teeots
 teepeenar
@@ -15148,30 +14050,18 @@ teeveer
 teeäär
 teeäärne
 tegelusmaja
-tegevuskeskus
 tegevuskoht
 tegevuspaik
 tegevuspiirkond
-tegevvägi
 Tegucigalpa
-tehas
 tehasehoone
 tehasemaja
-tehasepood
 Teheran
 tehiskeskkond
 tehiskoelmu
 tehismaailm
 tehismaastik
 tehissaar
-tehnikagümnaasium
-tehnikainstituut
-tehnikakõrgkool
-tehnikamuuseum
-tehnikaraamatukogu
-tehnikum
-tehnoloogiagigant
-tehnoloogiahiid
 tehnoloogiaküla
 tehnoloogiapark
 tehnopark
@@ -15181,40 +14071,26 @@ Teilma
 teispool
 teispoole
 teispoolsus
-teiste riikide
 teistre
-teivasjaam
 Tejo
 tekialune
 tekiehitis
 tekk
 tekkekoht
 tekkel
-tekstiilivabrik
 tektonosfäär
 Telangana
 Tel Aviv
-telefonifirma
-telefonijaam
 telefonikabiin
 telefonikapp
-telefonikeskjaam
 telefoniputka
-telegraafiagentuur
 telegraafijaam
-telejaam
-telekeskus
-telekomiettevõte
-telekommunikatsiooniettevõte
-telekompanii
 Telemark
 telemast
-telepood
+Teleorman
 telestuudio
 teletorn
-televisioonijaam
 televisioonimast
-televisioonisaatejaam
 televisioonistuudio
 Telise
 teljeriigid
@@ -15228,15 +14104,12 @@ telkkiiver
 telkla
 telklinnak
 Tellaste
-telliseahi
 telliselööv
-tellisetehas
 tellishoone
 telliskivihoone
 telliskivimaja
 telliskivimüür
 telliskivisein
-telliskivitehas
 Telliskopli
 telliskorsten
 tellismaja
@@ -15249,13 +14122,11 @@ Telšiai
 Temirtau
 Tempa
 temperatuurivuuk
-templikool
 Templimägi
 templivaremed
 Tenerife
 Tennessee
 tennisehall
-tenniseklubi
 tenniseväljak
 teokoht
 Tepelvälja
@@ -15266,16 +14137,14 @@ teraskonstruktsioon
 terastarind
 teraviljaait
 teraviljahoidla
-teraviljatalu
 Teravmäed
+Terceira
 Terek
 Terepi
 tereseong
 Terijoki
 Terikeste
 Termez
-termid
-terminal
 Termiz
 termokamber
 termokapp
@@ -15301,18 +14170,11 @@ territoriaalmeri
 territoriaalne
 territoriaalveed
 terviseallikas
-terviseamet
-tervisekaitsetalitus
-tervisekassa
-tervisekeskus
 terviserada
 terviseveed
-tervishoiuasutus
-tervishoiuministeerium
-tervishoiumuuseum
-tervistusasutus
 tervisveed
 tesaurus
+Tesero
 Tessaalia
 Tessaloonika
 Tessova
@@ -15329,12 +14191,15 @@ Thames
 Thásos
 Thbilisi
 The Bottom
+Thelavi
 Thessaloníki
+Thethritskaro
 The Valley
 Thimphu
 Thíra
 Thiruvananthapuram
 Thurgau
+Thušethi
 Tialasõ
 Tian'anmeni väljak
 Tianjin
@@ -15348,6 +14213,7 @@ Ticino
 Tidriku
 Tiduvere
 Tigase
+Tighina
 Tigray
 Tigris
 Tiharu
@@ -15376,7 +14242,6 @@ Tiitsa
 Tiitsuotsa
 Tika
 Tiklasõ
-tikuvabrik
 Tila
 tila
 Tilga
@@ -15387,6 +14252,7 @@ Tilsi
 Tilsit
 Timaani kõrgustik
 Timbuktu
+Timiș
 Timișoara
 Timo
 Timor
@@ -15400,8 +14266,6 @@ tipi
 tipitops
 tipmine
 Tipperary
-tippkeskus
-tippklubi
 Tipu
 Tirana
 Tiraspol
@@ -15413,12 +14277,13 @@ Tirool
 tirp
 Tiskre
 Tisza
+Tiszántúl
 Tiszaújváros
 Titicaca
 Titograd
-tivoli
 Tjan-Šan
 Tjapši
+Tjavzino
 Tjuka
 Tjumen
 Tln
@@ -15443,42 +14308,34 @@ Tohkri
 Tohku
 Tōhoku
 Tohvri
-toidubaar
 toidujagamiskapp
 toidukapp
-toidukauplus
-toidukoht
 toidunõu
-toidupank
-toidupood
 toiduringluskapp
 toidusalu
 toidutänav
 Toila
 Toila-Altküla
-toimetulekukool
+toimepiirkond
+toimumiskoht
 toiteala
 toitekeskkond
-toitluskomitee
 toitlustustelk
 Tokelau
 Tokio
+Tokmok
 Tokolopi
 Toku
 Tokushima
 Tokyo
-Tōkyō
 Toledo
 Tolla
 Tolli
-tolliamet
-tolliasutus
-tolliinspektuur
 tolliladu
 tollipiir
-tollipunkt
 tolliterritoorium
 tollitsoon
+Tolna
 Tom
 tombolo
 Tombouctou
@@ -15490,6 +14347,7 @@ Tonga
 Tongking
 Tongkingi laht
 Tonja
+Tønsberg
 toober
 Toodsi
 Toolamaa
@@ -15502,28 +14360,22 @@ Toomemägi
 Toomika
 Toomja
 toomkirik
-toomkogudus
-toomkool
 Toomla
 toonela
 Tooni
 Tooninga
 Toosi
 Tooste
-tootjafirma
 tootjamaa
-tootmisettevõte
 tootmishoone
 tootmiskeskus
 tootmiskompleks
-tootmiskoondis
-tootmisosakond
 tootmispind
 tootmisruum
-tootmisühistu
 Tootsi
 Tootsi peenar
 Toovere
+Topeka
 topsik
 torakaalne
 torbik
@@ -15551,58 +14403,53 @@ torntuulik
 Toronto
 Torrensi järv
 Tórshavn
-torukool
 Toruküla
 toruliide
 Toruń
 Torupilli
 Toscana
 Toskaana
+Tosno
 totsik
 Tottori
 Toulon
 Toulouse
 Tours
+Tovuz
 Toyama
 Toyohara
 Toyota
 Traakia
 Trabzon
 Trafalgar
+Trafalgari väljak
 trafoalajaam
 trafopunkt
-trahter
 trahviring
 Trakai
-traktorijaam
 traktoritee
 Tralee
-trammidepoo
 trammiliin
-trammipark
 trammipeatus
 trammitee
 trampliin
+Transantarktika mäestik
 transatlantiline
 transept
 Transhimaalaja
 transiidikoridor
 transiidimaa
-transiidisadam
 transiitmaa
-transiitsadam
 transiittee
 Transilvaania
 Transjordaania
 Transleitaania
 Transnistria
-transpordiamet
-transpordiettevõte
-transpordifirma
+Transoxiana
 transpordikoridor
 Transvaal
 tranšee
-traumapunkt
+Trás-os-Montes
 travee
 travers
 treeningsaal
@@ -15613,8 +14460,8 @@ Treiali
 Treimani
 trekk
 Trenčín
-trendirestoran
 Trentino-Alto Adige
+Trento
 Trenton
 trepiaste
 trepikoda
@@ -15629,6 +14476,7 @@ trepptee
 trepptänav
 Treski
 triangulatsioonitorn
+Trianon
 tribüün
 Trier
 Trieste
@@ -15636,8 +14484,9 @@ trifoorium
 Triginä
 Triigi
 triiphoone
-triivjaam
 trikipark
+Tríkomo
+Trincomalee
 Trinidad
 Trinidad ja Tobago
 Tripoli
@@ -15649,8 +14498,7 @@ Trivandrum
 Trnava
 Trolla
 trollipeatus
-trollivabrik
-trompetiklass
+Troms
 Tromsi
 Tromsø
 Trøndelag
@@ -15673,25 +14521,23 @@ trumm
 truup
 Truuta
 träps
-trükikoda
 trükikoht
-trükla
 trümm
 trümoo
 tsaaririik
 Tsaari-Venemaa
+Tsalka
 Tsaritsõn
 Tsarjovokokšaisk
 Tsarskoje Selo
-tsehh
 Tseilon
 Tselinograd
-tselluloositehas
 tsentraalsus
 tsentriline
 tsentrum
 Tserebi
 Tsergondõ
+Tshakaia
 Tshikapa
 Tshinvali
 Tsiamäe
@@ -15701,6 +14547,7 @@ Tsiistre
 Tsikmä
 tsikuraat
 Tsilgutaja
+tsinkkirst
 Tsirgu
 Tsirguliina
 Tsirgumäe
@@ -15710,11 +14557,10 @@ tsirkusetelk
 tsirkusorg
 Tsisleitaania
 tsistern
-tsistertslaste ordu
 tsitadell
+Tsitheltskaro
 Tsitre
-tsiviilkohus
-tsiviilvalitsus
+Tskaltubo
 Tsolgo
 Tsolli
 tsoon
@@ -15728,25 +14574,31 @@ Tsälbämägi
 Tsäpsi
 tsässon
 Tsätski nulk
+tsükloni tagala
 Tšaad
 Tšaadi järv
 Tšagatai riik
 tšaihanaa
 tšaitja
+Tšambarak
 Tšanõ
+Tšardžou
+Tšardžui
 Tšeboksarõ
 Tšehhi
 Tšehhimaa
 Tšehhi Vabariik
 Tšehhoslovakkia
-tšekaa
 Tšeljabinsk
+Tšeljabkopi
 Tšeljuskini neem
-tšelloklass
+Tšeptsa
+Tšeremhovo
 Tšerepovets
 Tšerkassõ
 Tšerkessia
 Tšerkessk
+Tšernenko
 Tšernigiv
 Tšernigov
 Tšernihiv
@@ -15759,6 +14611,7 @@ Tšernovtsõ
 Tšetšeeni
 Tšetšeenia
 tšetvertnoi
+Tšharentshavan
 Tšiili
 Tšimkent
 Tšini osariik
@@ -15775,16 +14628,18 @@ Tšuktši mägismaa
 Tšuktši poolsaar
 Tšulõm
 tšumm
+Tšuptši
 Tšuvaši
 Tšuvašimaa
 Tšuvaššia
+Tšüj oblast
 tualettruum
 Tuamotu saared
 Tuapse
 tuba
 Tubala
-tuberkuloosihaigla
 Tubuai saared
+Tucson
 tudengilinn
 Tuderna
 Tudre
@@ -15794,8 +14649,6 @@ tugai
 tugaimets
 tugiala
 tugikaar
-tugikeskus
-tugikodu
 tugikoht
 tugikonstruktsioon
 tugimaantee
@@ -15813,6 +14666,7 @@ tuhaväli
 tuhkhaud
 Tuhu
 tuhv
+Tuimazõ
 Tuimõisa
 Tuiu
 Tuka
@@ -15821,6 +14675,7 @@ tukukott
 Tukums
 Tula
 tulbandik
+Tulcea
 tulealtar
 tulease
 tulejoon
@@ -15842,18 +14697,14 @@ tuletõke
 tuletõkestusriba
 tuletõrjedepoo
 tuletõrjemaja
-tuletõrjemuuseum
-tuletõrjeteenistus
 tulevalvetorn
 tulevikulinn
 tulistuspunkt
 Tullamore
 Tulpe saared
 tulprinnatis
-tulundusettevõte
+Tulsa
 tulundusmaa
-tulundusühendus
-tulundusühing
 tulusekott
 Tumala
 tumend
@@ -15868,8 +14719,6 @@ Tuneesia
 Tunis
 tunnel
 tunnelkollektor
-tunnihotell
-tunnisaun
 Tupenurme
 tupiktänav
 Tupina
@@ -15888,16 +14737,10 @@ turbamaa
 turbapeenar
 turbaraba
 turbasoo
-turbatehas
 turbaväli
 Turbuneeme
-turismibüroo
-turismifirma
-turismikeskus
 turismimagnet
 turismimeka
-turismitalu
-turistilõks
 Turja
 turjapealne
 Turkana järv
@@ -15906,29 +14749,29 @@ Turkmeeni
 Turkmeenia
 Turks ja Caicos
 Tursa
+Tursunzade
+Tursunzoda
 Turu
 turuhall
 turuhoone
 turukoht
 turukorv
-turuliider
 turuplats
 turuputka
-turustaja
 turuväljak
 Turva
 turvaala
-turvafirma
-turvakodu
 Turvalepa
 turvapaik
+turvaperimeeter
 Tusari
 Tusti
 tušipott
+tušipudel
+Tuzla
 Tutermaa
 Tuti
 Tutku
-tutvumisteenistus
 Tutõn
 tuubirada
 tuubus
@@ -15937,17 +14780,12 @@ Tuuka
 Tuula
 Tuulavere
 Tuulealused saared
-tuuleelektrijaam
-tuulefarm
-tuulejaam
-tuulejõujaam
 tuulekaitseriba
 tuulekast
 tuulekoda
 tuulekoridor
 Tuulemäe
 tuulepagu
-tuulepark
 Tuulepealne väin
 Tuulepealsed saared
 tuuleveski
@@ -15958,9 +14796,9 @@ Tuulna
 Tuulova
 tuulutusava
 tuulutuslõõr
+tuulutusrajatis
 tuulutussild
 tuulutusvahe
-tuumaarsenal
 tuumikala
 Tuuraste
 Tuuru
@@ -15972,7 +14810,6 @@ tuvila
 tuvimaja
 Tver
 tvintekk
-tõbila
 Tõdu
 Tõdva
 Tõhela
@@ -15989,7 +14826,6 @@ Tõlli
 Tõlliste
 Tõlluste
 tõmbeava
-tõmbekeskus
 Tõmmiku
 tõngermaa
 tõngermu
@@ -16015,6 +14851,7 @@ tõrs
 Tõru
 Tõruvere
 Tõrva
+Tõrvajõe
 tõrvakatel
 Tõrvandi
 tõrvapada
@@ -16024,12 +14861,8 @@ Tõstamaa
 tõstekallak
 tõstesild
 tõstetorn
-tõufarm
 Tõugu
 tõukering
-tõulava
-tõuloomakasvandus
-tõuselts
 Tõusi
 Tõusva Päikese Maa
 Tõutsi
@@ -16038,30 +14871,20 @@ Tõõrakõrve
 Tõõraste
 Täbris
 Tähemaa
-tähetorn
 Tähkvere
 Tähtvere
 tähtvõlv
-täienduskool
-täika
 täipõrgu
-täisaun
-täiskasvanute gümnaasium
 täiskelpkatus
 täiskesa
-täistsüklikool
 täisvari
-täisühing
 täitapla
-täitevkomitee
-täiturg
 täke
 Täkumetsa
 Tällevere
 Tällnäs
 Tänassilma
 tänav
-tänavakohvik
 tänavanurk
 tänavaots
 tänavapool
@@ -16079,43 +14902,28 @@ Tännassilma
 Täpsi
 Tärivere
 Tärkma
-tärnihotell
+Tärtär
 Täsvere
 Tääglova
 Tääksi
 Täätsi
+Täyssinä
 Tömbi
-tööamet
 tööasend
-tööbörs
-tööbüroo
-tööerakond
-tööhõiveamet
-tööhõivetalitus
-tööinspektsioon
-tööjaam
 töökoda
-töölaager
-töölisfakulteet
 tööliskann
 tööliskvartal
 töölismaja
-töölissöökla
 töömaa
-tööministeerium
 töönurk
 tööobjekt
-tööorgan
-tööpartei
 tööpiirkond
 tööpind
 tööriistakuur
 tööruum
 tööstusasula
 tööstusehitis
-tööstusettevõte
 tööstushoone
-tööstuskool
 tööstuskvartal
 tööstuslinn
 tööstusmaa
@@ -16123,12 +14931,8 @@ tööstusmaastik
 tööstuspark
 tööstuspiirkond
 tööstusriik
-tööstustarbija
-töötukassa
-tööturuamet
-TÜ
 Tübingen
-tüdrukutekool
+Tübän Kama
 tühe
 tühemik
 tühermaa
@@ -16142,7 +14946,6 @@ tündrimaa
 tünnid-tännid
 tünnisaun
 Türgi
-Türgi saun
 Türi
 Türi-Alliku
 Türisalu
@@ -16150,16 +14953,13 @@ Türje
 Türju
 Türkistan
 Türkmeeni
+Türkmenabat
 Türkmenbaşy
 Türkmenistan
 Türreeni meri
 Türsamäe
-tütarlastegümnaasium
-tütarlastekool
 tütarlinn
-tütarpank
 Tütarsaared
-tütarühing
 tüveõõnsus
 Tüükri
 tüüpelamu
@@ -16210,6 +15010,7 @@ Uia
 uibuaed
 Uibujärve
 Uikala
+uisuplats
 uisurada
 uisustaadion
 uisutee
@@ -16231,10 +15032,13 @@ ukseava
 ukseavaus
 ukseesine
 uksekünnis
+uksemulk
 ukseorv
 uksepakk
 uksepilu
+uksepoolne
 uksepragu
+uksesuu
 uksetagune
 uksevahe
 Uku
@@ -16261,8 +15065,10 @@ Uljaste
 Ulje
 Ullaste
 Ulm
+Ulsan
 Ulster
 ulualune
+Uluhhanlu
 Uluste
 Ulvi
 Ulõtau oblast
@@ -16282,6 +15088,7 @@ umbsopp
 umbtänav
 Umbusi
 Umeå
+Umm al-Qaywayn
 Ummaru
 ummiknõu
 Unakvere
@@ -16291,10 +15098,11 @@ Undi
 Undimäe
 Undla
 Undva
-UNESCO
 Uneste
 Ungari
 ungas
+Ungenõ
+Ungheni
 Ungru
 Unguma
 Uniküla
@@ -16302,8 +15110,6 @@ Unimäe
 Unipiha
 unitaarriik
 Univere
-universaalkauplus
-universiteet
 unkaauk
 Unukse
 Upa
@@ -16316,13 +15122,13 @@ Uraal
 Uralaane
 Uralsk
 Urartu
+Ura-Tjube
 urdaaž
 Urevere
 Urfa
 urg
 Urga
 Urganch
-urgas
 Urge
 Urgentš
 Uri
@@ -16336,6 +15142,8 @@ Urmia järv
 urn
 urnimüür
 urniväli
+Uroševac
+Uroteppa
 Uruguai
 Uruguay
 Urumarja
@@ -16350,8 +15158,10 @@ Usinitsa
 ussaed
 Ussimäe
 Ussisaar
+Ussuriisk
 Ussuuri
 Ust-Abakanskoje
+Ust-Ilimsk
 Ústí nad Labem
 Ustinov
 Ustjurt
@@ -16366,7 +15176,6 @@ Užhorod
 Utah
 Utena
 Utessuu
-utmistehas
 Utrecht
 Utsjoki
 Utsunomiya
@@ -16376,9 +15185,9 @@ Utu
 Utukolga
 Uudeküla
 uudismaa
-uudisteagentuur
 Uue-Antsla
 Uuearu
+Uued Territooriumid
 Uue-Irboska
 Uue-Kariste
 Uuemaa
@@ -16400,11 +15209,6 @@ uurdejärv
 uurdeorg
 uure
 Uuri
-uurimisinstituut
-uurimisjaam
-uurimiskeskus
-uurimislabor
-uuringufirma
 Uus-Akvitaania
 uusarendus
 uusasum
@@ -16422,7 +15226,6 @@ Uusimaa
 Uus-Inglismaa
 Uus-Irboska
 Uus-Kaledoonia
-uuskasutuskeskus
 Uusküla
 Uuslinn
 uuslinn
@@ -16430,6 +15233,7 @@ Uus-Lõuna-Wales
 Uus Maailm
 Uus-Meremaa
 Uusna
+Uus-Siber
 Uus-Siberi saared
 Uusvada
 Uus-Vene
@@ -16461,22 +15265,18 @@ vaates
 vaatetorn
 vaateulatus
 vaatlusala
-vaatlusjaam
 vaatluskaev
 vaatluskoht
+vaatlusplats
 vaatluspunkt
 vaatlustaru
 vaatlustorn
 vaatlusväljak
-vabaajakeskus
-vabaateljee
 vabadikukoht
 vabadikusaun
-vabaerakond
+Vabakas
 vabakaubanduspiirkond
 vabakaubandustsoon
-vabakirik
-vabakool
 vabalaut
 vaba lava
 vabalava
@@ -16484,46 +15284,35 @@ vabalinn
 vabamajanduspiirkond
 vabamajandustsoon
 Vabamatsi
-Vabamu
 vabasadam
 vabatalu
 vabatsoon
 vabaviskeala
 vabaviskejoon
 vabaõhu
-vabaõhukohvik
-vabaõhukool
 vabaõhulava
-vabaõhumuuseum
-vabaühendus
 vabeaed
-vabrik
 vabrikuasula
 vabrikuhoone
-vabrikukool
-vabrikupood
 Vadi
 vadi
 Vadiküla
 Vadsa
+Vadsø
 Vaduz
 vaekoda
 Vaeküla
 Vaela
 Vaemla
 vaenuväli
-vaeslastekodu
-vaeslastekohus
 vaesteagul
 vaestekvartal
-vaestelastekohus
-vaestemaja
+Vagharšapat
 Vagivere
 Vaguja
 Vagula
 Vagula järv
 vagumus
-vagunidepoo
 Vahakulmu
 Vahakõnnu
 Vahastu
@@ -16543,14 +15332,12 @@ Vahemere maad
 Vahemere-äärne
 Vahemeri
 vahemine
-vahendusfirma
 Vahenurme
 vaheosa
 vahepodest
 vahesadam
 vahesektsioon
 Vahessaare
-vahetalituskontor
 vahetekk
 vahetusala
 Vahetüki
@@ -16559,8 +15346,6 @@ Vahh
 Vahi
 vahimaja
 vahimajake
-vahipataljon
-vahiputka
 vahitorn
 vahtralehemaa
 vahtramets
@@ -16604,7 +15389,6 @@ vaiküla
 Vaila
 vaimaja
 Vaimastvere
-vaimuhaigla
 Vaimõisa
 Vaindloo
 Vaindlood
@@ -16621,6 +15405,8 @@ Vaivere
 Vaivina
 vaivundament
 Vajangu
+Vajkh
+Vajotsh Dzor
 vajuk
 vajukaev
 vajumisnõva
@@ -16631,7 +15417,6 @@ Vaki
 vaksal
 vaksaliesine
 vaksalihoone
-vakukohus
 vakumaa
 vakutalu
 Valaam
@@ -16641,12 +15426,12 @@ Valamo
 Valaste
 Valaste juga
 Valasti
+Vâlcea
 Valdai
 Valdai kõrgustik
 Valdemārpils
+Val di Fiemme
 Valdina
-valdusfirma
-valdusühing
 Valencia
 valerahavabrik
 Valga
@@ -16663,6 +15448,7 @@ Valgemere-Karjala
 Valge meri
 Valgemetsa
 Valge Niilus
+Valgeranna
 Valgesoo
 Valgevene
 Valge Volta
@@ -16679,23 +15465,16 @@ Valgu
 Valguta
 Valgu-Vanamõisa
 Valhalla
-valikväeosa
-valikvägi
 Valila
-valimisjaoskond
 valimiskabiin
 valimiskast
 valimispunkt
-valimisringkond
 valimisurn
 Valingu
 Valipe
 Valistre
 valitsejamaja
-valitsusasutus
 valitsushoone
-valitsussektor
-valitsusväline organisatsioon
 Valjala
 Valjala-Ariste
 Valjala-Kogula
@@ -16706,13 +15485,9 @@ Valkla
 Valkse
 vall
 Valladolid
-vallakeskus
-vallakohus
-vallakool
 vallamaja
 Vallapalu
 vallatee
-vallavalitsus
 Valle d'Aosta
 Valletta
 Valli
@@ -16725,41 +15500,24 @@ Vallooni Brabant
 Vallooni piirkond
 vallseljak
 Valmiera
-valmisfirma
-valmistajatehas
 Valparaíso
 valts
 valtsliide
 Valtu
-valukoda
-valukuur
-valutehas
-valutsehh
-valutöökoda
 valuutablokk
-valuutafond
-valuutakauplus
-valuutapood
 valuutatsoon
-valuutavahetuspunkt
-valveapteek
-valvehaigla
-valvekauplus
 valvelseis
 valvelseisak
 valvelseisang
 valvepunkt
-valveputka
 valveseisak
 valveseisang
 valvetorn
 valvetuba
-valvuriputka
 Van
 Vana-Aespa
 Vana-Antsla
 Vana-Baieri
-vanadekodu
 Vanadzor
 Vana-Egiptus
 Vana-India
@@ -16768,7 +15526,6 @@ Vana-Kaiu
 Vana-Kariste
 Vana-Kasaritsa
 Vana-Koiola
-vanakraamiturg
 Vana-Kreeka
 Vana-Kuuste
 Vanaküla
@@ -16780,7 +15537,6 @@ Vana Maailm
 Vanamõisa
 Vana-Nurtu
 Vana-Pärnu
-vanaraamatukauplus
 Vana-Rooma
 Vana-Roosa
 Vana-Saksimaa
@@ -16792,15 +15548,7 @@ Vana-Vene
 Vana-Vigala
 Vana-Võidu
 Vancouver
-vandekohus
 vanematekodu
-vangikamber
-vangikoda
-vangikong
-vangilaager
-vangimaja
-vangla
-vanglamüür
 Vani järv
 vankrikuur
 vankriroobas
@@ -16812,6 +15560,7 @@ vannituba
 vannituba-WC
 Vantaa
 vantsild
+Vanua Levu
 Vanuatu
 Vao
 vaohari
@@ -16821,21 +15570,20 @@ Vara
 varahoidla
 varakamber
 Varakļāni
-varamu
 Varanasi
 Varangeri fjord
 Varangu
+Varaždin
 Varbla
 Varbola
 Vardar
+Vardenis
 Vardi
+Vardø
 varemed
 Varėna
 Varesesaar
 vargapesa
-varieteeteater
-variettevõte
-varifirma
 varikatus
 Variku
 varikäik
@@ -16847,23 +15595,22 @@ varitsuspaik
 varjekoht
 varjend
 varjuaed
-varjualune
 varjude riik
 varjuderiik
 varjukoht
 varjumiskoht
-varjupaik
 varjupoolne
 varjuriik
 varjusadam
-varjuteater
 Varkaus
 Varna
 Varnja
 varresõlm
 Varssavi
 Varstu
+Vartašen
 varv
+Vas
 vasakkallas
 vasakkurv
 vasakul
@@ -16880,18 +15627,16 @@ vasaraheitesektor
 vasemal
 vasemale
 vasemalt
-vaseveski
 Vaskjala
 vaskkatel
 Vasknarva
 Vaskrääma
+Vaslui
 Vassevere
 Vassiljevsko-Šaitanski
-vastaserakond
 vastaskallas
 vastaskorter
 vastaskülg
-vastaspartei
 vastassein
 vastassuunavöönd
 vastastikkus
@@ -16911,10 +15656,10 @@ Vatla
 Vaud
 Vea
 Veadla
-vedajafirma
 vedelgaasiballoon
 vedelgaasiterminal
 Vedernika
+Vedi
 Vedra
 Vedruka
 Vedu
@@ -16922,19 +15667,16 @@ veduridepoo
 Vee
 veeala
 veeallikas
-veebikaubamaja
-veebipood
+veebiavarus
 veed
 veehaare
 veehaud
 veehoidla
 veehorisont
 veejoon
-veejuhe
 veekaitseala
 veekann
 veekeetja
-veekeskus
 veeklosett
 veekogu
 veekogur
@@ -16944,12 +15686,10 @@ veelaud
 veeliin
 Veelikse
 veenisisene
-veepark
 veepealne
 veepiir
 veepind
 veeplekk
-veepuhastusjaam
 veepuhastustiik
 veerada
 veerandlootos
@@ -16961,7 +15701,6 @@ Veerenni
 veererada
 Veeriku
 Veerksu
-veermaht
 veesilm
 veesoon
 veestik
@@ -16970,27 +15709,16 @@ veetorn
 veetornelamu
 veeviimar
 veevõrk
-veganikohvik
-veganirestoran
-vegankohvik
-veganrestoran
 Vehendi
 Veia
 Veibri
 veimekirst
 veimevakk
-veiniaed
 veiniankur
-veinibaar
-veiniistandus
-veinikelder
 veinimaa
 veinimaja
-veinimõis
 veinipudel
-veinirestoran
 veinisarv
-veinituba
 Veisjärv
 Veisjärve
 Vejle
@@ -16998,11 +15726,12 @@ vektorväli
 Velikaja
 Velikije Luki
 Veliki Novgorod
+Veliko Tarnovo
+Veliko Tǎrnovo
 Velise
 Velisemõisa
 Velise-Nõlva
 Velje
-Veljesto
 Vellavere
 Velna
 velodroom
@@ -17038,25 +15767,17 @@ ventilatsioonišaht
 ventraalne
 Ventspils
 veoasend
-veoettevõte
-veofirma
 veokaugus
-veondusettevõte
-veondusfirma
 veopakend
 veostrekk
-veoäri
 Vepsa kõrgustik
 Vepsamaa
 veranda
 Verdun
-verekeskus
 vererada
 Veretinä
 Verevi
 Verevi järv
-vereülekandejaam
-verf
 Vergi
 Verhneudinsk
 Verhojansk
@@ -17064,6 +15785,8 @@ Verhoviina
 Verhulitsa
 Verijärve
 Verilaske
+Verin Ghukasjan
+Verin Vedi
 Veriora
 Verioramõisa
 Vermont
@@ -17077,22 +15800,18 @@ vertikaalpind
 vertikaalselt
 vertikaalsuund
 vertikaaltasand
-vesiehitis
 vesikaar
 vesikiht
 vesiklosett
 vesikond
 vesikäimla
 vesilinnus
-vesinikutankla
-vesiravila
 vesistu
 vesitõke
 vesivagu
-vesiveski
+Vesjegonsk
 Veske
 Veski
-veski
 Veskiaru
 Veskijärv
 veskijärv
@@ -17112,18 +15831,16 @@ veskitiik
 Vesneri
 Veszprém
 vest
+Vest-Agder
 Vestfaal
+Vestfold
 vestibüül
 Vestla
+Vestland
 Vesuuv
-vetelpäästejaam
 vetelpäästepost
 vetelpäästepunkt
-vetelpäästeteenistus
-vetelpäästeühing
 Vetepere
-veterinaarapteek
-veterinaarasutus
 Vetiku
 Vetla
 Vetluga
@@ -17131,6 +15848,7 @@ vets
 vh
 viaal
 viadukt
+Viana do Castelo
 Viangchan
 Viborg
 viburada
@@ -17139,6 +15857,7 @@ Viciebsk
 Victoria
 Victoria järv
 Victoria saar
+Vidin
 Vidrike
 Vidruka
 Vidzeme
@@ -17151,7 +15870,6 @@ Vigala-Vanamõisa
 Vigo
 vigurpudel
 vigvam
-vihasaun
 Vihasoo
 Vihavu
 Vihi
@@ -17160,10 +15878,8 @@ vihmamets
 vihmapeenar
 vihmauure
 Vihterpalu
-vihtlemissaun
 Vihtra
 Vihula
-vihusaun
 Viiburi
 viidas
 Viidike
@@ -17171,7 +15887,6 @@ Viidu
 Viidumäe
 Viidu-Mäebe
 viiepäevakoht
-viietärnihotell
 viilhall
 viiliti
 viilitine
@@ -17190,10 +15905,8 @@ viinamarjaistandus
 viinamarjapõld
 viinamarjaväli
 viinamägi
-viinapood
 viinapuuaed
 viinapuupõld
-viinavabrik
 Viinistu
 Viira
 Viirapalu
@@ -17211,7 +15924,6 @@ Viitina
 Viitka
 Viitna
 viiulikast
-viiuliklass
 Viivikonna
 Viki
 Vikipalu
@@ -17219,6 +15931,7 @@ vikkelkuppel
 Vila
 vilajett
 Vilama
+Vila Real
 Vilaski
 Vilidu
 Viliksaarõ
@@ -17230,7 +15943,6 @@ Vilita
 Vilivalla
 Vilivere
 viljaait
-viljabörs
 viljaelevaator
 viljahoidla
 Viljakas Poolkuu
@@ -17243,9 +15955,7 @@ Viljandi maakond
 viljapuuaed
 viljapuuistandik
 viljapõld
-viljasalv
 viljavakk
-viljaveski
 viljaväli
 viljelusmaa
 Viljui
@@ -17256,10 +15966,8 @@ villa
 Villakvere
 Villamaa
 Villandi
-villavabrik
 villavakk
 Villavere
-villaveski
 Villemi
 Villevere
 Villike
@@ -17283,7 +15991,6 @@ vinklist
 Vinni
 Vinnitsa
 Vinnõtsja
-vinoteek
 Vinski
 Vinso
 Vintri
@@ -17294,6 +16001,7 @@ Viraksaare
 virg
 virgestusala
 Virginia
+Virginia Beach
 virgmärk
 Virita
 Virla
@@ -17302,9 +16010,7 @@ virtsaauk
 virtsahoidla
 virtsakaev
 Virtsu
-virtuaalbüroo
 virtuaalkontor
-virtuaalköök
 virtuaalmaailm
 Viru
 Viru-Jaagupi
@@ -17321,9 +16027,11 @@ Viru värav
 Viruvärava mägi
 Virve
 Visaginas
+Visayas
 Visby
 Visegrád
 Visela
+Viseu
 viskejoon
 viskekoht
 viskepositsioon
@@ -17338,6 +16046,7 @@ vistseraalne
 Visusti
 Vitebsk
 Viti
+Viti Levu
 Vitim
 Vitoria-Gasteiz
 vitriinaken
@@ -17371,6 +16080,7 @@ Voki-Tamme
 vokkpann
 Voldi
 Volga
+Volgamaa
 Volgograd
 Volhov
 Volhovstroi
@@ -17378,6 +16088,7 @@ Volmari
 Volodõmõr
 Volodõmõr-Volõnskõi
 Vologda
+Volossovo
 Volta
 Voltveti
 Volõõnia
@@ -17412,6 +16123,7 @@ Vormsi
 Voronež
 Voronja
 Voropi
+Vorošilov
 Vorošilovgrad
 Vorošilovsk
 vorp
@@ -17419,6 +16131,12 @@ Vorpommern
 Vorsti
 Vorstimäe
 vorstitsehh
+Voskressensk
+Vraca
+Vrancea
+Vratsa
+Vsevoložsk
+Vukovar
 vulkaanijärv
 vulkaanikraater
 vulkaanisaar
@@ -17475,10 +16193,8 @@ võistlustrass
 Võistre
 võitoos
 Võitra
-võitööstus
 Võivaku
 Võivere
-võlavangla
 Võle
 Võlla
 Võlle
@@ -17550,19 +16266,15 @@ Võõpste
 Võõpsu
 võõramaa
 võõramaine
-võõrastemaja
 võõrastetuba
 võõrikjõgi
 võõrriik
 väetisehoidla
-väeüksus
 Vägari
 Vägeva
 Väheru
-vähifond
 vähijõgi
 vähijärv
-vähikasvandus
 Vähi pöörijoon
 vähitiik
 Väike-Aasia
@@ -17571,23 +16283,19 @@ väikeasula
 Väike-Belt
 väikeelamu
 Väike Emajõgi
-väikeettevõte
-väikefirma
 Väikeheinamaa
 väikehoone
 Väike-Jenissei
 Väike-Kamari
 Väike-Kareda
+Väike-Kaukasus
 väikekoht
-väikekool
 väikekraater
 Väike-Kõpu
 Väikeküla
-väikelastekodu
 väikelaut
 Väike-Leedu
 väikelinn
-väikeloomakliinik
 Väike-Lähtru
 väikemaakond
 Väike-Maarja
@@ -17598,9 +16306,7 @@ Väike-Nõmmküla
 Väike-Pahila
 väikepakend
 Väike-Pakri
-väikepartei
 Väike-Pommeri
-väikepood
 Väike-Poola
 Väike-Prangli
 Väike-Pungerja
@@ -17610,7 +16316,6 @@ väikeriik
 Väike-Rootsi
 Väike-Rõsna
 väikesaar
-väikesadam
 Väike-Salatsi
 Väikesed Antillid
 Väikesed Sunda saared
@@ -17643,45 +16348,25 @@ Väiso
 Väkra
 Välgi
 Välgita
-välibaas
 välibassein
-välihaigla
-välihospidal
-välihospital
 välikatel
 välikelder
-välikohus
-välikohvik
 välikäimla
 väliköök
-välilaatsaret
-välilabor
-välilaboratoorium
-välipolitsei
 välipudel
-välis
 Välis-Eesti
-välisesindus
-välisettevõte
-välisfirma
 Välis-Hebriidid
 välisilm
 väliskeskkond
-väliskunstimuuseum
 väliskülg
 välismaa
 välismaailm
 välismaine
-välisministeerium
 Välis-Mongoolia
 välisnurk
-välispank
 välispind
-välispost
 välisrada
-välisriik
 välisrõdu
-välissaatkond
 välissadam
 välissein
 välistrepp
@@ -17690,13 +16375,12 @@ välisveeris
 välisvooder
 välisväljak
 välisõu
-välisülikool
 väliterrass
 väliujula
 väljak
+väljakupool
 väljakäik
 Väljaküla
-väljalaskja
 väljalennupunkt
 väljamaa
 väljamaine
@@ -17738,9 +16422,6 @@ värkstuba
 Värmland
 Värssu
 Värtsilä
-värvikoda
-värvimiskoda
-värvimistöökoda
 värvipind
 Västerås
 Västerbotten
@@ -17757,7 +16438,6 @@ Vääna-Jõesuu
 Väänikvere
 Väänla
 vääriselupaik
-väärtpaberibörs
 Väätsa
 väävliallikas
 Vörkuta
@@ -17770,12 +16450,9 @@ vöörus
 vürstiriik
 vürstkond
 Vürtsisaared
-vürtspood
 Waddenzee
 Wakayama
 Wakhani koridor
-Waldorfi kool
-waldorfkool
 Wales
 Wallis ja Futuna
 Warmia-Masuuria
@@ -17790,7 +16467,7 @@ Wavre
 WC
 WC-duširuum
 WC-vannituba
-Wehrmacht
+Weddelli meri
 Weimar
 Weimari vabariik
 Wellington
@@ -17801,6 +16478,7 @@ Westmeath
 Westminster
 Westmorland
 Wexford
+Wichita
 Wicklow
 Wieliczka
 Wiesbaden
@@ -17833,7 +16511,6 @@ Wuppertal
 Würzburg
 Württemberg
 Wyoming
-õendushaigla
 Õepa
 Õeste
 õgila
@@ -17843,11 +16520,10 @@ Wyoming
 õhkvahe
 Õhne jõgi
 õhtukaar
-õhtukool
 õhtumaa
 Õhu
 õhuava
-õhudessantvägi
+õhudomeen
 õhukamber
 õhuke riik
 õhukoridor
@@ -17858,11 +16534,8 @@ Wyoming
 õhutusava
 õhuvahe
 õhuvald
-õhuvärav
-õigusbüroo
-õigusnõuandla
+õiguskäive
 õigusriik
-õigustalitus
 Õismäe
 Õismägi
 Õisu
@@ -17875,34 +16548,18 @@ Wyoming
 õlikann
 Õlimägi
 õlimägi
-õlitehas
 õliväli
 õlleaed
 õlleankur
-õllebaar
 õllekann
-õllekas
 õllekeha
-õllekelder
 õllekibu
 õllekiosk
-õllekoda
-õllekõrts
-õlleköök
 õllemaa
 õllenõu
-õllepood
 õllepudel
 õlleputka
-õllerestoran
-õllesaal
-õlletehas
-õlletuba
-õmblusateljee
-õmblusettevõte
 õmbluskarp
-õmbluskäitis
-õmblusvabrik
 õmblusvaru
 õnar
 õnarus
@@ -17914,32 +16571,18 @@ Wyoming
 õpetajamaja
 õpetajate tuba
 õpikeskkond
-õpilasakadeemia
-õpilasfirma
-õpilaskodu
 õppeaed
-õppeasutus
-õppebaas
 õppehoone
 õppekabinet
-õppekeskus
 õppeklass
 õppekorpus
 õppeköök
-õppelabor
-õppemajand
-õppemetskond
-õppeosakond
 õppeplats
+õppepolügon
 õppepolügoon
-õpperaamatukogu
 õpperada
-õpperingkond
 õpperuum
-õppestuudio
-õppetool
 õppetorn
-õppetöökoda
 õppeväli
 õppeväljak
 Õrsava
@@ -17951,16 +16594,12 @@ Wyoming
 õueaed
 õue-aiamaa
 õueala
-õuekohus
-õuekohvik
 õueköök
-õuelasteaed
 õuemaa
 õuemaja
 õuenurk
 õuepealne
 õuepoolne
-õukonnateater
 Õuna
 Õvanurme
 Õvi
@@ -17979,6 +16618,7 @@ Wyoming
 Äigrumäe
 Äila
 Äksi
+Äli-Bayramlı
 Älmät
 älveraba
 älves
@@ -17995,10 +16635,8 @@ Wyoming
 Äntu
 äravooluava
 äravoolukanal
-äriettevõte
 ärihoone
 ärikeskus
-äriklient
 ärikvartal
 Äriküla
 ärila
@@ -18006,7 +16644,6 @@ Wyoming
 ärimaa
 ärimaja
 Ärina
-äripank
 äripark
 äripind
 äriruum
@@ -18018,6 +16655,7 @@ Wyoming
 ärklikorrus
 ärklikorter
 ärklituba
+Äsgäran
 ätel
 Äteniidi
 Ätte
@@ -18037,8 +16675,6 @@ Wyoming
 ökoküla
 ökolinn
 ökomaja
-ökopood
-ökotalu
 ökoton
 ökotoop
 Öland
@@ -18054,10 +16690,7 @@ Wyoming
 Ööbikuorg
 ööbimiskoht
 ööbimispaik
-ööklubi
 öökorter
-öölokaal
-öömaja
 Ööriku
 Ööri lõpp
 Öötla
@@ -18065,9 +16698,6 @@ Wyoming
 Üdruma
 üheinimesekajut
 üheinimesetuba
-ühemehefirma
-ühemeheteater
-ühendasutus
 Ühendemiraadid
 Ühendkuningriik
 Ühendriigid
@@ -18075,30 +16705,19 @@ Wyoming
 ühenduskäik
 ühepereelamu
 üheperemaja
-ühikas
 Ühinenud Araabia Vabariik
-"Ühinenud Rahvaste Hariduse, Teaduse ja Kultuuri Organisatsioon"
-ühisasutus
-ühiselamu
 ühiselamukoht
-ühisfirma
-ühisgümnaasium
 ühishaud
 ühiskajut
 ühiskamber
-ühiskauplus
 ühiskodu
 ühiskong
-ühiskool
 ühiskorter
 ühiskäimla
 ühisköök
 ühislaut
 ühismaa
-ühismajand
-ühispank
 ühissõidukirada
-ühistupank
 ühisturg
 Ühtri
 ÜK
@@ -18106,9 +16725,7 @@ Wyoming
 üksikkamber
 üksikkong
 üksikpalat
-üksikpataljon
 üksiktalu
-üksikvahipataljon
 üksikõu
 Üksküla
 Üksnurme
@@ -18124,16 +16741,11 @@ Wyoming
 ülatekk
 ülaveeris
 ülaäär
-üldapteek
 Ülde
 üldfüüsiline
-üldhaigla
-üldhariduskool
 üldlevila
 üldpalat
-üldsaun
 üleatlandiline
-üleilmakool
 üleilmne
 ülejalasõit
 Ülejõe
@@ -18149,23 +16761,16 @@ Wyoming
 ülemereterritoorium
 Ülem-Frangimaa
 üleminekuala
-üleminekukool
 üleminekuriik
 Ülemiste
 Ülemiste järv
 ülemjooks
-ülemjuhatus
 Ülemjärv
-ülemkoda
-ülemkohus
-ülemmaakohus
 Ülem-Normandia
-ülemnõukogu
 Ülem-Prantsusmaa
-ülemraada
 Ülem-Senegal
 Ülem-Sileesia
-ülemtalurahvakohus
+Ülem-Svanethi
 Ülem-Volta
 Ülemõisa
 Ülendi
@@ -18179,18 +16784,14 @@ Wyoming
 Üle-Väina hertsogkond
 Üle-Väina Liivimaa
 Ülgase
-ülikool
 ülikoolihoone
 ülikoolilinn
 ülikoolilinnak
 üliriik
 üliõpilaselamu
-üliõpilasküla
 üliõpilaslinn
 üliõpilaslinnak
 üliõpilasmaja
-üliõpilasmalev
-üliõpilasselts
 ümarehitis
 ümarkaar
 ümartorn
@@ -18204,7 +16805,6 @@ Wyoming
 ümbruskondne
 Ünnaste
 ürdiaed
-ürditalu
 ürgjärv
 ürgkodu
 ürglaas
@@ -18224,8 +16824,10 @@ Wyoming
 üürikorter
 üürimaja
 üüripind
+üürisuvila
 üürituba
 Üüvere
+Xaçmaz
 Xankändi
 Xi’an
 Xianggang
@@ -18233,10 +16835,14 @@ Xi Jiang
 Xijing
 Xining
 Xinjiang
+Xızı
+Xocalı
+Xocavänd
 Yafo
 Yamagata
 Yamaguchi
 Yamanashi
+Yambol
 Yamoussoukro
 Yamuna
 Yangon
@@ -18246,6 +16852,7 @@ Yaren
 Yarkant
 Ýdra
 Yellowstone
+Yevlax
 Yinchuan
 Yizre’éli org
 Ylivieska

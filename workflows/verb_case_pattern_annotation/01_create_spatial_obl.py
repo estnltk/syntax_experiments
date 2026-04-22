@@ -56,11 +56,11 @@ def get_tags(ekilex_tag, ner_tag, timex_tag, morph_case, combinations, mapping):
         elif morph_case in ["ad", "all", "abl"]:
             ner_tag = "PER"
             
-    if ekilex_tag == "ORG":
-        # TODO: ekilex org sisekohakäänetes on LOC (adit, in, ill, el)
+    if ekilex_tag == "organisation":
+        # ekilex org sisekohakäänetes on LOC (adit, in, ill, el)
         if morph_case in ["adit", "in", "ill", "el"]:
-            ekilex_tag = "LOC"
-        # TODO: EKILEX organisation väliskohakäänetes on ALIVE (ad, all, abl)
+            ekilex_tag = "location"
+        # EKILEX organisation väliskohakäänetes on ALIVE (ad, all, abl)
         elif morph_case in ["ad", "all", "abl"]:
             ekilex_tag = "alive"
 

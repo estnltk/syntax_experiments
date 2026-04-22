@@ -6,10 +6,24 @@ The data is taken from spatial_obl table (or user defined table that has spatial
 The tag indicator is in the filename. 
 
 - ELT = event+location+time
+- EL = event+location 
+- E = event 
+- L = location
 - A = alive
 - S = state
+- T = time 
 
-ELT tag includes cases where a phrase has only E/L/T tag or a combination of those. 
+How the tags were assigned in conf file:
+
+| tag in file | target tag | other tags |
+| ------------- | ------------- |------------- |
+| A | A | ELT,S |
+| E |  E | A,LT,S |
+| EL | EL | A,S,T |
+| ELT | ELT | A,S |
+| L | L | A,ET,S |
+| S | S | A,ELT |
+| T | T | A,EL,S |
 
 
 The n-lines on the graphs:

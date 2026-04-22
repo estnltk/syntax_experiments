@@ -11,7 +11,7 @@ id,sentence_id,head_id,row_loc,verb,verb_compound,feats,pos,lemma,form,status,ek
 88,39,53,4,tulema,,"adit,com,sg",S,toim,toime,,,,,adit,,Kuidas sa rahaliselt toime tuled ?
 92,41,56,1,meeldima,,"all,sg",P,mina,Mulle,,,,,all,,Mulle meeldib teha südamelähedasi asju nii hästi kui võimalik ja ma püüan selle eest ka head tasu saada .
 103,47,66,3,nägema,,"ad,com,sg",S,lett,letil,,,,,ad,,"Kui näen letil mõnda head filmi , plaati või šeffi riietuseset , neelan konksu alla ja ostan ära , maksku mis maksab ."
-119,50,74,5,saama,,"com,el,sg",S,toidupood,toidupoest,,location,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Kui sa ei saa toidupoest soovitut , on asi päris hull ."
+119,50,74,5,saama,,"com,el,sg",S,toidupood,toidupoest,,organisation,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Kui sa ei saa toidupoest soovitut , on asi päris hull ."
 129,54,84,3,loobuma,,"ad,com,sg",S,aeg,ajal,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
 130,54,84,4,loobuma,,"com,el,pl",S,juhutöö,juhutöödest,,,,,el,,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
 131,54,85,9,kirjutama,,"all,com,pl",S,bänd,bändidele,,alive,,,all,|A|AE|AL|AS|AT|AET|ALT|AST|,Olen viimasel ajal juhutöödest loobunud ja kirjutan kindlatele bändidele .
@@ -30,7 +30,7 @@ id,sentence_id,head_id,row_loc,verb,verb_compound,feats,pos,lemma,form,status,ek
 233,94,163,11,kaasnema,,"all,pl,pos",A,positiivne,positiivsetele,,,,,all,,"Tegelikult ma polekski võita soovinud , sest sellega kaasneb lisaks positiivsetele palju negatiivseid emotsioone ."
 237,96,166,13,tundma,kaasa,"all,pl",P,tema,neile,,,,,all,,"Mul on Claire's Birthday võidu üle hea meel , aga samas tunnen neile kaasa ."
 239,97,167,1,ootama,,"com,ill,sg",S,poi,Poisse,,,,,ill,,Poisse ootab raske ettevalmistusperiood .
-248,100,172,4,lõpetama,,"com,in,sg",S,pedagoogikaülikool,pedagoogikaülikoolis,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,Sa oled lõpetanud pedagoogikaülikoolis orkestrijuhtimise eriala .
+248,100,172,4,lõpetama,,"com,in,sg",S,pedagoogikaülikool,pedagoogikaülikoolis,,organisation,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,Sa oled lõpetanud pedagoogikaülikoolis orkestrijuhtimise eriala .
 253,103,177,3,pidama,,"com,in,sg",S,silm,silmas,,,,,in,,Ma pean silmas muusika teoreetilise baasi tundmist .
 258,104,179,8,nõudma,,"abl,sg",P,mina,mult,,,,,abl,,"Ma ei viitsinud eriti pedas õppida ja mult nõudis kooli lõpetamine suurt pingutust , sest ma ei leidnud sealt , mida otsisin ."
 269,106,183,4,viima,,"all,com,sg",S,siht,sihile,,,,,all,,Kuid visadus viis sihile ja orkestrijuhi paberid on mul taskus .
@@ -51,8 +51,8 @@ id,sentence_id,head_id,row_loc,verb,verb_compound,feats,pos,lemma,form,status,ek
 401,150,264,16,helistama,,"all,sg",P,mina,mulle,,,,,all,,"Järgmised poolteist kuud , mil tema oli New Yorgis ja mina siin , helistas ta mulle kolm korda päevas - iga kõne kestis kuskil 40-50 minutit ."
 412,152,269,2,valitsema,,"com,in,sg",S,elu,elus,,,,,in,,Mu elus valitsesid väga segased ajad .
 416,153,271,11,naasma,,"ad,com,sg",S,aasta,aastal,,,,DATE,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Olin omadega puntras , sest just enne seda , 1999. aastal naasis vanglast minu abikaasa Oleg Belokrõlov ."
-417,153,271,13,naasma,,"com,el,sg",S,vangla,vanglast,,location,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Olin omadega puntras , sest just enne seda , 1999. aastal naasis vanglast minu abikaasa Oleg Belokrõlov ."
-428,155,274,7,saama,kokku,"com,in,sg",S,kohvik,kohvikus,,location,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Sel ajal , kui me Priiduga kohvikus kokku saime ja kokku jäimegi , olid Oleg ja Raul Pariisi äri ajama sõitnud ."
+417,153,271,13,naasma,,"com,el,sg",S,vangla,vanglast,,organisation,,,el,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Olin omadega puntras , sest just enne seda , 1999. aastal naasis vanglast minu abikaasa Oleg Belokrõlov ."
+428,155,274,7,saama,kokku,"com,in,sg",S,kohvik,kohvikus,,organisation,,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Sel ajal , kui me Priiduga kohvikus kokku saime ja kokku jäimegi , olid Oleg ja Raul Pariisi äri ajama sõitnud ."
 443,160,282,3,külastama,,"com,in,sg",S,maikuu,maikuus,,,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Vahepeal , maikuus külastasin Pariisis veel Olegi ja Rauli ning adusin , et mul pole nendega enam vähimatki ühist ."
 444,160,282,5,külastama,,"in,prop,sg",S,Pariis,Pariisis,,location,LOC,,in,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Vahepeal , maikuus külastasin Pariisis veel Olegi ja Rauli ning adusin , et mul pole nendega enam vähimatki ühist ."
 449,161,286,9,minema,,"all,sg",P,mina,mulle,,,,,all,,"Nad olid justkui võõrad mehed , kelle tegemised mulle sugugi korda ei läinud ."
@@ -86,7 +86,7 @@ id,sentence_id,head_id,row_loc,verb,verb_compound,feats,pos,lemma,form,status,ek
 729,245,451,12,viitsima,,"ad,com,sg",S,hetk,hetkel,,time,,TIME,ad,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Mul käivad tihti peal tujud , kus ma ei viitsi ühel hetkel enam midagi teha , miski ei huvita ja ..."
 754,256,472,3,tooma,,"all,com,sg",S,direktor,direktorile,,,,,all,,Eesti Kontserdi direktorile ja Arsise kellade ansambli juhile Aivar Mäele ( 42 ) tõi austava aasta mehe tiitli tema eestkostel üheksa kuuga valminud Pärnu Kontserdimaja .
 757,256,473,20,valmima,,"ad,com,sg",S,eestkoste,eestkostel,,,,,ad,,Eesti Kontserdi direktorile ja Arsise kellade ansambli juhile Aivar Mäele ( 42 ) tõi austava aasta mehe tiitli tema eestkostel üheksa kuuga valminud Pärnu Kontserdimaja .
-773,259,481,30,tulema,,"ad,com,sg",S,linn,linnal,,,LOC,,ad,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Aivar Mäe arvab aasta tegu ehk Pärnu Kontserdimaja ehitust kommenteerides , et investeering Pärnusse oli päris suur , Pärnu lihtsalt anus ja ägas säärase kultuurikantsi järele : “ Pärnu linnal tuli mõte teha kontserdihoone kolmkümmend aastat tagasi , nüüd on see unistus täitunud ."
+773,259,481,30,tulema,,"ad,com,sg",S,linn,linnal,,organisation,LOC,,ad,|AL|ALT|,"Aivar Mäe arvab aasta tegu ehk Pärnu Kontserdimaja ehitust kommenteerides , et investeering Pärnusse oli päris suur , Pärnu lihtsalt anus ja ägas säärase kultuurikantsi järele : “ Pärnu linnal tuli mõte teha kontserdihoone kolmkümmend aastat tagasi , nüüd on see unistus täitunud ."
 778,260,484,1,külastama,,"com,in,sg",S,detsember,Detsembris,,time,,DATE,in,|T|AT|ET|LT|ST|AET|ALT|AST|ELT|LST|,"Detsembris külastas uut maja juba pool Pärnu linna , see kõneleb ise enda eest . ”"
 792,263,491,11,hakkama,,"com,in,sg",S,koha,kohas,,,,,in,,"“ Praegu ei oska ette arvata , mis seal uues kohas kõik toimuma hakkab , aga kindlasti saab ta linna südameks , kuna see maja võimaldab nii palju , ” kõlab ta optimistlik prognoos ."
 807,264,497,14,tulema,,"adit,com,sg",S,kontserdimaja,kontserdimajja,,location,,,adit,|L|AL|EL|LS|LT|ALT|ELT|LST|,"Mäe on kohtunud piletikassa juures pärnakatega , kes väidavad end olevat tulnud uude kontserdimajja juba üheksandat-kümnendat korda ."
