@@ -9,7 +9,9 @@ aadlipreili
 aadlivõsu
 aadrilaskja
 Aafrika elevant
+Aafrika metsaelevant
 Aafrika pühvel
+Aafrika savannielevant
 Aafrika säga
 aafriklane
 aafriklanna
@@ -53,6 +55,7 @@ abielurikkuja
 abijõud
 abikaas
 abikaasa
+abikelner
 abikoer
 abikohtunik
 abilinnapea
@@ -116,6 +119,7 @@ aednikupoiss
 aed-põõsalind
 aedunilane
 aerjalalised
+aeroloog
 aeronaut
 aeroobik
 aeroobikaharrastaja
@@ -150,6 +154,7 @@ aguuti
 ahelsuitsetaja
 ahhailane
 ahistaja
+ahjukütja
 ahjumeister
 ahjutegija
 ahm
@@ -170,6 +175,7 @@ aiapõrnikas
 aia-rõngakedrik
 aiatööline
 aidamees
+AIDSi-haige
 aidsiohver
 aie
 aieahv
@@ -327,6 +333,7 @@ altailane
 altaripoiss
 alumnus
 alusepanija
+alustaja
 alveokokk-paeluss
 amatsoon
 amatsoonpapagoi
@@ -356,6 +363,7 @@ ametiühingutöötaja
 ametnik
 ametnikkond
 amfiibid
+amhaara
 amhara
 amiš
 amm
@@ -378,6 +386,9 @@ anarhist
 anatoom
 andi
 andja
+andmehaldur
+andmeinsener
+andmeomanik
 andmeteadlane
 andorralane
 androgüün
@@ -464,6 +475,7 @@ arbulööja
 ardenn
 arendusdirektor
 arendusjuht
+arendusmeister
 arengutreener
 Ares
 arestant
@@ -482,7 +494,9 @@ arhaar
 arhantroop
 arhantroopus
 arhantropus
+arheobotaanik
 arheograaf
+arheokeemik
 arheoloog
 arheopterüks
 arhierei
@@ -521,6 +535,7 @@ arreteeritu
 arst
 arstiteadlane
 arstkond
+arstleja
 arst-resident
 Artemis
 artillerist
@@ -684,6 +699,7 @@ avalik naine
 avaliku elu tegelane
 avangardist
 avantürist
+avapesitseja
 avaspesitseja
 avastaja
 Avatar
@@ -795,6 +811,8 @@ berber
 berliinlane
 bernhardiin
 bersaljeer
+berserk
+berserker
 besoaarkits
 besserman
 besserwisser
@@ -874,6 +892,7 @@ britlane
 britt
 brontosaurus
 brošeerija
+brändisaadik
 brüoloog
 budausuline
 Buddha
@@ -949,6 +968,8 @@ danaiidid
 danaoslane
 darg
 dargiin
+darvinist
+darwinist
 daun
 Davidi hirv
 debiil
@@ -1021,14 +1042,16 @@ dieetarst
 dieetõde
 dietoloog
 difteeriahaige
-digihiid
+digikodanik
 diginomaad
 digirändur
 digitaalne immigrant
+digitaalne kodanik
 digitaalne pärismaalane
 digitigedik
 digivõhik
 diiler
+diilitaja
 diipii
 diiva
 diktor
@@ -1101,7 +1124,11 @@ dr Google
 drogist
 dromedar
 dront
+droonijuht
 droonilennutaja
+droonioperaator
+droonipiloot
+droonitaja
 druiid
 družinnik
 drüaad
@@ -1163,7 +1190,6 @@ eelarvekomisjon
 eelarvestaja
 eelisaktsionär
 eelkõneleja
-eelkäija
 eellane
 eelpärija
 eelsalk
@@ -1180,6 +1206,7 @@ eeskäsi
 eeslaulja
 eesliinimängija
 eeslik
+eeslimära
 eeslinlane
 eeslinägu
 eesmineja
@@ -1190,7 +1217,6 @@ eestimaalane
 eestirootslane
 eestitar
 eestivenelane
-Eesti Õdede Liit
 eestkostja
 eestkõneleja
 eestlane
@@ -1324,6 +1350,7 @@ elukunstnik
 elukutseline sportlane
 elulookirjutaja
 eluloolane
+elulõpu toetaja
 elumees
 elunautija
 elunautleja
@@ -1388,11 +1415,11 @@ emps
 emu
 enamlane
 enamusaktsionär
+enamusliider
 enamusrahvus
 enamusvalitsus
 endokrinoloog
 endomorf
-energiahiid
 energiavampiir
 enesearmastaja
 enesepiitsutaja
@@ -1467,6 +1494,7 @@ erudiit
 erukapten
 eruohvitser
 erusoldat
+erusõjaväelane
 eruväelane
 esiema
 esiisa
@@ -1560,6 +1588,7 @@ eurokraat
 eurolaulik
 eurominister
 Euroopa laikõrv
+euroopaliitlane
 Euroopa naarits
 Euroopa piison
 eurooplane
@@ -1576,7 +1605,6 @@ evangelist
 eve
 eveen
 evenk
-EÕL
 faasan
 faasanikana
 faasanikukk
@@ -1603,6 +1631,8 @@ farmakoloog
 farmatseut
 farmer
 fashionista
+fassija
+fassilitaator
 fašist
 fatalist
 faun
@@ -1634,14 +1664,18 @@ filipiinlanna
 filiplane
 filister
 fillumenist
+filmiajakirjanik
 filmiamatöör
+filmiarvustaja
 filmidiiva
 filmidokumentalist
 filmidramaturg
 filmigrupp
 filmigurmaan
 filmiklubi
+filmikriitik
 filmikunstnik
+filmilavastaja
 filmimees
 filminäitleja
 filmioperaator
@@ -1885,6 +1919,7 @@ günekoloog
 gürsa
 haagikohtunik
 haagreht
+haakija
 haakristlane
 haapsallane
 haapsallanna
@@ -1902,6 +1937,7 @@ habekits
 habekotkas
 habeloomad
 habemeajaja
+habemekandja
 habemenoakarp
 habesiga
 habesääsk
@@ -2032,6 +2068,7 @@ havinolk
 havipoeg
 havipurikas
 heakorrakomisjon
+heaolumeister
 hedonist
 heebrealane
 heegellane
@@ -2050,6 +2087,8 @@ heinaritsikas
 heinategija
 heitlaps
 heitunu
+heitunud
+heitunud isik
 heletilder
 hele-villkäpp
 helikoptervanem
@@ -2073,6 +2112,7 @@ Hera
 heraldik
 herbivoor
 hereford
+Herefordi veis
 herero
 herilane
 herilaseviu
@@ -2213,6 +2253,7 @@ hoholl
 hoiulevõtja
 hokimees
 hokimängija
+hokinaine
 hokitreener
 hollandlane
 hollandlanna
@@ -2246,6 +2287,7 @@ hoolekandja
 hoolekogu
 hoolekägu
 hoolik
+hoopleja
 hoorajääger
 hoorapurikas
 hoovikoer
@@ -2275,6 +2317,7 @@ hulkraksed
 hulkur
 hulkurkass
 hulkurkoer
+hulkurloom
 hulluarst
 hulluke
 hullukene
@@ -2313,6 +2356,7 @@ huuthi
 huvialaring
 huvigrupp
 huvijuht
+huvikaitsja
 huvipool
 huvireisija
 huviring
@@ -2354,6 +2398,7 @@ härjapaar
 härjapõlvemees
 härjapõlvlane
 härjavõitleja
+härjavärss
 härra
 härrake
 härrakene
@@ -2371,6 +2416,7 @@ häälepüüdja
 häälerühm
 hääleseadja
 hääletaja
+häältekoguja
 häältemagnet
 häältepüüdja
 hüdra
@@ -2386,6 +2432,7 @@ hüljatu
 hüljes
 hüperaktiivne laps
 hüperborealane
+hüpertooniahaige
 hüpertoonik
 hüpiklased
 hüpikämblik
@@ -2430,7 +2477,6 @@ igavene teine
 igaüks
 igbo
 igirivaal
-ignorant
 iguaan
 iguaanlased
 iguaanodon
@@ -2490,6 +2536,7 @@ ilmik
 ilmikliige
 ilmikvend
 iluaednik
+ilublogija
 iluduskuninganna
 ilueedi
 iluhoolik
@@ -2556,6 +2603,7 @@ infektsionist
 influentser
 infojuht
 infokaan
+infoprükkar
 informaatik
 informaatikateadlane
 informaator
@@ -2568,6 +2616,7 @@ ingerjas
 ingerlane
 inglane
 inglanna
+inglibeebi
 inglismann
 ingušš
 inimahv
@@ -2580,6 +2629,7 @@ inimesekirp
 inimeselaps
 inimeseloom
 inimesemuld
+inimesenugiline
 inimeseparasiit
 inimesepoeg
 inimesepõlgur
@@ -2614,6 +2664,7 @@ inimputukas
 inimpõlgur
 inimrämps
 inimrühm
+inimsmugeldaja
 inimsumm
 inimsööja
 inimtõug
@@ -2643,6 +2694,7 @@ integrast
 intendant
 intern
 interneeritu
+internetikelm
 internetisõltlane
 internetitroll
 internist
@@ -2664,6 +2716,7 @@ invasportlane
 inventeerimiskomisjon
 inventuurikomisjon
 investeerija
+investeerimiskelm
 investor
 iraaklane
 iraanlane
@@ -2673,11 +2726,13 @@ irdhing
 iriseja
 irokees
 iroonik
+irredentist
 irvhammas
 irvik
 isa
 isaema
 isaisa
+isa-kadunuke
 isakala
 isakaru
 isakass
@@ -2693,6 +2748,7 @@ isamaalaulik
 isamees
 isamesilane
 isand
+isandarahvas
 isaskala
 isaslind
 isasloom
@@ -2710,6 +2766,7 @@ iseõppija
 iseõppinu
 islamist
 islamivõitleja
+islamiäärmuslane
 islamofoob
 Islandi hobune
 islandlane
@@ -2748,6 +2805,7 @@ jaapanlane
 jaapanlanna
 jaavalane
 jaavasiga
+jaeinvestor
 jahifaasan
 jahifauna
 jahijumalanna
@@ -2807,6 +2865,7 @@ jaoülem
 japs
 jarl
 jassakikoguja
+jaziid
 jatving
 jeemenlane
 jeestlane
@@ -2814,11 +2873,13 @@ Jeesus
 Jeesus Kristus
 Jeesuslaps
 jefreitor
+jehik
 Jehoova
 Jehoova tunnistaja
 jehovist
 jessauul
 jesuiit
+jeziid
 jobu
 jobukakk
 jobusk
@@ -2891,6 +2952,7 @@ juhtloom
 juhtoinas
 juhtorgan
 juhttöötaja
+juhtõpetaja
 juhuklient
 juhukülaline
 juhuluuletaja
@@ -2962,6 +3024,7 @@ juureöölane
 juureürask
 juurjalgsed
 juurutaja
+juurviljamüüja
 juustnik
 juustukärbes
 juustumeister
@@ -2993,6 +3056,7 @@ jõnglane
 jõrm
 jõss
 jõudeinimene
+jõudeolija
 jõudik
 jõudnu
 jõujuurikas
@@ -3065,6 +3129,7 @@ jäärebane
 jäärik
 jäärtall
 jääräim
+jääturist
 jäävang
 jöötun
 jünger
@@ -3203,6 +3268,7 @@ kaeluskondor
 kaeluskotkas
 kaelus-kärbsenäpp
 kaeluspapagoi
+kaelussiil
 kaelus-turteltuvi
 kaelustuvi
 kaerahelbeke
@@ -3383,6 +3449,7 @@ kammerteener
 kammissepp
 kammloomad
 kampaaniameister
+kampanoloog
 kampsunid
 kamraad
 kanaaju
@@ -3406,6 +3473,7 @@ kanatibu
 kanavaras
 kandeloom
 kandidaat
+kandideerija
 kandimees
 kandlelööja
 kandlemängija
@@ -3491,8 +3559,10 @@ kariib
 kariit
 karikakaitsja
 karikaomanik
+karikarbas
 karikaturist
 karikavõitja
+karikormoran
 karilane
 kariloom
 karismaatik
@@ -3556,6 +3626,7 @@ karupoeg
 karupoiss
 karusloom
 karusmarja-lehevaablane
+karusnahakaupmees
 karutantsitaja
 karvakala
 karvakera
@@ -3590,7 +3661,9 @@ kassiir
 kassikakk
 kassike
 kassikene
+kassikirp
 kassimait
+kassiniru
 kassiplika
 kassipoeg
 kassipoiss
@@ -3654,6 +3727,7 @@ kattegrupp
 katusekatja
 katuselööja
 katusemeister
+katusepaigaldaja
 katusepanija
 katusetegija
 kaubaagent
@@ -3802,6 +3876,8 @@ keskkonnakaitsja
 keskkonnaminister
 keskkonnapagulane
 keskkonnapõgenik
+keskkoolilõpetaja
+keskkooliõpilane
 kesklinlane
 keskmaajooksja
 keskmaamees
@@ -3817,6 +3893,7 @@ kestahes
 keta
 ketikoer
 ketipeni
+ketraja
 ketser
 ketšua
 kettagolfar
@@ -3856,6 +3933,7 @@ kiirabitöötaja
 kiirgliblikas
 kiirjooksja
 kiirkirjutaja
+kiirkuubija
 kiirkäija
 kiirkäskjalg
 kiirlaskuja
@@ -3923,6 +4001,7 @@ kindralsuperintendent
 kineast
 kinematograafiatöötaja
 kinematografist
+kinesioloog
 kingadisainer
 kingloom
 kingnokk
@@ -3934,7 +4013,6 @@ kinkažuu
 kin-ltn
 kin-mjr
 kinnimõistetu
-kinnipeetav
 kinnipeetu
 kinnislehm
 kinnisvaramaakler
@@ -3950,6 +4028,7 @@ kinoskäija
 kinotäht
 kinotöötaja
 kintsukaapija
+kioskimüüja
 kiosköör
 kippar
 kipper
@@ -3993,6 +4072,7 @@ kirjakunstnik
 kirjamees
 kirjameister
 kirjandusajaloolane
+kirjandusarvustaja
 kirjandusklass
 kirjanduskriitik
 kirjandusloolane
@@ -4022,6 +4102,7 @@ kirjuleedik
 kirjurähn
 kirjutaja
 kirpvähk
+kirsikärbes
 kirstumees
 kirstumeister
 kirstutegija
@@ -4043,6 +4124,7 @@ kitupunn
 kiunard
 kiur
 kiusaja
+kiusukott
 kiusupunn
 kiusvaal
 kiusvaalalised
@@ -4062,6 +4144,7 @@ kivisepp
 kivisisalik
 kivitäks
 kiviõlilane
+klaarsäga
 klaasangerjas
 klaasija
 klaasikunstnik
@@ -4119,6 +4202,8 @@ klimatoloog
 klinitsist
 kloonlammas
 kloonlaps
+kloonloom
+kloonvasikas
 kloostrivend
 kloostriülem
 klopats
@@ -4249,6 +4334,7 @@ koguduseõpetaja
 kogukondlane
 kohakaaslane
 kohakala
+kohalejõudnu
 kohalolija
 kohalviibija
 kohanäitaja
@@ -4315,6 +4401,7 @@ kojarahvas
 kojatalupoeg
 kokaabi
 kokaiinik
+kokainist
 kokapoiss
 kokett
 kokkerspanjel
@@ -4381,6 +4468,8 @@ komisjonär
 komissar
 komissariaat
 komitent
+kommandiitor
+kommanditist
 kommar
 kommentaator
 kommersant
@@ -4433,6 +4522,7 @@ konjunktuurlane
 konkistadoor
 konkubiin
 konkurent
+konkurslane
 konlased
 konnakotkas
 konnakulles
@@ -4479,7 +4569,9 @@ konvertiit
 konvoeerija
 koobard
 kooberdis
+koodimurdja
 kookosevaras
+koolerahaige
 kooliarst
 koolibri
 koolieelik
@@ -4573,6 +4665,7 @@ korallkala
 korallmadu
 korbits
 kordnik
+korduvrikkuja
 korduvsünnitaja
 korealane
 korealanna
@@ -4596,6 +4689,7 @@ koroonapagulane
 koroonapatsient
 koroonik
 korporant
+korrakaitsejõud
 korrakaitsja
 korraldusjuht
 korrapidaja
@@ -4792,7 +4886,6 @@ kuldpea-pöialpoiss
 kuldpõrnikas
 kuldsuu
 kuldsäinas
-kulinaar
 kullakaevaja
 kullakaevur
 kullaketraja
@@ -4805,6 +4898,7 @@ kullauhtja
 kuller
 kulles
 kullilised
+kulmutehnik
 kult
 kultsiga
 kulturist
@@ -4843,10 +4937,13 @@ kuningriiklane
 Kunksmoor
 kunstfotograaf
 kunstiajaloolane
+kunstiarvustaja
 kunstiharrastaja
 kunstiinimene
 kunstijünger
+kunstikaupmees
 kunstikoguja
+kunstikriitik
 kunstiloolane
 kunstipsühholoog
 kunstipublik
@@ -4877,6 +4974,7 @@ kuressaarlane
 kurg
 kurgikasvataja
 kurgkotkas
+kurgulaulja
 kurikael
 kuritarvitaja
 kuritõbine
@@ -4909,6 +5007,7 @@ kutsar
 kutsehaige
 kutsekaaslane
 kutsenõustaja
+kutseõpetaja
 kutsu
 kutsutu
 kutt
@@ -4950,7 +5049,9 @@ kviriit
 kvisling
 kvoodipagulane
 kõbi
+kõdukärbes
 kõdukärblased
+kõhkleja
 kõhnard
 kõhrkalad
 kõhrluused
@@ -4971,6 +5072,7 @@ kõmupiltnik
 kõmureporter
 kõndija
 kõndiv entsüklopeedia
+kõnehälvik
 kõneisik
 kõnejuht
 kõnekirjutaja
@@ -4998,10 +5100,12 @@ kõrgharitu
 kõrgmeister
 kõrgseltskond
 kõrgushüppaja
+kõrilaulja
 kõrilõikaja
 kõrkjakass
 kõrkja-roolind
 kõrrevaablane
+kõrtsikammija
 kõrtsimees
 kõrtsinaine
 kõrtsipidaja
@@ -5052,6 +5156,7 @@ käli
 kälimees
 kälis
 kämbu
+kämpija
 känguru
 kännuämblik
 käolised
@@ -5117,6 +5222,7 @@ kääbuspuudel
 kääbuspühvel
 kääbusrahvas
 kääbusspanjel
+kääbusšimpans
 kääbusvaal
 kääbusörd
 kääpakotkas
@@ -5194,6 +5300,7 @@ küljesoojendaja
 külmalind
 külmataat
 külmavaksik
+külmavana
 külmavares
 külmking
 külvivares
@@ -5286,6 +5393,7 @@ laevapoiss
 laevavaim
 laevnik
 laevur
+lageraiuja
 lagle
 lahingpaar
 lahingugrupp
@@ -5385,6 +5493,7 @@ lapsinvaliid
 lapsminister
 lapsnaine
 lapsnarkomaan
+lapspatsient
 lapspoliitik
 lapsprostituut
 lapspruut
@@ -5450,6 +5559,7 @@ lauarahvas
 lauatennisist
 lauavõitleja
 lauaülem
+laudakass
 laudanaine
 laudapääsuke
 laudkond
@@ -5699,6 +5809,7 @@ liigtarvitaja
 liikleja
 liiklushuligaan
 liiklusinspektor
+liikluskorraldaja
 liiklusohver
 liikluspolitseinik
 liikluspsühholoog
@@ -5749,6 +5860,7 @@ linask
 linavästrik
 Linda
 lindilõikaja
+lingulaadid
 lingvist
 linlane
 linnaaednik
@@ -5922,6 +6034,7 @@ loomharuldus
 loomhõljum
 loomik
 loomkond
+loomnugiline
 loomohver
 loomparasiit
 loori
@@ -5971,6 +6084,7 @@ lullilööja
 lumehani
 lumeinimene
 lumekakk
+lumekirp
 lumekits
 lumelammas
 lumelauasõitja
@@ -6013,6 +6127,7 @@ luurerühm
 luuresalk
 luureülem
 luuser
+luusija
 luusur
 luutasuja
 lõbulinnuke
@@ -6049,6 +6164,7 @@ lõuna-lonthüljes
 lõunamaalane
 lõunamaalanna
 lõunaosariiklane
+lõunasiil
 lõunaslaavlane
 lõunatirk
 lõunavaal
@@ -6246,11 +6362,13 @@ mahajäänu
 mahalaskja
 mahalastu
 mahalöödu
+maharaadža
 maharadža
 mahdi
 mahemesinik
 mahetalunik
 mahhinaator
+mahlamüts
 maiasmokk
 maidel
 maiko
@@ -6481,6 +6599,7 @@ matkakaaslane
 matkaline
 matkamees
 matkasell
+matkatreener
 matkija
 matriarh
 matroon
@@ -6510,6 +6629,7 @@ medvend
 medõde
 meediajuht
 meediakangelane
+meediakriitik
 meediamagnaat
 meediamogul
 meediategelane
@@ -6561,6 +6681,7 @@ meestevägi
 meesteõgija
 meestuttav
 meesvang
+meesõde
 meesõiguslane
 meesõpetaja
 meetmehoidja
@@ -6572,6 +6693,7 @@ megateerium
 megatäht
 megäär
 mehaanik
+mehaanikainsener
 meheema
 mehehakatis
 meheisa
@@ -6875,8 +6997,11 @@ miljonikala
 miljonirahvas
 miljonär
 miljonärivõsu
+millerdaja
 millimallikas
 milord
+mimansiartist
+mimanss
 minajutustaja
 minakangelane
 minakene
@@ -6941,7 +7066,6 @@ moenõustaja
 mohikaan
 mohikaanlane
 moira
-mokša
 mokšalane
 moldaavlane
 moldovlane
@@ -6951,6 +7075,7 @@ molluskid
 monacolane
 monarh
 monarhist
+monarhliblikas
 mongol
 mongoliid
 mongoliidne rass
@@ -6965,6 +7090,7 @@ monoteist
 monotreem
 monsieur
 montanjaar
+monteerija
 montenegrolane
 montöör
 monumentalist
@@ -6978,6 +7104,7 @@ mooramaamees
 mooramees
 moorlane
 moosekant
+moosikeetja
 moosivaras
 mootorisportlane
 mootorrattasportlane
@@ -7129,6 +7256,8 @@ mustang
 mustatööline
 mustatöömees
 musterlaps
+musterpoiss
+musterõpilane
 must-harksaba
 must hobune
 mustik
@@ -7143,6 +7272,7 @@ mustlaseit
 mustlaskuningas
 mustlasmoor
 mustlasnaine
+mustlaspruulija
 mustleemur
 must-lepalind
 must lesk
@@ -7163,6 +7293,7 @@ musttihane
 must-toonekurg
 mustu
 mustuke
+mustusevedaja
 mustvaeras
 mustvares
 mustviires
@@ -7180,11 +7311,13 @@ muusa
 muuseumipedagoog
 muusik
 muusikaajakirjanik
+muusikaarvustaja
 muusikaavalikkus
 muusikagurmaan
 muusikainimene
 muusikajuht
 muusikakollektiiv
+muusikakriitik
 muusikamees
 muusikant
 muusikaprodutsent
@@ -7196,6 +7329,7 @@ muusikatööstur
 muusikaõpetaja
 muusikaärimees
 muusikaüldsus
+muu-usuline
 mõhnjalalised
 mõisaametnik
 mõisahärra
@@ -7314,8 +7448,10 @@ männivaablane
 männivaksik
 männiöölane
 mänsak
+märaeesel
 märahiidlane
 märahobune
+märasälg
 märavarss
 märgikoguja
 märsilohistaja
@@ -7404,6 +7540,7 @@ naase
 naaskelnokk
 naasnu
 nabasiga
+nabatealane
 nadikael
 nadu
 naeriliblikas
@@ -7505,6 +7642,7 @@ nakerjas
 nakermann
 nakkusekandja
 nakkushaige
+nakkuskandja
 NAK-lane
 naklane
 naksitrall
@@ -7599,6 +7737,7 @@ neid
 neidis
 neitsi
 neitsik
+neitsikurg
 neiu
 neiuhakatis
 neiuke
@@ -7623,6 +7762,7 @@ nereiid
 nerka
 nestor
 nestoriaan
+netikelm
 netikommentaator
 netisõltlane
 neurasteeniahaige
@@ -7854,8 +7994,11 @@ nõrkenu
 nõuandja
 nõudepesija
 nõukogude inimene
+nõukogudelane
+nõukogulane
 nõunik
 nõustaja
+nägemishälvik
 nägemisinvaliid
 nägija
 nähvits
@@ -7883,6 +8026,7 @@ näljakönn
 näljarott
 nälkjas
 nännipunn
+näotuttav
 näppaja
 näpumees
 näriline
@@ -7965,7 +8109,6 @@ olija
 olmeek
 olukirjanik
 olupoliitik
-olümpiakomitee
 olümpiakoondis
 olümpialane
 olümpiamees
@@ -7992,7 +8135,6 @@ omavalitsusjuht
 ombudsman
 omnivoor
 omul
-onager
 onkel
 onkohaige
 onkoloog
@@ -8067,6 +8209,7 @@ orienteeruja
 orienteerumissportlane
 orikas
 oriksiga
+orirahvas
 orjahing
 orjakaupleja
 orjakaupmees
@@ -8083,6 +8226,7 @@ oromo
 ortodoks
 ortodont
 ortopeed
+ortoptist
 ortorektik
 orüks
 osaajatöötaja
@@ -8687,7 +8831,6 @@ petšeneeg
 pettunu
 pettur
 pfaltskrahv
-Phocoena phocoena
 pianist
 pidukõneleja
 piduline
@@ -8769,7 +8912,6 @@ pikkloibvaal
 pikksaba
 pikksaba-änn
 pikkuim-tuun
-Pikne
 piknikuline
 piksehaldjas
 piksejumal
@@ -9072,6 +9214,7 @@ popsnik
 popstaar
 popularisaator
 populist
+pop-up-koor
 porbulane
 pordunaine
 porgandikärbes
@@ -9116,7 +9259,6 @@ praaker
 praakija
 praakloom
 pragmaatik
-praid
 praktik
 praktikant
 pranglija
@@ -9137,6 +9279,7 @@ preetor
 prefekt
 preilike
 preilikene
+preilinna
 preilna
 preislane
 prekariaat
@@ -9250,6 +9393,7 @@ prost
 prostituut
 proteesiarst
 proteesija
+proteesimeister
 protesist
 protestant
 protestija
@@ -9371,6 +9515,7 @@ pulmonoloog
 pulstikkits
 pultšinell
 pumi
+pummeldaja
 puna-aara
 punaarmeelane
 punahabe
@@ -9514,6 +9659,7 @@ põdeja
 põder
 põderpõrnikas
 põdrakarjus
+põdrakasvataja
 põdrakärbes
 põdrakütt
 põdralehm
@@ -9732,6 +9878,7 @@ Pöial-Liisi
 pöialpoiss
 pöidlahoidja
 pööbel
+pööningukärbes
 pöördekohtunik
 pöörmeseadja
 püdal
@@ -9796,6 +9943,7 @@ raadioreporter
 raadiotehnik
 raadiotelefonist
 raadiotelegrafist
+raadža
 raagritsikas
 raamatugraafik
 raamatuhaige
@@ -9815,6 +9963,7 @@ raat
 rabahani
 rabakana
 rabakarask
+rabakiil
 rabakonn
 rabalind
 rabapistrik
@@ -9845,6 +9994,7 @@ rahamees
 rahamuul
 rahandusminister
 rahandustegelane
+rahandustöötaja
 rahatuus
 rahavahetaja
 rahhiitik
@@ -9880,6 +10030,7 @@ rahvakohtunik
 rahvakomissar
 rahvakooliõpetaja
 rahvakoor
+rahvakuller
 rahvakunstiansambel
 rahvakunstimeister
 rahvalaulik
@@ -9910,6 +10061,7 @@ rahvastikuteadlane
 rahvastiku-uurija
 rahvasumm
 rahvatantsija
+rahvatantsurühm
 rahvatark
 rahvateadlane
 rahvatribuun
@@ -10084,6 +10236,7 @@ reetor
 reetur
 referent-toimetaja
 reff
+refikas
 refleksoloog
 reformaator
 reformar
@@ -10135,6 +10288,7 @@ relvameister
 relvaomanik
 relvarühmitus
 relvasepp
+relvasmugeldaja
 relvatehnik
 relvatööstur
 relvavend
@@ -10147,6 +10301,7 @@ renditalunik
 renditalupoeg
 renditööjõud
 renditöötaja
+rendivang
 renegaat
 repatriant
 repatrieerunu
@@ -10166,6 +10321,7 @@ restauraator
 restaureerija
 restoranipidaja
 režissöör
+retkejuht
 retkekaaslane
 retkeline
 retoromaan
@@ -10272,6 +10428,7 @@ riskigrupp
 riskikapitalist
 riskilaps
 riskipere
+riskirase
 riskirühm
 risla
 ristandjärglane
@@ -10334,6 +10491,7 @@ rohevint
 rohtlahaukur
 rohuhiir
 rohujooksik
+rohukedrik
 rohukonn
 rohukoskel
 rohulutikas
@@ -10389,6 +10547,7 @@ roosakakaduu
 roosapelikan
 roosiristlased
 roosärg
+Rootsi eestlane
 rootsieestlane
 rootsiitsitaja
 rootslane
@@ -10535,6 +10694,7 @@ röövvallutaja
 rüblik
 rüdi
 rühkel
+rühmajuhendaja
 rühmajuht
 rühmavanem
 rühmaülem
@@ -10597,6 +10757,7 @@ saarmakoer
 saateansambel
 saatebänd
 saatejuht
+saatekülaline
 saatemeeskond
 saatjaskond
 saatur
@@ -10623,6 +10784,7 @@ saduser
 saemees
 sagarnina
 sahiib
+sahkerdaja
 sahmerdis
 saianaine
 saida
@@ -10634,6 +10796,7 @@ sajajalgne
 sakalane
 sakristaan
 Saksa lambakoer
+saksarahvas
 saksimängija
 sakslane
 sakslanna
@@ -10750,13 +10913,11 @@ savannisebra
 savant
 savisaarlane
 savolane
-seaduselooja
 seadusemees
 seaduserikkuja
 seadusesilm
 seadusetundja
 seaduseväänaja
-seaduslooja
 seadusrikkuja
 seakala
 seakari
@@ -10791,6 +10952,7 @@ seeneteadlane
 seeneuurija
 seenior
 seeniorkunstnik
+seeniorsportlane
 seerav
 seersantkala
 sefaradi juut
@@ -10917,6 +11079,7 @@ sidepidaja
 sidetöötaja
 sideväelane
 sifonofoorid
+sigmaisane
 signaalvähk
 signarant
 sihitaja
@@ -10929,8 +11092,10 @@ sihver
 siiam
 Siiami kaksikud
 Siiami kass
+siidikana
 siidikangur
 siidikedrik
+siidikukk
 siidikäpp
 siidikäsi
 siidiliblikas
@@ -10959,6 +11124,7 @@ sikk
 sikutimees
 sileen
 silksolk
+sillaehitaja
 sillakohtunik
 sillamäelane
 silmaarst
@@ -11064,6 +11230,7 @@ sissesõitja
 sissesõitnu
 sissevedaja
 sisseviskaja
+sisuinimene
 sisulooja
 sisutoimetaja
 sitahipi
@@ -11090,6 +11257,8 @@ skandinaavlane
 skarabeus
 skaudijuht
 skaut
+skeemamunk
+skeemanunn
 skeptik
 skinhead
 skinheed
@@ -11113,6 +11282,7 @@ skunks
 skvaier
 skvoo
 skvotter
+skämmer
 sküüt
 slaalomisõitja
 slaav
@@ -11129,6 +11299,7 @@ sloveenitar
 sloveenlane
 sloveenlanna
 smerd
+smugeldaja
 smurf
 snaiper
 snoob
@@ -11199,7 +11370,6 @@ soovija
 soovitaja
 soovolinik
 sopajoodik
-sopakäi
 sorb
 sordiaretaja
 sorgsaba
@@ -11237,7 +11407,6 @@ spartiaat
 spekulant
 speleoloog
 spermadoonor
-spetsialist
 spiiker
 spikk
 spinningist
@@ -11403,7 +11572,6 @@ sulipoiss
 sulisloom
 sulissõber
 sultan
-suluspesitseja
 sumer
 sumerlane
 sumomaadleja
@@ -11423,6 +11591,7 @@ supermodell
 supersiga
 superstaar
 superviisor
+supikeetja
 supikilpkonn
 supilinlane
 supilontrus
@@ -11481,6 +11650,8 @@ suur-kapsaliblikas
 suurkari
 suurkaupmees
 suur-kirjurähn
+suurkliendihaldur
+suurkodanlane
 suurkodanlus
 suur-konnakotkas
 suurkoovitaja
@@ -11506,6 +11677,7 @@ suuromanik
 suurpere
 suur puudel
 suurpõllupidaja
+suur-rabakiil
 suurrahastaja
 suurrahvas
 suurrisla
@@ -11549,6 +11721,7 @@ suusataja
 suuskur
 suuto
 suuvooder
+suvehiidlane
 suvelesk
 suvepealinlane
 suvepäevaline
@@ -11613,6 +11786,7 @@ sõjaohver
 sõjaorb
 sõjapagulane
 sõjapealik
+sõjaprintsess
 sõjapõgenik
 sõjaratsu
 sõjard
@@ -11693,6 +11867,7 @@ säsiürask
 sääriksääsk
 sääselised
 sääsk
+säästumatkaja
 söekaevur
 söetööline
 sölkup
@@ -11825,6 +12000,7 @@ süütaja
 šviitsi veis
 šõumees
 zaporoožlane
+zetnik
 Zeus
 Z-generatsioon
 zombie
@@ -11840,6 +12016,7 @@ zooplankter
 zooplankton
 zootehnik
 zootsönoos
+Z-patrioot
 Z-põlvkond
 žemait
 žilatjee
@@ -11925,6 +12102,7 @@ taimeteadlane
 taimetoitlane
 tainanägu
 taipoksija
+taistolane
 tait
 taiwanlane
 takin
@@ -12007,6 +12185,7 @@ tantsuorkester
 tantsupaar
 tantsupartner
 tantsupeoline
+tantsurühm
 tantsusõber
 tantsutrupp
 tantsuõpetaja
@@ -12104,6 +12283,7 @@ teatraal
 teatriarvustaja
 teatrifänn
 teatriinimene
+teatrijuht
 teatrikriitik
 teatrikunstnik
 teatrikülastaja
@@ -12156,7 +12336,9 @@ teenistuja
 teenistusaadel
 teenistusaadlik
 teenistuskoer
+teenusehaldur
 teenusejuht
+teenuseomanik
 teenäitaja
 teerajaja
 teeröövel
@@ -12164,6 +12346,7 @@ teeseltsiline
 teesklased
 teetigu
 teetööline
+teetöötaja
 teflonmees
 teflonpoliitik
 tegelinski
@@ -12216,6 +12399,7 @@ telegrafist
 telegrammikandja
 telekokk
 telekommentaator
+telekriitik
 telemees
 telemehaanik
 telenägu
@@ -12231,6 +12415,9 @@ telestaar
 teletäht
 teletöötaja
 televaataja
+televisioonireporter
+televisioonirežissöör
+telkija
 telkkond
 teller
 tellijaskond
@@ -12347,6 +12534,7 @@ tiigi-roolind
 tiigrikutsikas
 tiigripoeg
 tiim
+tiimikaaslane
 tiinekas
 tiiner
 tiisiker
@@ -12386,6 +12574,7 @@ tipsi
 tipskin
 tipsu
 tipsuke
+tipsutaja
 tipuründaja
 tiroollane
 tirt
@@ -12424,7 +12613,9 @@ toetusrühm
 tohter
 tohtrihärra
 toi
+toiduarvustaja
 toidugurmaan
+toidukriitik
 toidukuller
 toidumaitsja
 toidunautija
@@ -12578,6 +12769,7 @@ trikimees
 trikimeister
 trikirattur
 trikster
+triljonär
 trilobiidid
 tripimadu
 Triton
@@ -12609,6 +12801,7 @@ trummimängija
 trummitüdruk
 trumpist
 trupp
+truudusemurdja
 truväär
 trääl
 trühvlikoer
@@ -12639,6 +12832,7 @@ tsiklimees
 tsiklist
 tsiliaadid
 tsilktsolk
+tsimmermann
 tsinkograaf
 tsirguke
 tsirgukene
@@ -12704,6 +12898,7 @@ tugipere
 tugipersonal
 tugirühm
 tugispetsialist
+tugitoolikriitik
 tugitoolisportlane
 tugivõrgustik
 tugiõpetaja
@@ -12961,6 +13156,7 @@ täppisteadlane
 täpsuskütt
 täpsuslaskja
 täpsuslaskur
+täägija
 töll
 töllakas
 töllmokk
@@ -13015,6 +13211,7 @@ töönduskala
 töönõustaja
 tööori
 tööotsija
+tööpakkuja
 tööpatt
 tööpere
 tööpoiss
@@ -13089,7 +13286,6 @@ udmurt
 udras
 udupea
 udusulestik
-udusulg
 uelslane
 ufoloog
 ufouurija
@@ -13219,6 +13415,7 @@ usuteadlane
 usutegelane
 usuvahetaja
 usuvend
+usuvõitleja
 usuvähemus
 usuõde
 usuõpetaja
@@ -13239,6 +13436,7 @@ uudismaalane
 uudisteankur
 uudistekütt
 uudistelugeja
+uudistetoimetus
 uuendnoorkari
 uuestisündinu
 uulitsapoiss
@@ -13289,6 +13487,7 @@ vabadik
 vabadikunaine
 vabaduslaulik
 vabadussõjalane
+vabadusvõitleja
 vabaerakondlane
 vabahärra
 vabakana
@@ -13337,6 +13536,7 @@ vagamees
 vagant
 vagel
 vagellest
+vagunihaakija
 vagunisaatja
 vahakoi
 vahaleedik
@@ -13451,6 +13651,7 @@ vallaisa
 vallajuht
 vallakasakas
 vallakirjutaja
+vallakodanik
 vallandatav
 vallarahvas
 vallasaks
@@ -13615,6 +13816,7 @@ variser
 variöölane
 varjaag
 varjukala
+varjupaigataotleja
 varjusurnu
 varreleedik
 varreöölane
@@ -13742,7 +13944,6 @@ veltveebel
 vembumees
 vemmalsäär
 veneed
-veneet
 veneetslane
 Vene hurt
 venelane
@@ -13827,6 +14028,7 @@ Vesta
 vestaal
 Vesta neitsi
 vestekirjanik
+vester
 vestja
 vestleja
 vestluskaaslane
@@ -13922,6 +14124,7 @@ vikaar
 vikaardiakon
 vikaarpreester
 vikaarvaimulik
+vikerkaarebeebi
 vikerkala
 vikerlane
 vikerpere
@@ -14267,14 +14470,15 @@ väimees
 väimeespoeg
 Väinämöinen
 väisaja
+väitleja
 väitlusjuht
 väiv
 väkram
 välijuht
 välikomandör
-välisagent
 välisautor
 välisdelegatsioon
+välisesindaja
 välisinvestor
 välisklubi
 väliskomisjon
@@ -14292,6 +14496,7 @@ välistudeng
 välisturist
 välistööjõud
 välisvaatleja
+välisvang
 välisõppejõud
 välisüliõpilane
 väljaheidetu
@@ -14449,6 +14654,7 @@ wunderkind
 õnnetriinu
 õnnetusehunnik
 õnnetuselind
+õnnetusepundar
 õnnetushunnik
 õnnistegija
 õnnitleja
@@ -14565,6 +14771,7 @@ wunderkind
 äärmusrühmitus
 ökoemme
 ökoinimene
+ökokogukond
 ökoloog
 ökonomist
 ökonoom
@@ -14704,6 +14911,7 @@ wunderkind
 üliõpilaskond
 üliõpilaskoor
 üliõpilaspere
+üliõpilasperekond
 üllatusbeebi
 üllatusesineja
 üllatuskülaline
@@ -14732,7 +14940,6 @@ wunderkind
 ürgveis
 üritaja
 ürr
-üürija
 üüriline
 üürivõlglane
 üürivõlgnik
@@ -14741,7 +14948,6 @@ X-generatsioon
 x-generatsioon
 X-põlvkond
 x-põlvkond
-yakuza
 Yorkshire'i siga
 youtuber
 yuppie
