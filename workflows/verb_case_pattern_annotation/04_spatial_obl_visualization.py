@@ -535,16 +535,16 @@ def run(conf_file):
     #     
 
     # ### 1. tag-not_tag vs annotated-not_annotated
-    hoverplot(df_log_loc, 'log2_annotation', 'not_annotated vs annotated', 'location vs other tags', f'{TARGET_TAG[0]}_verbcase_annotated_unannotated', RES_DIR)
+    hoverplot(df_log_loc, 'log2_annotation', 'not_annotated vs annotated', f'{TARGET_TAG[0]} vs other tags', f'{TARGET_TAG[0]}_verbcase_annotated_unannotated', RES_DIR)
 
     # ### 2. tag-not_tag vs unique dependents
     # 1. y-axis: Whether the verb's dependents in said case are more likely locations or not locations. The higher the score the more likely dependents are locations, the lower the score the more likely dependents aren't locations
     # 2. x-axis: How many unique dependents a verb has in said case that are annotated. The higher the score the more words unique annotated dependents the verb had in that case, the lower the score the less unique dependents in said case a verb has
     colorless_hoverplot(df_log_loc, 'log2_unique_lemmas', 'unique annotated dependents', 
-              'ratio of location:other tags', f'{TARGET_TAG[0]}_all_colorless', RES_DIR)
+              f'ratio of {TARGET_TAG[0]}:other tags', f'{TARGET_TAG[0]}_all_colorless', RES_DIR)
 
     colorless_hoverplot2(df_log_loc, 'log2_unique_lemmas', 'unique annotated dependents', 
-              'ratio of location:other tags', f'{TARGET_TAG[0]}_scatter_w_lines_multi', RES_DIR, lines_df)
+              f'ratio of {TARGET_TAG[0]}:other tags', f'{TARGET_TAG[0]}_scatter_w_lines_multi', RES_DIR, lines_df)
 
 
 
