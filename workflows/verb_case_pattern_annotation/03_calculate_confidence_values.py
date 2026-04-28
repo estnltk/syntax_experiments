@@ -3,6 +3,8 @@
 
 # # Calculates confidence points to draw n80, n20 and n50 lines
 # Theoretically doesn't need to be run for every tag as long as the max unique_lemma value is covered by CALCULATION_RANGE_MAX
+# The goal would be to calculate values to draw lines and create n zones to get moderate-to-strong evidence of class membership. 
+# It would be a strength-of-evidence stratification, not a probability estimate. This is for selecting and prioritizing datapoints.
 
 import sqlite3
 import pandas as pd
@@ -62,9 +64,11 @@ def run(conf_file):
     # ## Calculate values for every confidence line
 
     # 80 joon
+    # Minimum number of successes such that the upper tail is ≤ 5% under p = 0.8
     min_values = []
     x_ann = [x for x in range(1,CALCULATION_RANGE_MAX)] 
     for i in tqdm(range(len(x_ann))):
+        # Upper-tail binomial cutoff (p = 0.8, α = 0.05)
         min_success = get_min_success(x_ann[i], p=0.8)
         min_values.append(min_success)
 
@@ -72,6 +76,7 @@ def run(conf_file):
     lines_df["x"] = x_ann
     lines_df["y_pos80"] = min_values
     lines_df["log2_x"] = np.log2(lines_df["x"])
+    # Number of failures allowed while still being significant
     lines_df["y_neg80"] = lines_df["x"]-lines_df["y_pos80"]
     lines_df["log2_y_pos80"] = np.log2(lines_df["y_pos80"]/lines_df["y_neg80"])
 

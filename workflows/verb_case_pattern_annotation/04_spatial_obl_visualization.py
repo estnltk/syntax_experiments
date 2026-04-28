@@ -53,6 +53,7 @@ def read(database, table_name):
     cursor = conn.cursor()
     #insert data to dataframe
     df_log = pd.read_sql(f"SELECT * FROM {table_name}", conn)
+    conn.close()
     return df_log
 
 
@@ -97,6 +98,7 @@ def tag(database, obl_table, tag_col, base_df, column_name, tags, deptype = 'obl
         # Merge with df_log based on verb, verb_compound
         base_df = base_df.merge(df_other, on=['verb', 'verb_compound'], how='left')
 
+    conn.close()
     return base_df
 
 
@@ -136,6 +138,7 @@ def not_annotated(database,  obl_table, tag_col, base_df, deptype = 'obl'):
         # Merge with df_log based on verb, verb_compound, morph_case
         base_df = base_df.merge(df_notag, on=['verb', 'verb_compound'], how='left')
 
+    conn.close()
     return base_df
 
 
@@ -157,6 +160,38 @@ def siksaki_alumised_punktid(df, y_col):
     min_indices = argrelextrema(df[y_col].values, np.less)[0] #finds indices where the y-value is less than its neighbor
     lower_points = df.iloc[min_indices]
     return lower_points
+
+
+def center_line(df, x_col="log2_x", y_col="log2_y_pos80"):
+    """n lines zig-zag line center points for straighter line"""
+    x = df[x_col].values
+    y = df[y_col].values
+
+    # clean
+    mask = np.isfinite(x) & np.isfinite(y)
+    x = x[mask]
+    y = y[mask]
+
+    # find turning points (both peaks and troughs)
+    peaks = argrelextrema(y, np.greater, order=2)[0]
+    troughs = argrelextrema(y, np.less, order=2)[0]
+
+    extrema = np.sort(np.concatenate([peaks, troughs]))
+
+    # include endpoints
+    extrema = np.r_[0, extrema, len(y) - 1]
+
+    mid_x = []
+    mid_y = []
+
+    # midpoint between consecutive extrema (THIS is the key idea)
+    for i in range(len(extrema) - 1):
+        i1, i2 = extrema[i], extrema[i+1]
+
+        mid_x.append((x[i1] + x[i2]) / 2)
+        mid_y.append((y[i1] + y[i2]) / 2)
+
+    return np.array(mid_x), np.array(mid_y)
 
 
 def hoverplot(base_df, x_axis, x_name, y_name, filename, folder):
@@ -295,6 +330,61 @@ def colorless_hoverplot2(base_df, x_axis, x_name, y_name, filename, folder, line
     )
     
     # silendatud jooned (siksaki alumise punktid)
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos80")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='orange', width=3),
+        name='80'
+    ))
+    
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos90")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='lightgreen', width=3),
+        name='90'
+    ))
+    
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos70")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='purple', width=3),
+        name='70'
+    ))
+    
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos30")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='deeppink', width=3),
+        name='30'
+    ))
+    
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos20")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='blue', width=3),
+        name='20'
+    ))
+    
+    x_vals, y_vals = center_line(lines_df, y_col="log2_y_pos10")
+    fig.add_trace(go.Scatter(
+        x=x_vals , #list(base_df[x_axis]),
+        y=y_vals ,
+        mode='lines',
+        line=dict(color='yellow', width=3),
+        name='10'
+    ))
+    
+    """
     tmp_df = siksaki_alumised_punktid(lines_df, "log2_y_pos80")
     fig.add_trace(go.Scatter(
         x=tmp_df["log2_x"] , #list(base_df[x_axis]),
@@ -349,9 +439,8 @@ def colorless_hoverplot2(base_df, x_axis, x_name, y_name, filename, folder, line
         line=dict(color='yellow', width=3),
         name='10'
     ))
-    
-    
-    
+    """
+
     # esialgsed siksak jooned
     fig.add_trace(go.Scatter(
         x=lines_df["log2_x"] , #list(base_df[x_axis]),
@@ -520,7 +609,7 @@ def run(conf_file):
     df_log_loc = prepare_data(DATABASE, OBL_TABLE, TAG_COL, f'verb_case_log_{TARGET_TAG[0]}', 
                               TARGET_TAG, 
                               OTHER_TAGS)
-
+    #print(len(df_log_loc))
 
 
     # ## Create hoverplots
