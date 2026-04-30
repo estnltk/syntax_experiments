@@ -29,7 +29,7 @@ How the tags were assigned in conf file:
 The n-lines on the graphs:
 
 - grey zigzag: initial n-line 
-- colored "smooth" line at the center of grey zigzag: for visual. 
+- colored "smooth" line over the grey zigzag: not very accurate but it is for visuals
 - n+1 and -1 lines: grey zigzag +1 or -1
 
 

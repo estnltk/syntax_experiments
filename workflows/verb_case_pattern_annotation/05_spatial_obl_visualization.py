@@ -28,6 +28,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
 from scipy.signal import argrelextrema
+from scipy.interpolate import UnivariateSpline
 import plotly.graph_objects as go
 import copy
 import argparse
@@ -254,14 +255,14 @@ def hovername(base_df, examples_df, deptype='obl'):
 
 
 def siksaki_alumised_punktid(df, y_col):
-    """n lines zig-zag line bottom points for straighter line"""
     min_indices = argrelextrema(df[y_col].values, np.less)[0] #finds indices where the y-value is less than its neighbor
     lower_points = df.iloc[min_indices]
+
     return lower_points
 
 
-def center_line(df, x_col="log2_x", y_col="log2_y_pos80"):
-    """n lines zig-zag line center points for straighter line"""
+def center_line1(df, x_col="log2_x", y_col="log2_y_pos80"):
+    """Zig-zag line midpoints"""
     x = df[x_col].values
     y = df[y_col].values
 
@@ -290,6 +291,45 @@ def center_line(df, x_col="log2_x", y_col="log2_y_pos80"):
         mid_y.append((y[i1] + y[i2]) / 2)
 
     return np.array(mid_x), np.array(mid_y)
+
+
+def center_line(df, x_col="log2_x", y_col="log2_y_pos80", smooth_factor=0.2):
+    """Smooth line over zigzag line (result is not very accurate but is for visuals)"""
+    x = df[x_col].values
+    y = df[y_col].values
+
+    # clean
+    mask = np.isfinite(x) & np.isfinite(y)
+    x = x[mask]
+    y = y[mask]
+
+    # sort by x (important for spline)
+    order = np.argsort(x)
+    x, y = x[order], y[order]
+
+    # find extrema
+    peaks = argrelextrema(y, np.greater, order=2)[0]
+    troughs = argrelextrema(y, np.less, order=2)[0]
+    extrema = np.sort(np.concatenate([peaks, troughs]))
+
+    # include endpoints
+    extrema = np.r_[0, extrema, len(y) - 1]
+
+    # compute midpoints
+    mid_x = (x[extrema[:-1]] + x[extrema[1:]]) / 2
+    mid_y = (y[extrema[:-1]] + y[extrema[1:]]) / 2
+
+    # spline smoothing
+    if smooth_factor is None:
+        smooth_factor = len(mid_x)  # good default, increase for smoother
+
+    spline = UnivariateSpline(mid_x, mid_y, s=smooth_factor)
+
+    # generate smooth curve
+    x_smooth = np.linspace(mid_x.min(), mid_x.max(), 500)
+    y_smooth = spline(x_smooth)
+
+    return x_smooth, y_smooth#, mid_x, mid_y
 
 
 def hoverplot(base_df, x_axis, x_name, y_name, filename, folder):
