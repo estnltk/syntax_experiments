@@ -2,24 +2,20 @@
 # coding: utf-8
 
 # # Hoverplot for tag distribution by verb-case pairing
-# 
+
 # This notebook creates hoverplots. The hoverplots show the location of a verb and case pair based on two values:
-# 
 # 1. y-axis: How many of the verb's dependents in said case have an user specified tag(s) or other tags. The higher the score the more dependents have the user speficied tag, the lower the score the more dependents have some other tag.
 # 2. x-axis had two possibilities:
 #     * How many of the the verb's dependents in said case were semantically annotated at all. The higher the score the more words were annotated, the lower the score the more words recieved no annotation.
 #     * How many unique dependents a verb has in said case that are annotated. The higher the score the more words unique annotated dependents the verb had in that case, the lower the score the less unique dependents in said case a verb has.
-# 
+
 # The hoverplots are created by going through the following steps:
 # 1. reading database table with data used for the hoverplot into a dataframe
 # 2. finding example dependents for each verb-case pair to show on hover. There are 3 classes of example dependents: user_specified tag, other tag, not_annotated
-# 3. adding new hovername column to the dataframe. For each datapoint, this shows on hover: *verb verb_compound (case): usertag_example, othertag_example, not_annotated_example*. For example: *üürima välja (ad): tänaval, kaalutlustel, ajal*. If a class has no examples, then shows *[puudub]* instead of an example
+# 3. adding new hovername column to the dataframe.
 # 4. defining what kind of hoverplot will be created
-# 
+
 # This notebook reuses some code made by Kaire, which can be found [here](https://github.com/estnltk/syntax_experiments/blob/verb_templates/workflows/006_analysis_of_manually_annotated_actor_patterns/06_analysis_illustrations/05_verb_live_vs_nonlive_hoverplot.ipynb).
-
-# In[1]:
-
 
 import sqlite3
 import os
@@ -34,6 +30,7 @@ import copy
 import argparse
 import json
 import configparser
+import re
 
 
 # ## Functions
@@ -46,6 +43,9 @@ def load_config(path):
     assert status == [path]
     return config
 
+
+
+# DATABASE FUNCTIONS
 
 def read(database, table_name):
     """read data in from database"""
@@ -143,8 +143,11 @@ def not_annotated(database,  obl_table, tag_col, base_df, deptype = 'obl'):
     return base_df
 
 
+
+# PLOTTING FUNCTIONS
+
 def hovername1(base_df, deptype = 'obl'):
-    """add new column for what's shown on hover"""
+    """DEPRECATED! add new column for what's shown on hover"""
     base_df = base_df.fillna('[puudub]')
 
     if deptype == 'obl':
@@ -239,11 +242,10 @@ def hovername(base_df, examples_df, deptype='obl'):
             merged_df["verb_full"] + " (" + merged_df["morph_case"] + ")"
 
             # --- original examples ---
-            + "<br><br><b>Examples:</b>"
-
-            + "<br><b>tag:</b> " + merged_df["tag_example"]
-            + "<br><b>other:</b> " + merged_df["other_example"]
-            + "<br><b>not annotated:</b> " + merged_df["not_annotated_example"]
+            #+ "<br><br><b>Examples:</b>"
+            #+ "<br><b>tag:</b> " + merged_df["tag_example"]
+            #+ "<br><b>other:</b> " + merged_df["other_example"]
+            #+ "<br><b>not annotated:</b> " + merged_df["not_annotated_example"]
 
             # --- new aggregated tag blocks ---
             + merged_df["examples_hover"].apply(
@@ -716,6 +718,91 @@ def colorless_hoverplot2(base_df, x_axis, x_name, y_name, filename, folder, line
     #fig.show()
 
 
+# CREATE AND MODIFY DATAFRAMES BEFORE PLOTTING
+
+def highlight_example(example):
+    sentence = example["sentence"]
+    form = example["form"]
+    phrase = example.get("phrase")
+    row_loc = example.get("row_loc")
+    verb_form = example.get("verb_form")
+    verb_comp = str(example["verb_compound"])
+
+    count = sentence.count(form)
+    words = sentence.split()
+
+    if count > 1:
+        # try to find the right word to color
+        # split while preserving punctuation spacing better
+        if 1 <= row_loc <= len(words):
+            idx = row_loc - 1
+            # compare cleaned token with cleaned form
+            token_clean = re.sub(r"[^\w-]", "", words[idx]).lower()
+            form_clean = re.sub(r"[^\w-]", "", form).lower()
+
+            if token_clean == form_clean:
+                original_word = words[idx]
+                words[idx] = (
+                    f'<span style="color:yellow;font-weight:bold;">'
+                    f'{original_word}'
+                    f'</span>'
+                )
+        highlighted = " ".join(words)
+
+    elif count == 1:
+        """# highlight ONLY the indexed token
+        if 1 <= row_loc <= len(words) :
+            idx = row_loc - 1
+            words[idx] = (
+                f'<span style="color:yellow;font-weight:bold;">'
+                f'{form}'
+                f'</span>'
+            )"""
+        highlighted = " ".join(words)
+        highlighted = highlighted.replace(
+            form,
+            f'<span style="color:yellow;font-weight:bold;">{form}</span>',
+            1
+        )
+
+    # underline verb_compound
+    if verb_comp:
+        verb_comp = verb_comp.strip()
+        highlighted = highlighted.replace(
+            verb_comp,
+            f'<span style="text-decoration: underline; color: lightgreen;">{verb_comp}</span>',
+            1
+        )
+
+    # underline verb
+    if verb_form:
+        highlighted = highlighted.replace(
+            verb_form,
+            f'<span style="text-decoration: underline; color: lightgreen;">{verb_form}</span>',
+            1
+        )
+
+    example["highlighted"] = highlighted
+
+    return example
+
+    
+def process_examples(examples_json):
+    if pd.isna(examples_json):
+        return None
+    examples = json.loads(examples_json)
+    examples = [highlight_example(ex) for ex in examples]
+    return json.dumps(examples, ensure_ascii=False)    
+    
+
+def example_process(df2):
+    # Post-process highlighting in Python
+    df2["examples"] = df2["examples"].apply(process_examples)
+    df2["tag"] = df2["tag"].replace("", "-")
+    
+    return df2
+
+
 def prepare_data(database, examples_df, obl_table, tag_col, table_name, user_tags, other_tags, deptype = 'obl'):
     """prepare data for hoverplotting"""
     dataframe = read(database, table_name)
@@ -727,43 +814,41 @@ def prepare_data(database, examples_df, obl_table, tag_col, table_name, user_tag
     return dataframe
 
 
+# MAIN FUNCTIONS
 
 def run(conf_file):
 
     DATABASE = conf_file["configuration"]["database"]
-    OBL_TABLE = conf_file["configuration"]["obl_table"]
-    TAG_COL = conf_file["configuration"]["tags_column"]
-    CONFIDENCE_VALUES = conf_file["configuration"]["confidence_values_table"]
-    TARGET_TAG = conf_file["configuration"]["target_tag"].split(",")
-    OTHER_TAGS = conf_file["configuration"]["other_tags"].split(",")
-    RES_DIR = conf_file["configuration"]["dir_scatter_results"]
+    OBL_TABLE = conf_file["configuration"]["obl_table"] # spatial_obl table 
+    TAG_COL = conf_file["configuration"]["tags_column"] # column with tags: 'tags' etc
+    CONFIDENCE_VALUES = conf_file["configuration"]["confidence_values_table"] # table with n-line data 
+    TARGET_TAG = conf_file["configuration"]["target_tag"].split(",") # what tags the user is interested in (A, T, ELT etc)
+    OTHER_TAGS = conf_file["configuration"]["other_tags"].split(",") # all other tags in the data
+    OTHER_TAGS = [elem.strip() for elem in OTHER_TAGS]
+    RES_DIR = conf_file["configuration"]["dir_scatter_results"] # where to save scatterplots
 
-    # ## Prepare data for plotting
-    # User has to define:
-    # 1. database table name
-    # 2. what tags the user is interested in
-    # 3. all other tags in the data
-
+    # table with n80, n90, n10 etc line data 
     lines_df = read(DATABASE, CONFIDENCE_VALUES)
 
     examples_df = read(DATABASE, "spatial_obl_plotting_examples")
+
+    # for highlighting etc, can be commented out and code should still work 
+    examples_df = example_process(examples_df)
 
     df_log_loc = prepare_data(DATABASE,examples_df,  OBL_TABLE, TAG_COL, f'verb_case_log_{TARGET_TAG[0]}', 
                               TARGET_TAG, 
                               OTHER_TAGS)
     #print(len(df_log_loc))
 
+    # ## Create hoverplots (all the hoverplots save the result in html)
 
-    # ## Create hoverplots
-    # 
     # This section creates hoverplots from the data compiled in the above sections.
     # The user has to define: 
     # * dataframe the info is from
     # * column used as x_axis
     # * x-axis label
     # * y_axis label
-    # * filename for the saved hoverplot, needs to be htlm
-    #     
+    # * filename for the saved hoverplot, needs to be html
 
     # ### 1. tag-not_tag vs annotated-not_annotated
     hoverplot(df_log_loc, 'log2_annotation', 'not_annotated vs annotated', f'{TARGET_TAG[0]} vs other tags', f'{TARGET_TAG[0]}_verbcase_annotated_unannotated', RES_DIR)
