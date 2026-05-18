@@ -1,0 +1,18 @@
+Kui verbil ainult üks peaargument, siis see on alus.
+Olema-verbi konstruktsioonides ei saa olla sihitist.
+Välja nägema ei saa olla sihitist.
+Käskivas kõneviisis (imperatiiv) saab olla nominatiivis sihitis.
+Ehk visata välja juhud, kus sihitis on nominatiivis, aga pole käskivat kõneviisi.
+Sihitis alati käändsõna
+-- sagedaseim S/H
+-- asesõnad P
+-- lühendid Y
+-- arvsõna N, kuigi vähem selles süsteemis
+-- omadussõna, kuigi vähem selles süsteemis
+--- need tavalised elliptilistes lausetes
+
+Teha verbide-verbiühendite sagedusloend, Kadrile anda üle vaatamiseks.
+verbi sagedus - nom/gen/part hulgad
+
+
+
