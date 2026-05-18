@@ -1,7 +1,13 @@
 Kui verbil ainult üks peaargument, siis see on alus.
 Olema-verbi konstruktsioonides ei saa olla sihitist.
-Välja nägema ei saa olla sihitist.
+Välja nägema ei saa olla sihitist. 
+- Põhjus:
+-- kirjeldab seisundit
+-- Indikatiivne tunnus: POS A|C|U, case NOM domineerivalt
+-- Hüpotees: kirjeldab seiundit on KÕIK v MITTE MIDAGI tunnus
+-- Hüpotees: peab olema compound
 Käskivas kõneviisis (imperatiiv) saab olla nominatiivis sihitis.
+-- Hüpotees: iga verb kas nom või part, aga mitte korraga
 Ehk visata välja juhud, kus sihitis on nominatiivis, aga pole käskivat kõneviisi.
 Sihitis alati käändsõna
 -- sagedaseim S/H
