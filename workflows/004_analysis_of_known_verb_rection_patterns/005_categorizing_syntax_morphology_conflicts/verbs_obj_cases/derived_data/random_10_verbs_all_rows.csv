@@ -1,3 +1,4 @@
+verb,verb_compound,verb_tense,verb_mood,form,lemma,loc,POS,current_case,sentence_id,sentence,total,percent_nom,percent_gen,percent_par
 ahendama,,pres,cond,kasutussfääri,kasutussfäär,11,S|S|S,gen,235410,"Ei tohiks mingil juhul teha otsuseid , mis ahendaksid emakeele kasutussfääri mingi suure ja ilusa eesmärgi nimel .",4,0,0,100
 ahendama,,pres,cond,võimu,võim,15,S|S|S,part,1754108,"Paljud Washingtoni nõudmised , mis mitmete teiste demokraatlike riikide ja inimõiguste organisatsioonide arvates kohtu võimu ahendaksid , ei ole kokkuleppe projektis arvesse võetud .",4,0,0,100
 kihutama,taga,pres,indic,helisid,heli,5,S,part,2205774,"Straussi poeemis kihutab afekt helisid taga ja programm muudab "" liikumiskiirust "" .",2,0,0,100
