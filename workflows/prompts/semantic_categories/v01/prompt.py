@@ -6,10 +6,11 @@ from common_code.gpt_utils import *
 
 LOC_SYSTEM_PROMPT = """
 You are a classification assistant.
+TASK
 In this task location refers to "adverbial of place" (Estonian: kohamäärus) or "locative adverb".
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify whether "c" functions as a location in the context of the sentence.
-Adverbial of place answers to the question “where” (kus?/kuhu?/kust?) in the context of the sentence.
-Criteria:
+Determine whether the phrase "c" refers to location in the context of the sentence "l".
+
+DEFINITION of "location":
 - It is a place or concept where something or someone is located, goes to or comes from.
 - concrete place (bank, table, Berlin)
 - abstract (literature, soul, TV channels, government, top of a group, history, thought, domain)
@@ -19,39 +20,41 @@ Criteria:
 - state or condition conceptualized as space (life, trouble, consciousness, attitude)
 - Locations ARE NOT phrases that show time, state of being, owner, experiencer, instrument, manner OR are purely grammatical constructions. 
 - If the phrase can answer the question when, in what state, who, with what or how, then it is not a location.
-Analyse the given criteria of location, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch'.
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (location) or "no" (not location)
-"""
 
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
 
-LOC_SYSTEM_PROMPT2 = """
-You are a classification assistant.
-In this task location refers to "adverbial of place" (Estonian: kohamäärus) or "locative adverb".
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify whether "c" functions as a location in the context of the sentence.
-Adverbial of place answers to the question “where” (kus?/kuhu?/kust?) in the context of the sentence.
-It is a place or concept where something or someone is located, goes to or comes from.
-Criteria:
-- Phrase is NOT a location if it answers questions when, in what state, who, with what or how.
-- Phrase is a location if it answers questions where, from where, to where.
-Examples of locations:
-- concrete place (bank, table, Berlin)
-- abstract (literature, soul, TV channels, government, top of a group, history, thought, domain)
-- inanimate (journal, chair, wifi, bag, medal, toy, food, computer, wire, body parts)
-- alive if the person/entity is source or destination location (to mother, onto Peter, on top of dog, doctor, out of teacher)
-Analyse the given criteria and examples of location, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch'.
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (location) or "no" (not location)
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to location
+- "no" = does NOT refer to location
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
 
 LOC_FEW_SHOTS = [
@@ -230,27 +233,56 @@ LOC_FEW_SHOTS_STR = few_shot_dialog_to_text(LOC_FEW_SHOTS)
 
 ABSTRACT_SYSTEM_PROMPT = """
 You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to an abstract place in the context of the sentence.
-Criteria for abstract place (internal reasoning):
-1. An abstract location adverbial answers “Where?” in a non-physical domain (text, mind, system, theory) and cannot be rephrased as time, manner, cause, or condition.
-2. Does it answer “Where?” If yes -> is abstract location.
-3. Does it place the event/state somewhere, even metaphorically? If yes -> is abstract location.
-4. Could this “where” exist without physical space? Yes -> abstract location; No -> concrete location.
-5. Can the phrase can be replaced with "somewhere" ("kuskil") and the sentence will still make sense? If yes -> is abstract location
-6. Replaceable by time words? -> Not abstract location
-7. Means condition (if X)? -> Not abstract location
-8. Describes how something happens? -> Not abstract location
+TASK
+Determine whether the phrase "c" refers to an abstract location in the context of the sentence "l".
 
-Analyse all criteria, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch' based on the criteria.
+DEFINITION of "abstract location":
+- An abstract location adverbial answers “Where?” in a non-physical domain (text, mind, system, theory) and cannot be rephrased as time, manner, cause, or condition.
+- Does it answer “Where?” If yes -> is abstract location.
+- Does it place the event/state somewhere, even metaphorically? If yes -> is abstract location.
+- Could this “where” exist without physical space? Yes -> abstract location; No -> concrete location.
+- Can the phrase can be replaced with "somewhere" ("kuskil") and the sentence will still make sense? If yes -> is abstract location
+- Replaceable by time words? -> Not abstract location
+- Means condition (if X)? -> Not abstract location
+- Describes how something happens? -> Not abstract location
 
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (abstract location) or "no" (not abstract location)
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
+
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to abstract location
+- "no" = does NOT refer to abstract location
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
+
+
 
 ABSTRACT_FEW_SHOTS = [
             user_message(l="Toomas Lepp tegutses kaua ETV-s.", c="ETV-s"),
@@ -311,11 +343,12 @@ ABSTRACT_FEW_SHOTS_STR = few_shot_dialog_to_text(ABSTRACT_FEW_SHOTS)
 
 
 
-
 ALIVE_SYSTEM_PROMPT = """
 You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify whether "c" is alive in the context of the sentence.
-Criteria for alive:
+TASK
+Determine whether the phrase "c" refers to a living entity in the context of the sentence "l".
+
+DEFINITION of "living entity":
 - living beings (mother, sister, cat)
 - occupation (doctor, soldier, teacher, captain)
 - names of people (Aita, Ines, Peeter)
@@ -323,15 +356,40 @@ Criteria for alive:
 - nationality and ethnic identifier (Estonian, Jew, German, Christian)
 - metaphors (kobakäpp, sehkendaja, marakratt)
 
-Analyse the given criteria, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch'.
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
 
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (alive) or "no" (not alive)
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to living entity
+- "no" = does NOT refer to a living entity
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
 
 ALIVE_FEW_SHOTS = [
@@ -358,25 +416,54 @@ ALIVE_FEW_SHOTS_STR = few_shot_dialog_to_text(ALIVE_FEW_SHOTS)
 
 
 
+
 EVENT_SYSTEM_PROMPT = """
 You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to an event in the context of the sentence.
-A phrase is an event when:
+TASK
+Determine whether the phrase "c" refers to an event in the context of the sentence "l".
+
+DEFINITION of "event":
 1. It describes an action, occurrence, or state change.
 2. It refers to something that happens.
 3. It has both a time (when) and a location (where).
 4. Time and place can be inferred based on common sense if not specified in the phrase.
 
-Analyse all criteria, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch' based on the criteria.
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
 
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (event) or "no" (not event)
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to an event
+- "no" = does NOT refer to an event
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
+
 
 EVENT_FEW_SHOTS = [
             user_message(l="Näiteks räägitakse nii mõneski koolis osa õpilasi lihtsalt pehmeks , et nad ei roniks teatud eksamile .", c="eksamile"),
@@ -424,10 +511,14 @@ EVENT_FEW_SHOTS_STR = few_shot_dialog_to_text(EVENT_FEW_SHOTS)
 
 
 
+
+
 TIME_SYSTEM_PROMPT = """
 You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to time in the context of the sentence.
-Criteria for time:
+TASK
+Determine whether the phrase "c" refers to time in the context of the sentence "l".
+
+DEFINITION of "time":
 - answers question "when?"
 - phrase can be replaced by any time indicating word (like today/tomorrow/yesterday) and the sentence will still make sense.
 - time (nine o'clock)
@@ -437,15 +528,40 @@ Criteria for time:
 - not a situation
 - not an event
 
-Analyse the given criteria, analyse the 'few_shots' examples and generalise.
-Then process the list called 'batch'.
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
 
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (time) or "no" (not time)
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to time
+- "no" = does NOT refer to time
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
 
 TIME_FEW_SHOTS = [
@@ -466,27 +582,55 @@ TIME_FEW_SHOTS_STR = few_shot_dialog_to_text(TIME_FEW_SHOTS)
 
 
 
+
 STATE_SYSTEM_PROMPT = """
 You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to a state of being in the context of the sentence.
-Ask internally: In the context of this sentence, does the phrase denote a state of being (Estonian: seisund või seisundimäärus), meaning it describes a condition, status, or ongoing state (like physical condition, psychological condition, marital status, social status, financial situation, weather conditions etc) rather than an action or event?
-Criteria for state:
+TASK
+Determine whether the phrase "c" refers to a state of being in the context of the sentence "l".
+
+DEFINITION of "state":
 - condition of being
 - status of being
 - ongoing state
 - Is NOT an action (toimetamine, toetamine, rahastamine, etc) .
 - Is NOT a time phrase (minevik, periood, etc)
 
-Analyse the given criteria, analyse the 'few_shots' examples and generalise. Ignore capitalization. Do not assume — context determines meaning.
-Then process the list called 'batch'.
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
 
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (state of being) or "no" (not a state of being)
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to state
+- "no" = does NOT refer to state
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
 """
+
 
 STATE_FEW_SHOTS = [
 
@@ -531,64 +675,5 @@ STATE_FEW_SHOTS = [
 ]
 
 STATE_FEW_SHOTS_STR = few_shot_dialog_to_text(STATE_FEW_SHOTS)
-
-
-
-
-
-ORG_SYSTEM_PROMPT = """
-You are a classification assistant.
-Your task: Given a list of examples, each with keys "l" (sentence) and "c" (phrase), classify if "c" refers to an organization in the context of the sentence.
-Ask internally: In the context of this sentence, does the phrase denote an institution acting or capable of acting, rather than merely a place?
-Criteria for organization:
-- An entity that can function as a collective decision-maker or actor.
-- Consists of people in a structured system
-- Can act, decide, fund, regulate, employ, announce, or govern
-- Exists beyond just a physical building, location, venue or general environment
-- Is NOT an action (toimetamine, toetamine, rahastamine, etc) .
-
-Analyse the given criteria, analyse the 'few_shots' examples and generalise. Ignore capitalization. Do not assume that every school, hospital, bank, or university is automatically an organization — context determines meaning.
-Then process the list called 'batch'.
-
-Output JSON requirements:
-- Respond strictly with an array of JSON objects, one object per 'batch' item.
-- The JSON array must be in the exact same order as the batch items.
-- Response must be without markdown or comments.
-- Each output JSON must have:
-  "a": "yes" (organization) or "no" (not organization)
-"""
-
-ORG_FEW_SHOTS = [
-            user_message(l="Riik andis ülikoolile raha .",c="ülikoolile"),
-            assistant_message(a="yes", r="Organization received money."),
-    
-            user_message(l="Ma käin ülikoolis loengus.", c="ülikoolis"),
-            assistant_message(a="no", r="Physical location."),
-    
-            user_message(l="Ministeeriumis otsustati seadust muuta.", c="Ministeeriumis"),
-            assistant_message(a="yes", r="Organization making changes."),
-    
-            user_message(l="Ta ootas haiglas arsti.", c="haiglas"),
-            assistant_message(a="no", r="Physical location"),
-
-            user_message(l="Nõukogu on siiamaani lähtunud investeeringute toetamisel ühest põhimõttest.", c="toetamisel"),
-            assistant_message(a="no", r="An action that the organization takes."),
-
-            user_message(l="Noored käisid Suusaliidu kulul puhkusel.", c="kulul"),
-            assistant_message(a="no", r="Organization funds the vacation but the phrase is not and organization."),
-
-            user_message(l="Kooli hinnangul on asi halb.", c="hinnangul"),
-            assistant_message(a="no", r="Opinion and not an organization."),
-
-            user_message(l="ÜRO ettepanekul viidi sisse muudatud.", c="ettepanekul"),
-            assistant_message(a="no", r="Action and not an organization."),
-
-            user_message(l="Meie kooli nõukogu otsusel loodi uusi töökohti.", c="otsusel"),
-            assistant_message(a="no", r="Action and not an organization."),
-
-]
-
-ORG_FEW_SHOTS_STR = few_shot_dialog_to_text(ORG_FEW_SHOTS)
-
 
 
