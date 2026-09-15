@@ -40,6 +40,25 @@ def data_shaping(conf_file):
     conn = sqlite3.connect(DB_FILE)
     cur = conn.cursor()
 
+    print("Creating indexes...") 
+    
+    res = pd.read_sql(f"PRAGMA index_list({HEAD_TABLE});", conn)
+    if not any(res.iloc[i]["name"] == "idx_head_id" for i in range(len(res))):
+        cur.execute(f"""
+        CREATE INDEX idx_head_id
+        ON {HEAD_TABLE}(id);
+        """)
+        conn.commit()
+
+    res = pd.read_sql(f"PRAGMA index_list({TRANSACTION_TABLE});", conn)
+    if not any(res.iloc[i]["name"] == "idx_transaction_head_id" for i in range(len(res))):
+        cur.execute(f"""
+        CREATE INDEX idx_transaction_head_id
+        ON {TRANSACTION_TABLE}(head_id);
+        """
+        )
+        conn.commit
+
     # ### Add sentence_id to transaction table
     print(f"Adding sentence_id to {TRANSACTION_TABLE}...")
     start = time.time()
