@@ -1,4 +1,31 @@
-## 
+## Problem statement
+
+Many combinations of verbs-case forms clearly determine the semantic role of the word that appears in a given position in a sentence:
+
+- whether it is an adverbial of place 
+- adverb of time
+- an event
+- an agent/actor (a participant referring to a person/organization)
+- adverbial of manner 
+- cause/condition
+- construction
+- or an element that belongs to the verb’s argument structure
+
+Our aim is to study this phenomenon through statistical analysis of large-scale sentence annotations.
+
+To do this, we use EKILEX dictionaries and LLMs to assign semantic categories, along with simple statistical methods to group the results, and manual annotation to identify interesting linguistic hypotheses.
+
+
+## Workflow
+
+- Use existing labels to filter data 
+- Group data 
+- Use GPT to relabel data 
+- Final analysis
+
+
+
+## Files
 
 [data](data) -- input files for gpt prompting
 

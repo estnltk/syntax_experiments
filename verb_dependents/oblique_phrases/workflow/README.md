@@ -1,16 +1,37 @@
-### Workflow:
+## Workflow:
 
-**01_workflow_with_nertimex:** - workflow to get base data in the database
+In this context "category" refers to verb phrases that are semantically in one group (almost always and almost never locations). 
+Refer to this [explanation](https://github.com/estnltk/syntax_experiments/blob/semantic_labelling/verb_dependents/oblique_phrases/data/README.md).
 
-**02_add_n80_data:** - middle step to merge "section" data with spatial_obl table and assign section (n80, n20 etc)
 
-**03_make_n20_dataset:** - creating dataset from n20 examples
+### Labeling verbs and phrases
 
-**03_make_n80_dataset:** - creating dataset from n80 examples
+Creates necessary tables from [Katrin Tsepelina's](https://github.com/estnltk/syntax_experiments/tree/verb_templates/workflows/001_verb_transactions/v33) pre-existing [databases](https://drive.google.com/drive/folders/1MhvQYevlJnowiWqu2NF5QFT_4noLeBTz) for categorizing verb phrases.
 
-**04_gpt_result_analysis:** - additional analysis for prompt improvements etc 
+Expected space for the database files is 13-14GB.
 
-**05_make_error_benchmarks:** - creating examples for benchmarks/morph_syntax_error categories
+**01_workflow_with_nertimex** - workflow to get base data in the database
 
-**06_summary:** - analysis and summary of all gpt answers (v01, v02, v03, ...)
+**02_add_n80_data** -  to assign category (n80, n20 etc)
+
+
+### Datasets
+
+Creates dataset files for each category.
+
+**03_make_n20_dataset** 
+
+**03_make_n50_dataset**
+
+**03_make_n80_dataset** 
+
+
+
+### Analyse semantic label data 
+
+**04_gpt_result_analysis** - additional analysis for prompt improvements etc. The analysis notebooks are mainly to look at examples, detect overlaps and find odd cases in the result files.
+
+**05_make_error_benchmarks** - creating examples for benchmarks/morph_syntax_error categories
+
+**06_summary** - analysis and summary of gpt answers (v01, v02, v03, ...). 
 
