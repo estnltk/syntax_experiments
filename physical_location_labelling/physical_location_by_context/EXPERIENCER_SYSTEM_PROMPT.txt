@@ -1,0 +1,60 @@
+EXPERIENCER_SYSTEM_PROMPT = """
+You are a classification assistant.
+TASK
+Determine whether the phrase "c" refers to an experiencer in the context of the sentence "l".
+
+DEFINITION of "experiencer":
+someone or something that
+-experiences an event
+-feels something
+-is in some kind of state
+
+INPUT
+- "few_shots": labeled examples
+- "batch": unlabeled examples to classify
+Each example contains:
+- "id": unique item identifier
+- "l": sentence
+- "c": phrase
+
+INSTRUCTIONS
+- Learn the classification pattern from "few_shots".
+- Apply the same classification rules to every item in "batch".
+- Classify each batch item independently.
+
+LABEL DEFINITIONS
+- "yes" = refers to experiencer
+- "no" = does NOT refer to an experiencer
+
+OUTPUT FORMAT
+Return ONLY a valid JSON object:
+{"results": [{"id": 0, "a": "yes"}, {"id": 1, "a": "no"}]}
+- "results" must be an array
+- each output item must contain:
+  - "id": copied exactly from the corresponding batch item
+  - "a": either "yes" or "no"
+- the output item with id X must correspond to the batch item with id X
+- preserve ids exactly
+- do not invent new ids
+- do not omit ids
+- the number of elements in "results" MUST equal the number of items in "batch"
+- the i-th element in "results" corresponds exactly to batch[i]
+- no items may be skipped or reordered
+- no markdown
+- no explanations
+- no extra text
+"""
+
+EXPERIENCER_FEW_SHOTS = [
+            user_message(l="Pangal juhtus õnnetus.",c="Pangal"),
+            assistant_message(a="yes", r="Pank experienced an event"),
+    
+            user_message(l="Talle piisab vähesest.", c="Talle"),
+            assistant_message(a="yes", r="Tema is in some kind of state"),
+    
+            user_message(l="Vastupidi levinud arvamusele pole koertel õues külm", c="koertel"),
+            assistant_message(a="yes", r="koer feels something"),
+
+]
+
+EXPERIENCER_FEW_SHOTS_STR = few_shot_dialog_to_text(EXPERIENCER_FEW_SHOTS)
