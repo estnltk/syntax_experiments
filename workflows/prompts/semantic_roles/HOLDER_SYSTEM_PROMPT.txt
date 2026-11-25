@@ -1,7 +1,7 @@
 HOLDER_SYSTEM_PROMPT = """
 You are a classification assistant.
 TASK
-Determine whether the phrase "c" refers to a holder in the context of the sentence "l".
+Determine whether the word "c" refers to a holder in the context of the sentence "l".
 
 DEFINITION of "holder":
 someone or something that
@@ -10,6 +10,10 @@ someone or something that
 - gives something away
 - gets or receives something
 - is asked for something
+- experiences an event
+- feels something
+- is in some kind of state
+- the action is directed towards
 
 INPUT
 - "few_shots": labeled examples
@@ -68,6 +72,42 @@ HOLDER_FEW_SHOTS = [
     
             user_message(l="Hukkunu ema nõudis haiglalt miljon krooni.", c="haiglalt"),
             assistant_message(a="yes", r="haigla is asked for something"),
+
+	    user_message(l="Pangal juhtus õnnetus.",c="Pangal"),
+            assistant_message(a="yes", r="Pank experienced an event"),
+    
+            user_message(l="Talle piisab vähesest.", c="Talle"),
+            assistant_message(a="yes", r="Tema is in some kind of state"),
+    
+            user_message(l="Vastupidi levinud arvamusele pole koertel õues külm.", c="koertel"),
+            assistant_message(a="yes", r="koer feels something"),
+
+	    user_message(l="Saksamaa tuli Poolale kallale.", c="Poolale"),
+            assistant_message(a="yes", r="The action is directed towards Poola"),
+
+	    user_message(l="Ärimehed pilgutavad tehnika arengutele silma ja loodavad kasumit.", c="arengutele"),
+            assistant_message(a="yes", r="The action is directed towards arengud"),
+	
+	    user_message(l="Ta mängib kitarril ühe loo.", c="kitarril"),
+            assistant_message(a="no", r="Is an instrument"),
+
+	    user_message(l="Laeval on autod", c="Laeval"),
+            assistant_message(a="no", r="Laev does not own the cars, they are temporarily aboard it."),
+	
+	    user_message(l="Ma läksin koosolekule.", c="koosolekule"),
+            assistant_message(a="no", r="Koosolek is a location the subject went to"),
+
+	    user_message(l="Nõtkel sammul astub ta meie suunas ja peatub vee piiril.", c="sammul"),
+            assistant_message(a="no", r="Answers the question how?"),
+
+	    user_message(l="Poola suhtes oleme Sigridiga täiesti ühel arvamusel.", c="arvamusel"),
+            assistant_message(a="no", r="Is a state")
+
+	    user_message(l="Lapsed tulid vanaema juurde, istusid sülle ja palusid pai.", c="sülle"),
+            assistant_message(a="no", r="Sülle is a location"),
+
+	    user_message(l="Kirjutasin lepingule alla ja läksin oma teed.", c="lepingule"),
+            assistant_message(a="no", r="Purely grammatical, answers the question where?"),
 ]
 
 HOLDER_FEW_SHOTS_STR = few_shot_dialog_to_text(HOLDER_FEW_SHOTS)
